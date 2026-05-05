@@ -1,0 +1,75 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "STA 101 Fall 2026"
+  description: "Homepage for STA 101 Data Analysis and Statistical Inference at Duke University (Fall 2026)"
+  site-url: "https://sta101-f26.github.io/"
+
+  open-graph: true
+
+  #draft-mode: unlinked
+
+  sidebar:
+    background: "#BE394F"
+    logo: "img/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: code-square
+        href: https://cmgr.oit.duke.edu/containers
+        text: "RStudio Containers"
+      - icon: megaphone
+        href: https://go.canvas.duke.edu/
+        text: "Canvas"
+      - icon: people
+        href: https://edstem.org/
+        text: "Ed Discussion"
+      - icon: file-arrow-up
+        href: https://www.gradescope.com/
+        text: "Gradescope"
+
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Syllabus"
+        contents:
+          - href: syllabus/syllabus-overview.qmd
+            text: Overview
+          - href: syllabus/syllabus-team.qmd
+            text: Teaching team
+          - href: syllabus/syllabus-materials.qmd
+            text: Materials
+          - href: syllabus/syllabus-assignments.qmd
+            text: Assignments and grading
+          - href: syllabus/syllabus-policies.qmd
+            text: Policies
+          - href: syllabus/syllabus-resources.qmd
+            text: University resources
+          - href: index.qmd
+            text: Schedule
+            
+  page-footer:
+    right: 'This page is built with [Quarto](https://quarto.org/).'
+    left: "&copy; Copyright 2026 John Zito"
+    background: "#BE394F"
+
+format: 
+  html:
+    mainfont: Atkinson Hyperlegible
+    highlight-style: a11y-light
+
+theme:
+  light: [cosmo, style/sta199.scss]
+#  dark: [cosmo, style/sta199.scss, style/dark.scss]
+linkcolor: "#798b93"
+toc: true
+code-copy: hover
+code-link: true
+code-overflow: wrap
+
+execute:
+  freeze: auto
+  
