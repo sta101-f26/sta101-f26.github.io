@@ -1,0 +1,7 @@
+---
+title: "Student news"
+subtitle: "Support your classmates!"
+format: html
+---
+
+{{< include student-news/li-house.qmd >}}
