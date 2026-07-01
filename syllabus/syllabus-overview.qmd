@@ -4,23 +4,19 @@ editor:
   mode: source
 ---
 
-## Description
+# Description
 
-This is a course on the mathematics of probability and statistics. In **probability**, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon typically behave. In **statistics**, we do the reverse; we observe realizations of a random phenomenon with *unknown* distribution, and then use the data to figure out what the distribution is. We will spend twelve weeks on the first, and then three weeks on the second. Topics include set theory, probability spaces, counting methods, conditional probability, discrete and (absolutely) continuous random variables, transformations of random variables, (pseudo)random number generation, bivariate distributions, concentration inequalities, limit theorems, maximum likelihood estimation, and Bayesian inference with conjugate priors. 
+**What the course catalog says** ([source](https://stat.duke.edu/courses/data-analysis-and-statistical-inference-0)): Introduction to statistics as a science of understanding and analyzing data. Themes include data collection, exploratory analysis, inference, and modeling. Focus on principles underlying quantitative research in social sciences, humanities, and public policy. Research projects teach the process of scientific discovery and synthesis and critical evaluation of research and statistical arguments. Readings give perspective on why in 1950, S. Wilks said, 'Statistical thinking will one day be as necessary a qualification for efficient citizenship as the ability to read and write.'
 
-Aside from the concrete topics, the course emphasizes four generic intellectual themes:
+**What JZ says**: If you are enrolled in this class, you probably... This may be the first and last quantitative source you take of any kind. Nevertheless, you will go on to read newspapers, vote in elections, have difficult conversations with doctors, and so on. This class covers the stuff I think you should know so that you don't get completely hosed in those scenarios. Learn by doing by using modern computational tools to analyze real data. Use simulation to understand the main ideas of inference, but also dig into the math a little bit. Applications, coding, simulation, math. 
 
-- Students in this class will deepen their mathematical maturity. They will get a workout with all of the main ideas and techniques of univariate calculus, they will encounter topics like set theory and combinatorics which may be new to them, and they will get a taste of rigorous mathematical proof;
-- Probability and statistics weasel their way into pretty much everything these days, and students will study a wide variety of famous and obscure applications coming from the natural and social sciences, technology and industry, and even arts and culture;
-- Probability and statistics are often counterintuitive, and humans frequently make silly and harmful mistakes in reasoning. Students will use their mathematical knowledge to identify and critique these errors...and hopefully avoid making them themselves;
-- This is a course about doing the math, but in the modern era, this has a symbiotic relationship with computer simulation. Simulation is used both to verify and probe mathematical results, as well as to substitute for them when a proof remains beyond the frontier. Students will learn the basics of the `R` programming language and use it to simulate probabilistic environments and reinforce their mathematical reasoning.
+**Prerequisites:** a body temperature roughly in the nineties.
 
-**Prerequisites:** single-variable calculus.
-
-## Meetings
+# Meetings
 
 | Meeting  | Location                       | Time                   | Staff  |
 |----------|--------------------------------|------------------------|--------|
-| Lectures | Old Chem 201                   | MoWe 3:05 PM - 4:20 PM | JZ   |
-| Lab 01   | Perkins LINK 060 (Classroom 1) | Th 1:25 PM - 2:40 PM   | TBD |
-| Lab 02   | Perkins LINK 060 (Classroom 1) | Th 3:05 PM - 4:20 PM   | TBD |
+| Lectures | Social Sciences 139        | TuTh 3:05 PM - 4:20 PM | JZ   |
+| Lab 01   | Old Chem 201 | F 10:05 AM - 11:20 AM   | TBD |
+| Lab 02   | Old Chem 201 | F 11:45 AM - 01:00 PM   | TBD |
+| Lab 03   | Old Chem 201 | F 01:25 PM - 02:40 PM   | TBD |
