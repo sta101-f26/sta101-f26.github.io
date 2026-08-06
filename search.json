@@ -4,33 +4,155 @@
     "href": "syllabus/syllabus-overview.html",
     "title": "Course overview",
     "section": "",
-    "text": "This is a course on the mathematics of probability and statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon typically behave. In statistics, we do the reverse; we observe realizations of a random phenomenon with unknown distribution, and then use the data to figure out what the distribution is. We will spend twelve weeks on the first, and then three weeks on the second. Topics include set theory, probability spaces, counting methods, conditional probability, discrete and (absolutely) continuous random variables, transformations of random variables, (pseudo)random number generation, bivariate distributions, concentration inequalities, limit theorems, maximum likelihood estimation, and Bayesian inference with conjugate priors.\nAside from the concrete topics, the course emphasizes four generic intellectual themes:\n\nStudents in this class will deepen their mathematical maturity. They will get a workout with all of the main ideas and techniques of univariate calculus, they will encounter topics like set theory and combinatorics which may be new to them, and they will get a taste of rigorous mathematical proof;\nProbability and statistics weasel their way into pretty much everything these days, and students will study a wide variety of famous and obscure applications coming from the natural and social sciences, technology and industry, and even arts and culture;\nProbability and statistics are often counterintuitive, and humans frequently make silly and harmful mistakes in reasoning. Students will use their mathematical knowledge to identify and critique these errors…and hopefully avoid making them themselves;\nThis is a course about doing the math, but in the modern era, this has a symbiotic relationship with computer simulation. Simulation is used both to verify and probe mathematical results, as well as to substitute for them when a proof remains beyond the frontier. Students will learn the basics of the R programming language and use it to simulate probabilistic environments and reinforce their mathematical reasoning.\n\nPrerequisites: single-variable calculus.",
+    "text": "Description\nWhat the course catalog says (source): Introduction to statistics as a science of understanding and analyzing data. Themes include data collection, exploratory analysis, inference, and modeling. Focus on principles underlying quantitative research in social sciences, humanities, and public policy. Research projects teach the process of scientific discovery and synthesis and critical evaluation of research and statistical arguments. Readings give perspective on why in 1950, S. Wilks said, ‘Statistical thinking will one day be as necessary a qualification for efficient citizenship as the ability to read and write.’\nWhat JZ says: If you are enrolled in this class, you probably… This may be the first and last quantitative source you take of any kind. Nevertheless, you will go on to read newspapers, vote in elections, have difficult conversations with doctors, and so on. This class covers the stuff I think you should know so that you don’t get completely hosed in those scenarios. Learn by doing by using modern computational tools to analyze real data. Use simulation to understand the main ideas of inference, but also dig into the math a little bit. Applications, coding, simulation, math.\nPrerequisites: a body temperature roughly in the nineties.\n\n\nMeetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 139\nTuTh 3:05 PM - 4:20 PM\nJZ\n\n\nLab 01\nOld Chem 201\nF 10:05 AM - 11:20 AM\nTBD\n\n\nLab 02\nOld Chem 201\nF 11:45 AM - 01:00 PM\nTBD\n\n\nLab 03\nOld Chem 201\nF 01:25 PM - 02:40 PM\nTBD",
     "crumbs": [
       "Syllabus",
       "Overview"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-overview.html#description",
-    "href": "syllabus/syllabus-overview.html#description",
-    "title": "Course overview",
+    "objectID": "syllabus/student-news.html",
+    "href": "syllabus/student-news.html",
+    "title": "Student news",
     "section": "",
-    "text": "This is a course on the mathematics of probability and statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon typically behave. In statistics, we do the reverse; we observe realizations of a random phenomenon with unknown distribution, and then use the data to figure out what the distribution is. We will spend twelve weeks on the first, and then three weeks on the second. Topics include set theory, probability spaces, counting methods, conditional probability, discrete and (absolutely) continuous random variables, transformations of random variables, (pseudo)random number generation, bivariate distributions, concentration inequalities, limit theorems, maximum likelihood estimation, and Bayesian inference with conjugate priors.\nAside from the concrete topics, the course emphasizes four generic intellectual themes:\n\nStudents in this class will deepen their mathematical maturity. They will get a workout with all of the main ideas and techniques of univariate calculus, they will encounter topics like set theory and combinatorics which may be new to them, and they will get a taste of rigorous mathematical proof;\nProbability and statistics weasel their way into pretty much everything these days, and students will study a wide variety of famous and obscure applications coming from the natural and social sciences, technology and industry, and even arts and culture;\nProbability and statistics are often counterintuitive, and humans frequently make silly and harmful mistakes in reasoning. Students will use their mathematical knowledge to identify and critique these errors…and hopefully avoid making them themselves;\nThis is a course about doing the math, but in the modern era, this has a symbiotic relationship with computer simulation. Simulation is used both to verify and probe mathematical results, as well as to substitute for them when a proof remains beyond the frontier. Students will learn the basics of the R programming language and use it to simulate probabilistic environments and reinforce their mathematical reasoning.\n\nPrerequisites: single-variable calculus.",
+    "text": "Fall Vocal Showcase\n\nSunday August 30;\nunclear? 7:00 PM - 10:00 PM?\nPage Auditorium.\n\nPOSTER? SOCIALS? WHO DO WE HAVE PERFORMING?\n\n\nFall Dance Showcase\n\nSaturday August 29;\n7:00 PM - 10:00 PM;\nPage Auditorium.\n\nPOSTER? SOCIALS? WHO DO WE HAVE PERFORMING?\n\n\nSophie’s House Course\nOur own Sophie Li is giving a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice.",
     "crumbs": [
-      "Syllabus",
-      "Overview"
+      "Student news!"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-overview.html#meetings",
-    "href": "syllabus/syllabus-overview.html#meetings",
-    "title": "Course overview",
-    "section": "Meetings",
-    "text": "Meetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nOld Chem 201\nMoWe 3:05 PM - 4:20 PM\nJZ\n\n\nLab 01\nPerkins LINK 060 (Classroom 1)\nTh 1:25 PM - 2:40 PM\nTBD\n\n\nLab 02\nPerkins LINK 060 (Classroom 1)\nTh 3:05 PM - 4:20 PM\nTBD",
+    "objectID": "syllabus/syllabus-team.html",
+    "href": "syllabus/syllabus-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nChen, Songliang\n TA\nDay/Time TBD\nLocation TBD\n\n\n\nDel Preto, Matthew\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nZhang, Christina\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nZito, John\nInstructor\nDay/Time TBD\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
-      "Overview"
+      "Teaching team"
     ]
+  },
+  {
+    "objectID": "syllabus/student-news/chronicle.html",
+    "href": "syllabus/student-news/chronicle.html",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "Anabel Howery does photos. Who else?"
+  },
+  {
+    "objectID": "syllabus/student-news/fall-dance-showcase.html",
+    "href": "syllabus/student-news/fall-dance-showcase.html",
+    "title": "Fall Dance Showcase",
+    "section": "",
+    "text": "Fall Dance Showcase\n\nSaturday August 29;\n7:00 PM - 10:00 PM;\nPage Auditorium.\n\nPOSTER? SOCIALS? WHO DO WE HAVE PERFORMING?"
+  },
+  {
+    "objectID": "syllabus/syllabus-materials.html",
+    "href": "syllabus/syllabus-materials.html",
+    "title": "Course materials",
+    "section": "",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris DeGroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-materials.html#textbooks",
+    "href": "syllabus/syllabus-materials.html#textbooks",
+    "title": "Course materials",
+    "section": "",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris DeGroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-materials.html#technology",
+    "href": "syllabus/syllabus-materials.html#technology",
+    "title": "Course materials",
+    "section": "Technology",
+    "text": "Technology\nLecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should always plan to bring a laptop or tablet device to lab. In general, you will need access to a device with internet so that you can use the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 101 Data Analysis and Statistical Inference",
+    "section": "",
+    "text": "Under construction!\n\n\n\nThis course begins at 3:05 PM on Tuesday August 25, 2026. Until then, everything on this course page is subject to change.\n\n\nBelow is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🍔 ae 01\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n\n\n\n\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5  📘 ims - ch 6\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data \n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🎥 Simple linear regression\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n🎥 Outliers in linear regression\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Clasification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ WHEN?\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "crumbs": [
+      "Syllabus",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "slides/00-welcome.html",
+    "href": "slides/00-welcome.html",
+    "title": "Welcome to STA 101!",
+    "section": "",
+    "text": "blah blah"
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html",
+    "href": "syllabus/syllabus-assignments.html",
+    "title": "Assignments and grading",
+    "section": "",
+    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on the usual thresholds:",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#labs-10",
+    "href": "syllabus/syllabus-assignments.html#labs-10",
+    "title": "Assignments and grading",
+    "section": "Labs (10%)",
+    "text": "Labs (10%)\nIn lab every Thursday, you will complete a guided activity that introduces you to special topics, extensions, or applications of the latest course material. Along the way, we will teach you how to implement some of the ideas from the course in the R programming language. Ideally you should be able to finish the activity by the end of your lab period, but in any case, you must submit your lab work by 11:59 ET PM that same day.\nEach lab assignment will be graded on the following scale:\n\n1.0: a complete, good faith attempt at every part of every problem;\n0.5: partially complete;\n0.0: no submission, or mostly incomplete.\n\n\n\n\n\n\n\nGrace\n\n\n\nYour two lowest lab scores will be dropped at the end of the semester.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#problem-sets-20",
+    "href": "syllabus/syllabus-assignments.html#problem-sets-20",
+    "title": "Assignments and grading",
+    "section": "Problem Sets (20%)",
+    "text": "Problem Sets (20%)\nMathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but you will also practice the coding skills developed in lab. You may compose your solutions however you like (scan or photograph written work, LaTeX, Quarto, handwriting capture on a tablet, whatever) so long as you ultimately upload a single .pdf file to Gradescope.\n\n\n\n\n\n\nGrace\n\n\n\nYour lowest problem set score will be dropped at the end of the semester.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#exams-70",
+    "href": "syllabus/syllabus-assignments.html#exams-70",
+    "title": "Assignments and grading",
+    "section": "Exams (70%)",
+    "text": "Exams (70%)\nThere will be three exams. The dates, times, and locations are firm, so mark your calendar now:\n\nMidterm 1 (20%): Thursday October 8 during your lab;\nMidterm 2 (20%): Thursday November 12 during your lab;\nFinal (30%): Monday December 14 from 2pm to 5pm in Old Chem 201.\n\nThese will be old school, pencil-and-paper, in-class exams. You are allowed only two resources:\n\na “dumb” calculator (no wi-fi). You will not actually need it, but if you want it as a security blanket, be my guest;\nboth sides of one 8.5” x 11” sheet of notes, prepared by you and you alone. You can create it however you wish: handwritten, on a computer, on a tablet device, etc.\n\nIf you seek testing accommodations, make sure the Student Disability Access Office sends me a letter, and then please make your appointments in the Testing Center as soon as possible.\n\n\n\n\n\n\nGrace\n\n\n\nIf you do better on the final exam than you did on one of the midterms, we will replace your lowest midterm exam score with your final exam score.\n\n\n\n\n\n\n\n\nNo make-up exams\n\n\n\nIf you are absent from one of the midterms for whatever reason, there will not be a make-up. Pursuant to the above policy, we will simply replace the missed midterm score with the final exam score. If you miss the final exam, you get a zero unless you have a Dean’s Excuse.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/student-news/li-house.html",
+    "href": "syllabus/student-news/li-house.html",
+    "title": "Sophie’s House Course",
+    "section": "",
+    "text": "Sophie’s House Course\nOur own Sophie Li is giving a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
+  },
+  {
+    "objectID": "syllabus/student-news/fall-vocal-showcase.html",
+    "href": "syllabus/student-news/fall-vocal-showcase.html",
+    "title": "Fall Vocal Showcase",
+    "section": "",
+    "text": "Fall Vocal Showcase\n\nSunday August 30;\nunclear? 7:00 PM - 10:00 PM?\nPage Auditorium.\n\nPOSTER? SOCIALS? WHO DO WE HAVE PERFORMING?"
   },
   {
     "objectID": "syllabus/syllabus-resources.html",
@@ -96,105 +218,6 @@
     "crumbs": [
       "Syllabus",
       "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html",
-    "href": "syllabus/syllabus-assignments.html",
-    "title": "Assignments and grading",
-    "section": "",
-    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on the usual thresholds:",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#labs-10",
-    "href": "syllabus/syllabus-assignments.html#labs-10",
-    "title": "Assignments and grading",
-    "section": "Labs (10%)",
-    "text": "Labs (10%)\nIn lab every Thursday, you will complete a guided activity that introduces you to special topics, extensions, or applications of the latest course material. Along the way, we will teach you how to implement some of the ideas from the course in the R programming language. Ideally you should be able to finish the activity by the end of your lab period, but in any case, you must submit your lab work by 11:59 ET PM that same day.\nEach lab assignment will be graded on the following scale:\n\n1.0: a complete, good faith attempt at every part of every problem;\n0.5: partially complete;\n0.0: no submission, or mostly incomplete.\n\n\n\n\n\n\n\nGrace\n\n\n\nYour two lowest lab scores will be dropped at the end of the semester.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#problem-sets-20",
-    "href": "syllabus/syllabus-assignments.html#problem-sets-20",
-    "title": "Assignments and grading",
-    "section": "Problem Sets (20%)",
-    "text": "Problem Sets (20%)\nMathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but you will also practice the coding skills developed in lab. You may compose your solutions however you like (scan or photograph written work, LaTeX, Quarto, handwriting capture on a tablet, whatever) so long as you ultimately upload a single .pdf file to Gradescope.\n\n\n\n\n\n\nGrace\n\n\n\nYour lowest problem set score will be dropped at the end of the semester.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#exams-70",
-    "href": "syllabus/syllabus-assignments.html#exams-70",
-    "title": "Assignments and grading",
-    "section": "Exams (70%)",
-    "text": "Exams (70%)\nThere will be three exams. The dates, times, and locations are firm, so mark your calendar now:\n\nMidterm 1 (20%): Thursday October 8 during your lab;\nMidterm 2 (20%): Thursday November 12 during your lab;\nFinal (30%): Monday December 14 from 2pm to 5pm in Old Chem 201.\n\nThese will be old school, pencil-and-paper, in-class exams. You are allowed only two resources:\n\na “dumb” calculator (no wi-fi). You will not actually need it, but if you want it as a security blanket, be my guest;\nboth sides of one 8.5” x 11” sheet of notes, prepared by you and you alone. You can create it however you wish: handwritten, on a computer, on a tablet device, etc.\n\nIf you seek testing accommodations, make sure the Student Disability Access Office sends me a letter, and then please make your appointments in the Testing Center as soon as possible.\n\n\n\n\n\n\nGrace\n\n\n\nIf you do better on the final exam than you did on one of the midterms, we will replace your lowest midterm exam score with your final exam score.\n\n\n\n\n\n\n\n\nNo make-up exams\n\n\n\nIf you are absent from one of the midterms for whatever reason, there will not be a make-up. Pursuant to the above policy, we will simply replace the missed midterm score with the final exam score. If you miss the final exam, you get a zero unless you have a Dean’s Excuse.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 101 Data Analysis and Statistical Inference",
-    "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n1\nTue, Aug 25\n\n🧑‍🏫\n\n\n\n\n\nThu, Aug 27\n\n🧑‍🏫\n\n\n\n\n\nFri, Aug 28\n\n💻 Lab\n\n\n\n\n2\nTue, Sep 1\n\n🧑‍🏫\n\n\n\n\n\nThu, Sep 3\n\n🧑‍🏫\n\n\n\n\n\nFri, Sep 4\n\n💻 Lab\n\n\n\n\n3\nTue, Sep 8\n\n🧑‍🏫\n\n\n\n\n\nThu, Sep 10\n\n🧑‍🏫\n\n\n\n\n\nFri, Sep 11\n\n💻 Lab\n\n\n\n\n4\nTue, Sep 15\n\n🧑‍🏫\n\n\n\n\n\nThu, Sep 17\n\n🧑‍🏫\n\n\n\n\n\nFri, Sep 18\n\n💻 Lab\n\n\n\n\n5\nTue, Sep 22\n\n🧑‍🏫\n\n\n\n\n\nThu, Sep 24\n\n🧑‍🏫\n\n\n\n\n\nFri, Sep 25\n\n💻 Lab\n\n\n\n\n6\nTue, Sep 29\n\n🧑‍🏫\n\n\n\n\n\nThu, Oct 1\n\n🧑‍🏫\n\n\n\n\n\nFri, Oct 2\n\n💻 Lab\n\n\n\n\n7\nTue, Oct 6\n\n🧑‍🏫\n\n\n\n\n\nThu, Oct 8\n\n🧑‍🏫\n\n\n\n\n\nFri, Oct 9\n\n💻 Lab\n\n\n\n\n8\nTue, Oct 13\n\n❌ Fall Break - No Lecture\n\n\n\n\n\n\nThu, Oct 15\n\n🧑‍🏫\n\n\n\n\n\nFri, Oct 16\n\n💻 Lab\n\n\n\n\n9\nTue, Oct 20\n\n🧑‍🏫\n\n\n\n\n\nThu, Oct 22\n\n🧑‍🏫\n\n\n\n\n\nFri, Oct 23\n\n💻 Lab\n\n\n\n\n10\nTue, Oct 27\n\n🧑‍🏫\n\n\n\n\n\nThu, Oct 29\n\n🧑‍🏫\n\n\n\n\n\nFri, Oct 30\n\n💻 Lab\n\n\n\n\n11\nTue, Nov 3\n\n🧑‍🏫\n\n\n\n\n\nThu, Nov 5\n\n🧑‍🏫\n\n\n\n\n\nFri, Nov 6\n\n💻 Lab\n\n\n\n\n12\nTue, Nov 10\n\n🧑‍🏫\n\n\n\n\n\nThu, Nov 12\n\n🧑‍🏫\n\n\n\n\n\nFri, Nov 13\n\n💻\n\n\n\n\n13\nTue, Nov 17\n\n🧑‍🏫\n\n\n\n\n\nThu, Nov 19\n\n🧑‍🏫\n\n\n\n\n\nFri, Nov 20\n\n💻\n\n\n\n\n14\nTue, Nov 24\n\n🧑‍🏫\n\n\n\n\n\nThu, Nov 26\n\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\nFri, Nov 27\n\n❌ Thanksgiving - No Lab\n\n\n\n\n\n15\nTue, Dec 1\n\n🧑‍🏫\n\n\n\n\n\nThu, Dec 3\n\n🧑‍🏫\n\n\n\n\n\nFri, Dec 4\n\n💻\n\n\n\n\n16\nThu, Dec 10\n\n📝 Final (2PM - 5PM)",
-    "crumbs": [
-      "Syllabus",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-materials.html",
-    "href": "syllabus/syllabus-materials.html",
-    "title": "Course materials",
-    "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris DeGroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-materials.html#textbooks",
-    "href": "syllabus/syllabus-materials.html#textbooks",
-    "title": "Course materials",
-    "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris DeGroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-materials.html#technology",
-    "href": "syllabus/syllabus-materials.html#technology",
-    "title": "Course materials",
-    "section": "Technology",
-    "text": "Technology\nLecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should always plan to bring a laptop or tablet device to lab. In general, you will need access to a device with internet so that you can use the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-team.html",
-    "href": "syllabus/syllabus-team.html",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nHu, Yuang\nTA\nMon 7:30 PM - 9:30 PM\nremote (Zoom link on Canvas)\n\n\n\nLiu, Aurora\nHead TA\nWed 4:30 PM - 5:30 PM\nOld Chem 203B\nThu 4:30 PM - 5:30 PM\nPerkins LINK 087 (Classroom 3)\n\n\n\nMa, Liane\nTA\nSun 10:00 AM - 12:00 PM\nremote (Zoom link on Canvas)\n\n\n\nZito, John\nInstructor\nF 1:00 PM - 3:30 PM\nor by appointment\nOld Chem 207",
-    "crumbs": [
-      "Syllabus",
-      "Teaching team"
     ]
   },
   {
