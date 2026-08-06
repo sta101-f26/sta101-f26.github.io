@@ -4,24 +4,32 @@ title: "Course materials"
 
 ## Textbooks
 
-You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:
+All books are **freely available online**:
 
--   `[Ross]` *A First Course in Probability* by Sheldon Ross;
--   `[HTZ]` *Probability and Statistical Inference* by Robert Hogg, Elliot Tanis, and Dale Zimmerman;
--   `[DS]` *Probability and Statistics* by Morris DeGroot and Mark Schervish;
--   `[Wass]` *All of Statistics* by Larry Wasserman.
+1.  📘 `[ims]`: Mine Çetinkaya-Rundel and Jo Hardin (2024): [*Introduction to Modern Statistics, 2e*](https://openintrostat.github.io/ims/), OpenIntro;
+2.  📗 `[r4ds]`: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund (2022): [*R for Data Science, 2e*](https://r4ds.hadley.nz/), O'Reilly.
 
-In the **PREPARE** column of the [course schedule](https://sta240-f26.github.io/), I will indicate which parts of a book correspond to the lectures.
+`ims` is the main course text, and it is supported by extra resources that you may find helpful:
+
+- **Tutorials**: every section of the book has an accompanying [web tutorial](https://openintrostat.github.io/ims-tutorials/) that walks you through the coding skills necessary to execute the ideas;
+- **Video lectures**: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the units of this course. Sometimes these may venture deeper into R coding than is necessary for 101, but you'll be fine.
+
+You are not required to check these out, but they are available if you want to prepare for lecture or if you seek extra practice or alternative instruction. As we go along I will link to the relevant stuff in the **MORE** section of our course schedule.
+
+::: callout-note
+
+Our course (the lectures, labs, and homeworks) is meant to be self-contained. As I said, these tutorials and videos are just optional practice. And in particular, if you encounter new ideas in the tutorials or videos that are not introduced anywhere else in the course materials, then you are not responsible for knowing these things on an exam. 
+:::
 
 ## Technology
 
-Lecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should always plan to bring a laptop or tablet device to lab. In general, you will need access to a device with internet so that you can use the following:
+You will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described [here](/syllabus/syllabus-resources.html#course-costs). Armed with your trusty laptop, you must be able to access the following:
 
--   [This course page](https://sta240-f26.github.io/) that you are on right now;
+-   [This course page](https://sta101-f26.github.io/) that you are on right now;
 -   `R`/`RStudio` via the [Duke Container Manager](https://cmgr.oit.duke.edu/containers);
 -   [Canvas](https://go.canvas.duke.edu/), through which you can access...
-    -   [Gradescope](https://www.gradescope.com/courses/1071176);
-    -   [Ed Discussion](https://edstem.org/us/courses/80868/discussion);
+    -   [Gradescope](https://www.gradescope.com/courses/1345015);
+    -   [Ed Discussion](https://edstem.org/us/courses/101045/discussion);
 -   [Zoom](https://duke.zoom.us/) (e.g. for remote office hours).
 
 If access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.
