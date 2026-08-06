@@ -24,10 +24,10 @@ website:
         href: https://go.canvas.duke.edu/
         text: "Canvas"
       - icon: people
-        href: https://edstem.org/
+        href: https://edstem.org/us/courses/101045/discussion
         text: "Ed Discussion"
       - icon: file-arrow-up
-        href: https://www.gradescope.com/
+        href: https://www.gradescope.com/courses/1345015
         text: "Gradescope"
 
     style: docked
