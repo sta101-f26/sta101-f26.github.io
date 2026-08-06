@@ -12,7 +12,7 @@ All books are **freely available online**:
 `ims` is the main course text, and it is supported by extra resources that you may find helpful:
 
 - **Tutorials**: every section of the book has an accompanying [web tutorial](https://openintrostat.github.io/ims-tutorials/) that walks you through the coding skills necessary to execute the ideas;
-- **Video lectures**: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you'll be fine.
+- **Video lectures**: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you'll learn to tune out what you don't need.
 
 You are not required to check these out, but they are available if you want to prepare for lecture or if you seek extra practice or alternative instruction. As we go along I will link to the relevant stuff in the **MORE** section of our course schedule.
 
