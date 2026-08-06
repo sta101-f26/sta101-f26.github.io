@@ -10,7 +10,7 @@ editor:
 |                           | Castillo, Jesus    | TA            | **Day/Time TBD**\              |
 |                           |                    |               | Location TBD                   |
 +---------------------------+--------------------+---------------+--------------------------------+
-|                           | Chen, Songliang    | Head TA       | **Day/Time TBD**\              |
+|                           | Chen, Songliang    |      TA       | **Day/Time TBD**\              |
 |                           |                    |               | Location TBD                   |
 +---------------------------+--------------------+---------------+--------------------------------+
 |                           | Del Preto, Matthew | TA            | **Day/Time TBD**\              |
