@@ -52,6 +52,11 @@ website:
             text: University resources
           - href: index.qmd
             text: Schedule
+      - section: "Code helpers"
+      - section: "Labs"
+      - section: "Homeworks"
+      - section: "Project"
+      - section: "Exam Study Guides"
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
