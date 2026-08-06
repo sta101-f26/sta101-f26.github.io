@@ -1,0 +1,12 @@
+---
+title: "Welcome to STA 101!"
+subtitle: "Lecture 0"
+date: "2026-08-25"
+format: revealjs
+auto-stretch: false
+---
+
+
+
+
+blah blah
