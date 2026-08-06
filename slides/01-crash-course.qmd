@@ -2,6 +2,15 @@
 title: "All of STA 101 in 75 minutes"
 subtitle: "Lecture 1"
 date: "2026-08-27"
-format: revealjs
-auto-stretch: false
+format: 
+  revealjs: 
+    output-file: 01-crash-course-slides.html
+    footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: images/logo.png
+    toc: false
+  html: 
+    code-link: true
 ---

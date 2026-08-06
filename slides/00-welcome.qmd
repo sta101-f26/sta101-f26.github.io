@@ -2,8 +2,17 @@
 title: "Welcome to STA 101!"
 subtitle: "Lecture 0"
 date: "2026-08-25"
-format: revealjs
-auto-stretch: false
+format: 
+  revealjs: 
+    output-file: 00-welcome-slides.html
+    footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    logo: images/logo.png
+    toc: false
+  html: 
+    code-link: true
 ---
 
 
