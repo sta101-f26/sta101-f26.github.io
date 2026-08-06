@@ -31,17 +31,19 @@ d <- read_sheet("https://docs.google.com/spreadsheets/d/1fISQ-TZpEbdcB1XUypBWOfN
 ```{r}
 #| echo: false
 #| column: screen-inset-right
+
+table_width <- 80
+
 d |>
   filter(!is.na(session)) |>
   select(-dow, -admin_notes, -number, -session) |>
   mutate(
     date = as.Date(date),
     ) |>
-  relocate(due, .after = materials) |>
   gt() |>
   fmt_date(date, date_style = 31) |>
   sub_missing(
-    columns = c(week, prepare, topic, materials, due), 
+    columns = c(week, more, topic, reading, materials, due), 
     missing_text = ""
   ) |>
   cols_align(
@@ -54,26 +56,26 @@ d |>
   ) |>
   cols_align(
     align = "left", 
-    columns = c(topic, prepare, materials, due)
+    columns = c(topic, more, materials, due, reading)
   ) |>
-  tab_style(
-    style = cell_text(
-      color = "#b4b4b4"
-    ),
-    locations = cells_body(
-      columns = c(prepare),
-      rows = prepare == "*To be posted*"
-    )
-  ) |>
-  tab_style(
-    style = cell_text(
-      color = "#b4b4b4"
-    ),
-    locations = cells_body(
-      columns = c(materials),
-      rows = materials == "*To be posted*"
-    )
-  ) |>
+#  tab_style(
+#    style = cell_text(
+#      color = "#b4b4b4"
+#    ),
+#    locations = cells_body(
+#      columns = c(more),
+#      rows = more == "*To be posted*"
+#    )
+#  ) |>
+#  tab_style(
+#    style = cell_text(
+#      color = "#b4b4b4"
+#    ),
+#    locations = cells_body(
+#      columns = c(materials),
+#      rows = materials == "*To be posted*"
+#    )
+#  ) |>
   tab_style(
     style = cell_borders(
       sides = "right",
@@ -81,7 +83,7 @@ d |>
       style = "solid"
     ),
     locations = cells_body(
-      columns = c(date, topic, prepare, materials)
+      columns = c(date, topic, more, materials, reading)
     )
   ) |>
   tab_style(
@@ -98,17 +100,19 @@ d |>
     )
   ) |>
   fmt_markdown(
-    columns = c(topic, prepare, materials, due)
+    columns = c(topic, more, materials, due, reading)
   ) |>
-  tab_options(table.width = pct(72),
+  # this gets all the hyperlinks and line breaks twerkin
+  tab_options(table.width = pct(table_width),
               table.align = 'left') |>
   cols_width(
-    week ~ pct(2),
-    date ~ pct(9), 
-    prepare ~ pct(12),
-    topic ~ pct(22),
-    materials ~ pct(15),
-    due ~ pct(12)
+    week ~ pct(.02 * table_width),
+    date ~ pct(.10 * table_width), 
+    topic ~ pct(.26 * table_width),
+    materials ~ pct(.08 * table_width),
+    reading ~ pct(.16 * table_width), 
+    more ~ pct(.25 * table_width),
+    due ~ pct(.13 * table_width)
   ) |>
   cols_label_with(fn = function(x) {
       janitor::make_clean_names(x, case = "title") |>
@@ -118,6 +122,7 @@ d |>
     }) |>
   tab_options(table.font.size = 13) |>
   opt_row_striping()
+# I have no clue what this last thing does
 ```
 
 
