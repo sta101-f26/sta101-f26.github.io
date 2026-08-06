@@ -13,5 +13,6 @@
 - How to organize proportion inference?
 - How to organize mean inference?
 - Need a better course description
-- Need to update materials
+- Need to update materials and textbooks
 - spruce up policies
+- need to launch gradescope and Ed and link to them
