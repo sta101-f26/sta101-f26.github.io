@@ -41,6 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -104,8 +106,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
-    <a href="https://edstem.org/" title="Ed Discussion" class="quarto-navigation-tool px-1" aria-label="Ed Discussion"><i class="bi bi-people"></i></a>
-    <a href="https://www.gradescope.com/" title="Gradescope" class="quarto-navigation-tool px-1" aria-label="Gradescope"><i class="bi bi-file-arrow-up"></i></a>
+    <a href="https://edstem.org/us/courses/101045/discussion" title="Ed Discussion" class="quarto-navigation-tool px-1" aria-label="Ed Discussion"><i class="bi bi-people"></i></a>
+    <a href="https://www.gradescope.com/courses/1345015" title="Gradescope" class="quarto-navigation-tool px-1" aria-label="Gradescope"><i class="bi bi-file-arrow-up"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -210,8 +212,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#late-work-and-extensions" id="toc-late-work-and-extensions" class="nav-link" data-scroll-target="#late-work-and-extensions">Late work and extensions</a></li>
   <li><a href="#regrade-requests" id="toc-regrade-requests" class="nav-link" data-scroll-target="#regrade-requests">Regrade requests</a></li>
   <li><a href="#attendance" id="toc-attendance" class="nav-link" data-scroll-target="#attendance">Attendance</a></li>
-  <li><a href="#accommodations" id="toc-accommodations" class="nav-link" data-scroll-target="#accommodations">Accommodations</a></li>
-  <li><a href="#duke-community-standard" id="toc-duke-community-standard" class="nav-link" data-scroll-target="#duke-community-standard">Duke Community Standard</a></li>
+  <li><a href="#accommodations" id="toc-accommodations" class="nav-link" data-scroll-target="#accommodations">Accommodations</a>
+  <ul class="collapse">
+  <li><a href="#academic" id="toc-academic" class="nav-link" data-scroll-target="#academic">Academic</a></li>
+  <li><a href="#religious" id="toc-religious" class="nav-link" data-scroll-target="#religious">Religious</a></li>
+  </ul></li>
+  <li><a href="#duke-community-standard" id="toc-duke-community-standard" class="nav-link" data-scroll-target="#duke-community-standard">Duke Community Standard</a>
+  <ul class="collapse">
+  <li><a href="#fine-fine-but-what-does-that-mean-in-sta-101" id="toc-fine-fine-but-what-does-that-mean-in-sta-101" class="nav-link" data-scroll-target="#fine-fine-but-what-does-that-mean-in-sta-101">Fine fine, but what does that mean in STA 101?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -239,33 +248,38 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="collaboration" class="level2">
 <h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
-<p>You are <em>enthusiastically encouraged</em> to work together and help one another on labs and problem sets. I would much rather you consult your peers than some daft language model. What I ask is that you <em>acknowledge</em> your collaborators. So, at the end of each problem in your write-up, leave a comment like “Ursula, Ignatius and I worked together on this problem,” or “Ethel explained to me how to do part b.” You are not being judged based on your acknowledgements, and there is no penalty for getting “too much” help from others. If you omit acknowledgements, I will assume you did your work solo. If your classmates tell a different story, I will have questions. But otherwise, so long as you are thorough and honest, there will be no problems.</p>
+<p>Collaboration is simply <em>required</em> on labs and the project. It is <em>forbidden</em> on the exams. It is <em>enthusiastically encouraged</em> on homeworks. You will learn a lot from helping each other. I would much rather you consult your peers than some daft language model. What I ask is that you <em>acknowledge</em> your collaborators. So, at the top of your write-up, leave a bulleted list of comments like “Ursula, Ignatius and I worked together on this problem,” or “Ethel explained to me how to do part b.” You are not being judged based on your acknowledgements, and there is no penalty for getting “too much” help from others. If you omit acknowledgements, I will assume you did your work solo. If your classmates tell a different story, I will have questions. But otherwise, so long as you are thorough and honest, there will be no problems.</p>
 <p>Having said all of that, you should not be crassly handing your solutions to others for them to brainlessly copy. This is plagiarism, and all involved will earn a zero on the assignment and be referred to the conduct office, both sharers and recipients alike. The write-up you submit must be your own work.</p>
 </section>
 <section id="use-of-outside-resources-including-ai" class="level2">
 <h2 class="anchored" data-anchor-id="use-of-outside-resources-including-ai">Use of outside resources, including AI</h2>
-<p>There are at least two reasons you might seek outside resources:</p>
+<p>You may make use of any online resources (e.g.&nbsp;<code>StackOverflow</code>) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.</p>
+<p>You should treat generative AI, such as ChatGPT, like other online resources. Two guiding principles govern how to use AI in this course:</p>
+<ol type="1">
+<li><p><em>Cognitive dimension:</em> “<a href="https://www.newyorker.com/culture/the-weekend-essay/why-ai-isnt-going-to-make-art">Using ChatGPT to complete assignments is like bringing a forklift into the weight room; you will never improve your cognitive fitness that way</a>.” Furthermore, 50% of your final course grade is determined by your performance on old school, no-tech exams. As such, outsourcing all of your <em>thinking</em> to an AI will probably end in humiliating disaster. To avoid this, I suggest you abstain from using language models to do the homework for you;</p></li>
+<li><p><em>Ethical dimension</em><strong>:</strong> Students using AI should be transparent about their use and ensure it aligns with academic integrity.</p></li>
+</ol>
 <ul>
-<li>✅ <strong>Extra practice or alternative instruction</strong>: Go crazy. Knock yourself out. Have a ball. The internet is saturated with good (and horrible) resources for learning this material, so if you find something that really resonates with you, have at it;</li>
-<li>❌ <strong>Doing the problems for you</strong>: If you find a solution online, or ask a language model to generate one, and you copy it down and submit it as your own work, that is plagiarism. If we detect it, you will earn a zero for that part of your write-up.</li>
+<li><p><i class="fa-solid fa-check" aria-label="check"></i> <strong>AI tools for code:</strong> You may use the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. The bare minimum citation must include the AI tool you’re using (e.g., ChatGPT), the text of your prompt, and a direct url to the conversation you had. The prompt you use cannot be copied and pasted directly from the assignment; you must create a prompt yourself.</p></li>
+<li><p><i class="fa-solid fa-ban" aria-label="ban"></i> <strong>AI tools for narrative:</strong> Unless instructed otherwise, you may not use generative AI to generate a narrative that you then copy-paste verbatim into an assignment or edit and then insert into your assignment.</p></li>
 </ul>
-<p>“<a href="https://www.newyorker.com/culture/the-weekend-essay/why-ai-isnt-going-to-make-art">Using ChatGPT to complete assignments is like bringing a forklift into the weight room; you will never improve your cognitive fitness that way</a>.” Furthermore, 60% of your final course grade is determined by your performance on old school, no-tech exams. As such, outsourcing all of your <em>thinking</em> to an AI will probably end in humiliating disaster. To avoid this, I suggest you abstain from using language models to do the problems for you.</p>
+<p>In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect <em>your</em> understanding of the course content. Identifying AI-generated content is fairly straightforward. Any code identified as AI-generated but not cited as such and any narrative identified as AI-generated will be considered plagiarism and treated as such.</p>
 </section>
 <section id="communication" class="level2">
 <h2 class="anchored" data-anchor-id="communication">Communication</h2>
-<p>If you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum <a href="https://edstem.org/us/courses/80868/discussion">Ed Discussion</a>. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions.</p>
+<p>If you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum <a href="https://edstem.org/us/courses/101045/discussion">Ed Discussion</a>. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions. <strong>Note</strong>: You can ask questions anonymously on Ed. The teaching team will still know your identity, but your peers will not.</p>
 <p>If you have questions about personal matters that may not be appropriate for the public course forum (e.g.&nbsp;illness, accommodations, etc), then please e-mail the instructor directly (john.zito@duke.edu).</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You can ask questions anonymously on Ed. The teaching team will still know your identity, but your peers will not.</p>
+<p>You should not be e-mailing the TAs directly for any reason. If you do, they will just forward it to me.</p>
 </div>
 </div>
 </section>
@@ -281,33 +295,39 @@ Note
 <li>You should submit separate regrade requests for each question you wish to dispute, not a single catch-all request;</li>
 <li>Requests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;</li>
 <li>Requests to dispute the number of points deducted for an incorrect response will not be considered;</li>
-<li><strong>No grades will be changed after the final exam has been administered on Friday December 12</strong>.</li>
+<li><strong>No grades will be changed after the final exam has been administered on Thursday December 10</strong>.</li>
 </ul>
 </section>
 <section id="attendance" class="level2">
 <h2 class="anchored" data-anchor-id="attendance">Attendance</h2>
-<p>(Attendance in lecture is not required. In fact, lecture attendance is discouraged if all you will do is putz around on your laptop.)</p>
-<p>(Attendance in lecture is not required. You are adults, and you know your priorities better than I do. Live your life. In fact, lecture attendance is <em>discouraged</em> if all you will do is putz around on your laptop.)</p>
-<p>Live your life. Attendance is not strictly required for any of the class meetings. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is probably the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.</p>
+<p>Lecture attendance is not required, and I am not tracking or enforcing it in any way. The responsibility lies with me to make class sufficiently engaging and informative that you choose to attend. That said, you will probably do better in this class if you attend lecture regularly. I leave it to you to be a grown-up and make a decision.</p>
+<p>Lab attendance on the other hand is required in order to receive credit for the assignments. Since lab work is always completed in teams, you can’t get credit if you leave your team hanging by not attending. There are ten graded labs in total, and we drop your two lowest scores at the end of the semester. We will use this policy to automatically absorb the effect of one-off absences due to brief illness, travel, job interviews, etc. If more challenging or protracted circumstances arise (e.g.&nbsp;bereavement or serious illness) that affect your lab attendance, please secure a <a href="https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work">dean’s excuse</a> and then reach out to the instructor directly (john.zito@duke.edu) to discuss special arrangements.</p>
 </section>
 <section id="accommodations" class="level2">
 <h2 class="anchored" data-anchor-id="accommodations">Accommodations</h2>
-<p>If you need accommodations for this class, you will need to register with the Student Disability Access Office (SDAO) and provide them with documentation related to your needs. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: <code>sdao@duke.edu</code> or <code>access.duke.edu</code>.</p>
+<section id="academic" class="level3">
+<h3 class="anchored" data-anchor-id="academic">Academic</h3>
+<p>If you seek accommodations for this class, you will need to register with the Student Disability Access Office (SDAO) and provide them with documentation related to your needs. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: <code>sdao@duke.edu</code> or <code>access.duke.edu</code>.</p>
+</section>
+<section id="religious" class="level3">
+<h3 class="anchored" data-anchor-id="religious">Religious</h3>
+<p>Students are permitted by university policy to be absent from class to observe a religious holiday. Accordingly, Trinity College of Arts &amp; Sciences and the Pratt School of Engineering have established procedures to be followed by students for notifying their instructors of an absence necessitated by the observance of a religious holiday. Please submit requests for religious accommodations at the beginning of the semester so that we can work to make suitable arrangements well ahead of time. You can find the policy and relevant notification form here: <a href="https://trinity.duke.edu/undergraduate/academic-policies/religious-holidays">trinity.duke.edu/undergraduate/academic-policies/religious-holidays</a></p>
+</section>
 </section>
 <section id="duke-community-standard" class="level2">
 <h2 class="anchored" data-anchor-id="duke-community-standard">Duke Community Standard</h2>
-<p>Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Members of this community commit to reflect upon and uphold these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity.</p>
-<p>Duke University has high expectations for students’ scholarship and conduct. In accepting admission, students indicate their willingness to subscribe to and be governed by the rules and regulations of the university, which flow from the <a href="https://dukecommunitystandard.students.duke.edu">Duke Community Standard (DCS)</a>.</p>
-<p>Regardless of course delivery format, it is the responsibility of all students to understand and follow all Duke policies, including but not limited to the <a href="https://dukecommunitystandard.students.duke.edu/policy/academic-dishonesty/">academic integrity policy</a> (e.g., completing one’s own work, following proper citation of sources, adhering to guidance around group work projects, and more). Ignoring these requirements is a violation of the DCS.</p>
-<p>Students can direct any questions or concerns regarding academic integrity to the Office of Student Conduct and Community Standards at <code>conduct@duke.edu</code> and can access the DCS guide at <a href="https://dukecommunitystandard.students.duke.edu/" class="uri">https://dukecommunitystandard.students.duke.edu/</a>.</p>
-<p>In STA 240 specifically…</p>
+<p>Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Members of this community commit to reflect upon and uphold these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity. Duke University has high expectations for students’ scholarship and conduct. In accepting admission, students indicate their willingness to subscribe to and be governed by the rules and regulations of the university, which flow from the <a href="https://dukecommunitystandard.students.duke.edu">Duke Community Standard (DCS)</a>. Regardless of course delivery format, it is the responsibility of all students to understand and follow all Duke policies, including but not limited to the <a href="https://dukecommunitystandard.students.duke.edu/policy/academic-dishonesty/">academic integrity policy</a> (e.g.&nbsp;completing one’s own work, following proper citation of sources, adhering to guidance around group work projects, and more). Ignoring these requirements is a violation of the DCS. Students can direct any questions or concerns regarding academic integrity to the Office of Student Conduct and Community Standards at <code>conduct@duke.edu</code> and can access the DCS guide at <a href="https://dukecommunitystandard.students.duke.edu/" class="uri">https://dukecommunitystandard.students.duke.edu/</a>.</p>
+<section id="fine-fine-but-what-does-that-mean-in-sta-101" class="level3">
+<h3 class="anchored" data-anchor-id="fine-fine-but-what-does-that-mean-in-sta-101">Fine fine, but what does that mean in STA 101?</h3>
+<p>If you submit work and I detect any violation of Duke’s academic honesty standards or of our course policies, it will automatically results in a zero for the relevant portion or the entire assignment, and I will immediately file a <a href="https://cm.maxient.com/reporting.php?DukeUniv">report</a> with the Office of Student Conduct &amp; Community Standards for further action. Furthermore:</p>
 <ul>
-<li>If a conduct violation results in a zero on a lab or problem set, that zero will not be dropped;</li>
-<li>If a conduct violation results in a zero on a midterm, that zero will not be replaced with your final exam score;</li>
+<li>If a conduct violation results in a zero on a lab or homework, that zero will not be dropped;</li>
+<li>If a conduct violation results in a zero on the midterm, that zero will not be replaced with your final exam score;</li>
 <li>If we discover that students are sharing and copying assignment solutions, all students involved will be penalized equally, the sharers the same as the recipients.</li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
