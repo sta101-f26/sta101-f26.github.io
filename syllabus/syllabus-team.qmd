@@ -16,7 +16,7 @@ editor:
 | ![](images/curly.jpg){.circ} | Del Preto, Matthew | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/shemp.jpg){.circ} | Zhang, Christina   | TA            | **Day/Time TBD**\              |
+| ![](images/cz.png){.circ}    | Zhang, Christina   | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/jz.jpg){.circ}    | Zito, John         | Instructor    | **Wed 9:00 AM - 12:00 PM**\    |
