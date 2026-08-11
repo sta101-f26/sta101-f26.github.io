@@ -10,7 +10,7 @@ editor:
 | ![](images/moe.jpg){.circ}   | Castillo, Jesus    | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/larry.jpg){.circ} | Chen, Songliang    | TA            | **Day/Time TBD**\              |
+| ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/curly.jpg){.circ} | Del Preto, Matthew | TA            | **Day/Time TBD**\              |
