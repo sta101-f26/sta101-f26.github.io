@@ -13,7 +13,7 @@ editor:
 | ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/curly.jpg){.circ} | Del Preto, Matthew | TA            | **Day/Time TBD**\              |
+| ![](images/md.jpeg){.circ}   | Del Preto, Matthew | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/cz.png){.circ}    | Zhang, Christina   | TA            | **Day/Time TBD**\              |
