@@ -25,7 +25,7 @@ Our course (the lectures, labs, and homeworks) is meant to be self-contained. As
 
 You will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described [here](/syllabus/syllabus-resources.html#course-costs). Armed with your trusty laptop, you must be able to access the following:
 
--   [This course page](https://sta101-f26.github.io/) that you are on right now;
+-   [This course page](/index.html) that you are on right now;
 -   `R`/`RStudio` via the [Duke Container Manager](https://cmgr.oit.duke.edu/containers);
 -   [Canvas](https://go.canvas.duke.edu/), through which you can access...
     -   [Gradescope](https://www.gradescope.com/courses/1345015);
