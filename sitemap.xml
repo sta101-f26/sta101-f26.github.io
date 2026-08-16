@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-overview.html</loc>
-    <lastmod>2026-08-06T19:07:52.613Z</lastmod>
+    <lastmod>2026-08-11T14:14:10.596Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/student-news.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-team.html</loc>
-    <lastmod>2026-08-06T14:52:30.428Z</lastmod>
+    <lastmod>2026-08-12T18:25:33.440Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/student-news/chronicle.html</loc>
@@ -22,15 +22,23 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-materials.html</loc>
-    <lastmod>2026-08-06T15:27:37.723Z</lastmod>
+    <lastmod>2026-08-16T04:50:31.948Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/01-crash-course-slides.html</loc>
-    <lastmod>2026-08-06T01:50:20.352Z</lastmod>
+    <lastmod>2026-08-16T04:46:50.168Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/01-crash-course.html</loc>
-    <lastmod>2026-08-06T01:50:20.352Z</lastmod>
+    <lastmod>2026-08-16T04:46:50.168Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
+    <lastmod>2026-08-16T15:43:52.831Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-01-minimum-wage.html</loc>
+    <lastmod>2026-08-11T21:53:27.984Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/index.html</loc>
@@ -38,11 +46,11 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/00-welcome.html</loc>
-    <lastmod>2026-08-06T11:33:04.152Z</lastmod>
+    <lastmod>2026-08-11T21:42:44.593Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/00-welcome-slides.html</loc>
-    <lastmod>2026-08-06T11:33:04.152Z</lastmod>
+    <lastmod>2026-08-11T21:42:44.593Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-assignments.html</loc>

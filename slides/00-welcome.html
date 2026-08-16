@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="John Zito">
 <meta name="dcterms.date" content="2026-08-25">
-
 <title>Welcome to STA 101! – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
@@ -22,8 +19,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -41,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -68,19 +99,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
 <meta property="og:title" content="Welcome to STA 101! – STA 101 Fall 2026">
 <meta property="og:description" content="Lecture 0">
+<meta property="og:image" content="https://sta101-f26.github.io/slides/images/00/sleeping-beauty-01.jpg">
 <meta property="og:site_name" content="STA 101 Fall 2026">
 </head>
-
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -91,16 +118,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
@@ -115,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/student-news.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Student news!</span></a>
@@ -129,8 +151,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -173,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Code helpers</span></span>
@@ -195,36 +217,101 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam Study Guides</span></span>
   </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-portrait-of-the-instructor-as-a-young-man" id="toc-a-portrait-of-the-instructor-as-a-young-man" class="nav-link active" data-scroll-target="#a-portrait-of-the-instructor-as-a-young-man">A Portrait of the Instructor as a Young Man</a></li>
-  <li><a href="#syllabus-highlights" id="toc-syllabus-highlights" class="nav-link" data-scroll-target="#syllabus-highlights">Syllabus highlights</a>
+<li><a href="#what-are-we-studying" id="toc-what-are-we-studying" class="nav-link active" data-scroll-target="#what-are-we-studying">What are we studying?</a></li>
+  <li><a href="#imagine-this-dialog" id="toc-imagine-this-dialog" class="nav-link" data-scroll-target="#imagine-this-dialog">Imagine this dialog</a></li>
+  <li>
+<a href="#a-brief-history-of-intro-stat" id="toc-a-brief-history-of-intro-stat" class="nav-link" data-scroll-target="#a-brief-history-of-intro-stat">A brief history of intro stat</a>
   <ul class="collapse">
-  <li><a href="#faq-101-vs-198-vs-199" id="toc-faq-101-vs-198-vs-199" class="nav-link" data-scroll-target="#faq-101-vs-198-vs-199">FAQ: 101 vs 198 vs 199?</a></li>
-  </ul></li>
-  <li><a href="#a-game" id="toc-a-game" class="nav-link" data-scroll-target="#a-game">A game</a>
-  <ul class="collapse">
-  <li><a href="#silly-exercise-serious-themes" id="toc-silly-exercise-serious-themes" class="nav-link" data-scroll-target="#silly-exercise-serious-themes">Silly exercise; serious themes</a></li>
-  </ul></li>
-  <li><a href="#one-last-thing" id="toc-one-last-thing" class="nav-link" data-scroll-target="#one-last-thing">One last thing</a>
-  <ul class="collapse">
-  <li><a href="#reserve-your-container" id="toc-reserve-your-container" class="nav-link" data-scroll-target="#reserve-your-container">Reserve your container</a></li>
-  </ul></li>
+<li><a href="#a-portrait-of-the-instructor-as-a-young-man" id="toc-a-portrait-of-the-instructor-as-a-young-man" class="nav-link" data-scroll-target="#a-portrait-of-the-instructor-as-a-young-man">A Portrait of the Instructor as a Young Man</a></li>
+  <li><a href="#why-did-it-fail-to-thrill-me" id="toc-why-did-it-fail-to-thrill-me" class="nav-link" data-scroll-target="#why-did-it-fail-to-thrill-me">Why did it fail to thrill me?</a></li>
+  <li><a href="#much-has-changed" id="toc-much-has-changed" class="nav-link" data-scroll-target="#much-has-changed">Much has changed</a></li>
+  <li><a href="#the-ladder" id="toc-the-ladder" class="nav-link" data-scroll-target="#the-ladder">The ladder</a></li>
+  <li><a href="#do-what-you-can-do-at-the-pace-you-can-do-it" id="toc-do-what-you-can-do-at-the-pace-you-can-do-it" class="nav-link" data-scroll-target="#do-what-you-can-do-at-the-pace-you-can-do-it">Do what you can do, at the pace you can do it</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="00-welcome-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</li>
+  <li>
+<a href="#syllabus-highlights" id="toc-syllabus-highlights" class="nav-link" data-scroll-target="#syllabus-highlights">Syllabus highlights</a>
+  <ul class="collapse">
+<li><a href="#bookmark-the-homepage" id="toc-bookmark-the-homepage" class="nav-link" data-scroll-target="#bookmark-the-homepage">Bookmark the homepage!</a></li>
+  <li><a href="#bookmark-the-course-page" id="toc-bookmark-the-course-page" class="nav-link" data-scroll-target="#bookmark-the-course-page">Bookmark the course page!</a></li>
+  <li><a href="#course-toolkit" id="toc-course-toolkit" class="nav-link" data-scroll-target="#course-toolkit">Course toolkit</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#wiggle-room" id="toc-wiggle-room" class="nav-link" data-scroll-target="#wiggle-room">Wiggle room</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab">Lab</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
+  <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project">Project</a></li>
+  <li><a href="#exam" id="toc-exam" class="nav-link" data-scroll-target="#exam">Exam</a></li>
+  <li><a href="#attendance" id="toc-attendance" class="nav-link" data-scroll-target="#attendance">Attendance</a></li>
+  <li><a href="#communication" id="toc-communication" class="nav-link" data-scroll-target="#communication">Communication</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration">Collaboration</a></li>
+  <li><a href="#use-of-outside-resources-including-ai" id="toc-use-of-outside-resources-including-ai" class="nav-link" data-scroll-target="#use-of-outside-resources-including-ai">Use of outside resources, including AI</a></li>
+  <li><a href="#faq-101-vs-198-vs-199" id="toc-faq-101-vs-198-vs-199" class="nav-link" data-scroll-target="#faq-101-vs-198-vs-199">FAQ: 101 vs 198 vs 199?</a></li>
+  </ul>
+</li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  <li>
+<a href="#a-game" id="toc-a-game" class="nav-link" data-scroll-target="#a-game">A game</a>
+  <ul class="collapse">
+<li><a href="#how-old-is-this-person" id="toc-how-old-is-this-person" class="nav-link" data-scroll-target="#how-old-is-this-person">How old is this person?</a></li>
+  <li><a href="#ethel-merman" id="toc-ethel-merman" class="nav-link" data-scroll-target="#ethel-merman">Ethel Merman</a></li>
+  <li><a href="#how-old-is-this-person-1" id="toc-how-old-is-this-person-1" class="nav-link" data-scroll-target="#how-old-is-this-person-1">How old is this person?</a></li>
+  <li><a href="#megan-thee-stallion" id="toc-megan-thee-stallion" class="nav-link" data-scroll-target="#megan-thee-stallion">Megan Thee Stallion</a></li>
+  <li><a href="#how-old-is-this-person-2" id="toc-how-old-is-this-person-2" class="nav-link" data-scroll-target="#how-old-is-this-person-2">How old is this person?</a></li>
+  <li><a href="#bong-joon-ho" id="toc-bong-joon-ho" class="nav-link" data-scroll-target="#bong-joon-ho">Bong Joon-ho</a></li>
+  <li><a href="#now-do-it-with-pictures" id="toc-now-do-it-with-pictures" class="nav-link" data-scroll-target="#now-do-it-with-pictures">Now do it with pictures…</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#lets-see-how-you-did" id="toc-lets-see-how-you-did" class="nav-link" data-scroll-target="#lets-see-how-you-did">Let’s see how you did</a>
+  <ul class="collapse">
+<li><a href="#babys-first-spreadsheet" id="toc-babys-first-spreadsheet" class="nav-link" data-scroll-target="#babys-first-spreadsheet">Baby’s first spreadsheet</a></li>
+  <li><a href="#anyone-know-who-this-is" id="toc-anyone-know-who-this-is" class="nav-link" data-scroll-target="#anyone-know-who-this-is">Anyone know who this is?</a></li>
+  <li><a href="#yuja-wang" id="toc-yuja-wang" class="nav-link" data-scroll-target="#yuja-wang">Yuja Wang</a></li>
+  <li><a href="#babys-first-dataviz" id="toc-babys-first-dataviz" class="nav-link" data-scroll-target="#babys-first-dataviz">Baby’s first dataviz</a></li>
+  <li><a href="#babys-first-dataviz-1" id="toc-babys-first-dataviz-1" class="nav-link" data-scroll-target="#babys-first-dataviz-1">Baby’s first dataviz</a></li>
+  <li><a href="#babys-first-dataviz-2" id="toc-babys-first-dataviz-2" class="nav-link" data-scroll-target="#babys-first-dataviz-2">Baby’s first dataviz</a></li>
+  <li><a href="#babys-first-dataviz-3" id="toc-babys-first-dataviz-3" class="nav-link" data-scroll-target="#babys-first-dataviz-3">Baby’s first dataviz</a></li>
+  <li><a href="#babys-first-dataviz-4" id="toc-babys-first-dataviz-4" class="nav-link" data-scroll-target="#babys-first-dataviz-4">Baby’s first dataviz</a></li>
+  <li><a href="#concise-numerical-summaries" id="toc-concise-numerical-summaries" class="nav-link" data-scroll-target="#concise-numerical-summaries">Concise numerical summaries</a></li>
+  <li><a href="#debrief" id="toc-debrief" class="nav-link" data-scroll-target="#debrief">DEBRIEF</a></li>
+  <li><a href="#anyone-know-who-this-is-1" id="toc-anyone-know-who-this-is-1" class="nav-link" data-scroll-target="#anyone-know-who-this-is-1">Anyone know who this is?</a></li>
+  <li><a href="#joan-crawford-replace-with-charo-renaissance-woman" id="toc-joan-crawford-replace-with-charo-renaissance-woman" class="nav-link" data-scroll-target="#joan-crawford-replace-with-charo-renaissance-woman">Joan Crawford (replace with Charo! renaissance woman)</a></li>
+  <li><a href="#joan-crawford" id="toc-joan-crawford" class="nav-link" data-scroll-target="#joan-crawford">Joan Crawford</a></li>
+  <li><a href="#anyone-know-who-this-is-2" id="toc-anyone-know-who-this-is-2" class="nav-link" data-scroll-target="#anyone-know-who-this-is-2">Anyone know who this is?</a></li>
+  <li><a href="#eubie-blake" id="toc-eubie-blake" class="nav-link" data-scroll-target="#eubie-blake">Eubie Blake</a></li>
+  <li><a href="#eubie-blake-1" id="toc-eubie-blake-1" class="nav-link" data-scroll-target="#eubie-blake-1">Eubie Blake</a></li>
+  <li><a href="#watch-out-for-data-quality" id="toc-watch-out-for-data-quality" class="nav-link" data-scroll-target="#watch-out-for-data-quality">Watch out for data quality!</a></li>
+  <li><a href="#raghuram-rajan" id="toc-raghuram-rajan" class="nav-link" data-scroll-target="#raghuram-rajan">Raghuram Rajan</a></li>
+  <li><a href="#raghuram-rajan-1" id="toc-raghuram-rajan-1" class="nav-link" data-scroll-target="#raghuram-rajan-1">Raghuram Rajan</a></li>
+  <li><a href="#anyone-know-who-this-is-3" id="toc-anyone-know-who-this-is-3" class="nav-link" data-scroll-target="#anyone-know-who-this-is-3">Anyone know who this is?</a></li>
+  <li><a href="#vincent-price" id="toc-vincent-price" class="nav-link" data-scroll-target="#vincent-price">Vincent Price</a></li>
+  <li><a href="#vincent-price-1" id="toc-vincent-price-1" class="nav-link" data-scroll-target="#vincent-price-1">Vincent Price</a></li>
+  <li><a href="#vincent-price-2" id="toc-vincent-price-2" class="nav-link" data-scroll-target="#vincent-price-2">Vincent Price</a></li>
+  <li><a href="#anyone-know-who-this-is-4" id="toc-anyone-know-who-this-is-4" class="nav-link" data-scroll-target="#anyone-know-who-this-is-4">Anyone know who this is?</a></li>
+  <li><a href="#celia-cruz" id="toc-celia-cruz" class="nav-link" data-scroll-target="#celia-cruz">Celia Cruz</a></li>
+  <li><a href="#celia-cruz-1" id="toc-celia-cruz-1" class="nav-link" data-scroll-target="#celia-cruz-1">Celia Cruz</a></li>
+  <li><a href="#who-guessed-best" id="toc-who-guessed-best" class="nav-link" data-scroll-target="#who-guessed-best">Who guessed best?</a></li>
+  <li><a href="#silly-exercise-serious-themes" id="toc-silly-exercise-serious-themes" class="nav-link" data-scroll-target="#silly-exercise-serious-themes">Silly exercise; serious themes</a></li>
+  </ul>
+</li>
+  <li><a href="#questions-1" id="toc-questions-1" class="nav-link" data-scroll-target="#questions-1">Questions?</a></li>
+  <li>
+<a href="#one-last-thing" id="toc-one-last-thing" class="nav-link" data-scroll-target="#one-last-thing">One last thing</a>
+  <ul class="collapse">
+<li><a href="#reserve-your-container" id="toc-reserve-your-container" class="nav-link" data-scroll-target="#reserve-your-container">Reserve your container</a></li>
+  </ul>
+</li>
+  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="00-welcome-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Welcome to STA 101!</h1>
 <p class="subtitle lead">Lecture 0</p>
 </div>
@@ -259,35 +346,839 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><section id="what-are-we-studying" class="level2"><h2 class="anchored" data-anchor-id="what-are-we-studying">What are we studying?</h2>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data analysis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Transforming messy, incomplete, imperfect data into <em>knowledge</em>;</li>
+<li>
+<em>Knowledge</em> often takes the form of pictures and a concise set of numerical summaries.</li>
+</ul>
+</div>
+</div>
+<p>. . .</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Statistical inference
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quantifying our uncertainty about that knowledge. How reliable is it?</p>
+</div>
+</div>
+</section><section id="imagine-this-dialog" class="level2 small"><h2 class="small anchored" data-anchor-id="imagine-this-dialog">Imagine this dialog</h2>
+<p>. . .</p>
+<p><span style="color:blue;"><strong>Campaign manager</strong></span>: What share of the popular vote do we think our candidate will receive?</p>
+<p>. . .</p>
+<p>(A flurry of analysis takes place.)</p>
+<p>. . .</p>
+<p><span style="color:red;"><strong>Data scientist</strong></span>: Our best guess is 54%.</p>
+<p>. . .</p>
+<p><span style="color:blue;"><strong>Campaign manager</strong></span>: How reliable is that estimate? How confident are we in that? What’s the margin of error?</p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Parallel Universe 1</strong></p>
+<p><span style="color:red;"><strong>Data scientist</strong></span>: It’s 54% give or take 3%.</p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><strong>Parallel Universe 2</strong></p>
+<p><span style="color:red;"><strong>Data scientist</strong></span>: It’s 54% give or take 20%.</p>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+It’s all about decision-making under uncertainty
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you’re dealing with. Statistics can help!</p>
+</div>
+</div>
+</section><section id="a-brief-history-of-intro-stat" class="level1"><h1>A brief history of intro stat</h1>
+<section id="a-portrait-of-the-instructor-as-a-young-man" class="level2 medium"><h2 class="medium anchored" data-anchor-id="a-portrait-of-the-instructor-as-a-young-man">A Portrait of the Instructor as a Young Man</h2>
+<p>Back in Spring 2014…</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="images/00/sleeping-beauty-01.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="images/00/sleeping-beauty-02.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section><section id="why-did-it-fail-to-thrill-me" class="level2"><h2 class="anchored" data-anchor-id="why-did-it-fail-to-thrill-me">Why did it fail to thrill me?</h2>
+<div class="columns">
+<div class="column" style="width:32%;">
+<p><img src="images/00/peck-devore.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:45%;">
+<p><img src="images/00/minitab.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>Big heavy book that cost <a href="https://www.amazon.com/Statistics-Exploration-Analysis-Available-Titles/dp/0840058012/ref=sr_1_1?crid=297Y6VX5WF0LD&amp;dib=eyJ2IjoiMSJ9.RTkd3TOK5o_5S6Od8Xp80uexK2SC2vRaH_rynYzQZK7qvVNENbOUBRRpDEYKU2wJpZsw1Ed8UpW4STCgvqhmBUn3WR4klCWPrQkcwPcg8cbn7EYWKOpjh-BTI61npfat-Nd8jlxfz9O3S0B0F4bPPdoDv4PStUS3_DsGyl9dCc5pPqB3ByuS5uQpJBTnQOfD5szbMsEgMlLSlaRLDw_Bmy67IAY1HhMvaje_n6x7hSU.lZJavCwQ49gLr9h5HlCM7Flkd1RmTRJwptoVL5yj8RQ&amp;dib_tag=se&amp;keywords=peck+devore+statistics&amp;qid=1786473057&amp;sprefix=peck+devore+statistic%2Caps%2C188&amp;sr=8-1">$250.00</a>;</li>
+<li>Weird point-and-click spreadsheet thing <del>that no one uses</del>.</li>
+</ul></section><section id="much-has-changed" class="level2"><h2 class="anchored" data-anchor-id="much-has-changed">Much has changed</h2>
+<div class="columns">
+<div class="column" style="width:32%;">
+<p><img src="images/00/ims.png" class="img-fluid"></p>
+</div><div class="column" style="width:45%;">
+<p><img src="images/00/r_logo.svg" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>Flexible, simulation-based approach to inference ($0.00);</li>
+<li>Software that people have actually heard of ($0.00).</li>
+</ul></section><section id="the-ladder" class="level2"><h2 class="anchored" data-anchor-id="the-ladder">The ladder</h2>
+<p>Every new idea will be introduced</p>
+<p>words, pictures, code (simulations and real data), math</p>
+<p>it’s not one way, these are mutually reinforcing. Some of you may go all the way on every topics. Sometimes you might stop short. That’s okay!</p>
+</section><section id="do-what-you-can-do-at-the-pace-you-can-do-it" class="level2 medium"><h2 class="medium anchored" data-anchor-id="do-what-you-can-do-at-the-pace-you-can-do-it">Do what you can do, at the pace you can do it</h2>
+<p><img src="images/00/do-your-thing.png" class="img-fluid"></p>
+</section></section><section id="syllabus-highlights" class="level1"><h1>Syllabus highlights</h1>
+<section id="bookmark-the-homepage" class="level2"><h2 class="anchored" data-anchor-id="bookmark-the-homepage">Bookmark the homepage!</h2>
+</section><section id="bookmark-the-course-page" class="level2 large"><h2 class="large anchored" data-anchor-id="bookmark-the-course-page">Bookmark the course page!</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:30%;">
+<div id="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#000000","colorLight":"#ffffff","height":"300","text":"https://sta101-f26.github.io/","width":"300"});
+  script.remove();
+})();
+</script>
+</div><div class="column" style="width:70%;">
+<p><a href="https://sta101-f26.github.io/" class="uri">https://sta101-f26.github.io/</a></p>
+</div>
+</div>
+</section><section id="course-toolkit" class="level2"><h2 class="anchored" data-anchor-id="course-toolkit">Course toolkit</h2>
+</section><section id="grading" class="level2 medium"><h2 class="medium anchored" data-anchor-id="grading">Grading</h2>
+<p>Your final course grade will be calculated as follows:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Category</th>
+<th>Percentage</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Labs</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>Homeworks</td>
+<td>20%</td>
+</tr>
+<tr class="odd">
+<td>Project</td>
+<td>20%</td>
+</tr>
+<tr class="even">
+<td>Midterm Exam</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>Final exam</td>
+<td>25%</td>
+</tr>
+</tbody>
+</table>
+<p>The final letter grade is based on the usual thresholds.</p>
+<p>. . .</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What you see is what you get
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No curve, no rounding, no extra credit.</p>
+</div>
+</div>
+</section><section id="wiggle-room" class="level2"><h2 class="anchored" data-anchor-id="wiggle-room">Wiggle room</h2>
+<ul>
+<li>10 labs in total, and we drop the lowest 2;</li>
+<li>8 homeworks in total, and we drop the lowest 1;</li>
+<li>We replace your midterm score with your final score (if it’s better).</li>
+</ul></section><section id="lab" class="level2"><h2 class="anchored" data-anchor-id="lab">Lab</h2>
+</section><section id="homework" class="level2"><h2 class="anchored" data-anchor-id="homework">Homework</h2>
+</section><section id="project" class="level2"><h2 class="anchored" data-anchor-id="project">Project</h2>
+</section><section id="exam" class="level2"><h2 class="anchored" data-anchor-id="exam">Exam</h2>
+</section><section id="attendance" class="level2"><h2 class="anchored" data-anchor-id="attendance">Attendance</h2>
+<ul>
+<li>
+<strong>Lecture</strong>: not required. Live your life;</li>
+<li>
+<strong>Lab</strong>: required for credit. You can’t leave your group hanging.</li>
+</ul></section><section id="communication" class="level2"><h2 class="anchored" data-anchor-id="communication">Communication</h2>
+<p>If you wish to ask questions in writing…</p>
+<ul>
+<li><p><strong>Post on Ed</strong>: about general course policies and content;</p></li>
+<li><p><strong>Email JZ directly</strong>: personal matters.</p></li>
+</ul>
+<p>You should not really be emailing the TAs directly for any reason.</p>
+</section><section id="collaboration" class="level2"><h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
+<p>You are <em>enthusiastically encouraged</em> to work together on labs and problem sets. You will learn a lot from each other! Two policies:</p>
+<ul>
+<li>✅ Acknowledge your collaborators: “Aloysius, Cybill, and I worked together on this problem;”</li>
+<li>❌ Do not outright share or copy solutions. All submitted work must be your own.</li>
+</ul>
+<p>Violation of the second policy is plagiarism. Sharers and recipients alike are referred to the conduct office and receive zeros.</p>
+</section><section id="use-of-outside-resources-including-ai" class="level2"><h2 class="anchored" data-anchor-id="use-of-outside-resources-including-ai">Use of outside resources, including AI</h2>
+</section><section id="faq-101-vs-198-vs-199" class="level2"><h2 class="anchored" data-anchor-id="faq-101-vs-198-vs-199">FAQ: 101 vs 198 vs 199?</h2>
+</section></section><section id="questions" class="level1"><h1>Questions?</h1>
+</section><section id="a-game" class="level1"><h1>A game</h1>
+<section id="how-old-is-this-person" class="level2 large"><h2 class="large anchored" data-anchor-id="how-old-is-this-person">How old is this person?</h2>
+<div class="quarto-layout-panel" data-layout="[[-1], [1], [-1]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>Ethel Merman</p>
+</div>
+</div>
+</div>
+</section><section id="ethel-merman" class="level2"><h2 class="anchored" data-anchor-id="ethel-merman">Ethel Merman</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<p><img src="images/00/ethel_merman.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>January 16, 1908</td>
+</tr>
+<tr class="even">
+<td>Died</td>
+<td>February 15, 1984</td>
+</tr>
+<tr class="odd">
+<td>Age</td>
+<td>76</td>
+</tr>
+<tr class="even">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/s62MrU8mHx4?feature=shared">JZ’s favorite singer</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="how-old-is-this-person-1" class="level2 large"><h2 class="large anchored" data-anchor-id="how-old-is-this-person-1">How old is this person?</h2>
+<div class="quarto-layout-panel" data-layout="[[-1], [1], [-1]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>Megan Pete</p>
+</div>
+</div>
+</div>
+</section><section id="megan-thee-stallion" class="level2"><h2 class="anchored" data-anchor-id="megan-thee-stallion">Megan Thee Stallion</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<p><img src="images/00/meghan_thee_stallion.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>February 15, 1995</td>
+</tr>
+<tr class="even">
+<td>Age</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/4Fhm9ulCwUU?feature=shared">Rapper</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="how-old-is-this-person-2" class="level2 large"><h2 class="large anchored" data-anchor-id="how-old-is-this-person-2">How old is this person?</h2>
+<div class="quarto-layout-panel" data-layout="[[-1], [1], [-1]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>봉준호</p>
+</div>
+</div>
+</div>
+</section><section id="bong-joon-ho" class="level2"><h2 class="anchored" data-anchor-id="bong-joon-ho">Bong Joon-ho</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<p><img src="images/00/bongjoonho.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>September 14, 1969</td>
+</tr>
+<tr class="even">
+<td>Age</td>
+<td>56</td>
+</tr>
+<tr class="odd">
+<td>Claim to fame</td>
+<td>Directed <em>Parasite</em>, <em>Snowpiercer</em>, etc</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="now-do-it-with-pictures" class="level2 large"><h2 class="large anchored" data-anchor-id="now-do-it-with-pictures">Now do it with pictures…</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p>When the picture was taken, how old was the person?</p>
+</div><div class="column" style="width:50%;">
+<div id="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#000000","colorLight":"#ffffff","height":"300","text":"https://forms.gle/L7ZFfZ7gtSXehbMB8","width":"300"});
+  script.remove();
+})();
+</script>
+</div>
+</div>
+</section></section><section id="lets-see-how-you-did" class="level1"><h1>Let’s see how you did</h1>
+<section id="babys-first-spreadsheet" class="level2"><h2 class="anchored" data-anchor-id="babys-first-spreadsheet">Baby’s first spreadsheet</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="va">age_guesses</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/age_guesses.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 299 × 6
+   celeb1 celeb2 celeb3 celeb4 celeb5 celeb6
+    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1     32     26     73     68     50     78
+ 2     22     42     75     55     35     77
+ 3     22     31     79     40     43     68
+ 4     30     28     65     40     45     70
+ 5     35     39     67     54     49     60
+ 6     30     48     67     37     45     70
+ 7     49     42     78     47     62     75
+ 8     28     35     70     50     60     70
+ 9     31     36     62     43     41     68
+10     26     33     67     60     42     71
+# ℹ 289 more rows</code></pre>
+</div>
+</div>
+<p>Comment on rows and columns</p>
+</section><section id="anyone-know-who-this-is" class="level2"><h2 class="anchored" data-anchor-id="anyone-know-who-this-is">Anyone know who this is?</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+</section><section id="yuja-wang" class="level2"><h2 class="anchored" data-anchor-id="yuja-wang">Yuja Wang</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>2/10/1987</td>
+</tr>
+<tr class="even">
+<td>Age in pic</td>
+<td>36</td>
+</tr>
+<tr class="odd">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/RGAPTRrAilY?feature=shared">Classical pianist</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="babys-first-dataviz" class="level2 medium"><h2 class="medium anchored" data-anchor-id="babys-first-dataviz">Baby’s first dataviz</h2>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">age_guesses</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">celeb1</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="babys-first-dataviz-1" class="level2 medium"><h2 class="medium anchored" data-anchor-id="babys-first-dataviz-1">Baby’s first dataviz</h2>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">age_guesses</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">celeb1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="babys-first-dataviz-2" class="level2 medium"><h2 class="medium anchored" data-anchor-id="babys-first-dataviz-2">Baby’s first dataviz</h2>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">age_guesses</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">celeb1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">100</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="babys-first-dataviz-3" class="level2 medium"><h2 class="medium anchored" data-anchor-id="babys-first-dataviz-3">Baby’s first dataviz</h2>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">age_guesses</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">celeb1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span>  <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">100</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"sta101-f26 students guess Yuja Wang's age"</span>,</span>
+<span>       x <span class="op">=</span> <span class="st">"Guess"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="babys-first-dataviz-4" class="level2 medium"><h2 class="medium anchored" data-anchor-id="babys-first-dataviz-4">Baby’s first dataviz</h2>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">age_guesses</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">celeb1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">100</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"sta101-f26 students guess Yuja Wang's age"</span>,</span>
+<span>       x <span class="op">=</span> <span class="st">"Guess"</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">36</span>, color <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="concise-numerical-summaries" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="concise-numerical-summaries">Concise numerical summaries</h2>
+<p>Where are your guesses concentrated? How spread out are they?</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">age_guesses</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span></span>
+<span>    average <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">celeb1</span><span class="op">)</span>,</span>
+<span>    sdev <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">celeb1</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  average  sdev
+    &lt;dbl&gt; &lt;dbl&gt;
+1    29.1  5.01</code></pre>
+</div>
+</div>
+<p><strong>mean</strong> and <strong>standard deviation</strong></p>
+</section><section id="debrief" class="level2"><h2 class="anchored" data-anchor-id="debrief">DEBRIEF</h2>
+<p>memorialize some basic facts about data frames, histograms, and summaries that we will return to</p>
+</section><section id="anyone-know-who-this-is-1" class="level2"><h2 class="anchored" data-anchor-id="anyone-know-who-this-is-1">Anyone know who this is?</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+</section><section id="joan-crawford-replace-with-charo-renaissance-woman" class="level2"><h2 class="anchored" data-anchor-id="joan-crawford-replace-with-charo-renaissance-woman">Joan Crawford (replace with Charo! renaissance woman)</h2>
+<p>A secret she took to her grave:</p>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>3/23/(1904 - 1908)</td>
+</tr>
+<tr class="even">
+<td>Died</td>
+<td>5/10/1977</td>
+</tr>
+<tr class="odd">
+<td>Age in pic</td>
+<td>38 - 42</td>
+</tr>
+<tr class="even">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/KoOr_OoHbv4?feature=shared">Oscar-winning actor</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="joan-crawford" class="level2"><h2 class="anchored" data-anchor-id="joan-crawford">Joan Crawford</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="anyone-know-who-this-is-2" class="level2"><h2 class="anchored" data-anchor-id="anyone-know-who-this-is-2">Anyone know who this is?</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-3.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section><section id="eubie-blake" class="level2"><h2 class="anchored" data-anchor-id="eubie-blake">Eubie Blake</h2>
+<p>His actual birthday was not known at the time:</p>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-3.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>2/7/1887</td>
+</tr>
+<tr class="even">
+<td>Died</td>
+<td>2/12/1983</td>
+</tr>
+<tr class="odd">
+<td>Age in pic</td>
+<td>82</td>
+</tr>
+<tr class="even">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/mN89vHZ414s?feature=shared">Composer</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="eubie-blake-1" class="level2"><h2 class="anchored" data-anchor-id="eubie-blake-1">Eubie Blake</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="watch-out-for-data-quality" class="level2"><h2 class="anchored" data-anchor-id="watch-out-for-data-quality">Watch out for data quality!</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p><img src="images/00/celeb-4-noisy.jpg" class="img-fluid" style="width:75.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="images/00/celeb-4-original.jpg" class="img-fluid" style="width:75.0%"></p>
+</div>
+</div>
+</section><section id="raghuram-rajan" class="level2"><h2 class="anchored" data-anchor-id="raghuram-rajan">Raghuram Rajan</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:35%;">
+<p><img src="images/00/celeb-4-original.jpg" class="img-fluid" style="width:90.0%"></p>
+</div><div class="column" style="width:65%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>2/3/1963</td>
+</tr>
+<tr class="even">
+<td>Age in pic</td>
+<td>48</td>
+</tr>
+<tr class="odd">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/3rvUXmrv5Hk?feature=shared">UChicago economist</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="https://en.wikipedia.org/wiki/Raghuram_Rajan">RBI governor</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="raghuram-rajan-1" class="level2"><h2 class="anchored" data-anchor-id="raghuram-rajan-1">Raghuram Rajan</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="anyone-know-who-this-is-3" class="level2"><h2 class="anchored" data-anchor-id="anyone-know-who-this-is-3">Anyone know who this is?</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:39%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-5.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:61%;">
+
+</div>
+</div>
+</section><section id="vincent-price" class="level2"><h2 class="anchored" data-anchor-id="vincent-price">Vincent Price</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:39%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-5.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:61%;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z85lxckrtzg?si=0fMfYg6Ma5eFYh71&amp;start=328" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</section><section id="vincent-price-1" class="level2"><h2 class="anchored" data-anchor-id="vincent-price-1">Vincent Price</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:39%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb-5.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:61%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>5/27/1911</td>
+</tr>
+<tr class="even">
+<td>Died</td>
+<td>10/25/1993</td>
+</tr>
+<tr class="odd">
+<td>Age in pic</td>
+<td>38 - 39</td>
+</tr>
+<tr class="even">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/RpEfX1IKEak?si=s7QEYjjqJj1smJSl">Horror actor</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="vincent-price-2" class="level2"><h2 class="anchored" data-anchor-id="vincent-price-2">Vincent Price</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="anyone-know-who-this-is-4" class="level2"><h2 class="anchored" data-anchor-id="anyone-know-who-this-is-4">Anyone know who this is?</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb6.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+</section><section id="celia-cruz" class="level2"><h2 class="anchored" data-anchor-id="celia-cruz">Celia Cruz</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/00/celeb6.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<table class="caption-top table"><tbody>
+<tr class="odd">
+<td>Born</td>
+<td>10/21/1925</td>
+</tr>
+<tr class="even">
+<td>Died</td>
+<td>7/16/2003</td>
+</tr>
+<tr class="odd">
+<td>Age in pic</td>
+<td>76</td>
+</tr>
+<tr class="even">
+<td>Claim to fame</td>
+<td><a href="https://youtu.be/AXN-_asIaYs?feature=shared">Queen of Salsa</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section><section id="celia-cruz-1" class="level2"><h2 class="anchored" data-anchor-id="celia-cruz-1">Celia Cruz</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="00-welcome_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="who-guessed-best" class="level2 small"><h2 class="small anchored" data-anchor-id="who-guessed-best">Who guessed best?</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 11%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Your name</th>
+<th style="text-align: right;">celeb1</th>
+<th style="text-align: right;">celeb2</th>
+<th style="text-align: right;">celeb3</th>
+<th style="text-align: right;">celeb4</th>
+<th style="text-align: right;">celeb5</th>
+<th style="text-align: right;">celeb6</th>
+<th style="text-align: right;">sqerror</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(answers)</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">38.5</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">0.00000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Haleeyah Adesina</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">39.0</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">30.54167</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sam Grossman</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">45.0</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">34.04167</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Max Hill</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">42.0</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">37.87500</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Jessica Herrera Salinas</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">48.0</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">44.20833</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rameen Janjua</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">47.0</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">45.04167</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Benjamin Palmer</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">45.0</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">46.20833</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section><section id="silly-exercise-serious-themes" class="level2 scrollable medium"><h2 class="scrollable medium anchored" data-anchor-id="silly-exercise-serious-themes">Silly exercise; serious themes</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>
+<p><strong>Domain knowledge and modeling assumptions</strong>: data do not speak for themselves. You need some subject-matter expertise about what you’re studying, as well as an interpretive lens;</p>
+<ul class="incremental">
+<li>Not all models or assumptions are created equal!</li>
+</ul>
+</li>
+<li><p>Are you asking questions the data can actually answer?</p></li>
+<li><p>Uncertainty has many sources, and in some cases, it may be simply irreducible, no matter how hard you try;</p></li>
+<li><p><strong>Data quality and data cleaning</strong>: Data are not gospel. There could be noise and mistakes. Then what?</p></li>
+<li><p><strong>Wisdom of crowds</strong>: aggregating many imperfect guesses can do better than any one individual guess.</p></li>
+</ul>
+</div>
+</section></section><section id="questions-1" class="level1"><h1>Questions?</h1>
+</section><section id="one-last-thing" class="level1"><h1>One last thing</h1>
+<section id="reserve-your-container" class="level2"><h2 class="anchored" data-anchor-id="reserve-your-container">Reserve your container</h2>
 
 
-<section id="a-portrait-of-the-instructor-as-a-young-man" class="level2">
-<h2 class="anchored" data-anchor-id="a-portrait-of-the-instructor-as-a-young-man">A Portrait of the Instructor as a Young Man</h2>
-</section>
-<section id="syllabus-highlights" class="level1">
-<h1>Syllabus highlights</h1>
-<section id="faq-101-vs-198-vs-199" class="level2">
-<h2 class="anchored" data-anchor-id="faq-101-vs-198-vs-199">FAQ: 101 vs 198 vs 199?</h2>
-</section>
-</section>
-<section id="a-game" class="level1">
-<h1>A game</h1>
-<section id="silly-exercise-serious-themes" class="level2">
-<h2 class="anchored" data-anchor-id="silly-exercise-serious-themes">Silly exercise; serious themes</h2>
-</section>
-</section>
-<section id="one-last-thing" class="level1">
-<h1>One last thing</h1>
-<section id="reserve-your-container" class="level2">
-<h2 class="anchored" data-anchor-id="reserve-your-container">Reserve your container</h2>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -687,8 +1578,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2026 John Zito</p>
 </div>   
@@ -700,8 +1590,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

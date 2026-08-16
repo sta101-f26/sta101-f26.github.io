@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="All of STA 101 in 75 minutes – STA 101 Fall 2026">
 <meta property="og:description" content="Lecture 1">
+<meta property="og:image" content="https://sta101-f26.github.io/slides/images/01/herman.jpg">
 <meta property="og:site_name" content="STA 101 Fall 2026">
 </head>
 
@@ -200,8 +201,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-crash-course-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#today" id="toc-today" class="nav-link active" data-scroll-target="#today">Today</a></li>
+  <li><a href="#the-toolkit" id="toc-the-toolkit" class="nav-link" data-scroll-target="#the-toolkit">0. The toolkit</a></li>
+  <li><a href="#the-research-question" id="toc-the-research-question" class="nav-link" data-scroll-target="#the-research-question">1. The research question</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">2. Data collection</a></li>
+  <li><a href="#exploration" id="toc-exploration" class="nav-link" data-scroll-target="#exploration">3. Exploration</a></li>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">4. Modeling</a></li>
+  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">5. Inference</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">6. Interpretation</a></li>
+  <li><a href="#parting-thoughts" id="toc-parting-thoughts" class="nav-link" data-scroll-target="#parting-thoughts">Parting thoughts</a>
+  <ul class="collapse">
+  <li><a href="#themes-and-takeaways-and-shit" id="toc-themes-and-takeaways-and-shit" class="nav-link" data-scroll-target="#themes-and-takeaways-and-shit">Themes and takeaways and shit</a></li>
+  <li><a href="#coming-up" id="toc-coming-up" class="nav-link" data-scroll-target="#coming-up">Coming up</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-crash-course-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -244,8 +263,83 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Recap what the class is about</p>
+<p>solicit questions about the syllabus</p>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>We’ll take…</p>
+<p><img src="images/01/herman.jpg" class="img-fluid"></p>
+</div><div class="column fragment" style="width:50%;">
+<p>So that you can see…</p>
+<p><img src="images/01/coleman.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="the-toolkit" class="level1">
+<h1>0. The toolkit</h1>
+<p>intro to R + RStudio + Quarto. English language metaphor.</p>
+<p>get the shit uploaded to their containers. Have them hit render and produce the document.</p>
+<p>there’s written text, there’s code, there’s pictures, there’s tables</p>
+<p>by the end of the semester, you’ll know how to go from am empty file to a document like this.</p>
+</section>
+<section id="the-research-question" class="level1">
+<h1>1. The research question</h1>
+<p>solicit their policy opinions about the minimum wage</p>
+<p>intro the basic 101 theory</p>
+<p>is this true? how would you even evaluate that?</p>
+<p>not a global answer: depends on time, on place, on industry, on the size of the wage increase</p>
+<p>so let’s narrow the research question</p>
+</section>
+<section id="data-collection" class="level1">
+<h1>2. Data collection</h1>
+<p>data collection is monstrously difficult, and very domain specific.</p>
+<p>julia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.</p>
+<p>what’s the ideal experiment a la angrist and pischke.</p>
+<p>Some controlled thing. Talk about study design and what’s special about randomized controlled experiments.</p>
+<p>Can we do this? maybe?</p>
+<p>site seattle minimum wage study. But it’s costly (time, money, you name it).</p>
+<p>what about observational data? can’t control anything</p>
+<p>data collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?</p>
+<p>You try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.</p>
+<p>load the thing into R</p>
+<p>the anatomy of a data frame: thw rows and the columns</p>
+</section>
+<section id="exploration" class="level1">
+<h1>3. Exploration</h1>
+<p>Use pictures and numerical summaries to see if the two groups are comparable</p>
+<p>We’ve passed the furst smell test. At the very least, these restaurants are broadly similar.</p>
+</section>
+<section id="modeling" class="level1">
+<h1>4. Modeling</h1>
+<p>Data do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.</p>
+<p>modeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?</p>
+<p>sampling variability.</p>
+</section>
+<section id="inference" class="level1">
+<h1>5. Inference</h1>
+</section>
+<section id="interpretation" class="level1">
+<h1>6. Interpretation</h1>
+<p>Do you believe that these data and our analysis can support a causal claim? Is that plausible?</p>
+</section>
+<section id="parting-thoughts" class="level1">
+<h1>Parting thoughts</h1>
+<p>high level take-aways</p>
+<p>the structure of the course and where we’re headed</p>
+<section id="themes-and-takeaways-and-shit" class="level2">
+<h2 class="anchored" data-anchor-id="themes-and-takeaways-and-shit">Themes and takeaways and shit</h2>
+<p>where we’re headed</p>
+</section>
+<section id="coming-up" class="level2">
+<h2 class="anchored" data-anchor-id="coming-up">Coming up</h2>
+<p>tomorrow’s lab, next week’s lectures, next week’s lab, first homework, getting to know you survey</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
