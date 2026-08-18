@@ -15,7 +15,7 @@ editor:
 | Meeting  | Location                       | Time                   | Staff  |
 |----------|--------------------------------|------------------------|--------|
 | Lectures | Social Sciences 139        | TuTh 3:05 PM - 4:20 PM | JZ, Christina   |
-| Lab 01   | Old Chem 201 | F 10:05 AM - 11:20 AM   | Songliang |
+| Lab 01   | Old Chem 201 | F 10:05 AM - 11:20 AM   | Songliang, Sonya |
 | Lab 02   | Old Chem 201 | F 11:45 AM - 01:00 PM   | Songliang, Matthew |
 | Lab 03   | Old Chem 201 | F 01:25 PM - 02:40 PM   | Songliang, Matthew |
 : {tbl-colwidths="[25, 25, 25, 25]"}
