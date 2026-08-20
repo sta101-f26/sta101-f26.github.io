@@ -4,19 +4,23 @@ editor:
   mode: source
 ---
 
+::: callout-note
+Office hours will begin on Monday August 31.
+:::
+
 +------------------------------+--------------------+---------------+--------------------------------+
 | Mug                          | Name               | Role          | Office Hours                   |
 +==============================+====================+===============+================================+
 | ![](images/moe.jpg){.circ}   | Castillo, Jesus    | TA            | **Day/Time TBD**\              |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Day/Time TBD**\              |
+| ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Tue 10:00 AM - 12:00 PM**\   |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/md.jpeg){.circ}   | Del Preto, Matthew | TA            | **Mon 10:00 AM - 12:00 PM**\   |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/moe.jpg){.circ}   | Kang, Joon         | TA            | **Day/Time TBD**\              |
+| ![](images/jk.jpeg){.circ}   | Kang, Joon         | TA            | **Fri 3:00 PM - 5:00 PM**\     |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Wed 4:30 PM - 6:30 PM**\     |
