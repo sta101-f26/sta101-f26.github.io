@@ -65,7 +65,7 @@ There will be eight homeworks in total, and your lowest homework score will be d
 The project will be completed in teams that are randomly assigned within your lab section. As a group you will select a dataset that interests you and then apply what you've learned throughout the semester to study a research question of your choosing. This will culminate in the following deliverables:
 
 - **Final presentation**: a five minute slide talk given in your lab on Friday December 4 (LDOC);
-- **Final report**: a written report submitted the following Monday December 7 (when?).
+- **Final report**: a written report submitted the following Monday December 7 at 5pm.
 
 There will be other intermediate deadlines along the way to keep you on track. More information about the project will be provided in lab on Friday October 16.
 
