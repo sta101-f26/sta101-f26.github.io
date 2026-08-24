@@ -182,7 +182,7 @@ Your final course grade will be calculated as follows:
 | Midterm Exam   | 25%        |
 | Final exam     | 25%        |
 
-The final letter grade is based on the usual thresholds.
+The final letter grade is based on the [usual thresholds](/syllabus/syllabus-assignments.html).
 
 . . .
 
@@ -211,12 +211,17 @@ No curve, no rounding, no extra credit.
 
 ## Homework (20%)
 
+- Posted on Friday; due at 10 am the following Friday;
+- 8 in total, and I'll drop the lowest;
+- No late work accepted unless you request an extension in advance by e-mailing me. All reasonable requests will be entertained, but extensions will not be long;
+- Collaboration strongly encouraged, but you must cite your collaborators, and your write-up must be your own.
+
 ## Project (20%) {.medium}
 
 - Randomly-assigned teams within your lab;
 - Pick a dataset and a research question and write an original analysis;
 - **Kick-off**: Friday October 16;
-- **Presentation**: Friday December 4;
+- **Presentation**: Friday December 4 (LDOC);
 - **Submit write-up**: Monday December 7 @ 5pm;
 - In-between: intermediate deadlines, peer evaluations of teammates, peer review of other groups;
 - Regardless your enrollment status, you must complete this to pass.
@@ -226,7 +231,7 @@ No curve, no rounding, no extra credit.
 Traditional, in-class, no-tech exams:
 
 - **Midterm**: Thursday October 8 during lecture;
-- **Final**: 
+- **Final**: Thursday December 10 at 2pm in this room.
 
 You are only allowed both sides of one 8.5" x 11" note sheet created by you.
 
@@ -240,7 +245,7 @@ Make sure I get an SDAO letter, and make your appointments in the [Testing Cente
 
 ## Attendance
 
-- **Lecture**: not required. Live your life;
+- **Lecture**: not required. Live your life. All materials posted;
 - **Lab**: required for credit. You can't leave your group hanging. I let our "drop 2" policy automatically handle most attendance hiccups.
 
 ## Communication
@@ -255,7 +260,7 @@ You should not really be emailing the TAs directly for any reason.
 
 ## Collaboration
 
-You are *enthusiastically encouraged* to work together on labs and problem sets. You will learn a lot from each other! Two policies:
+You are *enthusiastically encouraged* to work together on labs and homeworks. You will learn a lot from each other! Two policies:
 
 - ✅ Acknowledge your collaborators: "Aloysius, Cybill, and I worked together on this problem;"
 - ❌ Do not outright share or copy solutions. All submitted work must be your own.
@@ -263,6 +268,15 @@ You are *enthusiastically encouraged* to work together on labs and problem sets.
 Violation of the second policy is plagiarism. Sharers and recipients alike are referred to the conduct office and receive zeros.
 
 ## Use of outside resources, including AI
+
+Check out the [discussion](/syllabus/syllabus-policies.html#use-of-outside-resources-including-ai) in the syllabus.
+
+tl;dr: 
+
+- Everything is pretty much fair game so long as you cite it;
+- Uncited use of outside resources is treated as plagiarism;
+- If you spend the entire semester outsourcing all of your *thinking* to a chatbot, you will probably humiliate yourself on both exams, which are worth 50% of your grade.
+
 
 ## FAQ: 101 vs 198 vs 199?
 
@@ -320,7 +334,7 @@ Megan Pete
 |               |                                                       |
 |---------------|-------------------------------------------------------|
 | Born          | February 15, 1995                                     |
-| Age           | 30                                                    |
+| Age           | 31                                                    |
 | Claim to fame | [Rapper](https://youtu.be/4Fhm9ulCwUU?feature=shared) |
 :::
 :::
@@ -355,7 +369,7 @@ When the picture was taken, how old was the person?
 :::
 
 ::: {.column width="50%"}
-{{< qrcode https://forms.gle/L7ZFfZ7gtSXehbMB8 width=300 height=300 >}}
+{{< qrcode https://docs.google.com/forms/d/e/1FAIpQLScpj-bjU_C3YRVBohR2Qtfd25cbVwPII2SSXxQ8o56Q1Z--LA/viewform?usp=publish-editor width=300 height=300 >}}
 :::
 :::
 
@@ -376,7 +390,7 @@ age_guesses |>
   select(celeb1, celeb2, celeb3, celeb4, celeb5, celeb6)
 ```
 
-Comment on rows and columns
+Each row is a 101 student, and the columns record their guesses for each celeb.
 
 
 ## Anyone know who this is?
@@ -410,6 +424,18 @@ Comment on rows and columns
 
 ## Baby's first dataviz {.medium}
 
+What dataset do we want to visualize?
+
+```{r}
+#| warning: false
+#| message: false
+ggplot(age_guesses)
+```
+
+## Baby's first dataviz {.medium}
+
+What part of it do we want to visualize?
+
 ```{r}
 #| warning: false
 #| message: false
@@ -417,6 +443,8 @@ ggplot(age_guesses, aes(x = celeb1))
 ```
 
 ## Baby's first dataviz {.medium}
+
+What kind of plot do we want?
 
 ```{r}
 #| warning: false
@@ -427,6 +455,8 @@ ggplot(age_guesses, aes(x = celeb1)) +
 
 ## Baby's first dataviz {.medium}
 
+Change the horizontal axis range:
+
 ```{r}
 #| warning: false
 #| message: false
@@ -436,6 +466,8 @@ ggplot(age_guesses, aes(x = celeb1)) +
 ```
 
 ## Baby's first dataviz {.medium}
+
+Add some human-readable labels:
 
 ```{r}
 #| warning: false
@@ -448,6 +480,8 @@ ggplot(age_guesses, aes(x = celeb1)) +
 ```
 
 ## Baby's first dataviz {.medium}
+
+Add a vertical line at the answer:
 
 ```{r}
 #| warning: false
@@ -476,17 +510,23 @@ age_guesses |>
 
 ```
 
-**mean** and **standard deviation**
+Say hello to the **mean** and **standard deviation**.
 
-## DEBRIEF
+## We'll see this stuff daily
 
-memorialize some basic facts about data frames, histograms, and summaries that we will return to
+::: incremental
+- A data frame is R's version of a spreadsheet. It has rows (observations) and columns (variables);
+- A histogram is a way of visualizing the *distribution* of a *numerical* variable;
+- Features of the distribution can be concisely summarized with numbers like the *mean* and the *standard deviation*;
+- You will learn how to build up data visualizations by stacking layers, like a cake;
+- You will learn how to transform and summarize data by building *data pipelines* using `|>`.
+:::
 
 ## Anyone know who this is?
 
 ::: {.columns .v-center-container}
 ::: {.column width="40%"}
-![](images/00/celeb-2.jpg){fig-align="center"}
+![](images/00/celeb-2.png){fig-align="center"}
 :::
 
 ::: {.column width="60%"}
@@ -494,26 +534,25 @@ memorialize some basic facts about data frames, histograms, and summaries that w
 :::
 :::
 
-## Joan Crawford (replace with Charo! renaissance woman)
+## María Rosario Pilar Martínez Molina Baeza
 
-A secret she took to her grave:
+Better known as *Charo*.
 
 ::: {.columns .v-center-container}
 ::: {.column width="40%"}
-![](images/00/celeb-2.jpg){fig-align="center"}
+![](images/00/celeb-2.png){fig-align="center"}
 :::
 
 ::: {.column width="60%"}
 |               |                                                                    |
 |------------------------------------|------------------------------------|
-| Born          | 3/23/(1904 - 1908)                                                 |
-| Died          | 5/10/1977                                                          |
-| Age in pic    | 38 - 42                                                            |
-| Claim to fame | [Oscar-winning actor](https://youtu.be/KoOr_OoHbv4?feature=shared) |
+| Born          | 3/13/1941? 1/15/1951? Who knows.                                                 |
+| Age in pic    | 58 - 68                                                            |
+| Claim to fame | [Renaissance woman](https://youtu.be/AO1RtMNuJHU?si=JmqkT4n32RTVLksT) |
 :::
 :::
 
-## Joan Crawford
+## Charo
 
 ```{r}
 #| echo: false
@@ -522,9 +561,9 @@ A secret she took to her grave:
 
 ggplot() +
   geom_histogram(data = age_guesses, aes(x = celeb2)) + 
-  labs(title = "sta101-f26 students guess Joan Crawford's age",
+  labs(title = "sta101-f26 students guess Charo's age",
        x = "Guess") + 
-  geom_rect(aes(xmin = 38, xmax = 42, ymin = 0, ymax = Inf), 
+  geom_rect(aes(xmin = 58, xmax = 68, ymin = 0, ymax = Inf), 
             alpha = 0.5, fill = "red") + 
   xlim(0, 100)
 
@@ -716,7 +755,7 @@ ggplot(age_guesses, aes(x = celeb6)) +
 
 ```{r}
 #| echo: false
-true_ages <- c(36, 40, 82, 48, 38.5, 76)
+true_ages <- c(36, 63, 82, 48, 38.5, 76)
 
 age_guesses |>
   add_row(
