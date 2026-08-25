@@ -6,18 +6,18 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.34">
-
-  <meta name="author" content="John Zito">
-  <meta name="dcterms.date" content="2026-08-27">
-  <title>STA 101 Fall 2026 – All of STA 101 in 75 minutes</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+<meta name="author" content="John Zito">
+<meta name="dcterms.date" content="2026-08-27">
+<title>STA 101 Fall 2026 – All of STA 101 in 75 minutes</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+<style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,15 +29,81 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f0195dcd610196b9111c6e10e98695f4.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f0195dcd610196b9111c6e10e98695f4.css">
+<link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+<style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
       overflow: auto;
@@ -132,8 +198,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">All of STA 101 in 75 minutes</h1>
+<section id="title-slide" class="quarto-title-block center"><h1 class="title">All of STA 101 in 75 minutes</h1>
   <p class="subtitle">Lecture 1</p>
 
 <div class="quarto-title-authors">
@@ -148,14 +213,27 @@ John Zito
 </div>
 
   <p class="date">2026-08-27</p>
-</section>
-<section class="slide level2">
-
-<p>Recap what the class is about</p>
-<p>solicit questions about the syllabus</p>
-</section>
-<section id="today" class="slide level2">
-<h2>Today</h2>
+</section><section id="what-are-we-studying" class="slide level2"><h2>What are we studying?</h2>
+<ul>
+<li class="fragment">Data analysis
+<ul>
+<li class="fragment">The <em>art</em> of transforming messy, incomplete, imperfect data into <em>knowledge</em>;</li>
+<li class="fragment">
+<em>Knowledge</em> often takes the form of pictures and a concise set of numerical summaries;</li>
+</ul>
+</li>
+<li class="fragment">Statistical Inference
+<ul>
+<li class="fragment">Quantifying our uncertainty about that knowledge;</li>
+<li class="fragment">Reporting this faithfully to help people make decisions.</li>
+</ul>
+</li>
+</ul></section><section id="before-we-begin" class="slide level2"><h2>Before we begin</h2>
+<p>Any questions about the syllabus?</p>
+<div class="fragment">
+<p>If anything occurs to you later, please post on <a href="https://edstem.org/us/courses/101045/discussion">Ed</a>.</p>
+</div>
+</section><section id="today" class="slide level2"><h2>Today</h2>
 <div class="fragment">
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -166,26 +244,389 @@ John Zito
 <p><img data-src="images/01/coleman.jpg"></p>
 </div></div>
 </div>
-</section>
-<section id="the-toolkit" class="title-slide slide level1 center">
-<h1>0. The toolkit</h1>
-<p>intro to R + RStudio + Quarto. English language metaphor.</p>
-<p>get the shit uploaded to their containers. Have them hit render and produce the document.</p>
-<p>there’s written text, there’s code, there’s pictures, there’s tables</p>
-<p>by the end of the semester, you’ll know how to go from am empty file to a document like this.</p>
-</section>
+</section><section id="today-1" class="slide level2"><h2>Today</h2>
+<ul>
+<li class="fragment"><p>We’ll speedrun essentially all of the main ideas of the course so that you can get a sense of the outline of everything. Then we’ll spend the next fourteen weeks elaborating;</p></li>
+<li class="fragment"><p>It’s gonna be a lot, and some things might be easier to follow than others. All you have to do is sit back and let it wash over you. We have the whole rest of the course to refine;</p></li>
+<li class="fragment"><p>Please ask questions!</p></li>
+</ul></section><section id="basically" class="slide level2"><h2>Basically</h2>
 
-<section id="the-research-question" class="title-slide slide level1 center">
-<h1>1. The research question</h1>
-<p>solicit their policy opinions about the minimum wage</p>
-<p>intro the basic 101 theory</p>
-<p>is this true? how would you even evaluate that?</p>
-<p>not a global answer: depends on time, on place, on industry, on the size of the wage increase</p>
-<p>so let’s narrow the research question</p>
-</section>
+<img data-src="images/01/swimming-lesson.gif" class="quarto-figure quarto-figure-center r-stretch"></section><section><section id="the-toolkit" class="title-slide slide level1 center"><h1>0. The toolkit</h1>
 
-<section id="data-collection" class="title-slide slide level1 center">
-<h1>2. Data collection</h1>
+</section><section id="access-your-container" class="slide level2"><h2>Access your container</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/01/containers.png"></p>
+</div><div class="column" style="width:60%;">
+<ol type="1">
+<li>Visit the <a href="https://cmgr.oit.duke.edu/containers">Duke Container Manager</a> (and log in with your NetID);</li>
+<li>(If you haven’t already, reserve the STA101 container on the right-hand-side)</li>
+<li>Click STA101 under “My reservations” on the left-hand side;</li>
+<li>Login, start, and give it a sec to launch in your browser.</li>
+</ol>
+</div></div>
+</section><section id="r-rstudio" class="slide level2 medium"><h2>R + RStudio</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure><p><img data-src="images/01/r-logo.png" class="quarto-figure quarto-figure-center" alt="R logo"></p>
+</figure>
+</div>
+<p><strong>R</strong> is a programming language that statisticians created to make their work easier. If you learn to “speak” this language, you can instruct a computer to perform data analysis tasks that would be tedious to perform by hand.</p>
+</div><div class="column fragment" style="width:50%;">
+<p><img data-src="images/01/rstudio-logo.png" alt="RStudio logo"></p>
+<p><strong>RStudio</strong> is a convenient interface that allows you to use R in a clean and organized way. It is an example of an <em>integrated development environment</em> (IDE), but don’t worry about that.</p>
+</div></div>
+</section><section id="r-rstudio-1" class="slide level2"><h2>R + RStudio</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure><p><a href="https://moderndive.com/1-getting-started.html"><img data-src="images/01/r_vs_rstudio.png" class="quarto-figure quarto-figure-center" alt="On the left: a car engine. On the right: a car dashboard. The engine is labelled R. The dashboard is labelled RStudio." width="1001"></a></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Source: <a href="https://moderndive.com/1-getting-started.html">Modern Dive</a>.</p>
+</div></aside></section><section id="the-lay-of-the-land" class="slide level2"><h2>The lay of the land</h2>
+
+<img data-src="images/01/tour-r-rstudio.png" class="r-stretch"></section><section id="grab-todays-files" class="slide level2 scrollable"><h2>Grab today’s files</h2>
+<ul>
+<li>Double-check that you have the course project loaded in the upper right corner;</li>
+<li>Go to the <strong>Git</strong> tab in the upper right pane and click <strong>Pull</strong>.</li>
+</ul>
+
+<img data-src="images/01/pull.png" class="r-stretch"></section><section id="packages" class="slide level2 medium"><h2>Packages</h2>
+<ul>
+<li>Some of R’s functionality is built-in (like the sink or the dishwasher), and other stuff is an add-on you need grab separately (like a food processor);</li>
+<li>The add-ons are bundled in <strong>packages</strong>, which you can load in by typing commands like this:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(tidymodels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Such commands will appear <em>once</em> at the top of pretty much every document you work on.</li>
+</ul></section><section id="the-tidyverse" class="slide level2"><h2>The <code>tidyverse</code>
+</h2>
+<p>The <a href="https://tidyverse.org"><code>tidyverse</code></a> is the package we will use most often. In fact, it’s really a “meta-package” that bundles many smaller packages that we will use:</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><a href="https://tidyverse.org"><img data-src="images/01/tidyverse.png" alt="Hex logos for dplyr, ggplot2, forcats, tibble, readr, stringr, tidyr, and purrr"></a></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>
+<code>ggplot2</code>: data visualization;</li>
+<li>
+<code>dplyr</code>: data transformation;</li>
+<li>
+<code>readr</code>: data import and export;</li>
+<li>…and so on.</li>
+</ul>
+</div></div>
+</section><section id="quarto" class="slide level2"><h2>Quarto</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p><img data-src="images/01/quarto.png"></p>
+</div><div class="column" style="width:50%;">
+<p>Quarto is a technical publishing system that allows you to write documents where text, math, code, and the output of that code are seamlessly integrated in a reproducible way.</p>
+</div></div>
+</section><section id="the-lay-of-the-land-1" class="slide level2"><h2>The lay of the land</h2>
+
+<img data-src="images/01/tour-quarto.png" class="r-stretch"></section><section id="how-it-works" class="slide level2 medium"><h2>How it works</h2>
+<p>This is pretty much it:</p>
+<blockquote>
+<p>Edit the <code>.qmd</code> file → hit <strong>Render</strong> → get a <code>.pdf</code></p>
+</blockquote>
+<ul>
+<li>Fully reproducible reports – each time you render the analysis is run from the beginning;</li>
+<li>Code goes in cells (between the three back ticks);</li>
+<li>Written English goes outside cells, the same way you would write in Google Docs or MS Word.</li>
+<li>Every application exercise, lab, project, etc. is an Quarto document</li>
+<li>You’ll always have a template Quarto document to start with</li>
+<li>The amount of scaffolding in the template will decrease over the semester</li>
+</ul></section><section id="two-important-concepts" class="slide level2 smaller"><h2>Two important concepts</h2>
+<div class="fragment">
+<p>Computational <em>reproducibility</em>:</p>
+<ul>
+<li class="fragment">If you give me your code and your data and I hit “Run,” do I get the same numbers and the same pictures that you published in your article?</li>
+<li class="fragment">If so…phew! If not…what the 🤬?</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Scientific <em>replication</em>:</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Can new researchers conduct an independent analysis with different data and reach the same substantive conclusions that you did?</li>
+<li>Just because your analysis is computationally reproducible does not mean that you have a robust result that <strong>generalizes</strong>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Our tools will help you achieve the first, which is necessary (but not sufficient!) for the second.</p>
+</div>
+</section></section><section><section id="a-research-question" class="title-slide slide level1 center"><h1>1. A research question</h1>
+
+</section><section id="minimum-wage-policy" class="slide level2 scrollable"><h2>Minimum wage policy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure><p><a href="https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States"><img data-src="images/01/minimum-wage.svg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
+</figure>
+</div>
+</section><section id="what-do-you-think" class="slide level2"><h2>What do you think?</h2>
+<p>Is a higher minimum wage good? bad? neutral? idfk?</p>
+</section><section id="the-econ-101-story" class="slide level2"><h2>The ECON 101 story</h2>
+
+<img data-src="images/01/econ101.png" class="r-stretch"></section><section id="the-econ-101-story-1" class="slide level2"><h2>The ECON 101 story</h2>
+<p>The reasoning goes like this:</p>
+<ul>
+<li class="fragment">if you make something more expensive, then people generally do less of it (“demand curves slope down”);</li>
+<li class="fragment">the wage is the <em>price</em> that firms pay to employ people. Make it more expensive to employ people, and firms will do less of it.</li>
+</ul>
+<div class="fragment">
+<p>This <em>theoretical argument</em> motivates a prediction about the world:</p>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Claim</strong></p>
+</div>
+<div class="callout-content">
+<p>Raising the minimum wage <em>decreases</em> employment (puts people out of work).</p>
+</div>
+</div>
+</div>
+</div>
+</section><section id="the-question" class="slide level2 medium"><h2>The question</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Does real world experience (data) agree with the theoretical claim in the 101 textbook?</strong></p>
+</div>
+<div class="callout-content">
+<p>If you raise the minimum wage, does it decrease employment?</p>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment">If no: are minimum wage hikes a “free lunch” for reducing poverty?</li>
+<li class="fragment">If yes: how big is the decrease? Is it worth the trade-off: more people working at lower wage or fewer people working at higher wage?</li>
+<li class="fragment">Reasonable people can disagree about these questions, and I won’t tell you what to think (see further reading at the end);</li>
+<li class="fragment">For our purposes, I don’t even really care about the answer. I’m using it as an excuse to show off the tools, methods, and ways of thinking that can produce <em>an</em> answer. That’s what our class is about.</li>
+</ul></section><section id="firstly-the-question-is-too-broad" class="slide level2"><h2>Firstly, the question is too broad</h2>
+<blockquote>
+<p>If you raise the minimum wage, does it decrease employment?</p>
+</blockquote>
+<p>There is no cosmic, forever-and-always answer to that question. It will depend on:</p>
+<ul>
+<li class="fragment">time: 1950s versus 2020s?</li>
+<li class="fragment">place: Manhattan versus Dodge City, Kansas;</li>
+<li class="fragment">industry: nail salons versus grocery stores;</li>
+<li class="fragment">size: $8 <span class="math inline">\(\to\)</span> $15 versus $8 <span class="math inline">\(\to\)</span> $80.</li>
+</ul></section><section id="so-lets-zoom-in" class="slide level2"><h2>So let’s zoom in</h2>
+
+<img data-src="images/01/golden-girls.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="specific-time-place-industry-and-size" class="slide level2"><h2>Specific time, place, industry, and size</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/01/nj.jpg"></p>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>On April 1, 1992, New Jersey’s minimum wage rose from $4.25 to $5.05 per hour.</p>
+</blockquote>
+<p>Did this policy change decrease employment in the <strong>fast-food industry</strong>?</p>
+</div></div>
+</section><section id="warning-this-is-a-causal-question" class="slide level2"><h2>🚨 Warning: this is a causal question!</h2>
+<p>If you’ve heard it once you’ve heard it a thousand times:</p>
+<blockquote>
+<p>Correlation does not imply causation.</p>
+</blockquote>
+<ul>
+<li class="fragment">We don’t care about the mere <em>coincidence</em> of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;</li>
+<li class="fragment">Let’s be real from the jump: this is <span style="color:red;">very difficult</span> to isolate. But it <em>is</em> what we truly care about. So let’s not chicken out!</li>
+</ul></section></section><section><section id="data-collection" class="title-slide slide level1 center"><h1>2. Data collection</h1>
+
+</section><section id="the-ideal-a-randomized-experiment" class="slide level2"><h2>The ideal: a randomized experiment</h2>
+</section><section id="why-is-that-the-ideal" class="slide level2"><h2>Why is that the ideal?</h2>
+</section><section id="the-reality" class="slide level2"><h2>The reality</h2>
+</section><section id="observational-data" class="slide level2"><h2>Observational data</h2>
+</section><section id="observational-data-causal-inference" class="slide level2"><h2>Observational data + causal inference = 🤮</h2>
+<blockquote>
+<p>Correlation does not imply causation.</p>
+</blockquote>
+</section><section id="unless" class="slide level2"><h2>🤔 Unless…</h2>
+</section><section id="example-military-service-and-lifetime-earnings" class="slide level2"><h2>Example: military service and lifetime earnings</h2>
+<p>We obviously cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then observe them for the next twenty years.</p>
+<div class="fragment">
+<p>Or can we?</p>
+</div>
+</section><section id="the-vietnam-draft-lottery" class="slide level2"><h2>The Vietnam Draft Lottery</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/OkJH6sapQMA" width="900" height="600" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section><section id="angrist-1990-aer" class="slide level2"><h2>Angrist (1990 AER)</h2>
+
+<img data-src="images/01/angrist.png" class="r-stretch"></section><section id="back-to-the-minimum-wage" class="slide level2 scrollable"><h2>Back to the minimum wage</h2>
+
+<img data-src="images/01/card-krueger.jpg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="card-and-krueger-1994-aer" class="slide level2"><h2>Card and Krueger (1994 AER)</h2>
+
+<img data-src="images/01/card-krueger-abstract.png" class="r-stretch"></section><section id="what-did-card-and-krueger-do" class="slide level2"><h2>What did Card and Krueger do?</h2>
+<p>the seemingly arbitrary placement of restaurants on either side of this border acts as if random assignment took place</p>
+</section><section id="discuss-problems-with-surveys" class="slide level2"><h2>Discuss problems with surveys</h2>
+</section><section id="we-have-the-data" class="slide level2"><h2>We have the data!</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="aside-variable-assignment--" class="slide level2"><h2>Aside: variable assignment <code>&lt;-</code>
+</h2>
+</section><section id="the-anatomy-of-a-data-frame" class="slide level2"><h2>The anatomy of a data frame</h2>
+<p><strong>data frame</strong></p>
+<ul>
+<li>each row of a data frame is an <strong>observation</strong>;</li>
+<li>each column of a data frame is a <strong>variable</strong>.</li>
+</ul></section><section id="the-dimensions" class="slide level2"><h2>The dimensions</h2>
+<p>How many rows and columns?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">nrow</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 351</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ncol</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13</code></pre>
+</div>
+</div>
+<p>So they surveyed 351 restaurants in all, and they recorded 13 pieces of information about each one.</p>
+</section><section id="our-variables" class="slide level2 small"><h2>Our variables</h2>
+<p>Each row is a restaurant, and for each restaurant, we record the following:</p>
+<ul>
+<li class="fragment">
+<code>state</code>: which state is the restaurant in?</li>
+<li class="fragment">
+<code>chain</code>: which restaurant chain does the store belong to?</li>
+<li class="fragment">
+<code>co_owned</code>: is the restaurant company owned?</li>
+<li class="fragment">
+<code>wage_st</code> and <code>wage_st2</code>: the starting wage in US dollars before and after policy change;</li>
+<li class="fragment">
+<code>fte</code> and <code>fte2</code>: full-time-equivalent employment before and after the change, calculated as the number of full-time workers (including managers) plus 0.5 times the number of part-time workers;</li>
+<li class="fragment">
+<code>hrsopen</code> and <code>hrsopen2</code>: number of hours open per day;</li>
+<li class="fragment">
+<code>meal_price</code> and <code>meal_price2</code>: the price of a meal (soda, fries, entree);</li>
+<li class="fragment">
+<code>emp_diff</code>: <code>fte2 - fte</code>.</li>
+</ul></section><section id="your-first-taste-of-variable-types" class="slide level2 medium"><h2>Your first taste of variable types</h2>
+<p>The <code>chain</code> variable is an example of a <em>categorical</em> variable:</p>
+<div class="cell" wrap="false">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>card_krueger<span class="sc">$</span>chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "Wendy's"     "Wendy's"     "Burger King" "Burger King" "KFC"        
+  [6] "KFC"         "Roy's"       "Burger King" "Burger King" "Burger King"
+ [11] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
+ [16] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+ [21] "Wendy's"     "Roy's"       "Roy's"       "Burger King" "Burger King"
+ [26] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+ [31] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Wendy's"    
+ [36] "KFC"         "Burger King" "Burger King" "Burger King" "Burger King"
+ [41] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
+ [46] "Burger King" "Burger King" "KFC"         "Roy's"       "Burger King"
+ [51] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+ [56] "Burger King" "KFC"         "Roy's"       "Wendy's"     "Burger King"
+ [61] "Burger King" "Roy's"       "Roy's"       "Roy's"       "Burger King"
+ [66] "Burger King" "Roy's"       "KFC"         "Burger King" "KFC"        
+ [71] "KFC"         "KFC"         "Roy's"       "Wendy's"     "Roy's"      
+ [76] "Roy's"       "Wendy's"     "Wendy's"     "Burger King" "Burger King"
+ [81] "KFC"         "Wendy's"     "KFC"         "Roy's"       "Roy's"      
+ [86] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+ [91] "KFC"         "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
+ [96] "Burger King" "Burger King" "Roy's"       "Roy's"       "Wendy's"    
+[101] "Burger King" "Burger King" "Roy's"       "Roy's"       "Roy's"      
+[106] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
+[111] "KFC"         "Burger King" "KFC"         "KFC"         "KFC"        
+[116] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Burger King"
+[121] "Roy's"       "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
+[126] "Burger King" "Burger King" "Burger King" "Burger King" "Wendy's"    
+[131] "Wendy's"     "Burger King" "Burger King" "Burger King" "KFC"        
+[136] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
+[141] "Burger King" "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[146] "Roy's"       "Burger King" "KFC"         "Roy's"       "Burger King"
+[151] "Burger King" "KFC"         "Roy's"       "Roy's"       "Wendy's"    
+[156] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+[161] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[166] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
+[171] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[176] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[181] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+[186] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
+[191] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[196] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+[201] "Wendy's"     "Wendy's"     "Wendy's"     "Burger King" "Burger King"
+[206] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
+[211] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+[216] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
+[221] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
+[226] "Wendy's"     "Wendy's"     "Wendy's"     "KFC"         "Burger King"
+[231] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[236] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
+[241] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[246] "KFC"         "KFC"         "KFC"         "KFC"         "Roy's"      
+[251] "Roy's"       "Roy's"       "Wendy's"     "Wendy's"     "Burger King"
+[256] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[261] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Wendy's"    
+[266] "Burger King" "KFC"         "Roy's"       "Burger King" "Burger King"
+[271] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[276] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
+[281] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
+[286] "Wendy's"     "Wendy's"     "Burger King" "Roy's"       "Roy's"      
+[291] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
+[296] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
+[301] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
+[306] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
+[311] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[316] "Roy's"       "Wendy's"     "Burger King" "Burger King" "Burger King"
+[321] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+[326] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[331] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+[336] "Burger King" "Burger King" "KFC"         "Burger King" "Burger King"
+[341] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[346] "KFC"         "KFC"         "KFC"         "Roy's"       "Wendy's"    
+[351] "Wendy's"    </code></pre>
+</div>
+</div>
+<p>The <code>wage_st</code> variable is an example of a <em>numerical</em> variable:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>card_krueger<span class="sc">$</span>meal_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 3.48 3.29 2.86 2.85 3.78 3.99 3.17 2.84 2.60 2.75 3.12 4.22 3.99 2.97 2.85
+ [16] 3.00 3.11 3.96 3.00 2.68 3.34 3.16 3.15 2.66 2.60 2.65 2.67 2.67 2.48 5.40
+ [31] 4.25 2.56 2.65 2.61 2.54 4.02 2.50 2.47   NA 2.49 4.28 2.50 3.48 2.53 2.72
+ [46]   NA 2.63 4.20 2.89 2.72 2.93 2.72 2.81 2.65 2.74 2.74 4.02 3.10 2.60 2.62
+ [61] 2.72 2.97 2.78 3.01   NA 2.81 4.72 4.40 2.95 4.25 4.65 4.65 3.04 4.50 3.42
+ [76] 3.16 3.10 3.15 3.16 3.08 4.42 3.10 4.25 2.84 3.18 2.82 2.96 2.96 2.96 3.14
+ [91] 4.10 3.20 3.33 3.20 3.01 3.08 3.20 3.27 3.15 2.86 2.77   NA 3.26 3.18 3.24
+[106] 2.72 2.72 4.15 4.03 3.99 3.88 3.02 4.25 4.25 4.37 4.42   NA   NA 2.82 2.73
+[121] 2.98 2.76 2.81 2.76 3.03 2.99   NA 3.16 3.54   NA 3.72 3.01 2.61 2.93 5.10
+[136] 4.19   NA 2.56 2.74 2.89 2.75 4.67 2.95   NA 4.08   NA 2.89 3.99 2.85 2.96
+[151] 3.02 4.63 3.20 3.20 4.04 2.98 2.96 2.96 3.40 3.11 3.07 3.03 2.96 4.57 5.21
+[166] 3.16 3.25 2.80 3.10 2.84 3.06 3.07   NA 4.42 4.73 4.33 4.42   NA 3.44 3.04
+[181] 2.73 2.99 2.96 3.07 3.34 3.24 2.97 3.07 3.62 3.02 2.92 3.15   NA 3.01 4.10
+[196] 3.19 4.64 3.25   NA 3.20 2.83 2.99 3.07 3.12 2.96 3.01 3.03 3.96 4.17 3.20
+[211] 2.86 2.96 3.08 3.20 2.99 3.04   NA 4.10 4.16 4.73 4.73 4.73 4.73 3.09 3.31
+[226] 2.82 2.79 2.97 3.99 2.95 3.03 2.75 2.96 3.12 4.25 2.98 3.07 2.96 2.92 2.78
+[241] 2.82 2.82 2.86 4.78 3.88 3.93 3.99 4.78 4.53 3.03   NA 2.88 2.61 2.76 2.96
+[256] 2.92 2.96 3.07 3.07 4.42 4.74 2.83 3.31 3.17 2.97 3.14   NA 4.59 2.88 2.87
+[271] 3.07 2.81 2.50 3.14 4.03 4.08 4.14 3.88 2.84 2.73   NA 2.92 2.92 2.92 2.79
+[286] 2.76 2.82 2.95 3.14 4.78 3.60 3.44 3.76 3.21 2.92 2.85 3.11 4.82 5.86 3.14
+[301] 2.94 2.72 2.86 2.92 2.86 2.76 4.03 4.03 3.09 2.87 2.69 2.79 2.78 4.31 4.25
+[316] 2.56 2.70 2.96 2.86 2.96 3.07 2.96 3.05   NA 2.96 4.78 5.21 4.47 3.20 3.24
+[331] 3.43 3.32 3.16 3.20 3.20 3.18 3.27 4.42 3.20 3.12 2.95 3.06 2.55 4.25 4.25
+[346] 4.25 4.25 4.25 3.26 4.07 3.10</code></pre>
+</div>
+</div>
+<p>The appropriate visualization or summary depends on the variable type.</p>
+</section><section id="scraps" class="slide level2"><h2>Scraps</h2>
+<p>What’s the ideal here? an experiemtn</p>
 <p>data collection is monstrously difficult, and very domain specific.</p>
 <p>julia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.</p>
 <p>what’s the ideal experiment a la angrist and pischke.</p>
@@ -193,52 +634,578 @@ John Zito
 <p>Can we do this? maybe?</p>
 <p>site seattle minimum wage study. But it’s costly (time, money, you name it).</p>
 <p>what about observational data? can’t control anything</p>
+<p>Passively observe without intervening to manipulate anything. So you can’t control treatment versus control, and you don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.</p>
 <p>data collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?</p>
 <p>You try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.</p>
-<p>load the thing into R</p>
-<p>the anatomy of a data frame: thw rows and the columns</p>
-</section>
+<p>THE CHOICE TO NOT RESPOND IS NOT RANDOM. IT IS SYSTEMATICALLY HIDING SOMETHING FROM YOU. What do you do about it? In this class, not much, but it’s a source of <em>uncertainty</em> that statisticians grapple with.</p>
+</section></section><section><section id="exploration" class="title-slide slide level1 center"><h1>3. Exploration</h1>
 
-<section id="exploration" class="title-slide slide level1 center">
-<h1>3. Exploration</h1>
-<p>Use pictures and numerical summaries to see if the two groups are comparable</p>
-<p>We’ve passed the furst smell test. At the very least, these restaurants are broadly similar.</p>
-</section>
+</section><section id="babys-first-summary" class="slide level2"><h2>Baby’s first summary</h2>
+<p>How many restaurants do we observe in each state?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb11-2"><a></a>  <span class="fu">count</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  state     n
+  &lt;fct&gt; &lt;int&gt;
+1 PA       66
+2 NJ      285</code></pre>
+</div>
+</div>
+</section><section id="what-restaurant-chains-are-included" class="slide level2"><h2>What restaurant chains are included?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 2
+  chain           n
+  &lt;chr&gt;       &lt;int&gt;
+1 Burger King   145
+2 KFC            74
+3 Roy's          87
+4 Wendy's        45</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Feels like something’s missing, doesn’t it?</strong></p>
+</div>
+<div class="callout-content">
+<p>They did try calling McDonald’s restaurants, but they got very low response rates and chose to omit them from the study.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section id="aside-the-pipe-operator" class="slide level2"><h2>Aside: the pipe operator <code>|&gt;</code>
+</h2>
+<p>The pipe operator passes what comes before it into the function that comes after it as the first argument in that function:</p>
+<div class="columns">
+<div class="column fragment" style="width:55%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+</div><div class="column fragment" style="width:45%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
+<span id="cb17-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="like-a-russian-stacking-doll" class="slide level2"><h2>Like a Russian stacking doll</h2>
+</section><section id="next-lets-compare-states" class="slide level2"><h2>Next, let’s compare states</h2>
+<p>In order for Card and Krueger’s idea to hold water, the restaurants in NJ and PA should look broadly similar prior to the intervention.</p>
+<p>So let’s compare:</p>
+<ul>
+<li>similar mix of chains?</li>
+<li>similar prices?</li>
+<li>similar operating hours?</li>
+<li>similar wages and employee counts prior to the wage hike?</li>
+</ul></section><section id="compare-the-mix-of-chains" class="slide level2 medium"><h2>Compare the mix of chains</h2>
+<p>These are the overall totals. How do we get the totals <em>within</em> the states?</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 2
+  chain           n
+  &lt;chr&gt;       &lt;int&gt;
+1 Burger King   145
+2 KFC            74
+3 Roy's          87
+4 Wendy's        45</code></pre>
+</div>
+</div></div>
+</section><section id="compare-the-mix-of-chains-1" class="slide level2 medium"><h2>Compare the mix of chains</h2>
+<p>Make it a <em>grouped</em> data frame:</p>
+<div class="cell columns column-output-location" wrap="false">
+<div class="column">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a></a>  <span class="fu">group_by</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
 
-<section id="modeling" class="title-slide slide level1 center">
-<h1>4. Modeling</h1>
+</div></div>
+</section><section id="compare-the-mix-of-chains-2" class="slide level2 medium"><h2>Compare the mix of chains</h2>
+<p>Subsequent calculations will now be done within the groups (eg. states):</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+# Groups:   state [2]
+  state chain           n
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt;
+1 PA    Burger King    30
+2 PA    KFC            10
+3 PA    Roy's          15
+4 PA    Wendy's        11
+5 NJ    Burger King   115
+6 NJ    KFC            64
+7 NJ    Roy's          72
+8 NJ    Wendy's        34</code></pre>
+</div>
+</div></div>
+</section><section id="compare-the-mix-of-chains-3" class="slide level2 medium"><h2>Compare the mix of chains</h2>
+<p>To directly compare, let’s look at <em>proportions</em>:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb24-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb24-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb24-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 4
+# Groups:   state [2]
+  state chain           n  prop
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt;
+1 PA    Burger King    30 0.455
+2 PA    KFC            10 0.152
+3 PA    Roy's          15 0.227
+4 PA    Wendy's        11 0.167
+5 NJ    Burger King   115 0.404
+6 NJ    KFC            64 0.225
+7 NJ    Roy's          72 0.253
+8 NJ    Wendy's        34 0.119</code></pre>
+</div>
+</div></div>
+</section><section id="compare-the-mix-of-chains-4" class="slide level2 medium"><h2>Compare the mix of chains</h2>
+<p>Let’s make it easier to compare by eye:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb26-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb26-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb26-6"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb26-7"><a></a>  <span class="fu">arrange</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 4
+# Groups:   state [2]
+  state chain           n  prop
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt;
+1 PA    Burger King    30 0.455
+2 NJ    Burger King   115 0.404
+3 PA    KFC            10 0.152
+4 NJ    KFC            64 0.225
+5 PA    Roy's          15 0.227
+6 NJ    Roy's          72 0.253
+7 PA    Wendy's        11 0.167
+8 NJ    Wendy's        34 0.119</code></pre>
+</div>
+</div></div>
+</section><section id="seriously-its-just-like-russian-stacking-dolls" class="slide level2"><h2>Seriously, it’s just like Russian stacking dolls</h2>
+
+<img data-src="images/01/matryoshka.jpg" class="r-stretch"></section><section id="lets-compare-meal-prices-next" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Start with a blank canvas:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">ggplot</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-1" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>What variables are we looking at?</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb29" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb29-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>The <em>aesthetic mapping</em> is where we tell the computer what variables in the data frame we want to use and how we want to use them.</p>
+</section><section id="lets-compare-meal-prices-next-2" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>What kind of plot for this <em>numerical</em> variable:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb30" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb30-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb30-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-3" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Another option:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb31" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb31-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb31-3"><a></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>A density plot is a “smoothed out” histogram.</p>
+</section><section id="lets-compare-meal-prices-next-4" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Add labels:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb32-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb32-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb32-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb32-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb32-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb32-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb32-8"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>Y’know…so we know what we’re looking at!</p>
+</section><section id="lets-compare-meal-prices-next-5" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Increase font size and give it a minimalist look:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb33-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb33-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb33-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb33-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb33-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb33-8"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb33-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-6" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Distinguish the two states with color:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb34-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb34-3"><a></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
+<span id="cb34-4"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb34-5"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb34-6"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb34-7"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb34-8"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb34-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb34-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-7" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Shade (fill) beneath the curves:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb35-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb35-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb35-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb35-5"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb35-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb35-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb35-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb35-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb35-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb35-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-8" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Make the color translucent:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb36-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb36-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb36-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb36-5"><a></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb36-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb36-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb36-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb36-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb36-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>These distributions look pretty similar.</p>
+</section><section id="dataviz-with-ggplot-is-like-building-a-cake" class="slide level2"><h2>Dataviz with ggplot is like building a cake</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><img data-src="images/01/cake.jpg"></p>
+</div><div class="column fragment" style="width:65%;">
+<p>XXX</p>
+</div></div>
+</section><section id="compare-hours-of-operation" class="slide level2"><h2>Compare hours of operation</h2>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section><section id="compare-starting-wage-prior-to-nj-hike" class="slide level2"><h2>Compare starting wage (prior to NJ hike)</h2>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section><section id="compare-number-of-workers-prior-to-nj-hike" class="slide level2"><h2>Compare number of workers (prior to NJ hike)</h2>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section><section id="so-far-so-good" class="slide level2"><h2>So far so good</h2>
+<p>These data seem to pass the first sanity check: prior to “treatment,” the restaurants looked roughly comparable across the two states. What about after treatment?</p>
+</section><section id="the-emp_diff-variable" class="slide level2"><h2>The <code>emp_diff</code> variable</h2>
+<p>If this is positive, the restaurant added workers If zero, no change if negative, they shed workers</p>
+<p>If the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA. Nothing changed in PA, so they should be close to zero. NJ got a wage hike, so they should be negative.</p>
+</section><section id="section" class="slide level2"><h2></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb37-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb37-3"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb37-4"><a></a>    <span class="at">avg_emp_diff =</span> <span class="fu">mean</span>(emp_diff)</span>
+<span id="cb37-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  state avg_emp_diff
+  &lt;fct&gt;        &lt;dbl&gt;
+1 PA          -1.88 
+2 NJ           0.398</code></pre>
+</div>
+</div>
+<div class="fragment">
+<p>Oh. That is…flipped from what we expected.</p>
+</div>
+</section><section id="pics-or-it-didnt-happen" class="slide level2"><h2>Pics or it didn’t happen</h2>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section><section id="pause" class="slide level2"><h2>Pause</h2>
+<p>If the ECON 101 story is true, then the minimum wage hike should put NJ below PA in negative territory. Based on pictures and summaries, it seems like NJ is doing about the same as PA, if not better.</p>
+</section></section><section><section id="modeling" class="title-slide slide level1 center"><h1>4. Modeling</h1>
+
+</section><section id="section-1" class="slide level2"><h2></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger) <span class="sc">|&gt;</span></span>
+<span id="cb39-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  term         estimate std.error statistic p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)    -1.45       1.21    -1.20   0.232 
+2 stateNJ         2.28       1.20     1.91   0.0575
+3 chainKFC        0.235      1.30     0.181  0.857 
+4 chainRoy's     -2.08       1.32    -1.58   0.116 
+5 chainWendy's   -0.757      1.49    -0.507  0.612 
+6 co_owned        0.373      1.10     0.339  0.735 </code></pre>
+</div>
+</div>
+</section><section id="good-for-them" class="slide level2"><h2>Good for them!</h2>
+
+<img data-src="images/01/card-krueger-result.png" class="r-stretch"></section><section id="scraps-1" class="slide level2"><h2>Scraps</h2>
 <p>Data do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.</p>
+<p>include screenshot of card and krueger table and show that the numbers are the same. yay reproducibility</p>
+<p>pictures and summaries are great, and they can do a lot of work, but at the end of the day: data do not speak for themselves. We always have to bring domain knowledge and an interpretive lens. It’s best if we are as explicit about assumptions as possible, and the most rigorous way to do this is with a formal mathematical model.</p>
+</section></section><section><section id="statistical-inference" class="title-slide slide level1 center"><h1>5. Statistical inference</h1>
+
+</section><section id="our-point-estimate" class="slide level2"><h2>Our point estimate</h2>
+<p>Our headline finding:</p>
+<blockquote>
+<p>On average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a <em>better</em> outcome than PA.</p>
+</blockquote>
+<div class="fragment">
+<p>Is this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability.</p>
+</div>
+</section><section id="what-do-we-mean-by-reliability" class="slide level2"><h2>What do we mean by reliability?</h2>
+<ul>
+<li class="fragment">What’s the worry? That our result is simply a fluke. We got unlucky, the data we collected are quirky and unrepresentative, and the estimate is an aberration;</li>
+<li class="fragment">If we collect more or different data, redo the analysis, and the result totally changes, how reliable could it be?</li>
+<li class="fragment">In this class, we will consider a result more reliable if it stays approximately the same across alternative datasets.</li>
+</ul>
+<div class="fragment">
+<p>How can we evaluate that?</p>
+</div>
+</section><section id="sampling-variation" class="slide level2"><h2>Sampling variation</h2>
+<ul>
+<li class="fragment">If you want to know how the results change across datasets…redo the survey;</li>
+<li class="fragment">Call up more restaurants, redo the analysis, see if the results change. Easier said than done, but what if?</li>
+<li class="fragment">The variation of your estimates across these different datasets is called <em>sampling variation</em>;</li>
+<li class="fragment">If the variation is high, that’s bad for reliability. If the variation is low, that’s better;</li>
+<li class="fragment">Quantifying the extent of this variation allows you to report on the uncertainty of your conclusions.</li>
+</ul></section><section id="different-data-different-result" class="slide level2"><h2>Different data, different result</h2>
+<p>bloop</p>
+</section><section id="different-data-different-result-1" class="slide level2"><h2>Different data, different result</h2>
+<p>bloop</p>
+</section><section id="different-data-different-result-2" class="slide level2"><h2>Different data, different result</h2>
+<p>bloop</p>
+</section><section id="the-full-monty" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-1.png" class="r-stretch"></section><section id="the-full-monty-1" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-2.png" class="r-stretch"></section><section id="the-full-monty-2" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-3.png" class="r-stretch"></section><section id="the-full-monty-3" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-4.png" class="r-stretch"></section><section id="the-full-monty-4" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-5.png" class="r-stretch"></section><section id="the-full-monty-5" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-6.png" class="r-stretch"></section><section id="the-full-monty-6" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-7.png" class="r-stretch"></section><section id="the-full-monty-7" class="slide level2"><h2>The Full Monty</h2>
+
+<img data-src="images/01/sampling-variation-8.png" class="r-stretch"></section><section id="the-sampling-distribution-for-our-example" class="slide level2"><h2>The sampling distribution for our example</h2>
+<p>What do you think? Are our conclusions reliable?</p>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section><section id="conclusion" class="slide level2"><h2>Conclusion</h2>
+</section><section id="towards-quantifying-uncertainty" class="slide level2 medium"><h2>Towards quantifying uncertainty</h2>
+<p>What if our sampling distribution had looked like one of these?</p>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-32-1.png" width="1152" class="r-stretch"><div class="fragment">
+<p>Measuring the <em>spread</em> of the sampling distribution allows us to quantify uncertainty about the conclusions.</p>
+</div>
+</section><section id="reality-check" class="slide level2 medium"><h2>Reality check</h2>
+<ul>
+<li class="fragment">This idea of “redoing the survey to see how the results change” is more of a thought experiment;</li>
+<li class="fragment">If collecting new data were so easy, we would have collected a bigger sample to begin with;</li>
+<li class="fragment">Instead of literally collecting new data, which is costly, statisticians <em>approximate</em> sampling variability. We will study two techniques for doing this:
+<ul>
+<li class="fragment">simulation-based: resampling the data with the <em>bootstrap</em>;</li>
+<li class="fragment">mathematical: appealing to the <em>central limit theorem</em> (<em>CLT</em>).</li>
+</ul>
+</li>
+</ul>
+<div class="fragment">
+<p>More on all that in…nine weeks.</p>
+</div>
+</section><section id="scraps-2" class="slide level2"><h2>Scraps</h2>
+<p>new survey new estimate</p>
 <p>modeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?</p>
 <p>sampling variability.</p>
+<p>we got this estimate. Is it reliable? How uncertain are we about it? What do we mean.</p>
+<p>What we’re worried about: if I collected a new dataset (sent the survey out to a different set fo restaurants), I’d get a different result.</p>
+<p>a negative estimate is not really on the menu of options, so the data seem to be speaking fairly loudly that the minimum wage did not have an ill effect in this case. But about that…</p>
+<p>there remains some uncertainty about the specific numerical result: 0, 1, 2, 3, 4, 5</p>
+<p>The qualitative finding that NJ is not worse than PA (if anything it’s better) seems to hold up.</p>
+</section></section><section><section id="interpretation" class="title-slide slide level1 center"><h1>6. Interpretation</h1>
+
+</section><section id="at-the-end-of-the-day" class="slide level2"><h2>At the end of the day</h2>
+<p>Data analysis is just a sophisticated form of <em>rhetoric</em>. We’re trying to marshall facts to convince other humans of claims. If a living, breathing person is not convinced, then none of it actually matters.</p>
+<p>So…</p>
+</section><section id="do-you-believe-it" class="slide level2"><h2>Do you believe it?</h2>
+<p>Card and Krueger argue that the placement of restaurants on either side of the NJ/PA border acts <em>as if</em> an experiment took place, and so any observed discrepancy between the two states can largely be attributed to the <em>causal</em> effect of the minimum wage hike alone.</p>
+<div class="fragment">
+<p>Do you think this is plausible?</p>
+</div>
+</section><section id="things-to-keep-you-up-at-night" class="slide level2"><h2>Things to keep you up at night</h2>
+<ul>
+<li>Let’s face it: random assignment <em>did not</em> take place here.</li>
+</ul>
+<p>NJ chose to raise the minimum wage for specific reasons, and those underlying reasons could be related to</p>
+</section></section><section><section id="parting-thoughts" class="title-slide slide level1 center"><h1>Parting thoughts</h1>
+
+</section><section id="further-reading" class="slide level2 small"><h2>Further reading</h2>
+<p>Dive in if you’re interested:</p>
+<ul>
+<li>WSJ March 2026: “<a href="https://www.wsj.com/economy/jobs/minimum-wage-jobs-cost-debate-card-krueger-63b21af2?st=HuPYPY&amp;reflink=desktopwebshare_permalink">The 30-Year Debate Over the Minimum Wage Is Still Not Settled</a>” (featuring an unhinged comment section);</li>
+<li>Card and Krueger’s <a href="https://www.jstor.org/stable/2118030">original paper</a> and Card’s Nobel citation (<a href="https://www.nobelprize.org/prizes/economic-sciences/2021/popular-information/">popular</a> and <a href="https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf">advanced</a>);</li>
+<li>The more recent <a href="https://evans.uw.edu/faculty-research/the-minimum-wage-study/">Seattle Minimum Wage Study</a>;</li>
+<li>Neumark and Shirley’s 2021 <a href="https://www.nber.org/papers/w28388">literature review</a>: “there is a clear preponderance of negative estimates in the literature;”</li>
+<li>Noah Smith is an opinion journalist with an economics PhD:
+<ul>
+<li>“<a href="https://www.noahpinion.blog/p/why-15-minimum-wage-is-pretty-safe">Why $15 minimum wage is pretty safe</a>;”</li>
+<li>“<a href="https://www.noahpinion.blog/p/the-minimum-wage-pushback">The minimum wage pushback</a>.”</li>
+</ul>
+</li>
+</ul></section><section id="intellectual-themes" class="slide level2 scrollable"><h2>Intellectual themes</h2>
+<p>These will last us fifteen weeks (and then some!):</p>
+<ul>
+<li class="fragment">Data analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;</li>
+<li class="fragment">All data analyses should be <em>reproducible</em>. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;</li>
+<li class="fragment">Even a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;</li>
+<li class="fragment">When analyzing data, so often the questions that we <em>truly</em> care about are <em>causal</em> questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;</li>
+<li class="fragment">The gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;</li>
+<li class="fragment">Observational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;</li>
+<li class="fragment">Data do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;</li>
+<li class="fragment">(FINISH) Data are not manna from heaven…</li>
+<li class="fragment">(REVISE) Don’t let the perfect be the enemy of the good. Data analysis is always constrained optimization. There are ideals we don’t live up to. Just trying to do the best you can with what you’ve got;</li>
+<li class="fragment">(REVISE) A good data analysis is honest about what the data can and cannot tell us. Statistical inference is all about quantifying uncertainty about our results.</li>
+</ul></section><section id="computational-themes" class="slide level2 medium"><h2>Computational themes</h2>
+<p>Every coding task in this class will be some combo of these two things:</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Building cakes (<code>ggplot</code>) <img data-src="images/01/cake.jpg"></p>
+</div><div class="column fragment" style="width:65%;">
+<p>Stacking dolls (pipe <code>|&gt;</code>) <img data-src="images/01/matryoshka.jpg"></p>
+</div></div>
+</div>
+<div class="fragment">
+<p>Master these, and everything will be coming up roses!</p>
+</div>
+</section><section id="long-term-plan" class="slide level2"><h2>Long-term plan</h2>
+
+<img data-src="images/01/shape.png" class="r-stretch"></section><section id="near-term-plan" class="slide level2"><h2>Near-term plan</h2>
+<ul>
+<li class="fragment">
+<strong>Tomorrow</strong>: no graded assignment. Follow along with the TA and get your first taste of writing R code from scratch;</li>
+<li class="fragment">
+<strong>Next TuTh</strong>: lectures on exploratory data analysis. More live practice with data viz and transformation in R;</li>
+<li class="fragment">
+<strong>Next Friday</strong>: first graded lab, and HW 1 posted.</li>
+</ul>
+<div class="fragment">
+<p>Also, please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLScfaJqPiDmTdaKLzql6nlDi3bxqfBItMJUIYmA_6QS5P_Yj4Q/viewform?usp=publish-editor">Getting to Know You Survey</a>.</p>
+</div>
+</section></section><section id="questions" class="title-slide slide level1 center"><h1>Questions?</h1>
+
+
 </section>
-
-<section id="inference" class="title-slide slide level1 center">
-<h1>5. Inference</h1>
-
-</section>
-
-<section id="interpretation" class="title-slide slide level1 center">
-<h1>6. Interpretation</h1>
-<p>Do you believe that these data and our analysis can support a causal claim? Is that plausible?</p>
-</section>
-
-<section>
-<section id="parting-thoughts" class="title-slide slide level1 center">
-<h1>Parting thoughts</h1>
-<p>high level take-aways</p>
-<p>the structure of the course and where we’re headed</p>
-</section>
-<section id="themes-and-takeaways-and-shit" class="slide level2">
-<h2>Themes and takeaways and shit</h2>
-<p>where we’re headed</p>
-</section>
-<section id="coming-up" class="slide level2">
-<h2>Coming up</h2>
-<p>tomorrow’s lab, next week’s lectures, next week’s lab, first homework, getting to know you survey</p>
-
-
-</section></section>
-    </div>
+</div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -246,24 +1213,7 @@ John Zito
 </div>
 </div></div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="../site_libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script><script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script><script src="../site_libs/revealjs/plugin/notes/notes.js"></script><script src="../site_libs/revealjs/plugin/search/search.js"></script><script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script><script src="../site_libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
@@ -455,8 +1405,42 @@ John Zito
           RevealZoom
         ]
       });
-    </script>
-    <script id="quarto-html-after-body" type="application/javascript">
+    </script><script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
         tabsets.forEach(function(tabset) {
@@ -623,6 +1607,6 @@ John Zito
         }
       });
       </script>
-    
+
 
 </body></html>

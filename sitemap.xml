@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-overview.html</loc>
-    <lastmod>2026-08-11T14:14:10.596Z</lastmod>
+    <lastmod>2026-08-18T23:17:34.790Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/student-news.html</loc>
-    <lastmod>2026-08-06T00:09:50.100Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-policies.html</loc>
+    <lastmod>2026-08-06T18:43:56.121Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-team.html</loc>
-    <lastmod>2026-08-12T18:25:33.440Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/syllabus/student-news/chronicle.html</loc>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/chronicle.html</loc>
     <lastmod>2026-08-06T01:44:13.350Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/student-news/fall-dance-showcase.html</loc>
-    <lastmod>2026-08-06T01:52:43.853Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/house-course.html</loc>
+    <lastmod>2026-08-19T15:03:53.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-team.html</loc>
+    <lastmod>2026-08-19T19:16:35.052Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-materials.html</loc>
@@ -26,19 +26,19 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/01-crash-course-slides.html</loc>
-    <lastmod>2026-08-16T04:46:50.168Z</lastmod>
+    <lastmod>2026-08-25T01:59:16.312Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/01-crash-course.html</loc>
-    <lastmod>2026-08-16T04:46:50.168Z</lastmod>
+    <lastmod>2026-08-25T01:59:16.312Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
-    <lastmod>2026-08-16T15:43:52.831Z</lastmod>
+    <lastmod>2026-08-25T14:47:57.902Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/ae/ae-01-minimum-wage.html</loc>
-    <lastmod>2026-08-11T21:53:27.984Z</lastmod>
+    <lastmod>2026-08-16T16:15:04.592Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/index.html</loc>
@@ -46,30 +46,30 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/00-welcome.html</loc>
-    <lastmod>2026-08-11T21:42:44.593Z</lastmod>
+    <lastmod>2026-08-24T01:15:24.807Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/00-welcome-slides.html</loc>
-    <lastmod>2026-08-11T21:42:44.593Z</lastmod>
+    <lastmod>2026-08-24T01:15:24.807Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-assignments.html</loc>
-    <lastmod>2026-08-06T13:41:33.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/syllabus/student-news/li-house.html</loc>
-    <lastmod>2026-08-06T01:52:52.161Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/syllabus/student-news/fall-vocal-showcase.html</loc>
-    <lastmod>2026-08-06T01:52:48.396Z</lastmod>
+    <lastmod>2026-08-23T22:14:24.426Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-resources.html</loc>
     <lastmod>2026-05-05T03:22:04.105Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-policies.html</loc>
-    <lastmod>2026-08-06T18:43:56.121Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-dance-showcase.html</loc>
+    <lastmod>2026-08-23T22:19:51.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-vocal-showcase.html</loc>
+    <lastmod>2026-08-23T22:19:55.022Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
+    <lastmod>2026-08-22T01:18:40.100Z</lastmod>
   </url>
 </urlset>

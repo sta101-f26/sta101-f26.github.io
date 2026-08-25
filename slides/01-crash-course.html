@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="John Zito">
 <meta name="dcterms.date" content="2026-08-27">
-
 <title>All of STA 101 in 75 minutes – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
@@ -22,8 +19,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -40,8 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -67,21 +97,41 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 <meta property="og:title" content="All of STA 101 in 75 minutes – STA 101 Fall 2026">
 <meta property="og:description" content="Lecture 1">
 <meta property="og:image" content="https://sta101-f26.github.io/slides/images/01/herman.jpg">
 <meta property="og:site_name" content="STA 101 Fall 2026">
 </head>
-
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -92,16 +142,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
@@ -116,10 +161,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus/student-news.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Student news!</span></a>
+  <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check it out!</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -130,8 +175,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -174,11 +219,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Code helpers</span></span>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Labs</span></span>
@@ -196,36 +237,162 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam Study Guides</span></span>
   </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#today" id="toc-today" class="nav-link active" data-scroll-target="#today">Today</a></li>
-  <li><a href="#the-toolkit" id="toc-the-toolkit" class="nav-link" data-scroll-target="#the-toolkit">0. The toolkit</a></li>
-  <li><a href="#the-research-question" id="toc-the-research-question" class="nav-link" data-scroll-target="#the-research-question">1. The research question</a></li>
-  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">2. Data collection</a></li>
-  <li><a href="#exploration" id="toc-exploration" class="nav-link" data-scroll-target="#exploration">3. Exploration</a></li>
-  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">4. Modeling</a></li>
-  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">5. Inference</a></li>
-  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">6. Interpretation</a></li>
-  <li><a href="#parting-thoughts" id="toc-parting-thoughts" class="nav-link" data-scroll-target="#parting-thoughts">Parting thoughts</a>
+<li><a href="#what-are-we-studying" id="toc-what-are-we-studying" class="nav-link active" data-scroll-target="#what-are-we-studying">What are we studying?</a></li>
+  <li><a href="#before-we-begin" id="toc-before-we-begin" class="nav-link" data-scroll-target="#before-we-begin">Before we begin</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  <li><a href="#today-1" id="toc-today-1" class="nav-link" data-scroll-target="#today-1">Today</a></li>
+  <li><a href="#basically" id="toc-basically" class="nav-link" data-scroll-target="#basically">Basically</a></li>
+  <li>
+<a href="#the-toolkit" id="toc-the-toolkit" class="nav-link" data-scroll-target="#the-toolkit">0. The toolkit</a>
   <ul class="collapse">
-  <li><a href="#themes-and-takeaways-and-shit" id="toc-themes-and-takeaways-and-shit" class="nav-link" data-scroll-target="#themes-and-takeaways-and-shit">Themes and takeaways and shit</a></li>
-  <li><a href="#coming-up" id="toc-coming-up" class="nav-link" data-scroll-target="#coming-up">Coming up</a></li>
-  </ul></li>
+<li><a href="#access-your-container" id="toc-access-your-container" class="nav-link" data-scroll-target="#access-your-container">Access your container</a></li>
+  <li><a href="#r-rstudio" id="toc-r-rstudio" class="nav-link" data-scroll-target="#r-rstudio">R + RStudio</a></li>
+  <li><a href="#r-rstudio-1" id="toc-r-rstudio-1" class="nav-link" data-scroll-target="#r-rstudio-1">R + RStudio</a></li>
+  <li><a href="#the-lay-of-the-land" id="toc-the-lay-of-the-land" class="nav-link" data-scroll-target="#the-lay-of-the-land">The lay of the land</a></li>
+  <li><a href="#grab-todays-files" id="toc-grab-todays-files" class="nav-link" data-scroll-target="#grab-todays-files">Grab today’s files</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#the-tidyverse" id="toc-the-tidyverse" class="nav-link" data-scroll-target="#the-tidyverse">The <code>tidyverse</code></a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#the-lay-of-the-land-1" id="toc-the-lay-of-the-land-1" class="nav-link" data-scroll-target="#the-lay-of-the-land-1">The lay of the land</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
+  <li><a href="#two-important-concepts" id="toc-two-important-concepts" class="nav-link" data-scroll-target="#two-important-concepts">Two important concepts</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-crash-course-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</li>
+  <li>
+<a href="#a-research-question" id="toc-a-research-question" class="nav-link" data-scroll-target="#a-research-question">1. A research question</a>
+  <ul class="collapse">
+<li><a href="#minimum-wage-policy" id="toc-minimum-wage-policy" class="nav-link" data-scroll-target="#minimum-wage-policy">Minimum wage policy</a></li>
+  <li><a href="#what-do-you-think" id="toc-what-do-you-think" class="nav-link" data-scroll-target="#what-do-you-think">What do you think?</a></li>
+  <li><a href="#the-econ-101-story" id="toc-the-econ-101-story" class="nav-link" data-scroll-target="#the-econ-101-story">The ECON 101 story</a></li>
+  <li><a href="#the-econ-101-story-1" id="toc-the-econ-101-story-1" class="nav-link" data-scroll-target="#the-econ-101-story-1">The ECON 101 story</a></li>
+  <li><a href="#the-question" id="toc-the-question" class="nav-link" data-scroll-target="#the-question">The question</a></li>
+  <li><a href="#firstly-the-question-is-too-broad" id="toc-firstly-the-question-is-too-broad" class="nav-link" data-scroll-target="#firstly-the-question-is-too-broad">Firstly, the question is too broad</a></li>
+  <li><a href="#so-lets-zoom-in" id="toc-so-lets-zoom-in" class="nav-link" data-scroll-target="#so-lets-zoom-in">So let’s zoom in</a></li>
+  <li><a href="#specific-time-place-industry-and-size" id="toc-specific-time-place-industry-and-size" class="nav-link" data-scroll-target="#specific-time-place-industry-and-size">Specific time, place, industry, and size</a></li>
+  <li><a href="#warning-this-is-a-causal-question" id="toc-warning-this-is-a-causal-question" class="nav-link" data-scroll-target="#warning-this-is-a-causal-question">🚨 Warning: this is a causal question!</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">2. Data collection</a>
+  <ul class="collapse">
+<li><a href="#the-ideal-a-randomized-experiment" id="toc-the-ideal-a-randomized-experiment" class="nav-link" data-scroll-target="#the-ideal-a-randomized-experiment">The ideal: a randomized experiment</a></li>
+  <li><a href="#why-is-that-the-ideal" id="toc-why-is-that-the-ideal" class="nav-link" data-scroll-target="#why-is-that-the-ideal">Why is that the ideal?</a></li>
+  <li><a href="#the-reality" id="toc-the-reality" class="nav-link" data-scroll-target="#the-reality">The reality</a></li>
+  <li><a href="#observational-data" id="toc-observational-data" class="nav-link" data-scroll-target="#observational-data">Observational data</a></li>
+  <li><a href="#observational-data-causal-inference" id="toc-observational-data-causal-inference" class="nav-link" data-scroll-target="#observational-data-causal-inference">Observational data + causal inference = 🤮</a></li>
+  <li><a href="#unless" id="toc-unless" class="nav-link" data-scroll-target="#unless">🤔 Unless…</a></li>
+  <li><a href="#example-military-service-and-lifetime-earnings" id="toc-example-military-service-and-lifetime-earnings" class="nav-link" data-scroll-target="#example-military-service-and-lifetime-earnings">Example: military service and lifetime earnings</a></li>
+  <li><a href="#the-vietnam-draft-lottery" id="toc-the-vietnam-draft-lottery" class="nav-link" data-scroll-target="#the-vietnam-draft-lottery">The Vietnam Draft Lottery</a></li>
+  <li><a href="#angrist-1990-aer" id="toc-angrist-1990-aer" class="nav-link" data-scroll-target="#angrist-1990-aer">Angrist (1990 AER)</a></li>
+  <li><a href="#back-to-the-minimum-wage" id="toc-back-to-the-minimum-wage" class="nav-link" data-scroll-target="#back-to-the-minimum-wage">Back to the minimum wage</a></li>
+  <li><a href="#card-and-krueger-1994-aer" id="toc-card-and-krueger-1994-aer" class="nav-link" data-scroll-target="#card-and-krueger-1994-aer">Card and Krueger (1994 AER)</a></li>
+  <li><a href="#what-did-card-and-krueger-do" id="toc-what-did-card-and-krueger-do" class="nav-link" data-scroll-target="#what-did-card-and-krueger-do">What did Card and Krueger do?</a></li>
+  <li><a href="#discuss-problems-with-surveys" id="toc-discuss-problems-with-surveys" class="nav-link" data-scroll-target="#discuss-problems-with-surveys">Discuss problems with surveys</a></li>
+  <li><a href="#we-have-the-data" id="toc-we-have-the-data" class="nav-link" data-scroll-target="#we-have-the-data">We have the data!</a></li>
+  <li><a href="#aside-variable-assignment--" id="toc-aside-variable-assignment--" class="nav-link" data-scroll-target="#aside-variable-assignment--">Aside: variable assignment <code>&lt;-</code></a></li>
+  <li><a href="#the-anatomy-of-a-data-frame" id="toc-the-anatomy-of-a-data-frame" class="nav-link" data-scroll-target="#the-anatomy-of-a-data-frame">The anatomy of a data frame</a></li>
+  <li><a href="#the-dimensions" id="toc-the-dimensions" class="nav-link" data-scroll-target="#the-dimensions">The dimensions</a></li>
+  <li><a href="#our-variables" id="toc-our-variables" class="nav-link" data-scroll-target="#our-variables">Our variables</a></li>
+  <li><a href="#your-first-taste-of-variable-types" id="toc-your-first-taste-of-variable-types" class="nav-link" data-scroll-target="#your-first-taste-of-variable-types">Your first taste of variable types</a></li>
+  <li><a href="#scraps" id="toc-scraps" class="nav-link" data-scroll-target="#scraps">Scraps</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#exploration" id="toc-exploration" class="nav-link" data-scroll-target="#exploration">3. Exploration</a>
+  <ul class="collapse">
+<li><a href="#babys-first-summary" id="toc-babys-first-summary" class="nav-link" data-scroll-target="#babys-first-summary">Baby’s first summary</a></li>
+  <li><a href="#what-restaurant-chains-are-included" id="toc-what-restaurant-chains-are-included" class="nav-link" data-scroll-target="#what-restaurant-chains-are-included">What restaurant chains are included?</a></li>
+  <li><a href="#aside-the-pipe-operator" id="toc-aside-the-pipe-operator" class="nav-link" data-scroll-target="#aside-the-pipe-operator">Aside: the pipe operator <code>|&gt;</code></a></li>
+  <li><a href="#like-a-russian-stacking-doll" id="toc-like-a-russian-stacking-doll" class="nav-link" data-scroll-target="#like-a-russian-stacking-doll">Like a Russian stacking doll</a></li>
+  <li><a href="#next-lets-compare-states" id="toc-next-lets-compare-states" class="nav-link" data-scroll-target="#next-lets-compare-states">Next, let’s compare states</a></li>
+  <li><a href="#compare-the-mix-of-chains" id="toc-compare-the-mix-of-chains" class="nav-link" data-scroll-target="#compare-the-mix-of-chains">Compare the mix of chains</a></li>
+  <li><a href="#compare-the-mix-of-chains-1" id="toc-compare-the-mix-of-chains-1" class="nav-link" data-scroll-target="#compare-the-mix-of-chains-1">Compare the mix of chains</a></li>
+  <li><a href="#compare-the-mix-of-chains-2" id="toc-compare-the-mix-of-chains-2" class="nav-link" data-scroll-target="#compare-the-mix-of-chains-2">Compare the mix of chains</a></li>
+  <li><a href="#compare-the-mix-of-chains-3" id="toc-compare-the-mix-of-chains-3" class="nav-link" data-scroll-target="#compare-the-mix-of-chains-3">Compare the mix of chains</a></li>
+  <li><a href="#compare-the-mix-of-chains-4" id="toc-compare-the-mix-of-chains-4" class="nav-link" data-scroll-target="#compare-the-mix-of-chains-4">Compare the mix of chains</a></li>
+  <li><a href="#seriously-its-just-like-russian-stacking-dolls" id="toc-seriously-its-just-like-russian-stacking-dolls" class="nav-link" data-scroll-target="#seriously-its-just-like-russian-stacking-dolls">Seriously, it’s just like Russian stacking dolls</a></li>
+  <li><a href="#lets-compare-meal-prices-next" id="toc-lets-compare-meal-prices-next" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-1" id="toc-lets-compare-meal-prices-next-1" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-1">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-2" id="toc-lets-compare-meal-prices-next-2" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-2">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-3" id="toc-lets-compare-meal-prices-next-3" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-3">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-4" id="toc-lets-compare-meal-prices-next-4" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-4">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-5" id="toc-lets-compare-meal-prices-next-5" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-5">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-6" id="toc-lets-compare-meal-prices-next-6" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-6">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-7" id="toc-lets-compare-meal-prices-next-7" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-7">Let’s compare meal prices next</a></li>
+  <li><a href="#lets-compare-meal-prices-next-8" id="toc-lets-compare-meal-prices-next-8" class="nav-link" data-scroll-target="#lets-compare-meal-prices-next-8">Let’s compare meal prices next</a></li>
+  <li><a href="#dataviz-with-ggplot-is-like-building-a-cake" id="toc-dataviz-with-ggplot-is-like-building-a-cake" class="nav-link" data-scroll-target="#dataviz-with-ggplot-is-like-building-a-cake">Dataviz with ggplot is like building a cake</a></li>
+  <li><a href="#compare-hours-of-operation" id="toc-compare-hours-of-operation" class="nav-link" data-scroll-target="#compare-hours-of-operation">Compare hours of operation</a></li>
+  <li><a href="#compare-starting-wage-prior-to-nj-hike" id="toc-compare-starting-wage-prior-to-nj-hike" class="nav-link" data-scroll-target="#compare-starting-wage-prior-to-nj-hike">Compare starting wage (prior to NJ hike)</a></li>
+  <li><a href="#compare-number-of-workers-prior-to-nj-hike" id="toc-compare-number-of-workers-prior-to-nj-hike" class="nav-link" data-scroll-target="#compare-number-of-workers-prior-to-nj-hike">Compare number of workers (prior to NJ hike)</a></li>
+  <li><a href="#so-far-so-good" id="toc-so-far-so-good" class="nav-link" data-scroll-target="#so-far-so-good">So far so good</a></li>
+  <li><a href="#the-emp_diff-variable" id="toc-the-emp_diff-variable" class="nav-link" data-scroll-target="#the-emp_diff-variable">The <code>emp_diff</code> variable</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#pics-or-it-didnt-happen" id="toc-pics-or-it-didnt-happen" class="nav-link" data-scroll-target="#pics-or-it-didnt-happen">Pics or it didn’t happen</a></li>
+  <li><a href="#pause" id="toc-pause" class="nav-link" data-scroll-target="#pause">Pause</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">4. Modeling</a>
+  <ul class="collapse">
+<li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#good-for-them" id="toc-good-for-them" class="nav-link" data-scroll-target="#good-for-them">Good for them!</a></li>
+  <li><a href="#scraps-1" id="toc-scraps-1" class="nav-link" data-scroll-target="#scraps-1">Scraps</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#statistical-inference" id="toc-statistical-inference" class="nav-link" data-scroll-target="#statistical-inference">5. Statistical inference</a>
+  <ul class="collapse">
+<li><a href="#our-point-estimate" id="toc-our-point-estimate" class="nav-link" data-scroll-target="#our-point-estimate">Our point estimate</a></li>
+  <li><a href="#what-do-we-mean-by-reliability" id="toc-what-do-we-mean-by-reliability" class="nav-link" data-scroll-target="#what-do-we-mean-by-reliability">What do we mean by reliability?</a></li>
+  <li><a href="#sampling-variation" id="toc-sampling-variation" class="nav-link" data-scroll-target="#sampling-variation">Sampling variation</a></li>
+  <li><a href="#different-data-different-result" id="toc-different-data-different-result" class="nav-link" data-scroll-target="#different-data-different-result">Different data, different result</a></li>
+  <li><a href="#different-data-different-result-1" id="toc-different-data-different-result-1" class="nav-link" data-scroll-target="#different-data-different-result-1">Different data, different result</a></li>
+  <li><a href="#different-data-different-result-2" id="toc-different-data-different-result-2" class="nav-link" data-scroll-target="#different-data-different-result-2">Different data, different result</a></li>
+  <li><a href="#the-full-monty" id="toc-the-full-monty" class="nav-link" data-scroll-target="#the-full-monty">The Full Monty</a></li>
+  <li><a href="#the-full-monty-1" id="toc-the-full-monty-1" class="nav-link" data-scroll-target="#the-full-monty-1">The Full Monty</a></li>
+  <li><a href="#the-full-monty-2" id="toc-the-full-monty-2" class="nav-link" data-scroll-target="#the-full-monty-2">The Full Monty</a></li>
+  <li><a href="#the-full-monty-3" id="toc-the-full-monty-3" class="nav-link" data-scroll-target="#the-full-monty-3">The Full Monty</a></li>
+  <li><a href="#the-full-monty-4" id="toc-the-full-monty-4" class="nav-link" data-scroll-target="#the-full-monty-4">The Full Monty</a></li>
+  <li><a href="#the-full-monty-5" id="toc-the-full-monty-5" class="nav-link" data-scroll-target="#the-full-monty-5">The Full Monty</a></li>
+  <li><a href="#the-full-monty-6" id="toc-the-full-monty-6" class="nav-link" data-scroll-target="#the-full-monty-6">The Full Monty</a></li>
+  <li><a href="#the-full-monty-7" id="toc-the-full-monty-7" class="nav-link" data-scroll-target="#the-full-monty-7">The Full Monty</a></li>
+  <li><a href="#the-sampling-distribution-for-our-example" id="toc-the-sampling-distribution-for-our-example" class="nav-link" data-scroll-target="#the-sampling-distribution-for-our-example">The sampling distribution for our example</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#towards-quantifying-uncertainty" id="toc-towards-quantifying-uncertainty" class="nav-link" data-scroll-target="#towards-quantifying-uncertainty">Towards quantifying uncertainty</a></li>
+  <li><a href="#reality-check" id="toc-reality-check" class="nav-link" data-scroll-target="#reality-check">Reality check</a></li>
+  <li><a href="#scraps-2" id="toc-scraps-2" class="nav-link" data-scroll-target="#scraps-2">Scraps</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">6. Interpretation</a>
+  <ul class="collapse">
+<li><a href="#at-the-end-of-the-day" id="toc-at-the-end-of-the-day" class="nav-link" data-scroll-target="#at-the-end-of-the-day">At the end of the day</a></li>
+  <li><a href="#do-you-believe-it" id="toc-do-you-believe-it" class="nav-link" data-scroll-target="#do-you-believe-it">Do you believe it?</a></li>
+  <li><a href="#things-to-keep-you-up-at-night" id="toc-things-to-keep-you-up-at-night" class="nav-link" data-scroll-target="#things-to-keep-you-up-at-night">Things to keep you up at night</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#parting-thoughts" id="toc-parting-thoughts" class="nav-link" data-scroll-target="#parting-thoughts">Parting thoughts</a>
+  <ul class="collapse">
+<li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#intellectual-themes" id="toc-intellectual-themes" class="nav-link" data-scroll-target="#intellectual-themes">Intellectual themes</a></li>
+  <li><a href="#computational-themes" id="toc-computational-themes" class="nav-link" data-scroll-target="#computational-themes">Computational themes</a></li>
+  <li><a href="#long-term-plan" id="toc-long-term-plan" class="nav-link" data-scroll-target="#long-term-plan">Long-term plan</a></li>
+  <li><a href="#near-term-plan" id="toc-near-term-plan" class="nav-link" data-scroll-target="#near-term-plan">Near-term plan</a></li>
+  </ul>
+</li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-crash-course-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">All of STA 101 in 75 minutes</h1>
 <p class="subtitle lead">Lecture 1</p>
 </div>
@@ -260,41 +427,447 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
-
-
-<p>Recap what the class is about</p>
-<p>solicit questions about the syllabus</p>
-<section id="today" class="level2">
-<h2 class="anchored" data-anchor-id="today">Today</h2>
+</header><section id="what-are-we-studying" class="level2"><h2 class="anchored" data-anchor-id="what-are-we-studying">What are we studying?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Data analysis
+<ul class="incremental">
+<li>The <em>art</em> of transforming messy, incomplete, imperfect data into <em>knowledge</em>;</li>
+<li>
+<em>Knowledge</em> often takes the form of pictures and a concise set of numerical summaries;</li>
+</ul>
+</li>
+<li>Statistical Inference
+<ul class="incremental">
+<li>Quantifying our uncertainty about that knowledge;</li>
+<li>Reporting this faithfully to help people make decisions.</li>
+</ul>
+</li>
+</ul>
+</div>
+</section><section id="before-we-begin" class="level2"><h2 class="anchored" data-anchor-id="before-we-begin">Before we begin</h2>
+<p>Any questions about the syllabus?</p>
+<p>. . .</p>
+<p>If anything occurs to you later, please post on <a href="https://edstem.org/us/courses/101045/discussion">Ed</a>.</p>
+</section><section id="today" class="level2"><h2 class="anchored" data-anchor-id="today">Today</h2>
 <p>. . .</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>We’ll take…</p>
 <p><img src="images/01/herman.jpg" class="img-fluid"></p>
-</div><div class="column fragment" style="width:50%;">
+</div>
+<div class="column fragment" style="width:50%;">
 <p>So that you can see…</p>
 <p><img src="images/01/coleman.jpg" class="img-fluid"></p>
 </div>
 </div>
-</section>
-<section id="the-toolkit" class="level1">
-<h1>0. The toolkit</h1>
-<p>intro to R + RStudio + Quarto. English language metaphor.</p>
-<p>get the shit uploaded to their containers. Have them hit render and produce the document.</p>
-<p>there’s written text, there’s code, there’s pictures, there’s tables</p>
-<p>by the end of the semester, you’ll know how to go from am empty file to a document like this.</p>
-</section>
-<section id="the-research-question" class="level1">
-<h1>1. The research question</h1>
-<p>solicit their policy opinions about the minimum wage</p>
-<p>intro the basic 101 theory</p>
-<p>is this true? how would you even evaluate that?</p>
-<p>not a global answer: depends on time, on place, on industry, on the size of the wage increase</p>
-<p>so let’s narrow the research question</p>
-</section>
-<section id="data-collection" class="level1">
-<h1>2. Data collection</h1>
+</section><section id="today-1" class="level2"><h2 class="anchored" data-anchor-id="today-1">Today</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>We’ll speedrun essentially all of the main ideas of the course so that you can get a sense of the outline of everything. Then we’ll spend the next fourteen weeks elaborating;</p></li>
+<li><p>It’s gonna be a lot, and some things might be easier to follow than others. All you have to do is sit back and let it wash over you. We have the whole rest of the course to refine;</p></li>
+<li><p>Please ask questions!</p></li>
+</ul>
+</div>
+</section><section id="basically" class="level2"><h2 class="anchored" data-anchor-id="basically">Basically</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/swimming-lesson.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="the-toolkit" class="level1 page-columns page-full"><h1>0. The toolkit</h1>
+<section id="access-your-container" class="level2"><h2 class="anchored" data-anchor-id="access-your-container">Access your container</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img src="images/01/containers.png" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<ol type="1">
+<li>Visit the <a href="https://cmgr.oit.duke.edu/containers">Duke Container Manager</a> (and log in with your NetID);</li>
+<li>(If you haven’t already, reserve the STA101 container on the right-hand-side)</li>
+<li>Click STA101 under “My reservations” on the left-hand side;</li>
+<li>Login, start, and give it a sec to launch in your browser.</li>
+</ol>
+</div>
+</div>
+</section><section id="r-rstudio" class="level2 medium"><h2 class="medium anchored" data-anchor-id="r-rstudio">R + RStudio</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/r-logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="R logo"></p>
+</figure>
+</div>
+<p><strong>R</strong> is a programming language that statisticians created to make their work easier. If you learn to “speak” this language, you can instruct a computer to perform data analysis tasks that would be tedious to perform by hand.</p>
+</div>
+<div class="column fragment" style="width:50%;">
+<p><img src="images/01/rstudio-logo.png" class="img-fluid" alt="RStudio logo"></p>
+<p><strong>RStudio</strong> is a convenient interface that allows you to use R in a clean and organized way. It is an example of an <em>integrated development environment</em> (IDE), but don’t worry about that.</p>
+</div>
+</div>
+</section><section id="r-rstudio-1" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="r-rstudio-1">R + RStudio</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="https://moderndive.com/1-getting-started.html"><img src="images/01/r_vs_rstudio.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="On the left: a car engine. On the right: a car dashboard. The engine is labelled R. The dashboard is labelled RStudio." width="1001"></a></p>
+</figure>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Source: <a href="https://moderndive.com/1-getting-started.html">Modern Dive</a>.</p>
+</div></div></section><section id="the-lay-of-the-land" class="level2"><h2 class="anchored" data-anchor-id="the-lay-of-the-land">The lay of the land</h2>
+<p><img src="images/01/tour-r-rstudio.png" class="img-fluid"></p>
+</section><section id="grab-todays-files" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="grab-todays-files">Grab today’s files</h2>
+<ul>
+<li>Double-check that you have the course project loaded in the upper right corner;</li>
+<li>Go to the <strong>Git</strong> tab in the upper right pane and click <strong>Pull</strong>.</li>
+</ul>
+<p><img src="images/01/pull.png" class="img-fluid"></p>
+</section><section id="packages" class="level2 medium"><h2 class="medium anchored" data-anchor-id="packages">Packages</h2>
+<ul>
+<li>Some of R’s functionality is built-in (like the sink or the dishwasher), and other stuff is an add-on you need grab separately (like a food processor);</li>
+<li>The add-ons are bundled in <strong>packages</strong>, which you can load in by typing commands like this:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Such commands will appear <em>once</em> at the top of pretty much every document you work on.</li>
+</ul></section><section id="the-tidyverse" class="level2"><h2 class="anchored" data-anchor-id="the-tidyverse">The <code>tidyverse</code>
+</h2>
+<p>The <a href="https://tidyverse.org"><code>tidyverse</code></a> is the package we will use most often. In fact, it’s really a “meta-package” that bundles many smaller packages that we will use:</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><a href="https://tidyverse.org"><img src="images/01/tidyverse.png" class="img-fluid" alt="Hex logos for dplyr, ggplot2, forcats, tibble, readr, stringr, tidyr, and purrr"></a></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>
+<code>ggplot2</code>: data visualization;</li>
+<li>
+<code>dplyr</code>: data transformation;</li>
+<li>
+<code>readr</code>: data import and export;</li>
+<li>…and so on.</li>
+</ul>
+</div>
+</div>
+</section><section id="quarto" class="level2"><h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p><img src="images/01/quarto.png" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p>Quarto is a technical publishing system that allows you to write documents where text, math, code, and the output of that code are seamlessly integrated in a reproducible way.</p>
+</div>
+</div>
+</section><section id="the-lay-of-the-land-1" class="level2"><h2 class="anchored" data-anchor-id="the-lay-of-the-land-1">The lay of the land</h2>
+<p><img src="images/01/tour-quarto.png" class="img-fluid"></p>
+</section><section id="how-it-works" class="level2 medium"><h2 class="medium anchored" data-anchor-id="how-it-works">How it works</h2>
+<p>This is pretty much it:</p>
+<blockquote class="blockquote">
+<p>Edit the <code>.qmd</code> file → hit <strong>Render</strong> → get a <code>.pdf</code></p>
+</blockquote>
+<ul>
+<li>Fully reproducible reports – each time you render the analysis is run from the beginning;</li>
+<li>Code goes in cells (between the three back ticks);</li>
+<li>Written English goes outside cells, the same way you would write in Google Docs or MS Word.</li>
+<li>Every application exercise, lab, project, etc. is an Quarto document</li>
+<li>You’ll always have a template Quarto document to start with</li>
+<li>The amount of scaffolding in the template will decrease over the semester</li>
+</ul></section><section id="two-important-concepts" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="two-important-concepts">Two important concepts</h2>
+<p>. . .</p>
+<p>Computational <em>reproducibility</em>:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>If you give me your code and your data and I hit “Run,” do I get the same numbers and the same pictures that you published in your article?</li>
+<li>If so…phew! If not…what the 🤬?</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>Scientific <em>replication</em>:</p>
+<p>. . .</p>
+<ul>
+<li>Can new researchers conduct an independent analysis with different data and reach the same substantive conclusions that you did?</li>
+<li>Just because your analysis is computationally reproducible does not mean that you have a robust result that <strong>generalizes</strong>.</li>
+</ul>
+<p>. . .</p>
+<p>Our tools will help you achieve the first, which is necessary (but not sufficient!) for the second.</p>
+</section></section><section id="a-research-question" class="level1"><h1>1. A research question</h1>
+<section id="minimum-wage-policy" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="minimum-wage-policy">Minimum wage policy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States"><img src="images/01/minimum-wage.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></a></p>
+</figure>
+</div>
+</section><section id="what-do-you-think" class="level2"><h2 class="anchored" data-anchor-id="what-do-you-think">What do you think?</h2>
+<p>Is a higher minimum wage good? bad? neutral? idfk?</p>
+</section><section id="the-econ-101-story" class="level2"><h2 class="anchored" data-anchor-id="the-econ-101-story">The ECON 101 story</h2>
+<p><img src="images/01/econ101.png" class="img-fluid"></p>
+</section><section id="the-econ-101-story-1" class="level2"><h2 class="anchored" data-anchor-id="the-econ-101-story-1">The ECON 101 story</h2>
+<p>The reasoning goes like this:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>if you make something more expensive, then people generally do less of it (“demand curves slope down”);</li>
+<li>the wage is the <em>price</em> that firms pay to employ people. Make it more expensive to employ people, and firms will do less of it.</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>This <em>theoretical argument</em> motivates a prediction about the world:</p>
+<p>. . .</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Claim
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Raising the minimum wage <em>decreases</em> employment (puts people out of work).</p>
+</div>
+</div>
+</section><section id="the-question" class="level2 medium"><h2 class="medium anchored" data-anchor-id="the-question">The question</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Does real world experience (data) agree with the theoretical claim in the 101 textbook?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you raise the minimum wage, does it decrease employment?</p>
+</div>
+</div>
+<div class="incremental">
+<ul class="incremental">
+<li>If no: are minimum wage hikes a “free lunch” for reducing poverty?</li>
+<li>If yes: how big is the decrease? Is it worth the trade-off: more people working at lower wage or fewer people working at higher wage?</li>
+<li>Reasonable people can disagree about these questions, and I won’t tell you what to think (see further reading at the end);</li>
+<li>For our purposes, I don’t even really care about the answer. I’m using it as an excuse to show off the tools, methods, and ways of thinking that can produce <em>an</em> answer. That’s what our class is about.</li>
+</ul>
+</div>
+</section><section id="firstly-the-question-is-too-broad" class="level2"><h2 class="anchored" data-anchor-id="firstly-the-question-is-too-broad">Firstly, the question is too broad</h2>
+<blockquote class="blockquote">
+<p>If you raise the minimum wage, does it decrease employment?</p>
+</blockquote>
+<p>There is no cosmic, forever-and-always answer to that question. It will depend on:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>time: 1950s versus 2020s?</li>
+<li>place: Manhattan versus Dodge City, Kansas;</li>
+<li>industry: nail salons versus grocery stores;</li>
+<li>size: $8 <span class="math inline">\(\to\)</span> $15 versus $8 <span class="math inline">\(\to\)</span> $80.</li>
+</ul>
+</div>
+</section><section id="so-lets-zoom-in" class="level2"><h2 class="anchored" data-anchor-id="so-lets-zoom-in">So let’s zoom in</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/golden-girls.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="specific-time-place-industry-and-size" class="level2"><h2 class="anchored" data-anchor-id="specific-time-place-industry-and-size">Specific time, place, industry, and size</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img src="images/01/nj.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<blockquote class="blockquote">
+<p>On April 1, 1992, New Jersey’s minimum wage rose from $4.25 to $5.05 per hour.</p>
+</blockquote>
+<p>Did this policy change decrease employment in the <strong>fast-food industry</strong>?</p>
+</div>
+</div>
+</section><section id="warning-this-is-a-causal-question" class="level2"><h2 class="anchored" data-anchor-id="warning-this-is-a-causal-question">🚨 Warning: this is a causal question!</h2>
+<p>If you’ve heard it once you’ve heard it a thousand times:</p>
+<blockquote class="blockquote">
+<p>Correlation does not imply causation.</p>
+</blockquote>
+<div class="incremental">
+<ul class="incremental">
+<li>We don’t care about the mere <em>coincidence</em> of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;</li>
+<li>Let’s be real from the jump: this is <span style="color:red;">very difficult</span> to isolate. But it <em>is</em> what we truly care about. So let’s not chicken out!</li>
+</ul>
+</div>
+</section></section><section id="data-collection" class="level1"><h1>2. Data collection</h1>
+<section id="the-ideal-a-randomized-experiment" class="level2"><h2 class="anchored" data-anchor-id="the-ideal-a-randomized-experiment">The ideal: a randomized experiment</h2>
+</section><section id="why-is-that-the-ideal" class="level2"><h2 class="anchored" data-anchor-id="why-is-that-the-ideal">Why is that the ideal?</h2>
+</section><section id="the-reality" class="level2"><h2 class="anchored" data-anchor-id="the-reality">The reality</h2>
+</section><section id="observational-data" class="level2"><h2 class="anchored" data-anchor-id="observational-data">Observational data</h2>
+</section><section id="observational-data-causal-inference" class="level2"><h2 class="anchored" data-anchor-id="observational-data-causal-inference">Observational data + causal inference = 🤮</h2>
+<blockquote class="blockquote">
+<p>Correlation does not imply causation.</p>
+</blockquote>
+</section><section id="unless" class="level2"><h2 class="anchored" data-anchor-id="unless">🤔 Unless…</h2>
+</section><section id="example-military-service-and-lifetime-earnings" class="level2"><h2 class="anchored" data-anchor-id="example-military-service-and-lifetime-earnings">Example: military service and lifetime earnings</h2>
+<p>We obviously cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then observe them for the next twenty years.</p>
+<p>. . .</p>
+<p>Or can we?</p>
+</section><section id="the-vietnam-draft-lottery" class="level2"><h2 class="anchored" data-anchor-id="the-vietnam-draft-lottery">The Vietnam Draft Lottery</h2>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/OkJH6sapQMA" width="900" height="600" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section><section id="angrist-1990-aer" class="level2"><h2 class="anchored" data-anchor-id="angrist-1990-aer">Angrist (1990 AER)</h2>
+<p><img src="images/01/angrist.png" class="img-fluid"></p>
+</section><section id="back-to-the-minimum-wage" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="back-to-the-minimum-wage">Back to the minimum wage</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/card-krueger.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="card-and-krueger-1994-aer" class="level2"><h2 class="anchored" data-anchor-id="card-and-krueger-1994-aer">Card and Krueger (1994 AER)</h2>
+<p><img src="images/01/card-krueger-abstract.png" class="img-fluid"></p>
+</section><section id="what-did-card-and-krueger-do" class="level2"><h2 class="anchored" data-anchor-id="what-did-card-and-krueger-do">What did Card and Krueger do?</h2>
+<p>the seemingly arbitrary placement of restaurants on either side of this border acts as if random assignment took place</p>
+</section><section id="discuss-problems-with-surveys" class="level2"><h2 class="anchored" data-anchor-id="discuss-problems-with-surveys">Discuss problems with surveys</h2>
+</section><section id="we-have-the-data" class="level2"><h2 class="anchored" data-anchor-id="we-have-the-data">We have the data!</h2>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/card-krueger.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="aside-variable-assignment--" class="level2"><h2 class="anchored" data-anchor-id="aside-variable-assignment--">Aside: variable assignment <code>&lt;-</code>
+</h2>
+</section><section id="the-anatomy-of-a-data-frame" class="level2"><h2 class="anchored" data-anchor-id="the-anatomy-of-a-data-frame">The anatomy of a data frame</h2>
+<p><strong>data frame</strong></p>
+<ul>
+<li>each row of a data frame is an <strong>observation</strong>;</li>
+<li>each column of a data frame is a <strong>variable</strong>.</li>
+</ul></section><section id="the-dimensions" class="level2"><h2 class="anchored" data-anchor-id="the-dimensions">The dimensions</h2>
+<p>How many rows and columns?</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">card_krueger</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 351</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">card_krueger</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13</code></pre>
+</div>
+</div>
+<p>So they surveyed 351 restaurants in all, and they recorded 13 pieces of information about each one.</p>
+</section><section id="our-variables" class="level2 small"><h2 class="small anchored" data-anchor-id="our-variables">Our variables</h2>
+<p>Each row is a restaurant, and for each restaurant, we record the following:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>
+<code>state</code>: which state is the restaurant in?</li>
+<li>
+<code>chain</code>: which restaurant chain does the store belong to?</li>
+<li>
+<code>co_owned</code>: is the restaurant company owned?</li>
+<li>
+<code>wage_st</code> and <code>wage_st2</code>: the starting wage in US dollars before and after policy change;</li>
+<li>
+<code>fte</code> and <code>fte2</code>: full-time-equivalent employment before and after the change, calculated as the number of full-time workers (including managers) plus 0.5 times the number of part-time workers;</li>
+<li>
+<code>hrsopen</code> and <code>hrsopen2</code>: number of hours open per day;</li>
+<li>
+<code>meal_price</code> and <code>meal_price2</code>: the price of a meal (soda, fries, entree);</li>
+<li>
+<code>emp_diff</code>: <code>fte2 - fte</code>.</li>
+</ul>
+</div>
+</section><section id="your-first-taste-of-variable-types" class="level2 medium"><h2 class="medium anchored" data-anchor-id="your-first-taste-of-variable-types">Your first taste of variable types</h2>
+<p>The <code>chain</code> variable is an example of a <em>categorical</em> variable:</p>
+<div class="cell" wrap="false">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span><span class="op">$</span><span class="va">chain</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "Wendy's"     "Wendy's"     "Burger King" "Burger King" "KFC"        
+  [6] "KFC"         "Roy's"       "Burger King" "Burger King" "Burger King"
+ [11] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
+ [16] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+ [21] "Wendy's"     "Roy's"       "Roy's"       "Burger King" "Burger King"
+ [26] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+ [31] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Wendy's"    
+ [36] "KFC"         "Burger King" "Burger King" "Burger King" "Burger King"
+ [41] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
+ [46] "Burger King" "Burger King" "KFC"         "Roy's"       "Burger King"
+ [51] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+ [56] "Burger King" "KFC"         "Roy's"       "Wendy's"     "Burger King"
+ [61] "Burger King" "Roy's"       "Roy's"       "Roy's"       "Burger King"
+ [66] "Burger King" "Roy's"       "KFC"         "Burger King" "KFC"        
+ [71] "KFC"         "KFC"         "Roy's"       "Wendy's"     "Roy's"      
+ [76] "Roy's"       "Wendy's"     "Wendy's"     "Burger King" "Burger King"
+ [81] "KFC"         "Wendy's"     "KFC"         "Roy's"       "Roy's"      
+ [86] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+ [91] "KFC"         "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
+ [96] "Burger King" "Burger King" "Roy's"       "Roy's"       "Wendy's"    
+[101] "Burger King" "Burger King" "Roy's"       "Roy's"       "Roy's"      
+[106] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
+[111] "KFC"         "Burger King" "KFC"         "KFC"         "KFC"        
+[116] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Burger King"
+[121] "Roy's"       "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
+[126] "Burger King" "Burger King" "Burger King" "Burger King" "Wendy's"    
+[131] "Wendy's"     "Burger King" "Burger King" "Burger King" "KFC"        
+[136] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
+[141] "Burger King" "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[146] "Roy's"       "Burger King" "KFC"         "Roy's"       "Burger King"
+[151] "Burger King" "KFC"         "Roy's"       "Roy's"       "Wendy's"    
+[156] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+[161] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[166] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
+[171] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[176] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[181] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+[186] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
+[191] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[196] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+[201] "Wendy's"     "Wendy's"     "Wendy's"     "Burger King" "Burger King"
+[206] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
+[211] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
+[216] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
+[221] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
+[226] "Wendy's"     "Wendy's"     "Wendy's"     "KFC"         "Burger King"
+[231] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[236] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
+[241] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[246] "KFC"         "KFC"         "KFC"         "KFC"         "Roy's"      
+[251] "Roy's"       "Roy's"       "Wendy's"     "Wendy's"     "Burger King"
+[256] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
+[261] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Wendy's"    
+[266] "Burger King" "KFC"         "Roy's"       "Burger King" "Burger King"
+[271] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[276] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
+[281] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
+[286] "Wendy's"     "Wendy's"     "Burger King" "Roy's"       "Roy's"      
+[291] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
+[296] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
+[301] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
+[306] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
+[311] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[316] "Roy's"       "Wendy's"     "Burger King" "Burger King" "Burger King"
+[321] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
+[326] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
+[331] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
+[336] "Burger King" "Burger King" "KFC"         "Burger King" "Burger King"
+[341] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
+[346] "KFC"         "KFC"         "KFC"         "Roy's"       "Wendy's"    
+[351] "Wendy's"    </code></pre>
+</div>
+</div>
+<p>The <code>wage_st</code> variable is an example of a <em>numerical</em> variable:</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span><span class="op">$</span><span class="va">meal_price</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 3.48 3.29 2.86 2.85 3.78 3.99 3.17 2.84 2.60 2.75 3.12 4.22 3.99 2.97 2.85
+ [16] 3.00 3.11 3.96 3.00 2.68 3.34 3.16 3.15 2.66 2.60 2.65 2.67 2.67 2.48 5.40
+ [31] 4.25 2.56 2.65 2.61 2.54 4.02 2.50 2.47   NA 2.49 4.28 2.50 3.48 2.53 2.72
+ [46]   NA 2.63 4.20 2.89 2.72 2.93 2.72 2.81 2.65 2.74 2.74 4.02 3.10 2.60 2.62
+ [61] 2.72 2.97 2.78 3.01   NA 2.81 4.72 4.40 2.95 4.25 4.65 4.65 3.04 4.50 3.42
+ [76] 3.16 3.10 3.15 3.16 3.08 4.42 3.10 4.25 2.84 3.18 2.82 2.96 2.96 2.96 3.14
+ [91] 4.10 3.20 3.33 3.20 3.01 3.08 3.20 3.27 3.15 2.86 2.77   NA 3.26 3.18 3.24
+[106] 2.72 2.72 4.15 4.03 3.99 3.88 3.02 4.25 4.25 4.37 4.42   NA   NA 2.82 2.73
+[121] 2.98 2.76 2.81 2.76 3.03 2.99   NA 3.16 3.54   NA 3.72 3.01 2.61 2.93 5.10
+[136] 4.19   NA 2.56 2.74 2.89 2.75 4.67 2.95   NA 4.08   NA 2.89 3.99 2.85 2.96
+[151] 3.02 4.63 3.20 3.20 4.04 2.98 2.96 2.96 3.40 3.11 3.07 3.03 2.96 4.57 5.21
+[166] 3.16 3.25 2.80 3.10 2.84 3.06 3.07   NA 4.42 4.73 4.33 4.42   NA 3.44 3.04
+[181] 2.73 2.99 2.96 3.07 3.34 3.24 2.97 3.07 3.62 3.02 2.92 3.15   NA 3.01 4.10
+[196] 3.19 4.64 3.25   NA 3.20 2.83 2.99 3.07 3.12 2.96 3.01 3.03 3.96 4.17 3.20
+[211] 2.86 2.96 3.08 3.20 2.99 3.04   NA 4.10 4.16 4.73 4.73 4.73 4.73 3.09 3.31
+[226] 2.82 2.79 2.97 3.99 2.95 3.03 2.75 2.96 3.12 4.25 2.98 3.07 2.96 2.92 2.78
+[241] 2.82 2.82 2.86 4.78 3.88 3.93 3.99 4.78 4.53 3.03   NA 2.88 2.61 2.76 2.96
+[256] 2.92 2.96 3.07 3.07 4.42 4.74 2.83 3.31 3.17 2.97 3.14   NA 4.59 2.88 2.87
+[271] 3.07 2.81 2.50 3.14 4.03 4.08 4.14 3.88 2.84 2.73   NA 2.92 2.92 2.92 2.79
+[286] 2.76 2.82 2.95 3.14 4.78 3.60 3.44 3.76 3.21 2.92 2.85 3.11 4.82 5.86 3.14
+[301] 2.94 2.72 2.86 2.92 2.86 2.76 4.03 4.03 3.09 2.87 2.69 2.79 2.78 4.31 4.25
+[316] 2.56 2.70 2.96 2.86 2.96 3.07 2.96 3.05   NA 2.96 4.78 5.21 4.47 3.20 3.24
+[331] 3.43 3.32 3.16 3.20 3.20 3.18 3.27 4.42 3.20 3.12 2.95 3.06 2.55 4.25 4.25
+[346] 4.25 4.25 4.25 3.26 4.07 3.10</code></pre>
+</div>
+</div>
+<p>The appropriate visualization or summary depends on the variable type.</p>
+</section><section id="scraps" class="level2"><h2 class="anchored" data-anchor-id="scraps">Scraps</h2>
+<p>What’s the ideal here? an experiemtn</p>
 <p>data collection is monstrously difficult, and very domain specific.</p>
 <p>julia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.</p>
 <p>what’s the ideal experiment a la angrist and pischke.</p>
@@ -302,47 +875,628 @@ ul.task-list li input[type="checkbox"] {
 <p>Can we do this? maybe?</p>
 <p>site seattle minimum wage study. But it’s costly (time, money, you name it).</p>
 <p>what about observational data? can’t control anything</p>
+<p>Passively observe without intervening to manipulate anything. So you can’t control treatment versus control, and you don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.</p>
 <p>data collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?</p>
 <p>You try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.</p>
-<p>load the thing into R</p>
-<p>the anatomy of a data frame: thw rows and the columns</p>
-</section>
-<section id="exploration" class="level1">
-<h1>3. Exploration</h1>
-<p>Use pictures and numerical summaries to see if the two groups are comparable</p>
-<p>We’ve passed the furst smell test. At the very least, these restaurants are broadly similar.</p>
-</section>
-<section id="modeling" class="level1">
-<h1>4. Modeling</h1>
+<p>THE CHOICE TO NOT RESPOND IS NOT RANDOM. IT IS SYSTEMATICALLY HIDING SOMETHING FROM YOU. What do you do about it? In this class, not much, but it’s a source of <em>uncertainty</em> that statisticians grapple with.</p>
+</section></section><section id="exploration" class="level1"><h1>3. Exploration</h1>
+<section id="babys-first-summary" class="level2"><h2 class="anchored" data-anchor-id="babys-first-summary">Baby’s first summary</h2>
+<p>How many restaurants do we observe in each state?</p>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  state     n
+  &lt;fct&gt; &lt;int&gt;
+1 PA       66
+2 NJ      285</code></pre>
+</div>
+</div>
+</section><section id="what-restaurant-chains-are-included" class="level2"><h2 class="anchored" data-anchor-id="what-restaurant-chains-are-included">What restaurant chains are included?</h2>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 2
+  chain           n
+  &lt;chr&gt;       &lt;int&gt;
+1 Burger King   145
+2 KFC            74
+3 Roy's          87
+4 Wendy's        45</code></pre>
+</div>
+</div>
+<p>. . .</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Feels like something’s missing, doesn’t it?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>They did try calling McDonald’s restaurants, but they got very low response rates and chose to omit them from the study.</p>
+</div>
+</div>
+</section><section id="aside-the-pipe-operator" class="level2"><h2 class="anchored" data-anchor-id="aside-the-pipe-operator">Aside: the pipe operator <code>|&gt;</code>
+</h2>
+<p>The pipe operator passes what comes before it into the function that comes after it as the first argument in that function:</p>
+<div class="columns">
+<div class="column fragment" style="width:55%;">
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+</div>
+<div class="column fragment" style="width:45%;">
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="like-a-russian-stacking-doll" class="level2"><h2 class="anchored" data-anchor-id="like-a-russian-stacking-doll">Like a Russian stacking doll</h2>
+</section><section id="next-lets-compare-states" class="level2"><h2 class="anchored" data-anchor-id="next-lets-compare-states">Next, let’s compare states</h2>
+<p>In order for Card and Krueger’s idea to hold water, the restaurants in NJ and PA should look broadly similar prior to the intervention.</p>
+<p>So let’s compare:</p>
+<ul>
+<li>similar mix of chains?</li>
+<li>similar prices?</li>
+<li>similar operating hours?</li>
+<li>similar wages and employee counts prior to the wage hike?</li>
+</ul></section><section id="compare-the-mix-of-chains" class="level2 medium"><h2 class="medium anchored" data-anchor-id="compare-the-mix-of-chains">Compare the mix of chains</h2>
+<p>These are the overall totals. How do we get the totals <em>within</em> the states?</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 2
+  chain           n
+  &lt;chr&gt;       &lt;int&gt;
+1 Burger King   145
+2 KFC            74
+3 Roy's          87
+4 Wendy's        45</code></pre>
+</div>
+</div>
+</section><section id="compare-the-mix-of-chains-1" class="level2 medium"><h2 class="medium anchored" data-anchor-id="compare-the-mix-of-chains-1">Compare the mix of chains</h2>
+<p>Make it a <em>grouped</em> data frame:</p>
+<div class="cell" data-output-location="column" wrap="false">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="compare-the-mix-of-chains-2" class="level2 medium"><h2 class="medium anchored" data-anchor-id="compare-the-mix-of-chains-2">Compare the mix of chains</h2>
+<p>Subsequent calculations will now be done within the groups (eg. states):</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+# Groups:   state [2]
+  state chain           n
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt;
+1 PA    Burger King    30
+2 PA    KFC            10
+3 PA    Roy's          15
+4 PA    Wendy's        11
+5 NJ    Burger King   115
+6 NJ    KFC            64
+7 NJ    Roy's          72
+8 NJ    Wendy's        34</code></pre>
+</div>
+</div>
+</section><section id="compare-the-mix-of-chains-3" class="level2 medium"><h2 class="medium anchored" data-anchor-id="compare-the-mix-of-chains-3">Compare the mix of chains</h2>
+<p>To directly compare, let’s look at <em>proportions</em>:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 4
+# Groups:   state [2]
+  state chain           n  prop
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt;
+1 PA    Burger King    30 0.455
+2 PA    KFC            10 0.152
+3 PA    Roy's          15 0.227
+4 PA    Wendy's        11 0.167
+5 NJ    Burger King   115 0.404
+6 NJ    KFC            64 0.225
+7 NJ    Roy's          72 0.253
+8 NJ    Wendy's        34 0.119</code></pre>
+</div>
+</div>
+</section><section id="compare-the-mix-of-chains-4" class="level2 medium"><h2 class="medium anchored" data-anchor-id="compare-the-mix-of-chains-4">Compare the mix of chains</h2>
+<p>Let’s make it easier to compare by eye:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">chain</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 4
+# Groups:   state [2]
+  state chain           n  prop
+  &lt;fct&gt; &lt;chr&gt;       &lt;int&gt; &lt;dbl&gt;
+1 PA    Burger King    30 0.455
+2 NJ    Burger King   115 0.404
+3 PA    KFC            10 0.152
+4 NJ    KFC            64 0.225
+5 PA    Roy's          15 0.227
+6 NJ    Roy's          72 0.253
+7 PA    Wendy's        11 0.167
+8 NJ    Wendy's        34 0.119</code></pre>
+</div>
+</div>
+</section><section id="seriously-its-just-like-russian-stacking-dolls" class="level2"><h2 class="anchored" data-anchor-id="seriously-its-just-like-russian-stacking-dolls">Seriously, it’s just like Russian stacking dolls</h2>
+<p><img src="images/01/matryoshka.jpg" class="img-fluid"></p>
+</section><section id="lets-compare-meal-prices-next" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next">Let’s compare meal prices next</h2>
+<p>Start with a blank canvas:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">card_krueger</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="lets-compare-meal-prices-next-1" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-1">Let’s compare meal prices next</h2>
+<p>What variables are we looking at?</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb29-2"><a href="#cb29-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The <em>aesthetic mapping</em> is where we tell the computer what variables in the data frame we want to use and how we want to use them.</p>
+</section><section id="lets-compare-meal-prices-next-2" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-2">Let’s compare meal prices next</h2>
+<p>What kind of plot for this <em>numerical</em> variable:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb30-2"><a href="#cb30-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb30-3"><a href="#cb30-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="lets-compare-meal-prices-next-3" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-3">Let’s compare meal prices next</h2>
+<p>Another option:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb31-2"><a href="#cb31-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A density plot is a “smoothed out” histogram.</p>
+</section><section id="lets-compare-meal-prices-next-4" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-4">Let’s compare meal prices next</h2>
+<p>Add labels:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb32-2"><a href="#cb32-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb32-4"><a href="#cb32-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb32-5"><a href="#cb32-5"></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb32-6"><a href="#cb32-6"></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb32-7"><a href="#cb32-7"></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Y’know…so we know what we’re looking at!</p>
+</section><section id="lets-compare-meal-prices-next-5" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-5">Let’s compare meal prices next</h2>
+<p>Increase font size and give it a minimalist look:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb33-2"><a href="#cb33-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb33-4"><a href="#cb33-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-5"><a href="#cb33-5"></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb33-6"><a href="#cb33-6"></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb33-7"><a href="#cb33-7"></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb33-8"><a href="#cb33-8"></a>  ) <span class="sc">+</span></span>
+<span id="cb33-9"><a href="#cb33-9"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="lets-compare-meal-prices-next-6" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-6">Let’s compare meal prices next</h2>
+<p>Distinguish the two states with color:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb34-2"><a href="#cb34-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb34-3"><a href="#cb34-3"></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
+<span id="cb34-4"><a href="#cb34-4"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb34-5"><a href="#cb34-5"></a>  <span class="fu">labs</span>(</span>
+<span id="cb34-6"><a href="#cb34-6"></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb34-7"><a href="#cb34-7"></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb34-8"><a href="#cb34-8"></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb34-9"><a href="#cb34-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb34-10"><a href="#cb34-10"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="lets-compare-meal-prices-next-7" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-7">Let’s compare meal prices next</h2>
+<p>Shade (fill) beneath the curves:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb35-2"><a href="#cb35-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb35-3"><a href="#cb35-3"></a>           <span class="at">color =</span> state,</span>
+<span id="cb35-4"><a href="#cb35-4"></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb35-5"><a href="#cb35-5"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb35-6"><a href="#cb35-6"></a>  <span class="fu">labs</span>(</span>
+<span id="cb35-7"><a href="#cb35-7"></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb35-8"><a href="#cb35-8"></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb35-9"><a href="#cb35-9"></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb35-10"><a href="#cb35-10"></a>  ) <span class="sc">+</span></span>
+<span id="cb35-11"><a href="#cb35-11"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="lets-compare-meal-prices-next-8" class="level2 small"><h2 class="small anchored" data-anchor-id="lets-compare-meal-prices-next-8">Let’s compare meal prices next</h2>
+<p>Make the color translucent:</p>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb36-2"><a href="#cb36-2"></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb36-3"><a href="#cb36-3"></a>           <span class="at">color =</span> state,</span>
+<span id="cb36-4"><a href="#cb36-4"></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb36-5"><a href="#cb36-5"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb36-6"><a href="#cb36-6"></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-7"><a href="#cb36-7"></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb36-8"><a href="#cb36-8"></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb36-9"><a href="#cb36-9"></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb36-10"><a href="#cb36-10"></a>  ) <span class="sc">+</span></span>
+<span id="cb36-11"><a href="#cb36-11"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These distributions look pretty similar.</p>
+</section><section id="dataviz-with-ggplot-is-like-building-a-cake" class="level2"><h2 class="anchored" data-anchor-id="dataviz-with-ggplot-is-like-building-a-cake">Dataviz with ggplot is like building a cake</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><img src="images/01/cake.jpg" class="img-fluid"></p>
+</div>
+<div class="column fragment" style="width:65%;">
+<p>XXX</p>
+</div>
+</div>
+</section><section id="compare-hours-of-operation" class="level2"><h2 class="anchored" data-anchor-id="compare-hours-of-operation">Compare hours of operation</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="compare-starting-wage-prior-to-nj-hike" class="level2"><h2 class="anchored" data-anchor-id="compare-starting-wage-prior-to-nj-hike">Compare starting wage (prior to NJ hike)</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="compare-number-of-workers-prior-to-nj-hike" class="level2"><h2 class="anchored" data-anchor-id="compare-number-of-workers-prior-to-nj-hike">Compare number of workers (prior to NJ hike)</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="so-far-so-good" class="level2"><h2 class="anchored" data-anchor-id="so-far-so-good">So far so good</h2>
+<p>These data seem to pass the first sanity check: prior to “treatment,” the restaurants looked roughly comparable across the two states. What about after treatment?</p>
+</section><section id="the-emp_diff-variable" class="level2"><h2 class="anchored" data-anchor-id="the-emp_diff-variable">The <code>emp_diff</code> variable</h2>
+<p>If this is positive, the restaurant added workers If zero, no change if negative, they shed workers</p>
+<p>If the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA. Nothing changed in PA, so they should be close to zero. NJ got a wage hike, so they should be negative.</p>
+</section><section id="section" class="level2"><h2 class="anchored" data-anchor-id="section"></h2>
+<div class="cell">
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span></span>
+<span>    avg_emp_diff <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">emp_diff</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  state avg_emp_diff
+  &lt;fct&gt;        &lt;dbl&gt;
+1 PA          -1.88 
+2 NJ           0.398</code></pre>
+</div>
+</div>
+<p>. . .</p>
+<p>Oh. That is…flipped from what we expected.</p>
+</section><section id="pics-or-it-didnt-happen" class="level2"><h2 class="anchored" data-anchor-id="pics-or-it-didnt-happen">Pics or it didn’t happen</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="pause" class="level2"><h2 class="anchored" data-anchor-id="pause">Pause</h2>
+<p>If the ECON 101 story is true, then the minimum wage hike should put NJ below PA in negative territory. Based on pictures and summaries, it seems like NJ is doing about the same as PA, if not better.</p>
+</section></section><section id="modeling" class="level1"><h1>4. Modeling</h1>
+<section id="section-1" class="level2"><h2 class="anchored" data-anchor-id="section-1"></h2>
+<div class="cell">
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span> <span class="op">+</span> <span class="va">chain</span> <span class="op">+</span> <span class="va">co_owned</span>, data <span class="op">=</span> <span class="va">card_krueger</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">tidy</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  term         estimate std.error statistic p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)    -1.45       1.21    -1.20   0.232 
+2 stateNJ         2.28       1.20     1.91   0.0575
+3 chainKFC        0.235      1.30     0.181  0.857 
+4 chainRoy's     -2.08       1.32    -1.58   0.116 
+5 chainWendy's   -0.757      1.49    -0.507  0.612 
+6 co_owned        0.373      1.10     0.339  0.735 </code></pre>
+</div>
+</div>
+</section><section id="good-for-them" class="level2"><h2 class="anchored" data-anchor-id="good-for-them">Good for them!</h2>
+<p><img src="images/01/card-krueger-result.png" class="img-fluid"></p>
+</section><section id="scraps-1" class="level2"><h2 class="anchored" data-anchor-id="scraps-1">Scraps</h2>
 <p>Data do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.</p>
+<p>include screenshot of card and krueger table and show that the numbers are the same. yay reproducibility</p>
+<p>pictures and summaries are great, and they can do a lot of work, but at the end of the day: data do not speak for themselves. We always have to bring domain knowledge and an interpretive lens. It’s best if we are as explicit about assumptions as possible, and the most rigorous way to do this is with a formal mathematical model.</p>
+</section></section><section id="statistical-inference" class="level1"><h1>5. Statistical inference</h1>
+<section id="our-point-estimate" class="level2"><h2 class="anchored" data-anchor-id="our-point-estimate">Our point estimate</h2>
+<p>Our headline finding:</p>
+<blockquote class="blockquote">
+<p>On average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a <em>better</em> outcome than PA.</p>
+</blockquote>
+<p>. . .</p>
+<p>Is this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability.</p>
+</section><section id="what-do-we-mean-by-reliability" class="level2"><h2 class="anchored" data-anchor-id="what-do-we-mean-by-reliability">What do we mean by reliability?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>What’s the worry? That our result is simply a fluke. We got unlucky, the data we collected are quirky and unrepresentative, and the estimate is an aberration;</li>
+<li>If we collect more or different data, redo the analysis, and the result totally changes, how reliable could it be?</li>
+<li>In this class, we will consider a result more reliable if it stays approximately the same across alternative datasets.</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>How can we evaluate that?</p>
+</section><section id="sampling-variation" class="level2"><h2 class="anchored" data-anchor-id="sampling-variation">Sampling variation</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>If you want to know how the results change across datasets…redo the survey;</li>
+<li>Call up more restaurants, redo the analysis, see if the results change. Easier said than done, but what if?</li>
+<li>The variation of your estimates across these different datasets is called <em>sampling variation</em>;</li>
+<li>If the variation is high, that’s bad for reliability. If the variation is low, that’s better;</li>
+<li>Quantifying the extent of this variation allows you to report on the uncertainty of your conclusions.</li>
+</ul>
+</div>
+</section><section id="different-data-different-result" class="level2"><h2 class="anchored" data-anchor-id="different-data-different-result">Different data, different result</h2>
+<p>bloop</p>
+</section><section id="different-data-different-result-1" class="level2"><h2 class="anchored" data-anchor-id="different-data-different-result-1">Different data, different result</h2>
+<p>bloop</p>
+</section><section id="different-data-different-result-2" class="level2"><h2 class="anchored" data-anchor-id="different-data-different-result-2">Different data, different result</h2>
+<p>bloop</p>
+</section><section id="the-full-monty" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-1.png" class="img-fluid"></p>
+</section><section id="the-full-monty-1" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-1">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-2.png" class="img-fluid"></p>
+</section><section id="the-full-monty-2" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-2">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-3.png" class="img-fluid"></p>
+</section><section id="the-full-monty-3" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-3">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-4.png" class="img-fluid"></p>
+</section><section id="the-full-monty-4" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-4">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-5.png" class="img-fluid"></p>
+</section><section id="the-full-monty-5" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-5">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-6.png" class="img-fluid"></p>
+</section><section id="the-full-monty-6" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-6">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-7.png" class="img-fluid"></p>
+</section><section id="the-full-monty-7" class="level2"><h2 class="anchored" data-anchor-id="the-full-monty-7">The Full Monty</h2>
+<p><img src="images/01/sampling-variation-8.png" class="img-fluid"></p>
+</section><section id="the-sampling-distribution-for-our-example" class="level2"><h2 class="anchored" data-anchor-id="the-sampling-distribution-for-our-example">The sampling distribution for our example</h2>
+<p>What do you think? Are our conclusions reliable?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="conclusion" class="level2"><h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+</section><section id="towards-quantifying-uncertainty" class="level2 medium"><h2 class="medium anchored" data-anchor-id="towards-quantifying-uncertainty">Towards quantifying uncertainty</h2>
+<p>What if our sampling distribution had looked like one of these?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="01-crash-course_files/figure-revealjs/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<p>Measuring the <em>spread</em> of the sampling distribution allows us to quantify uncertainty about the conclusions.</p>
+</section><section id="reality-check" class="level2 medium"><h2 class="medium anchored" data-anchor-id="reality-check">Reality check</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>This idea of “redoing the survey to see how the results change” is more of a thought experiment;</li>
+<li>If collecting new data were so easy, we would have collected a bigger sample to begin with;</li>
+<li>Instead of literally collecting new data, which is costly, statisticians <em>approximate</em> sampling variability. We will study two techniques for doing this:
+<ul class="incremental">
+<li>simulation-based: resampling the data with the <em>bootstrap</em>;</li>
+<li>mathematical: appealing to the <em>central limit theorem</em> (<em>CLT</em>).</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>More on all that in…nine weeks.</p>
+</section><section id="scraps-2" class="level2"><h2 class="anchored" data-anchor-id="scraps-2">Scraps</h2>
+<p>new survey new estimate</p>
 <p>modeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?</p>
 <p>sampling variability.</p>
-</section>
-<section id="inference" class="level1">
-<h1>5. Inference</h1>
-</section>
-<section id="interpretation" class="level1">
-<h1>6. Interpretation</h1>
-<p>Do you believe that these data and our analysis can support a causal claim? Is that plausible?</p>
-</section>
-<section id="parting-thoughts" class="level1">
-<h1>Parting thoughts</h1>
-<p>high level take-aways</p>
-<p>the structure of the course and where we’re headed</p>
-<section id="themes-and-takeaways-and-shit" class="level2">
-<h2 class="anchored" data-anchor-id="themes-and-takeaways-and-shit">Themes and takeaways and shit</h2>
-<p>where we’re headed</p>
-</section>
-<section id="coming-up" class="level2">
-<h2 class="anchored" data-anchor-id="coming-up">Coming up</h2>
-<p>tomorrow’s lab, next week’s lectures, next week’s lab, first homework, getting to know you survey</p>
+<p>we got this estimate. Is it reliable? How uncertain are we about it? What do we mean.</p>
+<p>What we’re worried about: if I collected a new dataset (sent the survey out to a different set fo restaurants), I’d get a different result.</p>
+<p>a negative estimate is not really on the menu of options, so the data seem to be speaking fairly loudly that the minimum wage did not have an ill effect in this case. But about that…</p>
+<p>there remains some uncertainty about the specific numerical result: 0, 1, 2, 3, 4, 5</p>
+<p>The qualitative finding that NJ is not worse than PA (if anything it’s better) seems to hold up.</p>
+</section></section><section id="interpretation" class="level1"><h1>6. Interpretation</h1>
+<section id="at-the-end-of-the-day" class="level2"><h2 class="anchored" data-anchor-id="at-the-end-of-the-day">At the end of the day</h2>
+<p>Data analysis is just a sophisticated form of <em>rhetoric</em>. We’re trying to marshall facts to convince other humans of claims. If a living, breathing person is not convinced, then none of it actually matters.</p>
+<p>So…</p>
+</section><section id="do-you-believe-it" class="level2"><h2 class="anchored" data-anchor-id="do-you-believe-it">Do you believe it?</h2>
+<p>Card and Krueger argue that the placement of restaurants on either side of the NJ/PA border acts <em>as if</em> an experiment took place, and so any observed discrepancy between the two states can largely be attributed to the <em>causal</em> effect of the minimum wage hike alone.</p>
+<p>. . .</p>
+<p>Do you think this is plausible?</p>
+</section><section id="things-to-keep-you-up-at-night" class="level2"><h2 class="anchored" data-anchor-id="things-to-keep-you-up-at-night">Things to keep you up at night</h2>
+<ul>
+<li>Let’s face it: random assignment <em>did not</em> take place here.</li>
+</ul>
+<p>NJ chose to raise the minimum wage for specific reasons, and those underlying reasons could be related to</p>
+</section></section><section id="parting-thoughts" class="level1"><h1>Parting thoughts</h1>
+<section id="further-reading" class="level2 small"><h2 class="small anchored" data-anchor-id="further-reading">Further reading</h2>
+<p>Dive in if you’re interested:</p>
+<ul>
+<li>WSJ March 2026: “<a href="https://www.wsj.com/economy/jobs/minimum-wage-jobs-cost-debate-card-krueger-63b21af2?st=HuPYPY&amp;reflink=desktopwebshare_permalink">The 30-Year Debate Over the Minimum Wage Is Still Not Settled</a>” (featuring an unhinged comment section);</li>
+<li>Card and Krueger’s <a href="https://www.jstor.org/stable/2118030">original paper</a> and Card’s Nobel citation (<a href="https://www.nobelprize.org/prizes/economic-sciences/2021/popular-information/">popular</a> and <a href="https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf">advanced</a>);</li>
+<li>The more recent <a href="https://evans.uw.edu/faculty-research/the-minimum-wage-study/">Seattle Minimum Wage Study</a>;</li>
+<li>Neumark and Shirley’s 2021 <a href="https://www.nber.org/papers/w28388">literature review</a>: “there is a clear preponderance of negative estimates in the literature;”</li>
+<li>Noah Smith is an opinion journalist with an economics PhD:
+<ul>
+<li>“<a href="https://www.noahpinion.blog/p/why-15-minimum-wage-is-pretty-safe">Why $15 minimum wage is pretty safe</a>;”</li>
+<li>“<a href="https://www.noahpinion.blog/p/the-minimum-wage-pushback">The minimum wage pushback</a>.”</li>
+</ul>
+</li>
+</ul></section><section id="intellectual-themes" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="intellectual-themes">Intellectual themes</h2>
+<p>These will last us fifteen weeks (and then some!):</p>
+<div class="incremental">
+<ul class="incremental">
+<li>Data analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;</li>
+<li>All data analyses should be <em>reproducible</em>. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;</li>
+<li>Even a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;</li>
+<li>When analyzing data, so often the questions that we <em>truly</em> care about are <em>causal</em> questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;</li>
+<li>The gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;</li>
+<li>Observational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;</li>
+<li>Data do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;</li>
+<li>(FINISH) Data are not manna from heaven…</li>
+<li>(REVISE) Don’t let the perfect be the enemy of the good. Data analysis is always constrained optimization. There are ideals we don’t live up to. Just trying to do the best you can with what you’ve got;</li>
+<li>(REVISE) A good data analysis is honest about what the data can and cannot tell us. Statistical inference is all about quantifying uncertainty about our results.</li>
+</ul>
+</div>
+</section><section id="computational-themes" class="level2 medium"><h2 class="medium anchored" data-anchor-id="computational-themes">Computational themes</h2>
+<p>Every coding task in this class will be some combo of these two things:</p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Building cakes (<code>ggplot</code>) <img src="images/01/cake.jpg" class="img-fluid"></p>
+</div>
+<div class="column fragment" style="width:65%;">
+<p>Stacking dolls (pipe <code>|&gt;</code>) <img src="images/01/matryoshka.jpg" class="img-fluid"></p>
+</div>
+</div>
+<p>. . .</p>
+<p>Master these, and everything will be coming up roses!</p>
+</section><section id="long-term-plan" class="level2"><h2 class="anchored" data-anchor-id="long-term-plan">Long-term plan</h2>
+<p><img src="images/01/shape.png" class="img-fluid"></p>
+</section><section id="near-term-plan" class="level2"><h2 class="anchored" data-anchor-id="near-term-plan">Near-term plan</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>
+<strong>Tomorrow</strong>: no graded assignment. Follow along with the TA and get your first taste of writing R code from scratch;</li>
+<li>
+<strong>Next TuTh</strong>: lectures on exploratory data analysis. More live practice with data viz and transformation in R;</li>
+<li>
+<strong>Next Friday</strong>: first graded lab, and HW 1 posted.</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>Also, please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLScfaJqPiDmTdaKLzql6nlDi3bxqfBItMJUIYmA_6QS5P_Yj4Q/viewform?usp=publish-editor">Getting to Know You Survey</a>.</p>
+</section></section><section id="questions" class="level1"><h1>Questions?</h1>
 
 
-</section>
-</section>
+</section></main><!-- /main --><script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -742,8 +1896,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2026 John Zito</p>
 </div>   
@@ -755,8 +1908,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

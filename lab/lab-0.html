@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>Lab 0 – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
@@ -20,8 +17,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -38,8 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -66,19 +96,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
 <meta property="og:title" content="Lab 0 – STA 101 Fall 2026">
 <meta property="og:description" content="Homepage for STA 101 Data Analysis and Statistical Inference at Duke University (Fall 2026)">
+<meta property="og:image" content="https://sta101-f26.github.io/lab/images/tour-r-rstudio.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="879">
+<meta property="og:image:width" content="1651">
 </head>
-
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -89,16 +117,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
@@ -113,10 +136,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus/student-news.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Student news!</span></a>
+  <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check it out!</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -127,8 +150,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -171,11 +194,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Code helpers</span></span>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Labs</span></span>
@@ -193,18 +212,38 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam Study Guides</span></span>
   </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#accessing-rstudio" id="toc-accessing-rstudio" class="nav-link active" data-scroll-target="#accessing-rstudio">Accessing RStudio</a></li>
+  <li>
+<a href="#the-lay-of-the-land" id="toc-the-lay-of-the-land" class="nav-link" data-scroll-target="#the-lay-of-the-land">0. The lay of the land</a>
+  <ul class="collapse">
+<li><a href="#r-rstudio" id="toc-r-rstudio" class="nav-link" data-scroll-target="#r-rstudio">R + RStudio</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  </ul>
+</li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">1. Packages</a></li>
+  <li>
+<a href="#getting-data-into-r" id="toc-getting-data-into-r" class="nav-link" data-scroll-target="#getting-data-into-r">2. Getting data into R</a>
+  <ul class="collapse">
+<li><a href="#load-a-package-that-includes-a-dataset" id="toc-load-a-package-that-includes-a-dataset" class="nav-link" data-scroll-target="#load-a-package-that-includes-a-dataset">Load a package that includes a dataset</a></li>
+  <li><a href="#import-a-dataset-from-a-file" id="toc-import-a-dataset-from-a-file" class="nav-link" data-scroll-target="#import-a-dataset-from-a-file">Import a dataset from a file</a></li>
+  </ul>
+</li>
+  <li><a href="#the-anatomy-of-a-data-frame" id="toc-the-anatomy-of-a-data-frame" class="nav-link" data-scroll-target="#the-anatomy-of-a-data-frame">3. The anatomy of a data frame</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">4. Data visualization</a></li>
+  <li><a href="#data-summarization" id="toc-data-summarization" class="nav-link" data-scroll-target="#data-summarization">5. Data summarization</a></li>
+  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">6. Code style</a></li>
+  <li><a href="#before-you-leave" id="toc-before-you-leave" class="nav-link" data-scroll-target="#before-you-leave">Before you leave</a></li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Lab 0</h1>
 </div>
 
@@ -219,28 +258,444 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><p>This lab serves as a “one-stop shop” for the basic coding skills we will need in STA 101. We will practice this stuff daily, and if you master the basic building blocks, you’ll be sitting pretty. Everything else in the class is essentially variations on a theme.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+There’s nothing to turn in today.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We’re not grading today’s activity. Just follow along with the TA and ask a million questions.</p>
+</div>
+</div>
+<section id="accessing-rstudio" class="level2"><h2 class="anchored" data-anchor-id="accessing-rstudio">Accessing RStudio</h2>
+<p>First, we’ve gotta get the car out of the garage. In this class, we will always and everywhere access RStudio through the <a href="https://cmgr.oit.duke.edu/containers">Duke Container Manager</a>. I assure you it makes everyone’s life easier. So please do the following:</p>
+<ol type="1">
+<li><p>Go here: <a href="https://cmgr.oit.duke.edu/containers" class="uri">https://cmgr.oit.duke.edu/containers</a>. You may have to log in with your NetID at some point;</p></li>
+<li><p>(The first time you do this, you look for STA101 under “Reservations available” on the righthand side, and click “reserve STA101”. After you do that once, STA101 will appear under “My reservations” on the lefthand side forever more)</p></li>
+<li><p>Click STA101 under “My reservations”;</p></li>
+<li><p>Login;</p></li>
+<li><p>Start. It may take a while, but then <code>RStudio</code> should launch in your browser.</p></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Please use the correct container!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please double check that you have reserved the STA101 container and not something else.</p>
+</div>
+</div>
+</section><section id="the-lay-of-the-land" class="level2"><h2 class="anchored" data-anchor-id="the-lay-of-the-land">0. The lay of the land</h2>
+<section id="r-rstudio" class="level3"><h3 class="anchored" data-anchor-id="r-rstudio">R + RStudio</h3>
+<p><strong>R</strong> is a programming language that statisticians created to make their work easier. If you learn to “speak” this language, you can instruct a computer to perform data analysis tasks that would be tedious to perform by hand. <strong>RStudio</strong> is a convenient interface that allows you to use R in a clean and organized way. If R is the <em>engine</em>, then RStudio is the <em>dashboard</em>.</p>
+<p>When you open your container and launch RStudio in your browser, you should see something like this:</p>
+<p><img src="images/tour-r-rstudio.png" class="img-fluid"></p>
+<p>There are four panes:</p>
+<ul>
+<li>(bottom left) this is <strong>the console</strong>. It’s a command line where you can type input and get output;</li>
+<li>(top left) this is <strong>the editor</strong>. If you are writing a bunch of code you want to save for later, you can edit the text file here;</li>
+<li>(top right) this is <strong>the environment</strong>. It’s a list of all the data and variables you have loaded;</li>
+<li>(bottom right) this panel is multipurpose. Depending on the tab you select, it can display the file directory, the plot you created, the documentation, or your rendered pdf.</li>
+</ul></section><section id="quarto" class="level3"><h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<p>Quarto is a technical publishing system that allows you to write documents where text, math, code, and the output of that code are seamlessly integrated in a reproducible way. Quarto is baller. I had never used it before coming to Duke, and now I am obsessed. I use it to create all of the course materials, including this entire website. Similarly, you will use Quarto for all of your work in this class: lab, homework, lecture activities, and the project.</p>
+<p>Here’s what it looks like when I use Quarto inside RStudio:</p>
+<p><img src="images/tour-quarto.png" class="img-fluid"></p>
+<p>In the upper left, I have the editor open, and I’m working on a <code>.qmd</code> file. This is just a text file with a special format. When I’m done editing, I hit the <strong>Render</strong> button (circled in red), and if there are no errors, a nice <code>.pdf</code> file is produced, either in the Viewer tab in the bottom right or in a new tab in my browser.</p>
+<p>That’s pretty much the whole ballgame:</p>
+<blockquote class="blockquote">
+<p>Edit the <code>.qmd</code> file → hit <strong>Render</strong> → get a <code>.pdf</code></p>
+</blockquote>
+<p>Alright, so what goes in the <code>.qmd</code> file?</p>
+<ol type="1">
+<li>At the top, in between <code>---</code>, you have the document’s metadata: title, author, date, and so forth. We are not going to get fancy with it, but there are <a href="https://quarto.org/docs/reference/formats/pdf.html">loads</a> of settings you can play with;</li>
+<li>You can write text the same as you would in Google Docs or Microsoft Word. Quarto syntax is based on <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, and you can learn about the formatting options <a href="https://quarto.org/docs/authoring/markdown-basics.html">here</a>;</li>
+<li>The grey block beginning with <code>```{r}</code> and ending with <code>```</code> is called a <strong>code chunk</strong>. Chunks of code go in there. In the rendered document, the code will be nicely formatted and stylized amidst the text;</li>
+<li>When you render, the code in your code chunks is actually executed, and the output is included in the final document. This is super convenient for producing tables and figures;</li>
+<li>You can also include nicely formatted equations and math notation in your Quarto documents, but we’ll deal with that later.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why don’t we learn something like Excel?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Firstly, Excel is not cute, which should bother all of us. But more importantly, work in Excel can be very difficult to <strong>reproduce</strong>, which will be an important consideration for us. If you’ve ever been unfortunate enough to inherit an Excel spreadsheet from someone else (especially one littered with hidden formulas inside random cells), it can be very difficult to understand what was done, why it was done, what order it was done in, and whether or not it’s correct. Even if it’s a spreadsheet <em>you created</em>, if you step away from it for a while, you might return and wonder “wait, how did I do this again?” This is no good.</p>
+<p>Code is different. It’s just a sequence of written instructions, one after another. You can read the code from top to bottom and see with the naked eye what was done and in what order. Furthermore, when you augment this with a system like Quarto, it’s easy to place next to the code detailed written explanations of <em>why</em> you did what you did. This is a much better way to work, and professional data analysis increasingly relies on code.</p>
+</div>
+</div>
+</div>
+</section></section><section id="packages" class="level2"><h2 class="anchored" data-anchor-id="packages">1. Packages</h2>
+<p>The R programming language comes with several built-in commands. For instance, you can navigate to the console and use R like an overgrown calculator:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">2</span> <span class="op">+</span> <span class="fl">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">2</span> <span class="op">*</span> <span class="fl">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">9</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>However, there will be extra tasks we need R to perform that are not built-in. To perform these tasks, folks have developed “expansion packs” for R called <strong>packages</strong> that contain extra commands. If you want to use those commands, you have to load the package, like this:</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The <a href="https://tidyverse.org"><code>tidyverse</code></a> is the package we will use most often. In fact, <code>tidyverse</code> is really a “meta-package” that bundles many smaller packages that we will use:</p>
+<ul>
+<li>
+<a href="https://ggplot2.tidyverse.org"><code>ggplot2</code></a> provides tools for data visualization;</li>
+<li>
+<a href="https://dplyr.tidyverse.org"><code>dplyr</code></a> provides tools for data transformation and summarization;</li>
+<li>
+<a href="https://readr.tidyverse.org"><code>readr</code></a> provides tools for actually loading datasets into R.</li>
+</ul>
+<p>We will introduce a few more packages as the semester wears on (ie. <a href="https://www.tidymodels.org"><code>tidymodels</code></a>), and you may find that you need yet more if the dataset you choose for your final project poses special challenges. But never fear. At the end of the day, a package is just a bundle of new commands that give R extra functionality.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For each document you work on, you only have to load the packages once at the very top.</p>
+</div>
+</div>
+</section><section id="getting-data-into-r" class="level2"><h2 class="anchored" data-anchor-id="getting-data-into-r">2. Getting data into R</h2>
+<p>For us, a dataset will typically look like a <em>spreadsheet</em>: a big ol’ box of values arranged in rows and columns. More on that shortly. But how do you actually get a hold of one? For us, there will be two methods.</p>
+<section id="load-a-package-that-includes-a-dataset" class="level3"><h3 class="anchored" data-anchor-id="load-a-package-that-includes-a-dataset">Load a package that includes a dataset</h3>
+<p>Some packages include datasets in the bundle of new stuff they provide, so if you load the package, you get the data. For instance, <a href="https://allisonhorst.github.io/palmerpenguins/">this package</a> contains a dataset on penguins:</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/">palmerpenguins</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Once you load the package, you gain access to an object called <code>penguins</code>. It’s a lil’ spreadsheet where every row is a penguin, and the columns record various biometric measurements about that penguin:</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7               181        3750
+ 2 Adelie  Torgersen           39.5          17.4               186        3800
+ 3 Adelie  Torgersen           40.3          18                 195        3250
+ 4 Adelie  Torgersen           NA            NA                  NA          NA
+ 5 Adelie  Torgersen           36.7          19.3               193        3450
+ 6 Adelie  Torgersen           39.3          20.6               190        3650
+ 7 Adelie  Torgersen           38.9          17.8               181        3625
+ 8 Adelie  Torgersen           39.2          19.6               195        4675
+ 9 Adelie  Torgersen           34.1          18.1               193        3475
+10 Adelie  Torgersen           42            20.2               190        4250
+# ℹ 334 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</section><section id="import-a-dataset-from-a-file" class="level3"><h3 class="anchored" data-anchor-id="import-a-dataset-from-a-file">Import a dataset from a file</h3>
+<p>More frequently though, we will load in a dataset from a file. That is, we have a data file on our computer (or in our container), and we want to tell R “hey, go get that.” The file type we will encounter most often is a <strong>comma-separated value</strong> (<strong>csv</strong>) file. If you have such a file in the <code>data</code> folder on your computer, you can instruct R to retrieve it like so:</p>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/pokemon.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>read_csv</code> is a command included in <code>tidyverse</code>. You supply that command with the location of your data file, and the file is read into R. In this, it’s a dataset on Pokémon. Each row is a different creature, and the columns record their various specifications:</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 924 × 17
+   name    generation type_1 type_2 height_m weight_kg total_points    hp attack
+   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+ 1 Bulbas…          1 Grass  Poison      0.7       6.9          318    45     49
+ 2 Ivysaur          1 Grass  Poison      1        13            405    60     62
+ 3 Venusa…          1 Grass  Poison      2       100            525    80     82
+ 4 Mega V…          1 Grass  Poison      2.4     156.           625    80    100
+ 5 Charma…          1 Fire   &lt;NA&gt;        0.6       8.5          309    39     52
+ 6 Charme…          1 Fire   &lt;NA&gt;        1.1      19            405    58     64
+ 7 Chariz…          1 Fire   Flying      1.7      90.5          534    78     84
+ 8 Mega C…          1 Fire   Dragon      1.7     110.           634    78    130
+ 9 Mega C…          1 Fire   Flying      1.7     100.           634    78    104
+10 Squirt…          1 Water  &lt;NA&gt;        0.5       9            314    44     48
+# ℹ 914 more rows
+# ℹ 8 more variables: defense &lt;dbl&gt;, sp_attack &lt;dbl&gt;, sp_defense &lt;dbl&gt;,
+#   speed &lt;dbl&gt;, catch_rate &lt;dbl&gt;, base_friendship &lt;dbl&gt;,
+#   base_experience &lt;dbl&gt;, is_legendary &lt;lgl&gt;</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable assignment!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the above example, you saw a line of code that looked like this:</p>
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This is called <strong>variable assignment</strong>. The idea is that you have some object that you want to save and store for later. So on the right-hand side, you have the thing you want to store. On the left-hand side, you have the name you want to give it so you can refer to it later. In the middle, you have the <strong>assignment operator</strong> <code>&lt;-</code>. We will use this all the time.</p>
+<p><strong>Note</strong>: to the left of the assignment operator is the variable name you are attaching to the object you wish to save. In general, you can give it whatever name you choose, but there are some guidelines and ground rules:</p>
+<ul>
+<li>a variable name must be all one “word.” No spaces. So <code>third little pig</code> would not work, but <code>third_little_pig</code> is great;</li>
+<li>you also can’t use special characters like <code>&amp;</code> or <code>%</code> and so on. Only letters, numbers, and underscores (<code>_</code>). But the name cannot <em>begin</em> with a number, so <code>3rd_little_pig</code> is no good;</li>
+<li>a variable name can literally be whatever you want. This keyboard smash is valid: <code>tdfhgjhk</code>. However, it’s not useful. Pick names that are concise and explicit about what the object actually is. <code>penguins</code> and <code>pokemon</code> are good names because the datasets are about…penguins and pokemon!</li>
+</ul>
+</div>
+</div>
+</section></section><section id="the-anatomy-of-a-data-frame" class="level2"><h2 class="anchored" data-anchor-id="the-anatomy-of-a-data-frame">3. The anatomy of a data frame</h2>
+<p><code>penguins</code> and <code>pokemon</code> are examples of <strong>data frames</strong>. This is basically R’s version of a spreadsheet. It’s got rows, and it’s got columns. Behold:</p>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7               181        3750
+ 2 Adelie  Torgersen           39.5          17.4               186        3800
+ 3 Adelie  Torgersen           40.3          18                 195        3250
+ 4 Adelie  Torgersen           NA            NA                  NA          NA
+ 5 Adelie  Torgersen           36.7          19.3               193        3450
+ 6 Adelie  Torgersen           39.3          20.6               190        3650
+ 7 Adelie  Torgersen           38.9          17.8               181        3625
+ 8 Adelie  Torgersen           39.2          19.6               195        4675
+ 9 Adelie  Torgersen           34.1          18.1               193        3475
+10 Adelie  Torgersen           42            20.2               190        4250
+# ℹ 334 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 924 × 17
+   name    generation type_1 type_2 height_m weight_kg total_points    hp attack
+   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+ 1 Bulbas…          1 Grass  Poison      0.7       6.9          318    45     49
+ 2 Ivysaur          1 Grass  Poison      1        13            405    60     62
+ 3 Venusa…          1 Grass  Poison      2       100            525    80     82
+ 4 Mega V…          1 Grass  Poison      2.4     156.           625    80    100
+ 5 Charma…          1 Fire   &lt;NA&gt;        0.6       8.5          309    39     52
+ 6 Charme…          1 Fire   &lt;NA&gt;        1.1      19            405    58     64
+ 7 Chariz…          1 Fire   Flying      1.7      90.5          534    78     84
+ 8 Mega C…          1 Fire   Dragon      1.7     110.           634    78    130
+ 9 Mega C…          1 Fire   Flying      1.7     100.           634    78    104
+10 Squirt…          1 Water  &lt;NA&gt;        0.5       9            314    44     48
+# ℹ 914 more rows
+# ℹ 8 more variables: defense &lt;dbl&gt;, sp_attack &lt;dbl&gt;, sp_defense &lt;dbl&gt;,
+#   speed &lt;dbl&gt;, catch_rate &lt;dbl&gt;, base_friendship &lt;dbl&gt;,
+#   base_experience &lt;dbl&gt;, is_legendary &lt;lgl&gt;</code></pre>
+</div>
+</div>
+<p>If you want to know how many rows or columns, there are commands for that:</p>
+<div class="cell">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">pokemon</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 924</code></pre>
+</div>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">pokemon</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 17</code></pre>
+</div>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 344</code></pre>
+</div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+</div>
+<p>The <strong>rows</strong> in a data frame are the <strong>observations</strong>. Each row in <code>pokemon</code> corresponds to a different Pokémon, and each row in <code>penguins</code> refers to a different penguin. The <strong>columns</strong> in a data frame are the <strong>variables</strong>. Each column is a separate piece of information that we recorded for each observation. Variables come in different <strong>types</strong>, which we will learn to work with. The two main types are <strong>numerical</strong> and <strong>categorical</strong>. In <code>penguins</code> for example, one piece of information we have for each penguin is the length of its bill in millimeters. This is recorded as a <em>number</em>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span><span class="op">$</span><span class="va">bill_length_mm</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 39.1 39.5 40.3   NA 36.7 39.3</code></pre>
+</div>
+</div>
+<p>Another piece of information we have for each penguin is what species it belongs to. There are three options, and so the <code>species</code> variable is a piece of text recording which <em>category</em> the penguin belongs to:</p>
+<div class="cell">
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span><span class="op">$</span><span class="va">species</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] Adelie Adelie Adelie Adelie Adelie Adelie
+Levels: Adelie Chinstrap Gentoo</code></pre>
+</div>
+</div>
+<p>Depending on the type of a variable, we will have different guidelines for how to visualize and summarize that information.</p>
+</section><section id="data-visualization" class="level2"><h2 class="anchored" data-anchor-id="data-visualization">4. Data visualization</h2>
+<p>We use <code>ggplot2</code> (included in the <code>tidyverse</code>) for data visualization.</p>
+<p>Every element of the plot is like</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Don’t forget the plus signs!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.</p>
+<p>Having said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:</p>
+<div class="cell">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pokemon</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">attack</span>, y <span class="op">=</span> <span class="va">defense</span><span class="op">)</span><span class="op">)</span>  </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="st">"Attack"</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Defense"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"How are a Pokémon's attack and defense related?"</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-error">
+<pre><code>Error:
+! Cannot add &lt;ggproto&gt; objects together.
+ℹ Did you forget to add this object to a &lt;ggplot&gt; object?</code></pre>
+</div>
+</div>
+<p>We got an error because there is not plus sign between the first line and the second. It happens to the best of us, but pay attention!</p>
+</div>
+</div>
+</section><section id="data-summarization" class="level2"><h2 class="anchored" data-anchor-id="data-summarization">5. Data summarization</h2>
+<p>We use <code>dplyr</code> (included in the <code>tidyverse</code>) and the pipe operator <code>|&gt;</code> for data summarization and transformation.</p>
+<p>For instance, if we want to know what the average HP (hit points) for each type of Pokémon is, we can run:</p>
+<div class="cell">
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">type_1</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span></span>
+<span>    avg_hp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">hp</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 18 × 2
+   type_1   avg_hp
+   &lt;chr&gt;     &lt;dbl&gt;
+ 1 Bug        57.5
+ 2 Dark       69.6
+ 3 Dragon     84.1
+ 4 Electric   61.1
+ 5 Fairy      72.8
+ 6 Fighting   71.6
+ 7 Fire       69.5
+ 8 Flying     70.8
+ 9 Ghost      64.9
+10 Grass      66.7
+11 Ground     71.6
+12 Ice        70.5
+13 Normal     77.1
+14 Poison     67.3
+15 Psychic    73.7
+16 Rock       66.2
+17 Steel      66.8
+18 Water      71.1</code></pre>
+</div>
+</div>
+<p>If we want to know what <em>proportion</em> of our penguins belong to each species, we can run:</p>
+<div class="cell">
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  species       n  prop
+  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;
+1 Adelie      152 0.442
+2 Chinstrap    68 0.198
+3 Gentoo      124 0.360</code></pre>
+</div>
+</div>
+<p>Commands to keep in your back pocket:</p>
+<ul>
+<li>
+<code>group_by</code>: make a data frame <em>grouped</em> according to the levels of one of its variables. All subsequent operations will be done <em>within the groups</em>;</li>
+<li>
+<code>summarize</code>: takes a data frame and creates a <em>new data frame</em> containing summaries of the old one;</li>
+<li>
+<code>mean</code>: compute the average of a set of numbers;</li>
+<li>
+<code>count</code>: count how many observations fall into each level of a categorical variable;</li>
+<li>
+<code>mutate</code>: add a new column to a data frame or modify an existing column;</li>
+<li>
+<code>sum</code>: add up a set of numbers.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The pipe operator <code>|&gt;</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The pipe operator is the engine that drives data pipelines. The operator takes the stuff to its left and feeds it forward to the stuff on its right. That’s it. But if you link many of these together in sequence, you can perform possibly elaborate summaries and transformations in a clean, step-by-step way.</p>
+<p>Simple example: if I want to add the numbers <code>1</code> and <code>2</code>, I can run:</p>
+<div class="cell">
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>An alternative but equivalent way of writing this is with the pipe operator:</p>
+<div class="cell">
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>So the number <code>1</code> appears on the left, and it gets <em>fed forward</em> as the first argument to the command on the right. That’s the main idea. The power of the pipe operator is that it can make code much more <strong>readable</strong>. Consider the second example above where we compute the proportion of penguins belonging to each species. This code is equivalent to what we wrote above, and it does exactly the same thing:</p>
+<div class="cell">
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">penguins</span>, <span class="va">species</span><span class="op">)</span>, prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  species       n  prop
+  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;
+1 Adelie      152 0.442
+2 Chinstrap    68 0.198
+3 Gentoo      124 0.360</code></pre>
+</div>
+</div>
+<p>But it’s much more cramped and difficult to read. The pipe operator allows up to lay everything out in a linear, step-by-step fashion: first this happened, then this happened, then this happened, etc.</p>
+</div>
+</div>
+</section><section id="code-style" class="level2"><h2 class="anchored" data-anchor-id="code-style">6. Code style</h2>
+<p>Code is a language, and it has its own syntax, grammar, and <em>style</em>, just like written language does. YouwOUldntwriTeanenglishsenteNceliKethisANDexpeCtpeopletOtolerateit. If you had to inform Claude Debussy that you left your vacuum cleaner at the airport, you wouldn’t text “J’ai oublie mon aspirateur a l’aeroport” and expect to be taken seriously in the halls of Versailles. You would say “J’ai oublié mon aspirateur à l’aéroport.”</p>
+<p>As such, when you write R code, you should pay attention to your <em>style</em>. The tidyverse has a whole <a href="https://style.tidyverse.org">style guide</a> that you can refer to, but here are some highlights:</p>
+<ul>
+<li>spaces before and line breaks after each <code>+</code> when building a ggplot;</li>
+<li>spaces before and line breaks after each <code>|&gt;</code> in a data transformation pipeline;</li>
+<li>proper indentation;</li>
+<li>spaces around <code>=</code> signs and spaces after commas;</li>
+<li>lines should not span more than 80 characters; long lines should be broken up with each argument on its own line.</li>
+</ul>
+<p>All of the code that we on the teaching team present to you will follow the style guidelines, and all of the code you submit must also follow them if you wish to receive full credit. Even if your code is otherwise perfectly correct and generates the correct answer, you will lose points if it is ugly or difficult to read. Keep it cute.</p>
+</section><section id="before-you-leave" class="level2"><h2 class="anchored" data-anchor-id="before-you-leave">Before you leave</h2>
+<p>If you have not done so already, please complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLScfaJqPiDmTdaKLzql6nlDi3bxqfBItMJUIYmA_6QS5P_Yj4Q/viewform?usp=publish-editor">Getting to Know You Survey</a>!</p>
 
 
-<p>All of (the R you need for 101) in 75 minutes</p>
-<p>do an ice breaker, and then the rest of the lab is follow along with the TA</p>
-<p>basically two things you need to be able to do: layer cakes and stack dolls</p>
-<p>reintroduce the toolkit: the layout of RStudio, the layout of quarto</p>
-<p>Layout: RStudio, Quarto, all that</p>
-<p>loading packages</p>
-<p>loading data sets (and assignment)</p>
-<p>anatomy of a data frame</p>
-<p>already information overload, so we need to collapse into pictures and numerical summaries</p>
-<p>for pictures, we use ggplot where you build visualizations in layers like a cake</p>
-<p>for summaries do this pipe shit, which is like russian stacking dolls.</p>
-<p>virtually everything we ask you to do in this class is basically going to fall in one of those two things, in some combination. You’re either plotting or piping.</p>
-<p>dinosaurus dozen?</p>
-<p>at the end, do the getting to know you survey</p>
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -640,8 +1095,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2026 John Zito</p>
 </div>   
@@ -653,8 +1107,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>ae-01-minimum-wage – STA 101 Fall 2026</title>
+<title>AE 1: minimum wage – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,8 +17,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -38,8 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -65,39 +95,58 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<meta property="og:title" content="ae-01-minimum-wage – STA 101 Fall 2026">
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+<meta property="og:title" content="AE 1: minimum wage – STA 101 Fall 2026">
+<meta property="og:description" content="Homepage for STA 101 Data Analysis and Statistical Inference at Duke University (Fall 2026)">
+<meta property="og:image" content="https://sta101-f26.github.io/ae/ae-01-minimum-wage_files/figure-html/unnamed-chunk-3-1.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="960">
+<meta property="og:image:width" content="1344">
 </head>
-
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">ae-01-minimum-wage</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">AE 1: minimum wage</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
@@ -112,10 +161,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus/student-news.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Student news!</span></a>
+  <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check it out!</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -126,8 +175,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -170,11 +219,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Code helpers</span></span>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Labs</span></span>
@@ -192,19 +237,37 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam Study Guides</span></span>
   </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#packages" id="toc-packages" class="nav-link active" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li>
+<a href="#explore-and-visualize" id="toc-explore-and-visualize" class="nav-link" data-scroll-target="#explore-and-visualize">Explore and visualize</a>
+  <ul class="collapse">
+<li><a href="#compare-chain-composition" id="toc-compare-chain-composition" class="nav-link" data-scroll-target="#compare-chain-composition">Compare chain composition</a></li>
+  <li><a href="#same-proportion-of-company-owned" id="toc-same-proportion-of-company-owned" class="nav-link" data-scroll-target="#same-proportion-of-company-owned">Same proportion of company owned?</a></li>
+  <li><a href="#compare-meal-prices" id="toc-compare-meal-prices" class="nav-link" data-scroll-target="#compare-meal-prices">Compare meal prices</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#point-estimate" id="toc-point-estimate" class="nav-link" data-scroll-target="#point-estimate">Point estimate</a>
+  <ul class="collapse">
+<li><a href="#fit-an-alternative-model-with-multiple-predictors" id="toc-fit-an-alternative-model-with-multiple-predictors" class="nav-link" data-scroll-target="#fit-an-alternative-model-with-multiple-predictors">Fit an alternative model with multiple predictors</a></li>
+  <li><a href="#which-model-is-best" id="toc-which-model-is-best" class="nav-link" data-scroll-target="#which-model-is-best">Which model is “best”</a></li>
+  </ul>
+</li>
+  <li><a href="#interval-estimate" id="toc-interval-estimate" class="nav-link" data-scroll-target="#interval-estimate">Interval estimate</a></li>
+  <li><a href="#hypothesis-test" id="toc-hypothesis-test" class="nav-link" data-scroll-target="#hypothesis-test">Hypothesis test</a></li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ae-01-minimum-wage</h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">AE 1: minimum wage</h1>
 </div>
 
 
@@ -218,14 +281,287 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><p>Card and Krueger (1994 AER) is a famous study on the impact of minimum wage increases on employment. The abstract reads:</p>
+<blockquote class="blockquote">
+<p>On April 1, 1992, New Jersey’s minimum wage rose from $4.25 to $5.05 per hour. To evaluate the impact of the law we surveyed 410 fast-food restaurants in New Jersey and eastern Pennsylvania before and after the rise. Comparisons of employment growth at stores in New Jersey and Pennsylvania (where the minimum wage was constant) provide simple estimates of the effect of the higher minimum wage. We also compare employment changes at stores in New Jersey that were initially paying high wages (above $5) to the changes at lower-wage stores. We find no indication that the rise in the minimum wage reduced employment.</p>
+</blockquote>
+<p>The data in Card and Krueger are purely observational, but the main idea is that the arbitrary placement of otherwise similar restaurants on either side of the PA/NJ border acts as if a controlled, randomized experiment were performed, and so we can use these data to draw causal conclusions about the impact of minimum wage policy on employment.</p>
+<p>You already played with these data on HW 5, but that was before we had begun working with <em>multiple</em> linear regression, and before we had studied statistical inference. So let us revisit this study with our new tools.</p>
+<section id="packages" class="level1"><h1>Packages</h1>
+<p>You know the drill:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="data" class="level1"><h1>Data</h1>
+<p>Load in dat data:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/card-krueger.csv"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">card_krueger</span> <span class="op">&lt;-</span> <span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    state <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">fct_relevel</a></span><span class="op">(</span><span class="va">state</span>, <span class="st">"PA"</span>, <span class="st">"NJ"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">card_krueger</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 351
+Columns: 13
+$ id          &lt;dbl&gt; 56, 61, 445, 451, 455, 458, 462, 468, 469, 470, 474, 481, …
+$ chain       &lt;chr&gt; "Wendy's", "Wendy's", "Burger King", "Burger King", "KFC",…
+$ co_owned    &lt;dbl&gt; 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1…
+$ state       &lt;fct&gt; PA, PA, PA, PA, PA, PA, PA, PA, PA, PA, PA, PA, PA, PA, PA…
+$ emp_diff    &lt;dbl&gt; -14.00, 11.50, -41.50, 13.00, 0.00, -0.50, 2.00, -29.00, 4…
+$ wage_st     &lt;dbl&gt; 5.00, 5.50, 5.00, 5.00, 5.25, 5.00, 5.00, 5.00, 5.00, 5.50…
+$ wage_st2    &lt;dbl&gt; 5.25, 4.75, 4.75, 5.00, 5.00, 5.00, 4.75, 5.00, 4.50, 4.75…
+$ hrsopen     &lt;dbl&gt; 12.0, 12.0, 18.0, 24.0, 10.0, 10.0, 12.5, 18.0, 18.0, 18.0…
+$ hrsopen2    &lt;dbl&gt; 12.0, 12.0, 18.0, 24.0, 11.0, 10.5, 12.0, 18.0, 18.0, 18.0…
+$ fte         &lt;dbl&gt; 34.00, 24.00, 70.50, 23.50, 11.00, 9.00, 15.50, 58.00, 26.…
+$ fte2        &lt;dbl&gt; 20.0, 35.5, 29.0, 36.5, 11.0, 8.5, 17.5, 29.0, 30.5, 26.0,…
+$ meal_price  &lt;dbl&gt; 3.48, 3.29, 2.86, 2.85, 3.78, 3.99, 3.17, 2.84, 2.60, 2.75…
+$ meal_price2 &lt;dbl&gt; 2.58, 2.80, 2.84, 2.89, 4.10, 3.95, 2.91, 2.67, 2.60, 2.81…</code></pre>
+</div>
+</div>
+<p>Variables include:</p>
+<ul>
+<li>
+<code>id</code>: a unique identifier for each restaurant;</li>
+<li>
+<code>state</code>: which state is the restaurant in?</li>
+<li>
+<code>chain</code>: which restaurant chain does the store belong to?</li>
+<li>
+<code>co_owned</code>: is the restaurant company owned?</li>
+<li>
+<code>wage_st</code> and <code>wage_st2</code>: the starting wage in US dollars before and after policy change;</li>
+<li>
+<code>fte</code> and <code>fte2</code>: full-time-equivalent employment before and after the change, calculated as the number of full-time workers (including managers) plus 0.5 times the number of part-time workers;</li>
+<li>
+<code>hrsopen</code> and <code>hrsopen2</code>: number of hours open per day;</li>
+<li>
+<code>meal_price</code> and <code>meal_price2</code>: the price of a meal (soda, fries, entree);</li>
+<li>
+<code>emp_diff</code>: <code>fte2-fte</code>.</li>
+</ul>
+<p><strong>Question</strong>: are these data tidy?</p>
+</section><section id="explore-and-visualize" class="level1"><h1>Explore and visualize</h1>
+<p>The core claim of the study is that the two groups of restaurants are indistinguishable in all respects except for the minimum wage policy, and so any differences in employment can be ascribed to the causal impact of that policy. Let’s see how the states compare.</p>
+<section id="compare-chain-composition" class="level2"><h2 class="anchored" data-anchor-id="compare-chain-composition">Compare chain composition</h2>
+<p>Do both states have roughly the same proportions of each restaurants in each chain? Create a figure that answers this question.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">card_krueger</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">state</span>, fill <span class="op">=</span> <span class="va">chain</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>position <span class="op">=</span> <span class="st">"fill"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="same-proportion-of-company-owned" class="level2"><h2 class="anchored" data-anchor-id="same-proportion-of-company-owned">Same proportion of company owned?</h2>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">co_owned</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+# Groups:   state [2]
+  state co_owned     n  prop
+  &lt;fct&gt;    &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt;
+1 PA           0    42 0.636
+2 PA           1    24 0.364
+3 NJ           0   185 0.649
+4 NJ           1   100 0.351</code></pre>
+</div>
+</div>
+</section><section id="compare-meal-prices" class="level2"><h2 class="anchored" data-anchor-id="compare-meal-prices">Compare meal prices</h2>
+<p>How did the distribution of meal prices in each state compare before and after the policy change?</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">card_krueger</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">meal_price</span>, color <span class="op">=</span> <span class="va">state</span>, fill <span class="op">=</span> <span class="va">state</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">6</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">card_krueger</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">meal_price2</span>, color <span class="op">=</span> <span class="va">state</span>, fill <span class="op">=</span> <span class="va">state</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">6</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Investigate</strong>: Why is the distribution bimodal?</p>
+<p>There is a lurking categorical variable that explains the multiple modes:</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">state</span> <span class="op">==</span> <span class="st">"NJ"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">meal_price</span>, color <span class="op">=</span> <span class="va">chain</span>, fill <span class="op">=</span> <span class="va">chain</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">xlim</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">6</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="point-estimate" class="level1"><h1>Point estimate</h1>
+<p>Here is the simple linear regression that you fit on HW 5:</p>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">simple_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span>, data <span class="op">=</span> <span class="va">card_krueger</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tidy</span><span class="op">(</span><span class="va">simple_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)    -1.88      1.07     -1.75  0.0807
+2 stateNJ         2.28      1.19      1.91  0.0566</code></pre>
+</div>
+</div>
+<p>These numbers are not mysterious:</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span>mean_emp_diff <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">emp_diff</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  state mean_emp_diff
+  &lt;fct&gt;         &lt;dbl&gt;
+1 PA           -1.88 
+2 NJ            0.398</code></pre>
+</div>
+</div>
+<p>So the intercept in the original regression fit is just the mean <code>emp_diff</code> amongst PA restaurants, and the slope is the difference between this mean and the mean amongst NJ restaurants.</p>
+<section id="fit-an-alternative-model-with-multiple-predictors" class="level2"><h2 class="anchored" data-anchor-id="fit-an-alternative-model-with-multiple-predictors">Fit an alternative model with multiple predictors</h2>
+<p>Fit a new model that controls for the restaurant chain and whether or not it is company owned:</p>
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">multiple_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span> <span class="op">+</span> <span class="va">chain</span> <span class="op">+</span> <span class="va">co_owned</span>, data <span class="op">=</span> <span class="va">card_krueger</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tidy</span><span class="op">(</span><span class="va">multiple_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  term         estimate std.error statistic p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)    -1.45       1.21    -1.20   0.232 
+2 stateNJ         2.28       1.20     1.91   0.0575
+3 chainKFC        0.235      1.30     0.181  0.857 
+4 chainRoy's     -2.08       1.32    -1.58   0.116 
+5 chainWendy's   -0.757      1.49    -0.507  0.612 
+6 co_owned        0.373      1.10     0.339  0.735 </code></pre>
+</div>
+</div>
+</section><section id="which-model-is-best" class="level2"><h2 class="anchored" data-anchor-id="which-model-is-best">Which model is “best”</h2>
+<div class="cell">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">glance</span><span class="op">(</span><span class="va">simple_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 12
+  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC
+      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1    0.0104       0.00754  8.71      3.66  0.0566     1 -1257. 2520. 2532.
+# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">glance</span><span class="op">(</span><span class="va">multiple_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 12
+  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC
+      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1    0.0204       0.00619  8.72      1.44   0.211     5 -1255. 2524. 2551.
+# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
+</div>
+</div>
+<p>The simpler model has higher adjusted <span class="math inline">\(R^2\)</span>, so we prefer it.</p>
+</section></section><section id="interval-estimate" class="level1"><h1>Interval estimate</h1>
+<p>Compute and visualize a 95% confidence interval for the change in average employment before and after the policy change:</p>
+<div class="cell">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">empdiff_state_fit</span> <span class="op">&lt;-</span> <span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">specify</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">8675309</span><span class="op">)</span></span>
+<span><span class="va">boot_fits</span> <span class="op">&lt;-</span> <span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">specify</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">generate</span><span class="op">(</span>reps <span class="op">=</span> <span class="fl">1000</span>, type <span class="op">=</span> <span class="st">"bootstrap"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">ci_90</span> <span class="op">&lt;-</span> <span class="fu">get_confidence_interval</span><span class="op">(</span></span>
+<span>  <span class="va">boot_fits</span>,</span>
+<span>  point_estimate <span class="op">=</span> <span class="va">empdiff_state_fit</span>,</span>
+<span>  level <span class="op">=</span> <span class="fl">0.95</span>,</span>
+<span>  type <span class="op">=</span> <span class="st">"percentile"</span></span>
+<span><span class="op">)</span></span>
+<span><span class="va">ci_90</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  term      lower_ci upper_ci
+  &lt;chr&gt;        &lt;dbl&gt;    &lt;dbl&gt;
+1 intercept   -4.64     0.825
+2 stateNJ     -0.640    5.08 </code></pre>
+</div>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">visualize</span><span class="op">(</span><span class="va">boot_fits</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu">shade_confidence_interval</span><span class="op">(</span><span class="va">ci_90</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We are 95% confident that the true difference in <code>emp_diff</code> between PA and NJ is between -0.64 and 5.08. So, while our best guess (point estimate) based on this noisy, meager, imperfect dataset is 2.2, we shouldn’t be surprised if further investigation yields a better estimate somehwere between -0.64 and 5.08. Based on the information we currenty have, we cannot rule that out.</p>
+</section><section id="hypothesis-test" class="level1"><h1>Hypothesis test</h1>
+<p>Test these hypotheses at a 5% discernibility level:</p>
+<p><span class="math display">\[
+\begin{aligned}
+H_0&amp;: \beta_1=0 \quad(\text{no change})\\
+H_0&amp;: \beta_1\neq0 \quad(\text{some change})
+\end{aligned}
+\]</span></p>
+<p>Compute, visualize, and interpret the p-value.</p>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span><span class="va">null_dist</span> <span class="op">&lt;-</span> <span class="va">card_krueger</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">specify</span><span class="op">(</span><span class="va">emp_diff</span> <span class="op">~</span> <span class="va">state</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">hypothesize</span><span class="op">(</span>null <span class="op">=</span> <span class="st">"independence"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">generate</span><span class="op">(</span>reps <span class="op">=</span> <span class="fl">5000</span>, type <span class="op">=</span> <span class="st">"permute"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">visualize</span><span class="op">(</span><span class="va">null_dist</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">shade_p_value</span><span class="op">(</span>obs_stat <span class="op">=</span> <span class="va">empdiff_state_fit</span>, direction <span class="op">=</span> <span class="st">"two-sided"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-01-minimum-wage_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">null_dist</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">get_p_value</span><span class="op">(</span>obs_stat <span class="op">=</span> <span class="va">empdiff_state_fit</span>, direction <span class="op">=</span> <span class="st">"two-sided"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  term      p_value
+  &lt;chr&gt;       &lt;dbl&gt;
+1 intercept  0.0672
+2 stateNJ    0.0672</code></pre>
+</div>
+</div>
+<p>If the null hypothesis were true, and there was indeed no difference between PA and NJ, then the probability of a result as or more extreme than the one we computed would be about 7%. This is low, which brings the plausibility of the null in doubt, but nevertheless, the p-value is above standard discernibility levels like 5%. So strictly speaking, our conclusion is that we fail to reject the null. The null remains a possibility worth considering. We can’t just reject it out of hand. The data don’t speak that strongly in this case.</p>
 
 
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -625,8 +961,7 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2026 John Zito</p>
 </div>   
@@ -638,8 +973,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
