@@ -212,11 +212,42 @@ Depending on the type of a variable, we will have different guidelines for how t
 
 We use `ggplot2` (included in the `tidyverse`) for data visualization. 
 
-```{r}
+For instance, if we wish to visualize the **distribution** of the numeric variable `XXX` in the `pokemon` dataset, we can do that with a **histogram**:
 
+```{r}
+#| warning: false
+#| message: false
+ggplot(pokemon, aes(x = attack)) + 
+  geom_histogram() + 
+  labs(
+    x = "Attack score",
+    title = "Distribution of Pokémon attack"
+  )
 ```
 
-Every element of the plot is like 
+From the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly *right-skewed*.
+
+An alternative visualization for a distribution is a **density plot**. It's like a "smoothed out" histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You'll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:
+
+```{r}
+#| warning: false
+#| message: false
+ggplot(penguins, aes(x = flipper_length_mm, fill = species, color = species)) + 
+  geom_density(alpha = 0.5) + 
+  labs(
+    x = "Flipper length (mm)",
+    fill = "Species",
+    color = "Species"
+  )
+```
+
+From the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.
+
+These are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here's the template:
+
+- `ggplot(df, aes(...))`: It always starts here. You provide the name of the data frame you are using, as well as an **aesthetic mapping** where you tell R what variables you want to use and how you want to use them. In the second example above, we had `x = flipper_length_mm` because we wanted that variable on the horizontal access, and we had `color = species` because we wanted that variable to control the color of the curves;
+- `geom_XXX`: this is where we tell it *what kind* of plot we want. So far we have `geom_histogram` and `geom_density`, but there is also `geom_point` for scatter plots, `geom_bar` for bar charts, and many more;
+- After you specify those two layers, the sky's the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added `labs` to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but "Flipper length (mm)" is more readable than `flipper_length_mm`. You wouldn't see the second in *The New York Times*.
 
 ::: callout-tip
 ## Don't forget the plus signs!
@@ -230,8 +261,8 @@ Having said that, the following mistake is guaranteed to happen to all of us (JZ
 ggplot(pokemon, aes(x = attack, y = defense))  
   geom_point() +
   labs(
-    x = "Attack",
-    x = "Defense",
+    x = "Attack score",
+    x = "Defense score",
     title = "How are a Pokémon's attack and defense related?"
   )
 ```
@@ -265,7 +296,8 @@ pokemon |>
   group_by(type_1) |>
   summarize(
     avg_hp = mean(hp)
-  )
+  ) |>
+  arrange(avg_hp)
 ```
 
 If we want to know what *proportion* of our penguins belong to each species, we can run:
@@ -283,6 +315,7 @@ Commands to keep in your back pocket:
 - `group_by`: make a data frame *grouped* according to the levels of one of its variables. All subsequent operations will be done *within the groups*;
 - `summarize`: takes a data frame and creates a *new data frame* containing summaries of the old one;
 - `mean`: compute the average of a set of numbers;
+- `arrange`: this command *sorts* a data frame from low to high or high to low according to the values in one of its columns;
 - `count`: count how many observations fall into each level of a categorical variable;
 - `mutate`: add a new column to a data frame or modify an existing column;
 - `sum`: add up a set of numbers.
