@@ -15,25 +15,6 @@ format:
     code-link: true
 ---
 
-## What are we studying?
-
-. . .
-
-::: callout-note
-## Data analysis
-
-- Transforming messy, incomplete, imperfect data into *knowledge*;
-- *Knowledge* often takes the form of pictures and a concise set of numerical summaries.
-:::
-
-. . .
-
-::: callout-warning
-## Statistical inference
-
-Quantifying our uncertainty about that knowledge.
-:::
-
 ## Imagine this dialog {.small}
 
 . . .
@@ -83,6 +64,25 @@ Quantifying our uncertainty about that knowledge.
 ## It's all about decision-making under uncertainty
 
 The manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you're dealing with. Statistics can help!
+:::
+
+## What are we studying?
+
+. . .
+
+::: callout-note
+## Data analysis
+
+- Transforming messy, incomplete, imperfect data into *knowledge*;
+- *Knowledge* often takes the form of pictures and a concise set of numerical summaries.
+:::
+
+. . .
+
+::: callout-warning
+## Statistical inference
+
+Quantifying our uncertainty about that knowledge.
 :::
 
 # A brief history of intro stat
