@@ -4,6 +4,12 @@ editor:
   mode: source
 ---
 
+## Attendance
+
+Lecture attendance is not required, and I am not tracking or enforcing it in any way. The responsibility lies with me to make class sufficiently engaging and informative that you choose to attend. That said, you will probably do better in this class if you attend lecture regularly. I leave it to you to be a grown-up and make a decision.
+
+Lab attendance on the other hand is required in order to receive credit for the assignments. Since lab work is always completed in teams, you can't get credit if you leave your team hanging by not attending. There are ten graded labs in total, and we drop your two lowest scores at the end of the semester. We will use this policy to automatically absorb the effect of one-off absences due to brief illness, travel, job interviews, etc. If more challenging or protracted circumstances arise (e.g. bereavement or serious illness) that affect your lab attendance, please secure a [dean's excuse](https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work) and then reach out to the instructor directly (john.zito\@duke.edu) to discuss special arrangements.
+
 ## Collaboration
 
 Collaboration is simply *required* on labs and the project. It is *forbidden* on the exams. It is *enthusiastically encouraged* on homeworks. You will learn a lot from helping each other. I would much rather you consult your peers than some daft language model. What I ask is that you *acknowledge* your collaborators. So, at the top of your write-up, leave a bulleted list of comments like "Ursula, Ignatius and I worked together on this problem," or "Ethel explained to me how to do part b." You are not being judged based on your acknowledgements, and there is no penalty for getting "too much" help from others. If you omit acknowledgements, I will assume you did your work solo. If your classmates tell a different story, I will have questions. But otherwise, so long as you are thorough and honest, there will be no problems.
@@ -49,12 +55,6 @@ If you receive a graded assignment back, and you believe that some part of it wa
 -   Requests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;
 -   Requests to dispute the number of points deducted for an incorrect response will not be considered;
 -   **No grades will be changed after the final exam has been administered on Thursday December 10**.
-
-## Attendance
-
-Lecture attendance is not required, and I am not tracking or enforcing it in any way. The responsibility lies with me to make class sufficiently engaging and informative that you choose to attend. That said, you will probably do better in this class if you attend lecture regularly. I leave it to you to be a grown-up and make a decision.
-
-Lab attendance on the other hand is required in order to receive credit for the assignments. Since lab work is always completed in teams, you can't get credit if you leave your team hanging by not attending. There are ten graded labs in total, and we drop your two lowest scores at the end of the semester. We will use this policy to automatically absorb the effect of one-off absences due to brief illness, travel, job interviews, etc. If more challenging or protracted circumstances arise (e.g. bereavement or serious illness) that affect your lab attendance, please secure a [dean's excuse](https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work) and then reach out to the instructor directly (john.zito\@duke.edu) to discuss special arrangements.
 
 ## Accommodations
 
