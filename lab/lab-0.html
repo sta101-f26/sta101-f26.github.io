@@ -544,7 +544,47 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>Depending on the type of a variable, we will have different guidelines for how to visualize and summarize that information.</p>
 </section><section id="data-visualization" class="level2"><h2 class="anchored" data-anchor-id="data-visualization">4. Data visualization</h2>
 <p>We use <code>ggplot2</code> (included in the <code>tidyverse</code>) for data visualization.</p>
-<p>Every element of the plot is like</p>
+<p>For instance, if we wish to visualize the <strong>distribution</strong> of the numeric variable <code>XXX</code> in the <code>pokemon</code> dataset, we can do that with a <strong>histogram</strong>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pokemon</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">attack</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="st">"Attack score"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"Distribution of Pokémon attack"</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="lab-0_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly <em>right-skewed</em>.</p>
+<p>An alternative visualization for a distribution is a <strong>density plot</strong>. It’s like a “smoothed out” histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You’ll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:</p>
+<div class="cell">
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">penguins</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">flipper_length_mm</span>, fill <span class="op">=</span> <span class="va">species</span>, color <span class="op">=</span> <span class="va">species</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="st">"Flipper length (mm)"</span>,</span>
+<span>    fill <span class="op">=</span> <span class="st">"Species"</span>,</span>
+<span>    color <span class="op">=</span> <span class="st">"Species"</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="lab-0_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>From the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.</p>
+<p>These are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here’s the template:</p>
+<ul>
+<li>
+<code>ggplot(df, aes(...))</code>: It always starts here. You provide the name of the data frame you are using, as well as an <strong>aesthetic mapping</strong> where you tell R what variables you want to use and how you want to use them. In the second example above, we had <code>x = flipper_length_mm</code> because we wanted that variable on the horizontal access, and we had <code>color = species</code> because we wanted that variable to control the color of the curves;</li>
+<li>
+<code>geom_XXX</code>: this is where we tell it <em>what kind</em> of plot we want. So far we have <code>geom_histogram</code> and <code>geom_density</code>, but there is also <code>geom_point</code> for scatter plots, <code>geom_bar</code> for bar charts, and many more;</li>
+<li>After you specify those two layers, the sky’s the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added <code>labs</code> to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but “Flipper length (mm)” is more readable than <code>flipper_length_mm</code>. You wouldn’t see the second in <em>The New York Times</em>.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -558,11 +598,11 @@ Don’t forget the plus signs!
 <p>If building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.</p>
 <p>Having said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:</p>
 <div class="cell">
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pokemon</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">attack</span>, y <span class="op">=</span> <span class="va">defense</span><span class="op">)</span><span class="op">)</span>  </span>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pokemon</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">attack</span>, y <span class="op">=</span> <span class="va">defense</span><span class="op">)</span><span class="op">)</span>  </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Attack"</span>,</span>
-<span>    x <span class="op">=</span> <span class="st">"Defense"</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Attack score"</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Defense score"</span>,</span>
 <span>    title <span class="op">=</span> <span class="st">"How are a Pokémon's attack and defense related?"</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -580,38 +620,39 @@ Don’t forget the plus signs!
 <p>We use <code>dplyr</code> (included in the <code>tidyverse</code>) and the pipe operator <code>|&gt;</code> for data summarization and transformation.</p>
 <p>For instance, if we want to know what the average HP (hit points) for each type of Pokémon is, we can run:</p>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pokemon</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">type_1</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span></span>
 <span>    avg_hp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">hp</span><span class="op">)</span></span>
-<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">avg_hp</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 18 × 2
    type_1   avg_hp
    &lt;chr&gt;     &lt;dbl&gt;
  1 Bug        57.5
- 2 Dark       69.6
- 3 Dragon     84.1
- 4 Electric   61.1
- 5 Fairy      72.8
- 6 Fighting   71.6
- 7 Fire       69.5
- 8 Flying     70.8
- 9 Ghost      64.9
-10 Grass      66.7
-11 Ground     71.6
-12 Ice        70.5
-13 Normal     77.1
-14 Poison     67.3
-15 Psychic    73.7
-16 Rock       66.2
-17 Steel      66.8
-18 Water      71.1</code></pre>
+ 2 Electric   61.1
+ 3 Ghost      64.9
+ 4 Rock       66.2
+ 5 Grass      66.7
+ 6 Steel      66.8
+ 7 Poison     67.3
+ 8 Fire       69.5
+ 9 Dark       69.6
+10 Ice        70.5
+11 Flying     70.8
+12 Water      71.1
+13 Ground     71.6
+14 Fighting   71.6
+15 Fairy      72.8
+16 Psychic    73.7
+17 Normal     77.1
+18 Dragon     84.1</code></pre>
 </div>
 </div>
 <p>If we want to know what <em>proportion</em> of our penguins belong to each species, we can run:</p>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>    prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
@@ -634,6 +675,8 @@ Don’t forget the plus signs!
 <li>
 <code>mean</code>: compute the average of a set of numbers;</li>
 <li>
+<code>arrange</code>: this command <em>sorts</em> a data frame from low to high or high to low according to the values in one of its columns;</li>
+<li>
 <code>count</code>: count how many observations fall into each level of a categorical variable;</li>
 <li>
 <code>mutate</code>: add a new column to a data frame or modify an existing column;</li>
@@ -653,21 +696,21 @@ The pipe operator <code>|&gt;</code>
 <p>The pipe operator is the engine that drives data pipelines. The operator takes the stuff to its left and feeds it forward to the stuff on its right. That’s it. But if you link many of these together in sequence, you can perform possibly elaborate summaries and transformations in a clean, step-by-step way.</p>
 <p>Simple example: if I want to add the numbers <code>1</code> and <code>2</code>, I can run:</p>
 <div class="cell">
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 <p>An alternative but equivalent way of writing this is with the pipe operator:</p>
 <div class="cell">
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 <p>So the number <code>1</code> appears on the left, and it gets <em>fed forward</em> as the first argument to the command on the right. That’s the main idea. The power of the pipe operator is that it can make code much more <strong>readable</strong>. Consider the second example above where we compute the proportion of penguins belonging to each species. This code is equivalent to what we wrote above, and it does exactly the same thing:</p>
 <div class="cell">
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">penguins</span>, <span class="va">species</span><span class="op">)</span>, prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">penguins</span>, <span class="va">species</span><span class="op">)</span>, prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 3
   species       n  prop
