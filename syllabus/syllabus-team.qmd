@@ -11,7 +11,7 @@ Office hours will begin on Monday August 31.
 +------------------------------+--------------------+---------------+--------------------------------+
 | Mug                          | Name               | Role          | Office Hours                   |
 +==============================+====================+===============+================================+
-| ![](images/moe.jpg){.circ}   | Castillo, Jesus    | TA            | **Day/Time TBD**\              |
+| ![](images/moe.jpg){.circ}   | Castillo, Jesus    | TA            | **Thu 10:00 AM - 12:00 PM**\   |
 |                              |                    |               | Location TBD                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Tue 10:00 AM - 12:00 PM**\   |
@@ -24,7 +24,7 @@ Office hours will begin on Monday August 31.
 |                              |                    |               | Zoom (link on Canvas)          |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Wed 4:30 PM - 6:30 PM**\     |
-|                              |                    |               | Location TBD                   |
+|                              |                    |               | Old Chem 203B                  |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/cz.png){.circ}    | Zhang, Christina   | TA            | **Thu 4:30 PM - 6:30 PM**\     |
 |                              |                    |               | Old Chem 203B                  |
