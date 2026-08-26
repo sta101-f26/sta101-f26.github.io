@@ -4,7 +4,7 @@
     "href": "syllabus/syllabus-overview.html",
     "title": "Course overview",
     "section": "",
-    "text": "Description\nWhat the course catalog says (source): Introduction to statistics as a science of understanding and analyzing data. Themes include data collection, exploratory analysis, inference, and modeling. Focus on principles underlying quantitative research in social sciences, humanities, and public policy. Research projects teach the process of scientific discovery and synthesis and critical evaluation of research and statistical arguments. Readings give perspective on why in 1950, S. Wilks said, “Statistical thinking will one day be as necessary a qualification for efficient citizenship as the ability to read and write.”\nPrerequisites: a body temperature roughly in the nineties.\n\n\nMeetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 139\nTuTh 3:05 PM - 4:20 PM\nJZ, Christina\n\n\nLab 01\nOld Chem 201\nF 10:05 AM - 11:20 AM\nSongliang, Sonya\n\n\nLab 02\nOld Chem 201\nF 11:45 AM - 01:00 PM\nSongliang, Matthew\n\n\nLab 03\nOld Chem 201\nF 01:25 PM - 02:40 PM\nSongliang, Matthew",
+    "text": "Description\nWhat the course catalog says (source): Introduction to statistics as a science of understanding and analyzing data. Themes include data collection, exploratory analysis, inference, and modeling. Focus on principles underlying quantitative research in social sciences, humanities, and public policy. Research projects teach the process of scientific discovery and synthesis and critical evaluation of research and statistical arguments. Readings give perspective on why in 1950, S. Wilks said, “Statistical thinking will one day be as necessary a qualification for efficient citizenship as the ability to read and write.”\nPrerequisites: a body temperature roughly in the nineties.\n\n\nMeetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 139\nTuTh 3:05 PM - 4:20 PM\nJZ, Christina\n\n\nLab 01\nOld Chem 201\nF 10:05 AM - 11:20 AM\nSongliang, Sonya\n\n\nLab 02\nOld Chem 201\nF 11:45 AM - 01:00 PM\nSongliang, Joon\n\n\nLab 03\nOld Chem 201\nF 01:25 PM - 02:40 PM\nJesus, Matthew",
     "crumbs": [
       "Syllabus",
       "Overview"
@@ -135,7 +135,7 @@
     "href": "syllabus/syllabus-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Note\n\n\n\nOffice hours will begin on Monday August 31.\n\n\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nLocation TBD\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nLocation TBD\n\n\n\nKang, Joon\nTA\nFri 3:00 PM - 5:00 PM\nLocation TBD\n\n\n\nLasser, Sonya\nTA\nWed 4:30 PM - 6:30 PM\nLocation TBD\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nLocation TBD\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
+    "text": "Note\n\n\n\nOffice hours will begin on Monday August 31.\n\n\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nFri 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 4:30 PM - 6:30 PM\nLocation TBD\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
       "Teaching team"
@@ -1754,7 +1754,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🍔 ae 01\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🍔 ae 01\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -1765,21 +1765,21 @@
     "href": "slides/00-welcome.html",
     "title": "Welcome to STA 101!",
     "section": "",
-    "text": ". . .\n\n\n\n\n\n\nData analysis\n\n\n\n\nTransforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries.\n\n\n\n. . .\n\n\n\n\n\n\nStatistical inference\n\n\n\nQuantifying our uncertainty about that knowledge."
-  },
-  {
-    "objectID": "slides/00-welcome.html#what-are-we-studying",
-    "href": "slides/00-welcome.html#what-are-we-studying",
-    "title": "Welcome to STA 101!",
-    "section": "",
-    "text": ". . .\n\n\n\n\n\n\nData analysis\n\n\n\n\nTransforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries.\n\n\n\n. . .\n\n\n\n\n\n\nStatistical inference\n\n\n\nQuantifying our uncertainty about that knowledge."
+    "text": ". . .\nCampaign manager: What share of the popular vote do we think our candidate will receive?\n. . .\n(A flurry of analysis takes place.)\n. . .\nData scientist: Our best guess is 54%.\n. . .\nCampaign manager: How reliable is that estimate? How confident are we in that? What’s the margin of error?\n. . .\n\n\nParallel Universe 1\nData scientist: It’s 54% give or take 3%.\n\n\nParallel Universe 2\nData scientist: It’s 54% give or take 20%.\n\n\n\n. . .\n\n\n\n\n\n\nIt’s all about decision-making under uncertainty\n\n\n\nThe manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you’re dealing with. Statistics can help!"
   },
   {
     "objectID": "slides/00-welcome.html#imagine-this-dialog",
     "href": "slides/00-welcome.html#imagine-this-dialog",
     "title": "Welcome to STA 101!",
-    "section": "Imagine this dialog",
-    "text": "Imagine this dialog\n. . .\nCampaign manager: What share of the popular vote do we think our candidate will receive?\n. . .\n(A flurry of analysis takes place.)\n. . .\nData scientist: Our best guess is 54%.\n. . .\nCampaign manager: How reliable is that estimate? How confident are we in that? What’s the margin of error?\n. . .\n\n\nParallel Universe 1\nData scientist: It’s 54% give or take 3%.\n\n\nParallel Universe 2\nData scientist: It’s 54% give or take 20%.\n\n\n\n. . .\n\n\n\n\n\n\nIt’s all about decision-making under uncertainty\n\n\n\nThe manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you’re dealing with. Statistics can help!"
+    "section": "",
+    "text": ". . .\nCampaign manager: What share of the popular vote do we think our candidate will receive?\n. . .\n(A flurry of analysis takes place.)\n. . .\nData scientist: Our best guess is 54%.\n. . .\nCampaign manager: How reliable is that estimate? How confident are we in that? What’s the margin of error?\n. . .\n\n\nParallel Universe 1\nData scientist: It’s 54% give or take 3%.\n\n\nParallel Universe 2\nData scientist: It’s 54% give or take 20%.\n\n\n\n. . .\n\n\n\n\n\n\nIt’s all about decision-making under uncertainty\n\n\n\nThe manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you’re dealing with. Statistics can help!"
+  },
+  {
+    "objectID": "slides/00-welcome.html#what-are-we-studying",
+    "href": "slides/00-welcome.html#what-are-we-studying",
+    "title": "Welcome to STA 101!",
+    "section": "What are we studying?",
+    "text": "What are we studying?\n. . .\n\n\n\n\n\n\nData analysis\n\n\n\n\nTransforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries.\n\n\n\n. . .\n\n\n\n\n\n\nStatistical inference\n\n\n\nQuantifying our uncertainty about that knowledge."
   },
   {
     "objectID": "slides/00-welcome.html#a-portrait-of-the-instructor-as-a-young-man",
@@ -1789,18 +1789,18 @@
     "text": "A Portrait of the Instructor as a Young Man\nBack in Spring 2014…"
   },
   {
-    "objectID": "slides/00-welcome.html#why-did-it-fail-to-thrill-me",
-    "href": "slides/00-welcome.html#why-did-it-fail-to-thrill-me",
+    "objectID": "slides/00-welcome.html#the-old-way",
+    "href": "slides/00-welcome.html#the-old-way",
     "title": "Welcome to STA 101!",
-    "section": "Why did it fail to thrill me?",
-    "text": "Why did it fail to thrill me?\n\n\n\n\n\n\n\n\nBig heavy book that cost $250.00;\nWeird point-and-click spreadsheet thing that no one uses."
+    "section": "The old way",
+    "text": "The old way\n\n\n\n\n\n\n\n\n\n$272.00 textbook;\nPoint-and-click spreadsheet software ($???.??)."
   },
   {
-    "objectID": "slides/00-welcome.html#much-has-changed",
-    "href": "slides/00-welcome.html#much-has-changed",
+    "objectID": "slides/00-welcome.html#the-new-way",
+    "href": "slides/00-welcome.html#the-new-way",
     "title": "Welcome to STA 101!",
-    "section": "Much has changed",
-    "text": "Much has changed\n\n\n\n\n\n\n\n\nFlexible, simulation-based approach to inference ($0.00);\nSoftware that people have actually heard of ($0.00)."
+    "section": "The new way",
+    "text": "The new way\n\n\n\n\n\n\n\n\nFlexible, simulation-based approach to inference ($0.00);\nComputer programming ($0.00).\n\nThis is much closer to what contemporary practitioners actually do."
   },
   {
     "objectID": "slides/00-welcome.html#the-ladder",
@@ -1891,7 +1891,7 @@
     "href": "slides/00-welcome.html#use-of-outside-resources-including-ai",
     "title": "Welcome to STA 101!",
     "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nCheck out the discussion in the syllabus.\ntl;dr:\n\nEverything is pretty much fair game so long as you cite it;\nUncited use of outside resources is treated as plagiarism;\nIf you spend the entire semester outsourcing all of your thinking to a chatbot, you will probably humiliate yourself on both exams, which are worth 50% of your grade."
+    "text": "Use of outside resources, including AI\nCheck out the discussion in the syllabus.\ntl; dr:\n\nEverything is pretty much fair game so long as you cite it;\nUncited use of outside resources is treated as plagiarism;\nIf you spend the entire semester outsourcing all of your thinking to a chatbot, you will probably humiliate yourself on both exams, which are worth 50% of your grade."
   },
   {
     "objectID": "slides/00-welcome.html#faq-101-vs-198-vs-199",
@@ -1954,7 +1954,7 @@
     "href": "slides/00-welcome.html#babys-first-spreadsheet",
     "title": "Welcome to STA 101!",
     "section": "Baby’s first spreadsheet",
-    "text": "Baby’s first spreadsheet\n\nlibrary(tidyverse)\nage_guesses &lt;- read_csv(\"data/age_guesses.csv\")\n\n\n\n# A tibble: 299 × 6\n   celeb1 celeb2 celeb3 celeb4 celeb5 celeb6\n    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n 1     32     26     73     68     50     78\n 2     22     42     75     55     35     77\n 3     22     31     79     40     43     68\n 4     30     28     65     40     45     70\n 5     35     39     67     54     49     60\n 6     30     48     67     37     45     70\n 7     49     42     78     47     62     75\n 8     28     35     70     50     60     70\n 9     31     36     62     43     41     68\n10     26     33     67     60     42     71\n# ℹ 289 more rows\n\n\nEach row is a 101 student, and the columns record their guesses for each celeb."
+    "text": "Baby’s first spreadsheet\n\nlibrary(tidyverse)\nage_guesses &lt;- read_csv(\"data/age_guesses.csv\")\n\n\n\n# A tibble: 82 × 6\n   celeb1 celeb2 celeb3 celeb4 celeb5 celeb6\n    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n 1     36     63     78     79     42     58\n 2     18     25     72     34     26     64\n 3     31     35     61     83     58     68\n 4     26     32     64     50     40     65\n 5     34     56     67     52     41     71\n 6     40     40     84     64     42     80\n 7     34     45     80     40     40     70\n 8     35     62     64     71     53     82\n 9     20     35     77     45     37     45\n10     45     64     86     65     48     67\n# ℹ 72 more rows\n\n\nEach row is a 101 student, and the columns record their guesses for each celeb."
   },
   {
     "objectID": "slides/00-welcome.html#anyone-know-who-this-is",
@@ -2017,7 +2017,7 @@
     "href": "slides/00-welcome.html#concise-numerical-summaries",
     "title": "Welcome to STA 101!",
     "section": "Concise numerical summaries",
-    "text": "Concise numerical summaries\nWhere are your guesses concentrated? How spread out are they?\n\nage_guesses |&gt;\n  summarize(\n    average = mean(celeb1),\n    sdev = sd(celeb1)\n  )\n\n# A tibble: 1 × 2\n  average  sdev\n    &lt;dbl&gt; &lt;dbl&gt;\n1    29.1  5.01\n\n\nSay hello to the mean and standard deviation."
+    "text": "Concise numerical summaries\nWhere are your guesses concentrated? How spread out are they?\n\nage_guesses |&gt;\n  summarize(\n    average = mean(celeb1),\n    sdev = sd(celeb1)\n  )\n\n# A tibble: 1 × 2\n  average  sdev\n    &lt;dbl&gt; &lt;dbl&gt;\n1    31.2  6.34\n\n\nSay hello to the mean and standard deviation."
   },
   {
     "objectID": "slides/00-welcome.html#well-see-this-stuff-daily",
@@ -2136,7 +2136,7 @@
     "href": "slides/00-welcome.html#who-guessed-best",
     "title": "Welcome to STA 101!",
     "section": "Who guessed best?",
-    "text": "Who guessed best?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour name\nceleb1\nceleb2\nceleb3\nceleb4\nceleb5\nceleb6\nsqerror\n\n\n\n(answers)\n36\n63\n82\n48\n38.5\n76\n0.0000\n\n\nMargaret McPheeters\n20\n60\n85\n60\n45.0\n65\n96.8750\n\n\nHaleeyah Adesina\n35\n42\n73\n57\n39.0\n72\n103.3750\n\n\nAmar Walia\n31\n47\n74\n55\n52.0\n68\n106.7083\n\n\nMax Hill\n31\n42\n71\n49\n42.0\n68\n110.7083\n\n\nJulia Bernarde\n30\n48\n67\n37\n45.0\n70\n114.2083\n\n\nbecca\n40\n50\n67\n60\n50.0\n70\n120.3750\n\n\n\n\n\n(Hey, dummy: don’t publish this slide!)"
+    "text": "Who guessed best?\n\n\n\n\nYour name\nceleb1\nceleb2\nceleb3\nceleb4\nceleb5\nceleb6\nsqerror\n\n\n\n(answers)\n36\n63\n82\n48\n38.5\n76\n0.00000\n\n\nNA\n42\n65\n75\n45\n37.0\n63\n44.87500\n\n\nNA\n35\n56\n78\n39\n47.0\n67\n50.04167\n\n\nNA\n34\n56\n67\n52\n41.0\n71\n54.20833\n\n\nNA\n41\n62\n85\n44\n52.0\n66\n55.54167\n\n\nNA\n30\n50\n75\n45\n45.0\n70\n56.87500\n\n\nNA\n27\n68\n75\n59\n48.0\n72\n63.70833\n\n\n\n\n\n(no doxxing version)"
   },
   {
     "objectID": "slides/00-welcome.html#meet-your-new-best-friend",
@@ -2167,18 +2167,18 @@
     "text": "Connect to the course files\n\nClick  in the upper right;\nClick  in the drop-down menu;\nClick  in the dialog box;\nClick  in the dialog box;\nInput these and Create Project:\n\nRepository URL: https://github.com/sta101-f26/sta101-f26-files.git\n\nProject directory name: sta101-f26-files"
   },
   {
-    "objectID": "slides/00-welcome-slides.html#what-are-we-studying",
-    "href": "slides/00-welcome-slides.html#what-are-we-studying",
-    "title": "Welcome to STA 101!",
-    "section": "What are we studying?",
-    "text": "What are we studying?\n\n\n\n\n\n\n\nData analysis\n\n\n\nTransforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries.\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical inference\n\n\nQuantifying our uncertainty about that knowledge."
-  },
-  {
     "objectID": "slides/00-welcome-slides.html#imagine-this-dialog",
     "href": "slides/00-welcome-slides.html#imagine-this-dialog",
     "title": "Welcome to STA 101!",
     "section": "Imagine this dialog",
     "text": "Imagine this dialog\n\nCampaign manager: What share of the popular vote do we think our candidate will receive?\n\n\n(A flurry of analysis takes place.)\n\n\nData scientist: Our best guess is 54%.\n\n\nCampaign manager: How reliable is that estimate? How confident are we in that? What’s the margin of error?\n\n\n\n\nParallel Universe 1\nData scientist: It’s 54% give or take 3%.\n\n\nParallel Universe 2\nData scientist: It’s 54% give or take 20%.\n\n\n\n\n\n\n\n\n\n\nIt’s all about decision-making under uncertainty\n\n\nThe manager is going to make wildly different decisions about campaign spending and strategy depending on how uncertain the environment is. Therefore, it pays to know what you’re dealing with. Statistics can help!"
+  },
+  {
+    "objectID": "slides/00-welcome-slides.html#what-are-we-studying",
+    "href": "slides/00-welcome-slides.html#what-are-we-studying",
+    "title": "Welcome to STA 101!",
+    "section": "What are we studying?",
+    "text": "What are we studying?\n\n\n\n\n\n\n\nData analysis\n\n\n\nTransforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries.\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical inference\n\n\nQuantifying our uncertainty about that knowledge."
   },
   {
     "objectID": "slides/00-welcome-slides.html#a-portrait-of-the-instructor-as-a-young-man",
@@ -2188,18 +2188,18 @@
     "text": "A Portrait of the Instructor as a Young Man\nBack in Spring 2014…"
   },
   {
-    "objectID": "slides/00-welcome-slides.html#why-did-it-fail-to-thrill-me",
-    "href": "slides/00-welcome-slides.html#why-did-it-fail-to-thrill-me",
+    "objectID": "slides/00-welcome-slides.html#the-old-way",
+    "href": "slides/00-welcome-slides.html#the-old-way",
     "title": "Welcome to STA 101!",
-    "section": "Why did it fail to thrill me?",
-    "text": "Why did it fail to thrill me?\n\n\n\n\n\n\n\nBig heavy book that cost $250.00;\nWeird point-and-click spreadsheet thing that no one uses."
+    "section": "The old way",
+    "text": "The old way\n\n\n\n\n\n\n\n\n$272.00 textbook;\nPoint-and-click spreadsheet software ($???.??)."
   },
   {
-    "objectID": "slides/00-welcome-slides.html#much-has-changed",
-    "href": "slides/00-welcome-slides.html#much-has-changed",
+    "objectID": "slides/00-welcome-slides.html#the-new-way",
+    "href": "slides/00-welcome-slides.html#the-new-way",
     "title": "Welcome to STA 101!",
-    "section": "Much has changed",
-    "text": "Much has changed\n\n\n\n\n\n\n\nFlexible, simulation-based approach to inference ($0.00);\nSoftware that people have actually heard of ($0.00)."
+    "section": "The new way",
+    "text": "The new way\n\n\n\n\n\n\n\nFlexible, simulation-based approach to inference ($0.00);\nComputer programming ($0.00).\n\nThis is much closer to what contemporary practitioners actually do."
   },
   {
     "objectID": "slides/00-welcome-slides.html#the-ladder",
@@ -2290,7 +2290,7 @@
     "href": "slides/00-welcome-slides.html#use-of-outside-resources-including-ai",
     "title": "Welcome to STA 101!",
     "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nCheck out the discussion in the syllabus.\ntl;dr:\n\nEverything is pretty much fair game so long as you cite it;\nUncited use of outside resources is treated as plagiarism;\nIf you spend the entire semester outsourcing all of your thinking to a chatbot, you will probably humiliate yourself on both exams, which are worth 50% of your grade."
+    "text": "Use of outside resources, including AI\nCheck out the discussion in the syllabus.\ntl; dr:\n\nEverything is pretty much fair game so long as you cite it;\nUncited use of outside resources is treated as plagiarism;\nIf you spend the entire semester outsourcing all of your thinking to a chatbot, you will probably humiliate yourself on both exams, which are worth 50% of your grade."
   },
   {
     "objectID": "slides/00-welcome-slides.html#faq-101-vs-198-vs-199",
@@ -2353,7 +2353,7 @@
     "href": "slides/00-welcome-slides.html#babys-first-spreadsheet",
     "title": "Welcome to STA 101!",
     "section": "Baby’s first spreadsheet",
-    "text": "Baby’s first spreadsheet\n\nlibrary(tidyverse)\nage_guesses &lt;- read_csv(\"data/age_guesses.csv\")\n\n\n\n# A tibble: 299 × 6\n   celeb1 celeb2 celeb3 celeb4 celeb5 celeb6\n    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n 1     32     26     73     68     50     78\n 2     22     42     75     55     35     77\n 3     22     31     79     40     43     68\n 4     30     28     65     40     45     70\n 5     35     39     67     54     49     60\n 6     30     48     67     37     45     70\n 7     49     42     78     47     62     75\n 8     28     35     70     50     60     70\n 9     31     36     62     43     41     68\n10     26     33     67     60     42     71\n# ℹ 289 more rows\n\n\nEach row is a 101 student, and the columns record their guesses for each celeb."
+    "text": "Baby’s first spreadsheet\n\nlibrary(tidyverse)\nage_guesses &lt;- read_csv(\"data/age_guesses.csv\")\n\n\n\n# A tibble: 82 × 6\n   celeb1 celeb2 celeb3 celeb4 celeb5 celeb6\n    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n 1     36     63     78     79     42     58\n 2     18     25     72     34     26     64\n 3     31     35     61     83     58     68\n 4     26     32     64     50     40     65\n 5     34     56     67     52     41     71\n 6     40     40     84     64     42     80\n 7     34     45     80     40     40     70\n 8     35     62     64     71     53     82\n 9     20     35     77     45     37     45\n10     45     64     86     65     48     67\n# ℹ 72 more rows\n\n\nEach row is a 101 student, and the columns record their guesses for each celeb."
   },
   {
     "objectID": "slides/00-welcome-slides.html#anyone-know-who-this-is",
@@ -2416,7 +2416,7 @@
     "href": "slides/00-welcome-slides.html#concise-numerical-summaries",
     "title": "Welcome to STA 101!",
     "section": "Concise numerical summaries",
-    "text": "Concise numerical summaries\nWhere are your guesses concentrated? How spread out are they?\n\nage_guesses |&gt;\n  summarize(\n    average = mean(celeb1),\n    sdev = sd(celeb1)\n  )\n\n# A tibble: 1 × 2\n  average  sdev\n    &lt;dbl&gt; &lt;dbl&gt;\n1    29.1  5.01\n\n\nSay hello to the mean and standard deviation."
+    "text": "Concise numerical summaries\nWhere are your guesses concentrated? How spread out are they?\n\nage_guesses |&gt;\n  summarize(\n    average = mean(celeb1),\n    sdev = sd(celeb1)\n  )\n\n# A tibble: 1 × 2\n  average  sdev\n    &lt;dbl&gt; &lt;dbl&gt;\n1    31.2  6.34\n\n\nSay hello to the mean and standard deviation."
   },
   {
     "objectID": "slides/00-welcome-slides.html#well-see-this-stuff-daily",
@@ -2535,7 +2535,7 @@
     "href": "slides/00-welcome-slides.html#who-guessed-best",
     "title": "Welcome to STA 101!",
     "section": "Who guessed best?",
-    "text": "Who guessed best?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour name\nceleb1\nceleb2\nceleb3\nceleb4\nceleb5\nceleb6\nsqerror\n\n\n\n(answers)\n36\n63\n82\n48\n38.5\n76\n0.0000\n\n\nMargaret McPheeters\n20\n60\n85\n60\n45.0\n65\n96.8750\n\n\nHaleeyah Adesina\n35\n42\n73\n57\n39.0\n72\n103.3750\n\n\nAmar Walia\n31\n47\n74\n55\n52.0\n68\n106.7083\n\n\nMax Hill\n31\n42\n71\n49\n42.0\n68\n110.7083\n\n\nJulia Bernarde\n30\n48\n67\n37\n45.0\n70\n114.2083\n\n\nbecca\n40\n50\n67\n60\n50.0\n70\n120.3750\n\n\n\n\n\n(Hey, dummy: don’t publish this slide!)"
+    "text": "Who guessed best?\n\n\n\n\nYour name\nceleb1\nceleb2\nceleb3\nceleb4\nceleb5\nceleb6\nsqerror\n\n\n\n(answers)\n36\n63\n82\n48\n38.5\n76\n0.00000\n\n\nNA\n42\n65\n75\n45\n37.0\n63\n44.87500\n\n\nNA\n35\n56\n78\n39\n47.0\n67\n50.04167\n\n\nNA\n34\n56\n67\n52\n41.0\n71\n54.20833\n\n\nNA\n41\n62\n85\n44\n52.0\n66\n55.54167\n\n\nNA\n30\n50\n75\n45\n45.0\n70\n56.87500\n\n\nNA\n27\n68\n75\n59\n48.0\n72\n63.70833\n\n\n\n\n\n(no doxxing version)"
   },
   {
     "objectID": "slides/00-welcome-slides.html#meet-your-new-best-friend",
