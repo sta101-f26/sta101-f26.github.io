@@ -101,7 +101,7 @@ Back in Spring 2014...
 :::
 :::
 
-## Why did it fail to thrill me?
+## The old way
 
 ::: {.columns}
 ::: {.column width="30%"}
@@ -113,23 +113,25 @@ Back in Spring 2014...
 :::
 :::
 
-- Big heavy book that cost [$250.00](https://www.amazon.com/Statistics-Exploration-Analysis-Available-Titles/dp/0840058012/ref=sr_1_1?crid=297Y6VX5WF0LD&dib=eyJ2IjoiMSJ9.RTkd3TOK5o_5S6Od8Xp80uexK2SC2vRaH_rynYzQZK7qvVNENbOUBRRpDEYKU2wJpZsw1Ed8UpW4STCgvqhmBUn3WR4klCWPrQkcwPcg8cbn7EYWKOpjh-BTI61npfat-Nd8jlxfz9O3S0B0F4bPPdoDv4PStUS3_DsGyl9dCc5pPqB3ByuS5uQpJBTnQOfD5szbMsEgMlLSlaRLDw_Bmy67IAY1HhMvaje_n6x7hSU.lZJavCwQ49gLr9h5HlCM7Flkd1RmTRJwptoVL5yj8RQ&dib_tag=se&keywords=peck+devore+statistics&qid=1786473057&sprefix=peck+devore+statistic%2Caps%2C188&sr=8-1);
-- Weird point-and-click spreadsheet thing ~~that no one uses~~.
+- [$272.00](https://www.amazon.com/Statistics-Exploration-Analysis-Available-Titles/dp/0840058012/ref=sr_1_1?crid=297Y6VX5WF0LD&dib=eyJ2IjoiMSJ9.RTkd3TOK5o_5S6Od8Xp80uexK2SC2vRaH_rynYzQZK7qvVNENbOUBRRpDEYKU2wJpZsw1Ed8UpW4STCgvqhmBUn3WR4klCWPrQkcwPcg8cbn7EYWKOpjh-BTI61npfat-Nd8jlxfz9O3S0B0F4bPPdoDv4PStUS3_DsGyl9dCc5pPqB3ByuS5uQpJBTnQOfD5szbMsEgMlLSlaRLDw_Bmy67IAY1HhMvaje_n6x7hSU.lZJavCwQ49gLr9h5HlCM7Flkd1RmTRJwptoVL5yj8RQ&dib_tag=se&keywords=peck+devore+statistics&qid=1786473057&sprefix=peck+devore+statistic%2Caps%2C188&sr=8-1) textbook;
+- Point-and-click spreadsheet software ($???.??).
 
-## Much has changed
+## The new way {.medium}
 
 ::: {.columns}
-::: {.column width="32%"}
+::: {.column width="30%"}
 ![](images/00/ims.png)
 :::
 
-::: {.column width="45%"}
+::: {.column width="43%"}
 ![](images/00/r_logo.svg)
 :::
 :::
 
 - Flexible, simulation-based approach to inference (\$0.00);
-- Software that people have actually heard of (\$0.00).
+- Computer programming (\$0.00).
+
+This is much closer to what contemporary practitioners actually do.
 
 ## "The ladder" {.small}
 
@@ -271,7 +273,7 @@ Violation of the second policy is plagiarism. Sharers and recipients alike are r
 
 Check out the [discussion](/syllabus/syllabus-policies.html#use-of-outside-resources-including-ai) in the syllabus.
 
-tl;dr: 
+tl; dr: 
 
 - Everything is pretty much fair game so long as you cite it;
 - Uncited use of outside resources is treated as plagiarism;
@@ -780,7 +782,7 @@ age_guesses |>
 
 ```
 
-(Hey, dummy: don't publish this slide!)
+(no doxxing version)
 
 ## Meet your new best friend
 
