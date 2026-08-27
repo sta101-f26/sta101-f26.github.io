@@ -212,7 +212,7 @@ Depending on the type of a variable, we will have different guidelines for how t
 
 We use `ggplot2` (included in the `tidyverse`) for data visualization. 
 
-For instance, if we wish to visualize the **distribution** of the numeric variable `XXX` in the `pokemon` dataset, we can do that with a **histogram**:
+For instance, if we wish to visualize the **distribution** of the numeric variable `attack` in the `pokemon` dataset, we can do that with a **histogram**:
 
 ```{r}
 #| warning: false
