@@ -135,7 +135,7 @@
     "href": "syllabus/syllabus-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Note\n\n\n\nOffice hours will begin on Monday August 31.\n\n\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nDay/Time TBD\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nFri 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 4:30 PM - 6:30 PM\nLocation TBD\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
+    "text": "Note\n\n\n\nOffice hours will begin on Monday August 31.\n\n\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nFri 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
       "Teaching team"
@@ -277,7 +277,7 @@
     "href": "slides/01-crash-course-slides.html#how-it-works",
     "title": "All of STA 101 in 75 minutes",
     "section": "How it works",
-    "text": "How it works\nThis is pretty much it:\n\nEdit the .qmd file → hit Render → get a .pdf\n\n\nFully reproducible reports – each time you render the analysis is run from the beginning;\nCode goes in cells (between the three back ticks);\nWritten English goes outside cells, the same way you would write in Google Docs or MS Word.\nEvery application exercise, lab, project, etc. is an Quarto document\nYou’ll always have a template Quarto document to start with\nThe amount of scaffolding in the template will decrease over the semester"
+    "text": "How it works\nThis is pretty much it:\n\nEdit the .qmd file → hit Render → get a .pdf\n\n\nFully reproducible reports – each time you render the analysis is run from the beginning;\nCode goes in cells (between the three back ticks);\nWritten English goes outside cells, the same way you would write in Google Docs or MS Word;\nEvery application exercise, lab, project, etc. is a Quarto document;\nYou’ll always have a template Quarto document to start with;\nThe amount of scaffolding in the template will decrease over the semester."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#two-important-concepts",
@@ -326,7 +326,7 @@
     "href": "slides/01-crash-course-slides.html#firstly-the-question-is-too-broad",
     "title": "All of STA 101 in 75 minutes",
     "section": "Firstly, the question is too broad",
-    "text": "Firstly, the question is too broad\n\nIf you raise the minimum wage, does it decrease employment?\n\nThere is no cosmic, forever-and-always answer to that question. It will depend on:\n\ntime: 1950s versus 2020s?\nplace: Manhattan versus Dodge City, Kansas;\nindustry: nail salons versus grocery stores;\nsize: $8 \\(\\to\\) $15 versus $8 \\(\\to\\) $80."
+    "text": "Firstly, the question is too broad\n\nIf you raise the minimum wage, does it decrease employment?\n\nThere is no cosmic, forever-and-always answer to that question. It will depend on:\n\ntime: 1950s versus 2020s;\nplace: Manhattan versus Dodge City, Kansas;\nindustry: nail salons versus management consultants;\nsize: $8 \\(\\to\\) $15 versus $8 \\(\\to\\) $80."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#so-lets-zoom-in",
@@ -347,56 +347,77 @@
     "href": "slides/01-crash-course-slides.html#warning-this-is-a-causal-question",
     "title": "All of STA 101 in 75 minutes",
     "section": "🚨 Warning: this is a causal question!",
-    "text": "🚨 Warning: this is a causal question!\nIf you’ve heard it once you’ve heard it a thousand times:\n\nCorrelation does not imply causation.\n\n\nWe don’t care about the mere coincidence of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;\nLet’s be real from the jump: this is very difficult to isolate. But it is what we truly care about. So let’s not chicken out!"
+    "text": "🚨 Warning: this is a causal question!\nIf you’ve heard it once you’ve heard it a thousand times:\n\nCorrelation does not imply causation.\n\n\nHowever, we don’t care about the mere coincidence of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;\nLet’s be real from the jump: this is very difficult to isolate. But it is what we truly care about. So let’s not chicken out!"
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#wait-why-doesnt-correlation-imply-causation",
+    "href": "slides/01-crash-course-slides.html#wait-why-doesnt-correlation-imply-causation",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Wait, why doesn’t correlation imply causation?",
+    "text": "Wait, why doesn’t correlation imply causation?"
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#wait-why-doesnt-correlation-imply-causation-1",
+    "href": "slides/01-crash-course-slides.html#wait-why-doesnt-correlation-imply-causation-1",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Wait, why doesn’t correlation imply causation?",
+    "text": "Wait, why doesn’t correlation imply causation?"
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#because-of-the-possibility-of-confounding",
+    "href": "slides/01-crash-course-slides.html#because-of-the-possibility-of-confounding",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Because of the possibility of confounding\n",
+    "text": "Because of the possibility of confounding\n\n\nIt’s relatively easy to establish mere association. See here: https://tylervigen.com/spurious-correlations;\nJust because two variables are associated does not necessarily mean that one causes the other;\nTheir observed association could be the result of a third thing (a confounder or lurking variable) that acts on both;\nIf you were lucky enough to measure that confounder, then maybe you can account for its effects. If you weren’t so lucky, watch out!\nIf you want to have a prayer of dealing with this, you need to think carefully about…"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#the-ideal-a-randomized-experiment",
     "href": "slides/01-crash-course-slides.html#the-ideal-a-randomized-experiment",
     "title": "All of STA 101 in 75 minutes",
     "section": "The ideal: a randomized experiment",
-    "text": "The ideal: a randomized experiment"
+    "text": "The ideal: a randomized experiment\n\nRecruit a large group of fast-food restaurants;\nRandomly assign half to raise their minimum wage and half to keep it unchanged;\nLet them operate normally for a suitable period of time;\nMeasure employment afterward and compare the treatment and control groups;\nBecause the groups were created by random assignment, any systematic difference in employment can plausibly be attributed to the wage increase."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#why-is-that-the-ideal",
-    "href": "slides/01-crash-course-slides.html#why-is-that-the-ideal",
+    "objectID": "slides/01-crash-course-slides.html#why-is-that-ideal",
+    "href": "slides/01-crash-course-slides.html#why-is-that-ideal",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Why is that the ideal?",
-    "text": "Why is that the ideal?"
+    "section": "Why is that ideal?",
+    "text": "Why is that ideal?\n\nRandom assignment makes the treatment and control groups comparable from the start;\nOn average, any differences between the groups are due to chance, not systematic differences in the kinds of restaurants they contain;\nThis protects us from confounding, including confounders we didn’t even know to measure;\nIf the groups differ systematically afterward, the minimum-wage increase is the most plausible explanation;\nIn short: randomization gives us a credible comparison, and therefore a plausible basis for a causal conclusion."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#the-reality",
-    "href": "slides/01-crash-course-slides.html#the-reality",
+    "objectID": "slides/01-crash-course-slides.html#the-reality-for-our-example",
+    "href": "slides/01-crash-course-slides.html#the-reality-for-our-example",
     "title": "All of STA 101 in 75 minutes",
-    "section": "The reality",
-    "text": "The reality"
+    "section": "The reality (for our example)",
+    "text": "The reality (for our example)\n\nWho the hell even has the power to impose such a thing?\nWho’s going to give you permission to do that?\nWhy would restaurants (especially the ones being assigned to hike wages) agree to participate?\nHow would the workers feel?\nHow much would it cost to administer such a study?\n\n\nFor many causal questions we care about, cost, practicality, and ethics make it unfeasible to run the proper experiment that would actually be capable of answering the question."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#observational-data",
     "href": "slides/01-crash-course-slides.html#observational-data",
     "title": "All of STA 101 in 75 minutes",
     "section": "Observational data",
-    "text": "Observational data"
+    "text": "Observational data\n\nJust seein’ what happened.\n\n\nThe researcher “passively” collects measurements without intervening to manipulate anything. So they can’t dictate treatment versus control, and they don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.\nWhen experiments are unfeasible to carry out, these are the only data we have."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#observational-data-causal-inference",
     "href": "slides/01-crash-course-slides.html#observational-data-causal-inference",
     "title": "All of STA 101 in 75 minutes",
     "section": "Observational data + causal inference = 🤮",
-    "text": "Observational data + causal inference = 🤮\n\nCorrelation does not imply causation."
+    "text": "Observational data + causal inference = 🤮\nAs you learned at your grandmother’s knee:\n\nCorrelation does not imply causation.\n\nIf we observe a mere association in observational data, we have all of our work ahead of us to argue that there is nothing else going on, and therefore the association can plausibly support a causal interpretation."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#unless",
     "href": "slides/01-crash-course-slides.html#unless",
     "title": "All of STA 101 in 75 minutes",
     "section": "🤔 Unless…",
-    "text": "🤔 Unless…"
+    "text": "🤔 Unless…\n\nThe four-leaf clover of applied statistics is the so-called “natural experiment;”\nThis is a special kind of observational study where you believe that “nature” has created variation in treatment versus control that acts as if an experiment were performed;\nIf you’re lucky and careful and shrewd, maybe you can use these special observational data to tell a plausible causal story."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#example-military-service-and-lifetime-earnings",
     "href": "slides/01-crash-course-slides.html#example-military-service-and-lifetime-earnings",
     "title": "All of STA 101 in 75 minutes",
     "section": "Example: military service and lifetime earnings",
-    "text": "Example: military service and lifetime earnings\nWe obviously cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then observe them for the next twenty years.\n\nOr can we?"
+    "text": "Example: military service and lifetime earnings\n\nDoes serving in the military put you at an advantage or a disadvantage in terms of the amount of money you make over your lifetime (lifetime earnings)?\nWe don’t care about mere conincidence. We care about the causal effect of military service on lifetime earnings;\nBut obviously, we cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then study their tax returns for the next twenty years.\n\n\nOr can we?"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#the-vietnam-draft-lottery",
@@ -427,39 +448,53 @@
     "text": "Card and Krueger (1994 AER)"
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#what-did-card-and-krueger-do",
-    "href": "slides/01-crash-course-slides.html#what-did-card-and-krueger-do",
+    "objectID": "slides/01-crash-course-slides.html#card-and-kruegers-main-idea",
+    "href": "slides/01-crash-course-slides.html#card-and-kruegers-main-idea",
     "title": "All of STA 101 in 75 minutes",
-    "section": "What did Card and Krueger do?",
-    "text": "What did Card and Krueger do?\nthe seemingly arbitrary placement of restaurants on either side of this border acts as if random assignment took place"
+    "section": "Card and Krueger’s main idea",
+    "text": "Card and Krueger’s main idea\n\nRestaurants on either side of the PA/NJ border are probably quite similar, but the NJ restaurants will be treated to a wage hike, and the PA restaurants will not;\nBecause the placement of restaurants on either side of the border is largely arbitrary, we can compare these two groups as if an experiment were done;\nAny difference in employment patterns that we observe between the two groups can be attributed to the causal effect of the wage hike and not some other confounding factor."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#discuss-problems-with-surveys",
-    "href": "slides/01-crash-course-slides.html#discuss-problems-with-surveys",
+    "objectID": "slides/01-crash-course-slides.html#so-what-did-they-do",
+    "href": "slides/01-crash-course-slides.html#so-what-did-they-do",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Discuss problems with surveys",
-    "text": "Discuss problems with surveys"
+    "section": "So what did they do?",
+    "text": "So what did they do?\nThey surveyed restaurants before and after:\n\nBefore the wage hike went into effect, they called a bunch of restaurants in both states and asked them about their business: how many workers they employ, the wage they pay, the prices they charge, etc;\nAfter the wage hike went into effect, they called the restaurants again and asked the same questions."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#we-have-the-data",
-    "href": "slides/01-crash-course-slides.html#we-have-the-data",
+    "objectID": "slides/01-crash-course-slides.html#any-concerns-about-survey-data",
+    "href": "slides/01-crash-course-slides.html#any-concerns-about-survey-data",
     "title": "All of STA 101 in 75 minutes",
-    "section": "We have the data!",
-    "text": "We have the data!\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")"
+    "section": "Any concerns about survey data?",
+    "text": "Any concerns about survey data?\n\nWhat if some restaurants don’t respond? (inevitable)\nIf not, why not? Was non-response a random decision on their part, or are they hiding something?\nHow accurate are their responses? Does the person I got ahold of actually know the answers to my questions, or is this just a guesstimate?\nDoes the wording of the questions affect how they respond? (very possible)\n\n\nEach of these is a source of uncertainty that affects the reliability of any downstream results."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#reality-check",
+    "href": "slides/01-crash-course-slides.html#reality-check",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Reality check",
+    "text": "Reality check\n\nYou don’t just give up because the data aren’t perfect. They’ll never be perfect, if for no other reason that you would always enjoy more;\nAlternative definition of data science, statistics, etc: “learning to make do with the data you actually have;”\nUse the best techniques available to wring as much juice out of the data as possible…\n…BUT THEN, be honest and faithful and rigorous about the limitations of your results. That’s the whole uncertainty quantification part.\n\n\nThat last bit doesn’t always make statisticians the most popular (“can you please just tell me the 🤬ing answer?”), but it’s our professional duty 🫡."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#anyway-we-have-the-data",
+    "href": "slides/01-crash-course-slides.html#anyway-we-have-the-data",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Anyway, we have the data!",
+    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#aside-variable-assignment--",
     "href": "slides/01-crash-course-slides.html#aside-variable-assignment--",
     "title": "All of STA 101 in 75 minutes",
     "section": "Aside: variable assignment <-\n",
-    "text": "Aside: variable assignment &lt;-"
+    "text": "Aside: variable assignment &lt;-\n\nYou just saw me do this:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\n\nThis is called variable assignment. We’re saving an object so we can use it later;\n\nRight-hand side: the thing you want to store (the data);\n\nLeft-hand side: the name you want to give it so you can refer to it later;\n\nIn the middle: the assignment operator &lt;-."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#the-anatomy-of-a-data-frame",
     "href": "slides/01-crash-course-slides.html#the-anatomy-of-a-data-frame",
     "title": "All of STA 101 in 75 minutes",
     "section": "The anatomy of a data frame",
-    "text": "The anatomy of a data frame\ndata frame\n\neach row of a data frame is an observation;\neach column of a data frame is a variable."
+    "text": "The anatomy of a data frame\nA data frame is R’s version of a spreadsheet.\n\neach row of a data frame is an observation, in this case a restaurant;\neach column of a data frame is a variable, a piece of information that was recorded about that restaurant."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#the-dimensions",
@@ -480,14 +515,7 @@
     "href": "slides/01-crash-course-slides.html#your-first-taste-of-variable-types",
     "title": "All of STA 101 in 75 minutes",
     "section": "Your first taste of variable types",
-    "text": "Your first taste of variable types\nThe chain variable is an example of a categorical variable:\n\ncard_krueger$chain\n\n  [1] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\" \"KFC\"        \n  [6] \"KFC\"         \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n [11] \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n [16] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n [21] \"Wendy's\"     \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\"\n [26] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n [31] \"KFC\"         \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Wendy's\"    \n [36] \"KFC\"         \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [41] \"KFC\"         \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n [46] \"Burger King\" \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\"\n [51] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [56] \"Burger King\" \"KFC\"         \"Roy's\"       \"Wendy's\"     \"Burger King\"\n [61] \"Burger King\" \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Burger King\"\n [66] \"Burger King\" \"Roy's\"       \"KFC\"         \"Burger King\" \"KFC\"        \n [71] \"KFC\"         \"KFC\"         \"Roy's\"       \"Wendy's\"     \"Roy's\"      \n [76] \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\"\n [81] \"KFC\"         \"Wendy's\"     \"KFC\"         \"Roy's\"       \"Roy's\"      \n [86] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [91] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n [96] \"Burger King\" \"Burger King\" \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[101] \"Burger King\" \"Burger King\" \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[106] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[111] \"KFC\"         \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[116] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\"\n[121] \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n[126] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Wendy's\"    \n[131] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[136] \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n[141] \"Burger King\" \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[146] \"Roy's\"       \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\"\n[151] \"Burger King\" \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[156] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[161] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[166] \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n[171] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[176] \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[181] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[186] \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[191] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[196] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[201] \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\"\n[206] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"      \n[211] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[216] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[221] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[226] \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"KFC\"         \"Burger King\"\n[231] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[236] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\"\n[241] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[246] \"KFC\"         \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"      \n[251] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n[256] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[261] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Wendy's\"    \n[266] \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\" \"Burger King\"\n[271] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[276] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[281] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[286] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Roy's\"       \"Roy's\"      \n[291] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\"\n[296] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"      \n[301] \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[306] \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[311] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[316] \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\"\n[321] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[326] \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[331] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[336] \"Burger King\" \"Burger King\" \"KFC\"         \"Burger King\" \"Burger King\"\n[341] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[346] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Wendy's\"    \n[351] \"Wendy's\"    \n\n\nThe wage_st variable is an example of a numerical variable:\n\ncard_krueger$meal_price\n\n  [1] 3.48 3.29 2.86 2.85 3.78 3.99 3.17 2.84 2.60 2.75 3.12 4.22 3.99 2.97 2.85\n [16] 3.00 3.11 3.96 3.00 2.68 3.34 3.16 3.15 2.66 2.60 2.65 2.67 2.67 2.48 5.40\n [31] 4.25 2.56 2.65 2.61 2.54 4.02 2.50 2.47   NA 2.49 4.28 2.50 3.48 2.53 2.72\n [46]   NA 2.63 4.20 2.89 2.72 2.93 2.72 2.81 2.65 2.74 2.74 4.02 3.10 2.60 2.62\n [61] 2.72 2.97 2.78 3.01   NA 2.81 4.72 4.40 2.95 4.25 4.65 4.65 3.04 4.50 3.42\n [76] 3.16 3.10 3.15 3.16 3.08 4.42 3.10 4.25 2.84 3.18 2.82 2.96 2.96 2.96 3.14\n [91] 4.10 3.20 3.33 3.20 3.01 3.08 3.20 3.27 3.15 2.86 2.77   NA 3.26 3.18 3.24\n[106] 2.72 2.72 4.15 4.03 3.99 3.88 3.02 4.25 4.25 4.37 4.42   NA   NA 2.82 2.73\n[121] 2.98 2.76 2.81 2.76 3.03 2.99   NA 3.16 3.54   NA 3.72 3.01 2.61 2.93 5.10\n[136] 4.19   NA 2.56 2.74 2.89 2.75 4.67 2.95   NA 4.08   NA 2.89 3.99 2.85 2.96\n[151] 3.02 4.63 3.20 3.20 4.04 2.98 2.96 2.96 3.40 3.11 3.07 3.03 2.96 4.57 5.21\n[166] 3.16 3.25 2.80 3.10 2.84 3.06 3.07   NA 4.42 4.73 4.33 4.42   NA 3.44 3.04\n[181] 2.73 2.99 2.96 3.07 3.34 3.24 2.97 3.07 3.62 3.02 2.92 3.15   NA 3.01 4.10\n[196] 3.19 4.64 3.25   NA 3.20 2.83 2.99 3.07 3.12 2.96 3.01 3.03 3.96 4.17 3.20\n[211] 2.86 2.96 3.08 3.20 2.99 3.04   NA 4.10 4.16 4.73 4.73 4.73 4.73 3.09 3.31\n[226] 2.82 2.79 2.97 3.99 2.95 3.03 2.75 2.96 3.12 4.25 2.98 3.07 2.96 2.92 2.78\n[241] 2.82 2.82 2.86 4.78 3.88 3.93 3.99 4.78 4.53 3.03   NA 2.88 2.61 2.76 2.96\n[256] 2.92 2.96 3.07 3.07 4.42 4.74 2.83 3.31 3.17 2.97 3.14   NA 4.59 2.88 2.87\n[271] 3.07 2.81 2.50 3.14 4.03 4.08 4.14 3.88 2.84 2.73   NA 2.92 2.92 2.92 2.79\n[286] 2.76 2.82 2.95 3.14 4.78 3.60 3.44 3.76 3.21 2.92 2.85 3.11 4.82 5.86 3.14\n[301] 2.94 2.72 2.86 2.92 2.86 2.76 4.03 4.03 3.09 2.87 2.69 2.79 2.78 4.31 4.25\n[316] 2.56 2.70 2.96 2.86 2.96 3.07 2.96 3.05   NA 2.96 4.78 5.21 4.47 3.20 3.24\n[331] 3.43 3.32 3.16 3.20 3.20 3.18 3.27 4.42 3.20 3.12 2.95 3.06 2.55 4.25 4.25\n[346] 4.25 4.25 4.25 3.26 4.07 3.10\n\n\nThe appropriate visualization or summary depends on the variable type."
-  },
-  {
-    "objectID": "slides/01-crash-course-slides.html#scraps",
-    "href": "slides/01-crash-course-slides.html#scraps",
-    "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nWhat’s the ideal here? an experiemtn\ndata collection is monstrously difficult, and very domain specific.\njulia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.\nwhat’s the ideal experiment a la angrist and pischke.\nSome controlled thing. Talk about study design and what’s special about randomized controlled experiments.\nCan we do this? maybe?\nsite seattle minimum wage study. But it’s costly (time, money, you name it).\nwhat about observational data? can’t control anything\nPassively observe without intervening to manipulate anything. So you can’t control treatment versus control, and you don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.\ndata collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?\nYou try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.\nTHE CHOICE TO NOT RESPOND IS NOT RANDOM. IT IS SYSTEMATICALLY HIDING SOMETHING FROM YOU. What do you do about it? In this class, not much, but it’s a source of uncertainty that statisticians grapple with."
+    "text": "Your first taste of variable types\nThe chain variable is an example of a categorical variable:\n\ncard_krueger$chain\n\n\n\n[1] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\" \"KFC\"        \n[6] \"KFC\"        \n\n\n\nThe wage_st variable is an example of a numerical variable:\n\ncard_krueger$meal_price\n\n\n\n[1] 3.48 3.29 2.86 2.85 3.78 3.99\n\n\n\n\nThe appropriate visualization or summary depends on the variable type."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#babys-first-summary",
@@ -508,7 +536,7 @@
     "href": "slides/01-crash-course-slides.html#aside-the-pipe-operator",
     "title": "All of STA 101 in 75 minutes",
     "section": "Aside: the pipe operator |>\n",
-    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3"
+    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3\n\n\n\n\nWe will use it to build up data summaries and transformations step-by-step."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#like-a-russian-stacking-doll",
@@ -627,21 +655,28 @@
     "href": "slides/01-crash-course-slides.html#lets-compare-meal-prices-next-8",
     "title": "All of STA 101 in 75 minutes",
     "section": "Let’s compare meal prices next",
-    "text": "Let’s compare meal prices next\nMake the color translucent:\n\n\nggplot(card_krueger, \n       aes(x = meal_price,\n           color = state,\n           fill = state)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Price in USD ($)\",\n    title = \"Meal prices prior to wage hike\",\n    subtitle = \"Meal = soda, fries, entree\"\n  ) +\n  theme_minimal(base_size = 20)\n\n\n\n\n\n\n\n\nThese distributions look pretty similar."
+    "text": "Let’s compare meal prices next\nMake the color translucent:\n\n\nggplot(card_krueger, \n       aes(x = meal_price,\n           color = state,\n           fill = state)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Price in USD ($)\",\n    title = \"Meal prices prior to wage hike\",\n    subtitle = \"Meal = soda, fries, entree\"\n  ) +\n  theme_minimal(base_size = 20)\n\n\n\n\n\n\n\n\n\nThese distributions look pretty similar."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#dataviz-with-ggplot-is-like-building-a-cake",
     "href": "slides/01-crash-course-slides.html#dataviz-with-ggplot-is-like-building-a-cake",
     "title": "All of STA 101 in 75 minutes",
     "section": "Dataviz with ggplot is like building a cake",
-    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\nXXX"
+    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\n\nEvery plot element is a new layer, and you stack ’em up;\nIf the different commands are like the layers of sponge, then the plus signs in between are like the icing. Don’t forget the icing!"
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#compare-hours-of-operation",
-    "href": "slides/01-crash-course-slides.html#compare-hours-of-operation",
+    "objectID": "slides/01-crash-course-slides.html#the-grammar-of-graphics",
+    "href": "slides/01-crash-course-slides.html#the-grammar-of-graphics",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Compare hours of operation",
-    "text": "Compare hours of operation"
+    "section": "The grammar of graphics",
+    "text": "The grammar of graphics\n\n\nThis design philosophy is described in the book The Grammar of Graphics and implemented in the ggplot2 package."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#compare-hours-of-operation-prior-to-nj-hike",
+    "href": "slides/01-crash-course-slides.html#compare-hours-of-operation-prior-to-nj-hike",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Compare hours of operation (prior to NJ hike)",
+    "text": "Compare hours of operation (prior to NJ hike)"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#compare-starting-wage-prior-to-nj-hike",
@@ -669,14 +704,14 @@
     "href": "slides/01-crash-course-slides.html#the-emp_diff-variable",
     "title": "All of STA 101 in 75 minutes",
     "section": "The emp_diff variable",
-    "text": "The emp_diff variable\nIf this is positive, the restaurant added workers If zero, no change if negative, they shed workers\nIf the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA. Nothing changed in PA, so they should be close to zero. NJ got a wage hike, so they should be negative."
+    "text": "The emp_diff variable\nThis is employment after the wage hike minus employment before the wage hike:\n\n\nemp_diff &gt; 0: the restaurant added workers;\n\nemp_diff == 0: the restaurant didn’t change;\n\nemp_diff &lt; 0: the restaurant shed workers.\n\nIf the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#section",
-    "href": "slides/01-crash-course-slides.html#section",
+    "objectID": "slides/01-crash-course-slides.html#so-how-about-it",
+    "href": "slides/01-crash-course-slides.html#so-how-about-it",
     "title": "All of STA 101 in 75 minutes",
-    "section": "",
-    "text": "card_krueger |&gt;\n  group_by(state) |&gt;\n  summarize(\n    avg_emp_diff = mean(emp_diff)\n  )\n\n# A tibble: 2 × 2\n  state avg_emp_diff\n  &lt;fct&gt;        &lt;dbl&gt;\n1 PA          -1.88 \n2 NJ           0.398\n\n\n\nOh. That is…flipped from what we expected."
+    "section": "So how about it?",
+    "text": "So how about it?\n\ncard_krueger |&gt;\n  group_by(state) |&gt;\n  summarize(\n    avg_emp_diff = mean(emp_diff)\n  )\n\n# A tibble: 2 × 2\n  state avg_emp_diff\n  &lt;fct&gt;        &lt;dbl&gt;\n1 PA          -1.88 \n2 NJ           0.398\n\n\n\nOh. That is…flipped from what we expected."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#pics-or-it-didnt-happen",
@@ -690,35 +725,70 @@
     "href": "slides/01-crash-course-slides.html#pause",
     "title": "All of STA 101 in 75 minutes",
     "section": "Pause",
-    "text": "Pause\nIf the ECON 101 story is true, then the minimum wage hike should put NJ below PA in negative territory. Based on pictures and summaries, it seems like NJ is doing about the same as PA, if not better."
+    "text": "Pause\nIf the ECON 101 story is true, then the minimum wage hike should put NJ below PA, either adding fewer workers, or literally laying them off. Pictures and simple summaries are not showing that.\nNow what?"
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#section-1",
-    "href": "slides/01-crash-course-slides.html#section-1",
+    "objectID": "slides/01-crash-course-slides.html#data-do-not-speak-for-themselves",
+    "href": "slides/01-crash-course-slides.html#data-do-not-speak-for-themselves",
     "title": "All of STA 101 in 75 minutes",
-    "section": "",
-    "text": "linear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger) |&gt;\n  tidy()\n\n# A tibble: 6 × 5\n  term         estimate std.error statistic p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    -1.45       1.21    -1.20   0.232 \n2 stateNJ         2.28       1.20     1.91   0.0575\n3 chainKFC        0.235      1.30     0.181  0.857 \n4 chainRoy's     -2.08       1.32    -1.58   0.116 \n5 chainWendy's   -0.757      1.49    -0.507  0.612 \n6 co_owned        0.373      1.10     0.339  0.735"
+    "section": "Data do not speak for themselves",
+    "text": "Data do not speak for themselves\n\nPictures and summaries are powerful, and they can get you very far, but they cannot do everything;\nData do not speak for themselves, and there is no such thing as a “neutral” analysis. We are always making assumptions, whether they are implicit or explicit;\nIn general, it is better that our assumptions be explicit, and the most rigorous way to achieve this is with a mathematical model."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#good-for-them",
-    "href": "slides/01-crash-course-slides.html#good-for-them",
+    "objectID": "slides/01-crash-course-slides.html#what-do-i-mean-by-a-model",
+    "href": "slides/01-crash-course-slides.html#what-do-i-mean-by-a-model",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Good for them!",
-    "text": "Good for them!"
+    "section": "What do I mean by a “model”?",
+    "text": "What do I mean by a “model”?\nThink of the “line of best fit:”\n\n\nThis is an example of a linear regression model. All of the models in our class will have this flavor."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#scraps-1",
-    "href": "slides/01-crash-course-slides.html#scraps-1",
+    "objectID": "slides/01-crash-course-slides.html#why-do-we-need-one-here",
+    "href": "slides/01-crash-course-slides.html#why-do-we-need-one-here",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nData do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.\ninclude screenshot of card and krueger table and show that the numbers are the same. yay reproducibility\npictures and summaries are great, and they can do a lot of work, but at the end of the day: data do not speak for themselves. We always have to bring domain knowledge and an interpretive lens. It’s best if we are as explicit about assumptions as possible, and the most rigorous way to do this is with a formal mathematical model."
+    "section": "Why do we need one here?",
+    "text": "Why do we need one here?\n(this is where things will start to get technical…)\n\nOur analysis has several ingredients:\n\nResponse variable \\(y_i\\): that’s emp_diff;\nTreatment variable \\(T_i\\): the state, NJ or PA;\nExtra covariates \\(\\mathbf{x}_i\\): chain, hrsopen, meal_price, etc.\n\n\n\nOur goal is to estimate the (causal!) effect that the treatment has on the response. In order to make sure we are isolating the causal effect of the treatment, unconfounded by other factors, we may want to control for the extra covariates. A model helps us do this."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#the-only-equation-today",
+    "href": "slides/01-crash-course-slides.html#the-only-equation-today",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "The only equation today",
+    "text": "The only equation today\n(feel free to avert your gaze)\n\nHere’s a linear regression model for the data:\n\\[\ny_i = \\alpha + \\tau T_i+\\mathbf{x}_i^{\\scriptscriptstyle\\mathsf{T}}\\boldsymbol{\\beta}+\\varepsilon_i,\n\\]\nwhere \\(y_i\\) is emp_diff, \\(\\mathbf{x}_i\\) is a collection of covariates, and\n\\[\nT_i\n=\n\\begin{cases}\n0 & \\text{for PA}\\\\\n1 & \\text{for NJ}.\n\\end{cases}\n\\]\n\n\nSo \\(\\tau\\) is the average difference between emp_diff in NJ and in PA. ECON 101 says this should be negative. Our exploratory analysis looked like it was zero, or possibly even positive."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#its-not-as-bad-as-it-looks",
+    "href": "slides/01-crash-course-slides.html#its-not-as-bad-as-it-looks",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "It’s not as bad as it looks",
+    "text": "It’s not as bad as it looks\n\nIn this class, math is primarily a language that we will use to concisely communicate certain technical ideas;\nYou will not do a tremendous amount of math in the sense of pencil-and-paper calculations, but you will be expected to read and interpret certain mathematical expressions;\nIn a few weeks you will start to see a lot of equations like the previous slide, and we will help you become a fluent reader of them."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#estimating-the-model-in-r",
+    "href": "slides/01-crash-course-slides.html#estimating-the-model-in-r",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Estimating the model in R",
+    "text": "Estimating the model in R\nThere’s that pipe again:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger) |&gt;\n  tidy()\n\n# A tibble: 6 × 5\n  term         estimate std.error statistic p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    -1.45       1.21    -1.20   0.232 \n2 stateNJ         2.28       1.20     1.91   0.0575\n3 chainKFC        0.235      1.30     0.181  0.857 \n4 chainRoy's     -2.08       1.32    -1.58   0.116 \n5 chainWendy's   -0.757      1.49    -0.507  0.612 \n6 co_owned        0.373      1.10     0.339  0.735 \n\n\n\nThe estimate on stateNJ is what we interpret as the treatment effect."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#interpretation",
+    "href": "slides/01-crash-course-slides.html#interpretation",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Interpretation",
+    "text": "Interpretation\nOur estimate of the treatment effect is roughly 2.3, with a standard error of 1.2;\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome compared to PA;\nThe standard error is a metric that speaks to uncertainty quantification. The larger it is, the less certain we are of the estimate. More on this later."
+  },
+  {
+    "objectID": "slides/01-crash-course-slides.html#btw-three-cheers-for-reproducible-research",
+    "href": "slides/01-crash-course-slides.html#btw-three-cheers-for-reproducible-research",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "BTW: three cheers for reproducible research",
+    "text": "BTW: three cheers for reproducible research"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#our-point-estimate",
     "href": "slides/01-crash-course-slides.html#our-point-estimate",
     "title": "All of STA 101 in 75 minutes",
     "section": "Our point estimate",
-    "text": "Our point estimate\nOur headline finding:\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome than PA.\n\n\nIs this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability."
+    "text": "Our point estimate\nOur headline finding:\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome compared to PA.\n\n\nIs this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#what-do-we-mean-by-reliability",
@@ -739,21 +809,21 @@
     "href": "slides/01-crash-course-slides.html#different-data-different-result",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1    -2    NJ    KFC                0\n 2     6    NJ    Burger King        0\n 3    -3    NJ    Roy's              1\n 4     3.25 PA    KFC                1\n 5     0    PA    Wendy's            0\n 6     4    NJ    KFC                0\n 7     2    NJ    Burger King        1\n 8     2    NJ    Burger King        1\n 9    14.8  NJ    KFC                1\n10     2.5  NJ    Burger King        0\n# ℹ 341 more rows\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -0.187       1.12\n2 stateNJ        0.689       1.13\n3 chainKFC       0.677       1.34\n4 chainRoy's    -1.98        1.32\n5 chainWendy's  -0.0917      1.39\n6 co_owned       0.0815      1.07"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#different-data-different-result-1",
     "href": "slides/01-crash-course-slides.html#different-data-different-result-1",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1     8.5  NJ    Burger King        1\n 2    -0.5  NJ    Roy's              1\n 3     5.5  NJ    Burger King        1\n 4    -2    NJ    KFC                0\n 5    -1.5  NJ    KFC                1\n 6     2.5  NJ    Burger King        0\n 7     3.5  NJ    Burger King        0\n 8     4    NJ    Burger King        0\n 9     0    NJ    Burger King        0\n10     8.25 NJ    Burger King        0\n# ℹ 341 more rows\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -1.02        1.32\n2 stateNJ        1.26        1.27\n3 chainKFC       0.0746      1.29\n4 chainRoy's    -1.72        1.36\n5 chainWendy's  -0.707       1.69\n6 co_owned       1.29        1.14"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#different-data-different-result-2",
     "href": "slides/01-crash-course-slides.html#different-data-different-result-2",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1     -6.5 NJ    KFC                0\n 2     -4   NJ    Burger King        0\n 3     -7   NJ    Roy's              1\n 4    -13   NJ    KFC                1\n 5     -1.5 NJ    Burger King        0\n 6      2.5 NJ    KFC                1\n 7     19   PA    Burger King        0\n 8      3.5 NJ    Burger King        0\n 9     13.2 NJ    Roy's              1\n10     -3   NJ    KFC                0\n# ℹ 341 more rows\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)     0.930     1.18 \n2 stateNJ         0.438     1.15 \n3 chainKFC       -0.751     1.21 \n4 chainRoy's     -3.05      1.22 \n5 chainWendy's   -1.82      1.41 \n6 co_owned        0.333     0.996"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#the-full-monty",
@@ -823,28 +893,21 @@
     "href": "slides/01-crash-course-slides.html#conclusion",
     "title": "All of STA 101 in 75 minutes",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\nGenuine uncertainty remains about the specific numerical value;\n\n2.3 may be our best guess, but if “the truth” ends up being 0, 1, 3, 4, or 5, don’t be surprised. Based on the data we have, you can’t rule that out;\n\n\nHowever, the data are speaking pretty loudly that the estimate is more likely to be positive than negative; Qualitatively, the evidence for the usual ECON 101 story is looking weak."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#towards-quantifying-uncertainty",
     "href": "slides/01-crash-course-slides.html#towards-quantifying-uncertainty",
     "title": "All of STA 101 in 75 minutes",
     "section": "Towards quantifying uncertainty",
-    "text": "Towards quantifying uncertainty\nWhat if our sampling distribution had looked like one of these?\n\n\nMeasuring the spread of the sampling distribution allows us to quantify uncertainty about the conclusions."
+    "text": "Towards quantifying uncertainty\nWhat if our sampling distribution had looked like one of these?\n\n\nMeasuring the spread of the sampling distribution allows us to quantify uncertainty about the conclusions. That’s what the standard error does."
   },
   {
-    "objectID": "slides/01-crash-course-slides.html#reality-check",
-    "href": "slides/01-crash-course-slides.html#reality-check",
+    "objectID": "slides/01-crash-course-slides.html#reality-check-1",
+    "href": "slides/01-crash-course-slides.html#reality-check-1",
     "title": "All of STA 101 in 75 minutes",
     "section": "Reality check",
     "text": "Reality check\n\nThis idea of “redoing the survey to see how the results change” is more of a thought experiment;\nIf collecting new data were so easy, we would have collected a bigger sample to begin with;\nInstead of literally collecting new data, which is costly, statisticians approximate sampling variability. We will study two techniques for doing this:\n\nsimulation-based: resampling the data with the bootstrap;\nmathematical: appealing to the central limit theorem (CLT).\n\n\n\n\nMore on all that in…nine weeks."
-  },
-  {
-    "objectID": "slides/01-crash-course-slides.html#scraps-2",
-    "href": "slides/01-crash-course-slides.html#scraps-2",
-    "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nnew survey new estimate\nmodeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?\nsampling variability.\nwe got this estimate. Is it reliable? How uncertain are we about it? What do we mean.\nWhat we’re worried about: if I collected a new dataset (sent the survey out to a different set fo restaurants), I’d get a different result.\na negative estimate is not really on the menu of options, so the data seem to be speaking fairly loudly that the minimum wage did not have an ill effect in this case. But about that…\nthere remains some uncertainty about the specific numerical result: 0, 1, 2, 3, 4, 5\nThe qualitative finding that NJ is not worse than PA (if anything it’s better) seems to hold up."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#at-the-end-of-the-day",
@@ -865,7 +928,7 @@
     "href": "slides/01-crash-course-slides.html#things-to-keep-you-up-at-night",
     "title": "All of STA 101 in 75 minutes",
     "section": "Things to keep you up at night",
-    "text": "Things to keep you up at night\n\nLet’s face it: random assignment did not take place here.\n\nNJ chose to raise the minimum wage for specific reasons, and those underlying reasons could be related to"
+    "text": "Things to keep you up at night\n\nLet’s face it: this wasn’t an experiment; Random assignment did not take place here;\nNJ chose to raise the minimum wage for specific reasons, and PA didn’t. If those reasons mean that underlying conditions in NJ are systematically different from those in PA, this could confound the relationship;\nIf NJ was on a different economic trajectory to begin with (NJ on the upswing and PA on the downswing), then we might be observing that difference, and nothing to do with the minimum wage;\nWas “before” really “before”? NJ restaurants knew in advance that the wage hike was coming. It wasn’t a surprise. How do we know they hadn’t already started adjusting before Card and Krueger made their first call?\nEven if we found the causal argument completely convincing, does it generalize? What, if anything, can this study teach us about larger wage hikes in different industries elsewhere?"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#further-reading",
@@ -879,7 +942,7 @@
     "href": "slides/01-crash-course-slides.html#intellectual-themes",
     "title": "All of STA 101 in 75 minutes",
     "section": "Intellectual themes",
-    "text": "Intellectual themes\nThese will last us fifteen weeks (and then some!):\n\nData analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;\nAll data analyses should be reproducible. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;\nEven a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;\nWhen analyzing data, so often the questions that we truly care about are causal questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;\nThe gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;\nObservational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;\nData do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;\n(FINISH) Data are not manna from heaven…\n(REVISE) Don’t let the perfect be the enemy of the good. Data analysis is always constrained optimization. There are ideals we don’t live up to. Just trying to do the best you can with what you’ve got;\n(REVISE) A good data analysis is honest about what the data can and cannot tell us. Statistical inference is all about quantifying uncertainty about our results."
+    "text": "Intellectual themes\nThese will last us fifteen weeks (and then some!):\n\nData analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;\nAll data analyses should be reproducible. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;\nEven a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;\nWhen analyzing data, so often the questions that we truly care about are causal questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;\nThe gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;\nObservational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;\nData do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;\nData are not manna from heaven. The data collection process is subject to countless flaws and compromises, and at some point you need to get on with it and make do. We’re trying to do the best we can with what we’ve got;\nBut because of that, all data analysts have a responsibility to honestly and faithfully report the limitations of their results by quantifying uncertainty. That’s what statistics is all about."
   },
   {
     "objectID": "slides/01-crash-course-slides.html#computational-themes",
@@ -1012,7 +1075,7 @@
     "href": "slides/01-crash-course.html#how-it-works",
     "title": "All of STA 101 in 75 minutes",
     "section": "How it works",
-    "text": "How it works\nThis is pretty much it:\n\nEdit the .qmd file → hit Render → get a .pdf\n\n\nFully reproducible reports – each time you render the analysis is run from the beginning;\nCode goes in cells (between the three back ticks);\nWritten English goes outside cells, the same way you would write in Google Docs or MS Word.\nEvery application exercise, lab, project, etc. is an Quarto document\nYou’ll always have a template Quarto document to start with\nThe amount of scaffolding in the template will decrease over the semester"
+    "text": "How it works\nThis is pretty much it:\n\nEdit the .qmd file → hit Render → get a .pdf\n\n\nFully reproducible reports – each time you render the analysis is run from the beginning;\nCode goes in cells (between the three back ticks);\nWritten English goes outside cells, the same way you would write in Google Docs or MS Word;\nEvery application exercise, lab, project, etc. is a Quarto document;\nYou’ll always have a template Quarto document to start with;\nThe amount of scaffolding in the template will decrease over the semester."
   },
   {
     "objectID": "slides/01-crash-course.html#two-important-concepts",
@@ -1061,7 +1124,7 @@
     "href": "slides/01-crash-course.html#firstly-the-question-is-too-broad",
     "title": "All of STA 101 in 75 minutes",
     "section": "Firstly, the question is too broad",
-    "text": "Firstly, the question is too broad\n\nIf you raise the minimum wage, does it decrease employment?\n\nThere is no cosmic, forever-and-always answer to that question. It will depend on:\n\n\ntime: 1950s versus 2020s?\nplace: Manhattan versus Dodge City, Kansas;\nindustry: nail salons versus grocery stores;\nsize: $8 \\(\\to\\) $15 versus $8 \\(\\to\\) $80."
+    "text": "Firstly, the question is too broad\n\nIf you raise the minimum wage, does it decrease employment?\n\nThere is no cosmic, forever-and-always answer to that question. It will depend on:\n\n\ntime: 1950s versus 2020s;\nplace: Manhattan versus Dodge City, Kansas;\nindustry: nail salons versus management consultants;\nsize: $8 \\(\\to\\) $15 versus $8 \\(\\to\\) $80."
   },
   {
     "objectID": "slides/01-crash-course.html#so-lets-zoom-in",
@@ -1082,56 +1145,77 @@
     "href": "slides/01-crash-course.html#warning-this-is-a-causal-question",
     "title": "All of STA 101 in 75 minutes",
     "section": "🚨 Warning: this is a causal question!",
-    "text": "🚨 Warning: this is a causal question!\nIf you’ve heard it once you’ve heard it a thousand times:\n\nCorrelation does not imply causation.\n\n\n\nWe don’t care about the mere coincidence of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;\nLet’s be real from the jump: this is very difficult to isolate. But it is what we truly care about. So let’s not chicken out!"
+    "text": "🚨 Warning: this is a causal question!\nIf you’ve heard it once you’ve heard it a thousand times:\n\nCorrelation does not imply causation.\n\n\n\nHowever, we don’t care about the mere coincidence of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;\nLet’s be real from the jump: this is very difficult to isolate. But it is what we truly care about. So let’s not chicken out!"
+  },
+  {
+    "objectID": "slides/01-crash-course.html#wait-why-doesnt-correlation-imply-causation",
+    "href": "slides/01-crash-course.html#wait-why-doesnt-correlation-imply-causation",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Wait, why doesn’t correlation imply causation?",
+    "text": "Wait, why doesn’t correlation imply causation?"
+  },
+  {
+    "objectID": "slides/01-crash-course.html#wait-why-doesnt-correlation-imply-causation-1",
+    "href": "slides/01-crash-course.html#wait-why-doesnt-correlation-imply-causation-1",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Wait, why doesn’t correlation imply causation?",
+    "text": "Wait, why doesn’t correlation imply causation?"
+  },
+  {
+    "objectID": "slides/01-crash-course.html#because-of-the-possibility-of-confounding",
+    "href": "slides/01-crash-course.html#because-of-the-possibility-of-confounding",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Because of the possibility of confounding\n",
+    "text": "Because of the possibility of confounding\n\n\n\nIt’s relatively easy to establish mere association. See here: https://tylervigen.com/spurious-correlations;\nJust because two variables are associated does not necessarily mean that one causes the other;\nTheir observed association could be the result of a third thing (a confounder or lurking variable) that acts on both;\nIf you were lucky enough to measure that confounder, then maybe you can account for its effects. If you weren’t so lucky, watch out!\nIf you want to have a prayer of dealing with this, you need to think carefully about…"
   },
   {
     "objectID": "slides/01-crash-course.html#the-ideal-a-randomized-experiment",
     "href": "slides/01-crash-course.html#the-ideal-a-randomized-experiment",
     "title": "All of STA 101 in 75 minutes",
     "section": "The ideal: a randomized experiment",
-    "text": "The ideal: a randomized experiment"
+    "text": "The ideal: a randomized experiment\n\n\nRecruit a large group of fast-food restaurants;\nRandomly assign half to raise their minimum wage and half to keep it unchanged;\nLet them operate normally for a suitable period of time;\nMeasure employment afterward and compare the treatment and control groups;\nBecause the groups were created by random assignment, any systematic difference in employment can plausibly be attributed to the wage increase."
   },
   {
-    "objectID": "slides/01-crash-course.html#why-is-that-the-ideal",
-    "href": "slides/01-crash-course.html#why-is-that-the-ideal",
+    "objectID": "slides/01-crash-course.html#why-is-that-ideal",
+    "href": "slides/01-crash-course.html#why-is-that-ideal",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Why is that the ideal?",
-    "text": "Why is that the ideal?"
+    "section": "Why is that ideal?",
+    "text": "Why is that ideal?\n\n\nRandom assignment makes the treatment and control groups comparable from the start;\nOn average, any differences between the groups are due to chance, not systematic differences in the kinds of restaurants they contain;\nThis protects us from confounding, including confounders we didn’t even know to measure;\nIf the groups differ systematically afterward, the minimum-wage increase is the most plausible explanation;\nIn short: randomization gives us a credible comparison, and therefore a plausible basis for a causal conclusion."
   },
   {
-    "objectID": "slides/01-crash-course.html#the-reality",
-    "href": "slides/01-crash-course.html#the-reality",
+    "objectID": "slides/01-crash-course.html#the-reality-for-our-example",
+    "href": "slides/01-crash-course.html#the-reality-for-our-example",
     "title": "All of STA 101 in 75 minutes",
-    "section": "The reality",
-    "text": "The reality"
+    "section": "The reality (for our example)",
+    "text": "The reality (for our example)\n\n\nWho the hell even has the power to impose such a thing?\nWho’s going to give you permission to do that?\nWhy would restaurants (especially the ones being assigned to hike wages) agree to participate?\nHow would the workers feel?\nHow much would it cost to administer such a study?\n\n\n. . .\nFor many causal questions we care about, cost, practicality, and ethics make it unfeasible to run the proper experiment that would actually be capable of answering the question."
   },
   {
     "objectID": "slides/01-crash-course.html#observational-data",
     "href": "slides/01-crash-course.html#observational-data",
     "title": "All of STA 101 in 75 minutes",
     "section": "Observational data",
-    "text": "Observational data"
+    "text": "Observational data\n\nJust seein’ what happened.\n\n\nThe researcher “passively” collects measurements without intervening to manipulate anything. So they can’t dictate treatment versus control, and they don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.\nWhen experiments are unfeasible to carry out, these are the only data we have."
   },
   {
     "objectID": "slides/01-crash-course.html#observational-data-causal-inference",
     "href": "slides/01-crash-course.html#observational-data-causal-inference",
     "title": "All of STA 101 in 75 minutes",
     "section": "Observational data + causal inference = 🤮",
-    "text": "Observational data + causal inference = 🤮\n\nCorrelation does not imply causation."
+    "text": "Observational data + causal inference = 🤮\nAs you learned at your grandmother’s knee:\n\nCorrelation does not imply causation.\n\nIf we observe a mere association in observational data, we have all of our work ahead of us to argue that there is nothing else going on, and therefore the association can plausibly support a causal interpretation."
   },
   {
     "objectID": "slides/01-crash-course.html#unless",
     "href": "slides/01-crash-course.html#unless",
     "title": "All of STA 101 in 75 minutes",
     "section": "🤔 Unless…",
-    "text": "🤔 Unless…"
+    "text": "🤔 Unless…\n\nThe four-leaf clover of applied statistics is the so-called “natural experiment;”\nThis is a special kind of observational study where you believe that “nature” has created variation in treatment versus control that acts as if an experiment were performed;\nIf you’re lucky and careful and shrewd, maybe you can use these special observational data to tell a plausible causal story."
   },
   {
     "objectID": "slides/01-crash-course.html#example-military-service-and-lifetime-earnings",
     "href": "slides/01-crash-course.html#example-military-service-and-lifetime-earnings",
     "title": "All of STA 101 in 75 minutes",
     "section": "Example: military service and lifetime earnings",
-    "text": "Example: military service and lifetime earnings\nWe obviously cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then observe them for the next twenty years.\n. . .\nOr can we?"
+    "text": "Example: military service and lifetime earnings\n\n\nDoes serving in the military put you at an advantage or a disadvantage in terms of the amount of money you make over your lifetime (lifetime earnings)?\nWe don’t care about mere conincidence. We care about the causal effect of military service on lifetime earnings;\nBut obviously, we cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then study their tax returns for the next twenty years.\n\n\n. . .\nOr can we?"
   },
   {
     "objectID": "slides/01-crash-course.html#the-vietnam-draft-lottery",
@@ -1162,39 +1246,53 @@
     "text": "Card and Krueger (1994 AER)"
   },
   {
-    "objectID": "slides/01-crash-course.html#what-did-card-and-krueger-do",
-    "href": "slides/01-crash-course.html#what-did-card-and-krueger-do",
+    "objectID": "slides/01-crash-course.html#card-and-kruegers-main-idea",
+    "href": "slides/01-crash-course.html#card-and-kruegers-main-idea",
     "title": "All of STA 101 in 75 minutes",
-    "section": "What did Card and Krueger do?",
-    "text": "What did Card and Krueger do?\nthe seemingly arbitrary placement of restaurants on either side of this border acts as if random assignment took place"
+    "section": "Card and Krueger’s main idea",
+    "text": "Card and Krueger’s main idea\n\nRestaurants on either side of the PA/NJ border are probably quite similar, but the NJ restaurants will be treated to a wage hike, and the PA restaurants will not;\nBecause the placement of restaurants on either side of the border is largely arbitrary, we can compare these two groups as if an experiment were done;\nAny difference in employment patterns that we observe between the two groups can be attributed to the causal effect of the wage hike and not some other confounding factor."
   },
   {
-    "objectID": "slides/01-crash-course.html#discuss-problems-with-surveys",
-    "href": "slides/01-crash-course.html#discuss-problems-with-surveys",
+    "objectID": "slides/01-crash-course.html#so-what-did-they-do",
+    "href": "slides/01-crash-course.html#so-what-did-they-do",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Discuss problems with surveys",
-    "text": "Discuss problems with surveys"
+    "section": "So what did they do?",
+    "text": "So what did they do?\nThey surveyed restaurants before and after:\n\nBefore the wage hike went into effect, they called a bunch of restaurants in both states and asked them about their business: how many workers they employ, the wage they pay, the prices they charge, etc;\nAfter the wage hike went into effect, they called the restaurants again and asked the same questions."
   },
   {
-    "objectID": "slides/01-crash-course.html#we-have-the-data",
-    "href": "slides/01-crash-course.html#we-have-the-data",
+    "objectID": "slides/01-crash-course.html#any-concerns-about-survey-data",
+    "href": "slides/01-crash-course.html#any-concerns-about-survey-data",
     "title": "All of STA 101 in 75 minutes",
-    "section": "We have the data!",
-    "text": "We have the data!\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")"
+    "section": "Any concerns about survey data?",
+    "text": "Any concerns about survey data?\n\n\nWhat if some restaurants don’t respond? (inevitable)\nIf not, why not? Was non-response a random decision on their part, or are they hiding something?\nHow accurate are their responses? Does the person I got ahold of actually know the answers to my questions, or is this just a guesstimate?\nDoes the wording of the questions affect how they respond? (very possible)\n\n\n. . .\nEach of these is a source of uncertainty that affects the reliability of any downstream results."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#reality-check",
+    "href": "slides/01-crash-course.html#reality-check",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Reality check",
+    "text": "Reality check\n\n\nYou don’t just give up because the data aren’t perfect. They’ll never be perfect, if for no other reason that you would always enjoy more;\nAlternative definition of data science, statistics, etc: “learning to make do with the data you actually have;”\nUse the best techniques available to wring as much juice out of the data as possible…\n…BUT THEN, be honest and faithful and rigorous about the limitations of your results. That’s the whole uncertainty quantification part.\n\n\n. . .\nThat last bit doesn’t always make statisticians the most popular (“can you please just tell me the 🤬ing answer?”), but it’s our professional duty 🫡."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#anyway-we-have-the-data",
+    "href": "slides/01-crash-course.html#anyway-we-have-the-data",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Anyway, we have the data!",
+    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
   },
   {
     "objectID": "slides/01-crash-course.html#aside-variable-assignment--",
     "href": "slides/01-crash-course.html#aside-variable-assignment--",
     "title": "All of STA 101 in 75 minutes",
     "section": "Aside: variable assignment <-\n",
-    "text": "Aside: variable assignment &lt;-"
+    "text": "Aside: variable assignment &lt;-\n\nYou just saw me do this:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\n\n\nThis is called variable assignment. We’re saving an object so we can use it later;\n\nRight-hand side: the thing you want to store (the data);\n\nLeft-hand side: the name you want to give it so you can refer to it later;\n\nIn the middle: the assignment operator &lt;-."
   },
   {
     "objectID": "slides/01-crash-course.html#the-anatomy-of-a-data-frame",
     "href": "slides/01-crash-course.html#the-anatomy-of-a-data-frame",
     "title": "All of STA 101 in 75 minutes",
     "section": "The anatomy of a data frame",
-    "text": "The anatomy of a data frame\ndata frame\n\neach row of a data frame is an observation;\neach column of a data frame is a variable."
+    "text": "The anatomy of a data frame\nA data frame is R’s version of a spreadsheet.\n\neach row of a data frame is an observation, in this case a restaurant;\neach column of a data frame is a variable, a piece of information that was recorded about that restaurant."
   },
   {
     "objectID": "slides/01-crash-course.html#the-dimensions",
@@ -1215,14 +1313,7 @@
     "href": "slides/01-crash-course.html#your-first-taste-of-variable-types",
     "title": "All of STA 101 in 75 minutes",
     "section": "Your first taste of variable types",
-    "text": "Your first taste of variable types\nThe chain variable is an example of a categorical variable:\n\ncard_krueger$chain\n\n  [1] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\" \"KFC\"        \n  [6] \"KFC\"         \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n [11] \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n [16] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n [21] \"Wendy's\"     \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\"\n [26] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n [31] \"KFC\"         \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Wendy's\"    \n [36] \"KFC\"         \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [41] \"KFC\"         \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n [46] \"Burger King\" \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\"\n [51] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [56] \"Burger King\" \"KFC\"         \"Roy's\"       \"Wendy's\"     \"Burger King\"\n [61] \"Burger King\" \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Burger King\"\n [66] \"Burger King\" \"Roy's\"       \"KFC\"         \"Burger King\" \"KFC\"        \n [71] \"KFC\"         \"KFC\"         \"Roy's\"       \"Wendy's\"     \"Roy's\"      \n [76] \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\"\n [81] \"KFC\"         \"Wendy's\"     \"KFC\"         \"Roy's\"       \"Roy's\"      \n [86] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n [91] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n [96] \"Burger King\" \"Burger King\" \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[101] \"Burger King\" \"Burger King\" \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[106] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[111] \"KFC\"         \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[116] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\"\n[121] \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n[126] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Wendy's\"    \n[131] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[136] \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n[141] \"Burger King\" \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[146] \"Roy's\"       \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\"\n[151] \"Burger King\" \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[156] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[161] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[166] \"Roy's\"       \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\"\n[171] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[176] \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[181] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[186] \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[191] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[196] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[201] \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\"\n[206] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"      \n[211] \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[216] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"KFC\"        \n[221] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[226] \"Wendy's\"     \"Wendy's\"     \"Wendy's\"     \"KFC\"         \"Burger King\"\n[231] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[236] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\"\n[241] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[246] \"KFC\"         \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"      \n[251] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Wendy's\"     \"Burger King\"\n[256] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"        \n[261] \"KFC\"         \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Wendy's\"    \n[266] \"Burger King\" \"KFC\"         \"Roy's\"       \"Burger King\" \"Burger King\"\n[271] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[276] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[281] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Wendy's\"    \n[286] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Roy's\"       \"Roy's\"      \n[291] \"Roy's\"       \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\"\n[296] \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"      \n[301] \"Roy's\"       \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[306] \"Burger King\" \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"      \n[311] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[316] \"Roy's\"       \"Wendy's\"     \"Burger King\" \"Burger King\" \"Burger King\"\n[321] \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\" \"Burger King\"\n[326] \"KFC\"         \"KFC\"         \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[331] \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"       \"Roy's\"      \n[336] \"Burger King\" \"Burger King\" \"KFC\"         \"Burger King\" \"Burger King\"\n[341] \"Burger King\" \"Burger King\" \"Burger King\" \"KFC\"         \"KFC\"        \n[346] \"KFC\"         \"KFC\"         \"KFC\"         \"Roy's\"       \"Wendy's\"    \n[351] \"Wendy's\"    \n\n\nThe wage_st variable is an example of a numerical variable:\n\ncard_krueger$meal_price\n\n  [1] 3.48 3.29 2.86 2.85 3.78 3.99 3.17 2.84 2.60 2.75 3.12 4.22 3.99 2.97 2.85\n [16] 3.00 3.11 3.96 3.00 2.68 3.34 3.16 3.15 2.66 2.60 2.65 2.67 2.67 2.48 5.40\n [31] 4.25 2.56 2.65 2.61 2.54 4.02 2.50 2.47   NA 2.49 4.28 2.50 3.48 2.53 2.72\n [46]   NA 2.63 4.20 2.89 2.72 2.93 2.72 2.81 2.65 2.74 2.74 4.02 3.10 2.60 2.62\n [61] 2.72 2.97 2.78 3.01   NA 2.81 4.72 4.40 2.95 4.25 4.65 4.65 3.04 4.50 3.42\n [76] 3.16 3.10 3.15 3.16 3.08 4.42 3.10 4.25 2.84 3.18 2.82 2.96 2.96 2.96 3.14\n [91] 4.10 3.20 3.33 3.20 3.01 3.08 3.20 3.27 3.15 2.86 2.77   NA 3.26 3.18 3.24\n[106] 2.72 2.72 4.15 4.03 3.99 3.88 3.02 4.25 4.25 4.37 4.42   NA   NA 2.82 2.73\n[121] 2.98 2.76 2.81 2.76 3.03 2.99   NA 3.16 3.54   NA 3.72 3.01 2.61 2.93 5.10\n[136] 4.19   NA 2.56 2.74 2.89 2.75 4.67 2.95   NA 4.08   NA 2.89 3.99 2.85 2.96\n[151] 3.02 4.63 3.20 3.20 4.04 2.98 2.96 2.96 3.40 3.11 3.07 3.03 2.96 4.57 5.21\n[166] 3.16 3.25 2.80 3.10 2.84 3.06 3.07   NA 4.42 4.73 4.33 4.42   NA 3.44 3.04\n[181] 2.73 2.99 2.96 3.07 3.34 3.24 2.97 3.07 3.62 3.02 2.92 3.15   NA 3.01 4.10\n[196] 3.19 4.64 3.25   NA 3.20 2.83 2.99 3.07 3.12 2.96 3.01 3.03 3.96 4.17 3.20\n[211] 2.86 2.96 3.08 3.20 2.99 3.04   NA 4.10 4.16 4.73 4.73 4.73 4.73 3.09 3.31\n[226] 2.82 2.79 2.97 3.99 2.95 3.03 2.75 2.96 3.12 4.25 2.98 3.07 2.96 2.92 2.78\n[241] 2.82 2.82 2.86 4.78 3.88 3.93 3.99 4.78 4.53 3.03   NA 2.88 2.61 2.76 2.96\n[256] 2.92 2.96 3.07 3.07 4.42 4.74 2.83 3.31 3.17 2.97 3.14   NA 4.59 2.88 2.87\n[271] 3.07 2.81 2.50 3.14 4.03 4.08 4.14 3.88 2.84 2.73   NA 2.92 2.92 2.92 2.79\n[286] 2.76 2.82 2.95 3.14 4.78 3.60 3.44 3.76 3.21 2.92 2.85 3.11 4.82 5.86 3.14\n[301] 2.94 2.72 2.86 2.92 2.86 2.76 4.03 4.03 3.09 2.87 2.69 2.79 2.78 4.31 4.25\n[316] 2.56 2.70 2.96 2.86 2.96 3.07 2.96 3.05   NA 2.96 4.78 5.21 4.47 3.20 3.24\n[331] 3.43 3.32 3.16 3.20 3.20 3.18 3.27 4.42 3.20 3.12 2.95 3.06 2.55 4.25 4.25\n[346] 4.25 4.25 4.25 3.26 4.07 3.10\n\n\nThe appropriate visualization or summary depends on the variable type."
-  },
-  {
-    "objectID": "slides/01-crash-course.html#scraps",
-    "href": "slides/01-crash-course.html#scraps",
-    "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nWhat’s the ideal here? an experiemtn\ndata collection is monstrously difficult, and very domain specific.\njulia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.\nwhat’s the ideal experiment a la angrist and pischke.\nSome controlled thing. Talk about study design and what’s special about randomized controlled experiments.\nCan we do this? maybe?\nsite seattle minimum wage study. But it’s costly (time, money, you name it).\nwhat about observational data? can’t control anything\nPassively observe without intervening to manipulate anything. So you can’t control treatment versus control, and you don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.\ndata collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?\nYou try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.\nTHE CHOICE TO NOT RESPOND IS NOT RANDOM. IT IS SYSTEMATICALLY HIDING SOMETHING FROM YOU. What do you do about it? In this class, not much, but it’s a source of uncertainty that statisticians grapple with."
+    "text": "Your first taste of variable types\nThe chain variable is an example of a categorical variable:\n\ncard_krueger$chain\n\n\n\n[1] \"Wendy's\"     \"Wendy's\"     \"Burger King\" \"Burger King\" \"KFC\"        \n[6] \"KFC\"        \n\n\n. . .\nThe wage_st variable is an example of a numerical variable:\n\ncard_krueger$meal_price\n\n\n\n[1] 3.48 3.29 2.86 2.85 3.78 3.99\n\n\n. . .\nThe appropriate visualization or summary depends on the variable type."
   },
   {
     "objectID": "slides/01-crash-course.html#babys-first-summary",
@@ -1243,7 +1334,7 @@
     "href": "slides/01-crash-course.html#aside-the-pipe-operator",
     "title": "All of STA 101 in 75 minutes",
     "section": "Aside: the pipe operator |>\n",
-    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3"
+    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3\n\n\n\n\n. . .\nWe will use it to build up data summaries and transformations step-by-step."
   },
   {
     "objectID": "slides/01-crash-course.html#like-a-russian-stacking-doll",
@@ -1362,21 +1453,28 @@
     "href": "slides/01-crash-course.html#lets-compare-meal-prices-next-8",
     "title": "All of STA 101 in 75 minutes",
     "section": "Let’s compare meal prices next",
-    "text": "Let’s compare meal prices next\nMake the color translucent:\n\nggplot(card_krueger, \n       aes(x = meal_price,\n           color = state,\n           fill = state)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Price in USD ($)\",\n    title = \"Meal prices prior to wage hike\",\n    subtitle = \"Meal = soda, fries, entree\"\n  ) +\n  theme_minimal(base_size = 20)\n\n\n\n\n\n\n\nThese distributions look pretty similar."
+    "text": "Let’s compare meal prices next\nMake the color translucent:\n\nggplot(card_krueger, \n       aes(x = meal_price,\n           color = state,\n           fill = state)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Price in USD ($)\",\n    title = \"Meal prices prior to wage hike\",\n    subtitle = \"Meal = soda, fries, entree\"\n  ) +\n  theme_minimal(base_size = 20)\n\n\n\n\n\n\n\n. . .\nThese distributions look pretty similar."
   },
   {
     "objectID": "slides/01-crash-course.html#dataviz-with-ggplot-is-like-building-a-cake",
     "href": "slides/01-crash-course.html#dataviz-with-ggplot-is-like-building-a-cake",
     "title": "All of STA 101 in 75 minutes",
     "section": "Dataviz with ggplot is like building a cake",
-    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\n\nXXX"
+    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\n\n\nEvery plot element is a new layer, and you stack ’em up;\nIf the different commands are like the layers of sponge, then the plus signs in between are like the icing. Don’t forget the icing!"
   },
   {
-    "objectID": "slides/01-crash-course.html#compare-hours-of-operation",
-    "href": "slides/01-crash-course.html#compare-hours-of-operation",
+    "objectID": "slides/01-crash-course.html#the-grammar-of-graphics",
+    "href": "slides/01-crash-course.html#the-grammar-of-graphics",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Compare hours of operation",
-    "text": "Compare hours of operation"
+    "section": "The grammar of graphics",
+    "text": "The grammar of graphics\n\n\nThis design philosophy is described in the book The Grammar of Graphics and implemented in the ggplot2 package."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#compare-hours-of-operation-prior-to-nj-hike",
+    "href": "slides/01-crash-course.html#compare-hours-of-operation-prior-to-nj-hike",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Compare hours of operation (prior to NJ hike)",
+    "text": "Compare hours of operation (prior to NJ hike)"
   },
   {
     "objectID": "slides/01-crash-course.html#compare-starting-wage-prior-to-nj-hike",
@@ -1404,14 +1502,14 @@
     "href": "slides/01-crash-course.html#the-emp_diff-variable",
     "title": "All of STA 101 in 75 minutes",
     "section": "The emp_diff variable",
-    "text": "The emp_diff variable\nIf this is positive, the restaurant added workers If zero, no change if negative, they shed workers\nIf the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA. Nothing changed in PA, so they should be close to zero. NJ got a wage hike, so they should be negative."
+    "text": "The emp_diff variable\nThis is employment after the wage hike minus employment before the wage hike:\n\n\nemp_diff &gt; 0: the restaurant added workers;\n\nemp_diff == 0: the restaurant didn’t change;\n\nemp_diff &lt; 0: the restaurant shed workers.\n\nIf the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA."
   },
   {
-    "objectID": "slides/01-crash-course.html#section",
-    "href": "slides/01-crash-course.html#section",
+    "objectID": "slides/01-crash-course.html#so-how-about-it",
+    "href": "slides/01-crash-course.html#so-how-about-it",
     "title": "All of STA 101 in 75 minutes",
-    "section": "",
-    "text": "card_krueger |&gt;\n  group_by(state) |&gt;\n  summarize(\n    avg_emp_diff = mean(emp_diff)\n  )\n\n# A tibble: 2 × 2\n  state avg_emp_diff\n  &lt;fct&gt;        &lt;dbl&gt;\n1 PA          -1.88 \n2 NJ           0.398\n\n\n. . .\nOh. That is…flipped from what we expected."
+    "section": "So how about it?",
+    "text": "So how about it?\n\ncard_krueger |&gt;\n  group_by(state) |&gt;\n  summarize(\n    avg_emp_diff = mean(emp_diff)\n  )\n\n# A tibble: 2 × 2\n  state avg_emp_diff\n  &lt;fct&gt;        &lt;dbl&gt;\n1 PA          -1.88 \n2 NJ           0.398\n\n\n. . .\nOh. That is…flipped from what we expected."
   },
   {
     "objectID": "slides/01-crash-course.html#pics-or-it-didnt-happen",
@@ -1425,35 +1523,70 @@
     "href": "slides/01-crash-course.html#pause",
     "title": "All of STA 101 in 75 minutes",
     "section": "Pause",
-    "text": "Pause\nIf the ECON 101 story is true, then the minimum wage hike should put NJ below PA in negative territory. Based on pictures and summaries, it seems like NJ is doing about the same as PA, if not better."
+    "text": "Pause\nIf the ECON 101 story is true, then the minimum wage hike should put NJ below PA, either adding fewer workers, or literally laying them off. Pictures and simple summaries are not showing that.\nNow what?"
   },
   {
-    "objectID": "slides/01-crash-course.html#section-1",
-    "href": "slides/01-crash-course.html#section-1",
+    "objectID": "slides/01-crash-course.html#data-do-not-speak-for-themselves",
+    "href": "slides/01-crash-course.html#data-do-not-speak-for-themselves",
     "title": "All of STA 101 in 75 minutes",
-    "section": "",
-    "text": "linear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger) |&gt;\n  tidy()\n\n# A tibble: 6 × 5\n  term         estimate std.error statistic p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    -1.45       1.21    -1.20   0.232 \n2 stateNJ         2.28       1.20     1.91   0.0575\n3 chainKFC        0.235      1.30     0.181  0.857 \n4 chainRoy's     -2.08       1.32    -1.58   0.116 \n5 chainWendy's   -0.757      1.49    -0.507  0.612 \n6 co_owned        0.373      1.10     0.339  0.735"
+    "section": "Data do not speak for themselves",
+    "text": "Data do not speak for themselves\n\nPictures and summaries are powerful, and they can get you very far, but they cannot do everything;\nData do not speak for themselves, and there is no such thing as a “neutral” analysis. We are always making assumptions, whether they are implicit or explicit;\nIn general, it is better that our assumptions be explicit, and the most rigorous way to achieve this is with a mathematical model."
   },
   {
-    "objectID": "slides/01-crash-course.html#good-for-them",
-    "href": "slides/01-crash-course.html#good-for-them",
+    "objectID": "slides/01-crash-course.html#what-do-i-mean-by-a-model",
+    "href": "slides/01-crash-course.html#what-do-i-mean-by-a-model",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Good for them!",
-    "text": "Good for them!"
+    "section": "What do I mean by a “model”?",
+    "text": "What do I mean by a “model”?\nThink of the “line of best fit:”\n\n\n\n\n\n\n\n\n. . .\nThis is an example of a linear regression model. All of the models in our class will have this flavor."
   },
   {
-    "objectID": "slides/01-crash-course.html#scraps-1",
-    "href": "slides/01-crash-course.html#scraps-1",
+    "objectID": "slides/01-crash-course.html#why-do-we-need-one-here",
+    "href": "slides/01-crash-course.html#why-do-we-need-one-here",
     "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nData do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.\ninclude screenshot of card and krueger table and show that the numbers are the same. yay reproducibility\npictures and summaries are great, and they can do a lot of work, but at the end of the day: data do not speak for themselves. We always have to bring domain knowledge and an interpretive lens. It’s best if we are as explicit about assumptions as possible, and the most rigorous way to do this is with a formal mathematical model."
+    "section": "Why do we need one here?",
+    "text": "Why do we need one here?\n(this is where things will start to get technical…)\n. . .\nOur analysis has several ingredients:\n\n\nResponse variable \\(y_i\\): that’s emp_diff;\nTreatment variable \\(T_i\\): the state, NJ or PA;\nExtra covariates \\(\\mathbf{x}_i\\): chain, hrsopen, meal_price, etc.\n\n\n. . .\nOur goal is to estimate the (causal!) effect that the treatment has on the response. In order to make sure we are isolating the causal effect of the treatment, unconfounded by other factors, we may want to control for the extra covariates. A model helps us do this."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#the-only-equation-today",
+    "href": "slides/01-crash-course.html#the-only-equation-today",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "The only equation today",
+    "text": "The only equation today\n(feel free to avert your gaze)\n. . .\nHere’s a linear regression model for the data:\n\\[\ny_i = \\alpha + \\tau T_i+\\mathbf{x}_i^{\\scriptscriptstyle\\mathsf{T}}\\boldsymbol{\\beta}+\\varepsilon_i,\n\\]\nwhere \\(y_i\\) is emp_diff, \\(\\mathbf{x}_i\\) is a collection of covariates, and\n\\[\nT_i\n=\n\\begin{cases}\n0 & \\text{for PA}\\\\\n1 & \\text{for NJ}.\n\\end{cases}\n\\]\n. . .\nSo \\(\\tau\\) is the average difference between emp_diff in NJ and in PA. ECON 101 says this should be negative. Our exploratory analysis looked like it was zero, or possibly even positive."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#its-not-as-bad-as-it-looks",
+    "href": "slides/01-crash-course.html#its-not-as-bad-as-it-looks",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "It’s not as bad as it looks",
+    "text": "It’s not as bad as it looks\n\nIn this class, math is primarily a language that we will use to concisely communicate certain technical ideas;\nYou will not do a tremendous amount of math in the sense of pencil-and-paper calculations, but you will be expected to read and interpret certain mathematical expressions;\nIn a few weeks you will start to see a lot of equations like the previous slide, and we will help you become a fluent reader of them."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#estimating-the-model-in-r",
+    "href": "slides/01-crash-course.html#estimating-the-model-in-r",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Estimating the model in R",
+    "text": "Estimating the model in R\nThere’s that pipe again:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger) |&gt;\n  tidy()\n\n# A tibble: 6 × 5\n  term         estimate std.error statistic p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    -1.45       1.21    -1.20   0.232 \n2 stateNJ         2.28       1.20     1.91   0.0575\n3 chainKFC        0.235      1.30     0.181  0.857 \n4 chainRoy's     -2.08       1.32    -1.58   0.116 \n5 chainWendy's   -0.757      1.49    -0.507  0.612 \n6 co_owned        0.373      1.10     0.339  0.735 \n\n\n. . .\nThe estimate on stateNJ is what we interpret as the treatment effect."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#interpretation",
+    "href": "slides/01-crash-course.html#interpretation",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "Interpretation",
+    "text": "Interpretation\nOur estimate of the treatment effect is roughly 2.3, with a standard error of 1.2;\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome compared to PA;\nThe standard error is a metric that speaks to uncertainty quantification. The larger it is, the less certain we are of the estimate. More on this later."
+  },
+  {
+    "objectID": "slides/01-crash-course.html#btw-three-cheers-for-reproducible-research",
+    "href": "slides/01-crash-course.html#btw-three-cheers-for-reproducible-research",
+    "title": "All of STA 101 in 75 minutes",
+    "section": "BTW: three cheers for reproducible research",
+    "text": "BTW: three cheers for reproducible research"
   },
   {
     "objectID": "slides/01-crash-course.html#our-point-estimate",
     "href": "slides/01-crash-course.html#our-point-estimate",
     "title": "All of STA 101 in 75 minutes",
     "section": "Our point estimate",
-    "text": "Our point estimate\nOur headline finding:\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome than PA.\n\n. . .\nIs this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability."
+    "text": "Our point estimate\nOur headline finding:\n\nOn average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a better outcome compared to PA.\n\n. . .\nIs this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability."
   },
   {
     "objectID": "slides/01-crash-course.html#what-do-we-mean-by-reliability",
@@ -1474,21 +1607,21 @@
     "href": "slides/01-crash-course.html#different-data-different-result",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1    -2    NJ    KFC                0\n 2     6    NJ    Burger King        0\n 3    -3    NJ    Roy's              1\n 4     3.25 PA    KFC                1\n 5     0    PA    Wendy's            0\n 6     4    NJ    KFC                0\n 7     2    NJ    Burger King        1\n 8     2    NJ    Burger King        1\n 9    14.8  NJ    KFC                1\n10     2.5  NJ    Burger King        0\n# ℹ 341 more rows\n\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -0.187       1.12\n2 stateNJ        0.689       1.13\n3 chainKFC       0.677       1.34\n4 chainRoy's    -1.98        1.32\n5 chainWendy's  -0.0917      1.39\n6 co_owned       0.0815      1.07"
   },
   {
     "objectID": "slides/01-crash-course.html#different-data-different-result-1",
     "href": "slides/01-crash-course.html#different-data-different-result-1",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1     8.5  NJ    Burger King        1\n 2    -0.5  NJ    Roy's              1\n 3     5.5  NJ    Burger King        1\n 4    -2    NJ    KFC                0\n 5    -1.5  NJ    KFC                1\n 6     2.5  NJ    Burger King        0\n 7     3.5  NJ    Burger King        0\n 8     4    NJ    Burger King        0\n 9     0    NJ    Burger King        0\n10     8.25 NJ    Burger King        0\n# ℹ 341 more rows\n\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -1.02        1.32\n2 stateNJ        1.26        1.27\n3 chainKFC       0.0746      1.29\n4 chainRoy's    -1.72        1.36\n5 chainWendy's  -0.707       1.69\n6 co_owned       1.29        1.14"
   },
   {
     "objectID": "slides/01-crash-course.html#different-data-different-result-2",
     "href": "slides/01-crash-course.html#different-data-different-result-2",
     "title": "All of STA 101 in 75 minutes",
     "section": "Different data, different result",
-    "text": "Different data, different result\nbloop"
+    "text": "Different data, different result\n\n\nRedo the survey and get a new data frame:\n\n\n# A tibble: 351 × 4\n   emp_diff state chain       co_owned\n      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;\n 1     -6.5 NJ    KFC                0\n 2     -4   NJ    Burger King        0\n 3     -7   NJ    Roy's              1\n 4    -13   NJ    KFC                1\n 5     -1.5 NJ    Burger King        0\n 6      2.5 NJ    KFC                1\n 7     19   PA    Burger King        0\n 8      3.5 NJ    Burger King        0\n 9     13.2 NJ    Roy's              1\n10     -3   NJ    KFC                0\n# ℹ 341 more rows\n\n\n\n\nRerun the regression and get a new estimate:\n\nlinear_reg() |&gt;\n  fit(emp_diff ~ state + chain + co_owned, data = card_krueger_new) |&gt;\n  tidy() |&gt;\n  select(term, estimate, std.error)\n\n# A tibble: 6 × 3\n  term         estimate std.error\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)     0.930     1.18 \n2 stateNJ         0.438     1.15 \n3 chainKFC       -0.751     1.21 \n4 chainRoy's     -3.05      1.22 \n5 chainWendy's   -1.82      1.41 \n6 co_owned        0.333     0.996"
   },
   {
     "objectID": "slides/01-crash-course.html#the-full-monty",
@@ -1558,28 +1691,21 @@
     "href": "slides/01-crash-course.html#conclusion",
     "title": "All of STA 101 in 75 minutes",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\n\nGenuine uncertainty remains about the specific numerical value;\n\n2.3 may be our best guess, but if “the truth” ends up being 0, 1, 3, 4, or 5, don’t be surprised. Based on the data we have, you can’t rule that out;\n\n\nHowever, the data are speaking pretty loudly that the estimate is more likely to be positive than negative; Qualitatively, the evidence for the usual ECON 101 story is looking weak."
   },
   {
     "objectID": "slides/01-crash-course.html#towards-quantifying-uncertainty",
     "href": "slides/01-crash-course.html#towards-quantifying-uncertainty",
     "title": "All of STA 101 in 75 minutes",
     "section": "Towards quantifying uncertainty",
-    "text": "Towards quantifying uncertainty\nWhat if our sampling distribution had looked like one of these?\n\n\n\n\n\n\n\n\n. . .\nMeasuring the spread of the sampling distribution allows us to quantify uncertainty about the conclusions."
+    "text": "Towards quantifying uncertainty\nWhat if our sampling distribution had looked like one of these?\n\n\n\n\n\n\n\n\n. . .\nMeasuring the spread of the sampling distribution allows us to quantify uncertainty about the conclusions. That’s what the standard error does."
   },
   {
-    "objectID": "slides/01-crash-course.html#reality-check",
-    "href": "slides/01-crash-course.html#reality-check",
+    "objectID": "slides/01-crash-course.html#reality-check-1",
+    "href": "slides/01-crash-course.html#reality-check-1",
     "title": "All of STA 101 in 75 minutes",
     "section": "Reality check",
     "text": "Reality check\n\n\nThis idea of “redoing the survey to see how the results change” is more of a thought experiment;\nIf collecting new data were so easy, we would have collected a bigger sample to begin with;\nInstead of literally collecting new data, which is costly, statisticians approximate sampling variability. We will study two techniques for doing this:\n\nsimulation-based: resampling the data with the bootstrap;\nmathematical: appealing to the central limit theorem (CLT).\n\n\n\n\n. . .\nMore on all that in…nine weeks."
-  },
-  {
-    "objectID": "slides/01-crash-course.html#scraps-2",
-    "href": "slides/01-crash-course.html#scraps-2",
-    "title": "All of STA 101 in 75 minutes",
-    "section": "Scraps",
-    "text": "Scraps\nnew survey new estimate\nmodeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?\nsampling variability.\nwe got this estimate. Is it reliable? How uncertain are we about it? What do we mean.\nWhat we’re worried about: if I collected a new dataset (sent the survey out to a different set fo restaurants), I’d get a different result.\na negative estimate is not really on the menu of options, so the data seem to be speaking fairly loudly that the minimum wage did not have an ill effect in this case. But about that…\nthere remains some uncertainty about the specific numerical result: 0, 1, 2, 3, 4, 5\nThe qualitative finding that NJ is not worse than PA (if anything it’s better) seems to hold up."
   },
   {
     "objectID": "slides/01-crash-course.html#at-the-end-of-the-day",
@@ -1600,7 +1726,7 @@
     "href": "slides/01-crash-course.html#things-to-keep-you-up-at-night",
     "title": "All of STA 101 in 75 minutes",
     "section": "Things to keep you up at night",
-    "text": "Things to keep you up at night\n\nLet’s face it: random assignment did not take place here.\n\nNJ chose to raise the minimum wage for specific reasons, and those underlying reasons could be related to"
+    "text": "Things to keep you up at night\n\n\nLet’s face it: this wasn’t an experiment; Random assignment did not take place here;\nNJ chose to raise the minimum wage for specific reasons, and PA didn’t. If those reasons mean that underlying conditions in NJ are systematically different from those in PA, this could confound the relationship;\nIf NJ was on a different economic trajectory to begin with (NJ on the upswing and PA on the downswing), then we might be observing that difference, and nothing to do with the minimum wage;\nWas “before” really “before”? NJ restaurants knew in advance that the wage hike was coming. It wasn’t a surprise. How do we know they hadn’t already started adjusting before Card and Krueger made their first call?\nEven if we found the causal argument completely convincing, does it generalize? What, if anything, can this study teach us about larger wage hikes in different industries elsewhere?"
   },
   {
     "objectID": "slides/01-crash-course.html#further-reading",
@@ -1614,7 +1740,7 @@
     "href": "slides/01-crash-course.html#intellectual-themes",
     "title": "All of STA 101 in 75 minutes",
     "section": "Intellectual themes",
-    "text": "Intellectual themes\nThese will last us fifteen weeks (and then some!):\n\n\nData analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;\nAll data analyses should be reproducible. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;\nEven a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;\nWhen analyzing data, so often the questions that we truly care about are causal questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;\nThe gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;\nObservational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;\nData do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;\n(FINISH) Data are not manna from heaven…\n(REVISE) Don’t let the perfect be the enemy of the good. Data analysis is always constrained optimization. There are ideals we don’t live up to. Just trying to do the best you can with what you’ve got;\n(REVISE) A good data analysis is honest about what the data can and cannot tell us. Statistical inference is all about quantifying uncertainty about our results."
+    "text": "Intellectual themes\nThese will last us fifteen weeks (and then some!):\n\n\nData analysis is essentially rhetoric. We’re marshaling evidence in order to be convincing to other humans. Don’t forget your audience;\nAll data analyses should be reproducible. Give me the same data (and code) that you used, I should be able to get the exact same pictures and numbers. R + Quarto make this easier to achieve;\nEven a small data set is too much information for a human to process. We need to compress it down to pictures and a concise set of numerical summaries. Doing this well is as much art as it is science;\nWhen analyzing data, so often the questions that we truly care about are causal questions. It’s silly to bury our heads in the sand and pretend that’s not true, but it’s also dangerous to recklessly make causal claims that your data cannot support;\nThe gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;\nObservational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;\nData do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;\nData are not manna from heaven. The data collection process is subject to countless flaws and compromises, and at some point you need to get on with it and make do. We’re trying to do the best we can with what we’ve got;\nBut because of that, all data analysts have a responsibility to honestly and faithfully report the limitations of their results by quantifying uncertainty. That’s what statistics is all about."
   },
   {
     "objectID": "slides/01-crash-course.html#computational-themes",
@@ -1684,7 +1810,7 @@
     "href": "lab/lab-0.html#data-visualization",
     "title": "Lab 0",
     "section": "4. Data visualization",
-    "text": "4. Data visualization\nWe use ggplot2 (included in the tidyverse) for data visualization.\nFor instance, if we wish to visualize the distribution of the numeric variable XXX in the pokemon dataset, we can do that with a histogram:\n\nggplot(pokemon, aes(x = attack)) + \n  geom_histogram() + \n  labs(\n    x = \"Attack score\",\n    title = \"Distribution of Pokémon attack\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly right-skewed.\nAn alternative visualization for a distribution is a density plot. It’s like a “smoothed out” histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You’ll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:\n\nggplot(penguins, aes(x = flipper_length_mm, fill = species, color = species)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Flipper length (mm)\",\n    fill = \"Species\",\n    color = \"Species\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.\nThese are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here’s the template:\n\n\nggplot(df, aes(...)): It always starts here. You provide the name of the data frame you are using, as well as an aesthetic mapping where you tell R what variables you want to use and how you want to use them. In the second example above, we had x = flipper_length_mm because we wanted that variable on the horizontal access, and we had color = species because we wanted that variable to control the color of the curves;\n\ngeom_XXX: this is where we tell it what kind of plot we want. So far we have geom_histogram and geom_density, but there is also geom_point for scatter plots, geom_bar for bar charts, and many more;\nAfter you specify those two layers, the sky’s the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added labs to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but “Flipper length (mm)” is more readable than flipper_length_mm. You wouldn’t see the second in The New York Times.\n\n\n\n\n\n\n\nDon’t forget the plus signs!\n\n\n\nIf building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.\nHaving said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:\n\nggplot(pokemon, aes(x = attack, y = defense))  \n  geom_point() +\n  labs(\n    x = \"Attack score\",\n    x = \"Defense score\",\n    title = \"How are a Pokémon's attack and defense related?\"\n  )\n\n\n\nError:\n! Cannot add &lt;ggproto&gt; objects together.\nℹ Did you forget to add this object to a &lt;ggplot&gt; object?\n\n\nWe got an error because there is not plus sign between the first line and the second. It happens to the best of us, but pay attention!"
+    "text": "4. Data visualization\nWe use ggplot2 (included in the tidyverse) for data visualization.\nFor instance, if we wish to visualize the distribution of the numeric variable attack in the pokemon dataset, we can do that with a histogram:\n\nggplot(pokemon, aes(x = attack)) + \n  geom_histogram() + \n  labs(\n    x = \"Attack score\",\n    title = \"Distribution of Pokémon attack\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly right-skewed.\nAn alternative visualization for a distribution is a density plot. It’s like a “smoothed out” histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You’ll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:\n\nggplot(penguins, aes(x = flipper_length_mm, fill = species, color = species)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Flipper length (mm)\",\n    fill = \"Species\",\n    color = \"Species\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.\nThese are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here’s the template:\n\n\nggplot(df, aes(...)): It always starts here. You provide the name of the data frame you are using, as well as an aesthetic mapping where you tell R what variables you want to use and how you want to use them. In the second example above, we had x = flipper_length_mm because we wanted that variable on the horizontal access, and we had color = species because we wanted that variable to control the color of the curves;\n\ngeom_XXX: this is where we tell it what kind of plot we want. So far we have geom_histogram and geom_density, but there is also geom_point for scatter plots, geom_bar for bar charts, and many more;\nAfter you specify those two layers, the sky’s the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added labs to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but “Flipper length (mm)” is more readable than flipper_length_mm. You wouldn’t see the second in The New York Times.\n\n\n\n\n\n\n\nDon’t forget the plus signs!\n\n\n\nIf building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.\nHaving said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:\n\nggplot(pokemon, aes(x = attack, y = defense))  \n  geom_point() +\n  labs(\n    x = \"Attack score\",\n    x = \"Defense score\",\n    title = \"How are a Pokémon's attack and defense related?\"\n  )\n\n\n\nError:\n! Cannot add &lt;ggproto&gt; objects together.\nℹ Did you forget to add this object to a &lt;ggplot&gt; object?\n\n\nWe got an error because there is not plus sign between the first line and the second. It happens to the best of us, but pay attention!"
   },
   {
     "objectID": "lab/lab-0.html#data-summarization",
@@ -1754,7 +1880,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🍔 ae 01\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -2691,14 +2817,14 @@
     "href": "syllabus/announcements/fall-dance-showcase.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Saturday August 29 at 7:00;\nPage Auditorium;\n@dukedancecouncil."
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
   },
   {
     "objectID": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
     "href": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Saturday August 29 at 7:00;\nPage Auditorium;\n@dukedancecouncil."
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
   },
   {
     "objectID": "syllabus/announcements/fall-vocal-showcase.html",
@@ -2739,7 +2865,7 @@
     "href": "syllabus/announcements.html#fall-dance-showcase",
     "title": "Support your classmates!",
     "section": "Fall Dance Showcase",
-    "text": "Fall Dance Showcase\n\nSaturday August 29 at 7:00;\nPage Auditorium;\n@dukedancecouncil.",
+    "text": "Fall Dance Showcase\n\nSaturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil.",
     "crumbs": [
       "Check it out!"
     ]

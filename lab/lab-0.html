@@ -544,7 +544,7 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>Depending on the type of a variable, we will have different guidelines for how to visualize and summarize that information.</p>
 </section><section id="data-visualization" class="level2"><h2 class="anchored" data-anchor-id="data-visualization">4. Data visualization</h2>
 <p>We use <code>ggplot2</code> (included in the <code>tidyverse</code>) for data visualization.</p>
-<p>For instance, if we wish to visualize the <strong>distribution</strong> of the numeric variable <code>XXX</code> in the <code>pokemon</code> dataset, we can do that with a <strong>histogram</strong>:</p>
+<p>For instance, if we wish to visualize the <strong>distribution</strong> of the numeric variable <code>attack</code> in the <code>pokemon</code> dataset, we can do that with a <strong>histogram</strong>:</p>
 <div class="cell">
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pokemon</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">attack</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>

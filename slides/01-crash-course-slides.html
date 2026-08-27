@@ -338,10 +338,10 @@ John Zito
 <ul>
 <li>Fully reproducible reports – each time you render the analysis is run from the beginning;</li>
 <li>Code goes in cells (between the three back ticks);</li>
-<li>Written English goes outside cells, the same way you would write in Google Docs or MS Word.</li>
-<li>Every application exercise, lab, project, etc. is an Quarto document</li>
-<li>You’ll always have a template Quarto document to start with</li>
-<li>The amount of scaffolding in the template will decrease over the semester</li>
+<li>Written English goes outside cells, the same way you would write in Google Docs or MS Word;</li>
+<li>Every application exercise, lab, project, etc. is a Quarto document;</li>
+<li>You’ll always have a template Quarto document to start with;</li>
+<li>The amount of scaffolding in the template will decrease over the semester.</li>
 </ul></section><section id="two-important-concepts" class="slide level2 smaller"><h2>Two important concepts</h2>
 <div class="fragment">
 <p>Computational <em>reproducibility</em>:</p>
@@ -422,9 +422,9 @@ John Zito
 </blockquote>
 <p>There is no cosmic, forever-and-always answer to that question. It will depend on:</p>
 <ul>
-<li class="fragment">time: 1950s versus 2020s?</li>
+<li class="fragment">time: 1950s versus 2020s;</li>
 <li class="fragment">place: Manhattan versus Dodge City, Kansas;</li>
-<li class="fragment">industry: nail salons versus grocery stores;</li>
+<li class="fragment">industry: nail salons versus management consultants;</li>
 <li class="fragment">size: $8 <span class="math inline">\(\to\)</span> $15 versus $8 <span class="math inline">\(\to\)</span> $80.</li>
 </ul></section><section id="so-lets-zoom-in" class="slide level2"><h2>So let’s zoom in</h2>
 
@@ -444,21 +444,71 @@ John Zito
 <p>Correlation does not imply causation.</p>
 </blockquote>
 <ul>
-<li class="fragment">We don’t care about the mere <em>coincidence</em> of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;</li>
+<li class="fragment">However, we don’t care about the mere <em>coincidence</em> of the minimum wage going up and employment going down. We want to know if the wage hike is the root cause;</li>
 <li class="fragment">Let’s be real from the jump: this is <span style="color:red;">very difficult</span> to isolate. But it <em>is</em> what we truly care about. So let’s not chicken out!</li>
-</ul></section></section><section><section id="data-collection" class="title-slide slide level1 center"><h1>2. Data collection</h1>
+</ul></section><section id="wait-why-doesnt-correlation-imply-causation" class="slide level2 medium"><h2>Wait, why <em>doesn’t</em> correlation imply causation?</h2>
+
+<img data-src="images/01/ice-cream-drowning.png" class="quarto-figure quarto-figure-center r-stretch"></section><section id="wait-why-doesnt-correlation-imply-causation-1" class="slide level2 medium"><h2>Wait, why <em>doesn’t</em> correlation imply causation?</h2>
+
+<img data-src="images/01/baby-dag.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="because-of-the-possibility-of-confounding" class="slide level2"><h2>Because of the possibility of <em>confounding</em>
+</h2>
+<ul>
+<li class="fragment">It’s relatively easy to establish <em>mere association</em>. See here: <a href="https://tylervigen.com/spurious-correlations" class="uri">https://tylervigen.com/spurious-correlations</a>;</li>
+<li class="fragment">Just because two variables are associated does not necessarily mean that one causes the other;</li>
+<li class="fragment">Their observed association could be the result of a third thing (a <em>confounder</em> or <em>lurking variable</em>) that acts on both;</li>
+<li class="fragment">If you were lucky enough to measure that confounder, then maybe you can account for its effects. If you weren’t so lucky, watch out!</li>
+<li class="fragment">If you want to have a prayer of dealing with this, you need to think carefully about…</li>
+</ul></section></section><section><section id="data-collection-and-study-design" class="title-slide slide level1 center"><h1>2. Data collection and study design</h1>
 
 </section><section id="the-ideal-a-randomized-experiment" class="slide level2"><h2>The ideal: a randomized experiment</h2>
-</section><section id="why-is-that-the-ideal" class="slide level2"><h2>Why is that the ideal?</h2>
-</section><section id="the-reality" class="slide level2"><h2>The reality</h2>
+<ul>
+<li class="fragment">Recruit a large group of fast-food restaurants;</li>
+<li class="fragment">Randomly assign half to raise their minimum wage and half to keep it unchanged;</li>
+<li class="fragment">Let them operate normally for a suitable period of time;</li>
+<li class="fragment">Measure employment afterward and compare the treatment and control groups;</li>
+<li class="fragment">Because the groups were created by random assignment, any systematic difference in employment can plausibly be attributed to the wage increase.</li>
+</ul></section><section id="why-is-that-ideal" class="slide level2 medium"><h2>Why is that ideal?</h2>
+<ul>
+<li class="fragment">Random assignment makes the treatment and control groups comparable from the start;</li>
+<li class="fragment">On average, any differences between the groups are due to chance, not systematic differences in the kinds of restaurants they contain;</li>
+<li class="fragment">This protects us from confounding, including confounders we didn’t even know to measure;</li>
+<li class="fragment">If the groups differ systematically afterward, the minimum-wage increase is the most plausible explanation;</li>
+<li class="fragment">In short: randomization gives us a credible comparison, and therefore a plausible basis for a causal conclusion.</li>
+</ul></section><section id="the-reality-for-our-example" class="slide level2"><h2>The reality (for our example)</h2>
+<ul>
+<li class="fragment">Who the hell even has the power to impose such a thing?</li>
+<li class="fragment">Who’s going to give you permission to do that?</li>
+<li class="fragment">Why would restaurants (especially the ones being assigned to hike wages) agree to participate?</li>
+<li class="fragment">How would the workers feel?</li>
+<li class="fragment">How much would it cost to administer such a study?</li>
+</ul>
+<div class="fragment">
+<p>For many causal questions we care about, cost, practicality, and ethics make it unfeasible to run the proper experiment that would actually be capable of answering the question.</p>
+</div>
 </section><section id="observational-data" class="slide level2"><h2>Observational data</h2>
-</section><section id="observational-data-causal-inference" class="slide level2"><h2>Observational data + causal inference = 🤮</h2>
+<blockquote>
+<p>Just seein’ what happened.</p>
+</blockquote>
+<ul>
+<li><p>The researcher “passively” collects measurements without intervening to manipulate anything. So they can’t dictate treatment versus control, and they don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.</p></li>
+<li><p>When experiments are unfeasible to carry out, these are the only data we have.</p></li>
+</ul></section><section id="observational-data-causal-inference" class="slide level2"><h2>Observational data + causal inference = 🤮</h2>
+<p>As you learned at your grandmother’s knee:</p>
 <blockquote>
 <p>Correlation does not imply causation.</p>
 </blockquote>
+<p>If we observe a mere association in observational data, we have all of our work ahead of us to argue that there is <em>nothing else going on</em>, and therefore the association can plausibly support a causal interpretation.</p>
 </section><section id="unless" class="slide level2"><h2>🤔 Unless…</h2>
-</section><section id="example-military-service-and-lifetime-earnings" class="slide level2"><h2>Example: military service and lifetime earnings</h2>
-<p>We obviously cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then observe them for the next twenty years.</p>
+<ul>
+<li>The four-leaf clover of applied statistics is the so-called “natural experiment;”</li>
+<li>This is a special kind of observational study where you <em>believe</em> that “nature” has created variation in treatment versus control that acts <em>as if</em> an experiment were performed;</li>
+<li>If you’re lucky and careful and shrewd, maybe you can use these special observational data to tell a plausible causal story.</li>
+</ul></section><section id="example-military-service-and-lifetime-earnings" class="slide level2"><h2>Example: military service and lifetime earnings</h2>
+<ul>
+<li class="fragment">Does serving in the military put you at an advantage or a disadvantage in terms of the amount of money you make over your lifetime (lifetime earnings)?</li>
+<li class="fragment">We don’t care about mere <em>conincidence</em>. We care about the causal effect of military service on lifetime earnings;</li>
+<li class="fragment">But obviously, we cannot run a laboratory experiment where we randomly assign subjects to tours of duty and then study their tax returns for the next twenty years.</li>
+</ul>
 <div class="fragment">
 <p>Or can we?</p>
 </div>
@@ -470,28 +520,87 @@ John Zito
 
 <img data-src="images/01/card-krueger.jpg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="card-and-krueger-1994-aer" class="slide level2"><h2>Card and Krueger (1994 AER)</h2>
 
-<img data-src="images/01/card-krueger-abstract.png" class="r-stretch"></section><section id="what-did-card-and-krueger-do" class="slide level2"><h2>What did Card and Krueger do?</h2>
-<p>the seemingly arbitrary placement of restaurants on either side of this border acts as if random assignment took place</p>
-</section><section id="discuss-problems-with-surveys" class="slide level2"><h2>Discuss problems with surveys</h2>
-</section><section id="we-have-the-data" class="slide level2"><h2>We have the data!</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section><section id="aside-variable-assignment--" class="slide level2"><h2>Aside: variable assignment <code>&lt;-</code>
-</h2>
-</section><section id="the-anatomy-of-a-data-frame" class="slide level2"><h2>The anatomy of a data frame</h2>
-<p><strong>data frame</strong></p>
+<img data-src="images/01/card-krueger-abstract.png" class="r-stretch"></section><section id="card-and-kruegers-main-idea" class="slide level2"><h2>Card and Krueger’s main idea</h2>
 <ul>
-<li>each row of a data frame is an <strong>observation</strong>;</li>
-<li>each column of a data frame is a <strong>variable</strong>.</li>
+<li>Restaurants on either side of the PA/NJ border are probably quite similar, but the NJ restaurants will be treated to a wage hike, and the PA restaurants will not;</li>
+<li>Because the placement of restaurants on either side of the border is largely arbitrary, we can compare these two groups <em>as if</em> an experiment were done;</li>
+<li>Any difference in employment patterns that we observe between the two groups can be attributed to the <em>causal effect</em> of the wage hike and not some other confounding factor.</li>
+</ul></section><section id="so-what-did-they-do" class="slide level2"><h2>So what did they do?</h2>
+<p>They <em>surveyed</em> restaurants before and after:</p>
+<ul>
+<li>Before the wage hike went into effect, they called a bunch of restaurants in both states and asked them about their business: how many workers they employ, the wage they pay, the prices they charge, etc;</li>
+<li>After the wage hike went into effect, they called the restaurants again and asked the same questions.</li>
+</ul></section><section id="any-concerns-about-survey-data" class="slide level2"><h2>Any concerns about <em>survey</em> data?</h2>
+<ul>
+<li class="fragment">What if some restaurants don’t respond? (inevitable)</li>
+<li class="fragment">If not, why not? Was non-response a <em>random</em> decision on their part, or are they hiding something?</li>
+<li class="fragment">How accurate are their responses? Does the person I got ahold of actually know the answers to my questions, or is this just a guesstimate?</li>
+<li class="fragment">Does the wording of the questions affect how they respond? (<a href="https://www.cnn.com/2019/03/22/politics/poll-questions-analysis">very possible</a>)</li>
+</ul>
+<div class="fragment">
+<p>Each of these is a source of <em>uncertainty</em> that affects the reliability of any downstream results.</p>
+</div>
+</section><section id="reality-check" class="slide level2 medium"><h2>Reality check</h2>
+<ul>
+<li class="fragment">You don’t just give up because the data aren’t perfect. They’ll never be perfect, if for no other reason that you would always enjoy <em>more</em>;</li>
+<li class="fragment">Alternative definition of data science, statistics, etc: “learning to make do with the data you actually have;”</li>
+<li class="fragment">Use the best techniques available to wring as much juice out of the data as possible…</li>
+<li class="fragment">…BUT THEN, be honest and faithful and rigorous about the limitations of your results. That’s the whole <em>uncertainty quantification</em> part.</li>
+</ul>
+<div class="fragment">
+<p>That last bit doesn’t always make statisticians the most popular (“can you please just tell me the 🤬ing answer?”), but it’s our professional duty 🫡.</p>
+</div>
+</section><section id="anyway-we-have-the-data" class="slide level2 small"><h2>Anyway, we have the data!</h2>
+<p>Behold, your second spreadsheet:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span>
+<span id="cb2-2"><a></a></span>
+<span id="cb2-3"><a></a>card_krueger</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 351 × 13
+      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte
+   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
+ 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  
+ 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  
+ 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5
+ 4   451 Burger…        0 PA        13      5        5       24       24    23.5
+ 5   455 KFC            1 PA         0      5.25     5       10       11    11  
+ 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  
+ 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5
+ 8   468 Burger…        0 PA       -29      5        5       18       18    58  
+ 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5
+10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5
+# ℹ 341 more rows
+# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section><section id="aside-variable-assignment--" class="slide level2 medium"><h2>Aside: variable assignment <code>&lt;-</code>
+</h2>
+<p>You just saw me do this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li class="fragment">This is called <em>variable assignment</em>. We’re saving an object so we can use it later;</li>
+<li class="fragment">
+<strong>Right-hand side</strong>: the thing you want to store (the data);</li>
+<li class="fragment">
+<strong>Left-hand side</strong>: the name you want to give it so you can refer to it later;</li>
+<li class="fragment">
+<strong>In the middle</strong>: the <em>assignment operator</em> <code>&lt;-</code>.</li>
+</ul></section><section id="the-anatomy-of-a-data-frame" class="slide level2"><h2>The anatomy of a data frame</h2>
+<p>A data frame is R’s version of a <em>spreadsheet.</em></p>
+<ul>
+<li>each row of a data frame is an <strong>observation</strong>, in this case a restaurant;</li>
+<li>each column of a data frame is a <strong>variable</strong>, a piece of information that was recorded about that restaurant.</li>
 </ul></section><section id="the-dimensions" class="slide level2"><h2>The dimensions</h2>
 <p>How many rows and columns?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">nrow</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">nrow</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 351</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ncol</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ncol</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 13</code></pre>
 </div>
@@ -518,133 +627,36 @@ John Zito
 <code>emp_diff</code>: <code>fte2 - fte</code>.</li>
 </ul></section><section id="your-first-taste-of-variable-types" class="slide level2 medium"><h2>Your first taste of variable types</h2>
 <p>The <code>chain</code> variable is an example of a <em>categorical</em> variable:</p>
-<div class="cell" wrap="false">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>card_krueger<span class="sc">$</span>chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>card_krueger<span class="sc">$</span>chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "Wendy's"     "Wendy's"     "Burger King" "Burger King" "KFC"        
-  [6] "KFC"         "Roy's"       "Burger King" "Burger King" "Burger King"
- [11] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
- [16] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
- [21] "Wendy's"     "Roy's"       "Roy's"       "Burger King" "Burger King"
- [26] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
- [31] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Wendy's"    
- [36] "KFC"         "Burger King" "Burger King" "Burger King" "Burger King"
- [41] "KFC"         "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
- [46] "Burger King" "Burger King" "KFC"         "Roy's"       "Burger King"
- [51] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
- [56] "Burger King" "KFC"         "Roy's"       "Wendy's"     "Burger King"
- [61] "Burger King" "Roy's"       "Roy's"       "Roy's"       "Burger King"
- [66] "Burger King" "Roy's"       "KFC"         "Burger King" "KFC"        
- [71] "KFC"         "KFC"         "Roy's"       "Wendy's"     "Roy's"      
- [76] "Roy's"       "Wendy's"     "Wendy's"     "Burger King" "Burger King"
- [81] "KFC"         "Wendy's"     "KFC"         "Roy's"       "Roy's"      
- [86] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
- [91] "KFC"         "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
- [96] "Burger King" "Burger King" "Roy's"       "Roy's"       "Wendy's"    
-[101] "Burger King" "Burger King" "Roy's"       "Roy's"       "Roy's"      
-[106] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
-[111] "KFC"         "Burger King" "KFC"         "KFC"         "KFC"        
-[116] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Burger King"
-[121] "Roy's"       "Wendy's"     "Wendy's"     "Wendy's"     "Burger King"
-[126] "Burger King" "Burger King" "Burger King" "Burger King" "Wendy's"    
-[131] "Wendy's"     "Burger King" "Burger King" "Burger King" "KFC"        
-[136] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
-[141] "Burger King" "KFC"         "Roy's"       "Roy's"       "Roy's"      
-[146] "Roy's"       "Burger King" "KFC"         "Roy's"       "Burger King"
-[151] "Burger King" "KFC"         "Roy's"       "Roy's"       "Wendy's"    
-[156] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
-[161] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[166] "Roy's"       "Roy's"       "Burger King" "Burger King" "Burger King"
-[171] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[176] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
-[181] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
-[186] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
-[191] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
-[196] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
-[201] "Wendy's"     "Wendy's"     "Wendy's"     "Burger King" "Burger King"
-[206] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
-[211] "Wendy's"     "Burger King" "Burger King" "Burger King" "Burger King"
-[216] "Burger King" "Burger King" "KFC"         "KFC"         "KFC"        
-[221] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
-[226] "Wendy's"     "Wendy's"     "Wendy's"     "KFC"         "Burger King"
-[231] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
-[236] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
-[241] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[246] "KFC"         "KFC"         "KFC"         "KFC"         "Roy's"      
-[251] "Roy's"       "Roy's"       "Wendy's"     "Wendy's"     "Burger King"
-[256] "Burger King" "Burger King" "Burger King" "Burger King" "KFC"        
-[261] "KFC"         "Roy's"       "Roy's"       "Wendy's"     "Wendy's"    
-[266] "Burger King" "KFC"         "Roy's"       "Burger King" "Burger King"
-[271] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[276] "KFC"         "KFC"         "KFC"         "Roy's"       "Roy's"      
-[281] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Wendy's"    
-[286] "Wendy's"     "Wendy's"     "Burger King" "Roy's"       "Roy's"      
-[291] "Roy's"       "Roy's"       "Wendy's"     "Burger King" "Burger King"
-[296] "Burger King" "Burger King" "KFC"         "KFC"         "Roy's"      
-[301] "Roy's"       "Burger King" "Burger King" "Burger King" "Burger King"
-[306] "Burger King" "KFC"         "KFC"         "Roy's"       "Roy's"      
-[311] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[316] "Roy's"       "Wendy's"     "Burger King" "Burger King" "Burger King"
-[321] "Burger King" "Burger King" "Burger King" "Burger King" "Burger King"
-[326] "KFC"         "KFC"         "Roy's"       "Roy's"       "Roy's"      
-[331] "Roy's"       "Roy's"       "Roy's"       "Roy's"       "Roy's"      
-[336] "Burger King" "Burger King" "KFC"         "Burger King" "Burger King"
-[341] "Burger King" "Burger King" "Burger King" "KFC"         "KFC"        
-[346] "KFC"         "KFC"         "KFC"         "Roy's"       "Wendy's"    
-[351] "Wendy's"    </code></pre>
+<pre><code>[1] "Wendy's"     "Wendy's"     "Burger King" "Burger King" "KFC"        
+[6] "KFC"        </code></pre>
 </div>
 </div>
+<div class="fragment">
 <p>The <code>wage_st</code> variable is an example of a <em>numerical</em> variable:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>card_krueger<span class="sc">$</span>meal_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>card_krueger<span class="sc">$</span>meal_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] 3.48 3.29 2.86 2.85 3.78 3.99 3.17 2.84 2.60 2.75 3.12 4.22 3.99 2.97 2.85
- [16] 3.00 3.11 3.96 3.00 2.68 3.34 3.16 3.15 2.66 2.60 2.65 2.67 2.67 2.48 5.40
- [31] 4.25 2.56 2.65 2.61 2.54 4.02 2.50 2.47   NA 2.49 4.28 2.50 3.48 2.53 2.72
- [46]   NA 2.63 4.20 2.89 2.72 2.93 2.72 2.81 2.65 2.74 2.74 4.02 3.10 2.60 2.62
- [61] 2.72 2.97 2.78 3.01   NA 2.81 4.72 4.40 2.95 4.25 4.65 4.65 3.04 4.50 3.42
- [76] 3.16 3.10 3.15 3.16 3.08 4.42 3.10 4.25 2.84 3.18 2.82 2.96 2.96 2.96 3.14
- [91] 4.10 3.20 3.33 3.20 3.01 3.08 3.20 3.27 3.15 2.86 2.77   NA 3.26 3.18 3.24
-[106] 2.72 2.72 4.15 4.03 3.99 3.88 3.02 4.25 4.25 4.37 4.42   NA   NA 2.82 2.73
-[121] 2.98 2.76 2.81 2.76 3.03 2.99   NA 3.16 3.54   NA 3.72 3.01 2.61 2.93 5.10
-[136] 4.19   NA 2.56 2.74 2.89 2.75 4.67 2.95   NA 4.08   NA 2.89 3.99 2.85 2.96
-[151] 3.02 4.63 3.20 3.20 4.04 2.98 2.96 2.96 3.40 3.11 3.07 3.03 2.96 4.57 5.21
-[166] 3.16 3.25 2.80 3.10 2.84 3.06 3.07   NA 4.42 4.73 4.33 4.42   NA 3.44 3.04
-[181] 2.73 2.99 2.96 3.07 3.34 3.24 2.97 3.07 3.62 3.02 2.92 3.15   NA 3.01 4.10
-[196] 3.19 4.64 3.25   NA 3.20 2.83 2.99 3.07 3.12 2.96 3.01 3.03 3.96 4.17 3.20
-[211] 2.86 2.96 3.08 3.20 2.99 3.04   NA 4.10 4.16 4.73 4.73 4.73 4.73 3.09 3.31
-[226] 2.82 2.79 2.97 3.99 2.95 3.03 2.75 2.96 3.12 4.25 2.98 3.07 2.96 2.92 2.78
-[241] 2.82 2.82 2.86 4.78 3.88 3.93 3.99 4.78 4.53 3.03   NA 2.88 2.61 2.76 2.96
-[256] 2.92 2.96 3.07 3.07 4.42 4.74 2.83 3.31 3.17 2.97 3.14   NA 4.59 2.88 2.87
-[271] 3.07 2.81 2.50 3.14 4.03 4.08 4.14 3.88 2.84 2.73   NA 2.92 2.92 2.92 2.79
-[286] 2.76 2.82 2.95 3.14 4.78 3.60 3.44 3.76 3.21 2.92 2.85 3.11 4.82 5.86 3.14
-[301] 2.94 2.72 2.86 2.92 2.86 2.76 4.03 4.03 3.09 2.87 2.69 2.79 2.78 4.31 4.25
-[316] 2.56 2.70 2.96 2.86 2.96 3.07 2.96 3.05   NA 2.96 4.78 5.21 4.47 3.20 3.24
-[331] 3.43 3.32 3.16 3.20 3.20 3.18 3.27 4.42 3.20 3.12 2.95 3.06 2.55 4.25 4.25
-[346] 4.25 4.25 4.25 3.26 4.07 3.10</code></pre>
+<pre><code>[1] 3.48 3.29 2.86 2.85 3.78 3.99</code></pre>
 </div>
 </div>
+</div>
+<div class="fragment">
 <p>The appropriate visualization or summary depends on the variable type.</p>
-</section><section id="scraps" class="slide level2"><h2>Scraps</h2>
-<p>What’s the ideal here? an experiemtn</p>
-<p>data collection is monstrously difficult, and very domain specific.</p>
-<p>julia’s eye ball anecdote. Are you going to throw that information away because it’s not perfect, or are you going to make do? Stats and data science: “learning to make do with the data you actually have.” Wring all of the juice out of it and acknolwedge the limitations of your results in the most faithful and transparent and informative way.</p>
-<p>what’s the ideal experiment a la angrist and pischke.</p>
-<p>Some controlled thing. Talk about study design and what’s special about randomized controlled experiments.</p>
-<p>Can we do this? maybe?</p>
-<p>site seattle minimum wage study. But it’s costly (time, money, you name it).</p>
-<p>what about observational data? can’t control anything</p>
-<p>Passively observe without intervening to manipulate anything. So you can’t control treatment versus control, and you don’t know if observed differences between groups are caused by the treatment or by some other lurking factors.</p>
-<p>data collection was simply a survey. What do you do if people don’t respond? Why didn’t they respond? What if their responses are not accurate or if they’re guessing?</p>
-<p>You try to do the best you can with the info you have, but it’s far from perfect, so how are you going to handle that uncertainty? that’s what we’re all about ti statistics.</p>
-<p>THE CHOICE TO NOT RESPOND IS NOT RANDOM. IT IS SYSTEMATICALLY HIDING SOMETHING FROM YOU. What do you do about it? In this class, not much, but it’s a source of <em>uncertainty</em> that statisticians grapple with.</p>
+</div>
 </section></section><section><section id="exploration" class="title-slide slide level1 center"><h1>3. Exploration</h1>
 
 </section><section id="babys-first-summary" class="slide level2"><h2>Baby’s first summary</h2>
 <p>How many restaurants do we observe in each state?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
-<span id="cb11-2"><a></a>  <span class="fu">count</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a></a>  <span class="fu">count</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 2
   state     n
@@ -655,8 +667,8 @@ John Zito
 </div>
 </section><section id="what-restaurant-chains-are-included" class="slide level2"><h2>What restaurant chains are included?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
-<span id="cb13-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
   chain           n
@@ -688,22 +700,26 @@ John Zito
 <div class="columns">
 <div class="column fragment" style="width:55%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 </div><div class="column fragment" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
-<span id="cb17-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 </div></div>
+<div class="fragment">
+<p>We will use it to build up data summaries and transformations step-by-step.</p>
+</div>
 </section><section id="like-a-russian-stacking-doll" class="slide level2"><h2>Like a Russian stacking doll</h2>
-</section><section id="next-lets-compare-states" class="slide level2"><h2>Next, let’s compare states</h2>
+
+<img data-src="images/01/two-dolls.png" class="quarto-figure quarto-figure-center r-stretch"></section><section id="next-lets-compare-states" class="slide level2"><h2>Next, let’s compare states</h2>
 <p>In order for Card and Krueger’s idea to hold water, the restaurants in NJ and PA should look broadly similar prior to the intervention.</p>
 <p>So let’s compare:</p>
 <ul>
@@ -715,8 +731,8 @@ John Zito
 <p>These are the overall totals. How do we get the totals <em>within</em> the states?</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb19-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
@@ -732,8 +748,8 @@ John Zito
 <p>Make it a <em>grouped</em> data frame:</p>
 <div class="cell columns column-output-location" wrap="false">
 <div class="column">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb21-2"><a></a>  <span class="fu">group_by</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb23-2"><a></a>  <span class="fu">group_by</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 </div></div>
@@ -741,9 +757,9 @@ John Zito
 <p>Subsequent calculations will now be done within the groups (eg. states):</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb22-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb22-3"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 3
@@ -764,12 +780,12 @@ John Zito
 <p>To directly compare, let’s look at <em>proportions</em>:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb24-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb24-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
-<span id="cb24-4"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb24-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
-<span id="cb24-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb26-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb26-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb26-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
@@ -790,13 +806,13 @@ John Zito
 <p>Let’s make it easier to compare by eye:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb26-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb26-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
-<span id="cb26-4"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb26-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
-<span id="cb26-6"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb26-7"><a></a>  <span class="fu">arrange</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb28-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb28-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb28-6"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb28-7"><a></a>  <span class="fu">arrange</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
@@ -819,11 +835,11 @@ John Zito
 <p>Start with a blank canvas:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">ggplot</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">ggplot</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -832,12 +848,12 @@ John Zito
 <p>What variables are we looking at?</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb29" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb29-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb31-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -847,13 +863,13 @@ John Zito
 <p>What kind of plot for this <em>numerical</em> variable:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb30" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb30-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb30-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb32-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb32-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -862,13 +878,13 @@ John Zito
 <p>Another option:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb31" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb31-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb31-3"><a></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb33-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb33-3"><a></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -878,18 +894,18 @@ John Zito
 <p>Add labels:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb32-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb32-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb32-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb32-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb32-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb32-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb32-8"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb34-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb34-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb34-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb34-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb34-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb34-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb34-8"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -899,83 +915,15 @@ John Zito
 <p>Increase font size and give it a minimalist look:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb33-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb33-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb33-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb33-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb33-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb33-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb33-8"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb33-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div></div>
-</section><section id="lets-compare-meal-prices-next-6" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
-<p>Distinguish the two states with color:</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb34-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb34-3"><a></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
-<span id="cb34-4"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb34-5"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb34-6"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb34-7"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb34-8"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb34-9"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb34-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div></div>
-</section><section id="lets-compare-meal-prices-next-7" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
-<p>Shade (fill) beneath the curves:</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb35-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb35-3"><a></a>           <span class="at">color =</span> state,</span>
-<span id="cb35-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
-<span id="cb35-5"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb35-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb35-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb35-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb35-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb35-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb35-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div></div>
-</section><section id="lets-compare-meal-prices-next-8" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
-<p>Make the color translucent:</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb36-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb36-3"><a></a>           <span class="at">color =</span> state,</span>
-<span id="cb36-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
-<span id="cb36-5"><a></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb36-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb36-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb36-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb36-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb36-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb36-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb35-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb35-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb35-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb35-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb35-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb35-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb35-8"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb35-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
@@ -984,32 +932,122 @@ John Zito
 </div>
 </div>
 </div></div>
-<p>These distributions look pretty similar.</p>
+</section><section id="lets-compare-meal-prices-next-6" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Distinguish the two states with color:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb36-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb36-3"><a></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
+<span id="cb36-4"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb36-5"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-6"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb36-7"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb36-8"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb36-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb36-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-7" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Shade (fill) beneath the curves:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb37" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb37-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb37-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb37-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb37-5"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb37-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb37-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb37-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb37-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb37-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-26-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="lets-compare-meal-prices-next-8" class="slide level2 small"><h2>Let’s compare meal prices next</h2>
+<p>Make the color translucent:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb38" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb38-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb38-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb38-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb38-5"><a></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb38-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb38-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb38-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb38-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb38-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb38-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-27-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="fragment">
+<p>These distributions look <em>pretty</em> similar.</p>
+</div>
 </section><section id="dataviz-with-ggplot-is-like-building-a-cake" class="slide level2"><h2>Dataviz with ggplot is like building a cake</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <p><img data-src="images/01/cake.jpg"></p>
 </div><div class="column fragment" style="width:65%;">
-<p>XXX</p>
+<ul>
+<li>Every plot element is a new layer, and you stack ’em up;</li>
+<li>If the different commands are like the layers of sponge, then the plus signs in between are like the icing. Don’t forget the icing!</li>
+</ul>
 </div></div>
-</section><section id="compare-hours-of-operation" class="slide level2"><h2>Compare hours of operation</h2>
+</section><section id="the-grammar-of-graphics" class="slide level2"><h2>The grammar of graphics</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>This design philosophy is described in the book <em>The Grammar of Graphics</em> and implemented in the <code>ggplot2</code> package.</p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="images/01/gg-book.png"></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/01/gg-layers.png"></p>
+</div></div>
+</section><section id="compare-hours-of-operation-prior-to-nj-hike" class="slide level2"><h2>Compare hours of operation (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section><section id="compare-starting-wage-prior-to-nj-hike" class="slide level2"><h2>Compare starting wage (prior to NJ hike)</h2>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section><section id="compare-starting-wage-prior-to-nj-hike" class="slide level2"><h2>Compare starting wage (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section><section id="compare-number-of-workers-prior-to-nj-hike" class="slide level2"><h2>Compare number of workers (prior to NJ hike)</h2>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section><section id="compare-number-of-workers-prior-to-nj-hike" class="slide level2"><h2>Compare number of workers (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section><section id="so-far-so-good" class="slide level2"><h2>So far so good</h2>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section><section id="so-far-so-good" class="slide level2"><h2>So far so good</h2>
 <p>These data seem to pass the first sanity check: prior to “treatment,” the restaurants looked roughly comparable across the two states. What about after treatment?</p>
 </section><section id="the-emp_diff-variable" class="slide level2"><h2>The <code>emp_diff</code> variable</h2>
-<p>If this is positive, the restaurant added workers If zero, no change if negative, they shed workers</p>
-<p>If the ECON 101 story is correct, we expect emp_diff to be lower on average for NJ than for PA. Nothing changed in PA, so they should be close to zero. NJ got a wage hike, so they should be negative.</p>
-</section><section id="section" class="slide level2"><h2></h2>
+<p>This is employment after the wage hike minus employment before the wage hike:</p>
+<ul>
+<li>
+<code>emp_diff &gt; 0</code>: the restaurant added workers;</li>
+<li>
+<code>emp_diff == 0</code>: the restaurant didn’t change;</li>
+<li>
+<code>emp_diff &lt; 0</code>: the restaurant shed workers.</li>
+</ul>
+<p>If the ECON 101 story is correct, we expect <code>emp_diff</code> to be lower on average for NJ than for PA.</p>
+</section><section id="so-how-about-it" class="slide level2"><h2>So how about it?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb37-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb37-3"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb37-4"><a></a>    <span class="at">avg_emp_diff =</span> <span class="fu">mean</span>(emp_diff)</span>
-<span id="cb37-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb39-3"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb39-4"><a></a>    <span class="at">avg_emp_diff =</span> <span class="fu">mean</span>(emp_diff)</span>
+<span id="cb39-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 2
   state avg_emp_diff
@@ -1023,15 +1061,66 @@ John Zito
 </div>
 </section><section id="pics-or-it-didnt-happen" class="slide level2"><h2>Pics or it didn’t happen</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section><section id="pause" class="slide level2"><h2>Pause</h2>
-<p>If the ECON 101 story is true, then the minimum wage hike should put NJ below PA in negative territory. Based on pictures and summaries, it seems like NJ is doing about the same as PA, if not better.</p>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section><section id="pause" class="slide level2"><h2>Pause</h2>
+<p>If the ECON 101 story is true, then the minimum wage hike should put NJ below PA, either adding fewer workers, or literally laying them off. Pictures and simple summaries are not showing that.</p>
+<p>Now what?</p>
 </section></section><section><section id="modeling" class="title-slide slide level1 center"><h1>4. Modeling</h1>
 
-</section><section id="section-1" class="slide level2"><h2></h2>
+</section><section id="data-do-not-speak-for-themselves" class="slide level2"><h2>Data do not speak for themselves</h2>
+<ul>
+<li>Pictures and summaries are <em>powerful</em>, and they can get you very far, but they cannot do everything;</li>
+<li>Data do not speak for themselves, and there is no such thing as a “neutral” analysis. We are always making assumptions, whether they are implicit or explicit;</li>
+<li>In general, it is better that our assumptions be <em>explicit</em>, and the most rigorous way to achieve this is with a <em>mathematical model</em>.</li>
+</ul></section><section id="what-do-i-mean-by-a-model" class="slide level2 medium"><h2>What do I mean by a “model”?</h2>
+<p>Think of the “line of best fit:”</p>
+
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>This is an example of a <em>linear regression model</em>. All of the models in our class will have this flavor.</p>
+</div>
+</section><section id="why-do-we-need-one-here" class="slide level2 medium"><h2>Why do we need one here?</h2>
+<p>(this is where things will start to get technical…)</p>
+<div class="fragment">
+<p>Our analysis has several ingredients:</p>
+<ul>
+<li class="fragment">Response variable <span class="math inline">\(y_i\)</span>: that’s <code>emp_diff</code>;</li>
+<li class="fragment">Treatment variable <span class="math inline">\(T_i\)</span>: the <code>state</code>, NJ or PA;</li>
+<li class="fragment">Extra covariates <span class="math inline">\(\mathbf{x}_i\)</span>: <code>chain</code>, <code>hrsopen</code>, <code>meal_price</code>, etc.</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Our goal is to estimate the (causal!) effect that the treatment has on the response. In order to make sure we are isolating the causal effect of the treatment, unconfounded by other factors, we may want to <em>control</em> for the extra covariates. A model helps us do this.</p>
+</div>
+</section><section id="the-only-equation-today" class="slide level2 medium"><h2>The only equation today</h2>
+<p>(feel free to avert your gaze)</p>
+<div class="fragment">
+<p>Here’s a linear regression model for the data:</p>
+<p><span class="math display">\[
+y_i = \alpha + \tau T_i+\mathbf{x}_i^{\scriptscriptstyle\mathsf{T}}\boldsymbol{\beta}+\varepsilon_i,
+\]</span></p>
+<p>where <span class="math inline">\(y_i\)</span> is <code>emp_diff</code>, <span class="math inline">\(\mathbf{x}_i\)</span> is a collection of covariates, and</p>
+<p><span class="math display">\[
+T_i
+=
+\begin{cases}
+0 &amp; \text{for PA}\\
+1 &amp; \text{for NJ}.
+\end{cases}
+\]</span></p>
+</div>
+<div class="fragment">
+<p>So <span class="math inline">\(\tau\)</span> is the average difference between <code>emp_diff</code> in NJ and in PA. ECON 101 says this should be negative. Our exploratory analysis looked like it was zero, or possibly even positive.</p>
+</div>
+</section><section id="its-not-as-bad-as-it-looks" class="slide level2"><h2>It’s not as bad as it looks</h2>
+<ul>
+<li>In this class, math is primarily a language that we will use to concisely communicate certain technical ideas;</li>
+<li>You will not <em>do</em> a tremendous amount of math in the sense of pencil-and-paper calculations, but you will be expected to read and interpret certain mathematical expressions;</li>
+<li>In a few weeks you will start to see a lot of equations like the previous slide, and we will help you become a fluent reader of them.</li>
+</ul></section><section id="estimating-the-model-in-r" class="slide level2 medium"><h2>Estimating the model in R</h2>
+<p>There’s that pipe again:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb39-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger) <span class="sc">|&gt;</span></span>
-<span id="cb39-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger) <span class="sc">|&gt;</span></span>
+<span id="cb41-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 5
   term         estimate std.error statistic p.value
@@ -1044,18 +1133,22 @@ John Zito
 6 co_owned        0.373      1.10     0.339  0.735 </code></pre>
 </div>
 </div>
-</section><section id="good-for-them" class="slide level2"><h2>Good for them!</h2>
+<div class="fragment">
+<p>The <code>estimate</code> on <code>stateNJ</code> is what we interpret as the <em>treatment effect</em>.</p>
+</div>
+</section><section id="interpretation" class="slide level2"><h2>Interpretation</h2>
+<p>Our estimate of the treatment effect is roughly 2.3, with a standard error of 1.2;</p>
+<ul>
+<li>On average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a <em>better</em> outcome compared to PA;</li>
+<li>The <em>standard error</em> is a metric that speaks to uncertainty quantification. The larger it is, the less certain we are of the estimate. More on this later.</li>
+</ul></section><section id="btw-three-cheers-for-reproducible-research" class="slide level2"><h2>BTW: three cheers for reproducible research</h2>
 
-<img data-src="images/01/card-krueger-result.png" class="r-stretch"></section><section id="scraps-1" class="slide level2"><h2>Scraps</h2>
-<p>Data do not speak for themselves. You need some sort of interpretive lens. The most rigorous form of lens is a mathematical model.</p>
-<p>include screenshot of card and krueger table and show that the numbers are the same. yay reproducibility</p>
-<p>pictures and summaries are great, and they can do a lot of work, but at the end of the day: data do not speak for themselves. We always have to bring domain knowledge and an interpretive lens. It’s best if we are as explicit about assumptions as possible, and the most rigorous way to do this is with a formal mathematical model.</p>
-</section></section><section><section id="statistical-inference" class="title-slide slide level1 center"><h1>5. Statistical inference</h1>
+<img data-src="images/01/card-krueger-result.png" class="quarto-figure quarto-figure-center r-stretch"></section></section><section><section id="statistical-inference" class="title-slide slide level1 center"><h1>5. Statistical inference</h1>
 
 </section><section id="our-point-estimate" class="slide level2"><h2>Our point estimate</h2>
 <p>Our headline finding:</p>
 <blockquote>
-<p>On average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a <em>better</em> outcome than PA.</p>
+<p>On average, employment increased by about 2.3 more workers in New Jersey restaurants than in Pennsylvania restaurants. So if anything, NJ had a <em>better</em> outcome compared to PA.</p>
 </blockquote>
 <div class="fragment">
 <p>Is this a slam dunk, money-in-the-bank, bulletproof result? Of course not. It’s the best we can do with the imperfect data we have. So let’s be honest and faithful and say something about its reliability.</p>
@@ -1076,12 +1169,132 @@ John Zito
 <li class="fragment">The variation of your estimates across these different datasets is called <em>sampling variation</em>;</li>
 <li class="fragment">If the variation is high, that’s bad for reliability. If the variation is low, that’s better;</li>
 <li class="fragment">Quantifying the extent of this variation allows you to report on the uncertainty of your conclusions.</li>
-</ul></section><section id="different-data-different-result" class="slide level2"><h2>Different data, different result</h2>
-<p>bloop</p>
-</section><section id="different-data-different-result-1" class="slide level2"><h2>Different data, different result</h2>
-<p>bloop</p>
-</section><section id="different-data-different-result-2" class="slide level2"><h2>Different data, different result</h2>
-<p>bloop</p>
+</ul></section><section id="different-data-different-result" class="slide level2 small"><h2>Different data, different result</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Redo the survey and get a new data frame:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 351 × 4
+   emp_diff state chain       co_owned
+      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;
+ 1    -2    NJ    KFC                0
+ 2     6    NJ    Burger King        0
+ 3    -3    NJ    Roy's              1
+ 4     3.25 PA    KFC                1
+ 5     0    PA    Wendy's            0
+ 6     4    NJ    KFC                0
+ 7     2    NJ    Burger King        1
+ 8     2    NJ    Burger King        1
+ 9    14.8  NJ    KFC                1
+10     2.5  NJ    Burger King        0
+# ℹ 341 more rows</code></pre>
+</div>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p>Rerun the regression and get a new estimate:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb44-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb44-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb44-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  term         estimate std.error
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)   -0.187       1.12
+2 stateNJ        0.689       1.13
+3 chainKFC       0.677       1.34
+4 chainRoy's    -1.98        1.32
+5 chainWendy's  -0.0917      1.39
+6 co_owned       0.0815      1.07</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="different-data-different-result-1" class="slide level2 small"><h2>Different data, different result</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Redo the survey and get a new data frame:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 351 × 4
+   emp_diff state chain       co_owned
+      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;
+ 1     8.5  NJ    Burger King        1
+ 2    -0.5  NJ    Roy's              1
+ 3     5.5  NJ    Burger King        1
+ 4    -2    NJ    KFC                0
+ 5    -1.5  NJ    KFC                1
+ 6     2.5  NJ    Burger King        0
+ 7     3.5  NJ    Burger King        0
+ 8     4    NJ    Burger King        0
+ 9     0    NJ    Burger King        0
+10     8.25 NJ    Burger King        0
+# ℹ 341 more rows</code></pre>
+</div>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p>Rerun the regression and get a new estimate:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb47-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb47-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb47-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  term         estimate std.error
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)   -1.02        1.32
+2 stateNJ        1.26        1.27
+3 chainKFC       0.0746      1.29
+4 chainRoy's    -1.72        1.36
+5 chainWendy's  -0.707       1.69
+6 co_owned       1.29        1.14</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="different-data-different-result-2" class="slide level2 small"><h2>Different data, different result</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Redo the survey and get a new data frame:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 351 × 4
+   emp_diff state chain       co_owned
+      &lt;dbl&gt; &lt;fct&gt; &lt;chr&gt;          &lt;dbl&gt;
+ 1     -6.5 NJ    KFC                0
+ 2     -4   NJ    Burger King        0
+ 3     -7   NJ    Roy's              1
+ 4    -13   NJ    KFC                1
+ 5     -1.5 NJ    Burger King        0
+ 6      2.5 NJ    KFC                1
+ 7     19   PA    Burger King        0
+ 8      3.5 NJ    Burger King        0
+ 9     13.2 NJ    Roy's              1
+10     -3   NJ    KFC                0
+# ℹ 341 more rows</code></pre>
+</div>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<p>Rerun the regression and get a new estimate:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb50-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb50-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb50-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  term         estimate std.error
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)     0.930     1.18 
+2 stateNJ         0.438     1.15 
+3 chainKFC       -0.751     1.21 
+4 chainRoy's     -3.05      1.22 
+5 chainWendy's   -1.82      1.41 
+6 co_owned        0.333     0.996</code></pre>
+</div>
+</div>
+</div></div>
 </section><section id="the-full-monty" class="slide level2"><h2>The Full Monty</h2>
 
 <img data-src="images/01/sampling-variation-1.png" class="r-stretch"></section><section id="the-full-monty-1" class="slide level2"><h2>The Full Monty</h2>
@@ -1101,14 +1314,21 @@ John Zito
 <img data-src="images/01/sampling-variation-8.png" class="r-stretch"></section><section id="the-sampling-distribution-for-our-example" class="slide level2"><h2>The sampling distribution for our example</h2>
 <p>What do you think? Are our conclusions reliable?</p>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section><section id="conclusion" class="slide level2"><h2>Conclusion</h2>
-</section><section id="towards-quantifying-uncertainty" class="slide level2 medium"><h2>Towards quantifying uncertainty</h2>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-41-1.png" width="960" class="r-stretch"></section><section id="conclusion" class="slide level2"><h2>Conclusion</h2>
+<ul>
+<li class="fragment">Genuine uncertainty remains about the specific numerical value;
+<ul>
+<li class="fragment">2.3 may be our best guess, but if “the truth” ends up being 0, 1, 3, 4, or 5, don’t be surprised. Based on the data we have, you can’t rule that out;</li>
+</ul>
+</li>
+<li class="fragment">However, the data are speaking pretty loudly that the estimate is more likely to be positive than negative; <em>Qualitatively</em>, the evidence for the usual ECON 101 story is looking weak.</li>
+</ul></section><section id="towards-quantifying-uncertainty" class="slide level2 medium"><h2>Towards quantifying uncertainty</h2>
 <p>What if our sampling distribution had looked like one of these?</p>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-32-1.png" width="1152" class="r-stretch"><div class="fragment">
-<p>Measuring the <em>spread</em> of the sampling distribution allows us to quantify uncertainty about the conclusions.</p>
+<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-42-1.png" width="1152" class="r-stretch"><div class="fragment">
+<p>Measuring the <em>spread</em> of the sampling distribution allows us to quantify uncertainty about the conclusions. That’s what the <em>standard error</em> does.</p>
 </div>
-</section><section id="reality-check" class="slide level2 medium"><h2>Reality check</h2>
+</section><section id="reality-check-1" class="slide level2 medium"><h2>Reality check</h2>
 <ul>
 <li class="fragment">This idea of “redoing the survey to see how the results change” is more of a thought experiment;</li>
 <li class="fragment">If collecting new data were so easy, we would have collected a bigger sample to begin with;</li>
@@ -1122,16 +1342,7 @@ John Zito
 <div class="fragment">
 <p>More on all that in…nine weeks.</p>
 </div>
-</section><section id="scraps-2" class="slide level2"><h2>Scraps</h2>
-<p>new survey new estimate</p>
-<p>modeling produces a result. How reliable is this result? If we kept surveying restaurants, would this result remain stable, or would it change? How sensitive is the result to our particular data?</p>
-<p>sampling variability.</p>
-<p>we got this estimate. Is it reliable? How uncertain are we about it? What do we mean.</p>
-<p>What we’re worried about: if I collected a new dataset (sent the survey out to a different set fo restaurants), I’d get a different result.</p>
-<p>a negative estimate is not really on the menu of options, so the data seem to be speaking fairly loudly that the minimum wage did not have an ill effect in this case. But about that…</p>
-<p>there remains some uncertainty about the specific numerical result: 0, 1, 2, 3, 4, 5</p>
-<p>The qualitative finding that NJ is not worse than PA (if anything it’s better) seems to hold up.</p>
-</section></section><section><section id="interpretation" class="title-slide slide level1 center"><h1>6. Interpretation</h1>
+</section></section><section><section id="interpretation-1" class="title-slide slide level1 center"><h1>6. Interpretation</h1>
 
 </section><section id="at-the-end-of-the-day" class="slide level2"><h2>At the end of the day</h2>
 <p>Data analysis is just a sophisticated form of <em>rhetoric</em>. We’re trying to marshall facts to convince other humans of claims. If a living, breathing person is not convinced, then none of it actually matters.</p>
@@ -1141,12 +1352,14 @@ John Zito
 <div class="fragment">
 <p>Do you think this is plausible?</p>
 </div>
-</section><section id="things-to-keep-you-up-at-night" class="slide level2"><h2>Things to keep you up at night</h2>
+</section><section id="things-to-keep-you-up-at-night" class="slide level2 small"><h2>Things to keep you up at night</h2>
 <ul>
-<li>Let’s face it: random assignment <em>did not</em> take place here.</li>
-</ul>
-<p>NJ chose to raise the minimum wage for specific reasons, and those underlying reasons could be related to</p>
-</section></section><section><section id="parting-thoughts" class="title-slide slide level1 center"><h1>Parting thoughts</h1>
+<li class="fragment">Let’s face it: this wasn’t an experiment; Random assignment <em>did not</em> take place here;</li>
+<li class="fragment">NJ chose to raise the minimum wage for specific reasons, and PA didn’t. If those reasons mean that underlying conditions in NJ are systematically different from those in PA, this could confound the relationship;</li>
+<li class="fragment">If NJ was on a different economic trajectory to begin with (NJ on the upswing and PA on the downswing), then we might be observing <em>that</em> difference, and nothing to do with the minimum wage;</li>
+<li class="fragment">Was “before” really “before”? NJ restaurants knew in advance that the wage hike was coming. It wasn’t a surprise. How do we know they hadn’t already started adjusting before Card and Krueger made their first call?</li>
+<li class="fragment">Even if we found the causal argument completely convincing, does it <em>generalize</em>? What, if anything, can this study teach us about larger wage hikes in different industries elsewhere?</li>
+</ul></section></section><section><section id="parting-thoughts" class="title-slide slide level1 center"><h1>Parting thoughts</h1>
 
 </section><section id="further-reading" class="slide level2 small"><h2>Further reading</h2>
 <p>Dive in if you’re interested:</p>
@@ -1171,9 +1384,8 @@ John Zito
 <li class="fragment">The gold standard for isolating a causal effect is a randomized, controlled experiment, but sometimes these are costly and impractical (or downright unethical) to perform;</li>
 <li class="fragment">Observational data can sometimes support causal claims, but causation does not magically emerge from comparing two groups. You need a design and an argument about why the comparison isolates the treatment;</li>
 <li class="fragment">Data do not speak for themselves. Every analysis requires assumptions about how the world works. Explicit mathematical models force us to state those assumptions clearly;</li>
-<li class="fragment">(FINISH) Data are not manna from heaven…</li>
-<li class="fragment">(REVISE) Don’t let the perfect be the enemy of the good. Data analysis is always constrained optimization. There are ideals we don’t live up to. Just trying to do the best you can with what you’ve got;</li>
-<li class="fragment">(REVISE) A good data analysis is honest about what the data can and cannot tell us. Statistical inference is all about quantifying uncertainty about our results.</li>
+<li class="fragment">Data are not manna from heaven. The data collection process is subject to countless flaws and compromises, and at some point you need to get on with it and make do. We’re trying to do the best we can with what we’ve got;</li>
+<li class="fragment">But because of that, all data analysts have a responsibility to honestly and faithfully report the limitations of their results by <em>quantifying uncertainty</em>. That’s what <em>statistics</em> is all about.</li>
 </ul></section><section id="computational-themes" class="slide level2 medium"><h2>Computational themes</h2>
 <p>Every coding task in this class will be some combo of these two things:</p>
 <div class="fragment">
