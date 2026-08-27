@@ -565,7 +565,7 @@ head(card_krueger$chain)
 
 . . .
 
-The `wage_st` variable is an example of a *numerical* variable:
+The `meal_price` variable is an example of a *numerical* variable:
 
 ```{r}
 #| eval: false
