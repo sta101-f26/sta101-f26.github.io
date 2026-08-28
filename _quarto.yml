@@ -53,6 +53,9 @@ website:
           - href: index.qmd
             text: Schedule
       - section: "Labs"
+        contents:
+          - href: lab/lab-0.qmd
+            text: Lab 0
       - section: "Homeworks"
       - section: "Project"
       - section: "Exam Study Guides"
