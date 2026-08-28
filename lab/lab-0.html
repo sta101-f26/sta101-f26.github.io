@@ -99,10 +99,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <meta property="og:title" content="Lab 0 – STA 101 Fall 2026">
 <meta property="og:description" content="Homepage for STA 101 Data Analysis and Statistical Inference at Duke University (Fall 2026)">
-<meta property="og:image" content="https://sta101-f26.github.io/lab/images/tour-r-rstudio.png">
+<meta property="og:image" content="https://sta101-f26.github.io/lab/images/project-none.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
-<meta property="og:image:height" content="879">
-<meta property="og:image:width" content="1651">
+<meta property="og:image:height" content="88">
+<meta property="og:image:width" content="467">
 </head>
 <body class="nav-sidebar docked quarto-light">
 
@@ -233,7 +233,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#accessing-rstudio" id="toc-accessing-rstudio" class="nav-link active" data-scroll-target="#accessing-rstudio">Accessing RStudio</a></li>
+<li>
+<a href="#accessing-rstudio-and-the-course-files" id="toc-accessing-rstudio-and-the-course-files" class="nav-link active" data-scroll-target="#accessing-rstudio-and-the-course-files">Accessing RStudio and the course files</a>
+  <ul class="collapse">
+<li><a href="#get-into-your-container" id="toc-get-into-your-container" class="nav-link" data-scroll-target="#get-into-your-container">Get into your container</a></li>
+  <li><a href="#connect-your-container-to-the-course-files" id="toc-connect-your-container-to-the-course-files" class="nav-link" data-scroll-target="#connect-your-container-to-the-course-files">Connect your container to the course files</a></li>
+  </ul>
+</li>
   <li>
 <a href="#the-lay-of-the-land" id="toc-the-lay-of-the-land" class="nav-link" data-scroll-target="#the-lay-of-the-land">0. The lay of the land</a>
   <ul class="collapse">
@@ -286,14 +292,15 @@ There’s nothing to turn in today.
 <p>We’re not grading today’s activity. Just follow along with the TA and ask a million questions.</p>
 </div>
 </div>
-<section id="accessing-rstudio" class="level2"><h2 class="anchored" data-anchor-id="accessing-rstudio">Accessing RStudio</h2>
+<section id="accessing-rstudio-and-the-course-files" class="level2"><h2 class="anchored" data-anchor-id="accessing-rstudio-and-the-course-files">Accessing RStudio and the course files</h2>
+<section id="get-into-your-container" class="level3"><h3 class="anchored" data-anchor-id="get-into-your-container">Get into your container</h3>
 <p>First, we’ve gotta get the car out of the garage. In this class, we will always and everywhere access RStudio through the <a href="https://cmgr.oit.duke.edu/containers">Duke Container Manager</a>. I assure you it makes everyone’s life easier. So please do the following:</p>
 <ol type="1">
 <li><p>Go here: <a href="https://cmgr.oit.duke.edu/containers" class="uri">https://cmgr.oit.duke.edu/containers</a>. You may have to log in with your NetID at some point;</p></li>
 <li><p>(The first time you do this, you look for STA101 under “Reservations available” on the righthand side, and click “reserve STA101”. After you do that once, STA101 will appear under “My reservations” on the lefthand side forever more)</p></li>
 <li><p>Click STA101 under “My reservations”;</p></li>
 <li><p>Login;</p></li>
-<li><p>Start. It may take a while, but then <code>RStudio</code> should launch in your browser.</p></li>
+<li><p>Start. It may take a while (let the spinning wheel do its thing), but then <code>RStudio</code> should launch in your browser.</p></li>
 </ol>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -308,7 +315,50 @@ Please use the correct container!
 <p>Please double check that you have reserved the STA101 container and not something else.</p>
 </div>
 </div>
-</section><section id="the-lay-of-the-land" class="level2"><h2 class="anchored" data-anchor-id="the-lay-of-the-land">0. The lay of the land</h2>
+</section><section id="connect-your-container-to-the-course-files" class="level3"><h3 class="anchored" data-anchor-id="connect-your-container-to-the-course-files">Connect your container to the course files</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We should only have to do this once at the beginning of the semester, and then it will serve us for the remainder of term.</p>
+</div>
+</div>
+<p>I now ask you to connect your container to a file management system that <em>I will use</em>. There are a few steps here, but once it’s done, you just have to sit back while I broadcast the course files to you throughout the semester.</p>
+<p>Please do the following:</p>
+<ol type="1">
+<li>Click <img src="images/project-none.png" class="img-fluid" style="width:30.0%"> in the upper right;</li>
+<li>Click <img src="images/new-project.png" class="img-fluid" style="width:30.0%"> in the drop-down menu;</li>
+<li>Click <img src="images/version-control.png" class="img-fluid" style="width:30.0%"> in the dialog box;</li>
+<li>Click <img src="images/git.png" class="img-fluid" style="width:30.0%"> in the dialog box;</li>
+<li>Input these and <strong>Create Project</strong>:
+<ul>
+<li>Repository URL: <a href="https://github.com/sta101-f26/sta101-f26-files.git" class="uri">https://github.com/sta101-f26/sta101-f26-files.git</a>
+</li>
+<li>Project directory name: <code>sta101-f26-files</code>
+</li>
+</ul>
+</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+101 versus 199
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The file management system I am using is <strong>Git</strong> and <strong>GitHub</strong>. It’s great, and it’s widely used in professional data science. If you were taking 199, we would teach you how to use this system yourself. In 101, we skip this, and in exchange go deeper on statistical inference topics. So, if you’re still on the fence between the two, that’s one of the concrete differences.</p>
+</div>
+</div>
+</section></section><section id="the-lay-of-the-land" class="level2"><h2 class="anchored" data-anchor-id="the-lay-of-the-land">0. The lay of the land</h2>
 <section id="r-rstudio" class="level3"><h3 class="anchored" data-anchor-id="r-rstudio">R + RStudio</h3>
 <p><strong>R</strong> is a programming language that statisticians created to make their work easier. If you learn to “speak” this language, you can instruct a computer to perform data analysis tasks that would be tedious to perform by hand. <strong>RStudio</strong> is a convenient interface that allows you to use R in a clean and organized way. If R is the <em>engine</em>, then RStudio is the <em>dashboard</em>.</p>
 <p>When you open your container and launch RStudio in your browser, you should see something like this:</p>
@@ -337,7 +387,7 @@ Please use the correct container!
 <li>You can also include nicely formatted equations and math notation in your Quarto documents, but we’ll deal with that later.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -346,7 +396,7 @@ Why don’t we learn something like Excel?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Firstly, Excel is not cute, which should bother all of us. But more importantly, work in Excel can be very difficult to <strong>reproduce</strong>, which will be an important consideration for us. If you’ve ever been unfortunate enough to inherit an Excel spreadsheet from someone else (especially one littered with hidden formulas inside random cells), it can be very difficult to understand what was done, why it was done, what order it was done in, and whether or not it’s correct. Even if it’s a spreadsheet <em>you created</em>, if you step away from it for a while, you might return and wonder “wait, how did I do this again?” This is no good.</p>
 <p>Code is different. It’s just a sequence of written instructions, one after another. You can read the code from top to bottom and see with the naked eye what was done and in what order. Furthermore, when you augment this with a system like Quarto, it’s easy to place next to the code detailed written explanations of <em>why</em> you did what you did. This is a much better way to work, and professional data analysis increasingly relies on code.</p>
@@ -734,7 +784,7 @@ The pipe operator <code>|&gt;</code>
 3 Gentoo      124 0.360</code></pre>
 </div>
 </div>
-<p>But it’s much more cramped and difficult to read. The pipe operator allows up to lay everything out in a linear, step-by-step fashion: first this happened, then this happened, then this happened, etc.</p>
+<p>But it’s much more cramped and difficult to read. The pipe operator allows us to lay everything out in a linear, step-by-step fashion: first this happened, then this happened, then this happened, etc.</p>
 </div>
 </div>
 </section><section id="code-style" class="level2"><h2 class="anchored" data-anchor-id="code-style">6. Code style</h2>
