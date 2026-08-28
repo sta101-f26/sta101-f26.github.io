@@ -54,7 +54,7 @@ Quarto is a technical publishing system that allows you to write documents where
 
 Here's what it looks like when I use Quarto inside RStudio:
 
-![](images/tour-quarto.png)
+![](images/quarto.png)
 
 In the upper left, I have the editor open, and I'm working on a `.qmd` file. This is just a text file with a special format. When I'm done editing, I hit the **Render** button (circled in red), and if there are no errors, a nice `.pdf` file is produced, either in the Viewer tab in the bottom right or in a new tab in my browser.
 
