@@ -10,7 +10,9 @@ This lab serves as a "one-stop shop" for the basic coding skills we will need in
 We're not grading today's activity. Just follow along with the TA and ask a million questions.
 :::
 
-## Accessing RStudio
+## Accessing RStudio and the course files
+
+### Get into your container
 
 First, we've gotta get the car out of the garage. In this class, we will always and everywhere access RStudio through the [Duke Container Manager](https://cmgr.oit.duke.edu/containers). I assure you it makes everyone's life easier. So please do the following:
 
@@ -22,13 +24,38 @@ First, we've gotta get the car out of the garage. In this class, we will always 
 
 4.  Login;
 
-5.  Start. It may take a while, but then `RStudio` should launch in your browser.
+5.  Start. It may take a while (let the spinning wheel do its thing), but then `RStudio` should launch in your browser.
 
 ::: callout-important
 ## Please use the correct container!
 
 Please double check that you have reserved the STA101 container and not something else.
 
+:::
+
+### Connect your container to the course files
+
+::: callout-important
+We should only have to do this once at the beginning of the semester, and then it will serve us for the remainder of term.
+:::
+
+I now ask you to connect your container to a file management system that *I will use*. There are a few steps here, but once it's done, you just have to sit back while I broadcast the course files to you throughout the semester.
+
+Please do the following:
+
+1. Click ![](images/project-none.png){width="30%"} in the upper right;
+1. Click ![](images/new-project.png){width="30%"} in the drop-down menu;
+1. Click ![](images/version-control.png){width="30%"} in the dialog box;
+1. Click ![](images/git.png){width="30%"} in the dialog box;
+1. Input these and **Create Project**:
+    - Repository URL: <https://github.com/sta101-f26/sta101-f26-files.git>
+    - Project directory name: `sta101-f26-files`
+
+
+::: callout-tip
+## 101 versus 199
+
+The file management system I am using is **Git** and **GitHub**. It's great, and it's widely used in professional data science. If you were taking 199, we would teach you how to use this system yourself. In 101, we skip this, and in exchange go deeper on statistical inference topics. So, if you're still on the fence between the two, that's one of the concrete differences.
 :::
 
 ## 0. The lay of the land
@@ -342,7 +369,7 @@ So the number `1` appears on the left, and it gets *fed forward* as the first ar
 mutate(count(penguins, species), prop = n / sum(n))
 ```
 
-But it's much more cramped and difficult to read. The pipe operator allows up to lay everything out in a linear, step-by-step fashion: first this happened, then this happened, then this happened, etc.
+But it's much more cramped and difficult to read. The pipe operator allows us to lay everything out in a linear, step-by-step fashion: first this happened, then this happened, then this happened, etc.
 
 :::
 
