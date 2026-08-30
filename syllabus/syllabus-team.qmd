@@ -4,10 +4,6 @@ editor:
   mode: source
 ---
 
-::: callout-note
-Office hours will begin on Monday August 31.
-:::
-
 +------------------------------+--------------------+---------------+--------------------------------+
 | Mug                          | Name               | Role          | Office Hours                   |
 +==============================+====================+===============+================================+
@@ -20,10 +16,10 @@ Office hours will begin on Monday August 31.
 | ![](images/md.jpeg){.circ}   | Del Preto, Matthew | TA            | **Mon 10:00 AM - 12:00 PM**\   |
 |                              |                    |               | Old Chem 203A                  |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/jk.jpeg){.circ}   | Kang, Joon         | TA            | **Fri 3:00 PM - 5:00 PM**\     |
+| ![](images/jk.jpeg){.circ}   | Kang, Joon         | TA            | **Wed 3:00 PM - 5:00 PM**\     |
 |                              |                    |               | Zoom (link on Canvas)          |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Wed 4:30 PM - 6:30 PM**\     |
+| ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Wed 5:00 PM - 7:00 PM**\     |
 |                              |                    |               | Old Chem 203B                  |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/cz.png){.circ}    | Zhang, Christina   | TA            | **Thu 4:30 PM - 6:30 PM**\     |
@@ -34,3 +30,4 @@ Office hours will begin on Monday August 31.
 |                              |                    |               | Old Chem 207                   |
 +------------------------------+--------------------+---------------+--------------------------------+
 : {tbl-colwidths="[20,20,20,40]"}
+
