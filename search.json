@@ -117,62 +117,1259 @@
     "text": "Anabel Howery does photos. Who else?"
   },
   {
-    "objectID": "syllabus/announcements/house-course.html",
-    "href": "syllabus/announcements/house-course.html",
+    "objectID": "syllabus/announcements/fall-dance-showcase.html",
+    "href": "syllabus/announcements/fall-dance-showcase.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "There is a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
   },
   {
-    "objectID": "syllabus/announcements/house-course.html#house-course",
-    "href": "syllabus/announcements/house-course.html#house-course",
+    "objectID": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
+    "href": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "There is a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
   },
   {
-    "objectID": "syllabus/syllabus-team.html",
-    "href": "syllabus/syllabus-team.html",
-    "title": "Teaching team",
+    "objectID": "syllabus/syllabus-resources.html",
+    "href": "syllabus/syllabus-resources.html",
+    "title": "University resources",
     "section": "",
-    "text": "Note\n\n\n\nOffice hours will begin on Monday August 31.\n\n\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nFri 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
+    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
     "crumbs": [
       "Syllabus",
-      "Teaching team"
+      "University resources"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-materials.html",
-    "href": "syllabus/syllabus-materials.html",
-    "title": "Course materials",
+    "objectID": "syllabus/syllabus-resources.html#course-costs",
+    "href": "syllabus/syllabus-resources.html#course-costs",
+    "title": "University resources",
     "section": "",
-    "text": "All books are freely available online:\n\n📘 [ims]: Mine Çetinkaya-Rundel and Jo Hardin (2024): Introduction to Modern Statistics, 2e, OpenIntro;\n📗 [r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund (2022): R for Data Science, 2e, O’Reilly.\n\nims is the main course text, and it is supported by extra resources that you may find helpful:\n\n🎥 Video lectures: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you’ll quickly learn to tune out what you don’t need;\n🏋️ Tutorials: every section of the book comes with an interactive tutorial that walks you through the coding skills necessary to execute the ideas.\n\nYou are not required to use these, but they are available if you seek extra practice, alternative instruction, or want to get a head start before lecture. As we go along I will link to the relevant stuff in the MORE section of our course schedule.\n\n\n\n\n\n\nNote\n\n\n\nOur course (the lectures, labs, and homeworks) is meant to be self-contained. As I said, these tutorials and videos are just optional practice. And in particular, if you encounter new ideas in the tutorials or videos that are not introduced anywhere else in the course materials, then you are not responsible for knowing these things on an exam.",
+    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
     "crumbs": [
       "Syllabus",
-      "Materials"
+      "University resources"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-materials.html#textbooks",
-    "href": "syllabus/syllabus-materials.html#textbooks",
-    "title": "Course materials",
+    "objectID": "syllabus/syllabus-resources.html#tech-support",
+    "href": "syllabus/syllabus-resources.html#tech-support",
+    "title": "University resources",
+    "section": "Tech support",
+    "text": "Tech support\nContact the Duke OIT Service Desk at oit.duke.edu/help.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-resources.html#academic-support",
+    "href": "syllabus/syllabus-resources.html#academic-support",
+    "title": "University resources",
+    "section": "Academic support",
+    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The Academic Resource Center (the ARC) offers services to support students academically during their undergraduate careers at Duke. The ARC can provide support with time management, academic skills and strategies, course-specific tutoring, and more. ARC services are available free to all Duke undergraduate student studying any discipline.\nYou can contact the Academic Resource Center by phone at (919) 684-5917, by email at theARC@duke.edu, or by visiting http://arc.duke.edu/.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-resources.html#accessibility",
+    "href": "syllabus/syllabus-resources.html#accessibility",
+    "title": "University resources",
+    "section": "Accessibility",
+    "text": "Accessibility\nIf any portion of the course is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students can engage with their courses and related assignments. Students should contact the SDAO to request or update accommodations under these circumstances.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-resources.html#mental-health-and-well-being",
+    "href": "syllabus/syllabus-resources.html#mental-health-and-well-being",
+    "title": "University resources",
+    "section": "Mental health and well-being",
+    "text": "Mental health and well-being\nDuke is committed to holistic student wellbeing, which includes one’s mental, emotional, and physical health. The university offers resources to help students manage daily stress, to encourage intentional self-care, and to access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities, your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of wellbeing, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can contact the DukeReach team at dukereach@duke.edu;\nCounseling and Psychological Services (CAPS): CAPS offers counseling services to Duke students including virtual appointments, and referrals in the community. You do not need an appointment for an initial assessment. You may walk in or call 919-660-1000 to get started. Hours: Monday-Friday 9:00am - 4:00pm. After hours counseling services are available at no additional cost to students, you can call: 919-660-1000 Option 2;\nTimelyCare: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling;\nDuke Student Health: Student Health offers a wide range of healthcare services for all Duke students, many of which are covered by the student health fee. To make an appointment call (919) 681-9355. Hours: Monday - Friday, 8am - 4:30pm, Thursday 9am - 4:30pm. Closed from 12-12:30 each day.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html",
+    "href": "syllabus/syllabus-assignments.html",
+    "title": "Assignments and grading",
     "section": "",
-    "text": "All books are freely available online:\n\n📘 [ims]: Mine Çetinkaya-Rundel and Jo Hardin (2024): Introduction to Modern Statistics, 2e, OpenIntro;\n📗 [r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund (2022): R for Data Science, 2e, O’Reilly.\n\nims is the main course text, and it is supported by extra resources that you may find helpful:\n\n🎥 Video lectures: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you’ll quickly learn to tune out what you don’t need;\n🏋️ Tutorials: every section of the book comes with an interactive tutorial that walks you through the coding skills necessary to execute the ideas.\n\nYou are not required to use these, but they are available if you seek extra practice, alternative instruction, or want to get a head start before lecture. As we go along I will link to the relevant stuff in the MORE section of our course schedule.\n\n\n\n\n\n\nNote\n\n\n\nOur course (the lectures, labs, and homeworks) is meant to be self-contained. As I said, these tutorials and videos are just optional practice. And in particular, if you encounter new ideas in the tutorials or videos that are not introduced anywhere else in the course materials, then you are not responsible for knowing these things on an exam.",
+    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on the usual thresholds:",
     "crumbs": [
       "Syllabus",
-      "Materials"
+      "Assignments and grading"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-materials.html#technology",
-    "href": "syllabus/syllabus-materials.html#technology",
-    "title": "Course materials",
-    "section": "Technology",
-    "text": "Technology\nYou will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here. Armed with your trusty laptop, you must be able to access the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "objectID": "syllabus/syllabus-assignments.html#labs-10",
+    "href": "syllabus/syllabus-assignments.html#labs-10",
+    "title": "Assignments and grading",
+    "section": "Labs (10%)",
+    "text": "Labs (10%)\nIn your lab section each Friday, you will get into randomly assigned groups and complete a guided activity that gives you practice with the new material introduced in lecture that week. Your lab write-up is due at the end of your lab section, and late work will not be accepted.\n\n\n\n\n\n\nGrace\n\n\n\nThere will be ten graded labs in total, and your two lowest lab scores will be dropped at the end of the semester.",
     "crumbs": [
       "Syllabus",
-      "Materials"
+      "Assignments and grading"
     ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#homeworks-20",
+    "href": "syllabus/syllabus-assignments.html#homeworks-20",
+    "title": "Assignments and grading",
+    "section": "Homeworks (20%)",
+    "text": "Homeworks (20%)\nIf you practice, you improve. That’s true about pretty much everything, and data analysis is no exception. As such, the homeworks are the most important course component. If you skimp on these, it will not redound to your benefit on the exams. The homework assignments will be a mix of coding problems in R and exercises from our textbook. These will have one week turnaround: each assignment will be posted on a Friday, and will be due at 10:00 AM the following Friday.\n\n\n\n\n\n\nGrace\n\n\n\nThere will be eight homeworks in total, and your lowest homework score will be dropped at the end of the semester.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#group-data-analysis-project-20",
+    "href": "syllabus/syllabus-assignments.html#group-data-analysis-project-20",
+    "title": "Assignments and grading",
+    "section": "Group data analysis project (20%)",
+    "text": "Group data analysis project (20%)\nThe project will be completed in teams that are randomly assigned within your lab section. As a group you will select a dataset that interests you and then apply what you’ve learned throughout the semester to study a research question of your choosing. This will culminate in the following deliverables:\n\nFinal presentation: a five minute slide talk given in your lab on Friday December 4 (LDOC);\nFinal report: a written report submitted the following Monday December 7 at 5pm.\n\nThere will be other intermediate deadlines along the way to keep you on track. More information about the project will be provided in lab on Friday October 16.\n\n\n\n\n\n\nYou can’t skip this!\n\n\n\nRegardless your enrollment status (e.g. S/U), I will not give you a passing grade if you do not complete the group project.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-assignments.html#exams-25-each",
+    "href": "syllabus/syllabus-assignments.html#exams-25-each",
+    "title": "Assignments and grading",
+    "section": "Exams (25% each)",
+    "text": "Exams (25% each)\nThere will be two in-person exams. The dates, times, and locations are firm, so mark your calendar now:\n\nMidterm (25%): Thursday October 8, 3:05 PM - 4:20 PM in Social Sciences 139;\nFinal (25%): Thursday December 10, 2:00 PM - 5:00 PM in Social Sciences 139.\n\nThese will be old school, pencil-and-paper, in-class exams with no technology. The only resource you are allowed is both sides of one 8.5” x 11” sheet of notes, prepared by you and you alone. You can create it however you wish: handwritten, on a computer, on a tablet device, etc.\nIf you seek testing accommodations, make sure the Student Disability Access Office sends me a letter, and then please make your appointments in the Testing Center as soon as possible.\n\n\n\n\n\n\nGrace\n\n\n\nIf you do better on the final exam than you did on the midterm, I will replace your midterm score with your final exam score.\n\n\n\n\n\n\n\n\nNo make-up exams\n\n\n\nIf you are absent from the midterm for whatever reason, there will not be a make-up. Pursuant to the above policy, I will simply replace the missed midterm score with the final exam score. If you miss the final exam, you get a zero unless you have a Dean’s Excuse.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-shape-of-the-course",
+    "href": "slides/02-exploratory-1-slides.html#the-shape-of-the-course",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The shape of the course",
+    "text": "The shape of the course"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#study-these-carefully",
+    "href": "slides/02-exploratory-1-slides.html#study-these-carefully",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Study these carefully!",
+    "text": "Study these carefully!\nEvery main idea, intellectual theme, and computational skill makes an appearance:\n\n\nLecture 1: “All of STA 101 in 75 minutes;”\n\nLab 0: your coding “one-stop-shop.”\n\nStudy these carefully and return to them often. By December 4, it will all make sense!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#getting-to-know-you",
+    "href": "slides/02-exploratory-1-slides.html#getting-to-know-you",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Getting to know you",
+    "text": "Getting to know you\n\n\n\nNo\nYes\n\n\n\nAP Stats?\n58.43%\n41.57%\n\n\nPrior coding?\n52.33%\n47.67%\n\n\nFriends?\n49.43%\n50.57%"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#whats-the-last-movie-you-saw-in-a-theater",
+    "href": "slides/02-exploratory-1-slides.html#whats-the-last-movie-you-saw-in-a-theater",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "What’s the last movie you saw in a theater?",
+    "text": "What’s the last movie you saw in a theater?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#what-are-we-studying",
+    "href": "slides/02-exploratory-1-slides.html#what-are-we-studying",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "What are we studying?",
+    "text": "What are we studying?\n\nData analysis\n\nThe art of transforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries;\n\n\nStatistical Inference\n\nQuantifying our uncertainty about that knowledge."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#lets-focus-on-the-first-part",
+    "href": "slides/02-exploratory-1-slides.html#lets-focus-on-the-first-part",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Let’s focus on the first part",
+    "text": "Let’s focus on the first part\nHow do you compress a dataset down to pictures and numerical summaries?\n\nWhat kinds of pictures and summaries are available?\nHow do you know what to use, and when?\nHow do you get a computer to implement these things?\n\nThe type of a variable (numerical, categorical, etc) plays a big role in determining the menu of options. After that, good visualization and summarization is an art that requires good taste."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#alison-bechdel",
+    "href": "slides/02-exploratory-1-slides.html#alison-bechdel",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Alison Bechdel",
+    "text": "Alison Bechdel"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-bechdel-test",
+    "href": "slides/02-exploratory-1-slides.html#the-bechdel-test",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The Bechdel Test",
+    "text": "The Bechdel Test\nMeasures female representation in film:\n\n\n (Dykes to Watch Out For - 1985)\n\nFilm passes if…\n\ntwo female characters;\ntalk to each other;\nabout something besides a man."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#since-i-moved-to-durham",
+    "href": "slides/02-exploratory-1-slides.html#since-i-moved-to-durham",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Since I moved to Durham…",
+    "text": "Since I moved to Durham…\nIt’s been a pitiful two years of filmgoing:\n\n\nTitle\nYear\nJZ’s review\nBechdel\n\n\n\nConclave\n2024\n★★☆☆☆\n❌\n\n\nWicked 1\n2024\n★★☆☆☆\n✅\n\n\nNosferatu\n2024\n★★★★☆\n❌\n\n\nNaked Gun\n2025\n★★★☆☆\n❌\n\n\nBugonia\n2025\n★★★☆☆\n❌\n\n\nWicked 2\n2025\n★☆☆☆☆\n✅\n\n\nMarty Supreme\n2026\n★★★★☆\n❌\n\n\nObsession\n2026\n★★★★☆\n❌\n\n\nThe Odyssey\n2026\n★★☆☆☆\n❌\n\n\nCoyote vs. Acme\n2026\n★★★☆☆\n❌"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#go-to-your-container",
+    "href": "slides/02-exploratory-1-slides.html#go-to-your-container",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Go to your container",
+    "text": "Go to your container\n\n\n\n\n\nVisit the Duke Container Manager (and log in with your NetID);\n(If you haven’t already, reserve the STA101 container on the right-hand-side)\nClick STA101 under “My reservations” on the left-hand side;\nLogin, start, and give it a sec to launch in your browser."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#grab-todays-files",
+    "href": "slides/02-exploratory-1-slides.html#grab-todays-files",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Grab today’s files",
+    "text": "Grab today’s files\n\nDouble-check that you have the course project loaded in the upper right corner;\nGo to the Git tab in the upper right pane and click Pull."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#load-todays-packages",
+    "href": "slides/02-exploratory-1-slides.html#load-todays-packages",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Load today’s package(s)",
+    "text": "Load today’s package(s)\nIt’s just the one today:\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#todays-data",
+    "href": "slides/02-exploratory-1-slides.html#todays-data",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Today’s data",
+    "text": "Today’s data\n\nbechdel &lt;- read_csv(\"data/bechdel.csv\")\n\nbechdel\n\n# A tibble: 1,615 × 7\n   title                   year gross_2013 budget_2013    roi binary clean_test\n   &lt;chr&gt;                  &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     \n 1 21 & Over               2013   67878146    13000000  5.22  FAIL   notalk    \n 2 Dredd 3D                2012   55078343    45658735  1.21  PASS   ok        \n 3 12 Years a Slave        2013  211714070    20000000 10.6   FAIL   notalk    \n 4 2 Guns                  2013  208105475    61000000  3.41  FAIL   notalk    \n 5 42                      2013  190040426    40000000  4.75  FAIL   men       \n 6 47 Ronin                2013  184166317   225000000  0.819 FAIL   men       \n 7 A Good Day to Die Hard  2013  371598396    92000000  4.04  FAIL   notalk    \n 8 About Time              2013  102648667    12000000  8.55  PASS   ok        \n 9 Admission               2013   36014634    13000000  2.77  PASS   ok        \n10 After Earth             2013  304895295   130000000  2.35  FAIL   notalk    \n# ℹ 1,605 more rows"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#aside-variable-assignment--",
+    "href": "slides/02-exploratory-1-slides.html#aside-variable-assignment--",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Aside: variable assignment <-\n",
+    "text": "Aside: variable assignment &lt;-\n\nYou just saw me do this:\n\nbechdel &lt;- read_csv(\"data/bechdel.csv\")\n\n\nThis is called variable assignment. We’re saving an object so we can use it later;\n\nRight-hand side: the thing you want to store (the data);\n\nLeft-hand side: the name you want to give it so you can refer to it later;\n\nIn the middle: the assignment operator &lt;-."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#our-variables",
+    "href": "slides/02-exploratory-1-slides.html#our-variables",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Our variables",
+    "text": "Our variables\nEvery row is a film, and the columns include:\n\n\ntitle: name of movie\n\nyear: release year of movie (between 1990 and 2013);\n\ngross_2013: how much did the movie earn at the box office (in 2013 $);\n\nbudget_2013: how much did the movie cost to make (in 2013 $);\n\nroi: Return on investment, calculated as the ratio of the gross to budget;\n\nIf the movie broke even, roi is 1;\nIf the movie made money, roi is greater than 1;\nIf the movie lost money, roi is between 0 and 1;\n\n\n\nclean_test: Bechdel test result:\n\n\nok = passes test;\n\ndubious = unclear;\n\nmen = women only talk about men\n\nnotalk = women don’t talk to each other;\n\nnowomen = fewer than two women;\n\n\n\nbinary: Bechdel Test PASS vs FAIL binary"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#can-we-reproduce-this-claim",
+    "href": "slides/02-exploratory-1-slides.html#can-we-reproduce-this-claim",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Can we reproduce this claim?",
+    "text": "Can we reproduce this claim?\n\n\n\n\n\n\nFrom FiveThirtyEight\n\n\n\n\n\n\n\n\n\n“We did a statistical analysis of films to test two claims: first, that films that pass the Bechdel test — featuring women in stronger roles — see a lower return on investment, and second, that they see lower gross profits. We found no evidence to support either claim.”"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#warning-resist-the-causal-temptation",
+    "href": "slides/02-exploratory-1-slides.html#warning-resist-the-causal-temptation",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "🚨 Warning: resist the causal temptation!",
+    "text": "🚨 Warning: resist the causal temptation!\nThese data are purely observational. No experiment was done, and I don’t think “nature” delivered any conditions that mimic experimental variation. We will only be able to talk about the mere association between female representation and box office performance."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-films-grosses",
+    "href": "slides/02-exploratory-1-slides.html#the-films-grosses",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The films’ grosses",
+    "text": "The films’ grosses\nThe box office revenue for the films is a numerical variable:\n\nbechdel$gross_2013\n\n\n\n [1]  67878146  55078343 211714070 208105475 190040426 184166317 371598396\n [8] 102648667  36014634 304895295\n\n\n\nA human cannot stare at this list of numbers and learn anything. We need pictures and summaries. So…what pictures? what summaries? what are we even trying to learn?\nWe want to know where these numbers are typically concentrated, how spread out are they, and what is their shape;\nA histogram can answer those questions."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#plotting-a-histogram",
+    "href": "slides/02-exploratory-1-slides.html#plotting-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nStart with a blank canvas:\n\n\nggplot(bechdel)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#plotting-a-histogram-1",
+    "href": "slides/02-exploratory-1-slides.html#plotting-a-histogram-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nWhat variables are we looking at?\n\n\nggplot(bechdel, \n       aes(x = gross_2013))\n\n\n\n\n\n\n\n\nThe aesthetic mapping is where we tell the computer what variables in the data frame we want to use and how we want to use them."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#plotting-a-histogram-2",
+    "href": "slides/02-exploratory-1-slides.html#plotting-a-histogram-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nWhat kind of plot for this numerical variable:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#plotting-a-histogram-3",
+    "href": "slides/02-exploratory-1-slides.html#plotting-a-histogram-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nAdd labels:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  )\n\n\n\n\n\n\n\n\nY’know…so we know what we’re looking at!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#plotting-a-histogram-4",
+    "href": "slides/02-exploratory-1-slides.html#plotting-a-histogram-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nIncrease font size and give it a minimalist look:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#dataviz-with-ggplot-is-like-building-a-cake",
+    "href": "slides/02-exploratory-1-slides.html#dataviz-with-ggplot-is-like-building-a-cake",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Dataviz with ggplot is like building a cake",
+    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\n\nEvery plot element is a new layer, and you stack ’em up;\nIf the different commands are like the layers of sponge, then the plus signs in between are like the icing. Don’t forget the icing!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-grammar-of-graphics",
+    "href": "slides/02-exploratory-1-slides.html#the-grammar-of-graphics",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The grammar of graphics",
+    "text": "The grammar of graphics\n\n\nThis design philosophy is described in the book The Grammar of Graphics and implemented in the ggplot2 package."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-1",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-2",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-3",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;\nCount how many data values fall in each bin;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-4",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-histogram-drawn-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;\nCount how many data values fall in each bin;\nPut bars over the bins (height = count).\n\n\nChoice: how do you draw the bins? How many? How wide?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#back-to-bechdel",
+    "href": "slides/02-exploratory-1-slides.html#back-to-bechdel",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Back to Bechdel",
+    "text": "Back to Bechdel\nR makes a default choice about the number/width of bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#you-can-override-the-default",
+    "href": "slides/02-exploratory-1-slides.html#you-can-override-the-default",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can override the default",
+    "text": "You can override the default\nFewer, wider bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 10)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#you-can-override-the-default-1",
+    "href": "slides/02-exploratory-1-slides.html#you-can-override-the-default-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can override the default",
+    "text": "You can override the default\nMany, thinner bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 100)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#you-can-go-too-far-either-way",
+    "href": "slides/02-exploratory-1-slides.html#you-can-go-too-far-either-way",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can go too far either way",
+    "text": "You can go too far either way\n\n\nOof.\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 2)\n\n\n\n\n\n\n\n\nYikes.\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 1500)\n\n\n\n\n\n\n\n\n\nPart of the art here is developing an eye for what looks good."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#another-option-instead-of-a-histogram",
+    "href": "slides/02-exploratory-1-slides.html#another-option-instead-of-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Another option: instead of a histogram",
+    "text": "Another option: instead of a histogram\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#another-option-a-density",
+    "href": "slides/02-exploratory-1-slides.html#another-option-a-density",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Another option: a density\n",
+    "text": "Another option: a density\n\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#compare",
+    "href": "slides/02-exploratory-1-slides.html#compare",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Compare",
+    "text": "Compare\n\nPrettier. Smooths out the lumps and bumps. There are still defaults you could learn to override."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nWhat we have so far:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-1",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nWe don’t need to see everything, do we?\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-2",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nA pop of color:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\") + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-3",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nI can’t hear you:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2) + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-4",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nGive it some body:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2,\n               fill = \"red\") + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-5",
+    "href": "slides/02-exploratory-1-slides.html#but-lets-make-it-nice-5",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nToo aggressive:\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2,\n               fill = \"red\",\n               alpha = 0.5) + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#yet-another-option-instead-of-a-histogram",
+    "href": "slides/02-exploratory-1-slides.html#yet-another-option-instead-of-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Yet another option: instead of a histogram",
+    "text": "Yet another option: instead of a histogram\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#yet-another-option-a-boxplot",
+    "href": "slides/02-exploratory-1-slides.html#yet-another-option-a-boxplot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Yet another option: a boxplot\n",
+    "text": "Yet another option: a boxplot\n\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_boxplot() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe middle of the box is the median. 50% of the data are below, and 50% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn-1",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe lower edge of the box is the 25% quantile. 25% of the data are below, and 75% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn-2",
+    "href": "slides/02-exploratory-1-slides.html#how-is-a-box-plot-drawn-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe upper edge of the box is the 75% quantile. 75% of the data are below, and 25% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#box-plot-facts",
+    "href": "slides/02-exploratory-1-slides.html#box-plot-facts",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plot facts",
+    "text": "Box plot facts\n\nA box plot is easier to read quickly than a histogram because it eliminates clutter and immediately draws your eye to those main features: center, spread, and skew;\nThe box spans the middle 50% of the data;\nThe width of the box is called the inner quartile range (IQR) and it measures spread;\nFrom the docs (?geom_boxplot):\n\n\nThe upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called “outlying” points and are plotted individually."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#box-plots-obscure-modality",
+    "href": "slides/02-exploratory-1-slides.html#box-plots-obscure-modality",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plots obscure modality",
+    "text": "Box plots obscure modality\nSame box plot:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#box-plots-obscure-modality-1",
+    "href": "slides/02-exploratory-1-slides.html#box-plots-obscure-modality-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plots obscure modality",
+    "text": "Box plots obscure modality\nVery different distributions:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#sonow-what",
+    "href": "slides/02-exploratory-1-slides.html#sonow-what",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "So…now what?",
+    "text": "So…now what?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#are-we-just-eyeballing-pictures",
+    "href": "slides/02-exploratory-1-slides.html#are-we-just-eyeballing-pictures",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Are we just eyeballing pictures?",
+    "text": "Are we just eyeballing pictures?\nNo! There are numerical summaries you can compute to quantify your visual intuition:\n\n\ncenter: mean (aka average), median, mode, …\n\nspread: variance, standard deviation, inner quartile range (IQR), …\n\nAnd there will be more: correlation coefficients, regression estimates, etc."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#some-formulas-dont-sweat-it",
+    "href": "slides/02-exploratory-1-slides.html#some-formulas-dont-sweat-it",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Some formulas (don’t sweat it)",
+    "text": "Some formulas (don’t sweat it)\nLet \\(x_1\\), \\(x_2\\), …, \\(x_n\\) be the numbers listed in the column of our data frame. So \\(n\\) is the number of rows, or the sample size. Then:\n\nThe sample average (aka mean):\n\\[\n\\bar{x}=\\frac{x_1+x_2+...+x_n}{n}=\\frac{1}{n}\\sum\\limits_{i=1}^n x_i\n\\]\n\n\nThe sample standard deviation:\n\\[\ns = \\sqrt{\\frac{1}{n-1}\\sum\\limits_{i=1}^n(x_i-\\bar{x})^2}.\n\\]\n\n\nUnderneath the square root, you have the “average squared distance from the average,” or the sample variance."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#how-does-the-computer-do-it",
+    "href": "slides/02-exploratory-1-slides.html#how-does-the-computer-do-it",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How does the computer do it?",
+    "text": "How does the computer do it?\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    s = sd(gross_2013, na.rm = TRUE)\n  )\n\n# A tibble: 1 × 2\n         avg          s\n       &lt;dbl&gt;      &lt;dbl&gt;\n1 271414482. 353676712.\n\n\n\n\nsummarize creates a new data frame that stores the summaries;\nYou can compute as many summaries as you want;\nTo the left of the equal signs are your choice of column names in the new data frame you are creating. You can type whatever you want here (within reason);\nTo the right of the equal signs is R code that computes the summaries. You must use the correct command names (case sensitive): mean, median, quantile, sd, var, etc;\nIf you want to learn what these do, read the documentation (eg ?quantile)."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#aside-the-pipe-operator",
+    "href": "slides/02-exploratory-1-slides.html#aside-the-pipe-operator",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Aside: the pipe operator |>\n",
+    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3\n\n\n\n\nWe will use it to build up data summaries and transformations step-by-step."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#like-a-russian-stacking-doll",
+    "href": "slides/02-exploratory-1-slides.html#like-a-russian-stacking-doll",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Like a Russian stacking doll",
+    "text": "Like a Russian stacking doll"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#more-summaries",
+    "href": "slides/02-exploratory-1-slides.html#more-summaries",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "More summaries",
+    "text": "More summaries\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    sdev = sd(gross_2013, na.rm = TRUE),\n    q50 = median(gross_2013, na.rm = TRUE),\n    q25 = quantile(gross_2013, 0.25, na.rm = TRUE),\n    q75 = quantile(gross_2013, 0.75, na.rm = TRUE),\n    iqr = IQR(gross_2013, na.rm = TRUE)\n  )\n\n# A tibble: 1 × 6\n         avg       sdev        q50       q25       q75        iqr\n       &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;\n1 271414482. 353676712. 150218382. 53689120. 354101229 300412109."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#numbers-and-pictures-working-together",
+    "href": "slides/02-exploratory-1-slides.html#numbers-and-pictures-working-together",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numbers and pictures, working together",
+    "text": "Numbers and pictures, working together\nWhere are the grosses concentrated?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#if-there-is-only-one-peak-then",
+    "href": "slides/02-exploratory-1-slides.html#if-there-is-only-one-peak-then",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "If there is only one peak, then…",
+    "text": "If there is only one peak, then…\n\nThe mean is more sensitive to “outliers” than the median. The mean will get dragged in the direction of the skew more aggresively."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#summary",
+    "href": "slides/02-exploratory-1-slides.html#summary",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Summary",
+    "text": "Summary\nVisualizing and summarizing one numerical variable:\n\n\n\n\n\n\n\n\n\n\n\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    sdev = sd(gross_2013, na.rm = TRUE),\n    q50 = median(gross_2013, na.rm = TRUE),\n    q25 = quantile(gross_2013, 0.25, na.rm = TRUE),\n    q75 = quantile(gross_2013, 0.75, na.rm = TRUE),\n    iqr = IQR(gross_2013, na.rm = TRUE)\n  ) |&gt;\n  glimpse()\n\nRows: 1\nColumns: 6\n$ avg  &lt;dbl&gt; 271414482\n$ sdev &lt;dbl&gt; 353676712\n$ q50  &lt;dbl&gt; 150218382\n$ q25  &lt;dbl&gt; 53689120\n$ q75  &lt;dbl&gt; 354101229\n$ iqr  &lt;dbl&gt; 300412109"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-test-results",
+    "href": "slides/02-exploratory-1-slides.html#the-test-results",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The test results",
+    "text": "The test results\nThe test result for the films is a categorical variable:\n\nbechdel$clean_test\n\n\n\n [1] \"notalk\" \"ok\"     \"notalk\" \"notalk\" \"men\"    \"men\"    \"notalk\" \"ok\"    \n [9] \"ok\"     \"notalk\"\n\n\nVisualization and summarization will be a bit more straightforward here. Things get fun when categorical variables interact with other stuff."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#picture-bar-plot",
+    "href": "slides/02-exploratory-1-slides.html#picture-bar-plot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Picture: bar plot",
+    "text": "Picture: bar plot\n\nggplot(bechdel, aes(y = clean_test)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#picture-bar-plot-1",
+    "href": "slides/02-exploratory-1-slides.html#picture-bar-plot-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Picture: bar plot",
+    "text": "Picture: bar plot\n\nggplot(bechdel, aes(x = clean_test)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#numerical-summary-tally-it-up",
+    "href": "slides/02-exploratory-1-slides.html#numerical-summary-tally-it-up",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numerical summary: tally it up",
+    "text": "Numerical summary: tally it up\n\n\nbechdel |&gt;\n  count(clean_test)\n\n\n# A tibble: 5 × 2\n  clean_test     n\n  &lt;chr&gt;      &lt;int&gt;\n1 dubious      124\n2 men          168\n3 notalk       450\n4 nowomen      120\n5 ok           753"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#numerical-summary-proportions",
+    "href": "slides/02-exploratory-1-slides.html#numerical-summary-proportions",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numerical summary: proportions",
+    "text": "Numerical summary: proportions\n\n\nbechdel |&gt;\n  count(clean_test) |&gt;\n  mutate(\n    prop = n / sum(n)\n  ) |&gt;\n  arrange(prop)\n\n\n# A tibble: 5 × 3\n  clean_test     n   prop\n  &lt;chr&gt;      &lt;int&gt;  &lt;dbl&gt;\n1 nowomen      120 0.0743\n2 dubious      124 0.0768\n3 men          168 0.104 \n4 notalk       450 0.279 \n5 ok           753 0.466"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#seriously-its-just-like-the-dolls",
+    "href": "slides/02-exploratory-1-slides.html#seriously-its-just-like-the-dolls",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Seriously, it’s just like the dolls",
+    "text": "Seriously, it’s just like the dolls"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#this-is-so-much-harder-to-read",
+    "href": "slides/02-exploratory-1-slides.html#this-is-so-much-harder-to-read",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "This is so much harder to read",
+    "text": "This is so much harder to read"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#go-from-one-column-of-numbers-to-two",
+    "href": "slides/02-exploratory-1-slides.html#go-from-one-column-of-numbers-to-two",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Go from one column of numbers to two",
+    "text": "Go from one column of numbers to two\n\n\nbechdel |&gt;\n  select(budget_2013, gross_2013)\n\n\n# A tibble: 1,615 × 2\n   budget_2013 gross_2013\n         &lt;dbl&gt;      &lt;dbl&gt;\n 1    13000000   67878146\n 2    45658735   55078343\n 3    20000000  211714070\n 4    61000000  208105475\n 5    40000000  190040426\n 6   225000000  184166317\n 7    92000000  371598396\n 8    12000000  102648667\n 9    13000000   36014634\n10   130000000  304895295\n# ℹ 1,605 more rows"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#scatter-plot",
+    "href": "slides/02-exploratory-1-slides.html#scatter-plot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Scatter plot",
+    "text": "Scatter plot\n\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#add-a-trend-line",
+    "href": "slides/02-exploratory-1-slides.html#add-a-trend-line",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Add a “trend” line",
+    "text": "Add a “trend” line\n\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  geom_smooth() + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#add-a-trend-line-1",
+    "href": "slides/02-exploratory-1-slides.html#add-a-trend-line-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Add a “trend” line",
+    "text": "Add a “trend” line\n\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#a-numerical-summary-correlation",
+    "href": "slides/02-exploratory-1-slides.html#a-numerical-summary-correlation",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "A numerical summary: correlation",
+    "text": "A numerical summary: correlation\n\nbechdel |&gt;\n  summarize(\n    r = cor(gross_2013, budget_2013, use = \"complete.obs\")\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.687"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#correlation-more-on-this-next-week",
+    "href": "slides/02-exploratory-1-slides.html#correlation-more-on-this-next-week",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Correlation (more on this next week)",
+    "text": "Correlation (more on this next week)\n\nMeasures the strength and direction of the linear association between two numerical variables;\nTells you how tightly the points cluster around a straight line;\nRanges between -1 and 1;\nSame sign as the slope."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#back-to-the-research-question",
+    "href": "slides/02-exploratory-1-slides.html#back-to-the-research-question",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Back to the research question",
+    "text": "Back to the research question\nWhat does passing The Bechdel Test mean for a film’s finances?\n\nCategorical variables: clean_test and binary;\nNumerical variable: roi.\n\nHow does roi change depending on the category? To answer, we can use all the tools for univariate numerical data, but within the groups."
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#side-by-side-box-plots-preferred",
+    "href": "slides/02-exploratory-1-slides.html#side-by-side-box-plots-preferred",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Side-by-side box plots (preferred)",
+    "text": "Side-by-side box plots (preferred)\n\nCodeggplot(bechdel, aes(x = roi, y = clean_test, color = binary)) +\n  geom_boxplot() +\n  labs(\n    title = \"Return on investment vs. Bechdel test result\",\n    x = \"Return-on-investment (gross / budget)\",\n    y = \"Detailed Bechdel result\",\n    color = \"Bechdel\\nresult\"\n  ) +\n  coord_cartesian(xlim = c(0, 16))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#side-by-side-histograms-eh",
+    "href": "slides/02-exploratory-1-slides.html#side-by-side-histograms-eh",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Side-by-side histograms (…eh)",
+    "text": "Side-by-side histograms (…eh)\n\nCodebechdel |&gt;\n  mutate(\n    clean_test = fct_rev(clean_test)\n  ) |&gt;\n  ggplot(aes(x = roi, fill = binary)) +\n  geom_histogram(binwidth = 0.5) +\n  facet_wrap(~clean_test, nrow = 5) + \n  labs(\n    title = \"Return on investment vs. Bechdel test result\",\n    x = \"Return-on-investment (gross / budget)\",\n    y = \"Detailed Bechdel result\",\n    fill = \"Bechdel\\nresult\"\n  ) +\n  coord_cartesian(xlim = c(0, 16))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#within-group-summaries",
+    "href": "slides/02-exploratory-1-slides.html#within-group-summaries",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Within-group summaries",
+    "text": "Within-group summaries\n\nbechdel |&gt;\n  group_by(clean_test) |&gt;\n  summarize(\n    avg = mean(roi, na.rm = TRUE),\n    q50 = median(roi, , na.rm = TRUE)\n  )\n\n# A tibble: 5 × 3\n  clean_test   avg   q50\n  &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;\n1 dubious    11.2   3.80\n2 men         9.30  3.96\n3 notalk      6.93  3.69\n4 nowomen     9.52  3.27\n5 ok          7.99  4.21\n\n\nThe conclusion depends on the summary you choose. Which is more appropriate?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#the-art",
+    "href": "slides/02-exploratory-1-slides.html#the-art",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The art",
+    "text": "The art\nToday you saw some basic building blocks. The art of data visualization is in their combination. How do you trick the human brain into appreciating complex multivariate relationships when the human brain cannot really visualize in high dimensions?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1-slides.html#computational-themes",
+    "href": "slides/02-exploratory-1-slides.html#computational-themes",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Computational themes",
+    "text": "Computational themes\nEvery coding task in this class will be some combo of these two things:\n\n\n\nBuilding cakes (ggplot) \n\nStacking dolls (pipe |&gt;) \n\n\n\nMaster these, and everything will be coming up roses!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html",
+    "href": "slides/02-exploratory-1.html",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "",
+    "text": "Every main idea, intellectual theme, and computational skill makes an appearance:\n\n\nLecture 1: “All of STA 101 in 75 minutes;”\n\nLab 0: your coding “one-stop-shop.”\n\nStudy these carefully and return to them often. By December 4, it will all make sense!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#study-these-carefully",
+    "href": "slides/02-exploratory-1.html#study-these-carefully",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "",
+    "text": "Every main idea, intellectual theme, and computational skill makes an appearance:\n\n\nLecture 1: “All of STA 101 in 75 minutes;”\n\nLab 0: your coding “one-stop-shop.”\n\nStudy these carefully and return to them often. By December 4, it will all make sense!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#getting-to-know-you",
+    "href": "slides/02-exploratory-1.html#getting-to-know-you",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Getting to know you",
+    "text": "Getting to know you\n\n\n\nNo\nYes\n\n\n\nAP Stats?\n58.43%\n41.57%\n\n\nPrior coding?\n52.33%\n47.67%\n\n\nFriends?\n49.43%\n50.57%"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#whats-the-last-movie-you-saw-in-a-theater",
+    "href": "slides/02-exploratory-1.html#whats-the-last-movie-you-saw-in-a-theater",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "What’s the last movie you saw in a theater?",
+    "text": "What’s the last movie you saw in a theater?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#what-are-we-studying",
+    "href": "slides/02-exploratory-1.html#what-are-we-studying",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "What are we studying?",
+    "text": "What are we studying?\n\n\nData analysis\n\nThe art of transforming messy, incomplete, imperfect data into knowledge;\n\nKnowledge often takes the form of pictures and a concise set of numerical summaries;\n\n\nStatistical Inference\n\nQuantifying our uncertainty about that knowledge."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#lets-focus-on-the-first-part",
+    "href": "slides/02-exploratory-1.html#lets-focus-on-the-first-part",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Let’s focus on the first part",
+    "text": "Let’s focus on the first part\nHow do you compress a dataset down to pictures and numerical summaries?\n\nWhat kinds of pictures and summaries are available?\nHow do you know what to use, and when?\nHow do you get a computer to implement these things?\n\nThe type of a variable (numerical, categorical, etc) plays a big role in determining the menu of options. After that, good visualization and summarization is an art that requires good taste."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#alison-bechdel",
+    "href": "slides/02-exploratory-1.html#alison-bechdel",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Alison Bechdel",
+    "text": "Alison Bechdel"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#the-bechdel-test",
+    "href": "slides/02-exploratory-1.html#the-bechdel-test",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The Bechdel Test",
+    "text": "The Bechdel Test\nMeasures female representation in film:\n\n\n (Dykes to Watch Out For - 1985)\n\nFilm passes if…\n\ntwo female characters;\ntalk to each other;\nabout something besides a man."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#since-i-moved-to-durham",
+    "href": "slides/02-exploratory-1.html#since-i-moved-to-durham",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Since I moved to Durham…",
+    "text": "Since I moved to Durham…\nIt’s been a pitiful two years of filmgoing:\n\n\nTitle\nYear\nJZ’s review\nBechdel\n\n\n\nConclave\n2024\n★★☆☆☆\n❌\n\n\nWicked 1\n2024\n★★☆☆☆\n✅\n\n\nNosferatu\n2024\n★★★★☆\n❌\n\n\nNaked Gun\n2025\n★★★☆☆\n❌\n\n\nBugonia\n2025\n★★★☆☆\n❌\n\n\nWicked 2\n2025\n★☆☆☆☆\n✅\n\n\nMarty Supreme\n2026\n★★★★☆\n❌\n\n\nObsession\n2026\n★★★★☆\n❌\n\n\nThe Odyssey\n2026\n★★☆☆☆\n❌\n\n\nCoyote vs. Acme\n2026\n★★★☆☆\n❌"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#go-to-your-container",
+    "href": "slides/02-exploratory-1.html#go-to-your-container",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Go to your container",
+    "text": "Go to your container\n\n\n\n\n\nVisit the Duke Container Manager (and log in with your NetID);\n(If you haven’t already, reserve the STA101 container on the right-hand-side)\nClick STA101 under “My reservations” on the left-hand side;\nLogin, start, and give it a sec to launch in your browser."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#grab-todays-files",
+    "href": "slides/02-exploratory-1.html#grab-todays-files",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Grab today’s files",
+    "text": "Grab today’s files\n\nDouble-check that you have the course project loaded in the upper right corner;\nGo to the Git tab in the upper right pane and click Pull."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#load-todays-packages",
+    "href": "slides/02-exploratory-1.html#load-todays-packages",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Load today’s package(s)",
+    "text": "Load today’s package(s)\nIt’s just the one today:\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#todays-data",
+    "href": "slides/02-exploratory-1.html#todays-data",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Today’s data",
+    "text": "Today’s data\n\nbechdel &lt;- read_csv(\"data/bechdel.csv\")\n\nbechdel\n\n# A tibble: 1,615 × 7\n   title                   year gross_2013 budget_2013    roi binary clean_test\n   &lt;chr&gt;                  &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     \n 1 21 & Over               2013   67878146    13000000  5.22  FAIL   notalk    \n 2 Dredd 3D                2012   55078343    45658735  1.21  PASS   ok        \n 3 12 Years a Slave        2013  211714070    20000000 10.6   FAIL   notalk    \n 4 2 Guns                  2013  208105475    61000000  3.41  FAIL   notalk    \n 5 42                      2013  190040426    40000000  4.75  FAIL   men       \n 6 47 Ronin                2013  184166317   225000000  0.819 FAIL   men       \n 7 A Good Day to Die Hard  2013  371598396    92000000  4.04  FAIL   notalk    \n 8 About Time              2013  102648667    12000000  8.55  PASS   ok        \n 9 Admission               2013   36014634    13000000  2.77  PASS   ok        \n10 After Earth             2013  304895295   130000000  2.35  FAIL   notalk    \n# ℹ 1,605 more rows"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#aside-variable-assignment--",
+    "href": "slides/02-exploratory-1.html#aside-variable-assignment--",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Aside: variable assignment <-\n",
+    "text": "Aside: variable assignment &lt;-\n\nYou just saw me do this:\n\nbechdel &lt;- read_csv(\"data/bechdel.csv\")\n\n\n\nThis is called variable assignment. We’re saving an object so we can use it later;\n\nRight-hand side: the thing you want to store (the data);\n\nLeft-hand side: the name you want to give it so you can refer to it later;\n\nIn the middle: the assignment operator &lt;-."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#our-variables",
+    "href": "slides/02-exploratory-1.html#our-variables",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Our variables",
+    "text": "Our variables\nEvery row is a film, and the columns include:\n\n\n\ntitle: name of movie\n\nyear: release year of movie (between 1990 and 2013);\n\ngross_2013: how much did the movie earn at the box office (in 2013 $);\n\nbudget_2013: how much did the movie cost to make (in 2013 $);\n\nroi: Return on investment, calculated as the ratio of the gross to budget;\n\nIf the movie broke even, roi is 1;\nIf the movie made money, roi is greater than 1;\nIf the movie lost money, roi is between 0 and 1;\n\n\n\nclean_test: Bechdel test result:\n\n\nok = passes test;\n\ndubious = unclear;\n\nmen = women only talk about men\n\nnotalk = women don’t talk to each other;\n\nnowomen = fewer than two women;\n\n\n\nbinary: Bechdel Test PASS vs FAIL binary"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#can-we-reproduce-this-claim",
+    "href": "slides/02-exploratory-1.html#can-we-reproduce-this-claim",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Can we reproduce this claim?",
+    "text": "Can we reproduce this claim?\n\n\n\n\n\n\nFrom FiveThirtyEight\n\n\n\n\n\n\n\n\n\n“We did a statistical analysis of films to test two claims: first, that films that pass the Bechdel test — featuring women in stronger roles — see a lower return on investment, and second, that they see lower gross profits. We found no evidence to support either claim.”"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#warning-resist-the-causal-temptation",
+    "href": "slides/02-exploratory-1.html#warning-resist-the-causal-temptation",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "🚨 Warning: resist the causal temptation!",
+    "text": "🚨 Warning: resist the causal temptation!\nThese data are purely observational. No experiment was done, and I don’t think “nature” delivered any conditions that mimic experimental variation. We will only be able to talk about the mere association between female representation and box office performance."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#the-films-grosses",
+    "href": "slides/02-exploratory-1.html#the-films-grosses",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The films’ grosses",
+    "text": "The films’ grosses\nThe box office revenue for the films is a numerical variable:\n\nbechdel$gross_2013\n\n\n\n [1]  67878146  55078343 211714070 208105475 190040426 184166317 371598396\n [8] 102648667  36014634 304895295\n\n\n\nA human cannot stare at this list of numbers and learn anything. We need pictures and summaries. So…what pictures? what summaries? what are we even trying to learn?\nWe want to know where these numbers are typically concentrated, how spread out are they, and what is their shape;\nA histogram can answer those questions."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#plotting-a-histogram",
+    "href": "slides/02-exploratory-1.html#plotting-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nStart with a blank canvas:\n\nggplot(bechdel)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#plotting-a-histogram-1",
+    "href": "slides/02-exploratory-1.html#plotting-a-histogram-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nWhat variables are we looking at?\n\nggplot(bechdel, \n       aes(x = gross_2013))\n\n\n\n\n\n\n\nThe aesthetic mapping is where we tell the computer what variables in the data frame we want to use and how we want to use them."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#plotting-a-histogram-2",
+    "href": "slides/02-exploratory-1.html#plotting-a-histogram-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nWhat kind of plot for this numerical variable:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#plotting-a-histogram-3",
+    "href": "slides/02-exploratory-1.html#plotting-a-histogram-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nAdd labels:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  )\n\n\n\n\n\n\n\nY’know…so we know what we’re looking at!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#plotting-a-histogram-4",
+    "href": "slides/02-exploratory-1.html#plotting-a-histogram-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Plotting a histogram",
+    "text": "Plotting a histogram\nIncrease font size and give it a minimalist look:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#dataviz-with-ggplot-is-like-building-a-cake",
+    "href": "slides/02-exploratory-1.html#dataviz-with-ggplot-is-like-building-a-cake",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Dataviz with ggplot is like building a cake",
+    "text": "Dataviz with ggplot is like building a cake\n\n\n\n\n\n\nEvery plot element is a new layer, and you stack ’em up;\nIf the different commands are like the layers of sponge, then the plus signs in between are like the icing. Don’t forget the icing!"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#the-grammar-of-graphics",
+    "href": "slides/02-exploratory-1.html#the-grammar-of-graphics",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The grammar of graphics",
+    "text": "The grammar of graphics\n\n\nThis design philosophy is described in the book The Grammar of Graphics and implemented in the ggplot2 package."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-histogram-drawn",
+    "href": "slides/02-exploratory-1.html#how-is-a-histogram-drawn",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-1",
+    "href": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-2",
+    "href": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-3",
+    "href": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;\nCount how many data values fall in each bin;"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-4",
+    "href": "slides/02-exploratory-1.html#how-is-a-histogram-drawn-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a histogram drawn?",
+    "text": "How is a histogram drawn?\n\n\n\nStart with the number line (horizontal axis);\nPut your data values on the line;\nBreak the line into bins;\nCount how many data values fall in each bin;\nPut bars over the bins (height = count).\n\n\nChoice: how do you draw the bins? How many? How wide?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#back-to-bechdel",
+    "href": "slides/02-exploratory-1.html#back-to-bechdel",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Back to Bechdel",
+    "text": "Back to Bechdel\nR makes a default choice about the number/width of bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#you-can-override-the-default",
+    "href": "slides/02-exploratory-1.html#you-can-override-the-default",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can override the default",
+    "text": "You can override the default\nFewer, wider bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 10)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#you-can-override-the-default-1",
+    "href": "slides/02-exploratory-1.html#you-can-override-the-default-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can override the default",
+    "text": "You can override the default\nMany, thinner bins:\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 100)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#you-can-go-too-far-either-way",
+    "href": "slides/02-exploratory-1.html#you-can-go-too-far-either-way",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "You can go too far either way",
+    "text": "You can go too far either way\n\n\nOof.\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 2)\n\n\n\n\n\n\n\n\nYikes.\n\nggplot(bechdel, aes(x = gross_2013)) + \n  geom_histogram(bins = 1500)\n\n\n\n\n\n\n\n\n\n. . .\nPart of the art here is developing an eye for what looks good."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#another-option-instead-of-a-histogram",
+    "href": "slides/02-exploratory-1.html#another-option-instead-of-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Another option: instead of a histogram",
+    "text": "Another option: instead of a histogram\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#another-option-a-density",
+    "href": "slides/02-exploratory-1.html#another-option-a-density",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Another option: a density\n",
+    "text": "Another option: a density\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#compare",
+    "href": "slides/02-exploratory-1.html#compare",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Compare",
+    "text": "Compare\n\n\n\n\n\n\n\n\nPrettier. Smooths out the lumps and bumps. There are still defaults you could learn to override."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nWhat we have so far:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice-1",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nWe don’t need to see everything, do we?\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice-2",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nA pop of color:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\") + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice-3",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice-3",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nI can’t hear you:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2) + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice-4",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice-4",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nGive it some body:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2,\n               fill = \"red\") + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#but-lets-make-it-nice-5",
+    "href": "slides/02-exploratory-1.html#but-lets-make-it-nice-5",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "But let’s make it nice",
+    "text": "But let’s make it nice\nToo aggressive:\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_density(color = \"firebrick\",\n               linewidth = 2,\n               fill = \"red\",\n               alpha = 0.5) + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20) + \n  coord_cartesian(xlim = c(0, 1e9))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#yet-another-option-instead-of-a-histogram",
+    "href": "slides/02-exploratory-1.html#yet-another-option-instead-of-a-histogram",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Yet another option: instead of a histogram",
+    "text": "Yet another option: instead of a histogram\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_histogram() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#yet-another-option-a-boxplot",
+    "href": "slides/02-exploratory-1.html#yet-another-option-a-boxplot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Yet another option: a boxplot\n",
+    "text": "Yet another option: a boxplot\n\n\nggplot(bechdel, \n       aes(x = gross_2013)) + \n  geom_boxplot() + \n  labs(\n    x = \"2013 USD\",\n    title = \"Film grosses (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn",
+    "href": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe middle of the box is the median. 50% of the data are below, and 50% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn-1",
+    "href": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe lower edge of the box is the 25% quantile. 25% of the data are below, and 75% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn-2",
+    "href": "slides/02-exploratory-1.html#how-is-a-box-plot-drawn-2",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How is a box plot drawn?",
+    "text": "How is a box plot drawn?\nThe upper edge of the box is the 75% quantile. 75% of the data are below, and 25% are above:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#box-plot-facts",
+    "href": "slides/02-exploratory-1.html#box-plot-facts",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plot facts",
+    "text": "Box plot facts\n\nA box plot is easier to read quickly than a histogram because it eliminates clutter and immediately draws your eye to those main features: center, spread, and skew;\nThe box spans the middle 50% of the data;\nThe width of the box is called the inner quartile range (IQR) and it measures spread;\nFrom the docs (?geom_boxplot):\n\n\nThe upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called “outlying” points and are plotted individually."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#box-plots-obscure-modality",
+    "href": "slides/02-exploratory-1.html#box-plots-obscure-modality",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plots obscure modality",
+    "text": "Box plots obscure modality\nSame box plot:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#box-plots-obscure-modality-1",
+    "href": "slides/02-exploratory-1.html#box-plots-obscure-modality-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Box plots obscure modality",
+    "text": "Box plots obscure modality\nVery different distributions:"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#sonow-what",
+    "href": "slides/02-exploratory-1.html#sonow-what",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "So…now what?",
+    "text": "So…now what?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#are-we-just-eyeballing-pictures",
+    "href": "slides/02-exploratory-1.html#are-we-just-eyeballing-pictures",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Are we just eyeballing pictures?",
+    "text": "Are we just eyeballing pictures?\nNo! There are numerical summaries you can compute to quantify your visual intuition:\n\n\ncenter: mean (aka average), median, mode, …\n\nspread: variance, standard deviation, inner quartile range (IQR), …\n\nAnd there will be more: correlation coefficients, regression estimates, etc."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#some-formulas-dont-sweat-it",
+    "href": "slides/02-exploratory-1.html#some-formulas-dont-sweat-it",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Some formulas (don’t sweat it)",
+    "text": "Some formulas (don’t sweat it)\nLet \\(x_1\\), \\(x_2\\), …, \\(x_n\\) be the numbers listed in the column of our data frame. So \\(n\\) is the number of rows, or the sample size. Then:\n. . .\nThe sample average (aka mean):\n\\[\n\\bar{x}=\\frac{x_1+x_2+...+x_n}{n}=\\frac{1}{n}\\sum\\limits_{i=1}^n x_i\n\\]\n. . .\nThe sample standard deviation:\n\\[\ns = \\sqrt{\\frac{1}{n-1}\\sum\\limits_{i=1}^n(x_i-\\bar{x})^2}.\n\\]\n. . .\nUnderneath the square root, you have the “average squared distance from the average,” or the sample variance."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#how-does-the-computer-do-it",
+    "href": "slides/02-exploratory-1.html#how-does-the-computer-do-it",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "How does the computer do it?",
+    "text": "How does the computer do it?\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    s = sd(gross_2013, na.rm = TRUE)\n  )\n\n# A tibble: 1 × 2\n         avg          s\n       &lt;dbl&gt;      &lt;dbl&gt;\n1 271414482. 353676712.\n\n\n\n\n\nsummarize creates a new data frame that stores the summaries;\nYou can compute as many summaries as you want;\nTo the left of the equal signs are your choice of column names in the new data frame you are creating. You can type whatever you want here (within reason);\nTo the right of the equal signs is R code that computes the summaries. You must use the correct command names (case sensitive): mean, median, quantile, sd, var, etc;\nIf you want to learn what these do, read the documentation (eg ?quantile)."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#aside-the-pipe-operator",
+    "href": "slides/02-exploratory-1.html#aside-the-pipe-operator",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Aside: the pipe operator |>\n",
+    "text": "Aside: the pipe operator |&gt;\n\nThe pipe operator passes what comes before it into the function that comes after it as the first argument in that function:\n\n\n\nsum(1, 2)\n\n[1] 3\n\n\n\n\n\n1 |&gt; \n  sum(2)\n\n[1] 3\n\n\n\n\n. . .\nWe will use it to build up data summaries and transformations step-by-step."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#like-a-russian-stacking-doll",
+    "href": "slides/02-exploratory-1.html#like-a-russian-stacking-doll",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Like a Russian stacking doll",
+    "text": "Like a Russian stacking doll"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#more-summaries",
+    "href": "slides/02-exploratory-1.html#more-summaries",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "More summaries",
+    "text": "More summaries\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    sdev = sd(gross_2013, na.rm = TRUE),\n    q50 = median(gross_2013, na.rm = TRUE),\n    q25 = quantile(gross_2013, 0.25, na.rm = TRUE),\n    q75 = quantile(gross_2013, 0.75, na.rm = TRUE),\n    iqr = IQR(gross_2013, na.rm = TRUE)\n  )\n\n# A tibble: 1 × 6\n         avg       sdev        q50       q25       q75        iqr\n       &lt;dbl&gt;      &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;\n1 271414482. 353676712. 150218382. 53689120. 354101229 300412109."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#numbers-and-pictures-working-together",
+    "href": "slides/02-exploratory-1.html#numbers-and-pictures-working-together",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numbers and pictures, working together",
+    "text": "Numbers and pictures, working together\nWhere are the grosses concentrated?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#if-there-is-only-one-peak-then",
+    "href": "slides/02-exploratory-1.html#if-there-is-only-one-peak-then",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "If there is only one peak, then…",
+    "text": "If there is only one peak, then…\n\nThe mean is more sensitive to “outliers” than the median. The mean will get dragged in the direction of the skew more aggresively."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#summary",
+    "href": "slides/02-exploratory-1.html#summary",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Summary",
+    "text": "Summary\nVisualizing and summarizing one numerical variable:\n\n\n\n\n\n\n\n\n\n\n\n\n\nbechdel |&gt;\n  summarize(\n    avg = mean(gross_2013, na.rm = TRUE),\n    sdev = sd(gross_2013, na.rm = TRUE),\n    q50 = median(gross_2013, na.rm = TRUE),\n    q25 = quantile(gross_2013, 0.25, na.rm = TRUE),\n    q75 = quantile(gross_2013, 0.75, na.rm = TRUE),\n    iqr = IQR(gross_2013, na.rm = TRUE)\n  ) |&gt;\n  glimpse()\n\nRows: 1\nColumns: 6\n$ avg  &lt;dbl&gt; 271414482\n$ sdev &lt;dbl&gt; 353676712\n$ q50  &lt;dbl&gt; 150218382\n$ q25  &lt;dbl&gt; 53689120\n$ q75  &lt;dbl&gt; 354101229\n$ iqr  &lt;dbl&gt; 300412109"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#the-test-results",
+    "href": "slides/02-exploratory-1.html#the-test-results",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The test results",
+    "text": "The test results\nThe test result for the films is a categorical variable:\n\nbechdel$clean_test\n\n\n\n [1] \"notalk\" \"ok\"     \"notalk\" \"notalk\" \"men\"    \"men\"    \"notalk\" \"ok\"    \n [9] \"ok\"     \"notalk\"\n\n\nVisualization and summarization will be a bit more straightforward here. Things get fun when categorical variables interact with other stuff."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#picture-bar-plot",
+    "href": "slides/02-exploratory-1.html#picture-bar-plot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Picture: bar plot",
+    "text": "Picture: bar plot\n\nggplot(bechdel, aes(y = clean_test)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#picture-bar-plot-1",
+    "href": "slides/02-exploratory-1.html#picture-bar-plot-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Picture: bar plot",
+    "text": "Picture: bar plot\n\nggplot(bechdel, aes(x = clean_test)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#numerical-summary-tally-it-up",
+    "href": "slides/02-exploratory-1.html#numerical-summary-tally-it-up",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numerical summary: tally it up",
+    "text": "Numerical summary: tally it up\n\nbechdel |&gt;\n  count(clean_test)\n\n# A tibble: 5 × 2\n  clean_test     n\n  &lt;chr&gt;      &lt;int&gt;\n1 dubious      124\n2 men          168\n3 notalk       450\n4 nowomen      120\n5 ok           753"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#numerical-summary-proportions",
+    "href": "slides/02-exploratory-1.html#numerical-summary-proportions",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Numerical summary: proportions",
+    "text": "Numerical summary: proportions\n\nbechdel |&gt;\n  count(clean_test) |&gt;\n  mutate(\n    prop = n / sum(n)\n  ) |&gt;\n  arrange(prop)\n\n# A tibble: 5 × 3\n  clean_test     n   prop\n  &lt;chr&gt;      &lt;int&gt;  &lt;dbl&gt;\n1 nowomen      120 0.0743\n2 dubious      124 0.0768\n3 men          168 0.104 \n4 notalk       450 0.279 \n5 ok           753 0.466"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#seriously-its-just-like-the-dolls",
+    "href": "slides/02-exploratory-1.html#seriously-its-just-like-the-dolls",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Seriously, it’s just like the dolls",
+    "text": "Seriously, it’s just like the dolls"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#this-is-so-much-harder-to-read",
+    "href": "slides/02-exploratory-1.html#this-is-so-much-harder-to-read",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "This is so much harder to read",
+    "text": "This is so much harder to read"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#go-from-one-column-of-numbers-to-two",
+    "href": "slides/02-exploratory-1.html#go-from-one-column-of-numbers-to-two",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Go from one column of numbers to two",
+    "text": "Go from one column of numbers to two\n\nbechdel |&gt;\n  select(budget_2013, gross_2013)\n\n# A tibble: 1,615 × 2\n   budget_2013 gross_2013\n         &lt;dbl&gt;      &lt;dbl&gt;\n 1    13000000   67878146\n 2    45658735   55078343\n 3    20000000  211714070\n 4    61000000  208105475\n 5    40000000  190040426\n 6   225000000  184166317\n 7    92000000  371598396\n 8    12000000  102648667\n 9    13000000   36014634\n10   130000000  304895295\n# ℹ 1,605 more rows"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#scatter-plot",
+    "href": "slides/02-exploratory-1.html#scatter-plot",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Scatter plot",
+    "text": "Scatter plot\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#add-a-trend-line",
+    "href": "slides/02-exploratory-1.html#add-a-trend-line",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Add a “trend” line",
+    "text": "Add a “trend” line\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  geom_smooth() + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#add-a-trend-line-1",
+    "href": "slides/02-exploratory-1.html#add-a-trend-line-1",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Add a “trend” line",
+    "text": "Add a “trend” line\n\nggplot(bechdel, \n       aes(x = budget_2013, \n           y = gross_2013)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  labs(\n    x = \"Budget (2013 USD)\",\n    y = \"Gross (2013 USD)\",\n    title = \"Film finances (1990 - 2013)\"\n  ) +\n  theme_minimal(base_size = 20)"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#a-numerical-summary-correlation",
+    "href": "slides/02-exploratory-1.html#a-numerical-summary-correlation",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "A numerical summary: correlation",
+    "text": "A numerical summary: correlation\n\nbechdel |&gt;\n  summarize(\n    r = cor(gross_2013, budget_2013, use = \"complete.obs\")\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.687"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#correlation-more-on-this-next-week",
+    "href": "slides/02-exploratory-1.html#correlation-more-on-this-next-week",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Correlation (more on this next week)",
+    "text": "Correlation (more on this next week)\n\nMeasures the strength and direction of the linear association between two numerical variables;\nTells you how tightly the points cluster around a straight line;\nRanges between -1 and 1;\nSame sign as the slope."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#back-to-the-research-question",
+    "href": "slides/02-exploratory-1.html#back-to-the-research-question",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Back to the research question",
+    "text": "Back to the research question\nWhat does passing The Bechdel Test mean for a film’s finances?\n\nCategorical variables: clean_test and binary;\nNumerical variable: roi.\n\nHow does roi change depending on the category? To answer, we can use all the tools for univariate numerical data, but within the groups."
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#side-by-side-box-plots-preferred",
+    "href": "slides/02-exploratory-1.html#side-by-side-box-plots-preferred",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Side-by-side box plots (preferred)",
+    "text": "Side-by-side box plots (preferred)\n\nCodeggplot(bechdel, aes(x = roi, y = clean_test, color = binary)) +\n  geom_boxplot() +\n  labs(\n    title = \"Return on investment vs. Bechdel test result\",\n    x = \"Return-on-investment (gross / budget)\",\n    y = \"Detailed Bechdel result\",\n    color = \"Bechdel\\nresult\"\n  ) +\n  coord_cartesian(xlim = c(0, 16))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#side-by-side-histograms-eh",
+    "href": "slides/02-exploratory-1.html#side-by-side-histograms-eh",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Side-by-side histograms (…eh)",
+    "text": "Side-by-side histograms (…eh)\n\nCodebechdel |&gt;\n  mutate(\n    clean_test = fct_rev(clean_test)\n  ) |&gt;\n  ggplot(aes(x = roi, fill = binary)) +\n  geom_histogram(binwidth = 0.5) +\n  facet_wrap(~clean_test, nrow = 5) + \n  labs(\n    title = \"Return on investment vs. Bechdel test result\",\n    x = \"Return-on-investment (gross / budget)\",\n    y = \"Detailed Bechdel result\",\n    fill = \"Bechdel\\nresult\"\n  ) +\n  coord_cartesian(xlim = c(0, 16))"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#within-group-summaries",
+    "href": "slides/02-exploratory-1.html#within-group-summaries",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Within-group summaries",
+    "text": "Within-group summaries\n\nbechdel |&gt;\n  group_by(clean_test) |&gt;\n  summarize(\n    avg = mean(roi, na.rm = TRUE),\n    q50 = median(roi, , na.rm = TRUE)\n  )\n\n# A tibble: 5 × 3\n  clean_test   avg   q50\n  &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;\n1 dubious    11.2   3.80\n2 men         9.30  3.96\n3 notalk      6.93  3.69\n4 nowomen     9.52  3.27\n5 ok          7.99  4.21\n\n\nThe conclusion depends on the summary you choose. Which is more appropriate?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#the-art",
+    "href": "slides/02-exploratory-1.html#the-art",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "The art",
+    "text": "The art\nToday you saw some basic building blocks. The art of data visualization is in their combination. How do you trick the human brain into appreciating complex multivariate relationships when the human brain cannot really visualize in high dimensions?"
+  },
+  {
+    "objectID": "slides/02-exploratory-1.html#computational-themes",
+    "href": "slides/02-exploratory-1.html#computational-themes",
+    "title": "Exploratory Data Analysis, Part I",
+    "section": "Computational themes",
+    "text": "Computational themes\nEvery coding task in this class will be some combo of these two things:\n. . .\n\n\nBuilding cakes (ggplot) \n\n\nStacking dolls (pipe |&gt;) \n\n\n. . .\nMaster these, and everything will be coming up roses!"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#what-are-we-studying",
@@ -1834,7 +3031,7 @@
     "href": "lab/lab-0.html#data-visualization",
     "title": "Lab 0",
     "section": "4. Data visualization",
-    "text": "4. Data visualization\nWe use ggplot2 (included in the tidyverse) for data visualization.\nFor instance, if we wish to visualize the distribution of the numeric variable attack in the pokemon dataset, we can do that with a histogram:\n\nggplot(pokemon, aes(x = attack)) + \n  geom_histogram() + \n  labs(\n    x = \"Attack score\",\n    title = \"Distribution of Pokémon attack\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly right-skewed.\nAn alternative visualization for a distribution is a density plot. It’s like a “smoothed out” histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You’ll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:\n\nggplot(penguins, aes(x = flipper_length_mm, fill = species, color = species)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Flipper length (mm)\",\n    fill = \"Species\",\n    color = \"Species\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.\nThese are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here’s the template:\n\n\nggplot(df, aes(...)): It always starts here. You provide the name of the data frame you are using, as well as an aesthetic mapping where you tell R what variables you want to use and how you want to use them. In the second example above, we had x = flipper_length_mm because we wanted that variable on the horizontal access, and we had color = species because we wanted that variable to control the color of the curves;\n\ngeom_XXX: this is where we tell it what kind of plot we want. So far we have geom_histogram and geom_density, but there is also geom_point for scatter plots, geom_bar for bar charts, and many more;\nAfter you specify those two layers, the sky’s the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added labs to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but “Flipper length (mm)” is more readable than flipper_length_mm. You wouldn’t see the second in The New York Times.\n\n\n\n\n\n\n\nDon’t forget the plus signs!\n\n\n\nIf building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.\nHaving said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:\n\nggplot(pokemon, aes(x = attack, y = defense))  \n  geom_point() +\n  labs(\n    x = \"Attack score\",\n    x = \"Defense score\",\n    title = \"How are a Pokémon's attack and defense related?\"\n  )\n\n\n\nError:\n! Cannot add &lt;ggproto&gt; objects together.\nℹ Did you forget to add this object to a &lt;ggplot&gt; object?\n\n\nWe got an error because there is not plus sign between the first line and the second. It happens to the best of us, but pay attention!",
+    "text": "4. Data visualization\nWe use ggplot2 (included in the tidyverse) for data visualization.\nFor instance, if we wish to visualize the distribution of the numeric variable attack in the pokemon dataset, we can do that with a histogram:\n\nggplot(pokemon, aes(x = attack)) + \n  geom_histogram() + \n  labs(\n    x = \"Attack score\",\n    title = \"Distribution of Pokémon attack\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that most attack scores are concentrated between 50 and 100, and the distribution is slightly right-skewed.\nAn alternative visualization for a distribution is a density plot. It’s like a “smoothed out” histogram. Imagine draping a noodle or a piece of silk over the top of the histogram. You’ll get a nice curve that smooths over the blocky nooks and crannies. If we wanted to use this to visualize the distribution of flipper lengths for the penguins, but we wanted to distinguish the flipper lengths of different species, we could run this:\n\nggplot(penguins, aes(x = flipper_length_mm, fill = species, color = species)) + \n  geom_density(alpha = 0.5) + \n  labs(\n    x = \"Flipper length (mm)\",\n    fill = \"Species\",\n    color = \"Species\"\n  )\n\n\n\n\n\n\n\nFrom the plot, we can conclude that Gentoo penguins have systematically longer flippers than Adelie or Chinstrap, and Chinstrap penguins tend to have slightly longer flippers than Adelie penguins.\nThese are two simple examples of two specific visualizations (histogram and density), but the format of the code will be the same when we try to do other things. You are building up the plot bit-by-bit by stacking up layers. Here’s the template:\n\n\nggplot(df, aes(...)): It always starts here. You provide the name of the data frame you are using, as well as an aesthetic mapping where you tell R what variables you want to use and how you want to use them. In the second example above, we had x = flipper_length_mm because we wanted that variable on the horizontal axis, and we had color = species because we wanted that variable to control the color of the curves;\n\ngeom_XXX: this is where we tell it what kind of plot we want. So far we have geom_histogram and geom_density, but there is also geom_point for scatter plots, geom_bar for bar charts, and many more;\nAfter you specify those two layers, the sky’s the limit. If you want further plot elements, annotations, or refinements, you just keep adding layers. In this case, we added labs to give the plot human-readable labels. This is something you should always be in the habit of doing. If you do not, the computer defaults to using the variable names as the labels, but “Flipper length (mm)” is more readable than flipper_length_mm. You wouldn’t see the second in The New York Times.\n\n\n\n\n\n\n\nDon’t forget the plus signs!\n\n\n\nIf building a dataviz with ggplot is like building a cake, where each plot element is a layer of sponge, then the plus signs in between are like the icing. You’ve gotta have that icing. Nobody needs two slabs of dry sponge rubbing up against one another. We’re not animals.\nHaving said that, the following mistake is guaranteed to happen to all of us (JZ and TAs included) at some point this semester:\n\nggplot(pokemon, aes(x = attack, y = defense))  \n  geom_point() +\n  labs(\n    x = \"Attack score\",\n    x = \"Defense score\",\n    title = \"How are a Pokémon's attack and defense related?\"\n  )\n\n\n\nError:\n! Cannot add &lt;ggproto&gt; objects together.\nℹ Did you forget to add this object to a &lt;ggplot&gt; object?\n\n\nWe got an error because there is not plus sign between the first line and the second. It happens to the best of us, but pay attention!",
     "crumbs": [
       "Labs",
       "Lab 0"
@@ -1878,7 +3075,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 4  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring categorical data  🎥 Exploring numerical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -2690,139 +3887,76 @@
     "text": "Connect to the course files\n\nClick  in the upper right;\nClick  in the drop-down menu;\nClick  in the dialog box;\nClick  in the dialog box;\nInput these and Create Project:\n\nRepository URL: https://github.com/sta101-f26/sta101-f26-files.git\n\nProject directory name: sta101-f26-files"
   },
   {
-    "objectID": "syllabus/syllabus-assignments.html",
-    "href": "syllabus/syllabus-assignments.html",
-    "title": "Assignments and grading",
+    "objectID": "syllabus/syllabus-materials.html",
+    "href": "syllabus/syllabus-materials.html",
+    "title": "Course materials",
     "section": "",
-    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on the usual thresholds:",
+    "text": "All books are freely available online:\n\n📘 [ims]: Mine Çetinkaya-Rundel and Jo Hardin (2024): Introduction to Modern Statistics, 2e, OpenIntro;\n📗 [r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund (2022): R for Data Science, 2e, O’Reilly.\n\nims is the main course text, and it is supported by extra resources that you may find helpful:\n\n🎥 Video lectures: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you’ll quickly learn to tune out what you don’t need;\n🏋️ Tutorials: every section of the book comes with an interactive tutorial that walks you through the coding skills necessary to execute the ideas.\n\nYou are not required to use these, but they are available if you seek extra practice, alternative instruction, or want to get a head start before lecture. As we go along I will link to the relevant stuff in the MORE section of our course schedule.\n\n\n\n\n\n\nNote\n\n\n\nOur course (the lectures, labs, and homeworks) is meant to be self-contained. As I said, these tutorials and videos are just optional practice. And in particular, if you encounter new ideas in the tutorials or videos that are not introduced anywhere else in the course materials, then you are not responsible for knowing these things on an exam.",
     "crumbs": [
       "Syllabus",
-      "Assignments and grading"
+      "Materials"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-assignments.html#labs-10",
-    "href": "syllabus/syllabus-assignments.html#labs-10",
-    "title": "Assignments and grading",
-    "section": "Labs (10%)",
-    "text": "Labs (10%)\nIn your lab section each Friday, you will get into randomly assigned groups and complete a guided activity that gives you practice with the new material introduced in lecture that week. Your lab write-up is due at the end of your lab section, and late work will not be accepted.\n\n\n\n\n\n\nGrace\n\n\n\nThere will be ten graded labs in total, and your two lowest lab scores will be dropped at the end of the semester.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#homeworks-20",
-    "href": "syllabus/syllabus-assignments.html#homeworks-20",
-    "title": "Assignments and grading",
-    "section": "Homeworks (20%)",
-    "text": "Homeworks (20%)\nIf you practice, you improve. That’s true about pretty much everything, and data analysis is no exception. As such, the homeworks are the most important course component. If you skimp on these, it will not redound to your benefit on the exams. The homework assignments will be a mix of coding problems in R and exercises from our textbook. These will have one week turnaround: each assignment will be posted on a Friday, and will be due at 10:00 AM the following Friday.\n\n\n\n\n\n\nGrace\n\n\n\nThere will be eight homeworks in total, and your lowest homework score will be dropped at the end of the semester.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#group-data-analysis-project-20",
-    "href": "syllabus/syllabus-assignments.html#group-data-analysis-project-20",
-    "title": "Assignments and grading",
-    "section": "Group data analysis project (20%)",
-    "text": "Group data analysis project (20%)\nThe project will be completed in teams that are randomly assigned within your lab section. As a group you will select a dataset that interests you and then apply what you’ve learned throughout the semester to study a research question of your choosing. This will culminate in the following deliverables:\n\nFinal presentation: a five minute slide talk given in your lab on Friday December 4 (LDOC);\nFinal report: a written report submitted the following Monday December 7 at 5pm.\n\nThere will be other intermediate deadlines along the way to keep you on track. More information about the project will be provided in lab on Friday October 16.\n\n\n\n\n\n\nYou can’t skip this!\n\n\n\nRegardless your enrollment status (e.g. S/U), I will not give you a passing grade if you do not complete the group project.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-assignments.html#exams-25-each",
-    "href": "syllabus/syllabus-assignments.html#exams-25-each",
-    "title": "Assignments and grading",
-    "section": "Exams (25% each)",
-    "text": "Exams (25% each)\nThere will be two in-person exams. The dates, times, and locations are firm, so mark your calendar now:\n\nMidterm (25%): Thursday October 8, 3:05 PM - 4:20 PM in Social Sciences 139;\nFinal (25%): Thursday December 10, 2:00 PM - 5:00 PM in Social Sciences 139.\n\nThese will be old school, pencil-and-paper, in-class exams with no technology. The only resource you are allowed is both sides of one 8.5” x 11” sheet of notes, prepared by you and you alone. You can create it however you wish: handwritten, on a computer, on a tablet device, etc.\nIf you seek testing accommodations, make sure the Student Disability Access Office sends me a letter, and then please make your appointments in the Testing Center as soon as possible.\n\n\n\n\n\n\nGrace\n\n\n\nIf you do better on the final exam than you did on the midterm, I will replace your midterm score with your final exam score.\n\n\n\n\n\n\n\n\nNo make-up exams\n\n\n\nIf you are absent from the midterm for whatever reason, there will not be a make-up. Pursuant to the above policy, I will simply replace the missed midterm score with the final exam score. If you miss the final exam, you get a zero unless you have a Dean’s Excuse.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-resources.html",
-    "href": "syllabus/syllabus-resources.html",
-    "title": "University resources",
+    "objectID": "syllabus/syllabus-materials.html#textbooks",
+    "href": "syllabus/syllabus-materials.html#textbooks",
+    "title": "Course materials",
     "section": "",
-    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
+    "text": "All books are freely available online:\n\n📘 [ims]: Mine Çetinkaya-Rundel and Jo Hardin (2024): Introduction to Modern Statistics, 2e, OpenIntro;\n📗 [r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund (2022): R for Data Science, 2e, O’Reilly.\n\nims is the main course text, and it is supported by extra resources that you may find helpful:\n\n🎥 Video lectures: Dr. Çetinkaya-Rundel is a member of our department, and she has recorded companion videos for many of the course topics. Sometimes these may venture deeper into R coding than is necessary for 101, but you’ll quickly learn to tune out what you don’t need;\n🏋️ Tutorials: every section of the book comes with an interactive tutorial that walks you through the coding skills necessary to execute the ideas.\n\nYou are not required to use these, but they are available if you seek extra practice, alternative instruction, or want to get a head start before lecture. As we go along I will link to the relevant stuff in the MORE section of our course schedule.\n\n\n\n\n\n\nNote\n\n\n\nOur course (the lectures, labs, and homeworks) is meant to be self-contained. As I said, these tutorials and videos are just optional practice. And in particular, if you encounter new ideas in the tutorials or videos that are not introduced anywhere else in the course materials, then you are not responsible for knowing these things on an exam.",
     "crumbs": [
       "Syllabus",
-      "University resources"
+      "Materials"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-resources.html#course-costs",
-    "href": "syllabus/syllabus-resources.html#course-costs",
-    "title": "University resources",
+    "objectID": "syllabus/syllabus-materials.html#technology",
+    "href": "syllabus/syllabus-materials.html#technology",
+    "title": "Course materials",
+    "section": "Technology",
+    "text": "Technology\nYou will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here. Armed with your trusty laptop, you must be able to access the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus-team.html",
+    "href": "syllabus/syllabus-team.html",
+    "title": "Teaching team",
     "section": "",
-    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
+    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nLocation TBD\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nWed 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 5:00 PM - 7:00 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
-      "University resources"
+      "Teaching team"
     ]
   },
   {
-    "objectID": "syllabus/syllabus-resources.html#tech-support",
-    "href": "syllabus/syllabus-resources.html#tech-support",
-    "title": "University resources",
-    "section": "Tech support",
-    "text": "Tech support\nContact the Duke OIT Service Desk at oit.duke.edu/help.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-resources.html#academic-support",
-    "href": "syllabus/syllabus-resources.html#academic-support",
-    "title": "University resources",
-    "section": "Academic support",
-    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The Academic Resource Center (the ARC) offers services to support students academically during their undergraduate careers at Duke. The ARC can provide support with time management, academic skills and strategies, course-specific tutoring, and more. ARC services are available free to all Duke undergraduate student studying any discipline.\nYou can contact the Academic Resource Center by phone at (919) 684-5917, by email at theARC@duke.edu, or by visiting http://arc.duke.edu/.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-resources.html#accessibility",
-    "href": "syllabus/syllabus-resources.html#accessibility",
-    "title": "University resources",
-    "section": "Accessibility",
-    "text": "Accessibility\nIf any portion of the course is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students can engage with their courses and related assignments. Students should contact the SDAO to request or update accommodations under these circumstances.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus-resources.html#mental-health-and-well-being",
-    "href": "syllabus/syllabus-resources.html#mental-health-and-well-being",
-    "title": "University resources",
-    "section": "Mental health and well-being",
-    "text": "Mental health and well-being\nDuke is committed to holistic student wellbeing, which includes one’s mental, emotional, and physical health. The university offers resources to help students manage daily stress, to encourage intentional self-care, and to access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities, your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of wellbeing, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can contact the DukeReach team at dukereach@duke.edu;\nCounseling and Psychological Services (CAPS): CAPS offers counseling services to Duke students including virtual appointments, and referrals in the community. You do not need an appointment for an initial assessment. You may walk in or call 919-660-1000 to get started. Hours: Monday-Friday 9:00am - 4:00pm. After hours counseling services are available at no additional cost to students, you can call: 919-660-1000 Option 2;\nTimelyCare: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling;\nDuke Student Health: Student Health offers a wide range of healthcare services for all Duke students, many of which are covered by the student health fee. To make an appointment call (919) 681-9355. Hours: Monday - Friday, 8am - 4:30pm, Thursday 9am - 4:30pm. Closed from 12-12:30 each day.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/announcements/fall-dance-showcase.html",
-    "href": "syllabus/announcements/fall-dance-showcase.html",
+    "objectID": "syllabus/announcements/house-course.html",
+    "href": "syllabus/announcements/house-course.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
+    "text": "There is a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
   },
   {
-    "objectID": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
-    "href": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
+    "objectID": "syllabus/announcements/house-course.html#house-course",
+    "href": "syllabus/announcements/house-course.html#house-course",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
+    "text": "There is a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
+  },
+  {
+    "objectID": "syllabus/announcements/muse-magazine.html",
+    "href": "syllabus/announcements/muse-magazine.html",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
+  },
+  {
+    "objectID": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
+    "href": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
   },
   {
     "objectID": "syllabus/announcements/fall-vocal-showcase.html",
@@ -2843,7 +3977,17 @@
     "href": "syllabus/announcements.html",
     "title": "Support your classmates!",
     "section": "",
-    "text": "Sunday August 30 at 7:00 PM;\nPage Auditorium;\n@dukeacappella.",
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:",
+    "crumbs": [
+      "Check it out!"
+    ]
+  },
+  {
+    "objectID": "syllabus/announcements.html#new-issue-of-the-muse-magazine",
+    "href": "syllabus/announcements.html#new-issue-of-the-muse-magazine",
+    "title": "Support your classmates!",
+    "section": "",
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:",
     "crumbs": [
       "Check it out!"
     ]
@@ -2852,8 +3996,8 @@
     "objectID": "syllabus/announcements.html#fall-vocal-showcase",
     "href": "syllabus/announcements.html#fall-vocal-showcase",
     "title": "Support your classmates!",
-    "section": "",
-    "text": "Sunday August 30 at 7:00 PM;\nPage Auditorium;\n@dukeacappella.",
+    "section": "Fall Vocal Showcase",
+    "text": "Fall Vocal Showcase\n\nSunday August 30 at 7:00 PM;\nPage Auditorium;\n@dukeacappella.",
     "crumbs": [
       "Check it out!"
     ]
