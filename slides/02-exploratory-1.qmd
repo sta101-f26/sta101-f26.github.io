@@ -1041,7 +1041,20 @@ We will use it to build up data summaries and transformations step-by-step.
 
 ![](images/01/two-dolls.png){fig-align="center"}
 
+## More summaries
 
+
+```{r}
+bechdel |>
+  summarize(
+    avg = mean(gross_2013, na.rm = TRUE),
+    sdev = sd(gross_2013, na.rm = TRUE),
+    q50 = median(gross_2013, na.rm = TRUE),
+    q25 = quantile(gross_2013, 0.25, na.rm = TRUE),
+    q75 = quantile(gross_2013, 0.75, na.rm = TRUE),
+    iqr = IQR(gross_2013, na.rm = TRUE)
+  )
+```
 
 ## Numbers and pictures, working together
 
@@ -1172,7 +1185,7 @@ ggplot(bechdel, aes(x = clean_test)) +
   geom_bar()
 ```
 
-## Summary: tally it up
+## Numerical summary: tally it up
 
 ```{r}
 #| output-location: column
@@ -1180,7 +1193,7 @@ bechdel |>
   count(clean_test)
 ```
 
-## Summary: proportions
+## Numerical summary: proportions
 
 ```{r}
 #| output-location: column
@@ -1188,8 +1201,17 @@ bechdel |>
   count(clean_test) |>
   mutate(
     prop = n / sum(n)
-  )
+  ) |>
+  arrange(prop)
 ```
+
+## Seriously, it's just like the dolls
+
+![](images/02/pipe-1.png)
+
+## This is so much harder to read
+
+![](images/02/pipe-2.png)
 
 # Exploring two numerical variables
 
@@ -1320,7 +1342,7 @@ What does passing The Bechdel Test mean for a film's finances?
 - Categorical variables: `clean_test` and `binary`;
 - Numerical variable: `roi`.
 
-How does `roi` data change depending on the category? To answer, we can use all the tools for univariate numerical data, but *within the groups*.
+How does `roi` change depending on the category? To answer, we can use all the tools for univariate numerical data, but *within the groups*.
 
 ## Side-by-side box plots (preferred)
 
