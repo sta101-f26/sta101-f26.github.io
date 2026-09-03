@@ -31,3 +31,32 @@ editor:
 +------------------------------+--------------------+---------------+--------------------------------+
 : {tbl-colwidths="[20,20,20,40]"}
 
+
+## ARC Peer Educator
+
+ARC Peer Tutoring Groups are small groups of 2-5 students in the same course who meet weekly with a Peer Educator. This free resource is focused on allowing students to receive additional support for questions they have on the course content while being part of a community of fellow learners. 
+
+Here are the details for our course:
+
+:::: columns
+
+::: column
+- **Peer Educator**: Daniel Reynolds
+- **Year**: Sophomore
+- **Majors**: Statistical Science & Mathematics
+- **Session Location**: Perkins LINK 070 (Seminar 4)
+- **Session Time**: Thursdays from 4:45 pm to 5:45 pm
+- **Meeting Frequency**: Weekly
+- **Sign-up Portal**: [Penji](https://web.penjiapp.com/communities/24BUdkBzj8/learn) 
+:::
+
+::: column
+![](images/dr.JPG){.circ}
+:::
+
+::::
+
+Read more about ARC in the [slides](https://docs.google.com/presentation/d/1yskrBYxhtO9j5ais3KHj11InQNNPhJky/edit?usp=sharing&ouid=104386230990457193541&rtpof=true&sd=true) Dr. Swann presented in class on 9/1.
+
+
+
