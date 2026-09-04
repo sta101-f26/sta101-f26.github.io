@@ -18,6 +18,10 @@ library(ggthemes)  # for additional color palettes
 q_no <- 0
 ```
 
+## Setup
+
+{{< include _setup.qmd >}}
+
 ### Exercise `{r} q_no`
 
 {{< include _music-rec.qmd >}}
