@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>hw-1 – STA 101 Fall 2026</title>
+<title>Homework 1 – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,8 +17,42 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -29,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../lab/lab-1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -38,8 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -66,38 +97,32 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
-<meta property="og:title" content="hw-1 – STA 101 Fall 2026">
+<meta property="og:title" content="Homework 1 – STA 101 Fall 2026">
+<meta property="og:description" content="Due: Friday September 11 at 10 AM">
+<meta property="og:image" content="https://sta101-f26.github.io/hw/images/hw-1/plot-to-recreate-1.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="900">
+<meta property="og:image:width" content="2100">
 </head>
-
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">hw-1</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homework 1</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
     <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
@@ -112,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Check it out!</span></a>
@@ -126,8 +151,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -170,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
@@ -179,8 +204,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 0</span></a>
@@ -193,11 +218,24 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Homeworks</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Homeworks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Homework 1</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
  <span class="menu-text">Project</span></span>
@@ -207,19 +245,41 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam Study Guides</span></span>
   </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#exercise-0" id="toc-exercise-0" class="nav-link active" data-scroll-target="#exercise-0">Exercise 0</a></li>
+  <li>
+<a href="#part-1-exploring-nc-counties" id="toc-part-1-exploring-nc-counties" class="nav-link" data-scroll-target="#part-1-exploring-nc-counties">Part 1: Exploring NC Counties</a>
+  <ul class="collapse">
+<li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
+  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7">Exercise 7</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#part-2-ims-exercises" id="toc-part-2-ims-exercises" class="nav-link" data-scroll-target="#part-2-ims-exercises">Part 2: IMS exercises</a>
+  <ul class="collapse">
+<li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8">Exercise 8</a></li>
+  <li><a href="#exercise-9" id="toc-exercise-9" class="nav-link" data-scroll-target="#exercise-9">Exercise 9</a></li>
+  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10">Exercise 10</a></li>
+  </ul>
+</li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">hw-1</h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homework 1</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">Homework 1</h1>
+<p class="subtitle lead">Due: Friday September 11 at 10 AM</p>
 </div>
 
 
@@ -233,14 +293,219 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><p>On this first homework, you’ll continue to practice data visualization and summarization using the North Carolina counties data from <a href="../lab/lab-1.html">Lab 1</a>. At the end, you’ll dip into the textbook a little bit and think about some conceptual questions. Along the way, we’ll ask you to get a little fancier with the plots, which will require some extra packages:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://scales.r-lib.org">scales</a></span><span class="op">)</span>    <span class="co"># for better axis labels</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op">)</span>  <span class="co"># for additional color palettes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="exercise-0" class="level3"><h3 class="anchored" data-anchor-id="exercise-0">Exercise 0</h3>
+<p>Recommend some music for us to listen to while we grade this.</p>
+</section><section id="part-1-exploring-nc-counties" class="level2"><h2 class="anchored" data-anchor-id="part-1-exploring-nc-counties">Part 1: Exploring NC Counties</h2>
+<p>As a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from <a href="https://dashboard.myfuturenc.org/county-data-and-resources/">myFutureNC Dashboard</a> maintained by Carolina Demography at the University of North Carolina at Chapel Hill.</p>
+<p>This dataset is stored in the file <code>nc-county.csv</code>, which you can read into R with the following code:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nc_county</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/nc-county.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This will read the CSV (comma separated values) file from the <code>data</code> folder and store the dataset as a data frame called <code>nc_county</code> in R.</p>
+<p>The variables in the dataset and their descriptions are as follows:</p>
+<ul>
+<li>
+<code>county</code>: Name of county;</li>
+<li>
+<code>land_area_m2</code>: Land area of county in meters-squared, based on the 2020 census;</li>
+<li>
+<code>land_area_mi2</code>: Land area of county in miles-squared, based on the 2020 census;</li>
+<li>
+<code>pop_2020</code>: Population of county, based on the 2020 Census;</li>
+<li>
+<code>pop_dens_2020</code>: Population density calculated as population (<code>pop_2020</code>) divided by land area in miles-squared (people per mile-squared);</li>
+<li>
+<code>county_type</code>: Peer county type classification based on population characteristics, socioeconomic status, and geographic features used for grouping counties with similar demographic, social, and economic characteristics, allowing them to be compared and benchmarked against one another;</li>
+<li>
+<code>median_hh_income</code>: Median household income;</li>
+<li>
+<code>p_foreign_born</code>: Percentage of population that is foreign-born;</li>
+<li>
+<code>p_child_poverty</code>: Percentage of children living in poverty;</li>
+<li>
+<code>p_single_parent_hh</code>: Percentage of households with children that are single-parent households;</li>
+<li>
+<code>p_broadband</code>: Percentage of households with broadband internet access;</li>
+<li>
+<code>p_home_ownership</code>: Percentage of households that are owner-occupied;</li>
+<li>
+<code>p_family_sustaining_wage</code>: Percentage of adults that earn a family-sustaining wage – typically a wage that covers essential costs like housing, food, childcare, transportation, and healthcare for a family’s basic needs within a specific geographic area;</li>
+<li>
+<code>p_edu_lths</code>: Percentage of 25-44-year-olds with less than a high school diploma;</li>
+<li>
+<code>p_edu_hsged</code>: Percentage of 25-44-year-olds with a high school diploma or equivalent;</li>
+<li>
+<code>p_edu_scnd</code>: Percentage of 25-44-year-olds with some college or an associate degree;</li>
+<li>
+<code>p_edu_ndc</code>: Percentage of 25-44-year-olds with non-degree credentials – certifications, licenses, or other credentials that demonstrate specific skills or knowledge but do not confer a formal academic degree;</li>
+<li>
+<code>p_edu_assoc</code>: Percentage of 25-44-year-olds with an associate degree;</li>
+<li>
+<code>p_edu_ba</code>: Percentage of 25-44-year-olds with a bachelor’s degree;</li>
+<li>
+<code>p_edu_mapl</code>: Percentage of 25-44-year-olds with a master’s, professional, or doctoral degree;</li>
+<li>
+<code>p_edu_hs_grad_rate</code>: High school graduation rate;</li>
+<li>
+<code>p_edu_chronic_absent_rate</code>: Chronic absenteeism rate.</li>
+</ul>
+<section id="exercise-1" class="level3"><h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
+<p>Make a bar plot of the number of counties by <code>county_type</code>. What type of county is most common in North Carolina? What type of county is least common?</p>
+</section><section id="exercise-2" class="level3"><h3 class="anchored" data-anchor-id="exercise-2">Exercise 2</h3>
+<p>Make a boxplot of median household income (<code>median_hh_income</code>) by <code>county_type</code>. In 2-3 sentences, compare the distributions of median household income across the four county types touching on shape, center, spread, and any potential outliers.</p>
+</section><section id="exercise-3" class="level3"><h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
+<p>Make a boxplot of the proportion of 25-44-year-olds with a master’s, professional, or doctoral degree (<code>p_edu_mapl</code>) by <code>county_type</code>. How do the median proportions compare across the four county types?</p>
+</section><section id="exercise-4" class="level3"><h3 class="anchored" data-anchor-id="exercise-4">Exercise 4</h3>
+<p>Recreate the following visualization that compares the distribution of home ownership (<code>p_home_ownership</code>) by <code>county_type</code>. Then, highlight one feature of home ownership that this plot reveals in 1-2 sentences.</p>
+<p><img src="images/hw-1/plot-to-recreate-1.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hints
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>x-axis: You can modify the x-axis labels to be percentages in a <code><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_x_continuous()</a></code> layer. The <strong>scales</strong> package offers a handy function for formatting percentages, <code><a href="https://scales.r-lib.org/reference/label_percent.html">label_percent()</a></code>. You can use this in the <code>labels</code> argument of <code><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_x_continuous()</a></code>.</p></li>
+<li><p>Color palette: The <code><a href="https://jrnold.github.io/ggthemes/reference/colorblind.html">scale_color_colorblind()</a></code> and <code><a href="https://jrnold.github.io/ggthemes/reference/colorblind.html">scale_fill_colorblind()</a></code> functions from the <strong>ggthemes</strong> package provide a color palette that is friendly for individuals with color vision deficiencies.</p></li>
+<li><p>Transparancy: You should adjust the transparency of the filled density curves. You don’t have to worry about the exact transparency value, but you should try a few to get close.</p></li>
+<li><p>Theme: This plot uses a non-default theme. See <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme options documentation</a> for options.</p></li>
+<li><p>Legend: You should move the legend to the top of the plot. You can do this in a <code><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme()</a></code> layer. See <a href="https://ggplot2.tidyverse.org/reference/theme.html">theme documentation</a> to identify the argument you need to change to move the legend.</p></li>
+<li><p>Aspect ratio: You can adjust the aspect ratio by setting the <code>fig-asp</code> option in the code cell. A smaller (closer to 0) value makes the plot shorter and wider, while a larger (closer to 1) value makes the plot square-ish.</p></li>
+<li><p>Width: You can also adjust the width of the plot by setting the <code>fig-width</code> option in the code cell. A larger value makes the plot wider.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="exercise-5" class="level3"><h3 class="anchored" data-anchor-id="exercise-5">Exercise 5</h3>
+<ol type="a">
+<li><p>Report the number of rows and columns in <code>nc_county</code>.</p></li>
+<li>
+<p>Create a new variable called <code>p_edu_he</code> (short for “percentage of population with higher education”) that is the sum of the percentages of</p>
+<ul>
+<li>25-44-year-olds with some college or an associate degree (<code>p_edu_scnd</code>),</li>
+<li>non-degree credentials (<code>p_edu_ndc</code>),</li>
+<li>an associate degree (<code>p_edu_assoc</code>),</li>
+<li>a bachelor’s degree (<code>p_edu_ba</code>), and</li>
+<li>a master’s, professional, or doctoral degree (<code>p_edu_mapl</code>).</li>
+</ul>
+<p>and store this variable in the <code>nc_county</code> data frame.</p>
+<p>Then, report the number of rows and columns in <code>nc_county</code> after adding this variable.</p>
+</li>
+<li>
+<p>In a single pipeline, calculate the</p>
+<ul>
+<li>minimum,</li>
+<li>first quartile (25th percentile),</li>
+<li>median (50th percentile),</li>
+<li>mean,</li>
+<li>third quartile (75th percentile), and</li>
+<li>maximum</li>
+</ul>
+<p>of <code>p_edu_he</code>.</p>
+</li>
+<li><p>In a single pipeline, calculate the same statistics as in the previous part, but for each <code>county_type</code>.</p></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>If you don’t create the new variable <code>p_edu_he</code> in part (b), you will not be able to answer the remaining parts of this question or any of the remaining questions on the homework.</p>
+<p>Therefore, here is a quick check to make sure you created the variable correctly – after creating the variable, run the following code:</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nc_county</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">p_edu_he</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html">slice_head</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You should see the following output:</p>
+<pre><code># A tibble: 3 × 1
+  p_edu_he
+     &lt;dbl&gt;
+1    0.615
+2    0.525
+3    0.525</code></pre>
+<p>If you do not see this output, please revisit part (b) of this question and make sure you created the variable correctly. Ask for help on Ed or in office hours if you need assistance.</p>
+</div>
+</div>
+</div>
+</section><section id="exercise-6" class="level3"><h3 class="anchored" data-anchor-id="exercise-6">Exercise 6</h3>
+<p>Re-create the following plot that shows the distribution of <code>p_edu_he</code> by <code>county_type</code>.</p>
+<p><img src="images/hw-1/plot-to-recreate-2.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>x-axis: Same hint as before.</p></li>
+<li><p>Points: The points are drawn with the <code>geom_beeswarm()</code> function from the <strong>ggbeeswarm</strong> package.</p></li>
+<li><p>Outliers: The outliers in the box plots are drawn as <em>open circles</em>. You can specify this with the <code>outlier.shape</code> argument in <code><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot()</a></code>. You can also adjust the size of the outliers with the <code>outlier.size</code> argument. The ggplot2 <a href="https://ggplot2.tidyverse.org/articles/ggplot2-specs.html#point">aesthetic specifications documentation</a> has a list of shape names you can use for help.</p></li>
+<li><p>Color palette: The colors for the box plots are manually specified in a <code><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual()</a></code> layer. You do not need to worry about the exact colors, but you should try to get close, e.g., use blue-ish colors for Rural counties, red-ish for Suburban, and brown-ish for Urban. You can use HEX codes for colors or look up named colors in R in the <a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf">R colors cheatsheet</a></p></li>
+<li><p>Transparency: You should adjust the transparency of the box plots. You don’t have to worry about the exact transparency value, but you should try to get close.</p></li>
+<li><p>Theme: This plot uses a non-default theme. See <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme options documentation</a> for options.</p></li>
+<li><p>Aspect ratio and width: You can adjust the aspect ratio and width of your plot in your <em>rendered document</em> by setting <code>fig-asp</code> and <code>fig-width</code> options in the code cell.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="exercise-7" class="level3"><h3 class="anchored" data-anchor-id="exercise-7">Exercise 7</h3>
+<p>Create a scatter plot with percentage of 25-44 year olds with higher education (<code>p_edu_he</code>) on the x-axis and median household income (<code>median_hh_income</code>) on the y-axis. Describe the relationship between these two variables. In your description, make sure to comment on the direction, form, strength, and any unusual observations.</p>
+<p>Requirements for the plot:</p>
+<ul>
+<li>The x-axis should be formatted as percentages, e.g., 30%, not 0.3;</li>
+<li>The y-axis should be formatted as dollar amounts, e.g., $40,000, not 4e+04.</li>
+</ul></section></section><section id="part-2-ims-exercises" class="level2"><h2 class="anchored" data-anchor-id="part-2-ims-exercises">Part 2: IMS exercises</h2>
+<p>These exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.</p>
+<section id="exercise-8" class="level3"><h3 class="anchored" data-anchor-id="exercise-8">Exercise 8</h3>
+<p><a href="https://openintrostat.github.io/ims/data-hello.html#sec-chp1-exercises">IMS Chapter 1 exercises</a>, #4: Cheaters, study components.</p>
+</section><section id="exercise-9" class="level3"><h3 class="anchored" data-anchor-id="exercise-9">Exercise 9</h3>
+<p><a href="https://openintrostat.github.io/ims/data-hello.html#sec-chp1-exercises">IMS Chapter 1 exercises</a>, #14: UN Votes.</p>
+</section><section id="exercise-10" class="level3"><h3 class="anchored" data-anchor-id="exercise-10">Exercise 10</h3>
+<p><a href="https://openintrostat.github.io/ims/data-hello.html#sec-chp1-exercises">IMS Chapter 1 exercises</a>, #16: Shows on Netflix.</p>
+</section></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<ol type="1">
+<li>Hit the blue <strong>Render</strong> button to generate your final PDF;</li>
+<li>Give your work a final look over to double-check a few things:
+<ul>
+<li>that your code is <a href="../lab/lab-0.html#code-style"><em>stylish</em></a>;</li>
+<li>that none of your code or pictures runs off the page. We cannot grade what we cannot read;</li>
+<li>that all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of <code>flipper_length_mm</code>;</li>
+<li>If your work is lacking on any of these items, fix them and re-render as needed;</li>
+</ul>
+</li>
+<li>Download the PDF from your container;</li>
+<li>Upload it to <a href="https://www.gradescope.com/courses/1345015">Gradescope</a>;</li>
+<li>Don’t forget to <em>mark your pages</em>.</li>
+</ol>
 
 
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -638,10 +903,16 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
-  </script>
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../lab/lab-1.html" class="pagination-link" aria-label="Lab 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 1</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2026 John Zito</p>
 </div>   
@@ -653,8 +924,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
