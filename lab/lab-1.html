@@ -60,6 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../lab/lab-0.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -107,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 1</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-1.html">Lab 1</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,17 +195,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
       </ul>
@@ -229,13 +236,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#task-1" id="toc-task-1" class="nav-link active" data-scroll-target="#task-1">Task 1</a></li>
+<li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
   <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
   <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-1.html">Lab 1</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Lab 1</h1>
 <p class="subtitle lead">Due: end-of-lab Friday September 4</p>
 </div>
@@ -304,12 +313,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>
 <code>p_edu_chronic_absent_rate</code>: Chronic absenteeism rate.</li>
 </ul>
-<section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
-<p>Make a well-labeled histogram of the <code>pop_2020</code> variable.</p>
-</section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
-<p>Make a well-labeled boxplot of the <code>pop_2020</code> variable.</p>
-</section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<section id="setup" class="level2"><h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<ol type="1">
+<li>Log-in to your <a href="https://cmgr.oit.duke.edu/containers">container</a>;</li>
+<li>Double-check that you have the <code>sta101-f26-files</code> project loaded in the upper-right corner of RStudio (this should always be true);</li>
+<li>Go to the “Git” tab in the upper-right panel of RStudio and click the <strong>Pull</strong> button (arrow pointing down). Now the new assignment template and dataset should appear in the <code>lab</code> folder of your <strong>Files</strong>.</li>
+</ol></section><section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<ol type="a">
+<li>Make a well-labeled histogram of the <code>pop_2020</code> variable;</li>
+<li>Compute the mean and the standard deviation of the county populations.</li>
+</ol></section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<ol type="a">
+<li>Make a well-labeled boxplot of the <code>pop_2020</code> variable;</li>
+<li>Compute the median and the inner-quartile range (IQR) of the county populations;</li>
+<li>Referring to your plots and summaries, describe the distribution (center, spread, shape) of the county populations.</li>
+</ol></section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
 <p>Make a scatter plot of population density (<code>pop_dens_2020</code> on the y-axis) vs.&nbsp;land area in miles-squared (<code>land_area_mi2</code> on the x-axis). Make sure to set an informative title and axis labels for your plot.</p>
+</section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<ol type="1">
+<li>Give your work a final look over to double-check that your code is <a href="../lab/lab-0.html#code-style"><em>stylish</em></a>;</li>
+<li>Hit the blue <strong>Render</strong> button to generate your PDF;</li>
+<li>Download the PDF from your container;</li>
+<li>Upload it to <a href="https://www.gradescope.com/courses/1345015">Gradescope</a>;</li>
+<li>Don’t forget to <em>mark your pages</em>.</li>
+</ol>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -710,7 +737,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script>
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../lab/lab-0.html" class="pagination-link" aria-label="Lab 0">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 0</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
