@@ -1,0 +1,10 @@
+1. Hit the blue **Render** button to generate your final PDF;
+1. Give your work a final look over to double-check a few things:
+    - that your code is [*stylish*](/lab/lab-0.html#code-style);
+    - that none of your code or pictures runs off the page. We cannot grade what we cannot read;
+    - that all of your plots are well-labeled and human-readable. In other words "Flipper length (mm)" instead of `flipper_length_mm`; 
+    - If your work is lacking on any of these items, fix them and re-render as needed;
+1. Download the PDF from your container;
+1. Upload it to [Gradescope](https://www.gradescope.com/courses/1345015);
+1. Don't forget to *mark your pages*.
+
