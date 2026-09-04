@@ -3075,7 +3075,7 @@
     "href": "lab/lab-1.html",
     "title": "Lab 1",
     "section": "",
-    "text": "In this lab you will practice the basics of data visualization with ggplot using a dataset on counties in North Carolina. The dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:",
+    "text": "In this lab you will practice the basics of data visualization (ggplot) and data summarization (dplyr and |&gt;) using a dataset on counties in North Carolina. The dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:",
     "crumbs": [
       "Labs",
       "Lab 1"
