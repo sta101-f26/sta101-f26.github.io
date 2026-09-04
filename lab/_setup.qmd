@@ -1,3 +1,4 @@
 1. Log-in to your [container](https://cmgr.oit.duke.edu/containers);
-2. Double-check that you have the `sta101-f26-files` project loaded in the upper-right corner of RStudio (this should always be true);
-2. Go to the "Git" tab in the upper-right panel of RStudio and click the **Pull** button (arrow pointing down). Now the new assignment template and dataset should appear in the `lab` folder of your **Files**.
+1. Double-check that you have the `sta101-f26-files` project loaded in the upper-right corner of RStudio (this should always be true);
+1. Go to the "Git" tab in the upper-right panel of RStudio and click the **Pull** button (arrow pointing down). Now the new assignment template and dataset should appear in the `lab` folder of your **Files**;
+1. At the top of the new `.qmd` in between `---` you have the *settings* for the document (the so-called YAML, but don't worry about that). Modify the `authors` so it lists yourself and your teammates.

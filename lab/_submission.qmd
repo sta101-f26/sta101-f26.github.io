@@ -1,5 +1,7 @@
+You collaborated with your team, but now everyone submits individually: 
+
 1. Give your work a final look over to double-check that your code is [*stylish*](/lab/lab-0.html#code-style);
-1. Hit the blue **Render** button to generate your PDF;
+1. Hit the blue **Render** button to generate your final PDF;
 1. Download the PDF from your container;
 1. Upload it to [Gradescope](https://www.gradescope.com/courses/1345015);
 1. Don't forget to *mark your pages*.
