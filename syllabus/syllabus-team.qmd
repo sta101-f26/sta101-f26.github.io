@@ -13,7 +13,7 @@ editor:
 | ![](images/sc.jpg){.circ}    | Chen, Songliang    | TA            | **Tue 10:00 AM - 12:00 PM**\   |
 |                              |                    |               | Old Chem 203A                  |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/md.jpeg){.circ}   | Del Preto, Matthew | TA            | **Mon 10:00 AM - 12:00 PM**\   |
+| ![](images/md.jpeg){.circ}   | Del Preto, Matthew | TA            | **Mon 9:30 AM - 11:30 PM**\   |
 |                              |                    |               | Old Chem 203A                  |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/jk.jpeg){.circ}   | Kang, Joon         | TA            | **Wed 3:00 PM - 5:00 PM**\     |
