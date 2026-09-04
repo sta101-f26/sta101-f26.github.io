@@ -3089,6 +3089,17 @@
     ]
   },
   {
+    "objectID": "hw/hw-1.html#setup",
+    "href": "hw/hw-1.html#setup",
+    "title": "Homework 1",
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
+  },
+  {
     "objectID": "hw/hw-1.html#part-1-exploring-nc-counties",
     "href": "hw/hw-1.html#part-1-exploring-nc-counties",
     "title": "Homework 1",

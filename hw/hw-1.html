@@ -252,7 +252,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#exercise-0" id="toc-exercise-0" class="nav-link active" data-scroll-target="#exercise-0">Exercise 0</a></li>
+<li>
+<a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+<li><a href="#exercise-0" id="toc-exercise-0" class="nav-link" data-scroll-target="#exercise-0">Exercise 0</a></li>
+  </ul>
+</li>
   <li>
 <a href="#part-1-exploring-nc-counties" id="toc-part-1-exploring-nc-counties" class="nav-link" data-scroll-target="#part-1-exploring-nc-counties">Part 1: Exploring NC Counties</a>
   <ul class="collapse">
@@ -299,9 +304,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://scales.r-lib.org">scales</a></span><span class="op">)</span>    <span class="co"># for better axis labels</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://jrnold.github.io/ggthemes/">ggthemes</a></span><span class="op">)</span>  <span class="co"># for additional color palettes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="setup" class="level2"><h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<ol type="1">
+<li>Log-in to your <a href="https://cmgr.oit.duke.edu/containers">container</a>;</li>
+<li>Double-check that you have the <code>sta101-f26-files</code> project loaded in the upper-right corner of RStudio (this should always be true);</li>
+<li>Go to the “Git” tab in the upper-right panel of RStudio and click the <strong>Pull</strong> button (arrow pointing down). Now the new assignment template and dataset should appear in the <code>lab</code> folder of your <strong>Files</strong>;</li>
+<li>At the top of the new <code>.qmd</code>, in between <code>---</code>, you have the <em>settings</em> for the document (the so-called YAML, but don’t worry about that). Modify the <code>author</code> so that it lists lil’ ol’ you.</li>
+</ol>
 <section id="exercise-0" class="level3"><h3 class="anchored" data-anchor-id="exercise-0">Exercise 0</h3>
 <p>Recommend some music for us to listen to while we grade this.</p>
-</section><section id="part-1-exploring-nc-counties" class="level2"><h2 class="anchored" data-anchor-id="part-1-exploring-nc-counties">Part 1: Exploring NC Counties</h2>
+</section></section><section id="part-1-exploring-nc-counties" class="level2"><h2 class="anchored" data-anchor-id="part-1-exploring-nc-counties">Part 1: Exploring NC Counties</h2>
 <p>As a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from <a href="https://dashboard.myfuturenc.org/county-data-and-resources/">myFutureNC Dashboard</a> maintained by Carolina Demography at the University of North Carolina at Chapel Hill.</p>
 <p>This dataset is stored in the file <code>nc-county.csv</code>, which you can read into R with the following code:</p>
 <div class="cell">
