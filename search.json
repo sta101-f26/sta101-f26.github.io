@@ -114,7 +114,14 @@
     "href": "syllabus/announcements/chronicle.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Anabel Howery does photos. Who else?"
+    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+  },
+  {
+    "objectID": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "href": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
     "objectID": "syllabus/announcements/fall-dance-showcase.html",
@@ -3086,7 +3093,7 @@
     "href": "lab/lab-1.html#setup",
     "title": "Lab 1",
     "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files.",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.",
     "crumbs": [
       "Labs",
       "Lab 1"
@@ -3130,7 +3137,7 @@
     "href": "lab/lab-1.html#submission",
     "title": "Lab 1",
     "section": "Submission",
-    "text": "Submission\n\nGive your work a final look over to double-check that your code is stylish;\nHit the blue Render button to generate your PDF;\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nGive your work a final look over to double-check that your code is stylish;\nHit the blue Render button to generate your final PDF;\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
     "crumbs": [
       "Labs",
       "Lab 1"
@@ -3141,7 +3148,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\n\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -3990,7 +3997,7 @@
     "href": "syllabus/syllabus-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 9:30 AM - 11:30 PM  | Old Chem 203A\n\n\n\nKang, Joon\nTA\nWed 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 5:00 PM - 7:00 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
+    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 9:30 AM - 11:30 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nWed 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 5:00 PM - 7:00 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
       "Teaching team"
@@ -4054,7 +4061,17 @@
     "href": "syllabus/announcements.html",
     "title": "Support your classmates!",
     "section": "",
-    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:",
+    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "crumbs": [
+      "Check it out!"
+    ]
+  },
+  {
+    "objectID": "syllabus/announcements.html#articles-in-the-chronicle",
+    "href": "syllabus/announcements.html#articles-in-the-chronicle",
+    "title": "Support your classmates!",
+    "section": "",
+    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
@@ -4063,8 +4080,8 @@
     "objectID": "syllabus/announcements.html#new-issue-of-the-muse-magazine",
     "href": "syllabus/announcements.html#new-issue-of-the-muse-magazine",
     "title": "Support your classmates!",
-    "section": "",
-    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:",
+    "section": "New issue of The Muse Magazine",
+    "text": "New issue of The Muse Magazine\nDuke’s own The Muse Magazine (@themuseduke) has a new issue out:",
     "crumbs": [
       "Check it out!"
     ]
