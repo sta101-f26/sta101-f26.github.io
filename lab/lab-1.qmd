@@ -4,7 +4,7 @@ subtitle: "Due: end-of-lab Friday September 4"
 format: html
 ---
 
-In this lab you will practice the basics of data visualization with `ggplot` using a dataset on counties in North Carolina. The dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from [myFutureNC Dashboard](https://dashboard.myfuturenc.org/county-data-and-resources/) maintained by Carolina Demography at the University of North Carolina at Chapel Hill.
+In this lab you will practice the basics of data visualization (`ggplot`) and data summarization (`dplyr` and `|>`) using a dataset on counties in North Carolina. The dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from [myFutureNC Dashboard](https://dashboard.myfuturenc.org/county-data-and-resources/) maintained by Carolina Demography at the University of North Carolina at Chapel Hill.
 
 This dataset is stored in the file `nc-county.csv`, which you can read into R with the following code:
 
