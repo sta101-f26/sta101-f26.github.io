@@ -26,7 +26,7 @@ d <- read_sheet("https://docs.google.com/spreadsheets/d/1fISQ-TZpEbdcB1XUypBWOfN
 #| echo: false
 #| column: screen-inset-right
 
-table_width <- 80
+table_width <- 82
 
 d |>
   filter(!is.na(session)) |>
@@ -102,11 +102,11 @@ d |>
   cols_width(
     week ~ pct(.02 * table_width),
     date ~ pct(.10 * table_width), 
-    topic ~ pct(.26 * table_width),
-    materials ~ pct(.08 * table_width),
-    reading ~ pct(.16 * table_width), 
+    topic ~ pct(.25 * table_width),
+    materials ~ pct(.07 * table_width),
+    reading ~ pct(.15 * table_width), 
     more ~ pct(.25 * table_width),
-    due ~ pct(.13 * table_width)
+    due ~ pct(.16 * table_width)
   ) |>
   cols_label_with(fn = function(x) {
       janitor::make_clean_names(x, case = "title") |>
