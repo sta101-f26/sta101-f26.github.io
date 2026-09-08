@@ -114,14 +114,14 @@
     "href": "syllabus/announcements/chronicle.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
     "objectID": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
     "href": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
     "objectID": "syllabus/announcements/fall-dance-showcase.html",
@@ -257,6 +257,545 @@
       "Syllabus",
       "Assignments and grading"
     ]
+  },
+  {
+    "objectID": "slides/04-models-slides.html#agenda",
+    "href": "slides/04-models-slides.html#agenda",
+    "title": "The language of models",
+    "section": "Agenda",
+    "text": "Agenda\n\nWhat is a model?\nWhy do we model?\nWhat is correlation?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#two-main-goals",
+    "href": "slides/04-models-slides.html#two-main-goals",
+    "title": "The language of models",
+    "section": "Two main goals",
+    "text": "Two main goals\n\nPrediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#lets-drive-a-tesla",
+    "href": "slides/04-models-slides.html#lets-drive-a-tesla",
+    "title": "The language of models",
+    "section": "Let’s drive a Tesla!",
+    "text": "Let’s drive a Tesla!"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#semi-or-garage",
+    "href": "slides/04-models-slides.html#semi-or-garage",
+    "title": "The language of models",
+    "section": "Semi or garage?",
+    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#semi-or-garage-1",
+    "href": "slides/04-models-slides.html#semi-or-garage-1",
+    "title": "The language of models",
+    "section": "Semi or garage?",
+    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#car-or-trash",
+    "href": "slides/04-models-slides.html#car-or-trash",
+    "title": "The language of models",
+    "section": "Car or trash?",
+    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\n\nRelation Between Leisure Time, Commuting, and Occupational Physical Activity With Blood Pressure in 125,402 Adults: The Lifelines Cohort\nByambasukh, Oyuntugs, Harold Snieder, and Eva Corpeleijn. “Relation between leisure time, commuting, and occupational physical activity with blood pressure in 125 402 adults: the lifelines cohort.” Journal of the American Heart Association 9.4 (2020): e014313."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-1",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-1",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily‐life physical activity, such as commuting, leisure‐time, and occupational, with BP level and the risk of having hypertension."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-2",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-2",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-3",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-3",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-4",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-4",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-5",
+    "href": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp-5",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively.\nConclusions: Higher commuting and leisure-time but not occupational MVPA were significantly associated with lower BP and lower hypertension risk at all ages, but these associations were stronger in older adults."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#modeling-cars",
+    "href": "slides/04-models-slides.html#modeling-cars",
+    "title": "The language of models",
+    "section": "Modeling cars",
+    "text": "Modeling cars\n\n\nWhat is the relationship between cars’ weights and their mileage?\nWhat is your best guess for a car’s MPG that weighs 4,500 pounds?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#modelling-cars",
+    "href": "slides/04-models-slides.html#modelling-cars",
+    "title": "The language of models",
+    "section": "Modelling cars",
+    "text": "Modelling cars\n\nDescribe: What is the relationship between cars’ weights and their mileage?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#modelling-cars-1",
+    "href": "slides/04-models-slides.html#modelling-cars-1",
+    "title": "The language of models",
+    "section": "Modelling cars",
+    "text": "Modelling cars\n\nPredict: What is your best guess for a car’s MPG that weighs 4,500 pounds?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#modelling",
+    "href": "slides/04-models-slides.html#modelling",
+    "title": "The language of models",
+    "section": "Modelling",
+    "text": "Modelling\n\nUse models to explain the relationship between variables and to make predictions\nFor now we will focus on linear models (but there are many many other types of models too!)"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#what-is-a-line",
+    "href": "slides/04-models-slides.html#what-is-a-line",
+    "title": "The language of models",
+    "section": "What is a line?",
+    "text": "What is a line?"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#but-on-a-plot",
+    "href": "slides/04-models-slides.html#but-on-a-plot",
+    "title": "The language of models",
+    "section": "But on a plot…",
+    "text": "But on a plot…"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#but-in-math-terms",
+    "href": "slides/04-models-slides.html#but-in-math-terms",
+    "title": "The language of models",
+    "section": "But in math terms…",
+    "text": "But in math terms…\n\\[\n\\begin{aligned}\ny &= mx + b \\\\\n\\text{Output}&=\\text{Slope}\\times \\text{Input} + \\text{Intercept}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#modelling-vocabulary",
+    "href": "slides/04-models-slides.html#modelling-vocabulary",
+    "title": "The language of models",
+    "section": "Modelling vocabulary",
+    "text": "Modelling vocabulary\n\nPredictor (explanatory variable)\nOutcome (response variable)\nRegression line\n\nSlope\nIntercept\n\n\nCorrelation"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#predictor-explanatory-variable",
+    "href": "slides/04-models-slides.html#predictor-explanatory-variable",
+    "title": "The language of models",
+    "section": "Predictor (explanatory variable)",
+    "text": "Predictor (explanatory variable)\n\n\n\n\n\n\n\n\nmpg\nwt\n\n\n\n21\n2.62\n\n\n21\n2.875\n\n\n22.8\n2.32\n\n\n21.4\n3.215\n\n\n18.7\n3.44\n\n\n18.1\n3.46\n\n\n...\n..."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#outcome-response-variable",
+    "href": "slides/04-models-slides.html#outcome-response-variable",
+    "title": "The language of models",
+    "section": "Outcome (response variable)",
+    "text": "Outcome (response variable)\n\n\n\n\n\n\n\n\nmpg\nwt\n\n\n\n21\n2.62\n\n\n21\n2.875\n\n\n22.8\n2.32\n\n\n21.4\n3.215\n\n\n18.7\n3.44\n\n\n18.1\n3.46\n\n\n...\n..."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#regression-line",
+    "href": "slides/04-models-slides.html#regression-line",
+    "title": "The language of models",
+    "section": "Regression line",
+    "text": "Regression line"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#regression-line-slope",
+    "href": "slides/04-models-slides.html#regression-line-slope",
+    "title": "The language of models",
+    "section": "Regression line: slope",
+    "text": "Regression line: slope"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#regression-line-intercept",
+    "href": "slides/04-models-slides.html#regression-line-intercept",
+    "title": "The language of models",
+    "section": "Regression line: intercept",
+    "text": "Regression line: intercept"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#correlation",
+    "href": "slides/04-models-slides.html#correlation",
+    "title": "The language of models",
+    "section": "Correlation",
+    "text": "Correlation"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#correlation-1",
+    "href": "slides/04-models-slides.html#correlation-1",
+    "title": "The language of models",
+    "section": "Correlation",
+    "text": "Correlation\n\nMeasures the strength and direction of the linear association between two numerical variables;\nTells you how tightly the points cluster around a straight line;\nRanges between -1 and 1;\nSame sign as the slope."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#new-command-cor",
+    "href": "slides/04-models-slides.html#new-command-cor",
+    "title": "The language of models",
+    "section": "New command: cor\n",
+    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 140 × 4\n       x series     y r    \n   &lt;int&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;fct&gt;\n 1     1 y1      0.75 r = 1\n 2     2 y1      1.5  r = 1\n 3     3 y1      2.25 r = 1\n 4     4 y1      3    r = 1\n 5     5 y1      3.75 r = 1\n 6     6 y1      4.5  r = 1\n 7     7 y1      5.25 r = 1\n 8     8 y1      6    r = 1\n 9     9 y1      6.75 r = 1\n10    10 y1      7.5  r = 1\n# ℹ 130 more rows\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 0.0405"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#practice",
+    "href": "slides/04-models-slides.html#practice",
+    "title": "The language of models",
+    "section": "Practice!",
+    "text": "Practice!\nhttps://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html\n\n(Just the sort of pain in the ass visual intuition crap that JZ is liable to put on an exam.)"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#visualizing-the-model",
+    "href": "slides/04-models-slides.html#visualizing-the-model",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#visualizing-the-model-1",
+    "href": "slides/04-models-slides.html#visualizing-the-model-1",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth()"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#visualizing-the-model-2",
+    "href": "slides/04-models-slides.html#visualizing-the-model-2",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth(method = \"loess\")"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#visualizing-the-model-3",
+    "href": "slides/04-models-slides.html#visualizing-the-model-3",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#anscombes-quartet",
+    "href": "slides/04-models-slides.html#anscombes-quartet",
+    "title": "The language of models",
+    "section": "Anscombe’s Quartet",
+    "text": "Anscombe’s Quartet\n\n\nDataset I\n\n\n    x     y\n1  10  8.04\n2   8  6.95\n3  13  7.58\n4   9  8.81\n5  11  8.33\n6  14  9.96\n7   6  7.24\n8   4  4.26\n9  12 10.84\n10  7  4.82\n11  5  5.68\n\n\n\nDataset II\n\n\n    x    y\n1  10 9.14\n2   8 8.14\n3  13 8.74\n4   9 8.77\n5  11 9.26\n6  14 8.10\n7   6 6.13\n8   4 3.10\n9  12 9.13\n10  7 7.26\n11  5 4.74\n\n\n\nDataset III\n\n\n    x     y\n1  10  7.46\n2   8  6.77\n3  13 12.74\n4   9  7.11\n5  11  7.81\n6  14  8.84\n7   6  6.08\n8   4  5.39\n9  12  8.15\n10  7  6.42\n11  5  5.73\n\n\n\nDataset IV\n\n\n    x     y\n1   8  6.58\n2   8  5.76\n3   8  7.71\n4   8  8.84\n5   8  8.47\n6   8  7.04\n7   8  5.25\n8  19 12.50\n9   8  5.56\n10  8  7.91\n11  8  6.89"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#very-different",
+    "href": "slides/04-models-slides.html#very-different",
+    "title": "The language of models",
+    "section": "Very different",
+    "text": "Very different\n\nggplot(anscombe_tidy, aes(x, y)) +\n  geom_point() +\n  facet_wrap(~ set)"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#but-its-the-same-line",
+    "href": "slides/04-models-slides.html#but-its-the-same-line",
+    "title": "The language of models",
+    "section": "But it’s the same line…",
+    "text": "But it’s the same line…\n\nggplot(anscombe_tidy, aes(x, y)) +\n  geom_point() +\n  facet_wrap(~ set) +\n  geom_smooth(method = \"lm\", se = FALSE)"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#and-the-same-summary-statistics.",
+    "href": "slides/04-models-slides.html#and-the-same-summary-statistics.",
+    "title": "The language of models",
+    "section": "…and the same summary statistics.",
+    "text": "…and the same summary statistics.\n\nanscombe_tidy |&gt;\n  group_by(set) |&gt;\n  summarize(\n    xbar = mean(x),\n    ybar = mean(y),\n    sx = sd(x),\n    sy = sd(y),\n    r = cor(x, y)\n  )\n\n# A tibble: 4 × 6\n  set    xbar  ybar    sx    sy     r\n  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 I         9  7.50  3.32  2.03 0.816\n2 II        9  7.50  3.32  2.03 0.816\n3 III       9  7.5   3.32  2.03 0.816\n4 IV        9  7.50  3.32  2.03 0.817"
+  },
+  {
+    "objectID": "slides/04-models-slides.html#new-commands-introduced-today",
+    "href": "slides/04-models-slides.html#new-commands-introduced-today",
+    "title": "The language of models",
+    "section": "New commands introduced today",
+    "text": "New commands introduced today\nIn base R:\n\n\ncor: compute correlation between two numerical variables;\n\nIn ggplot2:\n\n\ngeom_smooth: add model fit to scatterplot;\n\nIn the new package tidymodels:\n\n\nlinear_reg and fit: estimate linear model;\n\ntidy: cute lil’ summary table of model output\n\npredict: use estimated model to predict."
+  },
+  {
+    "objectID": "slides/04-models.html",
+    "href": "slides/04-models.html",
+    "title": "The language of models",
+    "section": "",
+    "text": "What is a model?\nWhy do we model?\nWhat is correlation?\n\n\nPrediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+  },
+  {
+    "objectID": "slides/04-models.html#agenda",
+    "href": "slides/04-models.html#agenda",
+    "title": "The language of models",
+    "section": "",
+    "text": "What is a model?\nWhy do we model?\nWhat is correlation?"
+  },
+  {
+    "objectID": "slides/04-models.html#two-main-goals",
+    "href": "slides/04-models.html#two-main-goals",
+    "title": "The language of models",
+    "section": "",
+    "text": "Prediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+  },
+  {
+    "objectID": "slides/04-models.html#lets-drive-a-tesla",
+    "href": "slides/04-models.html#lets-drive-a-tesla",
+    "title": "The language of models",
+    "section": "Let’s drive a Tesla!",
+    "text": "Let’s drive a Tesla!"
+  },
+  {
+    "objectID": "slides/04-models.html#semi-or-garage",
+    "href": "slides/04-models.html#semi-or-garage",
+    "title": "The language of models",
+    "section": "Semi or garage?",
+    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models.html#semi-or-garage-1",
+    "href": "slides/04-models.html#semi-or-garage-1",
+    "title": "The language of models",
+    "section": "Semi or garage?",
+    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models.html#car-or-trash",
+    "href": "slides/04-models.html#car-or-trash",
+    "title": "The language of models",
+    "section": "Car or trash?",
+    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\n\nRelation Between Leisure Time, Commuting, and Occupational Physical Activity With Blood Pressure in 125,402 Adults: The Lifelines Cohort\nByambasukh, Oyuntugs, Harold Snieder, and Eva Corpeleijn. “Relation between leisure time, commuting, and occupational physical activity with blood pressure in 125 402 adults: the lifelines cohort.” Journal of the American Heart Association 9.4 (2020): e014313."
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp-1",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp-1",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily‐life physical activity, such as commuting, leisure‐time, and occupational, with BP level and the risk of having hypertension."
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp-2",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp-2",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA."
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp-3",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp-3",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner."
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp-4",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp-4",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively."
+  },
+  {
+    "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp-5",
+    "href": "slides/04-models.html#leisure-commute-physical-activity-and-bp-5",
+    "title": "The language of models",
+    "section": "Leisure, commute, physical activity and BP",
+    "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively.\nConclusions: Higher commuting and leisure-time but not occupational MVPA were significantly associated with lower BP and lower hypertension risk at all ages, but these associations were stronger in older adults."
+  },
+  {
+    "objectID": "slides/04-models.html#modeling-cars",
+    "href": "slides/04-models.html#modeling-cars",
+    "title": "The language of models",
+    "section": "Modeling cars",
+    "text": "Modeling cars\n\n\nWhat is the relationship between cars’ weights and their mileage?\nWhat is your best guess for a car’s MPG that weighs 4,500 pounds?"
+  },
+  {
+    "objectID": "slides/04-models.html#modelling-cars",
+    "href": "slides/04-models.html#modelling-cars",
+    "title": "The language of models",
+    "section": "Modelling cars",
+    "text": "Modelling cars\n\nDescribe: What is the relationship between cars’ weights and their mileage?"
+  },
+  {
+    "objectID": "slides/04-models.html#modelling-cars-1",
+    "href": "slides/04-models.html#modelling-cars-1",
+    "title": "The language of models",
+    "section": "Modelling cars",
+    "text": "Modelling cars\n\nPredict: What is your best guess for a car’s MPG that weighs 4,500 pounds?"
+  },
+  {
+    "objectID": "slides/04-models.html#modelling",
+    "href": "slides/04-models.html#modelling",
+    "title": "The language of models",
+    "section": "Modelling",
+    "text": "Modelling\n\nUse models to explain the relationship between variables and to make predictions\nFor now we will focus on linear models (but there are many many other types of models too!)"
+  },
+  {
+    "objectID": "slides/04-models.html#what-is-a-line",
+    "href": "slides/04-models.html#what-is-a-line",
+    "title": "The language of models",
+    "section": "What is a line?",
+    "text": "What is a line?"
+  },
+  {
+    "objectID": "slides/04-models.html#but-on-a-plot",
+    "href": "slides/04-models.html#but-on-a-plot",
+    "title": "The language of models",
+    "section": "But on a plot…",
+    "text": "But on a plot…"
+  },
+  {
+    "objectID": "slides/04-models.html#but-in-math-terms",
+    "href": "slides/04-models.html#but-in-math-terms",
+    "title": "The language of models",
+    "section": "But in math terms…",
+    "text": "But in math terms…\n\\[\n\\begin{aligned}\ny &= mx + b \\\\\n\\text{Output}&=\\text{Slope}\\times \\text{Input} + \\text{Intercept}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "slides/04-models.html#modelling-vocabulary",
+    "href": "slides/04-models.html#modelling-vocabulary",
+    "title": "The language of models",
+    "section": "Modelling vocabulary",
+    "text": "Modelling vocabulary\n\nPredictor (explanatory variable)\nOutcome (response variable)\nRegression line\n\nSlope\nIntercept\n\n\nCorrelation"
+  },
+  {
+    "objectID": "slides/04-models.html#predictor-explanatory-variable",
+    "href": "slides/04-models.html#predictor-explanatory-variable",
+    "title": "The language of models",
+    "section": "Predictor (explanatory variable)",
+    "text": "Predictor (explanatory variable)\n\n\n\n\n\n\n\n\nmpg\nwt\n\n\n\n21\n2.62\n\n\n21\n2.875\n\n\n22.8\n2.32\n\n\n21.4\n3.215\n\n\n18.7\n3.44\n\n\n18.1\n3.46\n\n\n...\n..."
+  },
+  {
+    "objectID": "slides/04-models.html#outcome-response-variable",
+    "href": "slides/04-models.html#outcome-response-variable",
+    "title": "The language of models",
+    "section": "Outcome (response variable)",
+    "text": "Outcome (response variable)\n\n\n\n\n\n\n\n\nmpg\nwt\n\n\n\n21\n2.62\n\n\n21\n2.875\n\n\n22.8\n2.32\n\n\n21.4\n3.215\n\n\n18.7\n3.44\n\n\n18.1\n3.46\n\n\n...\n..."
+  },
+  {
+    "objectID": "slides/04-models.html#regression-line",
+    "href": "slides/04-models.html#regression-line",
+    "title": "The language of models",
+    "section": "Regression line",
+    "text": "Regression line"
+  },
+  {
+    "objectID": "slides/04-models.html#regression-line-slope",
+    "href": "slides/04-models.html#regression-line-slope",
+    "title": "The language of models",
+    "section": "Regression line: slope",
+    "text": "Regression line: slope"
+  },
+  {
+    "objectID": "slides/04-models.html#regression-line-intercept",
+    "href": "slides/04-models.html#regression-line-intercept",
+    "title": "The language of models",
+    "section": "Regression line: intercept",
+    "text": "Regression line: intercept"
+  },
+  {
+    "objectID": "slides/04-models.html#correlation",
+    "href": "slides/04-models.html#correlation",
+    "title": "The language of models",
+    "section": "Correlation",
+    "text": "Correlation"
+  },
+  {
+    "objectID": "slides/04-models.html#correlation-1",
+    "href": "slides/04-models.html#correlation-1",
+    "title": "The language of models",
+    "section": "Correlation",
+    "text": "Correlation\n\nMeasures the strength and direction of the linear association between two numerical variables;\nTells you how tightly the points cluster around a straight line;\nRanges between -1 and 1;\nSame sign as the slope."
+  },
+  {
+    "objectID": "slides/04-models.html#new-command-cor",
+    "href": "slides/04-models.html#new-command-cor",
+    "title": "The language of models",
+    "section": "New command: cor\n",
+    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 140 × 4\n       x series     y r    \n   &lt;int&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;fct&gt;\n 1     1 y1      0.75 r = 1\n 2     2 y1      1.5  r = 1\n 3     3 y1      2.25 r = 1\n 4     4 y1      3    r = 1\n 5     5 y1      3.75 r = 1\n 6     6 y1      4.5  r = 1\n 7     7 y1      5.25 r = 1\n 8     8 y1      6    r = 1\n 9     9 y1      6.75 r = 1\n10    10 y1      7.5  r = 1\n# ℹ 130 more rows\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 0.0405"
+  },
+  {
+    "objectID": "slides/04-models.html#practice",
+    "href": "slides/04-models.html#practice",
+    "title": "The language of models",
+    "section": "Practice!",
+    "text": "Practice!\nhttps://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html\n. . .\n(Just the sort of pain in the ass visual intuition crap that JZ is liable to put on an exam.)"
+  },
+  {
+    "objectID": "slides/04-models.html#visualizing-the-model",
+    "href": "slides/04-models.html#visualizing-the-model",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/04-models.html#visualizing-the-model-1",
+    "href": "slides/04-models.html#visualizing-the-model-1",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth()"
+  },
+  {
+    "objectID": "slides/04-models.html#visualizing-the-model-2",
+    "href": "slides/04-models.html#visualizing-the-model-2",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth(method = \"loess\")"
+  },
+  {
+    "objectID": "slides/04-models.html#visualizing-the-model-3",
+    "href": "slides/04-models.html#visualizing-the-model-3",
+    "title": "The language of models",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point() + \n  geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "slides/04-models.html#anscombes-quartet",
+    "href": "slides/04-models.html#anscombes-quartet",
+    "title": "The language of models",
+    "section": "Anscombe’s Quartet",
+    "text": "Anscombe’s Quartet\n\n\nDataset I\n\n\n    x     y\n1  10  8.04\n2   8  6.95\n3  13  7.58\n4   9  8.81\n5  11  8.33\n6  14  9.96\n7   6  7.24\n8   4  4.26\n9  12 10.84\n10  7  4.82\n11  5  5.68\n\n\n\nDataset II\n\n\n    x    y\n1  10 9.14\n2   8 8.14\n3  13 8.74\n4   9 8.77\n5  11 9.26\n6  14 8.10\n7   6 6.13\n8   4 3.10\n9  12 9.13\n10  7 7.26\n11  5 4.74\n\n\n\nDataset III\n\n\n    x     y\n1  10  7.46\n2   8  6.77\n3  13 12.74\n4   9  7.11\n5  11  7.81\n6  14  8.84\n7   6  6.08\n8   4  5.39\n9  12  8.15\n10  7  6.42\n11  5  5.73\n\n\n\nDataset IV\n\n\n    x     y\n1   8  6.58\n2   8  5.76\n3   8  7.71\n4   8  8.84\n5   8  8.47\n6   8  7.04\n7   8  5.25\n8  19 12.50\n9   8  5.56\n10  8  7.91\n11  8  6.89"
+  },
+  {
+    "objectID": "slides/04-models.html#very-different",
+    "href": "slides/04-models.html#very-different",
+    "title": "The language of models",
+    "section": "Very different",
+    "text": "Very different\n\nggplot(anscombe_tidy, aes(x, y)) +\n  geom_point() +\n  facet_wrap(~ set)"
+  },
+  {
+    "objectID": "slides/04-models.html#but-its-the-same-line",
+    "href": "slides/04-models.html#but-its-the-same-line",
+    "title": "The language of models",
+    "section": "But it’s the same line…",
+    "text": "But it’s the same line…\n\nggplot(anscombe_tidy, aes(x, y)) +\n  geom_point() +\n  facet_wrap(~ set) +\n  geom_smooth(method = \"lm\", se = FALSE)"
+  },
+  {
+    "objectID": "slides/04-models.html#and-the-same-summary-statistics.",
+    "href": "slides/04-models.html#and-the-same-summary-statistics.",
+    "title": "The language of models",
+    "section": "…and the same summary statistics.",
+    "text": "…and the same summary statistics.\n\nanscombe_tidy |&gt;\n  group_by(set) |&gt;\n  summarize(\n    xbar = mean(x),\n    ybar = mean(y),\n    sx = sd(x),\n    sy = sd(y),\n    r = cor(x, y)\n  )\n\n# A tibble: 4 × 6\n  set    xbar  ybar    sx    sy     r\n  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 I         9  7.50  3.32  2.03 0.816\n2 II        9  7.50  3.32  2.03 0.816\n3 III       9  7.5   3.32  2.03 0.816\n4 IV        9  7.50  3.32  2.03 0.817"
+  },
+  {
+    "objectID": "slides/04-models.html#new-commands-introduced-today",
+    "href": "slides/04-models.html#new-commands-introduced-today",
+    "title": "The language of models",
+    "section": "New commands introduced today",
+    "text": "New commands introduced today\nIn base R:\n\n\ncor: compute correlation between two numerical variables;\n\nIn ggplot2:\n\n\ngeom_smooth: add model fit to scatterplot;\n\nIn the new package tidymodels:\n\n\nlinear_reg and fit: estimate linear model;\n\ntidy: cute lil’ summary table of model output\n\npredict: use estimated model to predict."
   },
   {
     "objectID": "slides/02-exploratory-1-slides.html#the-shape-of-the-course",
@@ -3078,6 +3617,27 @@
     ]
   },
   {
+    "objectID": "lab/lab-2.html",
+    "href": "lab/lab-2.html",
+    "title": "Lab 2",
+    "section": "",
+    "text": "Log-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.\n\nstrip out the scaffolding: https://sta101-f24.github.io/labs/lab-2.html"
+  },
+  {
+    "objectID": "lab/lab-2.html#setup",
+    "href": "lab/lab-2.html#setup",
+    "title": "Lab 2",
+    "section": "",
+    "text": "Log-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.\n\nstrip out the scaffolding: https://sta101-f24.github.io/labs/lab-2.html"
+  },
+  {
+    "objectID": "lab/lab-2.html#submission",
+    "href": "lab/lab-2.html#submission",
+    "title": "Lab 2",
+    "section": "Submission",
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
+  },
+  {
     "objectID": "hw/hw-1.html",
     "href": "hw/hw-1.html",
     "title": "Homework 1",
@@ -3203,7 +3763,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\n\nHW 1 @ 10 AM\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -4015,6 +4575,832 @@
     "text": "Connect to the course files\n\nClick  in the upper right;\nClick  in the drop-down menu;\nClick  in the dialog box;\nClick  in the dialog box;\nInput these and Create Project:\n\nRepository URL: https://github.com/sta101-f26/sta101-f26-files.git\n\nProject directory name: sta101-f26-files"
   },
   {
+    "objectID": "slides/03-exploratory-2.html",
+    "href": "slides/03-exploratory-2.html",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Data set\nOccasion\nSource\nA row was a…\n\n\n\nage_guesses\nLecture 0\nfile\n101 student\n\n\ncard_krueger\nLecture 1\nfile\nrestaurant\n\n\npokemon\nLab 0\nfile\nPokémon\n\n\npenguins\nLab 0\npackage\npenguin\n\n\nnc_county\nLab1, HW 1\nfile\nNC county\n\n\nbechdel\nLecture 2+\nfile\nfilm\n\n\ngerrymander\nToday\npackage\nUS congressional district\n\n\n\n\nFor the data: usdata\n\n\n\nlibrary(usdata)\n\n\nFor the analysis: tidyverse and ggthemes\n\n\n\nlibrary(tidyverse)\nlibrary(ggthemes)\n\n\n\ngerrymander\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is a good first function to use to get to know a dataset?\n\n\nglimpse(gerrymander)\n\nRows: 435\nColumns: 12\n$ district   &lt;chr&gt; \"AK-AL\", \"AL-01\", \"AL-02\", \"AL-03\", \"AL-04\", \"AL-05\", \"AL-0…\n$ last_name  &lt;chr&gt; \"Young\", \"Byrne\", \"Roby\", \"Rogers\", \"Aderholt\", \"Brooks\", \"…\n$ first_name &lt;chr&gt; \"Don\", \"Bradley\", \"Martha\", \"Mike D.\", \"Rob\", \"Mo\", \"Gary\",…\n$ party16    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ clinton16  &lt;dbl&gt; 37.6, 34.1, 33.0, 32.3, 17.4, 31.3, 26.1, 69.8, 30.2, 41.7,…\n$ trump16    &lt;dbl&gt; 52.8, 63.5, 64.9, 65.3, 80.4, 64.7, 70.8, 28.6, 65.0, 52.4,…\n$ dem16      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0,…\n$ state      &lt;chr&gt; \"AK\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AR\", \"AR\",…\n$ party18    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ dem18      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0,…\n$ flip18     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,…\n$ gerry      &lt;fct&gt; mid, high, high, high, high, high, high, high, mid, mid, mi…\n\n\n\n\nRows: Congressional districts\n\nColumns:\n\nCongressional district and state\n2016 election: winning party, % for Clinton, % for Trump, whether a Democrat won the House election, name of election winner\n2018 election: winning party, whether a Democrat won the 2018 House election\nWhether a Democrat flipped the seat in the 2018 election\nPrevalence of gerrymandering: low, mid, and high\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\n\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nCongressional district:\n\ngerrymander |&gt;\n  select(district)\n\n# A tibble: 435 × 1\n   district\n   &lt;chr&gt;   \n 1 AK-AL   \n 2 AL-01   \n 3 AL-02   \n 4 AL-03   \n 5 AL-04   \n 6 AL-05   \n 7 AL-06   \n 8 AL-07   \n 9 AR-01   \n10 AR-02   \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nLast name of 2016 election winner:\n\ngerrymander |&gt;\n  select(last_name)\n\n# A tibble: 435 × 1\n   last_name\n   &lt;chr&gt;    \n 1 Young    \n 2 Byrne    \n 3 Roby     \n 4 Rogers   \n 5 Aderholt \n 6 Brooks   \n 7 Palmer   \n 8 Sewell   \n 9 Crawford \n10 Hill     \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nFirst name of 2016 election winner:\n\ngerrymander |&gt;\n  select(first_name)\n\n# A tibble: 435 × 1\n   first_name\n   &lt;chr&gt;     \n 1 Don       \n 2 Bradley   \n 3 Martha    \n 4 Mike D.   \n 5 Rob       \n 6 Mo        \n 7 Gary      \n 8 Terri     \n 9 Rick      \n10 French    \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPolitical party of 2016 election winner:\n\ngerrymander |&gt;\n  select(party16)\n\n# A tibble: 435 × 1\n   party16\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPercent of vote received by Clinton in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(clinton16)\n\n# A tibble: 435 × 1\n   clinton16\n       &lt;dbl&gt;\n 1      37.6\n 2      34.1\n 3      33  \n 4      32.3\n 5      17.4\n 6      31.3\n 7      26.1\n 8      69.8\n 9      30.2\n10      41.7\n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPercent of vote received by Trump in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(trump16)\n\n# A tibble: 435 × 1\n   trump16\n     &lt;dbl&gt;\n 1    52.8\n 2    63.5\n 3    64.9\n 4    65.3\n 5    80.4\n 6    64.7\n 7    70.8\n 8    28.6\n 9    65  \n10    52.4\n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nDid a Democrat win the 2016 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem16)\n\n# A tibble: 435 × 1\n   dem16\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nState the Representative is from:\n\ngerrymander |&gt;\n  select(state)\n\n# A tibble: 435 × 1\n   state\n   &lt;chr&gt;\n 1 AK   \n 2 AL   \n 3 AL   \n 4 AL   \n 5 AL   \n 6 AL   \n 7 AL   \n 8 AL   \n 9 AR   \n10 AR   \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPolitical Party of the 2018 election winner:\n\ngerrymander |&gt;\n  select(party18)\n\n# A tibble: 435 × 1\n   party18\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nDid a Democrat win the 2018 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem18)\n\n# A tibble: 435 × 1\n   dem18\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\n\n\n\n\n\n\nIn the 2018 election, did the seat flip from D to R (-1), from R to D (1), or not change (0)?\n\ngerrymander |&gt;\n  select(flip18)\n\n# A tibble: 435 × 1\n   flip18\n    &lt;dbl&gt;\n 1      0\n 2      0\n 3      0\n 4      0\n 5      0\n 6      0\n 7      0\n 8      0\n 9      0\n10      0\n# ℹ 425 more rows\n\n\n\n\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\ncategorical, ordinal\n\n\n\n\n\nCategorical variable for prevalence of gerrymandering with levels of low, mid and high:\n\ngerrymander |&gt;\n  select(gerry)\n\n# A tibble: 435 × 1\n   gerry\n   &lt;fct&gt;\n 1 mid  \n 2 high \n 3 high \n 4 high \n 5 high \n 6 high \n 7 high \n 8 high \n 9 mid  \n10 mid  \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#so-far",
+    "href": "slides/03-exploratory-2.html#so-far",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Data set\nOccasion\nSource\nA row was a…\n\n\n\nage_guesses\nLecture 0\nfile\n101 student\n\n\ncard_krueger\nLecture 1\nfile\nrestaurant\n\n\npokemon\nLab 0\nfile\nPokémon\n\n\npenguins\nLab 0\npackage\npenguin\n\n\nnc_county\nLab1, HW 1\nfile\nNC county\n\n\nbechdel\nLecture 2+\nfile\nfilm\n\n\ngerrymander\nToday\npackage\nUS congressional district"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#packages",
+    "href": "slides/03-exploratory-2.html#packages",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "For the data: usdata\n\n\n\nlibrary(usdata)\n\n\nFor the analysis: tidyverse and ggthemes\n\n\n\nlibrary(tidyverse)\nlibrary(ggthemes)"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#data-gerrymander",
+    "href": "slides/03-exploratory-2.html#data-gerrymander",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "gerrymander\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#data-gerrymander-1",
+    "href": "slides/03-exploratory-2.html#data-gerrymander-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "What is a good first function to use to get to know a dataset?\n\n\nglimpse(gerrymander)\n\nRows: 435\nColumns: 12\n$ district   &lt;chr&gt; \"AK-AL\", \"AL-01\", \"AL-02\", \"AL-03\", \"AL-04\", \"AL-05\", \"AL-0…\n$ last_name  &lt;chr&gt; \"Young\", \"Byrne\", \"Roby\", \"Rogers\", \"Aderholt\", \"Brooks\", \"…\n$ first_name &lt;chr&gt; \"Don\", \"Bradley\", \"Martha\", \"Mike D.\", \"Rob\", \"Mo\", \"Gary\",…\n$ party16    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ clinton16  &lt;dbl&gt; 37.6, 34.1, 33.0, 32.3, 17.4, 31.3, 26.1, 69.8, 30.2, 41.7,…\n$ trump16    &lt;dbl&gt; 52.8, 63.5, 64.9, 65.3, 80.4, 64.7, 70.8, 28.6, 65.0, 52.4,…\n$ dem16      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0,…\n$ state      &lt;chr&gt; \"AK\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AR\", \"AR\",…\n$ party18    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ dem18      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0,…\n$ flip18     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,…\n$ gerry      &lt;fct&gt; mid, high, high, high, high, high, high, high, mid, mid, mi…"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#data-gerrymander-2",
+    "href": "slides/03-exploratory-2.html#data-gerrymander-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Rows: Congressional districts\n\nColumns:\n\nCongressional district and state\n2016 election: winning party, % for Clinton, % for Trump, whether a Democrat won the House election, name of election winner\n2018 election: winning party, whether a Democrat won the 2018 House election\nWhether a Democrat flipped the seat in the 2018 election\nPrevalence of gerrymandering: low, mid, and high"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-district",
+    "href": "slides/03-exploratory-2.html#variable-types-district",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\n\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nCongressional district:\n\ngerrymander |&gt;\n  select(district)\n\n# A tibble: 435 × 1\n   district\n   &lt;chr&gt;   \n 1 AK-AL   \n 2 AL-01   \n 3 AL-02   \n 4 AL-03   \n 5 AL-04   \n 6 AL-05   \n 7 AL-06   \n 8 AL-07   \n 9 AR-01   \n10 AR-02   \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-last_name",
+    "href": "slides/03-exploratory-2.html#variable-types-last_name",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nLast name of 2016 election winner:\n\ngerrymander |&gt;\n  select(last_name)\n\n# A tibble: 435 × 1\n   last_name\n   &lt;chr&gt;    \n 1 Young    \n 2 Byrne    \n 3 Roby     \n 4 Rogers   \n 5 Aderholt \n 6 Brooks   \n 7 Palmer   \n 8 Sewell   \n 9 Crawford \n10 Hill     \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-first_name",
+    "href": "slides/03-exploratory-2.html#variable-types-first_name",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nFirst name of 2016 election winner:\n\ngerrymander |&gt;\n  select(first_name)\n\n# A tibble: 435 × 1\n   first_name\n   &lt;chr&gt;     \n 1 Don       \n 2 Bradley   \n 3 Martha    \n 4 Mike D.   \n 5 Rob       \n 6 Mo        \n 7 Gary      \n 8 Terri     \n 9 Rick      \n10 French    \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-party16",
+    "href": "slides/03-exploratory-2.html#variable-types-party16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPolitical party of 2016 election winner:\n\ngerrymander |&gt;\n  select(party16)\n\n# A tibble: 435 × 1\n   party16\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-clinton16",
+    "href": "slides/03-exploratory-2.html#variable-types-clinton16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPercent of vote received by Clinton in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(clinton16)\n\n# A tibble: 435 × 1\n   clinton16\n       &lt;dbl&gt;\n 1      37.6\n 2      34.1\n 3      33  \n 4      32.3\n 5      17.4\n 6      31.3\n 7      26.1\n 8      69.8\n 9      30.2\n10      41.7\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-trump16",
+    "href": "slides/03-exploratory-2.html#variable-types-trump16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPercent of vote received by Trump in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(trump16)\n\n# A tibble: 435 × 1\n   trump16\n     &lt;dbl&gt;\n 1    52.8\n 2    63.5\n 3    64.9\n 4    65.3\n 5    80.4\n 6    64.7\n 7    70.8\n 8    28.6\n 9    65  \n10    52.4\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-dem16",
+    "href": "slides/03-exploratory-2.html#variable-types-dem16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nDid a Democrat win the 2016 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem16)\n\n# A tibble: 435 × 1\n   dem16\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-state",
+    "href": "slides/03-exploratory-2.html#variable-types-state",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nState the Representative is from:\n\ngerrymander |&gt;\n  select(state)\n\n# A tibble: 435 × 1\n   state\n   &lt;chr&gt;\n 1 AK   \n 2 AL   \n 3 AL   \n 4 AL   \n 5 AL   \n 6 AL   \n 7 AL   \n 8 AL   \n 9 AR   \n10 AR   \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-party18",
+    "href": "slides/03-exploratory-2.html#variable-types-party18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nPolitical Party of the 2018 election winner:\n\ngerrymander |&gt;\n  select(party18)\n\n# A tibble: 435 × 1\n   party18\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-dem18",
+    "href": "slides/03-exploratory-2.html#variable-types-dem18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\n\nDid a Democrat win the 2018 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem18)\n\n# A tibble: 435 × 1\n   dem18\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-flip18",
+    "href": "slides/03-exploratory-2.html#variable-types-flip18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\n\n\n\n\n\n\nIn the 2018 election, did the seat flip from D to R (-1), from R to D (1), or not change (0)?\n\ngerrymander |&gt;\n  select(flip18)\n\n# A tibble: 435 × 1\n   flip18\n    &lt;dbl&gt;\n 1      0\n 2      0\n 3      0\n 4      0\n 5      0\n 6      0\n 7      0\n 8      0\n 9      0\n10      0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#variable-types-gerry",
+    "href": "slides/03-exploratory-2.html#variable-types-gerry",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "",
+    "text": "Variable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\ncategorical, ordinal\n\n\n\n\n\nCategorical variable for prevalence of gerrymandering with levels of low, mid and high:\n\ngerrymander |&gt;\n  select(gerry)\n\n# A tibble: 435 × 1\n   gerry\n   &lt;fct&gt;\n 1 mid  \n 2 high \n 3 high \n 4 high \n 5 high \n 6 high \n 7 high \n 8 high \n 9 mid  \n10 mid  \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#research-question",
+    "href": "slides/03-exploratory-2.html#research-question",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Research question",
+    "text": "Research question\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election? Support your answer with a visualization as well as summary statistics."
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-1",
+    "href": "slides/03-exploratory-2.html#step-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 1",
+    "text": "Step 1\n\nggplot(gerrymander)"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-2",
+    "href": "slides/03-exploratory-2.html#step-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 2",
+    "text": "Step 2\n\nggplot(gerrymander, aes(x = flip18))"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-3",
+    "href": "slides/03-exploratory-2.html#step-3",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 3",
+    "text": "Step 3\n\nggplot(gerrymander, aes(x = flip18)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-4",
+    "href": "slides/03-exploratory-2.html#step-4",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 4",
+    "text": "Step 4\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-5a",
+    "href": "slides/03-exploratory-2.html#step-5a",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 5a",
+    "text": "Step 5a\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"dodge\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-5b",
+    "href": "slides/03-exploratory-2.html#step-5b",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 5b",
+    "text": "Step 5b\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"fill\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#whats-the-answer",
+    "href": "slides/03-exploratory-2.html#whats-the-answer",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What’s the answer?",
+    "text": "What’s the answer?\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election?\n\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"fill\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#what-are-the-actual-numbers",
+    "href": "slides/03-exploratory-2.html#what-are-the-actual-numbers",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What are the actual numbers?",
+    "text": "What are the actual numbers?\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-1-1",
+    "href": "slides/03-exploratory-2.html#step-1-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 1",
+    "text": "Step 1\n\ngerrymander\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-2-1",
+    "href": "slides/03-exploratory-2.html#step-2-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 2",
+    "text": "Step 2\n\ngerrymander |&gt;\n  count(flip18, gerry)\n\n# A tibble: 8 × 3\n  flip18 gerry     n\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;\n1     -1 low       2\n2     -1 mid       3\n3      0 low      52\n4      0 mid     242\n5      0 high     98\n6      1 low       8\n7      1 mid      25\n8      1 high      5"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#recall",
+    "href": "slides/03-exploratory-2.html#recall",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Recall",
+    "text": "Recall\nThe heights of these bars are the counts in the table:\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"dodge\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-3-1",
+    "href": "slides/03-exploratory-2.html#step-3-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 3",
+    "text": "Step 3\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18)\n\n# A tibble: 8 × 3\n# Groups:   flip18 [3]\n  flip18 gerry     n\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;\n1     -1 low       2\n2     -1 mid       3\n3      0 low      52\n4      0 mid     242\n5      0 high     98\n6      1 low       8\n7      1 mid      25\n8      1 high      5"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#step-4-1",
+    "href": "slides/03-exploratory-2.html#step-4-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 4",
+    "text": "Step 4\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#the-full-monty",
+    "href": "slides/03-exploratory-2.html#the-full-monty",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "The Full Monty",
+    "text": "The Full Monty\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat flipped the seat in the 2018 election? (flip18 = 1: Democrat flipped the seat, 0: No flip, -1: Republican flipped the seat.)\n\n\n\n\nggplot(\n  gerrymander, \n  aes(x = flip18, fill = gerry)\n  ) +\n  geom_bar(position = \"fill\")\n\n\n\n\n\n\n\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#new-commands",
+    "href": "slides/03-exploratory-2.html#new-commands",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "New commands",
+    "text": "New commands\n\ncount creates a new data frame that tallies up the number of rows that fall into each bin;\ngroup_by silently groups the rows according to bin, and all subsequent operations are done within group;\n\nmutate either adds new columns that aren’t already there, or modifies existing columns.\n\nwe used it to add a prop column that wasn’t there before;\nbecause the table of counts is grouped, the proportions were computed within each level of flip18."
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#we-teach-you-to-do-this",
+    "href": "slides/03-exploratory-2.html#we-teach-you-to-do-this",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "We teach you to do this",
+    "text": "We teach you to do this\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#you-could-do-this-instead",
+    "href": "slides/03-exploratory-2.html#you-could-do-this-instead",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "You could do this instead",
+    "text": "You could do this instead\nTechnically equivalent. Gives the same result. Super hard to read:\n\nmutate(group_by(count(gerrymander, flip18, gerry), flip18), prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#without-the-pipe",
+    "href": "slides/03-exploratory-2.html#without-the-pipe",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Without the pipe",
+    "text": "Without the pipe"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#with-the-pipe",
+    "href": "slides/03-exploratory-2.html#with-the-pipe",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "With the pipe",
+    "text": "With the pipe"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#what-does-group_by-do",
+    "href": "slides/03-exploratory-2.html#what-does-group_by-do",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What does group_by() do?",
+    "text": "What does group_by() do?\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#what-does-group_by-do-1",
+    "href": "slides/03-exploratory-2.html#what-does-group_by-do-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What does group_by() do?",
+    "text": "What does group_by() do?\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  #group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n  flip18 gerry     n    prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;   &lt;dbl&gt;\n1     -1 low       2 0.00460\n2     -1 mid       3 0.00690\n3      0 low      52 0.120  \n4      0 mid     242 0.556  \n5      0 high     98 0.225  \n6      1 low       8 0.0184 \n7      1 mid      25 0.0575 \n8      1 high      5 0.0115"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#lets-simplify",
+    "href": "slides/03-exploratory-2.html#lets-simplify",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Let’s simplify!",
+    "text": "Let’s simplify!\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(mean_trump16 = mean(trump16))\n\n# A tibble: 50 × 2\n   state mean_trump16\n   &lt;chr&gt;        &lt;dbl&gt;\n 1 AK            52.8\n 2 AL            62.6\n 3 AR            60.9\n 4 AZ            46.9\n 5 CA            31.7\n 6 CO            43.6\n 7 CT            41.0\n 8 DE            41.9\n 9 FL            47.9\n10 GA            51.3\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#lets-simplify-1",
+    "href": "slides/03-exploratory-2.html#lets-simplify-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Let’s simplify!",
+    "text": "Let’s simplify!\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  #group_by(state) |&gt;\n  summarize(mean_trump16 = mean(trump16))\n\n# A tibble: 1 × 1\n  mean_trump16\n         &lt;dbl&gt;\n1         45.9"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#group_by",
+    "href": "slides/03-exploratory-2.html#group_by",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by()",
+    "text": "group_by()\n\nit converts a data frame to a grouped data frame, where subsequent operations are performed once per group\nungroup() removes grouping\n\n\ngerrymander |&gt;\n  group_by(state)\n\n# A tibble: 435 × 12\n# Groups:   state [50]\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#group_by-1",
+    "href": "slides/03-exploratory-2.html#group_by-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by()",
+    "text": "group_by()\n\nit converts a data frame to a grouped data frame, where subsequent operations are performed once per group\nungroup() removes grouping\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  ungroup()\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#group_by-summarize",
+    "href": "slides/03-exploratory-2.html#group_by-summarize",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\nA common pipeline is group_by() and then summarize() to calculate summary statistics for each group:\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(\n    mean_trump16 = mean(trump16),\n    median_trump16 = median(trump16)\n  )\n\n# A tibble: 50 × 3\n   state mean_trump16 median_trump16\n   &lt;chr&gt;        &lt;dbl&gt;          &lt;dbl&gt;\n 1 AK            52.8           52.8\n 2 AL            62.6           64.9\n 3 AR            60.9           63.0\n 4 AZ            46.9           47.7\n 5 CA            31.7           28.4\n 6 CO            43.6           41.3\n 7 CT            41.0           40.4\n 8 DE            41.9           41.9\n 9 FL            47.9           49.6\n10 GA            51.3           56.6\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#group_by-summarize-1",
+    "href": "slides/03-exploratory-2.html#group_by-summarize-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\nThis pipeline can also be used to count number of observations for each group:\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n())\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#summarize",
+    "href": "slides/03-exploratory-2.html#summarize",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "summarize()",
+    "text": "summarize()\n... |&gt;\n  summarize(\n    name_of_summary_statistic = summary_function(variable)\n  )\n. . .\n\n\nname_of_summary_statistic: Anything you want to call it!\n\nRecommendation: Keep it short and evocative\n\n\n\nsummary_function():\n\n\nn(): number of observations\n\nmean(): mean\n\nmedian(): median\n…"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#spot-the-difference",
+    "href": "slides/03-exploratory-2.html#spot-the-difference",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Spot the difference",
+    "text": "Spot the difference\n\nWhat’s the difference between the following two pipelines?\n\n\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n())\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows\n\n\n\n\ngerrymander |&gt;\n  count(state)\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#count",
+    "href": "slides/03-exploratory-2.html#count",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "count()",
+    "text": "count()\n\n\n... |&gt;\n  count(variable)\n\n... |&gt;\n  count(variable1, variable2)\n\n\n\nCount the number of observations in each level of variable(s)\nPlace the counts in a variable called n"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#count-and-sort",
+    "href": "slides/03-exploratory-2.html#count-and-sort",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n()) |&gt;\n  arrange(desc(n))\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#count-and-sort-1",
+    "href": "slides/03-exploratory-2.html#count-and-sort-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  count(state) |&gt;\n  arrange(desc(n))\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#count-and-sort-2",
+    "href": "slides/03-exploratory-2.html#count-and-sort-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  count(state, sort = TRUE)\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#science",
+    "href": "slides/03-exploratory-2.html#science",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "“Science”?",
+    "text": "“Science”?\n\n\nWe call it “statistical science” or “data science,” but frankly it’s all much closer to art and rhetoric and storytelling;\nWhen you compress a data set down to pictures and summaries, you make countless choices about how to visualize, which summaries to inspect, how much detail to retain or discard, etc;\nA choice is good or bad insofar as a skeptical human audience finds it informative and persuasive."
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#fine-but-what-dataviz-should-i-use",
+    "href": "slides/03-exploratory-2.html#fine-but-what-dataviz-should-i-use",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Fine, but what dataviz should I use?",
+    "text": "Fine, but what dataviz should I use?\nIf you want to know where to begin, the number and type of variables typically narrows down the menu of options:\n. . .\n\n\n\n\n\n\nVariable combo\nOptions for a first pass\n\n\n\n1 numerical\nhistogram, density, box plot, …\n\n\n1 categorical\nbar chart, pie chart\n\n\n\n2 numerical\nscatterplot\n\n\nnumerical/categorical\nside-by-side boxes, stacked densities or histograms, …\n\n\n2 categorical\nstacked bar plot\n\n\n\n. . .\nFor three or more variables, the human mind is limited, and you have to get creative (play with color, shape, texture, etc)."
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#computational-themes",
+    "href": "slides/03-exploratory-2.html#computational-themes",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Computational themes",
+    "text": "Computational themes\nEvery coding task in this class will be some combo of these two things:\n. . .\n\n\nBuilding cakes (ggplot) \n\n\nStacking dolls (pipe |&gt;) \n\n\n. . .\nMaster these, and everything will be coming up roses!"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#where-to-now",
+    "href": "slides/03-exploratory-2.html#where-to-now",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Where to now?",
+    "text": "Where to now?"
+  },
+  {
+    "objectID": "slides/03-exploratory-2.html#where-to-now-1",
+    "href": "slides/03-exploratory-2.html#where-to-now-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Where to now?",
+    "text": "Where to now?\n\n\n\n\n\n\n\n\nWhere did the line come from? How was it drawn? How do you interpret it? How do you use it? What about more than two variables? What about categorical variables?"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#so-far",
+    "href": "slides/03-exploratory-2-slides.html#so-far",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "So far…",
+    "text": "So far…\n\n\nData set\nOccasion\nSource\nA row was a…\n\n\n\nage_guesses\nLecture 0\nfile\n101 student\n\n\ncard_krueger\nLecture 1\nfile\nrestaurant\n\n\npokemon\nLab 0\nfile\nPokémon\n\n\npenguins\nLab 0\npackage\npenguin\n\n\nnc_county\nLab1, HW 1\nfile\nNC county\n\n\nbechdel\nLecture 2+\nfile\nfilm\n\n\ngerrymander\nToday\npackage\nUS congressional district"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#packages",
+    "href": "slides/03-exploratory-2-slides.html#packages",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Packages",
+    "text": "Packages\n\nFor the data: usdata\n\n\n\nlibrary(usdata)\n\n\nFor the analysis: tidyverse and ggthemes\n\n\n\nlibrary(tidyverse)\nlibrary(ggthemes)"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#data-gerrymander",
+    "href": "slides/03-exploratory-2-slides.html#data-gerrymander",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Data: gerrymander\n",
+    "text": "Data: gerrymander\n\n\ngerrymander\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#what-is-gerrymandering",
+    "href": "slides/03-exploratory-2-slides.html#what-is-gerrymandering",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What is gerrymandering?",
+    "text": "What is gerrymandering?"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa",
+    "href": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "JZ’s tour of the USA",
+    "text": "JZ’s tour of the USA"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-1",
+    "href": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "JZ’s tour of the USA",
+    "text": "JZ’s tour of the USA"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-2",
+    "href": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "JZ’s tour of the USA",
+    "text": "JZ’s tour of the USA"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-3",
+    "href": "slides/03-exploratory-2-slides.html#jzs-tour-of-the-usa-3",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "JZ’s tour of the USA",
+    "text": "JZ’s tour of the USA"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#data-gerrymander-1",
+    "href": "slides/03-exploratory-2-slides.html#data-gerrymander-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Data: gerrymander\n",
+    "text": "Data: gerrymander\n\n\nWhat is a good first function to use to get to know a dataset?\n\n\nglimpse(gerrymander)\n\nRows: 435\nColumns: 12\n$ district   &lt;chr&gt; \"AK-AL\", \"AL-01\", \"AL-02\", \"AL-03\", \"AL-04\", \"AL-05\", \"AL-0…\n$ last_name  &lt;chr&gt; \"Young\", \"Byrne\", \"Roby\", \"Rogers\", \"Aderholt\", \"Brooks\", \"…\n$ first_name &lt;chr&gt; \"Don\", \"Bradley\", \"Martha\", \"Mike D.\", \"Rob\", \"Mo\", \"Gary\",…\n$ party16    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ clinton16  &lt;dbl&gt; 37.6, 34.1, 33.0, 32.3, 17.4, 31.3, 26.1, 69.8, 30.2, 41.7,…\n$ trump16    &lt;dbl&gt; 52.8, 63.5, 64.9, 65.3, 80.4, 64.7, 70.8, 28.6, 65.0, 52.4,…\n$ dem16      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0,…\n$ state      &lt;chr&gt; \"AK\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AL\", \"AR\", \"AR\",…\n$ party18    &lt;chr&gt; \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"R\", \"D\", \"R\", \"R\", \"R\", \"R\",…\n$ dem18      &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0,…\n$ flip18     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,…\n$ gerry      &lt;fct&gt; mid, high, high, high, high, high, high, high, mid, mid, mi…"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#data-gerrymander-2",
+    "href": "slides/03-exploratory-2-slides.html#data-gerrymander-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Data: gerrymander\n",
+    "text": "Data: gerrymander\n\n\nRows: Congressional districts\n\nColumns:\n\nCongressional district and state\n2016 election: winning party, % for Clinton, % for Trump, whether a Democrat won the House election, name of election winner\n2018 election: winning party, whether a Democrat won the 2018 House election\nWhether a Democrat flipped the seat in the 2018 election\nPrevalence of gerrymandering: low, mid, and high"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-district",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-district",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: district\n",
+    "text": "Variable types: district\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\n\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nCongressional district:\n\ngerrymander |&gt;\n  select(district)\n\n# A tibble: 435 × 1\n   district\n   &lt;chr&gt;   \n 1 AK-AL   \n 2 AL-01   \n 3 AL-02   \n 4 AL-03   \n 5 AL-04   \n 6 AL-05   \n 7 AL-06   \n 8 AL-07   \n 9 AR-01   \n10 AR-02   \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-last_name",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-last_name",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: last_name\n",
+    "text": "Variable types: last_name\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\n\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nLast name of 2016 election winner:\n\ngerrymander |&gt;\n  select(last_name)\n\n# A tibble: 435 × 1\n   last_name\n   &lt;chr&gt;    \n 1 Young    \n 2 Byrne    \n 3 Roby     \n 4 Rogers   \n 5 Aderholt \n 6 Brooks   \n 7 Palmer   \n 8 Sewell   \n 9 Crawford \n10 Hill     \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-first_name",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-first_name",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: first_name\n",
+    "text": "Variable types: first_name\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\n\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nFirst name of 2016 election winner:\n\ngerrymander |&gt;\n  select(first_name)\n\n# A tibble: 435 × 1\n   first_name\n   &lt;chr&gt;     \n 1 Don       \n 2 Bradley   \n 3 Martha    \n 4 Mike D.   \n 5 Rob       \n 6 Mo        \n 7 Gary      \n 8 Terri     \n 9 Rick      \n10 French    \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-party16",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-party16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: party16\n",
+    "text": "Variable types: party16\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\n\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nPolitical party of 2016 election winner:\n\ngerrymander |&gt;\n  select(party16)\n\n# A tibble: 435 × 1\n   party16\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-clinton16",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-clinton16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: clinton16\n",
+    "text": "Variable types: clinton16\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\n\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nPercent of vote received by Clinton in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(clinton16)\n\n# A tibble: 435 × 1\n   clinton16\n       &lt;dbl&gt;\n 1      37.6\n 2      34.1\n 3      33  \n 4      32.3\n 5      17.4\n 6      31.3\n 7      26.1\n 8      69.8\n 9      30.2\n10      41.7\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-trump16",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-trump16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: trump16\n",
+    "text": "Variable types: trump16\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\n\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nPercent of vote received by Trump in 2016 Presidential Election:\n\ngerrymander |&gt;\n  select(trump16)\n\n# A tibble: 435 × 1\n   trump16\n     &lt;dbl&gt;\n 1    52.8\n 2    63.5\n 3    64.9\n 4    65.3\n 5    80.4\n 6    64.7\n 7    70.8\n 8    28.6\n 9    65  \n10    52.4\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-dem16",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-dem16",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: dem16\n",
+    "text": "Variable types: dem16\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\n\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nDid a Democrat win the 2016 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem16)\n\n# A tibble: 435 × 1\n   dem16\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-state",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-state",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: state\n",
+    "text": "Variable types: state\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\n\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nState the Representative is from:\n\ngerrymander |&gt;\n  select(state)\n\n# A tibble: 435 × 1\n   state\n   &lt;chr&gt;\n 1 AK   \n 2 AL   \n 3 AL   \n 4 AL   \n 5 AL   \n 6 AL   \n 7 AL   \n 8 AL   \n 9 AR   \n10 AR   \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-party18",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-party18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: party18\n",
+    "text": "Variable types: party18\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\n\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nPolitical Party of the 2018 election winner:\n\ngerrymander |&gt;\n  select(party18)\n\n# A tibble: 435 × 1\n   party18\n   &lt;chr&gt;  \n 1 R      \n 2 R      \n 3 R      \n 4 R      \n 5 R      \n 6 R      \n 7 R      \n 8 D      \n 9 R      \n10 R      \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-dem18",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-dem18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: dem18\n",
+    "text": "Variable types: dem18\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\n\n\n\ngerry\n\n\n\n\n\nDid a Democrat win the 2018 House election. Levels of 1 (yes) and 0 (no):\n\ngerrymander |&gt;\n  select(dem18)\n\n# A tibble: 435 × 1\n   dem18\n   &lt;dbl&gt;\n 1     0\n 2     0\n 3     0\n 4     0\n 5     0\n 6     0\n 7     0\n 8     1\n 9     0\n10     0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-flip18",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-flip18",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: flip18\n",
+    "text": "Variable types: flip18\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\n\n\n\n\n\nIn the 2018 election, did the seat flip from D to R (-1), from R to D (1), or not change (0)?\n\ngerrymander |&gt;\n  select(flip18)\n\n# A tibble: 435 × 1\n   flip18\n    &lt;dbl&gt;\n 1      0\n 2      0\n 3      0\n 4      0\n 5      0\n 6      0\n 7      0\n 8      0\n 9      0\n10      0\n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#variable-types-gerry",
+    "href": "slides/03-exploratory-2-slides.html#variable-types-gerry",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Variable types: gerry\n",
+    "text": "Variable types: gerry\n\n\n\n\n\nVariable\nType\n\n\n\ndistrict\ncategorical, ID\n\n\nlast_name\ncategorical, ID\n\n\nfirst_name\ncategorical, ID\n\n\nparty16\ncategorical\n\n\nclinton16\nnumerical, continuous\n\n\ntrump16\nnumerical, continuous\n\n\ndem16\ncategorical\n\n\nstate\ncategorical\n\n\nparty18\ncategorical\n\n\ndem18\ncategorical\n\n\nflip18\ncategorical\n\n\ngerry\ncategorical, ordinal\n\n\n\n\nCategorical variable for prevalence of gerrymandering with levels of low, mid and high:\n\ngerrymander |&gt;\n  select(gerry)\n\n# A tibble: 435 × 1\n   gerry\n   &lt;fct&gt;\n 1 mid  \n 2 high \n 3 high \n 4 high \n 5 high \n 6 high \n 7 high \n 8 high \n 9 mid  \n10 mid  \n# ℹ 425 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#research-question",
+    "href": "slides/03-exploratory-2-slides.html#research-question",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Research question",
+    "text": "Research question\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election? Support your answer with a visualization as well as summary statistics."
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-1",
+    "href": "slides/03-exploratory-2-slides.html#step-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 1",
+    "text": "Step 1\n\nggplot(gerrymander)"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-2",
+    "href": "slides/03-exploratory-2-slides.html#step-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 2",
+    "text": "Step 2\n\nggplot(gerrymander, aes(x = flip18))"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-3",
+    "href": "slides/03-exploratory-2-slides.html#step-3",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 3",
+    "text": "Step 3\n\nggplot(gerrymander, aes(x = flip18)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-4",
+    "href": "slides/03-exploratory-2-slides.html#step-4",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 4",
+    "text": "Step 4\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-5a",
+    "href": "slides/03-exploratory-2-slides.html#step-5a",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 5a",
+    "text": "Step 5a\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"dodge\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-5b",
+    "href": "slides/03-exploratory-2-slides.html#step-5b",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 5b",
+    "text": "Step 5b\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"fill\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#whats-the-answer",
+    "href": "slides/03-exploratory-2-slides.html#whats-the-answer",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What’s the answer?",
+    "text": "What’s the answer?\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election?\n\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"fill\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#what-are-the-actual-numbers",
+    "href": "slides/03-exploratory-2-slides.html#what-are-the-actual-numbers",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What are the actual numbers?",
+    "text": "What are the actual numbers?\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat was able to flip the seat in the 2018 election?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-1-1",
+    "href": "slides/03-exploratory-2-slides.html#step-1-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 1",
+    "text": "Step 1\n\ngerrymander\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-2-1",
+    "href": "slides/03-exploratory-2-slides.html#step-2-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 2",
+    "text": "Step 2\n\ngerrymander |&gt;\n  count(flip18, gerry)\n\n# A tibble: 8 × 3\n  flip18 gerry     n\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;\n1     -1 low       2\n2     -1 mid       3\n3      0 low      52\n4      0 mid     242\n5      0 high     98\n6      1 low       8\n7      1 mid      25\n8      1 high      5"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#recall",
+    "href": "slides/03-exploratory-2-slides.html#recall",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Recall",
+    "text": "Recall\nThe heights of these bars are the counts in the table:\n\nggplot(gerrymander, aes(x = flip18, fill = gerry)) +\n  geom_bar(position = \"dodge\")"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-3-1",
+    "href": "slides/03-exploratory-2-slides.html#step-3-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 3",
+    "text": "Step 3\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18)\n\n# A tibble: 8 × 3\n# Groups:   flip18 [3]\n  flip18 gerry     n\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;\n1     -1 low       2\n2     -1 mid       3\n3      0 low      52\n4      0 mid     242\n5      0 high     98\n6      1 low       8\n7      1 mid      25\n8      1 high      5"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#step-4-1",
+    "href": "slides/03-exploratory-2-slides.html#step-4-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Step 4",
+    "text": "Step 4\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#the-full-monty",
+    "href": "slides/03-exploratory-2-slides.html#the-full-monty",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "The Full Monty",
+    "text": "The Full Monty\n\nIs a Congressional District more likely to have high prevalence of gerrymandering if a Democrat flipped the seat in the 2018 election? (flip18 = 1: Democrat flipped the seat, 0: No flip, -1: Republican flipped the seat.)\n\n\n\n\nggplot(\n  gerrymander, \n  aes(x = flip18, fill = gerry)\n  ) +\n  geom_bar(position = \"fill\")\n\n\n\n\n\n\n\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#new-commands",
+    "href": "slides/03-exploratory-2-slides.html#new-commands",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "New commands",
+    "text": "New commands\n\ncount creates a new data frame that tallies up the number of rows that fall into each bin;\ngroup_by silently groups the rows according to bin, and all subsequent operations are done within group;\n\nmutate either adds new columns that aren’t already there, or modifies existing columns.\n\nwe used it to add a prop column that wasn’t there before;\nbecause the table of counts is grouped, the proportions were computed within each level of flip18."
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#we-teach-you-to-do-this",
+    "href": "slides/03-exploratory-2-slides.html#we-teach-you-to-do-this",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "We teach you to do this",
+    "text": "We teach you to do this\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#you-could-do-this-instead",
+    "href": "slides/03-exploratory-2-slides.html#you-could-do-this-instead",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "You could do this instead",
+    "text": "You could do this instead\nTechnically equivalent. Gives the same result. Super hard to read:\n\nmutate(group_by(count(gerrymander, flip18, gerry), flip18), prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#without-the-pipe",
+    "href": "slides/03-exploratory-2-slides.html#without-the-pipe",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Without the pipe",
+    "text": "Without the pipe"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#with-the-pipe",
+    "href": "slides/03-exploratory-2-slides.html#with-the-pipe",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "With the pipe",
+    "text": "With the pipe"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#what-does-group_by-do",
+    "href": "slides/03-exploratory-2-slides.html#what-does-group_by-do",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What does group_by() do?",
+    "text": "What does group_by() do?\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n# Groups:   flip18 [3]\n  flip18 gerry     n  prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt;\n1     -1 low       2 0.4  \n2     -1 mid       3 0.6  \n3      0 low      52 0.133\n4      0 mid     242 0.617\n5      0 high     98 0.25 \n6      1 low       8 0.211\n7      1 mid      25 0.658\n8      1 high      5 0.132"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#what-does-group_by-do-1",
+    "href": "slides/03-exploratory-2-slides.html#what-does-group_by-do-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "What does group_by() do?",
+    "text": "What does group_by() do?\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  count(flip18, gerry) |&gt;\n  #group_by(flip18) |&gt;\n  mutate(prop = n / sum(n))\n\n# A tibble: 8 × 4\n  flip18 gerry     n    prop\n   &lt;dbl&gt; &lt;fct&gt; &lt;int&gt;   &lt;dbl&gt;\n1     -1 low       2 0.00460\n2     -1 mid       3 0.00690\n3      0 low      52 0.120  \n4      0 mid     242 0.556  \n5      0 high     98 0.225  \n6      1 low       8 0.0184 \n7      1 mid      25 0.0575 \n8      1 high      5 0.0115"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#lets-simplify",
+    "href": "slides/03-exploratory-2-slides.html#lets-simplify",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Let’s simplify!",
+    "text": "Let’s simplify!\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(mean_trump16 = mean(trump16))\n\n# A tibble: 50 × 2\n   state mean_trump16\n   &lt;chr&gt;        &lt;dbl&gt;\n 1 AK            52.8\n 2 AL            62.6\n 3 AR            60.9\n 4 AZ            46.9\n 5 CA            31.7\n 6 CO            43.6\n 7 CT            41.0\n 8 DE            41.9\n 9 FL            47.9\n10 GA            51.3\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#lets-simplify-1",
+    "href": "slides/03-exploratory-2-slides.html#lets-simplify-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Let’s simplify!",
+    "text": "Let’s simplify!\n\nWhat does group_by() do in the following pipeline?\n\n\ngerrymander |&gt;\n  #group_by(state) |&gt;\n  summarize(mean_trump16 = mean(trump16))\n\n# A tibble: 1 × 1\n  mean_trump16\n         &lt;dbl&gt;\n1         45.9"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#group_by",
+    "href": "slides/03-exploratory-2-slides.html#group_by",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by()",
+    "text": "group_by()\n\nit converts a data frame to a grouped data frame, where subsequent operations are performed once per group\nungroup() removes grouping\n\n\ngerrymander |&gt;\n  group_by(state)\n\n# A tibble: 435 × 12\n# Groups:   state [50]\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#group_by-1",
+    "href": "slides/03-exploratory-2-slides.html#group_by-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by()",
+    "text": "group_by()\n\nit converts a data frame to a grouped data frame, where subsequent operations are performed once per group\nungroup() removes grouping\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  ungroup()\n\n# A tibble: 435 × 12\n   district last_name first_name party16 clinton16 trump16 dem16 state party18\n   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  \n 1 AK-AL    Young     Don        R            37.6    52.8     0 AK    R      \n 2 AL-01    Byrne     Bradley    R            34.1    63.5     0 AL    R      \n 3 AL-02    Roby      Martha     R            33      64.9     0 AL    R      \n 4 AL-03    Rogers    Mike D.    R            32.3    65.3     0 AL    R      \n 5 AL-04    Aderholt  Rob        R            17.4    80.4     0 AL    R      \n 6 AL-05    Brooks    Mo         R            31.3    64.7     0 AL    R      \n 7 AL-06    Palmer    Gary       R            26.1    70.8     0 AL    R      \n 8 AL-07    Sewell    Terri      D            69.8    28.6     1 AL    D      \n 9 AR-01    Crawford  Rick       R            30.2    65       0 AR    R      \n10 AR-02    Hill      French     R            41.7    52.4     0 AR    R      \n# ℹ 425 more rows\n# ℹ 3 more variables: dem18 &lt;dbl&gt;, flip18 &lt;dbl&gt;, gerry &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#group_by-summarize",
+    "href": "slides/03-exploratory-2-slides.html#group_by-summarize",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\nA common pipeline is group_by() and then summarize() to calculate summary statistics for each group:\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(\n    mean_trump16 = mean(trump16),\n    median_trump16 = median(trump16)\n  )\n\n# A tibble: 50 × 3\n   state mean_trump16 median_trump16\n   &lt;chr&gt;        &lt;dbl&gt;          &lt;dbl&gt;\n 1 AK            52.8           52.8\n 2 AL            62.6           64.9\n 3 AR            60.9           63.0\n 4 AZ            46.9           47.7\n 5 CA            31.7           28.4\n 6 CO            43.6           41.3\n 7 CT            41.0           40.4\n 8 DE            41.9           41.9\n 9 FL            47.9           49.6\n10 GA            51.3           56.6\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#group_by-summarize-1",
+    "href": "slides/03-exploratory-2-slides.html#group_by-summarize-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\nThis pipeline can also be used to count number of observations for each group:\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n())\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#summarize",
+    "href": "slides/03-exploratory-2-slides.html#summarize",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "summarize()",
+    "text": "summarize()\n... |&gt;\n  summarize(\n    name_of_summary_statistic = summary_function(variable)\n  )\n\n\n\nname_of_summary_statistic: Anything you want to call it!\n\nRecommendation: Keep it short and evocative\n\n\n\nsummary_function():\n\n\nn(): number of observations\n\nmean(): mean\n\nmedian(): median\n…"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#spot-the-difference",
+    "href": "slides/03-exploratory-2-slides.html#spot-the-difference",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Spot the difference",
+    "text": "Spot the difference\n\nWhat’s the difference between the following two pipelines?\n\n\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n())\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows\n\n\n\n\ngerrymander |&gt;\n  count(state)\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 AK        1\n 2 AL        7\n 3 AR        4\n 4 AZ        9\n 5 CA       53\n 6 CO        7\n 7 CT        5\n 8 DE        1\n 9 FL       27\n10 GA       14\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#count",
+    "href": "slides/03-exploratory-2-slides.html#count",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "count()",
+    "text": "count()\n\n\n... |&gt;\n  count(variable)\n\n... |&gt;\n  count(variable1, variable2)\n\n\nCount the number of observations in each level of variable(s)\nPlace the counts in a variable called n"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#count-and-sort",
+    "href": "slides/03-exploratory-2-slides.html#count-and-sort",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  group_by(state) |&gt;\n  summarize(n = n()) |&gt;\n  arrange(desc(n))\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#count-and-sort-1",
+    "href": "slides/03-exploratory-2-slides.html#count-and-sort-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  count(state) |&gt;\n  arrange(desc(n))\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#count-and-sort-2",
+    "href": "slides/03-exploratory-2-slides.html#count-and-sort-2",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "\ncount() and sort\n",
+    "text": "count() and sort\n\n\nWhat does the following pipeline do? Rewrite it with count() instead.\n\n\ngerrymander |&gt;\n  count(state, sort = TRUE)\n\n# A tibble: 50 × 2\n   state     n\n   &lt;chr&gt; &lt;int&gt;\n 1 CA       53\n 2 TX       36\n 3 FL       27\n 4 NY       27\n 5 IL       18\n 6 PA       18\n 7 OH       16\n 8 GA       14\n 9 MI       14\n10 NC       13\n# ℹ 40 more rows"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#science",
+    "href": "slides/03-exploratory-2-slides.html#science",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "“Science”?",
+    "text": "“Science”?\n\nWe call it “statistical science” or “data science,” but frankly it’s all much closer to art and rhetoric and storytelling;\nWhen you compress a data set down to pictures and summaries, you make countless choices about how to visualize, which summaries to inspect, how much detail to retain or discard, etc;\nA choice is good or bad insofar as a skeptical human audience finds it informative and persuasive."
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#fine-but-what-dataviz-should-i-use",
+    "href": "slides/03-exploratory-2-slides.html#fine-but-what-dataviz-should-i-use",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Fine, but what dataviz should I use?",
+    "text": "Fine, but what dataviz should I use?\nIf you want to know where to begin, the number and type of variables typically narrows down the menu of options:\n\n\n\n\n\n\n\nVariable combo\nOptions for a first pass\n\n\n\n1 numerical\nhistogram, density, box plot, …\n\n\n1 categorical\nbar chart, pie chart\n\n\n\n2 numerical\nscatterplot\n\n\nnumerical/categorical\nside-by-side boxes, stacked densities or histograms, …\n\n\n2 categorical\nstacked bar plot\n\n\n\n\n\nFor three or more variables, the human mind is limited, and you have to get creative (play with color, shape, texture, etc)."
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#computational-themes",
+    "href": "slides/03-exploratory-2-slides.html#computational-themes",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Computational themes",
+    "text": "Computational themes\nEvery coding task in this class will be some combo of these two things:\n\n\n\nBuilding cakes (ggplot) \n\nStacking dolls (pipe |&gt;) \n\n\n\nMaster these, and everything will be coming up roses!"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#where-to-now",
+    "href": "slides/03-exploratory-2-slides.html#where-to-now",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Where to now?",
+    "text": "Where to now?"
+  },
+  {
+    "objectID": "slides/03-exploratory-2-slides.html#where-to-now-1",
+    "href": "slides/03-exploratory-2-slides.html#where-to-now-1",
+    "title": "Exploratory Data Analysis, Part II",
+    "section": "Where to now?",
+    "text": "Where to now?\n\nWhere did the line come from? How was it drawn? How do you interpret it? How do you use it? What about more than two variables? What about categorical variables?"
+  },
+  {
     "objectID": "syllabus/syllabus-materials.html",
     "href": "syllabus/syllabus-materials.html",
     "title": "Course materials",
@@ -4052,7 +5438,7 @@
     "href": "syllabus/syllabus-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 9:30 AM - 11:30 PM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nWed 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 5:00 PM - 7:00 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
+    "text": "Mug\nName\nRole\nOffice Hours\n\n\n\n\n\nCastillo, Jesus\nTA\nThu 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nChen, Songliang\nTA\nTue 10:00 AM - 12:00 PM\nOld Chem 203A\n\n\n\nDel Preto, Matthew\nTA\nMon 9:30 AM - 11:30 AM\nOld Chem 203A\n\n\n\nKang, Joon\nTA\nWed 3:00 PM - 5:00 PM\nZoom (link on Canvas)\n\n\n\nLasser, Sonya\nTA\nWed 5:00 PM - 7:00 PM\nOld Chem 203B\n\n\n\nZhang, Christina\nTA\nThu 4:30 PM - 6:30 PM\nOld Chem 203B\n\n\n\nZito, John\nInstructor\nWed 9:00 AM - 12:00 PM\nor by appointment\nOld Chem 207",
     "crumbs": [
       "Syllabus",
       "Teaching team"
@@ -4116,7 +5502,7 @@
     "href": "syllabus/announcements.html",
     "title": "Support your classmates!",
     "section": "",
-    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
@@ -4126,7 +5512,7 @@
     "href": "syllabus/announcements.html#articles-in-the-chronicle",
     "title": "Support your classmates!",
     "section": "",
-    "text": "“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
