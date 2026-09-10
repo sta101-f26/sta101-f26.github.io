@@ -270,7 +270,7 @@
     "href": "slides/04-models-slides.html#two-main-goals",
     "title": "The language of models",
     "section": "Two main goals",
-    "text": "Two main goals\n\nPrediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+    "text": "Two main goals\n\nPrediction / classification\nDescription / explanation"
   },
   {
     "objectID": "slides/04-models-slides.html#lets-drive-a-tesla",
@@ -284,21 +284,21 @@
     "href": "slides/04-models-slides.html#semi-or-garage",
     "title": "The language of models",
     "section": "Semi or garage?",
-    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models-slides.html#semi-or-garage-1",
     "href": "slides/04-models-slides.html#semi-or-garage-1",
     "title": "The language of models",
     "section": "Semi or garage?",
-    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models-slides.html#car-or-trash",
     "href": "slides/04-models-slides.html#car-or-trash",
     "title": "The language of models",
     "section": "Car or trash?",
-    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp",
@@ -341,6 +341,13 @@
     "title": "The language of models",
     "section": "Leisure, commute, physical activity and BP",
     "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively.\nConclusions: Higher commuting and leisure-time but not occupational MVPA were significantly associated with lower BP and lower hypertension risk at all ages, but these associations were stronger in older adults."
+  },
+  {
+    "objectID": "slides/04-models-slides.html#some-themes",
+    "href": "slides/04-models-slides.html#some-themes",
+    "title": "The language of models",
+    "section": "Some themes",
+    "text": "Some themes\n\nA model takes inputs and generates predictions;\nA model is statistical if it delivers uncertainty quantification for the predictions and conclusions;\nModel outputs are just like any other summary. It’s just our best guess;\nAll models are wrong, but some are useful;\nBeware the reflex to interpret the model as “input causes output.” Maybe. Maybe not."
   },
   {
     "objectID": "slides/04-models-slides.html#modeling-cars",
@@ -452,7 +459,7 @@
     "href": "slides/04-models-slides.html#new-command-cor",
     "title": "The language of models",
     "section": "New command: cor\n",
-    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 140 × 4\n       x series     y r    \n   &lt;int&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;fct&gt;\n 1     1 y1      0.75 r = 1\n 2     2 y1      1.5  r = 1\n 3     3 y1      2.25 r = 1\n 4     4 y1      3    r = 1\n 5     5 y1      3.75 r = 1\n 6     6 y1      4.5  r = 1\n 7     7 y1      5.25 r = 1\n 8     8 y1      6    r = 1\n 9     9 y1      6.75 r = 1\n10    10 y1      7.5  r = 1\n# ℹ 130 more rows\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 0.0405"
+    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 20 × 2\n       x      y\n   &lt;int&gt;  &lt;dbl&gt;\n 1     1  -34.8\n 2     2 -184. \n 3     3 -154. \n 4     4 -326. \n 5     5  -76.6\n 6     6 -213. \n 7     7 -331. \n 8     8  511. \n 9     9  288. \n10    10   46.0\n11    11 -182. \n12    12  265. \n13    13  308. \n14    14  118. \n15    15 -435. \n16    16  110. \n17    17  392. \n18    18  250. \n19    19  287. \n20    20  246. \n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.501"
   },
   {
     "objectID": "slides/04-models-slides.html#practice",
@@ -529,7 +536,7 @@
     "href": "slides/04-models.html",
     "title": "The language of models",
     "section": "",
-    "text": "What is a model?\nWhy do we model?\nWhat is correlation?\n\n\nPrediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+    "text": "What is a model?\nWhy do we model?\nWhat is correlation?\n\n\nPrediction / classification\nDescription / explanation"
   },
   {
     "objectID": "slides/04-models.html#agenda",
@@ -543,7 +550,7 @@
     "href": "slides/04-models.html#two-main-goals",
     "title": "The language of models",
     "section": "",
-    "text": "Prediction / classification\nDescription / explanation\n\n\n\nCan you think of examples of modeling for prediction vs. modeling for explanation?"
+    "text": "Prediction / classification\nDescription / explanation"
   },
   {
     "objectID": "slides/04-models.html#lets-drive-a-tesla",
@@ -557,21 +564,21 @@
     "href": "slides/04-models.html#semi-or-garage",
     "title": "The language of models",
     "section": "Semi or garage?",
-    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models.html#semi-or-garage-1",
     "href": "slides/04-models.html#semi-or-garage-1",
     "title": "The language of models",
     "section": "Semi or garage?",
-    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models.html#car-or-trash",
     "href": "slides/04-models.html#car-or-trash",
     "title": "The language of models",
     "section": "Car or trash?",
-    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\n\n\n\n\nSource: Reddit"
+    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp",
@@ -614,6 +621,13 @@
     "title": "The language of models",
     "section": "Leisure, commute, physical activity and BP",
     "text": "Leisure, commute, physical activity and BP\nGoal: To investigate the associations of different domains of daily-life physical activity, such as commuting, leisure-time, and occupational, with BP level and the risk of having hypertension.\nMethods and Results: In the population-based Lifelines cohort (N=125,402), MVPA was assessed by the Short Questionnaire to Assess Health-Enhancing Physical Activity, a validated questionnaire in different domains such as commuting, leisure-time, and occupational PA. Commuting-and-leisure-time MVPA was associated with BP in a dose-dependent manner. β Coefficients (95% CI) from linear regression analyses were −1.64 (−2.03 to −1.24), −2.29 (−2.68 to −1.90), and −2.90 (−3.29 to −2.50) mm Hg systolic BP for the low, middle, and highest tertile of MVPA compared with “No MVPA” as the reference group after adjusting for age, sex, education, smoking and alcohol use. Further adjustment for body mass index attenuated the associations by 30% to 50%, but more MVPA remained significantly associated with lower BP and lower risk of hypertension. This association was age dependent. β Coefficients (95% CI) for the highest tertiles of commuting-and-leisure-time MVPA were −1.67 (−2.20 to −1.15), −3.39 (−3.94 to −2.82) and −4.64 (−6.15 to −3.14) mm Hg systolic BP in adults &lt;40, 40 to 60, and &gt;60 years, respectively.\nConclusions: Higher commuting and leisure-time but not occupational MVPA were significantly associated with lower BP and lower hypertension risk at all ages, but these associations were stronger in older adults."
+  },
+  {
+    "objectID": "slides/04-models.html#some-themes",
+    "href": "slides/04-models.html#some-themes",
+    "title": "The language of models",
+    "section": "Some themes",
+    "text": "Some themes\n\n\nA model takes inputs and generates predictions;\nA model is statistical if it delivers uncertainty quantification for the predictions and conclusions;\nModel outputs are just like any other summary. It’s just our best guess;\nAll models are wrong, but some are useful;\nBeware the reflex to interpret the model as “input causes output.” Maybe. Maybe not."
   },
   {
     "objectID": "slides/04-models.html#modeling-cars",
@@ -725,7 +739,7 @@
     "href": "slides/04-models.html#new-command-cor",
     "title": "The language of models",
     "section": "New command: cor\n",
-    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 140 × 4\n       x series     y r    \n   &lt;int&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;fct&gt;\n 1     1 y1      0.75 r = 1\n 2     2 y1      1.5  r = 1\n 3     3 y1      2.25 r = 1\n 4     4 y1      3    r = 1\n 5     5 y1      3.75 r = 1\n 6     6 y1      4.5  r = 1\n 7     7 y1      5.25 r = 1\n 8     8 y1      6    r = 1\n 9     9 y1      6.75 r = 1\n10    10 y1      7.5  r = 1\n# ℹ 130 more rows\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 0.0405"
+    "text": "New command: cor\n\n\n\n\ndf\n\n# A tibble: 20 × 2\n       x      y\n   &lt;int&gt;  &lt;dbl&gt;\n 1     1  -34.8\n 2     2 -184. \n 3     3 -154. \n 4     4 -326. \n 5     5  -76.6\n 6     6 -213. \n 7     7 -331. \n 8     8  511. \n 9     9  288. \n10    10   46.0\n11    11 -182. \n12    12  265. \n13    13  308. \n14    14  118. \n15    15 -435. \n16    16  110. \n17    17  392. \n18    18  250. \n19    19  287. \n20    20  246. \n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.501"
   },
   {
     "objectID": "slides/04-models.html#practice",
@@ -3621,21 +3635,21 @@
     "href": "lab/lab-2.html",
     "title": "Lab 2",
     "section": "",
-    "text": "Log-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.\n\nstrip out the scaffolding: https://sta101-f24.github.io/labs/lab-2.html"
+    "text": "Today, we will be working with data from the first three full seasons of the NC Courage, a highly successful National Women’s Soccer League (NWSL) team located near Duke in Cary, NC. The Courage moved to the Triangle from Western New York in 2017 and had three epic seasons in NC, culminating in winning the championship game that was held at their stadium in Cary in 2019! Data for this lab was sourced from the nwslR package on Github, and verified with the NC Courage website by Meredith Brown (Duke StatSci ’21) in a previous semester.\ncourage &lt;- read_csv(\"data/courage.csv\")\nThe courage dataset has 78 rows and 10 variables. The variables in the dataset are as follows:"
   },
   {
     "objectID": "lab/lab-2.html#setup",
     "href": "lab/lab-2.html#setup",
     "title": "Lab 2",
-    "section": "",
-    "text": "Log-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.\n\nstrip out the scaffolding: https://sta101-f24.github.io/labs/lab-2.html"
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates."
   },
   {
     "objectID": "lab/lab-2.html#submission",
     "href": "lab/lab-2.html#submission",
     "title": "Lab 2",
     "section": "Submission",
-    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
   },
   {
     "objectID": "hw/hw-1.html",
@@ -3763,7 +3777,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
