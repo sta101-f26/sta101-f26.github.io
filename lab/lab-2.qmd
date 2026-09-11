@@ -1,0 +1,175 @@
+---
+title: "Lab 2"
+subtitle: "Due: end-of-lab Friday September 11"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+```
+
+Today, we will be working with data from the first three full seasons of the NC Courage, a highly successful National Women's Soccer League (NWSL) team located near Duke in Cary, NC. The Courage moved to the Triangle from Western New York in 2017 and had three epic seasons in NC, culminating in winning the championship game that was held at their stadium in Cary in 2019! Data for this lab was sourced from the [`nwslR` package on Github](https://github.com/adror1/nwslR), and verified with the NC Courage website by Meredith Brown (Duke StatSci '21) in a previous semester.
+
+```{r}
+#| message: false
+
+courage <- read_csv("data/courage.csv")
+```
+
+The `courage` dataset has `r nrow(courage)` rows and `r ncol(courage)` variables. Each row is a game, and the variables in the dataset are as follows:
+
+| Variable      | Descripton                                         |
+|---------------|----------------------------------------------------|
+| `game_id`     | An unique ID for the game                          |
+| `game_date`   | Game date                                          |
+| `game_number` | Game number                                        |
+| `home_team`   | Name of the home team, abbreviated                 |
+| `away_team`   | Name of the away team, abbreviated                 |
+| `opponent`    | The team NC Courage played against                 |
+| `home_pts`    | Number of points by the home team                  |
+| `away_pts`    | Number of points by the away team                  |
+| `result`      | Result of the game for NC Courage (win, loss, tie) |
+| `season`      | Season (2017, 2018, or 2019)                       |
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Task 1
+
+Create a bar plot of the `result`s of games for NC Courage. Additionally, calculate the numbers of wins, losses, and ties. Write a one sentence narrative for your findings.
+
+
+## Task 2
+
+a. Create a new variable indicating whether the game was played at home or away for NC Courage. This variable should be called `home_courage` and take the value "home" if NC Courage is the home team and "away" if NC Courage is the away team. **Note**: make sure you use *variable assignment* to **store** this new variable so you can use it later.
+a. Calculate the number of home and away games, and write a one sentence narrative for your findings.
+
+::: {.callout-tip collapse="true"}
+## New command: `if_else`
+
+```{r}
+#| echo: false
+
+set.seed(1)
+
+df <- tibble(
+  x = rnorm(6),
+  y = rnorm(6)
+)
+```
+
+Say you have this silly data frame:
+
+```{r}
+df
+```
+
+You want to add a new column with the value "apple" if `x` is positive, and "banana" if `x` is negative (or zero). The fact that you want to *add* a column means this is a job for `mutate`. But how do you achieve this thing where "in this case do one thing, in that case do another"? Use this command
+
+```{r}
+df <- df |>
+  mutate(
+    z = if_else(x > 0, "apple", "banana")
+  )
+
+df
+```
+
+So `if_else` takes three arguments. The first is a *logical condition*. It will either be `TRUE` or `FALSE`. The second argument is what we should do if the condition is true. The third argument is what we should do if the condition is false. 
+
+
+:::
+
+## Task 3
+
+a.  Visualize the relationship between `home_courage` and `result`.
+a.  Calculate the proportions of home and away games that the Courage won. Based on these, do your findings suggest a home-field advantage? Why or why not?
+
+## Task 4
+
+So far we have focused on whether the game was at home or away and whether the Courage won. Next, we dive deeper and focus on the number of points the Courage wins by, at home and away.
+
+How many points do the Courage typically win by (on average)? Use the example code below to get started. You'll encounter a new function: `abs()` is the absolute value function. It takes the absolute value of a number. Why do we want to use this absolute value function here?
+
+::: {.callout-tip collapse="ture"}
+## New command: `filter`
+We are only interested in games the Courage wins, therefore we should `filter()` for those games first. This is a command that narrows down a data frame by keeping some rows and discarding others. Recall the silly data frame:
+
+```{r}
+df
+```
+
+If we wanted to narrow things down and just consider the banana rows (and honestly, who wouldn't?), we can say 
+
+```{r}
+df |>
+  filter(z == "banana")
+```
+
+So inside `filter` is a *logical condition* that determines which rows will be *kept*. If the condition is true, we keep the row. If it's false, we throw it out.
+
+:::
+
+
+
+
+
+## Task 5
+
+How many points do NC Courage score when they win (on average)? Note this is **different than how many points** they "win by". How many points do the Courage score when they lose on average? To calculate this we first need to determine how many points NC Courage scored in every game. We can use `if_else()` logic again to find this value for each game, and store it in a new column, `courage_pts`. Make sure you save your work!
+
+## Task 6
+
+Next we'll investigate visually whether or not NC Courage has a home-field advantage. Mutate the `courage` data frame to create two new variables:
+
+-   `total_pts`: Sum of points scored by both teams, i.e. `home_pts + away_pts`.
+
+-   `opponent_pts`: Points scored by the opposing team, i.e., `total_pts - courage_pts`.
+
+Save the resulting data frame as `courage` again and print the three points columns (`total_pts`, `opponent_pts`, `courage_pts`) to screen.
+
+::: {.callout-tip collapse="true"}
+## New command: `select`
+
+Before when we wanted to discard some *rows* and keep others, we used `filter`. If instead you want to discard some *columns* and discard others, you use `select`. Recall the silly data frame:
+
+```{r}
+df
+```
+
+If I want to focus just on the first and third columns, then:
+
+```{r}
+df |>
+  select(x, z)
+```
+
+So inside `select`, I list out all of the columns that I wish to *keep*. The rest are discarded.
+
+:::
+
+## Task 7
+
+Create a scatter plot:
+
+- `opponent_pts` (y) vs. `courage_pts` (x);
+- Color the scatter plot by whether NC Courage are home or away;
+- Represent the data with "jittered" points using the new layer `geom_jitter()`;
+- Overlay a $y = x$ line using the new layer `geom_abline()`;
+- Faceted by season using the new layer `facet_wrap()`.
+
+What does the $y=x$ line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?
+
+
+## Task 8
+
+If we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you've defined what it means to have a home field advantage, define what it means to **not** have a home-field advantage.
+
+## Submission
+
+{{< include _submission.qmd >}}
+
