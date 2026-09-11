@@ -122,7 +122,7 @@ So inside `filter` is a *logical condition* that determines which rows will be *
 
 How many points do NC Courage score when they win (on average)? Note this is **different than how many points** they "win by". How many points do the Courage score when they lose on average? To calculate this we first need to determine how many points NC Courage scored in every game. We can use `if_else()` logic again to find this value for each game, and store it in a new column, `courage_pts`. Make sure you save your work!
 
-## Task 6
+## Task 6 (optional)
 
 Next we'll investigate visually whether or not NC Courage has a home-field advantage. Mutate the `courage` data frame to create two new variables:
 
@@ -152,7 +152,7 @@ So inside `select`, I list out all of the columns that I wish to *keep*. The res
 
 :::
 
-## Task 7
+## Task 7 (optional)
 
 Create a scatter plot:
 
@@ -165,7 +165,7 @@ Create a scatter plot:
 What does the $y=x$ line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?
 
 
-## Task 8
+## Task 8 (optional)
 
 If we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you've defined what it means to have a home field advantage, define what it means to **not** have a home-field advantage.
 
