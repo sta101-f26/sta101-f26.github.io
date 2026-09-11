@@ -110,32 +110,25 @@
     ]
   },
   {
-    "objectID": "syllabus/announcements/chronicle.html",
-    "href": "syllabus/announcements/chronicle.html",
+    "objectID": "syllabus/announcements/wind-symphony-october-overtures.html",
+    "href": "syllabus/announcements/wind-symphony-october-overtures.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "https://music.duke.edu/events/duke-university-wind-symphony-overtures-october"
   },
   {
-    "objectID": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
-    "href": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "objectID": "syllabus/announcements/muse-magazine.html",
+    "href": "syllabus/announcements/muse-magazine.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
   },
   {
-    "objectID": "syllabus/announcements/fall-dance-showcase.html",
-    "href": "syllabus/announcements/fall-dance-showcase.html",
+    "objectID": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
+    "href": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
-  },
-  {
-    "objectID": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
-    "href": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
-    "title": "STA 101 Fall 2026",
-    "section": "",
-    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
+    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
   },
   {
     "objectID": "syllabus/syllabus-resources.html",
@@ -278,27 +271,6 @@
     "title": "The language of models",
     "section": "Let’s drive a Tesla!",
     "text": "Let’s drive a Tesla!"
-  },
-  {
-    "objectID": "slides/04-models-slides.html#semi-or-garage",
-    "href": "slides/04-models-slides.html#semi-or-garage",
-    "title": "The language of models",
-    "section": "Semi or garage?",
-    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\nSource: Reddit"
-  },
-  {
-    "objectID": "slides/04-models-slides.html#semi-or-garage-1",
-    "href": "slides/04-models-slides.html#semi-or-garage-1",
-    "title": "The language of models",
-    "section": "Semi or garage?",
-    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\nSource: Reddit"
-  },
-  {
-    "objectID": "slides/04-models-slides.html#car-or-trash",
-    "href": "slides/04-models-slides.html#car-or-trash",
-    "title": "The language of models",
-    "section": "Car or trash?",
-    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models-slides.html#leisure-commute-physical-activity-and-bp",
@@ -558,27 +530,6 @@
     "title": "The language of models",
     "section": "Let’s drive a Tesla!",
     "text": "Let’s drive a Tesla!"
-  },
-  {
-    "objectID": "slides/04-models.html#semi-or-garage",
-    "href": "slides/04-models.html#semi-or-garage",
-    "title": "The language of models",
-    "section": "Semi or garage?",
-    "text": "Semi or garage?\n\ni love how Tesla thinks the wall in my garage is a semi. 😅\n\n\n\nSource: Reddit"
-  },
-  {
-    "objectID": "slides/04-models.html#semi-or-garage-1",
-    "href": "slides/04-models.html#semi-or-garage-1",
-    "title": "The language of models",
-    "section": "Semi or garage?",
-    "text": "Semi or garage?\n\nNew owner here. Just parked in my garage. Tesla thinks I crashed onto a semi.\n\n\n\nSource: Reddit"
-  },
-  {
-    "objectID": "slides/04-models.html#car-or-trash",
-    "href": "slides/04-models.html#car-or-trash",
-    "title": "The language of models",
-    "section": "Car or trash?",
-    "text": "Car or trash?\n\nTesla calls Mercedes trash\n\n\n\nSource: Reddit"
   },
   {
     "objectID": "slides/04-models.html#leisure-commute-physical-activity-and-bp",
@@ -3635,21 +3586,121 @@
     "href": "lab/lab-2.html",
     "title": "Lab 2",
     "section": "",
-    "text": "Today, we will be working with data from the first three full seasons of the NC Courage, a highly successful National Women’s Soccer League (NWSL) team located near Duke in Cary, NC. The Courage moved to the Triangle from Western New York in 2017 and had three epic seasons in NC, culminating in winning the championship game that was held at their stadium in Cary in 2019! Data for this lab was sourced from the nwslR package on Github, and verified with the NC Courage website by Meredith Brown (Duke StatSci ’21) in a previous semester.\ncourage &lt;- read_csv(\"data/courage.csv\")\nThe courage dataset has 78 rows and 10 variables. The variables in the dataset are as follows:"
+    "text": "Today, we will be working with data from the first three full seasons of the NC Courage, a highly successful National Women’s Soccer League (NWSL) team located near Duke in Cary, NC. The Courage moved to the Triangle from Western New York in 2017 and had three epic seasons in NC, culminating in winning the championship game that was held at their stadium in Cary in 2019! Data for this lab was sourced from the nwslR package on Github, and verified with the NC Courage website by Meredith Brown (Duke StatSci ’21) in a previous semester.\ncourage &lt;- read_csv(\"data/courage.csv\")\nThe courage dataset has 78 rows and 10 variables. Each row is a game, and the variables in the dataset are as follows:",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
     "objectID": "lab/lab-2.html#setup",
     "href": "lab/lab-2.html#setup",
     "title": "Lab 2",
     "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates."
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-1",
+    "href": "lab/lab-2.html#task-1",
+    "title": "Lab 2",
+    "section": "Task 1",
+    "text": "Task 1\nCreate a bar plot of the results of games for NC Courage. Additionally, calculate the numbers of wins, losses, and ties. Write a one sentence narrative for your findings.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-2",
+    "href": "lab/lab-2.html#task-2",
+    "title": "Lab 2",
+    "section": "Task 2",
+    "text": "Task 2\n\nCreate a new variable indicating whether the game was played at home or away for NC Courage. This variable should be called home_courage and take the value “home” if NC Courage is the home team and “away” if NC Courage is the away team. Note: make sure you use variable assignment to store this new variable so you can use it later.\nCalculate the number of home and away games, and write a one sentence narrative for your findings.\n\n\n\n\n\n\n\nNew command: if_else\n\n\n\n\n\nSay you have this silly data frame:\n\ndf\n\n# A tibble: 6 × 2\n       x      y\n   &lt;dbl&gt;  &lt;dbl&gt;\n1 -0.626  0.487\n2  0.184  0.738\n3 -0.836  0.576\n4  1.60  -0.305\n5  0.330  1.51 \n6 -0.820  0.390\n\n\nYou want to add a new column with the value “apple” if x is positive, and “banana” if x is negative (or zero). The fact that you want to add a column means this is a job for mutate. But how do you achieve this thing where “in this case do one thing, in that case do another”? Use this command\n\ndf &lt;- df |&gt;\n  mutate(\n    z = if_else(x &gt; 0, \"apple\", \"banana\")\n  )\n\ndf\n\n# A tibble: 6 × 3\n       x      y z     \n   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; \n1 -0.626  0.487 banana\n2  0.184  0.738 apple \n3 -0.836  0.576 banana\n4  1.60  -0.305 apple \n5  0.330  1.51  apple \n6 -0.820  0.390 banana\n\n\nSo if_else takes three arguments. The first is a logical condition. It will either be TRUE or FALSE. The second argument is what we should do if the condition is true. The third argument is what we should do if the condition is false.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-3",
+    "href": "lab/lab-2.html#task-3",
+    "title": "Lab 2",
+    "section": "Task 3",
+    "text": "Task 3\n\nVisualize the relationship between home_courage and result.\nCalculate the proportions of home and away games that the Courage won. Based on these, do your findings suggest a home-field advantage? Why or why not?",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-4",
+    "href": "lab/lab-2.html#task-4",
+    "title": "Lab 2",
+    "section": "Task 4",
+    "text": "Task 4\nSo far we have focused on whether the game was at home or away and whether the Courage won. Next, we dive deeper and focus on the number of points the Courage wins by, at home and away.\nHow many points do the Courage typically win by (on average)? Use the example code below to get started. You’ll encounter a new function: abs() is the absolute value function. It takes the absolute value of a number. Why do we want to use this absolute value function here?\n\n\n\n\n\n\nNew command: filter\n\n\n\n\n\nWe are only interested in games the Courage wins, therefore we should filter() for those games first. This is a command that narrows down a data frame by keeping some rows and discarding others. Recall the silly data frame:\n\ndf\n\n# A tibble: 6 × 3\n       x      y z     \n   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; \n1 -0.626  0.487 banana\n2  0.184  0.738 apple \n3 -0.836  0.576 banana\n4  1.60  -0.305 apple \n5  0.330  1.51  apple \n6 -0.820  0.390 banana\n\n\nIf we wanted to narrow things down and just consider the banana rows (and honestly, who wouldn’t?), we can say\n\ndf |&gt;\n  filter(z == \"banana\")\n\n# A tibble: 3 × 3\n       x     y z     \n   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; \n1 -0.626 0.487 banana\n2 -0.836 0.576 banana\n3 -0.820 0.390 banana\n\n\nSo inside filter is a logical condition that determines which rows will be kept. If the condition is true, we keep the row. If it’s false, we throw it out.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-5",
+    "href": "lab/lab-2.html#task-5",
+    "title": "Lab 2",
+    "section": "Task 5",
+    "text": "Task 5\nHow many points do NC Courage score when they win (on average)? Note this is different than how many points they “win by”. How many points do the Courage score when they lose on average? To calculate this we first need to determine how many points NC Courage scored in every game. We can use if_else() logic again to find this value for each game, and store it in a new column, courage_pts. Make sure you save your work!",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-6",
+    "href": "lab/lab-2.html#task-6",
+    "title": "Lab 2",
+    "section": "Task 6",
+    "text": "Task 6\nNext we’ll investigate visually whether or not NC Courage has a home-field advantage. Mutate the courage data frame to create two new variables:\n\ntotal_pts: Sum of points scored by both teams, i.e. home_pts + away_pts.\nopponent_pts: Points scored by the opposing team, i.e., total_pts - courage_pts.\n\nSave the resulting data frame as courage again and print the three points columns (total_pts, opponent_pts, courage_pts) to screen.\n\n\n\n\n\n\nNew command: select\n\n\n\n\n\nBefore when we wanted to discard some rows and keep others, we used filter. If instead you want to discard some columns and discard others, you use select. Recall the silly data frame:\n\ndf\n\n# A tibble: 6 × 3\n       x      y z     \n   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; \n1 -0.626  0.487 banana\n2  0.184  0.738 apple \n3 -0.836  0.576 banana\n4  1.60  -0.305 apple \n5  0.330  1.51  apple \n6 -0.820  0.390 banana\n\n\nIf I want to focus just on the first and third columns, then:\n\ndf |&gt;\n  select(x, z)\n\n# A tibble: 6 × 2\n       x z     \n   &lt;dbl&gt; &lt;chr&gt; \n1 -0.626 banana\n2  0.184 apple \n3 -0.836 banana\n4  1.60  apple \n5  0.330 apple \n6 -0.820 banana\n\n\nSo inside select, I list out all of the columns that I wish to keep. The rest are discarded.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-7",
+    "href": "lab/lab-2.html#task-7",
+    "title": "Lab 2",
+    "section": "Task 7",
+    "text": "Task 7\nCreate a scatter plot:\n\n\nopponent_pts (y) vs. courage_pts (x);\nColor the scatter plot by whether NC Courage are home or away;\nRepresent the data with “jittered” points using the new layer geom_jitter();\nOverlay a \\(y = x\\) line using the new layer geom_abline();\nFaceted by season using the new layer facet_wrap().\n\nWhat does the \\(y=x\\) line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "lab/lab-2.html#task-8",
+    "href": "lab/lab-2.html#task-8",
+    "title": "Lab 2",
+    "section": "Task 8",
+    "text": "Task 8\nIf we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you’ve defined what it means to have a home field advantage, define what it means to not have a home-field advantage.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
     "objectID": "lab/lab-2.html#submission",
     "href": "lab/lab-2.html#submission",
     "title": "Lab 2",
     "section": "Submission",
-    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
     "objectID": "hw/hw-1.html",
@@ -3705,6 +3756,62 @@
       "Homeworks",
       "Homework 1"
     ]
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html",
+    "href": "ae/ae-03-icecover.html",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "",
+    "text": "The data for this application exercise comes from the lterdatasampler package. The mission of the Long Term Ecological Research program (LTER) Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”\nSpecifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature."
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#getting-started",
+    "href": "ae/ae-03-icecover.html#getting-started",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Getting started",
+    "text": "Getting started\nPackages\nWe will use the tidyverse package for data visualization and wrangling and the tidymodels package for modeling.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\n\nData\nThe data can be found in the data folder; it’s called icecover.csv.\n\nicecover &lt;- read_csv(\"data/icecover.csv\")\n\nThe data dictionary is below:\n\n\n\n\n\n\nVariable Name\nDescription\n\n\n\nlakeid\nLake name\n\n\nice_on\nDate of freeze of lake\n\n\nice_off\nDate of ice breakup of lake\n\n\nice_duration\nNumber of days between the freeze and breakup dates of each lake\n\n\nyear\nYear of observation\n\n\nannual_avg_temp\nAnnual average air temperature (°C)"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#visualizing-the-model",
+    "href": "ae/ae-03-icecover.html#visualizing-the-model",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\nWe’re going to investigate the relationship between ice_duration and annual_avg_temp.\n\nCreate an appropriate plot to investigate this relationship. Add appropriate labels to the plot.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n\n\n\n\n\n\n\nIf you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?\nNow, let R draw the line for you. Refer to the documentation at https://ggplot2.tidyverse.org/reference/geom_smooth.html. Specifically, refer to the method section.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWhat types of questions can this plot help answer?\n\nHow does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?\n\nWe can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?\n\nAt 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data."
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#model-fitting",
+    "href": "ae/ae-03-icecover.html#model-fitting",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model fitting",
+    "text": "Model fitting\nFit a model to predict fish weights from their heights.\n\nice_temp_fit &lt;- linear_reg() |&gt;\n  fit(ice_duration ~ annual_avg_temp, data = icecover)\n\nice_temp_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = ice_duration ~ annual_avg_temp, data = data)\n\nCoefficients:\n    (Intercept)  annual_avg_temp  \n        148.110           -6.182"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#model-summary",
+    "href": "ae/ae-03-icecover.html#model-summary",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model summary",
+    "text": "Model summary\n\nDisplay the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.\n\n\ntidy(ice_temp_fit)\n\n# A tibble: 2 × 5\n  term            estimate std.error statistic  p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       148.        7.77     19.1  1.38e-53\n2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9\n\n\n\nWrite out your model using mathematical notation.\n\n\\[\n\\widehat{ice~duration}=148.11-6.18\\times temp\n\\]\n\n\nWhat is the interpretation of the estimated coefficients?\n\nIf the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;\nIf the temperature increases by 1 degree celcius, this predicts a 6.18 day decrease in ice duration, on average."
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#prediction",
+    "href": "ae/ae-03-icecover.html#prediction",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Prediction",
+    "text": "Prediction\nBefore, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.\n\nFirst, use R as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:\n\n\n148.109981 - 6.181554 * 7\n\n[1] 104.8391\n\n148.109981 - 6.181554 * 10\n\n[1] 86.29444\n\n148.109981 - 6.181554 * 12\n\n[1] 73.93133\n\n\n\nSecond, use the predict function to perform the same calculation. You should get the same numbers (aside from rounding error).\n\n\nnew_lakes &lt;- tibble(annual_avg_temp = c(7, 10, 12))\n\npredict(ice_temp_fit, new_data = new_lakes)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 105. \n2  86.3\n3  73.9"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#correlation",
+    "href": "ae/ae-03-icecover.html#correlation",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Correlation",
+    "text": "Correlation\nWe can also assess correlation between two quantitative variables.\n\nWhat is correlation? What are values correlation can take?\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\nWhat is the correlation between temperature and ice duration?\n\n\nicecover |&gt;\n  summarize(\n    r = cor(annual_avg_temp, ice_duration)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 -0.332"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#fitting-other-models",
+    "href": "ae/ae-03-icecover.html#fitting-other-models",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Fitting other models",
+    "text": "Fitting other models\nWe can fit more models than just a straight line. Change the plotting code from earlier to use method = \"loess\". What is different from the plot created before?\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"loess\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
     "objectID": "lab/lab-1.html",
@@ -3766,7 +3873,7 @@
     "href": "lab/lab-1.html#submission",
     "title": "Lab 1",
     "section": "Submission",
-    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nGive your work a final look over to double-check that your code is stylish;\nHit the blue Render button to generate your final PDF;\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
     "crumbs": [
       "Labs",
       "Lab 1"
@@ -3777,7 +3884,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04  🧊 ae 03\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n🔬 lab 02\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -5484,18 +5591,39 @@
     "text": "There is a house course that may interest you:\n\nTitle: To Suffer, To Care: Becoming a Moral Practitioner in Medicine;\nLogistics: Mon 7:00 pm - 8:30 pm in Perkins Link Classroom 2;\nDescription: Medicine is typically taught as a science of diagnosis and treatment. This course approaches it differently, treating medicine as a moral and relational practice shaped by daily encounters with suffering, grief, and human vulnerability. At its core, this house course asks: What kind of person do you need to become to care well for others in the face of suffering? Drawing on medical humanities, religion, philosophy, and the arts, we will explore how healthcare practitioners are changed by what they witness — death, uncertainty, injustice, and the limits of what medicine can fix. We will ask: How do we care for patients as persons, not just diagnoses? What does it mean to witness suffering without turning away? How does repeated exposure to grief shape the moral life of a clinician? Through illness narratives, poetry, ethical case studies, end-of-life care discussions, and critiques of modern medicine, students will examine how suffering is expressed and understood. Guest speakers, including clinicians and humanities scholars, will bring these themes into lived practice."
   },
   {
-    "objectID": "syllabus/announcements/muse-magazine.html",
-    "href": "syllabus/announcements/muse-magazine.html",
+    "objectID": "syllabus/announcements/fall-dance-showcase.html",
+    "href": "syllabus/announcements/fall-dance-showcase.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
   },
   {
-    "objectID": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
-    "href": "syllabus/announcements/muse-magazine.html#new-issue-of-the-muse-magazine",
+    "objectID": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
+    "href": "syllabus/announcements/fall-dance-showcase.html#fall-dance-showcase",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "Duke’s own The Muse Magazine (@themuseduke) has a new issue out:"
+    "text": "Saturday August 29 at 7:00 PM;\nPage Auditorium;\n@dukedancecouncil."
+  },
+  {
+    "objectID": "syllabus/announcements/wind-symphony-belonging.html",
+    "href": "syllabus/announcements/wind-symphony-belonging.html",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "https://music.duke.edu/events/duke-university-wind-symphony-we-people-belonging"
+  },
+  {
+    "objectID": "syllabus/announcements/chronicle.html",
+    "href": "syllabus/announcements/chronicle.html",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+  },
+  {
+    "objectID": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "href": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
     "objectID": "syllabus/announcements/fall-vocal-showcase.html",

@@ -60,6 +60,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../hw/hw-1.html" rel="next">
+<link href="../lab/lab-1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -95,7 +97,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 <meta property="og:title" content="Lab 2 – STA 101 Fall 2026">
 <meta property="og:description" content="Due: end-of-lab Friday September 11">
 <meta property="og:site_name" content="STA 101 Fall 2026">
@@ -107,7 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 2</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-2.html">Lab 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -194,13 +221,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
@@ -211,6 +238,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
       </ul>
@@ -249,11 +282,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
 <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
+  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  <li><a href="#task-4" id="toc-task-4" class="nav-link" data-scroll-target="#task-4">Task 4</a></li>
+  <li><a href="#task-5" id="toc-task-5" class="nav-link" data-scroll-target="#task-5">Task 5</a></li>
+  <li><a href="#task-6" id="toc-task-6" class="nav-link" data-scroll-target="#task-6">Task 6</a></li>
+  <li><a href="#task-7" id="toc-task-7" class="nav-link" data-scroll-target="#task-7">Task 7</a></li>
+  <li><a href="#task-8" id="toc-task-8" class="nav-link" data-scroll-target="#task-8">Task 8</a></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-2.html">Lab 2</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Lab 2</h1>
 <p class="subtitle lead">Due: end-of-lab Friday September 11</p>
 </div>
@@ -273,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">courage</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"data/courage.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The <code>courage</code> dataset has 78 rows and 10 variables. The variables in the dataset are as follows:</p>
+<p>The <code>courage</code> dataset has 78 rows and 10 variables. Each row is a game, and the variables in the dataset are as follows:</p>
 <table class="caption-top table">
 <thead><tr class="header">
 <th>Variable</th>
@@ -328,7 +369,185 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Double-check that you have the <code>sta101-f26-files</code> project loaded in the upper-right corner of RStudio (this should always be true);</li>
 <li>Go to the “Git” tab in the upper-right panel of RStudio and click the <strong>Pull</strong> button (arrow pointing down). Now the new assignment template and dataset should appear in the <code>lab</code> folder of your <strong>Files</strong>;</li>
 <li>At the top of the new <code>.qmd</code>, in between <code>---</code>, you have the <em>settings</em> for the document (the so-called YAML, but don’t worry about that). Modify the <code>authors</code> so it lists yourself and your teammates.</li>
-</ol></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+</ol></section><section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<p>Create a bar plot of the <code>result</code>s of games for NC Courage. Additionally, calculate the numbers of wins, losses, and ties. Write a one sentence narrative for your findings.</p>
+</section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<ol type="a">
+<li>Create a new variable indicating whether the game was played at home or away for NC Courage. This variable should be called <code>home_courage</code> and take the value “home” if NC Courage is the home team and “away” if NC Courage is the away team. <strong>Note</strong>: make sure you use <em>variable assignment</em> to <strong>store</strong> this new variable so you can use it later.</li>
+<li>Calculate the number of home and away games, and write a one sentence narrative for your findings.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+New command: <code>if_else</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Say you have this silly data frame:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+       x      y
+   &lt;dbl&gt;  &lt;dbl&gt;
+1 -0.626  0.487
+2  0.184  0.738
+3 -0.836  0.576
+4  1.60  -0.305
+5  0.330  1.51 
+6 -0.820  0.390</code></pre>
+</div>
+</div>
+<p>You want to add a new column with the value “apple” if <code>x</code> is positive, and “banana” if <code>x</code> is negative (or zero). The fact that you want to <em>add</em> a column means this is a job for <code>mutate</code>. But how do you achieve this thing where “in this case do one thing, in that case do another”? Use this command</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="va">df</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">mutate</span><span class="op">(</span></span>
+<span>    z <span class="op">=</span> <span class="fu">if_else</span><span class="op">(</span><span class="va">x</span> <span class="op">&gt;</span> <span class="fl">0</span>, <span class="st">"apple"</span>, <span class="st">"banana"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
+<span><span class="va">df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+       x      y z     
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
+1 -0.626  0.487 banana
+2  0.184  0.738 apple 
+3 -0.836  0.576 banana
+4  1.60  -0.305 apple 
+5  0.330  1.51  apple 
+6 -0.820  0.390 banana</code></pre>
+</div>
+</div>
+<p>So <code>if_else</code> takes three arguments. The first is a <em>logical condition</em>. It will either be <code>TRUE</code> or <code>FALSE</code>. The second argument is what we should do if the condition is true. The third argument is what we should do if the condition is false.</p>
+</div>
+</div>
+</div>
+</section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<ol type="a">
+<li>Visualize the relationship between <code>home_courage</code> and <code>result</code>.</li>
+<li>Calculate the proportions of home and away games that the Courage won. Based on these, do your findings suggest a home-field advantage? Why or why not?</li>
+</ol></section><section id="task-4" class="level2"><h2 class="anchored" data-anchor-id="task-4">Task 4</h2>
+<p>So far we have focused on whether the game was at home or away and whether the Courage won. Next, we dive deeper and focus on the number of points the Courage wins by, at home and away.</p>
+<p>How many points do the Courage typically win by (on average)? Use the example code below to get started. You’ll encounter a new function: <code><a href="https://rdrr.io/r/base/MathFun.html">abs()</a></code> is the absolute value function. It takes the absolute value of a number. Why do we want to use this absolute value function here?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+New command: <code>filter</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>We are only interested in games the Courage wins, therefore we should <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code> for those games first. This is a command that narrows down a data frame by keeping some rows and discarding others. Recall the silly data frame:</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+       x      y z     
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
+1 -0.626  0.487 banana
+2  0.184  0.738 apple 
+3 -0.836  0.576 banana
+4  1.60  -0.305 apple 
+5  0.330  1.51  apple 
+6 -0.820  0.390 banana</code></pre>
+</div>
+</div>
+<p>If we wanted to narrow things down and just consider the banana rows (and honestly, who wouldn’t?), we can say</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">z</span> <span class="op">==</span> <span class="st">"banana"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+       x     y z     
+   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; 
+1 -0.626 0.487 banana
+2 -0.836 0.576 banana
+3 -0.820 0.390 banana</code></pre>
+</div>
+</div>
+<p>So inside <code>filter</code> is a <em>logical condition</em> that determines which rows will be <em>kept</em>. If the condition is true, we keep the row. If it’s false, we throw it out.</p>
+</div>
+</div>
+</div>
+</section><section id="task-5" class="level2"><h2 class="anchored" data-anchor-id="task-5">Task 5</h2>
+<p>How many points do NC Courage score when they win (on average)? Note this is <strong>different than how many points</strong> they “win by”. How many points do the Courage score when they lose on average? To calculate this we first need to determine how many points NC Courage scored in every game. We can use <code>if_else()</code> logic again to find this value for each game, and store it in a new column, <code>courage_pts</code>. Make sure you save your work!</p>
+</section><section id="task-6" class="level2"><h2 class="anchored" data-anchor-id="task-6">Task 6</h2>
+<p>Next we’ll investigate visually whether or not NC Courage has a home-field advantage. Mutate the <code>courage</code> data frame to create two new variables:</p>
+<ul>
+<li><p><code>total_pts</code>: Sum of points scored by both teams, i.e.&nbsp;<code>home_pts + away_pts</code>.</p></li>
+<li><p><code>opponent_pts</code>: Points scored by the opposing team, i.e., <code>total_pts - courage_pts</code>.</p></li>
+</ul>
+<p>Save the resulting data frame as <code>courage</code> again and print the three points columns (<code>total_pts</code>, <code>opponent_pts</code>, <code>courage_pts</code>) to screen.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+New command: <code>select</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Before when we wanted to discard some <em>rows</em> and keep others, we used <code>filter</code>. If instead you want to discard some <em>columns</em> and discard others, you use <code>select</code>. Recall the silly data frame:</p>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+       x      y z     
+   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
+1 -0.626  0.487 banana
+2  0.184  0.738 apple 
+3 -0.836  0.576 banana
+4  1.60  -0.305 apple 
+5  0.330  1.51  apple 
+6 -0.820  0.390 banana</code></pre>
+</div>
+</div>
+<p>If I want to focus just on the first and third columns, then:</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">x</span>, <span class="va">z</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+       x z     
+   &lt;dbl&gt; &lt;chr&gt; 
+1 -0.626 banana
+2  0.184 apple 
+3 -0.836 banana
+4  1.60  apple 
+5  0.330 apple 
+6 -0.820 banana</code></pre>
+</div>
+</div>
+<p>So inside <code>select</code>, I list out all of the columns that I wish to <em>keep</em>. The rest are discarded.</p>
+</div>
+</div>
+</div>
+</section><section id="task-7" class="level2"><h2 class="anchored" data-anchor-id="task-7">Task 7</h2>
+<p>Create a scatter plot:</p>
+<ul>
+<li>
+<code>opponent_pts</code> (y) vs.&nbsp;<code>courage_pts</code> (x);</li>
+<li>Color the scatter plot by whether NC Courage are home or away;</li>
+<li>Represent the data with “jittered” points using the new layer <code>geom_jitter()</code>;</li>
+<li>Overlay a <span class="math inline">\(y = x\)</span> line using the new layer <code>geom_abline()</code>;</li>
+<li>Faceted by season using the new layer <code>facet_wrap()</code>.</li>
+</ul>
+<p>What does the <span class="math inline">\(y=x\)</span> line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?</p>
+</section><section id="task-8" class="level2"><h2 class="anchored" data-anchor-id="task-8">Task 8</h2>
+<p>If we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you’ve defined what it means to have a home field advantage, define what it means to <strong>not</strong> have a home-field advantage.</p>
+</section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
 <p>You collaborated with your team, but now everyone submits individually:</p>
 <ol type="1">
 <li>Hit the blue <strong>Render</strong> button to generate your final PDF;</li>
@@ -744,7 +963,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script>
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../lab/lab-1.html" class="pagination-link" aria-label="Lab 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 1</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../hw/hw-1.html" class="pagination-link" aria-label="Homework 1">
+        <span class="nav-page-text">Homework 1</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
