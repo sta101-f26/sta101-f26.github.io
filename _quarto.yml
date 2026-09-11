@@ -64,6 +64,8 @@ website:
         contents:
           - href: hw/hw-1.qmd
             text: Homework 1
+          - href: hw/hw-2.qmd
+            text: Homework 2
       - section: "Project"
       - section: "Exam Study Guides"
             
