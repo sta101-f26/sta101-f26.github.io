@@ -60,6 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../hw/hw-1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -95,10 +96,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 <meta property="og:title" content="Homework 2 – STA 101 Fall 2026">
 <meta property="og:description" content="Due: Friday September 18 at 10 AM">
+<meta property="og:image" content="https://sta101-f26.github.io/hw/hw-2_files/figure-html/deadlift-age-sex-plot-1.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="960">
+<meta property="og:image:width" content="1344">
 </head>
 <body class="nav-sidebar docked quarto-light">
 
@@ -107,7 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Homework 2</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="../hw/hw-2.html">Homework 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -223,17 +252,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Homeworks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Homework 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Homework 2</span></a>
   </div>
 </li>
       </ul>
@@ -264,14 +299,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <a href="#part-1-do-you-even-lift" id="toc-part-1-do-you-even-lift" class="nav-link" data-scroll-target="#part-1-do-you-even-lift">Part 1: do you even lift?</a>
   <ul class="collapse">
 <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
+  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7">Exercise 7</a></li>
+  <li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8">Exercise 8</a></li>
   </ul>
 </li>
-  <li><a href="#part-2-ims-exercises" id="toc-part-2-ims-exercises" class="nav-link" data-scroll-target="#part-2-ims-exercises">Part 2: IMS exercises</a></li>
+  <li>
+<a href="#part-2-ims-exercises" id="toc-part-2-ims-exercises" class="nav-link" data-scroll-target="#part-2-ims-exercises">Part 2: IMS exercises</a>
+  <ul class="collapse">
+<li><a href="#exercise-9" id="toc-exercise-9" class="nav-link" data-scroll-target="#exercise-9">Exercise 9</a></li>
+  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10">Exercise 10</a></li>
+  </ul>
+</li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="../hw/hw-2.html">Homework 2</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Homework 2</h1>
 <p class="subtitle lead">Due: Friday September 18 at 10 AM</p>
 </div>
@@ -287,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><p>On this first homework, you’ll start thinking about statistical modeling with linear regression, so we need a new package for that:</p>
+</header><p>On this second homework, you’ll start thinking about statistical modeling with linear regression, so we need a new package for that:</p>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -427,9 +475,79 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p>For all of the following exercises, you should include units on axes labels, e.g.&nbsp;“Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.</p>
 <section id="exercise-1" class="level3"><h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
+<p>Let’s begin by taking a look at the <strong>squat lifting</strong> records.</p>
+<p>To begin, remove any observations that are negative for squat. Next, create a new column called <code>best3_squat_lbs</code> that converts the record from kg to lbs (you may have to Google the conversion). Save your data frame as <code>ipf_squat</code>. Report the number of rows and columns of this new data frame.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>First, you’re taking a dataset and <code>filter</code>ing it for certain records, and then you’re <code>mutate</code>-ing that dataset to gain a new column, and you’re assigning the resulting dataset to a new object called <code>ipf_squat</code>.</p>
+</div>
+</div>
+</section><section id="exercise-2" class="level3"><h3 class="anchored" data-anchor-id="exercise-2">Exercise 2</h3>
+<p>Using <code>ipf_squat</code> from the previous exercise, create a scatter plot to investigate the relationship between squat (in lbs) and age. Age should be on the x-axis. Adjust the <code>alpha</code> level of your points to get a better sense of the density of the data. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.</p>
+</section><section id="exercise-3" class="level3"><h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
+<p>Write down the linear model to predict lift squat lbs from age in <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(\beta\)</span> notation. What is <span class="math inline">\(x\)</span>? What is <span class="math inline">\(y\)</span>? Next, fit the linear model, and save it as <code>age_fit</code>. Re-write your previous equation replacing <span class="math inline">\(\beta\)</span> with the numeric estimates. This is called the “fitted” linear model. Interpret each estimate of <span class="math inline">\(\beta\)</span>. Are the interpretations sensible?</p>
+</section><section id="exercise-4" class="level3"><h3 class="anchored" data-anchor-id="exercise-4">Exercise 4</h3>
+<p>Building on your <code>ipf_squat</code> data frame, create a new column called <code>age2</code> that takes the age of each lifter and squares it. Save it to your data frame <code>ipf_squat</code>. Next, plot squat in lbs vs <code>age2</code> and add a linear best fit line. Does this model look like it fits the data better?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To raise a value to a power, use <code>^</code> in R, e.g.: <code>2 ^ 2</code> gives you 4, <code>2 ^ 3</code> gives you 8, etc.</p>
+</div>
+</div>
+</section><section id="exercise-5" class="level3"><h3 class="anchored" data-anchor-id="exercise-5">Exercise 5</h3>
+<p>One metric to assess the fit of a model is <span class="math inline">\(R^2\)</span>. Fit the age<span class="math inline">\(^2\)</span> model and save the object as <code>age2_fit</code>. Compare <span class="math inline">\(R^2\)</span> of the age<span class="math inline">\(^2\)</span> model to the <span class="math inline">\(R^2\)</span> of the model from Exercise 3. Which has a higher <span class="math inline">\(R^2\)</span>?</p>
+</section><section id="exercise-6" class="level3"><h3 class="anchored" data-anchor-id="exercise-6">Exercise 6</h3>
+<p>Next, let’s turn our attention to <strong>dead lifting</strong> records. To do this, you should start back from the <em>original</em> <code>ipf</code> data frame that you first read in. Ignore the new data frame you created for squat.</p>
+<p>Recreate the plot below. Make sure axes and title labels are exactly matching, including spelling, capitalization, etc. Based on the plot below, which impacts deadlift weight more, age category or sex?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="hw-2_files/figure-html/deadlift-age-sex-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will need to create a couple of new columns. One to classify age appropriately and one to convert <code>best3deadlift_kg</code> to the plotted units (lbs). Notice that there are no negative deadlift values on the x-axis.</p>
+</div>
+</div>
+</section><section id="exercise-7" class="level3"><h3 class="anchored" data-anchor-id="exercise-7">Exercise 7</h3>
+<p>Finally, let’s turn our attention to <strong>bench press</strong> records. To do this, you should start back from the <em>original</em> <code>ipf</code> data frame that you first read in. Ignore the new data frames you created for squat and deadlift.</p>
+<p>To begin, remove any observations that are negative for bench press, create two new columns: <code>best3bench_lbs</code> and <code>bodyweight_lbs</code>. Save the result in a new data frame called <code>ipf_bench</code>.</p>
+<p>Then, create a scatter plot to investigate the relationship between best bench press (in lbs) and the lifter’s bodyweight (in lbs). Bodyweight should be on the x-axis. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.</p>
+</section><section id="exercise-8" class="level3"><h3 class="anchored" data-anchor-id="exercise-8">Exercise 8</h3>
+<p>Fit the linear model displayed in the previous exercise and write down the <strong>fitted model equation</strong> only, replacing <span class="math inline">\(\hat{\beta}\)</span>s with their fitted estimates. Interpret the <span class="math inline">\(\hat{\beta}\)</span>s (intercept and slope). Report <span class="math inline">\(R^2\)</span>. Is body weight an important predictor of bench press ability? Why or why not?</p>
 </section></section><section id="part-2-ims-exercises" class="level2"><h2 class="anchored" data-anchor-id="part-2-ims-exercises">Part 2: IMS exercises</h2>
 <p>These exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.</p>
-</section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<section id="exercise-9" class="level3"><h3 class="anchored" data-anchor-id="exercise-9">Exercise 9</h3>
+<p>IMS - <a href="https://openintrostat.github.io/ims/model-slr.html#sec-chp7-exercises">Chapter 7 exercises</a>, #18: Over-under, II.</p>
+</section><section id="exercise-10" class="level3"><h3 class="anchored" data-anchor-id="exercise-10">Exercise 10</h3>
+<p>IMS - <a href="https://openintrostat.github.io/ims/model-slr.html#sec-chp7-exercises">Chapter 7 exercises</a>, #24: Cats weights.</p>
+</section></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
 <ol type="1">
 <li>Hit the blue <strong>Render</strong> button to generate your final PDF;</li>
 <li>Give your work a final look over to double-check a few things:
@@ -844,7 +962,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script>
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../hw/hw-1.html" class="pagination-link" aria-label="Homework 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Homework 1</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
