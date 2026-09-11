@@ -50,38 +50,6 @@ library(gt)
 
 {{< video https://www.youtube.com/embed/xvqQ4F7Yf2o start="150" width="900" height="600" >}}
 
-## Semi or garage? {.smaller}
-
-> i love how Tesla thinks the wall in my garage is a semi.
-> 😅
-
-![](images/04/tesla-get-wrong-1.png){fig-align="center" width="300"}
-
-::: aside
-Source: [Reddit](https://www.reddit.com/r/TeslaModelY/comments/vjcpte/i_love_how_tesla_thinks_the_wall_in_my_garage_is/)
-:::
-
-## Semi or garage? {.smaller}
-
-> New owner here.
-> Just parked in my garage.
-> Tesla thinks I crashed onto a semi.
-
-![](images/04/tesla-get-wrong-2.png){fig-align="center" width="300"}
-
-::: aside
-Source: [Reddit](https://www.reddit.com/r/TeslaModelY/comments/112520t/new_owner_here_just_parked_in_my_garage_tesla/)
-:::
-
-## Car or trash?
-
-> Tesla calls Mercedes trash
-
-![](images/04/tesla-get-wrong-3.png){fig-align="center" width="500"}
-
-::: aside
-Source: [Reddit](https://www.reddit.com/r/FUCKYOUINPARTICULAR/comments/hi5srx/tesla_calls_mercedes_trash/)
-:::
 
 # Description
 
