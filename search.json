@@ -3659,33 +3659,33 @@
     ]
   },
   {
-    "objectID": "lab/lab-2.html#task-6",
-    "href": "lab/lab-2.html#task-6",
+    "objectID": "lab/lab-2.html#task-6-optional",
+    "href": "lab/lab-2.html#task-6-optional",
     "title": "Lab 2",
-    "section": "Task 6",
-    "text": "Task 6\nNext we’ll investigate visually whether or not NC Courage has a home-field advantage. Mutate the courage data frame to create two new variables:\n\ntotal_pts: Sum of points scored by both teams, i.e. home_pts + away_pts.\nopponent_pts: Points scored by the opposing team, i.e., total_pts - courage_pts.\n\nSave the resulting data frame as courage again and print the three points columns (total_pts, opponent_pts, courage_pts) to screen.\n\n\n\n\n\n\nNew command: select\n\n\n\n\n\nBefore when we wanted to discard some rows and keep others, we used filter. If instead you want to discard some columns and discard others, you use select. Recall the silly data frame:\n\ndf\n\n# A tibble: 6 × 3\n       x      y z     \n   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; \n1 -0.626  0.487 banana\n2  0.184  0.738 apple \n3 -0.836  0.576 banana\n4  1.60  -0.305 apple \n5  0.330  1.51  apple \n6 -0.820  0.390 banana\n\n\nIf I want to focus just on the first and third columns, then:\n\ndf |&gt;\n  select(x, z)\n\n# A tibble: 6 × 2\n       x z     \n   &lt;dbl&gt; &lt;chr&gt; \n1 -0.626 banana\n2  0.184 apple \n3 -0.836 banana\n4  1.60  apple \n5  0.330 apple \n6 -0.820 banana\n\n\nSo inside select, I list out all of the columns that I wish to keep. The rest are discarded.",
+    "section": "Task 6 (optional)",
+    "text": "Task 6 (optional)\nNext we’ll investigate visually whether or not NC Courage has a home-field advantage. Mutate the courage data frame to create two new variables:\n\ntotal_pts: Sum of points scored by both teams, i.e. home_pts + away_pts.\nopponent_pts: Points scored by the opposing team, i.e., total_pts - courage_pts.\n\nSave the resulting data frame as courage again and print the three points columns (total_pts, opponent_pts, courage_pts) to screen.\n\n\n\n\n\n\nNew command: select\n\n\n\n\n\nBefore when we wanted to discard some rows and keep others, we used filter. If instead you want to discard some columns and discard others, you use select. Recall the silly data frame:\n\ndf\n\n# A tibble: 6 × 3\n       x      y z     \n   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; \n1 -0.626  0.487 banana\n2  0.184  0.738 apple \n3 -0.836  0.576 banana\n4  1.60  -0.305 apple \n5  0.330  1.51  apple \n6 -0.820  0.390 banana\n\n\nIf I want to focus just on the first and third columns, then:\n\ndf |&gt;\n  select(x, z)\n\n# A tibble: 6 × 2\n       x z     \n   &lt;dbl&gt; &lt;chr&gt; \n1 -0.626 banana\n2  0.184 apple \n3 -0.836 banana\n4  1.60  apple \n5  0.330 apple \n6 -0.820 banana\n\n\nSo inside select, I list out all of the columns that I wish to keep. The rest are discarded.",
     "crumbs": [
       "Labs",
       "Lab 2"
     ]
   },
   {
-    "objectID": "lab/lab-2.html#task-7",
-    "href": "lab/lab-2.html#task-7",
+    "objectID": "lab/lab-2.html#task-7-optional",
+    "href": "lab/lab-2.html#task-7-optional",
     "title": "Lab 2",
-    "section": "Task 7",
-    "text": "Task 7\nCreate a scatter plot:\n\n\nopponent_pts (y) vs. courage_pts (x);\nColor the scatter plot by whether NC Courage are home or away;\nRepresent the data with “jittered” points using the new layer geom_jitter();\nOverlay a \\(y = x\\) line using the new layer geom_abline();\nFaceted by season using the new layer facet_wrap().\n\nWhat does the \\(y=x\\) line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?",
+    "section": "Task 7 (optional)",
+    "text": "Task 7 (optional)\nCreate a scatter plot:\n\n\nopponent_pts (y) vs. courage_pts (x);\nColor the scatter plot by whether NC Courage are home or away;\nRepresent the data with “jittered” points using the new layer geom_jitter();\nOverlay a \\(y = x\\) line using the new layer geom_abline();\nFaceted by season using the new layer facet_wrap().\n\nWhat does the \\(y=x\\) line represent? What does it mean for a point to fall above the line? What does it mean for a point to fall below the line?",
     "crumbs": [
       "Labs",
       "Lab 2"
     ]
   },
   {
-    "objectID": "lab/lab-2.html#task-8",
-    "href": "lab/lab-2.html#task-8",
+    "objectID": "lab/lab-2.html#task-8-optional",
+    "href": "lab/lab-2.html#task-8-optional",
     "title": "Lab 2",
-    "section": "Task 8",
-    "text": "Task 8\nIf we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you’ve defined what it means to have a home field advantage, define what it means to not have a home-field advantage.",
+    "section": "Task 8 (optional)",
+    "text": "Task 8 (optional)\nIf we want to formally test whether the Courage have a home-field advantage, then we must first define what this means! In your own words, what do you think a home-field advantage means? Then, now that you’ve defined what it means to have a home field advantage, define what it means to not have a home-field advantage.",
     "crumbs": [
       "Labs",
       "Lab 2"
@@ -3756,6 +3756,41 @@
       "Homeworks",
       "Homework 1"
     ]
+  },
+  {
+    "objectID": "hw/hw-2.html",
+    "href": "hw/hw-2.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "On this first homework, you’ll start thinking about statistical modeling with linear regression, so we need a new package for that:\nlibrary(tidyverse)\nlibrary(tidymodels)"
+  },
+  {
+    "objectID": "hw/hw-2.html#setup",
+    "href": "hw/hw-2.html#setup",
+    "title": "Homework 2",
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this."
+  },
+  {
+    "objectID": "hw/hw-2.html#part-1-do-you-even-lift",
+    "href": "hw/hw-2.html#part-1-do-you-even-lift",
+    "title": "Homework 2",
+    "section": "Part 1: do you even lift?",
+    "text": "Part 1: do you even lift?\nWe will be working with data from www.openpowerlifting.org. This data was sourced from Tidy Tuesday and contains international powerlifting records at various meets. At each meet, each lifter gets three attempts at lifting max weight on three lifts: the bench press, squat and deadlift.\n\nipf &lt;- read_csv(\"data/ipf.csv\")\n\nThe data dictionary for this dataset from TidyTuesday is reproduced below:\n\n\n\n\n\n\nvariable\ndescription\n\n\n\nname\nIndividual lifter name\n\n\nsex\nBinary gender (M/F)\n\n\nevent\n\nThe type of competition that the lifter entered. Values are as follows:\n\nSBD: Squat-Bench-Deadlift, also commonly called “Full Power”\nBD: Bench-Deadlift, also commonly called “Ironman” or “Push-Pull”\nSD: Squat-Deadlift, very uncommon\nSB: Squat-Bench, very uncommon\nS: Squat-only\nB: Bench-only\nD: Deadlift-only\n\n\n\n\nequipment\n\nThe equipment category under which the lifts were performed. Values are as follows:\n\nRaw: Bare knees or knee sleeves\nWraps: Knee wraps were allowed\nSingle-ply: Equipped, single-ply suits\nMulti-ply: Equipped, multi-ply suits (includes Double-ply)\nStraps: Allowed straps on the deadlift (used mostly for exhibitions, not real meets)\n\n\n\n\nage\nThe age of the lifter on the start date of the meet, if known.\n\n\nage_class\nThe age class in which the filter falls, for example 40-45\n\n\n\ndivision\nFree-form UTF-8 text describing the division of competition, like Open or Juniors 20-23 or Professional.\n\n\nbodyweight_kg\nThe recorded bodyweight of the lifter at the time of competition, to two decimal places.\n\n\nweight_class_kg\n\nThe weight class in which the lifter competed, to two decimal places.\nWeight classes can be specified as a maximum or as a minimum. Maximums are specified by just the number, for example 90 means “up to (and including) 90kg.” minimums are specified by a + to the right of the number, for example 90+ means “above (and excluding) 90kg.”\n\n\n\nbest3squat_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3bench_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3deadlift_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nplace\n\nThe recorded place of the lifter in the given division at the end of the meet. Values are as follows:\n\nPositive number: the place the lifter came in.\nG: Guest lifter. The lifter succeeded, but wasn’t eligible for awards.\nDQ: Disqualified. Note that DQ could be for procedural reasons, not just failed attempts.\nDD: Doping Disqualification. The lifter failed a drug test.\nNS: No-Show. The lifter did not show up on the meet day.\n\n\n\n\ndate\nISO 8601 Date of the event\n\n\nfederation\nThe federation that hosted the meet. (limited to IPF for this data subset)\n\n\nmeet_name\nThe name of the meet. The name is defined to never include the year or the federation. For example, the meet officially called 2019 USAPL Raw National Championships would have the MeetName Raw National Championshps.\n\n\n\nFor all of the following exercises, you should include units on axes labels, e.g. “Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.\nExercise 1"
+  },
+  {
+    "objectID": "hw/hw-2.html#part-2-ims-exercises",
+    "href": "hw/hw-2.html#part-2-ims-exercises",
+    "title": "Homework 2",
+    "section": "Part 2: IMS exercises",
+    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences."
+  },
+  {
+    "objectID": "hw/hw-2.html#submission",
+    "href": "hw/hw-2.html#submission",
+    "title": "Homework 2",
+    "section": "Submission",
+    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
   },
   {
     "objectID": "ae/ae-03-icecover.html",
