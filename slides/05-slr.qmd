@@ -49,6 +49,11 @@ Source: [tylervigen.com/spurious-correlations](https://www.tylervigen.com/spurio
 Source: [tylervigen.com/spurious-correlations](https://www.tylervigen.com/spurious-correlations)
 :::
 
+## Watch out!
+
+- On its own, a linear regression model can only summarize association (eg. correlation) among variables. Whether or not it has anything to say about *causation* is a delicate matter, one that we will confront head-on after fall break;
+- For now, think like we're still just doing *exploratory* analysis: visualizing and summarizing.
+
 # Simple Linear Regression
 
 ## Data prep
@@ -96,34 +101,13 @@ Critics can often screen the film in advance, and their reviews are published on
 By contrast, the audience score trickles in over the subsequent weeks.
 So it's more likely that we would already have the critics score and use it to anticipate the audience score, instead of the other way around.
 
-## Data visualization: linear model {.scrollable .small}
+Similar story to our other examples:
 
-```{r}
-#| echo: false
-#| message: false
-#| fig-height: 4.5
-ggplot(movie_scores, aes(x = critics, y = audience)) +
-  geom_smooth(method = "lm", color = "cornflowerblue", se = FALSE) +
-  geom_point(alpha = 0.5) + 
-  labs(
-    x = "Critics Score" , 
-    y = "Audience Score"
-  )
-```
+- budget versus revenue of films;
+- weight versus MPG of cars;
+- temperature versus ice duration of lakes.
 
-::::: columns
-::: {.column width="70%"}
-```{r}
-#| echo: false
-#| message: false
-
-tidy(lm(audience ~ critics, data = movie_scores))
-```
-:::
-
-::: {.column width="40%"}
-:::
-:::::
+Which variable is *available* first, or easier to measure? In which direction would we typically be *predicting*?
 
 ## Data visualization: linear model {.scrollable .small}
 
@@ -151,7 +135,7 @@ tidy(lm(audience ~ critics, data = movie_scores))
 ```
 :::
 
-::: {.column width="30%"}
+::: {.column .fragment width="30%"}
 ```{r}
 #| message: false
 #| echo: false
@@ -247,7 +231,7 @@ augment(audience_critic_fit,
 
 ## Regression model {.scrollable .medium}
 
-A **regression model** is a function that describes the relationship between the outcome, $Y$, and the predictor, $X$.
+A **regression model** is a function that describes the relationship between the outcome $Y$ and the predictor $X$.
 
 $$
 \begin{aligned} Y &= \color{black}{\textbf{Model}} + \text{Error} \\[8pt]
@@ -255,7 +239,7 @@ $$
 &= \color{black}{\boldsymbol{\mu_{Y|X}}} + \epsilon \end{aligned}
 $$
 
-$\mu_{Y \mid X}$ is the *expected value* of $Y$, *given* (or, *conditional on*) a particular value of $X$
+$\mu_{Y \mid X}$ is the *expected value* of $Y$ *given* ("*conditional on*") a particular value of $X$.
 
 ## Regression model
 
@@ -324,8 +308,8 @@ You're already familiar with $y=mx+b$, so why did I switch it up on you?
 Why the subscripts?
 Why the Greek letters?
 
--   Today, we're studying *simple* linear regression where there is only one predictor. Tomorrow, we will study *multiple* linear regression, where there are \>1 predictors, and each one gets its own coefficient. When you go from 1 predictor to 5 or 10 or 1,000, you run out of letters. So it's easier to add subscripts to the same letter, arbitrarily chosen to be $x$;
--   The Greek letters denote true, idealized, population values. These are unknown. If we had perfect data, we would know them, but we don't.
+-   Today, we're studying *simple* linear regression where there is only one predictor. Soon, we will study *multiple* linear regression, where there are \>1 predictors, and each one gets its own coefficient. When you go from 1 predictor to 5 or 10 or 1,000, you run out of letters. So it's easier to add subscripts to the same letter;
+-   The Greek letters denote true, idealized, population values. These are unknown. If we had perfect data, we would know them, but we don't;
 -   The lowercase roman letters denote estimated values based on a finite, imperfect sample. These are our best guess at the true values based on the data we have.
 
 ## Choosing values for $b_1$ and $b_0$
@@ -793,20 +777,20 @@ For example...
 -   It *does* make sense to predict audience score if the critics gave the movie a 0%.
 :::
 
-## Properties of least squares regression {.scrollable}
+## Properties of least squares regression (FYI) {.scrollable}
 
 ::: incremental
--   The regression line goes through the center of mass point (the coordinates corresponding to average $X$ and average $Y$ i.e., ($\bar{x}, \bar{y}$))
+-   The regression line always goes through the center of mass point ($\bar{x}, \bar{y}$) (ie. the coordinates corresponding to average $X$ and average $Y$):
 
-    -   Why? Under LSR (least-squares regression), $b_0 = \bar{y} - b_1~\bar{x}$; plugging in $x =\bar{x}$ to the fitted eq., $\widehat{y} = b_0 + b_1~\bar{x} = (\bar{y} - b_1~\bar{x}) + b_1~\bar{x} = \bar{y}$
+    -   Why? Under LSR (least-squares regression), $b_0 = \bar{y} - b_1~\bar{x}$; plugging in $x =\bar{x}$ to the fitted eq, $\widehat{y} = b_0 + b_1~\bar{x} = (\bar{y} - b_1~\bar{x}) + b_1~\bar{x} = \bar{y}$;
 
-    -   $\Rightarrow \widehat{y} = \bar{y} \text{ when } x = \bar{x}$
+    -   $\Rightarrow \widehat{y} = \bar{y} \text{ when } x = \bar{x}$;
 
--   Slope has the same sign as the correlation coefficient: $b_1 = r \frac{s_Y}{s_X}$
+-   Slope has the same sign as the correlation coefficient: $b_1 = r \frac{s_Y}{s_X}$;
 
--   Sum of the residuals is zero: $\sum_{i = 1}^n \epsilon_i = 0$
+-   Sum of the residuals is zero: $\sum_{i = 1}^n \epsilon_i = 0$;
 
--   Residuals and $X$ values are uncorrelated
+-   Residuals and $X$ values are uncorrelated.
 :::
 
 ## Goodness-of-fit {.scrollable}
