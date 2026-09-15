@@ -22,6 +22,7 @@ format:
 library(tidyverse)
 library(tidymodels)
 library(fivethirtyeight)
+library(quantreg)
 movie_scores <- fandango |>
   rename(
     critics = rottentomatoes, 
@@ -585,6 +586,90 @@ ggplot(error_df, aes(x = e, y = value, color = loss)) +
 ```
 
 Squared error gives increasingly more weight to data points that are far away from the others; absolute error is more chill.
+
+## Toy dataset
+
+```{r}
+#| echo: false
+
+set.seed(12343)
+
+n <- 15
+
+df <- tibble(
+  x = rnorm(n),
+  y = 0.5 * x + rnorm(n)
+)
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+```
+
+## Best fit line is basically the same either way
+
+```{r}
+#| echo: false
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+abline(lm(y ~ x, data = df), col = "red", lwd = 2)
+#abline(rq(y ~ x, data = df), col = "blue", lwd = 2)
+legend("bottomright", legend = c("best fit (squared error)", "best fit (absolute error)"), col = c("red", "blue"), lty = 1, lwd = 2, bty = "n")
+
+```
+
+## Best fit line is basically the same either way
+
+```{r}
+#| echo: false
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+abline(lm(y ~ x, data = df), col = "red", lwd = 2)
+abline(rq(y ~ x, data = df), col = "blue", lwd = 2)
+legend("bottomright", legend = c("best fit (squared error)", "best fit (absolute error)"), col = c("red", "blue"), lty = 1, lwd = 2, bty = "n")
+
+```
+
+## Add an "outlier"
+
+```{r}
+#| echo: false
+
+df <- df |>
+  add_row(x = -2, y = 5)
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+
+```
+
+
+## Blue doesn't care {.scrollable}
+
+```{r}
+#| echo: false
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+#abline(lm(y ~ x, data = df), col = "red", lwd = 2)
+abline(rq(y ~ x, data = df), col = "blue", lwd = 2)
+legend("bottomright", legend = c("best fit (squared error)", "best fit (absolute error)"), col = c("red", "blue"), lty = 1, lwd = 2, bty = "n")
+```
+
+## Red freaks out {.scrollable}
+
+```{r}
+#| echo: false
+
+plot(df, pch = 19, ylim = c(min(df$y), 6), xlim = c(-2, 3))
+abline(lm(y ~ x, data = df), col = "red", lwd = 2)
+abline(rq(y ~ x, data = df), col = "blue", lwd = 2)
+legend("bottomright", legend = c("best fit (squared error)", "best fit (absolute error)"), col = c("red", "blue"), lty = 1, lwd = 2, bty = "n")
+```
+
+## Squared versus absolute error
+
+- Minimizing absolute error instead of squared error is like using the *median* instead of the *mean*. It is "more robust" to outliers;
+- These options are both "first class citizens;"
+- But squared error is more common because it is more mathematically convenient, so that's what we focus on.
+
+
 
 ## Least squares line {.scrollable}
 
