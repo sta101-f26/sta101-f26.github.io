@@ -360,6 +360,8 @@ $$\text{residual} = \text{observed} - \text{predicted} = y - \widehat{y}$$
 
 ## The anatomy of the line
 
+The data:
+
 ```{r}
 #| echo: false
 set.seed(100)
@@ -378,6 +380,8 @@ abline(h = 0)
 
 ## The anatomy of the line
 
+The first row of the data frame: 
+
 ```{r}
 #| echo: false
 xi <- df$x[1]
@@ -394,6 +398,8 @@ abline(h = 0)
 ```
 
 ## The anatomy of the line
+
+The second row of the data frame:
 
 ```{r}
 #| echo: false
@@ -414,6 +420,8 @@ abline(h = 0)
 
 ## The anatomy of the line
 
+The $i$th row:
+
 ```{r}
 #| echo: false
 
@@ -431,6 +439,8 @@ abline(h = 0)
 ```
 
 ## The anatomy of the line
+
+The line of best fit:
 
 ```{r}
 #| echo: false
@@ -451,6 +461,8 @@ legend(x = 1.9, y = 3.9, c(expression(~b[0]~" + "~b[1]~"x")), text.col = "red", 
 ```
 
 ## The anatomy of the line
+
+The intercept:
 
 ```{r}
 #| echo: false
@@ -477,6 +489,8 @@ mtext(expression(b[0]), side = 2, at = b0, cex = 1, las = 1, line = 0.5, col = "
 ```
 
 ## The anatomy of the line
+
+The slope:
 
 ```{r}
 #| echo: false
@@ -506,6 +520,8 @@ text(1.9, b0 + b1*0.8 + 0.5, expression(b[1]), col = "red")
 
 ## The anatomy of the line
 
+The prediction at $x_i$:
+
 ```{r}
 #| echo: false
 
@@ -522,9 +538,12 @@ legend(x = 1.9, y = 3.9, c(expression(~b[0]~" + "~b[1]~"x")), text.col = "red", 
 mtext(expression(hat(y)[i]), side = 2, at = b0 + b1 * xi, cex = 2, line = 1, las = 1, col = "red")
 segments(0, b0 + b1*xi, xi, b0 + b1*xi, col = "red", lty = 2)
 segments(xi, 0, xi, b0 + b1*xi, col = "red", lty = 2)
+points(xi, b0 + b1*xi, col = "red", pch = 19, lwd = 3)
 ```
 
 ## The anatomy of the line
+
+The residual:
 
 ```{r}
 #| echo: false
@@ -545,6 +564,7 @@ segments(0, b0 + b1*xi, xi, b0 + b1*xi, col = "red", lty = 2)
 segments(xi, b0 + b1*xi, xi, yi, lty = 2)
 arrows(0.86 * xi, 1.1 * (b0 + b1*xi), 0.86 * xi, 0.95 * yi, code = 3)
 text(0.4 * xi, (b0 + b1*xi + yi) / 2, expression(e[i]~" = "~y[i]~" - "~hat(y)[i]))
+points(xi, b0 + b1*xi, col = "red", pch = 19, lwd = 3)
 ```
 
 
