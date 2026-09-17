@@ -1,0 +1,61 @@
+---
+title: "Lab 3"
+subtitle: "Due: end-of-lab Friday September 18"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+```
+
+In this lab you'll "make up" data for an outcome variable to match certain criteria, and then visualize and summarize the relationship between your outcome and predictor variables as well as fit a model to evaluate whether the made up data meets the criteria you set out to achieve.
+
+Your starting point will be this data frame, which contains only the predictor variable `x`:
+
+```{r}
+#| eval: true
+our_data <- tibble(x = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+our_data
+```
+
+Your goal is to "make up" the outcome variable `y` and add it to the data frame. You want to do this in such a way that when you fit a linear regression model predicting `y` from `x`, the following are true about the model:
+
+- For each additional unit in `x`, `y` is expected to be lower, on average, by (approximately) 2 units;
+
+- For observations with `x` equal to 0, `y` is expected to be (approximately) 5;
+
+- The model for predicting `y` from `x` explains (approximately) 60% of the variability in `y`.
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Task 1
+
+Make up the values for `y` in the data frame above so that the linear regression model predicting `y` from `x` meets the criteria specified in the introduction.
+Add these values to the data frame `our_data` and display the updated data frame.
+
+::: callout-tip
+Task 1 will require some trial and error, creativity, and patience.
+Specifically, it will require writing and testing the code for Tasks 2 and 3 multiple times until you get the desired results.
+:::
+
+## Task 2
+
+Visualize the relationship between `x` and `y` using a scatter plot with a regression line.
+Comment on how the plot supports the criteria specified in the introduction.
+
+## Task 3
+
+Fit a linear regression model predicting `y` from `x`.
+Display the model coefficients and the R-squared value from the model summary.
+Comment on how the model coefficients and R-squared value support the criteria specified in the introduction.
+
+
+## Submission
+
+{{< include _submission.qmd >}}
+
