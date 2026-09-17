@@ -423,25 +423,37 @@ John Zito
 <li class="fragment"><p><span class="math inline">\(e_i\)</span> : <span class="math inline">\(i^{th}\)</span> residual</p></li>
 </ul>
 </li>
-</ul></section><section id="the-anatomy-of-the-line" class="slide level2"><h2>The anatomy of the line</h2>
+</ul></section><section id="the-anatomy-of-simple-linear-regression" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The data:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-1" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-1" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The first row of the data frame:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-2" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-2" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The second row of the data frame:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-3" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-3" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The <span class="math inline">\(i\)</span>th row:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-4" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-4" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The line of best fit:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-5" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-5" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The slope <span class="math inline">\(b_1=r\frac{s_Y}{s_X}\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-6" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-6" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The intercept <span class="math inline">\(b_0=\bar{y}-b_1\bar{x}\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-7" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-7" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The line always passes through <span class="math inline">\((\bar{x},\,\bar{y})\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-the-line-8" class="slide level2"><h2>The anatomy of the line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-8" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The prediction at <span class="math inline">\(x_i\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section><section id="least-squares-line" class="slide level2 smaller"><h2>Least squares line</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-9" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<p>The residual:</p>
+
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section><section id="least-squares-line" class="slide level2 smaller"><h2>Least squares line</h2>
 <ul>
 <li>The residual for the <span class="math inline">\(i^{th}\)</span> observation is</li>
 </ul>
@@ -592,20 +604,20 @@ e^2
 \]</span></p>
 </section><section id="put-in-a-picture" class="slide level2 scrollable smaller"><h2>Put in a picture…</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Squared error gives increasingly more weight to data points that are far away from the others; absolute error is more chill.</p>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Squared error gives increasingly more weight to data points that are far away from the others; absolute error is more chill.</p>
 </section><section id="toy-dataset" class="slide level2"><h2>Toy dataset</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way" class="slide level2"><h2>Best fit line is basically the same either way</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way" class="slide level2"><h2>Best fit line is basically the same either way</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way-1" class="slide level2"><h2>Best fit line is basically the same either way</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way-1" class="slide level2"><h2>Best fit line is basically the same either way</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section><section id="add-an-outlier" class="slide level2"><h2>Add an “outlier”</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section><section id="add-an-outlier" class="slide level2"><h2>Add an “outlier”</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section><section id="blue-doesnt-care" class="slide level2 scrollable"><h2>Blue doesn’t care</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section><section id="blue-doesnt-care" class="slide level2 scrollable"><h2>Blue doesn’t care</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section><section id="red-freaks-out" class="slide level2 scrollable"><h2>Red freaks out</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section><section id="red-freaks-out" class="slide level2 scrollable"><h2>Red freaks out</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section><section id="squared-versus-absolute-error" class="slide level2"><h2>Squared versus absolute error</h2>
+<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section><section id="squared-versus-absolute-error" class="slide level2"><h2>Squared versus absolute error</h2>
 <ul>
 <li>Minimizing absolute error instead of squared error is like using the <em>median</em> instead of the <em>mean</em>. It is “more robust” to outliers;</li>
 <li>These options are both “first class citizens;”</li>
@@ -639,7 +651,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-30-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-31-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -741,7 +753,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-32-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-33-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -777,7 +789,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-34-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-35-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -813,7 +825,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-36-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-37-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -849,7 +861,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-38-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-39-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -885,7 +897,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-40-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-41-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -921,7 +933,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-42-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-43-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -957,7 +969,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-44-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-45-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -993,7 +1005,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-46-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-47-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1029,7 +1041,7 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-48-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-49-1.png" width="960"></p>
 </figure>
 </div>
 </div>
