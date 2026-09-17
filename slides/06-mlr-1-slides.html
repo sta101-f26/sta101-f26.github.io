@@ -662,6 +662,7 @@ cat_l=\begin{cases}
 <pre><code>[1] "Biscoe"    "Dream"     "Torgersen"</code></pre>
 </div>
 </div>
+<div class="fragment">
 <p>Change it:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>penguins <span class="ot">&lt;-</span> penguins <span class="sc">|&gt;</span></span>
@@ -669,11 +670,14 @@ cat_l=\begin{cases}
 <span id="cb34-3"><a></a>    <span class="at">island =</span> <span class="fu">fct_relevel</span>(island, <span class="st">"Dream"</span>)</span>
 <span id="cb34-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
+<div class="fragment">
 <p>What is the baseline now?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">levels</span>(penguins<span class="sc">$</span>island)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Dream"     "Biscoe"    "Torgersen"</code></pre>
+</div>
 </div>
 </div>
 </section><section id="another-way-to-tell" class="slide level2"><h2>Another way to tell</h2>
@@ -690,6 +694,7 @@ cat_l=\begin{cases}
 3 islandTorgersen    -6.53     104.    -0.0627 9.50e-  1</code></pre>
 </div>
 </div>
+<p>Whichever level <em>is not</em> listed is treated as the baseline.</p>
 </section></section><section><section id="linear-regression-with-one-numerical-and-one-categorical-predictor" class="title-slide slide level1 center"><h1>Linear regression with one numerical and one categorical predictor</h1>
 
 </section><section id="three-variables-on-one-2d-plot" class="slide level2"><h2>Three variables on one 2D plot</h2>

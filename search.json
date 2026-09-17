@@ -399,76 +399,6 @@
     "text": "Notation\n\nWe have \\(n\\) observations (generally, the number of rows in a df)\n\n\\(i^{th}\\) observation (\\(i\\) from \\(1\\) to \\(n\\)):\n\n\\(y_i\\) : \\(i^{th}\\) outcome\n\\(x_i\\) : \\(i^{th}\\) explanatory variable\n\\(\\widehat{y_i}\\) : \\(i^{th}\\) predicted outcome\n\\(e_i\\) : \\(i^{th}\\) residual"
   },
   {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe data:"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-1",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-1",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe first row of the data frame:"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-2",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-2",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe second row of the data frame:"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-3",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-3",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe \\(i\\)th row:"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-4",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-4",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe line of best fit:"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-5",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-5",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe slope \\(b_1=r\\frac{s_Y}{s_X}\\):"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-6",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-6",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe intercept \\(b_0=\\bar{y}-b_1\\bar{x}\\):"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-7",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-7",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe line always passes through \\((\\bar{x},\\,\\bar{y})\\):"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-8",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-8",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe prediction at \\(x_i\\):"
-  },
-  {
-    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-9",
-    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-9",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe residual:"
-  },
-  {
     "objectID": "slides/05-slr-slides.html#least-squares-line",
     "href": "slides/05-slr-slides.html#least-squares-line",
     "title": "Linear models with a single predictor",
@@ -609,11 +539,11 @@
     "text": "Is the intercept meaningful?\n✅ The intercept is meaningful in context of the data if\n\nthe predictor can feasibly take values equal to / near zero, or\nthe predictor has values near zero in the observed data\n\n\n🛑 Otherwise, it might not be meaningful!\n\n\nFor example…\n\nIt doesn’t make sense to predict the mpg of a car that weighs 0 pounds;\nIt does make sense to predict the ice duration of a lake at 0 degree temp;\nIt does make sense to predict audience score if the critics gave the movie a 0%."
   },
   {
-    "objectID": "slides/05-slr-slides.html#properties-of-least-squares-regression-fyi",
-    "href": "slides/05-slr-slides.html#properties-of-least-squares-regression-fyi",
+    "objectID": "slides/05-slr-slides.html#properties-of-least-squares-regression",
+    "href": "slides/05-slr-slides.html#properties-of-least-squares-regression",
     "title": "Linear models with a single predictor",
-    "section": "Properties of least squares regression (FYI)",
-    "text": "Properties of least squares regression (FYI)\n\n\nThe regression line always goes through the center of mass point (\\(\\bar{x}, \\bar{y}\\)) (ie. the coordinates corresponding to average \\(X\\) and average \\(Y\\)):\n\nWhy? Under LSR (least-squares regression), \\(b_0 = \\bar{y} - b_1~\\bar{x}\\); plugging in \\(x =\\bar{x}\\) to the fitted eq, \\(\\widehat{y} = b_0 + b_1~\\bar{x} = (\\bar{y} - b_1~\\bar{x}) + b_1~\\bar{x} = \\bar{y}\\);\n\\(\\Rightarrow \\widehat{y} = \\bar{y} \\text{ when } x = \\bar{x}\\);\n\n\nSlope has the same sign as the correlation coefficient: \\(b_1 = r \\frac{s_Y}{s_X}\\);\nSum of the residuals is zero: \\(\\sum_{i = 1}^n \\epsilon_i = 0\\);\nResiduals and \\(X\\) values are uncorrelated."
+    "section": "Properties of least squares regression",
+    "text": "Properties of least squares regression\n\n\nThe regression line always goes through the center of mass point (\\(\\bar{x}, \\bar{y}\\)) (ie. the coordinates corresponding to average \\(X\\) and average \\(Y\\)):\n\nWhy? Under LSR (least-squares regression), \\(b_0 = \\bar{y} - b_1~\\bar{x}\\); plugging in \\(x =\\bar{x}\\) to the fitted eq, \\(\\widehat{y} = b_0 + b_1~\\bar{x} = (\\bar{y} - b_1~\\bar{x}) + b_1~\\bar{x} = \\bar{y}\\);\n\\(\\Rightarrow \\widehat{y} = \\bar{y} \\text{ when } x = \\bar{x}\\);\n\n\nSlope has the same sign as the correlation coefficient: \\(b_1 = r \\frac{s_Y}{s_X}\\);\nSum of the residuals is zero: \\(\\sum_{i = 1}^n \\epsilon_i = 0\\);\nResiduals and \\(X\\) values are uncorrelated."
   },
   {
     "objectID": "slides/05-slr-slides.html#goodness-of-fit",
@@ -684,6 +614,83 @@
     "title": "Linear models with a single predictor",
     "section": "Correlation and \\(R^2\\)\n",
     "text": "Correlation and \\(R^2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1     1\n\nlinear_reg() |&gt;\n  fit(y ~ x, df) |&gt;\n  glance() |&gt;\n  select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1         1"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#notation-1",
+    "href": "slides/05-slr-slides.html#notation-1",
+    "title": "Linear models with a single predictor",
+    "section": "Notation",
+    "text": "Notation\nImagine a data frame with \\(n\\) rows and 2 numerical columns\n\n\n\n\n\nx\ny\n\n\n\n1\n\\(x_1\\)\n\\(y_1\\)\n\n\n2\n\\(x_2\\)\n\\(y_2\\)\n\n\n3\n\\(x_3\\)\n\\(y_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(i\\)\n\\(x_i\\)\n\\(y_i\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(n-1\\)\n\\(x_{n-1}\\)\n\\(y_{n-1}\\)\n\n\n\\(n\\)\n\\(x_n\\)\n\\(y_n\\)\n\n\n\n\n\nWe have \\(n\\) observations (ie. the sample size)\n\n\\(i^{th}\\) observation (\\(i\\) from \\(1\\) to \\(n\\)):\n\n\\(y_i\\) : \\(i^{th}\\) outcome;\n\\(x_i\\) : \\(i^{th}\\) explanatory variable;\n\\(\\widehat{y_i}=b_0+b_1x_i\\) : \\(i^{th}\\) predicted outcome;\n\\(e_i=y_i-\\hat{y}_i\\) : \\(i^{th}\\) residual."
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe data:"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-1",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-1",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe first row of the data frame:"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-2",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-2",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe second row of the data frame:"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-3",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-3",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe \\(i\\)th row:"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-4",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-4",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe line of best fit:"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-5",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-5",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe slope \\(b_1=r\\cdot s_Y/s_X\\):"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-6",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-6",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe intercept \\(b_0=\\bar{y}-b_1\\bar{x}\\):"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-7",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-7",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe line always passes through \\((\\bar{x},\\,\\bar{y})\\):"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-8",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-8",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe prediction at \\(x_i\\):"
+  },
+  {
+    "objectID": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-9",
+    "href": "slides/05-slr-slides.html#the-anatomy-of-simple-linear-regression-9",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe residual:"
   },
   {
     "objectID": "slides/05-slr.html",
@@ -810,76 +817,6 @@
     "title": "Linear models with a single predictor",
     "section": "Notation",
     "text": "Notation\n\n\nWe have \\(n\\) observations (generally, the number of rows in a df)\n\n\\(i^{th}\\) observation (\\(i\\) from \\(1\\) to \\(n\\)):\n\n\\(y_i\\) : \\(i^{th}\\) outcome\n\\(x_i\\) : \\(i^{th}\\) explanatory variable\n\\(\\widehat{y_i}\\) : \\(i^{th}\\) predicted outcome\n\\(e_i\\) : \\(i^{th}\\) residual"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe data:"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-1",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-1",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe first row of the data frame:"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-2",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-2",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe second row of the data frame:"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-3",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-3",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe \\(i\\)th row:"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-4",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-4",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe line of best fit:"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-5",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-5",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe slope \\(b_1=r\\frac{s_Y}{s_X}\\):"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-6",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-6",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe intercept \\(b_0=\\bar{y}-b_1\\bar{x}\\):"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-7",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-7",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe line always passes through \\((\\bar{x},\\,\\bar{y})\\):"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-8",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-8",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe prediction at \\(x_i\\):"
-  },
-  {
-    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-9",
-    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-9",
-    "title": "Linear models with a single predictor",
-    "section": "The anatomy of simple linear regression",
-    "text": "The anatomy of simple linear regression\nThe residual:"
   },
   {
     "objectID": "slides/05-slr.html#least-squares-line",
@@ -1022,11 +959,11 @@
     "text": "Is the intercept meaningful?\n✅ The intercept is meaningful in context of the data if\n\nthe predictor can feasibly take values equal to / near zero, or\nthe predictor has values near zero in the observed data\n\n. . .\n🛑 Otherwise, it might not be meaningful!\n. . .\nFor example…\n\n\nIt doesn’t make sense to predict the mpg of a car that weighs 0 pounds;\nIt does make sense to predict the ice duration of a lake at 0 degree temp;\nIt does make sense to predict audience score if the critics gave the movie a 0%."
   },
   {
-    "objectID": "slides/05-slr.html#properties-of-least-squares-regression-fyi",
-    "href": "slides/05-slr.html#properties-of-least-squares-regression-fyi",
+    "objectID": "slides/05-slr.html#properties-of-least-squares-regression",
+    "href": "slides/05-slr.html#properties-of-least-squares-regression",
     "title": "Linear models with a single predictor",
-    "section": "Properties of least squares regression (FYI)",
-    "text": "Properties of least squares regression (FYI)\n\n\n\nThe regression line always goes through the center of mass point (\\(\\bar{x}, \\bar{y}\\)) (ie. the coordinates corresponding to average \\(X\\) and average \\(Y\\)):\n\nWhy? Under LSR (least-squares regression), \\(b_0 = \\bar{y} - b_1~\\bar{x}\\); plugging in \\(x =\\bar{x}\\) to the fitted eq, \\(\\widehat{y} = b_0 + b_1~\\bar{x} = (\\bar{y} - b_1~\\bar{x}) + b_1~\\bar{x} = \\bar{y}\\);\n\\(\\Rightarrow \\widehat{y} = \\bar{y} \\text{ when } x = \\bar{x}\\);\n\n\nSlope has the same sign as the correlation coefficient: \\(b_1 = r \\frac{s_Y}{s_X}\\);\nSum of the residuals is zero: \\(\\sum_{i = 1}^n \\epsilon_i = 0\\);\nResiduals and \\(X\\) values are uncorrelated."
+    "section": "Properties of least squares regression",
+    "text": "Properties of least squares regression\n\n\n\nThe regression line always goes through the center of mass point (\\(\\bar{x}, \\bar{y}\\)) (ie. the coordinates corresponding to average \\(X\\) and average \\(Y\\)):\n\nWhy? Under LSR (least-squares regression), \\(b_0 = \\bar{y} - b_1~\\bar{x}\\); plugging in \\(x =\\bar{x}\\) to the fitted eq, \\(\\widehat{y} = b_0 + b_1~\\bar{x} = (\\bar{y} - b_1~\\bar{x}) + b_1~\\bar{x} = \\bar{y}\\);\n\\(\\Rightarrow \\widehat{y} = \\bar{y} \\text{ when } x = \\bar{x}\\);\n\n\nSlope has the same sign as the correlation coefficient: \\(b_1 = r \\frac{s_Y}{s_X}\\);\nSum of the residuals is zero: \\(\\sum_{i = 1}^n \\epsilon_i = 0\\);\nResiduals and \\(X\\) values are uncorrelated."
   },
   {
     "objectID": "slides/05-slr.html#goodness-of-fit",
@@ -1097,6 +1034,83 @@
     "title": "Linear models with a single predictor",
     "section": "Correlation and \\(R^2\\)\n",
     "text": "Correlation and \\(R^2\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\ndf |&gt;\n  summarize(\n    r = cor(x, y)\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1     1\n\nlinear_reg() |&gt;\n  fit(y ~ x, df) |&gt;\n  glance() |&gt;\n  select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1         1"
+  },
+  {
+    "objectID": "slides/05-slr.html#notation-1",
+    "href": "slides/05-slr.html#notation-1",
+    "title": "Linear models with a single predictor",
+    "section": "Notation",
+    "text": "Notation\nImagine a data frame with \\(n\\) rows and 2 numerical columns\n\n\n\n\n\nx\ny\n\n\n\n1\n\\(x_1\\)\n\\(y_1\\)\n\n\n2\n\\(x_2\\)\n\\(y_2\\)\n\n\n3\n\\(x_3\\)\n\\(y_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(i\\)\n\\(x_i\\)\n\\(y_i\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(n-1\\)\n\\(x_{n-1}\\)\n\\(y_{n-1}\\)\n\n\n\\(n\\)\n\\(x_n\\)\n\\(y_n\\)\n\n\n\n\n\nWe have \\(n\\) observations (ie. the sample size)\n\n\\(i^{th}\\) observation (\\(i\\) from \\(1\\) to \\(n\\)):\n\n\\(y_i\\) : \\(i^{th}\\) outcome;\n\\(x_i\\) : \\(i^{th}\\) explanatory variable;\n\\(\\widehat{y_i}=b_0+b_1x_i\\) : \\(i^{th}\\) predicted outcome;\n\\(e_i=y_i-\\hat{y}_i\\) : \\(i^{th}\\) residual."
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe data:"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-1",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-1",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe first row of the data frame:"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-2",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-2",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe second row of the data frame:"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-3",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-3",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe \\(i\\)th row:"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-4",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-4",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe line of best fit:"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-5",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-5",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe slope \\(b_1=r\\cdot s_Y/s_X\\):"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-6",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-6",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe intercept \\(b_0=\\bar{y}-b_1\\bar{x}\\):"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-7",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-7",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe line always passes through \\((\\bar{x},\\,\\bar{y})\\):"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-8",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-8",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe prediction at \\(x_i\\):"
+  },
+  {
+    "objectID": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-9",
+    "href": "slides/05-slr.html#the-anatomy-of-simple-linear-regression-9",
+    "title": "Linear models with a single predictor",
+    "section": "The anatomy of simple linear regression",
+    "text": "The anatomy of simple linear regression\nThe residual:"
   },
   {
     "objectID": "slides/03-exploratory-2-slides.html#so-far",
@@ -1925,351 +1939,344 @@
     "text": "Where to now?\n\n\n\n\n\n\n\n\nWhere did the line come from? How was it drawn? How do you interpret it? How do you use it? What about more than two variables? What about categorical variables?"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#from-last-timepenguins",
-    "href": "slides/06-mlr-2-slides.html#from-last-timepenguins",
+    "objectID": "slides/06-mlr-1-slides.html#from-last-timepenguins",
+    "href": "slides/06-mlr-1-slides.html#from-last-timepenguins",
     "title": "Multiple Linear Regression 1",
     "section": "From last time…penguins",
     "text": "From last time…penguins\n\nA researcher wants to see how body mass varies with flipper length.\n\n\n\noutcome: body mass in grams (numerical)\npredictor: flipper length in mm (numerical)\n\n\n\nFlipper length is easier to measure, so more plausible you would predict body mass based on that and not the other way around."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#how-do-we-concisely-summarize-the-association-between-two-variables",
-    "href": "slides/06-mlr-2-slides.html#how-do-we-concisely-summarize-the-association-between-two-variables",
+    "objectID": "slides/06-mlr-1-slides.html#how-do-we-concisely-summarize-the-association-between-two-variables",
+    "href": "slides/06-mlr-1-slides.html#how-do-we-concisely-summarize-the-association-between-two-variables",
     "title": "Multiple Linear Regression 1",
     "section": "How do we concisely summarize the association between two variables?",
     "text": "How do we concisely summarize the association between two variables?\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) + \n  geom_point()"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#line-of-best-fit",
-    "href": "slides/06-mlr-2-slides.html#line-of-best-fit",
+    "objectID": "slides/06-mlr-1-slides.html#line-of-best-fit",
+    "href": "slides/06-mlr-1-slides.html#line-of-best-fit",
     "title": "Multiple Linear Regression 1",
     "section": "Line of best fit!",
     "text": "Line of best fit!\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) + \n  geom_point() + \n  geom_smooth(method = \"lm\")"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#concise-numerical-summary-correlation",
-    "href": "slides/06-mlr-2-slides.html#concise-numerical-summary-correlation",
+    "objectID": "slides/06-mlr-1-slides.html#concise-numerical-summary-correlation",
+    "href": "slides/06-mlr-1-slides.html#concise-numerical-summary-correlation",
     "title": "Multiple Linear Regression 1",
     "section": "Concise numerical summary: correlation",
     "text": "Concise numerical summary: correlation\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\")\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.871\n\n\nMeasures the strength and direction of the linear association between two numerical variables. Strong and positive in this case."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#model-fit",
-    "href": "slides/06-mlr-2-slides.html#model-fit",
+    "objectID": "slides/06-mlr-1-slides.html#model-fit",
+    "href": "slides/06-mlr-1-slides.html#model-fit",
     "title": "Multiple Linear Regression 1",
     "section": "Model fit",
     "text": "Model fit\n\nbm_fl_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm, data = penguins)\n\ntidy(bm_fl_fit)\n\n# A tibble: 2 × 5\n  term              estimate std.error statistic   p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        -5781.     306.       -18.9 5.59e- 55\n2 flipper_length_mm     49.7      1.52      32.7 4.37e-107\n\n\n\\[\n\\widehat{body~mass}=-5780.83+49.68\\times flipper~length\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#r2-coefficient-of-determination",
-    "href": "slides/06-mlr-2-slides.html#r2-coefficient-of-determination",
+    "objectID": "slides/06-mlr-1-slides.html#r2-coefficient-of-determination",
+    "href": "slides/06-mlr-1-slides.html#r2-coefficient-of-determination",
     "title": "Multiple Linear Regression 1",
     "section": "\n\\(R^2\\) (coefficient of determination)",
     "text": "\\(R^2\\) (coefficient of determination)\nThe fraction of the variation in the response explained by the model. A number between 0 (bad) and 1 (good) that measures goodness-of-fit:\n\n\n\nbm_fl_fit |&gt;\n  glance() |&gt;\n  select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1     0.759\n\n\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    R2 = r^2\n  )\n\n# A tibble: 1 × 2\n      r    R2\n  &lt;dbl&gt; &lt;dbl&gt;\n1 0.871 0.759"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#interpretation",
-    "href": "slides/06-mlr-2-slides.html#interpretation",
+    "objectID": "slides/06-mlr-1-slides.html#interpretation",
+    "href": "slides/06-mlr-1-slides.html#interpretation",
     "title": "Multiple Linear Regression 1",
     "section": "Interpretation",
     "text": "Interpretation\n\\[\n\\widehat{body~mass}=-5780.83+49.68\\times flipper~length\n\\]\n\nIntercept: Penguins with 0 flipper length are expected, on average, to weigh -5,781 grams (makes no sense!);\nSlopes: For each additional millimeter of a penguin’s flipper length, the weight of the penguin is expected to be higher, on average, by 49.7 grams."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction",
-    "href": "slides/06-mlr-2-slides.html#prediction",
+    "objectID": "slides/06-mlr-1-slides.html#prediction",
+    "href": "slides/06-mlr-1-slides.html#prediction",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction",
     "text": "Prediction"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-1",
-    "href": "slides/06-mlr-2-slides.html#prediction-1",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-1",
+    "href": "slides/06-mlr-1-slides.html#prediction-1",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction",
     "text": "Prediction\n\nnew_penguin &lt;- tibble(flipper_length_mm = 205)\n\npredict(bm_fl_fit, new_data = new_penguin)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4405.\n\n\n\\[\n\\widehat{body~mass}=-5780.83+49.68\\times 205\\approx 4404.71\n\\]\n\nWe predict that a penguin whose flipper is 205 mm long will weigh 4404.71 grams on average."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#new-question",
-    "href": "slides/06-mlr-2-slides.html#new-question",
+    "objectID": "slides/06-mlr-1-slides.html#new-question",
+    "href": "slides/06-mlr-1-slides.html#new-question",
     "title": "Multiple Linear Regression 1",
     "section": "New question",
-    "text": "New question\n\nA different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\n\n\noutcome: body mass in grams (numerical)\npredictor: island (categorical with three levels)\n\n\n\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\""
+    "text": "New question\n\nA different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\n\n\noutcome: body mass in grams (numerical)\npredictor: island (categorical with three levels)\n\n\n\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\"\n\n\n\n\nHow should we visualize?"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#participate",
-    "href": "slides/06-mlr-2-slides.html#participate",
-    "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nDetermine whether each of the following plot types would be an appropriate choice for visualizing the relationship between body weight and island of penguins.\n\n\nScatterplot\nBox plot\nDensity plot\nViolin plot\nBar plot\nStacked bar plot"
-  },
-  {
-    "objectID": "slides/06-mlr-2-slides.html#scatterplot-possible-but-not-so-good",
-    "href": "slides/06-mlr-2-slides.html#scatterplot-possible-but-not-so-good",
+    "objectID": "slides/06-mlr-1-slides.html#scatterplot-possible-but-not-so-good",
+    "href": "slides/06-mlr-1-slides.html#scatterplot-possible-but-not-so-good",
     "title": "Multiple Linear Regression 1",
     "section": "Scatterplot: possible, but not so good",
     "text": "Scatterplot: possible, but not so good\n\nVisualize the relationship between body weight and island of penguins. Also calculate the average body weight per island.\n\n\nggplot(penguins, aes(x = island, y = body_mass_g)) + \n  geom_point()"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#boxplot",
-    "href": "slides/06-mlr-2-slides.html#boxplot",
+    "objectID": "slides/06-mlr-1-slides.html#boxplot",
+    "href": "slides/06-mlr-1-slides.html#boxplot",
     "title": "Multiple Linear Regression 1",
     "section": "Boxplot",
     "text": "Boxplot\n\nVisualize the relationship between body weight and island of penguins. Also calculate the average body weight per island.\n\n\n\nggplot(\n  penguins,\n  aes(x = island, y = body_mass_g)\n) +\n  geom_boxplot() +\n  labs(\n    x = \"Island\",\n    y = \"Body mass (g)\",\n    title = \"Body mass by island\"\n  )\n\n\n\n\n\n\n\n\n\n\npenguins |&gt;\n  group_by(island) |&gt;\n  summarize(\n    bm_mean = mean(body_mass_g, na.rm = TRUE)\n  )\n\n\n# A tibble: 3 × 2\n  island    bm_mean\n  &lt;fct&gt;       &lt;dbl&gt;\n1 Biscoe      4716.\n2 Dream       3713.\n3 Torgersen   3706."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#density-plot",
-    "href": "slides/06-mlr-2-slides.html#density-plot",
+    "objectID": "slides/06-mlr-1-slides.html#density-plot",
+    "href": "slides/06-mlr-1-slides.html#density-plot",
     "title": "Multiple Linear Regression 1",
     "section": "Density plot",
     "text": "Density plot\n\n\nggplot(\n  penguins,\n  aes(x = body_mass_g, color = island, fill = island)\n) +\n  geom_density(alpha = 0.5) +\n  scale_color_colorblind() +\n  scale_fill_colorblind() +\n  labs(\n    x = \"Island\",\n    y = \"Body mass (g)\",\n    title = \"Body mass by island\"\n  )"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#violin-plot",
-    "href": "slides/06-mlr-2-slides.html#violin-plot",
+    "objectID": "slides/06-mlr-1-slides.html#violin-plot",
+    "href": "slides/06-mlr-1-slides.html#violin-plot",
     "title": "Multiple Linear Regression 1",
     "section": "Violin plot",
     "text": "Violin plot\n\n\nggplot(\n  penguins,\n  aes(x = island, y = body_mass_g)\n) +\n  geom_violin() +\n  labs(\n    x = \"Island\",\n    y = \"Body mass (g)\",\n    title = \"Body mass by island\"\n  )"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#multiple-geoms",
-    "href": "slides/06-mlr-2-slides.html#multiple-geoms",
+    "objectID": "slides/06-mlr-1-slides.html#multiple-geoms",
+    "href": "slides/06-mlr-1-slides.html#multiple-geoms",
     "title": "Multiple Linear Regression 1",
     "section": "Multiple geoms",
     "text": "Multiple geoms\n\n\nggplot(\n  penguins,\n  aes(x = island, y = body_mass_g, color = island)\n) +\n  geom_boxplot() +\n  geom_beeswarm(size = 2, alpha = 0.5) +\n  scale_color_colorblind() +\n  labs(\n    x = \"Island\",\n    y = \"Body mass (g)\",\n    title = \"Body mass by island\"\n  ) +\n  theme(legend.position = \"none\")"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#model---fit",
-    "href": "slides/06-mlr-2-slides.html#model---fit",
+    "objectID": "slides/06-mlr-1-slides.html#model---fit",
+    "href": "slides/06-mlr-1-slides.html#model---fit",
     "title": "Multiple Linear Regression 1",
     "section": "Model - fit",
     "text": "Model - fit\n\nFit a linear regression model predicting body weight from island and display the results. Why is Biscoe not on the output?\n\n\nbm_island_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins)\n\ntidy(bm_island_fit)\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        4716.      48.5      97.3 8.93e-250\n2 islandDream       -1003.      74.2     -13.5 1.42e- 33\n3 islandTorgersen   -1010.     100.      -10.1 4.66e- 21\n\n\n\nHuh?"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#dummy-variables",
-    "href": "slides/06-mlr-2-slides.html#dummy-variables",
+    "objectID": "slides/06-mlr-1-slides.html#dummy-variables",
+    "href": "slides/06-mlr-1-slides.html#dummy-variables",
     "title": "Multiple Linear Regression 1",
     "section": "Dummy variables",
     "text": "Dummy variables\n\ndummy_penguins &lt;- penguins |&gt;\n  select(body_mass_g, island) |&gt;\n  arrange(body_mass_g) |&gt;\n  mutate(\n    islandDream = if_else(island == \"Dream\", 1, 0),\n    islandTorgersen = if_else(island == \"Torgersen\", 1, 0),\n  )\n\ndummy_penguins\n\n# A tibble: 344 × 4\n   body_mass_g island    islandDream islandTorgersen\n         &lt;int&gt; &lt;fct&gt;           &lt;dbl&gt;           &lt;dbl&gt;\n 1        2700 Dream               1               0\n 2        2850 Biscoe              0               0\n 3        2850 Biscoe              0               0\n 4        2900 Biscoe              0               0\n 5        2900 Dream               1               0\n 6        2900 Torgersen           0               1\n 7        2900 Dream               1               0\n 8        2925 Biscoe              0               0\n 9        2975 Dream               1               0\n10        3000 Dream               1               0\n# ℹ 334 more rows"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#dummy-variables-1",
-    "href": "slides/06-mlr-2-slides.html#dummy-variables-1",
+    "objectID": "slides/06-mlr-1-slides.html#dummy-variables-1",
+    "href": "slides/06-mlr-1-slides.html#dummy-variables-1",
     "title": "Multiple Linear Regression 1",
     "section": "Dummy variables",
     "text": "Dummy variables\n\nlinear_reg() |&gt;\n  fit(\n    body_mass_g ~ islandDream + islandTorgersen, \n    dummy_penguins\n  ) |&gt;\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        4716.      48.5      97.3 8.93e-250\n2 islandDream       -1003.      74.2     -13.5 1.42e- 33\n3 islandTorgersen   -1010.     100.      -10.1 4.66e- 21\n\n\n\nExactly the same as before!"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#model---interpret",
-    "href": "slides/06-mlr-2-slides.html#model---interpret",
+    "objectID": "slides/06-mlr-1-slides.html#model---interpret",
+    "href": "slides/06-mlr-1-slides.html#model---interpret",
     "title": "Multiple Linear Regression 1",
     "section": "Model - interpret",
     "text": "Model - interpret\n\\[\n\\widehat{body~mass} = 4716 - 1003 \\times islandDream - 1010 \\times islandTorgersen\n\\]\n\nIntercept: Penguins from Biscoe island are expected to weigh, on average, 4,716 grams.\nSlope - islandDream: Penguins from Dream island are expected to weigh, on average, 1,003 grams less than those from Biscoe island.\nSlope - islandTorgersen: Penguins from Torgersen island are expected to weigh, on average, 1,010 grams less than those from Biscoe island."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#model---predict",
-    "href": "slides/06-mlr-2-slides.html#model---predict",
+    "objectID": "slides/06-mlr-1-slides.html#model---predict",
+    "href": "slides/06-mlr-1-slides.html#model---predict",
     "title": "Multiple Linear Regression 1",
     "section": "Model - predict",
     "text": "Model - predict\n\nWhat is the predicted body weight of a penguin on Biscoe island? What are the estimated body weights of penguins on Dream and Torgersen islands? Where have we seen these values before?\n\n\nnew_penguins = tibble(\n  island = c(\"Biscoe\", \"Dream\", \"Torgersen\")\n)\n\npredict(bm_island_fit, new_data = new_penguins)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 4716.\n2 3713.\n3 3706."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#model---predict-1",
-    "href": "slides/06-mlr-2-slides.html#model---predict-1",
+    "objectID": "slides/06-mlr-1-slides.html#model---predict-1",
+    "href": "slides/06-mlr-1-slides.html#model---predict-1",
     "title": "Multiple Linear Regression 1",
     "section": "Model - predict",
     "text": "Model - predict\n\nCalculate the predicted body weights of penguins on Biscoe, Dream, and Torgersen islands by hand.\n\n\\[\n\\widehat{body~mass} = 4716 - 1003 \\times islandDream - 1010 \\times islandTorgersen\n\\]\n\n\nBiscoe: \\(\\widehat{body~mass} = 4716 - 1003 \\times 0 - 1010 \\times 0 = 4716\\)\n\n\n\n\n\nDream: \\(\\widehat{body~mass} = 4716 - 1003 \\times 1 - 1010 \\times 0 = 3713\\)\n\n\n\n\n\nTorgersen: \\(\\widehat{body~mass} = 4716 - 1003 \\times 0 - 1010 \\times 1 = 3706\\)"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#look-familiar",
-    "href": "slides/06-mlr-2-slides.html#look-familiar",
+    "objectID": "slides/06-mlr-1-slides.html#look-familiar",
+    "href": "slides/06-mlr-1-slides.html#look-familiar",
     "title": "Multiple Linear Regression 1",
     "section": "Look familiar?",
     "text": "Look familiar?\n\npenguins |&gt;\n  group_by(island) |&gt;\n  summarize(\n    bm_mean = mean(body_mass_g, na.rm = TRUE)\n  )\n\n# A tibble: 3 × 2\n  island    bm_mean\n  &lt;fct&gt;       &lt;dbl&gt;\n1 Biscoe      4716.\n2 Dream       3713.\n3 Torgersen   3706."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#models-with-categorical-predictors",
-    "href": "slides/06-mlr-2-slides.html#models-with-categorical-predictors",
+    "objectID": "slides/06-mlr-1-slides.html#models-with-categorical-predictors",
+    "href": "slides/06-mlr-1-slides.html#models-with-categorical-predictors",
     "title": "Multiple Linear Regression 1",
     "section": "Models with categorical predictors",
     "text": "Models with categorical predictors\n\nWhen the categorical predictor has many levels, they’re encoded as dummy variables.\nThe first level of the categorical variable is the baseline level. In a model with one categorical predictor, the intercept is the predicted value of the outcome for the baseline level (x = 0).\nEach slope coefficient describes the difference between the predicted value of the outcome for that level of the categorical variable compared to the baseline level."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#in-general",
-    "href": "slides/06-mlr-2-slides.html#in-general",
+    "objectID": "slides/06-mlr-1-slides.html#in-general",
+    "href": "slides/06-mlr-1-slides.html#in-general",
     "title": "Multiple Linear Regression 1",
     "section": "In general",
     "text": "In general\nPredicting continuous outcome \\(Y\\) using one categorical predictor \\(X\\) with multiple levels 0, 1, 2, …, \\(L\\). Create dummy variables for every level except the base level:\n\n\\[\ncat_l=\\begin{cases}\n1 & X=l\\\\\n0 & \\text{else}\n\\end{cases}\n\\]\n\n\nThen fit a regression with multiple dummy predictors:\n\\[\n\\hat{Y} = b_0 + b_1 \\times cat_1 + b_2 \\times cat_2 \\ldots + b_L \\times cat_L\n\\]\n\n\\(b_0\\) : the model prediction for a member of the base level;\n\\(b_1\\): how does the prediction change when we move from the base level to level 1?\n\\(b_2\\): how does the prediction change when we move from the base level to level 2?\netc\n\n\n\n\n\n\n\n\n\nWe’re not animals. We have technology!\n\n\nThe computer handles all of this for you, but you need to understand the details so you code and interpret it correctly."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#changing-the-baseline-level",
-    "href": "slides/06-mlr-2-slides.html#changing-the-baseline-level",
+    "objectID": "slides/06-mlr-1-slides.html#changing-the-baseline-level",
+    "href": "slides/06-mlr-1-slides.html#changing-the-baseline-level",
     "title": "Multiple Linear Regression 1",
     "section": "Changing the baseline level",
-    "text": "Changing the baseline level\n\nBy default, R uses the first level of a categorical variable as the baseline level. this is often the first alphabetically, but make sure you check!\nWe can change the baseline level by reordering the levels of the categorical variable."
+    "text": "Changing the baseline level\n\nBy default, R uses the first level of a categorical variable as the baseline level. This is often the first alphabetically, but make sure you check!\nWe can change the baseline level by reordering the levels of the categorical variable."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#participate-1",
-    "href": "slides/06-mlr-2-slides.html#participate-1",
+    "objectID": "slides/06-mlr-1-slides.html#changing-the-baseline-level-1",
+    "href": "slides/06-mlr-1-slides.html#changing-the-baseline-level-1",
     "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nWhat function goes in the blank to make “Dream” the baseline level in the island variable?\n\npenguins |&gt;\n  mutate(\n    island = ___(island, \"Dream\")\n  )\n\n\n\nlevel_reorder\nfct_relevel\nfct_reorder\nstr_relevel"
+    "section": "Changing the baseline level",
+    "text": "Changing the baseline level\nWhat is the baseline right now?\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\"\n\n\n\nChange it:\n\npenguins &lt;- penguins |&gt;\n  mutate(\n    island = fct_relevel(island, \"Dream\")\n  )\n\n\n\nWhat is the baseline now?\n\nlevels(penguins$island)\n\n[1] \"Dream\"     \"Biscoe\"    \"Torgersen\""
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#participate-2",
-    "href": "slides/06-mlr-2-slides.html#participate-2",
+    "objectID": "slides/06-mlr-1-slides.html#another-way-to-tell",
+    "href": "slides/06-mlr-1-slides.html#another-way-to-tell",
     "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nWhat is the baseline level of island in the following model??\n\nlinear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins) |&gt;\n  tidy()\n\n# A tibble: 3 × 5\n  term         estimate std.error statistic   p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   3706.        87.7   42.3    3.64e-137\n2 islandBiscoe  1010.       100.    10.1    4.66e- 21\n3 islandDream      6.53     104.     0.0627 9.50e-  1\n\n\n\n\nBiscoe\nDream\nTorgersen\nCannot tell from the output"
+    "section": "Another way to tell",
+    "text": "Another way to tell\n\nlinear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins) |&gt;\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)      3713.        56.2   66.0    1.44e-195\n2 islandBiscoe     1003.        74.2   13.5    1.42e- 33\n3 islandTorgersen    -6.53     104.    -0.0627 9.50e-  1\n\n\nWhichever level is not listed is treated as the baseline."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#three-variables-on-one-2d-plot",
-    "href": "slides/06-mlr-2-slides.html#three-variables-on-one-2d-plot",
+    "objectID": "slides/06-mlr-1-slides.html#three-variables-on-one-2d-plot",
+    "href": "slides/06-mlr-1-slides.html#three-variables-on-one-2d-plot",
     "title": "Multiple Linear Regression 1",
     "section": "Three variables on one 2D plot",
     "text": "Three variables on one 2D plot\n\nggplot(penguins, \n  aes(x = flipper_length_mm, y = body_mass_g, color = island)\n  ) +\n  geom_point()"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#how-do-we-predict-using-more-than-one-predictor",
-    "href": "slides/06-mlr-2-slides.html#how-do-we-predict-using-more-than-one-predictor",
+    "objectID": "slides/06-mlr-1-slides.html#how-do-we-predict-using-more-than-one-predictor",
+    "href": "slides/06-mlr-1-slides.html#how-do-we-predict-using-more-than-one-predictor",
     "title": "Multiple Linear Regression 1",
     "section": "How do we predict using more than one predictor?",
     "text": "How do we predict using more than one predictor?\nBoth of these models use flipper_length_mm and island to predict body_mass_g:"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#the-additive-model-parallel-lines-one-for-each-island",
-    "href": "slides/06-mlr-2-slides.html#the-additive-model-parallel-lines-one-for-each-island",
+    "objectID": "slides/06-mlr-1-slides.html#the-additive-model-parallel-lines-one-for-each-island",
+    "href": "slides/06-mlr-1-slides.html#the-additive-model-parallel-lines-one-for-each-island",
     "title": "Multiple Linear Regression 1",
     "section": "The additive model: parallel lines, one for each island",
     "text": "The additive model: parallel lines, one for each island"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#the-additive-model-parallel-lines-one-for-each-island-1",
-    "href": "slides/06-mlr-2-slides.html#the-additive-model-parallel-lines-one-for-each-island-1",
+    "objectID": "slides/06-mlr-1-slides.html#the-additive-model-parallel-lines-one-for-each-island-1",
+    "href": "slides/06-mlr-1-slides.html#the-additive-model-parallel-lines-one-for-each-island-1",
     "title": "Multiple Linear Regression 1",
     "section": "The additive model: parallel lines, one for each island",
     "text": "The additive model: parallel lines, one for each island\n\nbm_fl_island_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm + island, data = penguins)\n\ntidy(bm_fl_island_fit)\n\n# A tibble: 4 × 5\n  term              estimate std.error statistic  p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)        -4625.     392.      -11.8  4.29e-27\n2 flipper_length_mm     44.5      1.87     23.9  1.65e-74\n3 islandDream         -262.      55.0      -4.77 2.75e- 6\n4 islandTorgersen     -185.      70.3      -2.63 8.84e- 3\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -4625 &+ 44.5 \\times flipper~length \\\\\n&- 262 \\times Dream \\\\\n&- 185 \\times Torgersen\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#where-do-the-three-lines-come-from",
-    "href": "slides/06-mlr-2-slides.html#where-do-the-three-lines-come-from",
+    "objectID": "slides/06-mlr-1-slides.html#where-do-the-three-lines-come-from",
+    "href": "slides/06-mlr-1-slides.html#where-do-the-three-lines-come-from",
     "title": "Multiple Linear Regression 1",
     "section": "Where do the three lines come from?",
     "text": "Where do the three lines come from?\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -4625 &+ 44.5 \\times flipper~length \\\\\n&- 262 \\times Dream \\\\\n&- 185 \\times Torgersen\n\\end{aligned}\n\\]\n\nIf penguin is from Biscoe, Dream = 0 and Torgersen = 0:\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -4625 &+ 44.5 \\times flipper~length\n\\end{aligned}\n\\]\n\n\nIf penguin is from Dream, Dream = 1 and Torgersen = 0:\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -4887 &+ 44.5 \\times flipper~length\n\\end{aligned}\n\\]\n\n\nIf penguin is from Torgersen, Dream = 0 and Torgersen = 1:\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -4810 &+ 44.5 \\times flipper~length\n\\end{aligned}\n\\]\n\n\nEither way, same slope, so the lines are parallel."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#the-interaction-model-different-lines-for-each-island",
-    "href": "slides/06-mlr-2-slides.html#the-interaction-model-different-lines-for-each-island",
+    "objectID": "slides/06-mlr-1-slides.html#the-interaction-model-different-lines-for-each-island",
+    "href": "slides/06-mlr-1-slides.html#the-interaction-model-different-lines-for-each-island",
     "title": "Multiple Linear Regression 1",
     "section": "The interaction model: different lines for each island",
     "text": "The interaction model: different lines for each island\n\nCodeggplot(\n  penguins, \n  aes(x = flipper_length_mm, y = body_mass_g, color = island)\n  ) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(title = \"Interaction model\") +\n  theme(legend.position = \"bottom\")"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#the-interaction-model-different-lines-for-each-island-1",
-    "href": "slides/06-mlr-2-slides.html#the-interaction-model-different-lines-for-each-island-1",
+    "objectID": "slides/06-mlr-1-slides.html#the-interaction-model-different-lines-for-each-island-1",
+    "href": "slides/06-mlr-1-slides.html#the-interaction-model-different-lines-for-each-island-1",
     "title": "Multiple Linear Regression 1",
     "section": "The interaction model: different lines for each island",
     "text": "The interaction model: different lines for each island\n\nbm_fl_island_int_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm * island, data = penguins)\n\ntidy(bm_fl_island_int_fit) |&gt; select(term, estimate)\n\n# A tibble: 6 × 2\n  term                              estimate\n  &lt;chr&gt;                                &lt;dbl&gt;\n1 (Intercept)                        -5464. \n2 flipper_length_mm                     48.5\n3 islandDream                         3551. \n4 islandTorgersen                     3218. \n5 flipper_length_mm:islandDream        -19.4\n6 flipper_length_mm:islandTorgersen    -17.4\n\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -5464 &+ 48.5 \\times flipper~length \\\\\n&+ 3551 \\times Dream \\\\\n&+ 3218 \\times Torgersen \\\\\n&- 19.4 \\times flipper~length*Dream \\\\\n&- 17.4 \\times flipper~length*Torgersen\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#where-do-the-three-lines-come-from-1",
-    "href": "slides/06-mlr-2-slides.html#where-do-the-three-lines-come-from-1",
+    "objectID": "slides/06-mlr-1-slides.html#where-do-the-three-lines-come-from-1",
+    "href": "slides/06-mlr-1-slides.html#where-do-the-three-lines-come-from-1",
     "title": "Multiple Linear Regression 1",
     "section": "Where do the three lines come from?",
     "text": "Where do the three lines come from?\n\\[\n\\begin{aligned}\n\\small\\widehat{body~mass} = -5464 &+ 48.5 \\times flipper~length \\\\\n&+ 3551 \\times Dream \\\\\n&+ 3218 \\times Torgersen \\\\\n&- 19.4 \\times flipper~length*Dream \\\\\n&- 17.4 \\times flipper~length*Torgersen\n\\end{aligned}\n\\]\n\nIf penguin is from Biscoe, Dream = 0 and Torgersen = 0:\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} = -5464 &+ 48.5 \\times flipper~length\n\\end{aligned}\n\\]\n\n\nIf penguin is from Dream, Dream = 1 and Torgersen = 0:\n\n\n\\[\n\\begin{aligned}\n\\widehat{body~mass} &= (-5464 + 3551) + (48.5-19.4) \\times flipper~length\\\\\n&=-1913+29.1\\times flipper~length.\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-biscoe-island",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-biscoe-island",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-biscoe-island",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-biscoe-island",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Biscoe island",
     "text": "Prediction on Biscoe island"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-biscoe-island-1",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-biscoe-island-1",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-biscoe-island-1",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-biscoe-island-1",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Biscoe island",
     "text": "Prediction on Biscoe island\n\nnew_penguin &lt;- tibble(\n  flipper_length_mm = 205,\n  island = \"Biscoe\"\n)\n\npredict(bm_fl_island_int_fit, new_data = new_penguin)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4488.\n\n\n\\[\n\\widehat{body~mass} = -5464 + 48.5 \\times 205.\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-dream-island",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-dream-island",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-dream-island",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-dream-island",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Dream island",
     "text": "Prediction on Dream island"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-dream-island-1",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-dream-island-1",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-dream-island-1",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-dream-island-1",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Dream island",
     "text": "Prediction on Dream island\n\nnew_penguin &lt;- tibble(\n  flipper_length_mm = 205,\n  island = \"Dream\"\n)\n\npredict(bm_fl_island_int_fit, new_data = new_penguin)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4060.\n\n\n\\[\n\\widehat{body~mass} = (-5464 + 3551) + (48.5 - 19.4) \\times 205.\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-torgersen-island",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-torgersen-island",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-torgersen-island",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-torgersen-island",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Torgersen island",
     "text": "Prediction on Torgersen island"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-on-torgersen-island-1",
-    "href": "slides/06-mlr-2-slides.html#prediction-on-torgersen-island-1",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-on-torgersen-island-1",
+    "href": "slides/06-mlr-1-slides.html#prediction-on-torgersen-island-1",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction on Torgersen island",
     "text": "Prediction on Torgersen island\n\nnew_penguin &lt;- tibble(\n  flipper_length_mm = 205,\n  island = \"Torgersen\"\n)\n\npredict(bm_fl_island_int_fit, new_data = new_penguin)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4136.\n\n\n\\[\n\\widehat{body~mass} = (-5464 + 3218) + (48.5 - 17.4) \\times 205.\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#multiple-numerical-predictors",
-    "href": "slides/06-mlr-2-slides.html#multiple-numerical-predictors",
+    "objectID": "slides/06-mlr-1-slides.html#multiple-numerical-predictors",
+    "href": "slides/06-mlr-1-slides.html#multiple-numerical-predictors",
     "title": "Multiple Linear Regression 1",
     "section": "Multiple numerical predictors",
     "text": "Multiple numerical predictors\n\nbm_fl_bl_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm + bill_length_mm, data = penguins)\n\ntidy(bm_fl_bl_fit)\n\n# A tibble: 3 × 5\n  term              estimate std.error statistic  p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       -5737.      308.      -18.6  7.80e-54\n2 flipper_length_mm    48.1       2.01     23.9  7.56e-75\n3 bill_length_mm        6.05      5.18      1.17 2.44e- 1\n\n\n\n\\[\n\\small\\widehat{body~mass}=-5736+48.1\\times flipper~length+6\\times bill~length\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#interpretation-1",
-    "href": "slides/06-mlr-2-slides.html#interpretation-1",
+    "objectID": "slides/06-mlr-1-slides.html#interpretation-1",
+    "href": "slides/06-mlr-1-slides.html#interpretation-1",
     "title": "Multiple Linear Regression 1",
     "section": "Interpretation",
     "text": "Interpretation\n\\[\n\\small\\widehat{body~mass}=-5736+48.1\\times flipper~length+6\\times bill~length\n\\]\n\nInterpretations:\n\nWe predict that the body mass of a penguin with zero flipper length and zero bill length will be -5736 grams, on average (makes no sense);\nHolding all other variables constant, for every additional millimeter in flipper length, we expect the body mass of penguins to be higher, on average, by 48.1 grams.\nHolding all other variables constant, for every additional millimeter in bill length, we expect the body mass of penguins to be higher, on average, by 6 grams."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#prediction-2",
-    "href": "slides/06-mlr-2-slides.html#prediction-2",
+    "objectID": "slides/06-mlr-1-slides.html#prediction-2",
+    "href": "slides/06-mlr-1-slides.html#prediction-2",
     "title": "Multiple Linear Regression 1",
     "section": "Prediction",
     "text": "Prediction\n\nnew_penguin &lt;- tibble(\n  flipper_length_mm = 200,\n  bill_length_mm = 45\n)\n\npredict(bm_fl_bl_fit, new_data = new_penguin)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4164.\n\n\n\\[\n\\widehat{body~mass}=-5736+48.1\\times 200+6\\times 45\n\\]"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#picture-its-not-pretty",
-    "href": "slides/06-mlr-2-slides.html#picture-its-not-pretty",
+    "objectID": "slides/06-mlr-1-slides.html#picture-its-not-pretty",
+    "href": "slides/06-mlr-1-slides.html#picture-its-not-pretty",
     "title": "Multiple Linear Regression 1",
     "section": "Picture? It’s not pretty…",
     "text": "Picture? It’s not pretty…\n2 predictors + 1 response = 3 dimensions. Ick!"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#picture-its-not-pretty-1",
-    "href": "slides/06-mlr-2-slides.html#picture-its-not-pretty-1",
+    "objectID": "slides/06-mlr-1-slides.html#picture-its-not-pretty-1",
+    "href": "slides/06-mlr-1-slides.html#picture-its-not-pretty-1",
     "title": "Multiple Linear Regression 1",
     "section": "Picture? It’s not pretty…",
     "text": "Picture? It’s not pretty…\nInstead of a line of best fit, it’s a plane of best fit. Double ick!"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#population-model",
-    "href": "slides/06-mlr-2-slides.html#population-model",
+    "objectID": "slides/06-mlr-1-slides.html#population-model",
+    "href": "slides/06-mlr-1-slides.html#population-model",
     "title": "Multiple Linear Regression 1",
     "section": "Population model",
     "text": "Population model\nMultiple linear regression captures the relationship between a numerical outcome \\(Y\\) and many numerical predictors \\(X_1\\), \\(X_2\\), …, \\(X_p\\):\n\\[\\Large{Y = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + ...+ \\beta_p X_p+\\epsilon}\\]\n\n\n\\(\\beta_0\\): True intercept of the relationship between the \\(X_j\\) and \\(Y\\)\n\n\n\\(\\beta_j\\): True slope of the relationship between \\(X_j\\) and \\(Y\\)\n\n\n\\(\\epsilon\\): Error (residual)\n\n\nThe model with the greek letters and the error term is the “true,” idealized, population relationship that we could access if we had infinite amounts of perfect data. But we don’t, so we have to settle for…"
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#estimated-model",
-    "href": "slides/06-mlr-2-slides.html#estimated-model",
+    "objectID": "slides/06-mlr-1-slides.html#estimated-model",
+    "href": "slides/06-mlr-1-slides.html#estimated-model",
     "title": "Multiple Linear Regression 1",
     "section": "Estimated model",
     "text": "Estimated model\n\\[\\Large{\\hat{Y} = b_0 + b_1 X_1 + b_2 X_2 + ... + b_pX_p}\\]\n\n\n\\(b_j\\): Estimated slope of the relationship between \\(X_j\\) and \\(Y\\);\n\n\\(b_0\\): your prediction for \\(Y\\) if all the predictors equal zero;\nNo error term!\n\n\nThis is your best guess at the true regression function based on the noisy, meager, imperfect data you actually have access to. We still compute the \\(b_j\\) using the principle of least squares: pick the estimates that make the sum of squared residuals as small as possible."
   },
   {
-    "objectID": "slides/06-mlr-2-slides.html#next-time",
-    "href": "slides/06-mlr-2-slides.html#next-time",
+    "objectID": "slides/06-mlr-1-slides.html#next-time",
+    "href": "slides/06-mlr-1-slides.html#next-time",
     "title": "Multiple Linear Regression 1",
     "section": "Next time",
     "text": "Next time\nToday we saw multiple models that are all attempting to do the same thing: predict body mass.\n\nWhich one is “best”?\nWhat does “best” even mean?"
@@ -2342,14 +2349,7 @@
     "href": "slides/06-mlr-1.html#new-question",
     "title": "Multiple Linear Regression 1",
     "section": "New question",
-    "text": "New question\n\nA different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\n. . .\n\noutcome: body mass in grams (numerical)\npredictor: island (categorical with three levels)\n\n. . .\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\""
-  },
-  {
-    "objectID": "slides/06-mlr-1.html#participate",
-    "href": "slides/06-mlr-1.html#participate",
-    "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nDetermine whether each of the following plot types would be an appropriate choice for visualizing the relationship between body weight and island of penguins.\n\n\nScatterplot\nBox plot\nDensity plot\nViolin plot\nBar plot\nStacked bar plot"
+    "text": "New question\n\nA different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\n. . .\n\noutcome: body mass in grams (numerical)\npredictor: island (categorical with three levels)\n\n. . .\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\"\n\n\n. . .\nHow should we visualize?"
   },
   {
     "objectID": "slides/06-mlr-1.html#scatterplot-possible-but-not-so-good",
@@ -2454,21 +2454,21 @@
     "href": "slides/06-mlr-1.html#changing-the-baseline-level",
     "title": "Multiple Linear Regression 1",
     "section": "Changing the baseline level",
-    "text": "Changing the baseline level\n\nBy default, R uses the first level of a categorical variable as the baseline level. this is often the first alphabetically, but make sure you check!\nWe can change the baseline level by reordering the levels of the categorical variable."
+    "text": "Changing the baseline level\n\nBy default, R uses the first level of a categorical variable as the baseline level. This is often the first alphabetically, but make sure you check!\nWe can change the baseline level by reordering the levels of the categorical variable."
   },
   {
-    "objectID": "slides/06-mlr-1.html#participate-1",
-    "href": "slides/06-mlr-1.html#participate-1",
+    "objectID": "slides/06-mlr-1.html#changing-the-baseline-level-1",
+    "href": "slides/06-mlr-1.html#changing-the-baseline-level-1",
     "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nWhat function goes in the blank to make “Dream” the baseline level in the island variable?\n\npenguins |&gt;\n  mutate(\n    island = ___(island, \"Dream\")\n  )\n\n\n\nlevel_reorder\nfct_relevel\nfct_reorder\nstr_relevel"
+    "section": "Changing the baseline level",
+    "text": "Changing the baseline level\nWhat is the baseline right now?\n\nlevels(penguins$island)\n\n[1] \"Biscoe\"    \"Dream\"     \"Torgersen\"\n\n\n. . .\nChange it:\n\npenguins &lt;- penguins |&gt;\n  mutate(\n    island = fct_relevel(island, \"Dream\")\n  )\n\n. . .\nWhat is the baseline now?\n\nlevels(penguins$island)\n\n[1] \"Dream\"     \"Biscoe\"    \"Torgersen\""
   },
   {
-    "objectID": "slides/06-mlr-1.html#participate-2",
-    "href": "slides/06-mlr-1.html#participate-2",
+    "objectID": "slides/06-mlr-1.html#another-way-to-tell",
+    "href": "slides/06-mlr-1.html#another-way-to-tell",
     "title": "Multiple Linear Regression 1",
-    "section": "Participate 📱💻",
-    "text": "Participate 📱💻\n\n\n\nWhat is the baseline level of island in the following model??\n\nlinear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins) |&gt;\n  tidy()\n\n# A tibble: 3 × 5\n  term         estimate std.error statistic   p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   3706.        87.7   42.3    3.64e-137\n2 islandBiscoe  1010.       100.    10.1    4.66e- 21\n3 islandDream      6.53     104.     0.0627 9.50e-  1\n\n\n\n\nBiscoe\nDream\nTorgersen\nCannot tell from the output"
+    "section": "Another way to tell",
+    "text": "Another way to tell\n\nlinear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins) |&gt;\n  tidy()\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)      3713.        56.2   66.0    1.44e-195\n2 islandBiscoe     1003.        74.2   13.5    1.42e- 33\n3 islandTorgersen    -6.53     104.    -0.0627 9.50e-  1\n\n\nWhichever level is not listed is treated as the baseline."
   },
   {
     "objectID": "slides/06-mlr-1.html#three-variables-on-one-2d-plot",
@@ -4366,60 +4366,66 @@
     "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
   },
   {
-    "objectID": "ae/ae-03-icecover.html",
-    "href": "ae/ae-03-icecover.html",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "objectID": "ae/ae-04-penguins.html",
+    "href": "ae/ae-04-penguins.html",
+    "title": "AE 04: Modelling penguins",
     "section": "",
-    "text": "The data for this application exercise comes from the lterdatasampler package. The mission of the Long Term Ecological Research program (LTER) Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”\nSpecifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature."
+    "text": "In this application exercise we will be studying penguins. The data can be found in the palmerpenguins package and we will use tidyverse and tidymodels for data exploration and modeling, respectively.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(palmerpenguins)\n\nPlease read the following context and take a glimpse at the data set before we get started.\n\nThis data set comprising various measurements of three different penguin species, namely Adelie, Gentoo, and Chinstrap. The rigorous study was conducted in the islands of the Palmer Archipelago, Antarctica. These data were collected from 2007 to 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data set is called penguins.\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\n\nOur goal is to understand better how various body measurements and attributes of penguins relate to their body mass. First, we are going to investigate the relationship between a penguins’ flipper lengths and their body masses.\n\n\nQuestion: Based on our research focus, which variable is the response variable?\n\nBody mass is the response and flipper length is the predictor. You could imagine that flipper length is easier to measure, and so it’s most plausible that we would have that measurement first. Flipper length might be measurable from afar based on a photograph that has a scale reference, whereas mass requires wrangling the beast and keeping it on a scale. Having incurred the cost of collecting a sample of complete measurements, we might then try to use a model to fill in the gaps based on flipper length only.\n\n\nDemo: Visualize the relationship between flipper length and body mass of penguins.\n\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point()\n\n\n\n\n\n\n\nCorrelation\n\n\nYour turn (5 minutes):\n\nWhat is correlation? What values can correlation take?\n\n\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\n\nDemo: What is the correlation between flipper length and body mass of penguins?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\")\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.871\n\n\n\n\nDemo: What is the coefficient of determination?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    r.squared = r^2\n  )\n\n# A tibble: 1 × 2\n      r r.squared\n  &lt;dbl&gt;     &lt;dbl&gt;\n1 0.871     0.759\n\n\n\n\nDemo: What is the slope of the regression line?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    sy = sd(body_mass_g, na.rm = TRUE),\n    sx = sd(flipper_length_mm, na.rm = TRUE),\n    b1 = r * sy / sx\n  )\n\n# A tibble: 1 × 4\n      r    sy    sx    b1\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 0.871  802.  14.1  49.7\n\n\n\n\nDemo: What is the intercept of the regression line?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    sy = sd(body_mass_g, na.rm = TRUE),\n    sx = sd(flipper_length_mm, na.rm = TRUE),\n    b1 = r * sy / sx,\n    ybar = mean(body_mass_g, na.rm = TRUE),\n    xbar = mean(flipper_length_mm, na.rm = TRUE),\n    b0 = ybar - b1 * xbar\n  )\n\n# A tibble: 1 × 7\n      r    sy    sx    b1  ybar  xbar     b0\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;\n1 0.871  802.  14.1  49.7 4202.  201. -5781.\n\n\nDefining, fitting, and summarizing a model\n\n\nDemo: Write the population model below that explains the relationship between body mass and flipper length.\n\n\\[\nbody~mass=\\beta_0+\\beta_1\\times flipper~length+\\varepsilon\n\\]\n\n\nDemo: Fit the linear regression model and display the results. Write the estimated model output below.\n\n\nbm_fl_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm, data = penguins)\n\ntidy(bm_fl_fit)\n\n# A tibble: 2 × 5\n  term              estimate std.error statistic   p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        -5781.     306.       -18.9 5.59e- 55\n2 flipper_length_mm     49.7      1.52      32.7 4.37e-107\n\n\n\\[\n\\widehat{body~mass}=-5781+49.6\\times flipper~length\n\\]\n\n\nYour turn: Interpret the slope and the intercept in the context of the data.\n\nIntercept: Penguins with 0 flipper length are expected, on average, to weigh -5,781 grams;\nSlopes: For each additional millimeter of a penguin’s flipper length, the weight of the penguin is expected to be higher, on average, by 49.7 grams.\n\n\n\nNotice! We got exactly the same numbers for the slope and intercept as we did when we computed them above using \\(b_1=r\\cdot s_y/s_x\\) and \\(b_0=\\bar{y}-b_1\\bar{x}\\). Phew!\n\n\nYour turn: Recreate the visualization from above, this time adding a regression line to the visualization geom_smooth(method = \"lm\").\n\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\nDemo: What is the coefficient of determination (\\(R^2\\))?\n\n\nglance(bm_fl_fit)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic   p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     0.759         0.758  394.     1071. 4.37e-107     1 -2528. 5063. 5074.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nNotice! Same number as before when we just squared the correlation coefficient. Phew!\n\n\nDemo: What is the estimated body mass for a penguin with a flipper length of 210?\n\n\npenguin_flipper_210 &lt;- tibble(flipper_length_mm = 210)\n\nbm_fl_fit |&gt;\n  predict(new_data = penguin_flipper_210)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4653.\n\n\n\n\nYour turn: What is the estimated body mass for a penguin with a flipper length of 100?\n\n\npenguin_flipper_100 &lt;- tibble(flipper_length_mm = 100)\n\nbm_fl_fit |&gt;\n  predict(new_data = penguin_flipper_100)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 -812.\n\n\nAnother model\n\n\nDemo: A different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\nThe predictor is now categorical instead of numerical.\n\n\nDemo: Make an appropriate visualization to investigate this relationship below. Additionally, calculate the mean body mass by island.\n\n\nggplot(penguins, aes(x = island, y = body_mass_g)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\npenguins |&gt;\n  group_by(island) |&gt;\n  summarize(mean_bm = mean(body_mass_g, na.rm = TRUE))\n\n# A tibble: 3 × 2\n  island    mean_bm\n  &lt;fct&gt;       &lt;dbl&gt;\n1 Biscoe      4716.\n2 Dream       3713.\n3 Torgersen   3706.\n\n\n\n\nDemo: Change the geom of your previous plot to geom_point(). Use this plot to think about how R models these data.\n\n\nggplot(penguins, aes(x = island, y = body_mass_g)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\nYour turn: Fit the linear regression model and display the results.\n\n\nbm_island_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins)\n\ntidy(bm_island_fit)\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        4716.      48.5      97.3 8.93e-250\n2 islandDream       -1003.      74.2     -13.5 1.42e- 33\n3 islandTorgersen   -1010.     100.      -10.1 4.66e- 21\n\n\n\n\nDemo: Interpret each coefficient in context of the problem.\n\nIntercept: Penguins from Biscoe island are expected to weigh, on average, 4,716 grams.\n\nSlopes:\n\nPenguins from Dream island are expected to weigh, on average, 1,003 grams less than those from Biscoe island.\nPenguins from Torgersen island are expected to weigh, on average, 1,010 grams less than those from Biscoe island.\n\n\n\n\nDemo: What is the estimated body weight of a penguin on Biscoe island? What are the estimated body weights of penguins on Dream and Torgersen islands?\n\n\nthree_penguins &lt;- tibble(\n  island = c(\"Biscoe\", \"Dream\", \"Torgersen\")\n)\nbm_island_fit |&gt;\n  predict(new_data = three_penguins)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 4716.\n2 3713.\n3 3706."
   },
   {
-    "objectID": "ae/ae-03-icecover.html#getting-started",
-    "href": "ae/ae-03-icecover.html#getting-started",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Getting started",
-    "text": "Getting started\nPackages\nWe will use the tidyverse package for data visualization and wrangling and the tidymodels package for modeling.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\n\nData\nThe data can be found in the data folder; it’s called icecover.csv.\n\nicecover &lt;- read_csv(\"data/icecover.csv\")\n\nThe data dictionary is below:\n\n\n\n\n\n\nVariable Name\nDescription\n\n\n\nlakeid\nLake name\n\n\nice_on\nDate of freeze of lake\n\n\nice_off\nDate of ice breakup of lake\n\n\nice_duration\nNumber of days between the freeze and breakup dates of each lake\n\n\nyear\nYear of observation\n\n\nannual_avg_temp\nAnnual average air temperature (°C)"
+    "objectID": "hw/hw-1.html",
+    "href": "hw/hw-1.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "On this first homework, you’ll continue to practice data visualization and summarization using the North Carolina counties data from Lab 1. At the end, you’ll dip into the textbook a little bit and think about some conceptual questions. Along the way, we’ll ask you to get a little fancier with the plots, which will require some extra packages:\nlibrary(tidyverse)\nlibrary(scales)    # for better axis labels\nlibrary(ggthemes)  # for additional color palettes",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
   },
   {
-    "objectID": "ae/ae-03-icecover.html#visualizing-the-model",
-    "href": "ae/ae-03-icecover.html#visualizing-the-model",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Visualizing the model",
-    "text": "Visualizing the model\nWe’re going to investigate the relationship between ice_duration and annual_avg_temp.\n\nCreate an appropriate plot to investigate this relationship. Add appropriate labels to the plot.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n\n\n\n\n\n\n\nIf you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?\nNow, let R draw the line for you. Refer to the documentation at https://ggplot2.tidyverse.org/reference/geom_smooth.html. Specifically, refer to the method section.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWhat types of questions can this plot help answer?\n\nHow does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?\n\nWe can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?\n\nAt 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data."
+    "objectID": "hw/hw-1.html#setup",
+    "href": "hw/hw-1.html#setup",
+    "title": "Homework 1",
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
   },
   {
-    "objectID": "ae/ae-03-icecover.html#model-fitting",
-    "href": "ae/ae-03-icecover.html#model-fitting",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Model fitting",
-    "text": "Model fitting\nFit a model to predict fish weights from their heights.\n\nice_temp_fit &lt;- linear_reg() |&gt;\n  fit(ice_duration ~ annual_avg_temp, data = icecover)\n\nice_temp_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = ice_duration ~ annual_avg_temp, data = data)\n\nCoefficients:\n    (Intercept)  annual_avg_temp  \n        148.110           -6.182"
+    "objectID": "hw/hw-1.html#part-1-exploring-nc-counties",
+    "href": "hw/hw-1.html#part-1-exploring-nc-counties",
+    "title": "Homework 1",
+    "section": "Part 1: Exploring NC Counties",
+    "text": "Part 1: Exploring NC Counties\nAs a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\n\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\n\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:\n\n\ncounty: Name of county;\n\nland_area_m2: Land area of county in meters-squared, based on the 2020 census;\n\nland_area_mi2: Land area of county in miles-squared, based on the 2020 census;\n\npop_2020: Population of county, based on the 2020 Census;\n\npop_dens_2020: Population density calculated as population (pop_2020) divided by land area in miles-squared (people per mile-squared);\n\ncounty_type: Peer county type classification based on population characteristics, socioeconomic status, and geographic features used for grouping counties with similar demographic, social, and economic characteristics, allowing them to be compared and benchmarked against one another;\n\nmedian_hh_income: Median household income;\n\np_foreign_born: Percentage of population that is foreign-born;\n\np_child_poverty: Percentage of children living in poverty;\n\np_single_parent_hh: Percentage of households with children that are single-parent households;\n\np_broadband: Percentage of households with broadband internet access;\n\np_home_ownership: Percentage of households that are owner-occupied;\n\np_family_sustaining_wage: Percentage of adults that earn a family-sustaining wage – typically a wage that covers essential costs like housing, food, childcare, transportation, and healthcare for a family’s basic needs within a specific geographic area;\n\np_edu_lths: Percentage of 25-44-year-olds with less than a high school diploma;\n\np_edu_hsged: Percentage of 25-44-year-olds with a high school diploma or equivalent;\n\np_edu_scnd: Percentage of 25-44-year-olds with some college or an associate degree;\n\np_edu_ndc: Percentage of 25-44-year-olds with non-degree credentials – certifications, licenses, or other credentials that demonstrate specific skills or knowledge but do not confer a formal academic degree;\n\np_edu_assoc: Percentage of 25-44-year-olds with an associate degree;\n\np_edu_ba: Percentage of 25-44-year-olds with a bachelor’s degree;\n\np_edu_mapl: Percentage of 25-44-year-olds with a master’s, professional, or doctoral degree;\n\np_edu_hs_grad_rate: High school graduation rate;\n\np_edu_chronic_absent_rate: Chronic absenteeism rate.\n\nExercise 1\nMake a bar plot of the number of counties by county_type. What type of county is most common in North Carolina? What type of county is least common?\nExercise 2\nMake a boxplot of median household income (median_hh_income) by county_type. In 2-3 sentences, compare the distributions of median household income across the four county types touching on shape, center, spread, and any potential outliers.\nExercise 3\nMake a boxplot of the proportion of 25-44-year-olds with a master’s, professional, or doctoral degree (p_edu_mapl) by county_type. How do the median proportions compare across the four county types?\nExercise 4\nRecreate the following visualization that compares the distribution of home ownership (p_home_ownership) by county_type. Then, highlight one feature of home ownership that this plot reveals in 1-2 sentences.\n\n\n\n\n\n\n\nHints\n\n\n\n\n\n\nx-axis: You can modify the x-axis labels to be percentages in a scale_x_continuous() layer. The scales package offers a handy function for formatting percentages, label_percent(). You can use this in the labels argument of scale_x_continuous().\nColor palette: The scale_color_colorblind() and scale_fill_colorblind() functions from the ggthemes package provide a color palette that is friendly for individuals with color vision deficiencies.\nTransparancy: You should adjust the transparency of the filled density curves. You don’t have to worry about the exact transparency value, but you should try a few to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nLegend: You should move the legend to the top of the plot. You can do this in a theme() layer. See theme documentation to identify the argument you need to change to move the legend.\nAspect ratio: You can adjust the aspect ratio by setting the fig-asp option in the code cell. A smaller (closer to 0) value makes the plot shorter and wider, while a larger (closer to 1) value makes the plot square-ish.\nWidth: You can also adjust the width of the plot by setting the fig-width option in the code cell. A larger value makes the plot wider.\n\n\n\n\nExercise 5\n\nReport the number of rows and columns in nc_county.\n\nCreate a new variable called p_edu_he (short for “percentage of population with higher education”) that is the sum of the percentages of\n\n25-44-year-olds with some college or an associate degree (p_edu_scnd),\nnon-degree credentials (p_edu_ndc),\nan associate degree (p_edu_assoc),\na bachelor’s degree (p_edu_ba), and\na master’s, professional, or doctoral degree (p_edu_mapl).\n\nand store this variable in the nc_county data frame.\nThen, report the number of rows and columns in nc_county after adding this variable.\n\n\nIn a single pipeline, calculate the\n\nminimum,\nfirst quartile (25th percentile),\nmedian (50th percentile),\nmean,\nthird quartile (75th percentile), and\nmaximum\n\nof p_edu_he.\n\nIn a single pipeline, calculate the same statistics as in the previous part, but for each county_type.\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nIf you don’t create the new variable p_edu_he in part (b), you will not be able to answer the remaining parts of this question or any of the remaining questions on the homework.\nTherefore, here is a quick check to make sure you created the variable correctly – after creating the variable, run the following code:\n\nnc_county |&gt; \n  select(p_edu_he) |&gt; \n  slice_head(n = 3)\n\nYou should see the following output:\n# A tibble: 3 × 1\n  p_edu_he\n     &lt;dbl&gt;\n1    0.615\n2    0.525\n3    0.525\nIf you do not see this output, please revisit part (b) of this question and make sure you created the variable correctly. Ask for help on Ed or in office hours if you need assistance.\n\n\n\nExercise 6\nRe-create the following plot that shows the distribution of p_edu_he by county_type.\n\n\n\n\n\n\n\nTip\n\n\n\n\n\n\nx-axis: Same hint as before.\nPoints: The points are drawn with the geom_beeswarm() function from the ggbeeswarm package.\nOutliers: The outliers in the box plots are drawn as open circles. You can specify this with the outlier.shape argument in geom_boxplot(). You can also adjust the size of the outliers with the outlier.size argument. The ggplot2 aesthetic specifications documentation has a list of shape names you can use for help.\nColor palette: The colors for the box plots are manually specified in a scale_color_manual() layer. You do not need to worry about the exact colors, but you should try to get close, e.g., use blue-ish colors for Rural counties, red-ish for Suburban, and brown-ish for Urban. You can use HEX codes for colors or look up named colors in R in the R colors cheatsheet\nTransparency: You should adjust the transparency of the box plots. You don’t have to worry about the exact transparency value, but you should try to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nAspect ratio and width: You can adjust the aspect ratio and width of your plot in your rendered document by setting fig-asp and fig-width options in the code cell.\n\n\n\n\nExercise 7\nCreate a scatter plot with percentage of 25-44 year olds with higher education (p_edu_he) on the x-axis and median household income (median_hh_income) on the y-axis. Describe the relationship between these two variables. In your description, make sure to comment on the direction, form, strength, and any unusual observations.\nRequirements for the plot:\n\nThe x-axis should be formatted as percentages, e.g., 30%, not 0.3;\nThe y-axis should be formatted as dollar amounts, e.g., $40,000, not 4e+04.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
   },
   {
-    "objectID": "ae/ae-03-icecover.html#model-summary",
-    "href": "ae/ae-03-icecover.html#model-summary",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Model summary",
-    "text": "Model summary\n\nDisplay the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.\n\n\ntidy(ice_temp_fit)\n\n# A tibble: 2 × 5\n  term            estimate std.error statistic  p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       148.        7.77     19.1  1.38e-53\n2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9\n\n\n\nWrite out your model using mathematical notation.\n\n\\[\n\\widehat{ice~duration}=148.11-6.18\\times temp\n\\]\n\n\nWhat is the interpretation of the estimated coefficients?\n\nIf the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;\nIf the temperature increases by 1 degree celcius, this predicts a 6.18 day decrease in ice duration, on average."
+    "objectID": "hw/hw-1.html#part-2-ims-exercises",
+    "href": "hw/hw-1.html#part-2-ims-exercises",
+    "title": "Homework 1",
+    "section": "Part 2: IMS exercises",
+    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 8\nIMS Chapter 1 exercises, #4: Cheaters, study components.\nExercise 9\nIMS Chapter 1 exercises, #14: UN Votes.\nExercise 10\nIMS Chapter 1 exercises, #16: Shows on Netflix.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
   },
   {
-    "objectID": "ae/ae-03-icecover.html#prediction",
-    "href": "ae/ae-03-icecover.html#prediction",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Prediction",
-    "text": "Prediction\nBefore, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.\n\nFirst, use R as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:\n\n\n148.109981 - 6.181554 * 7\n\n[1] 104.8391\n\n148.109981 - 6.181554 * 10\n\n[1] 86.29444\n\n148.109981 - 6.181554 * 12\n\n[1] 73.93133\n\n\n\nSecond, use the predict function to perform the same calculation. You should get the same numbers (aside from rounding error).\n\n\nnew_lakes &lt;- tibble(annual_avg_temp = c(7, 10, 12))\n\npredict(ice_temp_fit, new_data = new_lakes)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 105. \n2  86.3\n3  73.9"
-  },
-  {
-    "objectID": "ae/ae-03-icecover.html#correlation",
-    "href": "ae/ae-03-icecover.html#correlation",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Correlation",
-    "text": "Correlation\nWe can also assess correlation between two quantitative variables.\n\nWhat is correlation? What are values correlation can take?\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\nWhat is the correlation between temperature and ice duration?\n\n\nicecover |&gt;\n  summarize(\n    r = cor(annual_avg_temp, ice_duration)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 -0.332"
-  },
-  {
-    "objectID": "ae/ae-03-icecover.html#fitting-other-models",
-    "href": "ae/ae-03-icecover.html#fitting-other-models",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Fitting other models",
-    "text": "Fitting other models\nWe can fit more models than just a straight line. Change the plotting code from earlier to use method = \"loess\". What is different from the plot created before?\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"loess\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "objectID": "hw/hw-1.html#submission",
+    "href": "hw/hw-1.html#submission",
+    "title": "Homework 1",
+    "section": "Submission",
+    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 1"
+    ]
   },
   {
     "objectID": "hw/hw-2.html",
@@ -4477,59 +4483,60 @@
     ]
   },
   {
-    "objectID": "hw/hw-1.html",
-    "href": "hw/hw-1.html",
-    "title": "Homework 1",
+    "objectID": "ae/ae-03-icecover.html",
+    "href": "ae/ae-03-icecover.html",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
     "section": "",
-    "text": "On this first homework, you’ll continue to practice data visualization and summarization using the North Carolina counties data from Lab 1. At the end, you’ll dip into the textbook a little bit and think about some conceptual questions. Along the way, we’ll ask you to get a little fancier with the plots, which will require some extra packages:\nlibrary(tidyverse)\nlibrary(scales)    # for better axis labels\nlibrary(ggthemes)  # for additional color palettes",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
+    "text": "The data for this application exercise comes from the lterdatasampler package. The mission of the Long Term Ecological Research program (LTER) Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”\nSpecifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature."
   },
   {
-    "objectID": "hw/hw-1.html#setup",
-    "href": "hw/hw-1.html#setup",
-    "title": "Homework 1",
-    "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
+    "objectID": "ae/ae-03-icecover.html#getting-started",
+    "href": "ae/ae-03-icecover.html#getting-started",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Getting started",
+    "text": "Getting started\nPackages\nWe will use the tidyverse package for data visualization and wrangling and the tidymodels package for modeling.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\n\nData\nThe data can be found in the data folder; it’s called icecover.csv.\n\nicecover &lt;- read_csv(\"data/icecover.csv\")\n\nThe data dictionary is below:\n\n\n\n\n\n\nVariable Name\nDescription\n\n\n\nlakeid\nLake name\n\n\nice_on\nDate of freeze of lake\n\n\nice_off\nDate of ice breakup of lake\n\n\nice_duration\nNumber of days between the freeze and breakup dates of each lake\n\n\nyear\nYear of observation\n\n\nannual_avg_temp\nAnnual average air temperature (°C)"
   },
   {
-    "objectID": "hw/hw-1.html#part-1-exploring-nc-counties",
-    "href": "hw/hw-1.html#part-1-exploring-nc-counties",
-    "title": "Homework 1",
-    "section": "Part 1: Exploring NC Counties",
-    "text": "Part 1: Exploring NC Counties\nAs a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\n\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\n\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:\n\n\ncounty: Name of county;\n\nland_area_m2: Land area of county in meters-squared, based on the 2020 census;\n\nland_area_mi2: Land area of county in miles-squared, based on the 2020 census;\n\npop_2020: Population of county, based on the 2020 Census;\n\npop_dens_2020: Population density calculated as population (pop_2020) divided by land area in miles-squared (people per mile-squared);\n\ncounty_type: Peer county type classification based on population characteristics, socioeconomic status, and geographic features used for grouping counties with similar demographic, social, and economic characteristics, allowing them to be compared and benchmarked against one another;\n\nmedian_hh_income: Median household income;\n\np_foreign_born: Percentage of population that is foreign-born;\n\np_child_poverty: Percentage of children living in poverty;\n\np_single_parent_hh: Percentage of households with children that are single-parent households;\n\np_broadband: Percentage of households with broadband internet access;\n\np_home_ownership: Percentage of households that are owner-occupied;\n\np_family_sustaining_wage: Percentage of adults that earn a family-sustaining wage – typically a wage that covers essential costs like housing, food, childcare, transportation, and healthcare for a family’s basic needs within a specific geographic area;\n\np_edu_lths: Percentage of 25-44-year-olds with less than a high school diploma;\n\np_edu_hsged: Percentage of 25-44-year-olds with a high school diploma or equivalent;\n\np_edu_scnd: Percentage of 25-44-year-olds with some college or an associate degree;\n\np_edu_ndc: Percentage of 25-44-year-olds with non-degree credentials – certifications, licenses, or other credentials that demonstrate specific skills or knowledge but do not confer a formal academic degree;\n\np_edu_assoc: Percentage of 25-44-year-olds with an associate degree;\n\np_edu_ba: Percentage of 25-44-year-olds with a bachelor’s degree;\n\np_edu_mapl: Percentage of 25-44-year-olds with a master’s, professional, or doctoral degree;\n\np_edu_hs_grad_rate: High school graduation rate;\n\np_edu_chronic_absent_rate: Chronic absenteeism rate.\n\nExercise 1\nMake a bar plot of the number of counties by county_type. What type of county is most common in North Carolina? What type of county is least common?\nExercise 2\nMake a boxplot of median household income (median_hh_income) by county_type. In 2-3 sentences, compare the distributions of median household income across the four county types touching on shape, center, spread, and any potential outliers.\nExercise 3\nMake a boxplot of the proportion of 25-44-year-olds with a master’s, professional, or doctoral degree (p_edu_mapl) by county_type. How do the median proportions compare across the four county types?\nExercise 4\nRecreate the following visualization that compares the distribution of home ownership (p_home_ownership) by county_type. Then, highlight one feature of home ownership that this plot reveals in 1-2 sentences.\n\n\n\n\n\n\n\nHints\n\n\n\n\n\n\nx-axis: You can modify the x-axis labels to be percentages in a scale_x_continuous() layer. The scales package offers a handy function for formatting percentages, label_percent(). You can use this in the labels argument of scale_x_continuous().\nColor palette: The scale_color_colorblind() and scale_fill_colorblind() functions from the ggthemes package provide a color palette that is friendly for individuals with color vision deficiencies.\nTransparancy: You should adjust the transparency of the filled density curves. You don’t have to worry about the exact transparency value, but you should try a few to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nLegend: You should move the legend to the top of the plot. You can do this in a theme() layer. See theme documentation to identify the argument you need to change to move the legend.\nAspect ratio: You can adjust the aspect ratio by setting the fig-asp option in the code cell. A smaller (closer to 0) value makes the plot shorter and wider, while a larger (closer to 1) value makes the plot square-ish.\nWidth: You can also adjust the width of the plot by setting the fig-width option in the code cell. A larger value makes the plot wider.\n\n\n\n\nExercise 5\n\nReport the number of rows and columns in nc_county.\n\nCreate a new variable called p_edu_he (short for “percentage of population with higher education”) that is the sum of the percentages of\n\n25-44-year-olds with some college or an associate degree (p_edu_scnd),\nnon-degree credentials (p_edu_ndc),\nan associate degree (p_edu_assoc),\na bachelor’s degree (p_edu_ba), and\na master’s, professional, or doctoral degree (p_edu_mapl).\n\nand store this variable in the nc_county data frame.\nThen, report the number of rows and columns in nc_county after adding this variable.\n\n\nIn a single pipeline, calculate the\n\nminimum,\nfirst quartile (25th percentile),\nmedian (50th percentile),\nmean,\nthird quartile (75th percentile), and\nmaximum\n\nof p_edu_he.\n\nIn a single pipeline, calculate the same statistics as in the previous part, but for each county_type.\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nIf you don’t create the new variable p_edu_he in part (b), you will not be able to answer the remaining parts of this question or any of the remaining questions on the homework.\nTherefore, here is a quick check to make sure you created the variable correctly – after creating the variable, run the following code:\n\nnc_county |&gt; \n  select(p_edu_he) |&gt; \n  slice_head(n = 3)\n\nYou should see the following output:\n# A tibble: 3 × 1\n  p_edu_he\n     &lt;dbl&gt;\n1    0.615\n2    0.525\n3    0.525\nIf you do not see this output, please revisit part (b) of this question and make sure you created the variable correctly. Ask for help on Ed or in office hours if you need assistance.\n\n\n\nExercise 6\nRe-create the following plot that shows the distribution of p_edu_he by county_type.\n\n\n\n\n\n\n\nTip\n\n\n\n\n\n\nx-axis: Same hint as before.\nPoints: The points are drawn with the geom_beeswarm() function from the ggbeeswarm package.\nOutliers: The outliers in the box plots are drawn as open circles. You can specify this with the outlier.shape argument in geom_boxplot(). You can also adjust the size of the outliers with the outlier.size argument. The ggplot2 aesthetic specifications documentation has a list of shape names you can use for help.\nColor palette: The colors for the box plots are manually specified in a scale_color_manual() layer. You do not need to worry about the exact colors, but you should try to get close, e.g., use blue-ish colors for Rural counties, red-ish for Suburban, and brown-ish for Urban. You can use HEX codes for colors or look up named colors in R in the R colors cheatsheet\nTransparency: You should adjust the transparency of the box plots. You don’t have to worry about the exact transparency value, but you should try to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nAspect ratio and width: You can adjust the aspect ratio and width of your plot in your rendered document by setting fig-asp and fig-width options in the code cell.\n\n\n\n\nExercise 7\nCreate a scatter plot with percentage of 25-44 year olds with higher education (p_edu_he) on the x-axis and median household income (median_hh_income) on the y-axis. Describe the relationship between these two variables. In your description, make sure to comment on the direction, form, strength, and any unusual observations.\nRequirements for the plot:\n\nThe x-axis should be formatted as percentages, e.g., 30%, not 0.3;\nThe y-axis should be formatted as dollar amounts, e.g., $40,000, not 4e+04.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
+    "objectID": "ae/ae-03-icecover.html#visualizing-the-model",
+    "href": "ae/ae-03-icecover.html#visualizing-the-model",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\nWe’re going to investigate the relationship between ice_duration and annual_avg_temp.\n\nCreate an appropriate plot to investigate this relationship. Add appropriate labels to the plot.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n\n\n\n\n\n\n\nIf you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?\nNow, let R draw the line for you. Refer to the documentation at https://ggplot2.tidyverse.org/reference/geom_smooth.html. Specifically, refer to the method section.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWhat types of questions can this plot help answer?\n\nHow does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?\n\nWe can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?\n\nAt 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data."
   },
   {
-    "objectID": "hw/hw-1.html#part-2-ims-exercises",
-    "href": "hw/hw-1.html#part-2-ims-exercises",
-    "title": "Homework 1",
-    "section": "Part 2: IMS exercises",
-    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 8\nIMS Chapter 1 exercises, #4: Cheaters, study components.\nExercise 9\nIMS Chapter 1 exercises, #14: UN Votes.\nExercise 10\nIMS Chapter 1 exercises, #16: Shows on Netflix.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
+    "objectID": "ae/ae-03-icecover.html#model-fitting",
+    "href": "ae/ae-03-icecover.html#model-fitting",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model fitting",
+    "text": "Model fitting\nFit a model to predict fish weights from their heights.\n\nice_temp_fit &lt;- linear_reg() |&gt;\n  fit(ice_duration ~ annual_avg_temp, data = icecover)\n\nice_temp_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = ice_duration ~ annual_avg_temp, data = data)\n\nCoefficients:\n    (Intercept)  annual_avg_temp  \n        148.110           -6.182"
   },
   {
-    "objectID": "hw/hw-1.html#submission",
-    "href": "hw/hw-1.html#submission",
-    "title": "Homework 1",
-    "section": "Submission",
-    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
+    "objectID": "ae/ae-03-icecover.html#model-summary",
+    "href": "ae/ae-03-icecover.html#model-summary",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model summary",
+    "text": "Model summary\n\nDisplay the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.\n\n\ntidy(ice_temp_fit)\n\n# A tibble: 2 × 5\n  term            estimate std.error statistic  p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       148.        7.77     19.1  1.38e-53\n2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9\n\n\n\nWrite out your model using mathematical notation.\n\n\\[\n\\widehat{ice~duration}=148.11-6.18\\times temp\n\\]\n\n\nWhat is the interpretation of the estimated coefficients?\n\nIf the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;\nIf the temperature increases by 1 degree celcius, this predicts a 6.18 day decrease in ice duration, on average."
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#prediction",
+    "href": "ae/ae-03-icecover.html#prediction",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Prediction",
+    "text": "Prediction\nBefore, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.\n\nFirst, use R as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:\n\n\n148.109981 - 6.181554 * 7\n\n[1] 104.8391\n\n148.109981 - 6.181554 * 10\n\n[1] 86.29444\n\n148.109981 - 6.181554 * 12\n\n[1] 73.93133\n\n\n\nSecond, use the predict function to perform the same calculation. You should get the same numbers (aside from rounding error).\n\n\nnew_lakes &lt;- tibble(annual_avg_temp = c(7, 10, 12))\n\npredict(ice_temp_fit, new_data = new_lakes)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 105. \n2  86.3\n3  73.9"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#correlation",
+    "href": "ae/ae-03-icecover.html#correlation",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Correlation",
+    "text": "Correlation\nWe can also assess correlation between two quantitative variables.\n\nWhat is correlation? What are values correlation can take?\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\nWhat is the correlation between temperature and ice duration?\n\n\nicecover |&gt;\n  summarize(\n    r = cor(annual_avg_temp, ice_duration)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 -0.332"
+  },
+  {
+    "objectID": "ae/ae-03-icecover.html#fitting-other-models",
+    "href": "ae/ae-03-icecover.html#fitting-other-models",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Fitting other models",
+    "text": "Fitting other models\nWe can fit more models than just a straight line. Change the plotting code from earlier to use method = \"loess\". What is different from the plot created before?\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"loess\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
     "objectID": "lab/lab-2.html",

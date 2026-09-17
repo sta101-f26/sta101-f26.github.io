@@ -308,7 +308,6 @@ window.Quarto = {
 <a href="#linear-regression-with-one-categorical-predictor" id="toc-linear-regression-with-one-categorical-predictor" class="nav-link" data-scroll-target="#linear-regression-with-one-categorical-predictor">Linear regression with one categorical predictor</a>
   <ul class="collapse">
 <li><a href="#new-question" id="toc-new-question" class="nav-link" data-scroll-target="#new-question">New question</a></li>
-  <li><a href="#participate" id="toc-participate" class="nav-link" data-scroll-target="#participate">Participate 📱💻</a></li>
   <li><a href="#scatterplot-possible-but-not-so-good" id="toc-scatterplot-possible-but-not-so-good" class="nav-link" data-scroll-target="#scatterplot-possible-but-not-so-good">Scatterplot: possible, but not so good</a></li>
   <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot">Boxplot</a></li>
   <li><a href="#density-plot" id="toc-density-plot" class="nav-link" data-scroll-target="#density-plot">Density plot</a></li>
@@ -324,8 +323,8 @@ window.Quarto = {
   <li><a href="#models-with-categorical-predictors" id="toc-models-with-categorical-predictors" class="nav-link" data-scroll-target="#models-with-categorical-predictors">Models with categorical predictors</a></li>
   <li><a href="#in-general" id="toc-in-general" class="nav-link" data-scroll-target="#in-general">In general</a></li>
   <li><a href="#changing-the-baseline-level" id="toc-changing-the-baseline-level" class="nav-link" data-scroll-target="#changing-the-baseline-level">Changing the baseline level</a></li>
-  <li><a href="#participate-1" id="toc-participate-1" class="nav-link" data-scroll-target="#participate-1">Participate 📱💻</a></li>
-  <li><a href="#participate-2" id="toc-participate-2" class="nav-link" data-scroll-target="#participate-2">Participate 📱💻</a></li>
+  <li><a href="#changing-the-baseline-level-1" id="toc-changing-the-baseline-level-1" class="nav-link" data-scroll-target="#changing-the-baseline-level-1">Changing the baseline level</a></li>
+  <li><a href="#another-way-to-tell" id="toc-another-way-to-tell" class="nav-link" data-scroll-target="#another-way-to-tell">Another way to tell</a></li>
   </ul>
 </li>
   <li>
@@ -365,7 +364,7 @@ window.Quarto = {
   <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next time</a></li>
   </ul>
 </li>
-  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="06-mlr-2-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="06-mlr-1-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -551,26 +550,8 @@ window.Quarto = {
 <pre><code>[1] "Biscoe"    "Dream"     "Torgersen"</code></pre>
 </div>
 </div>
-</section><section id="participate" class="level2 xsmall"><h2 class="xsmall anchored" data-anchor-id="participate">Participate 📱💻</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<div class="wooclap">
-<p>Determine whether each of the following plot types would be an appropriate choice for visualizing the relationship between body weight and island of penguins.</p>
-<div class="wooclap-choices">
-<ul>
-<li><p>Scatterplot</p></li>
-<li><p>Box plot</p></li>
-<li><p>Density plot</p></li>
-<li><p>Violin plot</p></li>
-<li><p>Bar plot</p></li>
-<li><p>Stacked bar plot</p></li>
-</ul>
-</div>
-</div>
-</div><div class="column" style="width:30%;">
-
-</div>
-</div>
+<p>. . .</p>
+<p>How should we visualize?</p>
 </section><section id="scatterplot-possible-but-not-so-good" class="level2"><h2 class="anchored" data-anchor-id="scatterplot-possible-but-not-so-good">Scatterplot: possible, but not so good</h2>
 <div class="task">
 <p>Visualize the relationship between body weight and island of penguins. Also calculate the average body weight per island.</p>
@@ -861,73 +842,57 @@ We’re not animals. We have technology!
 </div>
 </section><section id="changing-the-baseline-level" class="level2"><h2 class="anchored" data-anchor-id="changing-the-baseline-level">Changing the baseline level</h2>
 <ul>
-<li><p>By default, R uses the first level of a categorical variable as the baseline level. this is often the first alphabetically, but make sure you check!</p></li>
+<li><p>By default, R uses the first <em>level</em> of a categorical variable as the baseline level. This is often the first alphabetically, but make sure you check!</p></li>
 <li><p>We can change the baseline level by reordering the levels of the categorical variable.</p></li>
-</ul></section><section id="participate-1" class="level2 xsmall"><h2 class="xsmall anchored" data-anchor-id="participate-1">Participate 📱💻</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<div class="wooclap">
-<p>What function goes in the blank to make “Dream” the baseline level in the <code>island</code> variable?</p>
+</ul></section><section id="changing-the-baseline-level-1" class="level2"><h2 class="anchored" data-anchor-id="changing-the-baseline-level-1">Changing the baseline level</h2>
+<p>What is the baseline right now?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">|&gt;</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">island =</span> <span class="fu">___</span>(island, <span class="st">"Dream"</span>)</span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="wooclap-choices">
-<ul>
-<li><code>level_reorder</code></li>
-<li><code>fct_relevel</code></li>
-<li><code>fct_reorder</code></li>
-<li><code>str_relevel</code></li>
-</ul>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">$</span><span class="va">island</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Biscoe"    "Dream"     "Torgersen"</code></pre>
 </div>
 </div>
-</div><div class="column" style="width:30%;">
-
-</div>
-</div>
-</section><section id="participate-2" class="level2 xsmall"><h2 class="xsmall anchored" data-anchor-id="participate-2">Participate 📱💻</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<div class="wooclap">
-<p>What is the baseline level of <code>island</code> in the following model??</p>
+<p>. . .</p>
+<p>Change it:</p>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">&lt;-</span> <span class="va">penguins</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">mutate</span><span class="op">(</span></span>
+<span>    island <span class="op">=</span> <span class="fu">fct_relevel</span><span class="op">(</span><span class="va">island</span>, <span class="st">"Dream"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>. . .</p>
+<p>What is the baseline now?</p>
+<div class="cell">
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">$</span><span class="va">island</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Dream"     "Biscoe"    "Torgersen"</code></pre>
+</div>
+</div>
+</section><section id="another-way-to-tell" class="level2"><h2 class="anchored" data-anchor-id="another-way-to-tell">Another way to tell</h2>
+<div class="cell">
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">island</span>, data <span class="op">=</span> <span class="va">penguins</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">tidy</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 5
-  term         estimate std.error statistic   p.value
-  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
-1 (Intercept)   3706.        87.7   42.3    3.64e-137
-2 islandBiscoe  1010.       100.    10.1    4.66e- 21
-3 islandDream      6.53     104.     0.0627 9.50e-  1</code></pre>
+  term            estimate std.error statistic   p.value
+  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)      3713.        56.2   66.0    1.44e-195
+2 islandBiscoe     1003.        74.2   13.5    1.42e- 33
+3 islandTorgersen    -6.53     104.    -0.0627 9.50e-  1</code></pre>
 </div>
 </div>
-<div class="wooclap-choices">
-<ul>
-<li>Biscoe</li>
-<li>Dream</li>
-<li>Torgersen</li>
-<li>Cannot tell from the output</li>
-</ul>
-</div>
-</div>
-</div><div class="column" style="width:30%;">
-
-</div>
-</div>
+<p>Whichever level <em>is not</em> listed is treated as the baseline.</p>
 </section></section><section id="linear-regression-with-one-numerical-and-one-categorical-predictor" class="level1"><h1>Linear regression with one numerical and one categorical predictor</h1>
 <section id="three-variables-on-one-2d-plot" class="level2"><h2 class="anchored" data-anchor-id="three-variables-on-one-2d-plot">Three variables on one 2D plot</h2>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">penguins</span>, </span>
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">penguins</span>, </span>
 <span>  <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">flipper_length_mm</span>, y <span class="op">=</span> <span class="va">body_mass_g</span>, color <span class="op">=</span> <span class="va">island</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
@@ -955,7 +920,7 @@ We’re not animals. We have technology!
 </div>
 </section><section id="the-additive-model-parallel-lines-one-for-each-island-1" class="level2 small scrollable"><h2 class="small scrollable anchored" data-anchor-id="the-additive-model-parallel-lines-one-for-each-island-1">The additive model: parallel lines, one for each island</h2>
 <div class="cell">
-<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">+</span> <span class="va">island</span>, data <span class="op">=</span> <span class="va">penguins</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">tidy</span><span class="op">(</span><span class="va">bm_fl_island_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1012,7 +977,7 @@ We’re not animals. We have technology!
 <p>Either way, same slope, so the lines are parallel.</p>
 </section><section id="the-interaction-model-different-lines-for-each-island" class="level2 medium scrollable"><h2 class="medium scrollable anchored" data-anchor-id="the-interaction-model-different-lines-for-each-island">The interaction model: different lines for each island</h2>
 <div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span></span>
+<details class="code-fold"><summary>Code</summary><div class="sourceCode" id="cb42"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span></span>
 <span>  <span class="va">penguins</span>, </span>
 <span>  <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">flipper_length_mm</span>, y <span class="op">=</span> <span class="va">body_mass_g</span>, color <span class="op">=</span> <span class="va">island</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
@@ -1029,7 +994,7 @@ We’re not animals. We have technology!
 </div>
 </section><section id="the-interaction-model-different-lines-for-each-island-1" class="level2 medium scrollable"><h2 class="medium scrollable anchored" data-anchor-id="the-interaction-model-different-lines-for-each-island-1">The interaction model: different lines for each island</h2>
 <div class="cell">
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_int_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_int_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">*</span> <span class="va">island</span>, data <span class="op">=</span> <span class="va">penguins</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">tidy</span><span class="op">(</span><span class="va">bm_fl_island_int_fit</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">select</span><span class="op">(</span><span class="va">term</span>, <span class="va">estimate</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1086,14 +1051,14 @@ We’re not animals. We have technology!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="prediction-on-biscoe-island-1" class="level2"><h2 class="anchored" data-anchor-id="prediction-on-biscoe-island-1">Prediction on Biscoe island</h2>
 <div class="cell">
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  flipper_length_mm <span class="op">=</span> <span class="fl">205</span>,</span>
 <span>  island <span class="op">=</span> <span class="st">"Biscoe"</span></span>
 <span><span class="op">)</span></span>
@@ -1113,14 +1078,14 @@ We’re not animals. We have technology!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="prediction-on-dream-island-1" class="level2"><h2 class="anchored" data-anchor-id="prediction-on-dream-island-1">Prediction on Dream island</h2>
 <div class="cell">
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  flipper_length_mm <span class="op">=</span> <span class="fl">205</span>,</span>
 <span>  island <span class="op">=</span> <span class="st">"Dream"</span></span>
 <span><span class="op">)</span></span>
@@ -1140,14 +1105,14 @@ We’re not animals. We have technology!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-33-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="prediction-on-torgersen-island-1" class="level2"><h2 class="anchored" data-anchor-id="prediction-on-torgersen-island-1">Prediction on Torgersen island</h2>
 <div class="cell">
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  flipper_length_mm <span class="op">=</span> <span class="fl">205</span>,</span>
 <span>  island <span class="op">=</span> <span class="st">"Torgersen"</span></span>
 <span><span class="op">)</span></span>
@@ -1166,7 +1131,7 @@ We’re not animals. We have technology!
 </section></section><section id="linear-regression-with-many-numerical-predictors" class="level1"><h1>Linear regression with many numerical predictors</h1>
 <section id="multiple-numerical-predictors" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="multiple-numerical-predictors">Multiple numerical predictors</h2>
 <div class="cell">
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_bl_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_bl_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">+</span> <span class="va">bill_length_mm</span>, data <span class="op">=</span> <span class="va">penguins</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">tidy</span><span class="op">(</span><span class="va">bm_fl_bl_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1198,7 +1163,7 @@ We’re not animals. We have technology!
 </div>
 </section><section id="prediction-2" class="level2"><h2 class="anchored" data-anchor-id="prediction-2">Prediction</h2>
 <div class="cell">
-<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_penguin</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  flipper_length_mm <span class="op">=</span> <span class="fl">200</span>,</span>
 <span>  bill_length_mm <span class="op">=</span> <span class="fl">45</span></span>
 <span><span class="op">)</span></span>
@@ -1219,7 +1184,7 @@ We’re not animals. We have technology!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-36-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1229,7 +1194,7 @@ We’re not animals. We have technology!
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="06-mlr-1_files/figure-revealjs/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
