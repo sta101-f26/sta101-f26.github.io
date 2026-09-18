@@ -4328,42 +4328,66 @@
     "href": "lab/lab-3.html",
     "title": "Lab 3",
     "section": "",
-    "text": "In this lab you’ll “make up” data for an outcome variable to match certain criteria, and then visualize and summarize the relationship between your outcome and predictor variables as well as fit a model to evaluate whether the made up data meets the criteria you set out to achieve.\nYour starting point will be this data frame, which contains only the predictor variable x:\nour_data &lt;- tibble(x = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))\nour_data\n\n# A tibble: 10 × 1\n       x\n   &lt;dbl&gt;\n 1     1\n 2     2\n 3     3\n 4     4\n 5     5\n 6     6\n 7     7\n 8     8\n 9     9\n10    10\nYour goal is to “make up” the outcome variable y and add it to the data frame. You want to do this in such a way that when you fit a linear regression model predicting y from x, the following are true about the model:"
+    "text": "In this lab you’ll “make up” data for an outcome variable to match certain criteria, and then visualize and summarize the relationship between your outcome and predictor variables as well as fit a model to evaluate whether the made up data meets the criteria you set out to achieve.\nYour starting point will be this data frame, which contains only the predictor variable x:\nour_data &lt;- tibble(x = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))\nour_data\n\n# A tibble: 10 × 1\n       x\n   &lt;dbl&gt;\n 1     1\n 2     2\n 3     3\n 4     4\n 5     5\n 6     6\n 7     7\n 8     8\n 9     9\n10    10\nYour goal is to “make up” the outcome variable y and add it to the data frame. You want to do this in such a way that when you fit a linear regression model predicting y from x, the following are true about the model:",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "lab/lab-3.html#setup",
     "href": "lab/lab-3.html#setup",
     "title": "Lab 3",
     "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates."
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the lab folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the authors so it lists yourself and your teammates.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "lab/lab-3.html#task-1",
     "href": "lab/lab-3.html#task-1",
     "title": "Lab 3",
     "section": "Task 1",
-    "text": "Task 1\nMake up the values for y in the data frame above so that the linear regression model predicting y from x meets the criteria specified in the introduction. Add these values to the data frame our_data and display the updated data frame.\n\n\n\n\n\n\nTip\n\n\n\nTask 1 will require some trial and error, creativity, and patience. Specifically, it will require writing and testing the code for Tasks 2 and 3 multiple times until you get the desired results."
+    "text": "Task 1\nMake up the values for y in the data frame above so that the linear regression model predicting y from x meets the criteria specified in the introduction. Add these values to the data frame our_data and display the updated data frame.\n\n\n\n\n\n\nTip\n\n\n\nTask 1 will require some trial and error, creativity, and patience. Specifically, it will require writing and testing the code for Tasks 2 and 3 multiple times until you get the desired results.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "lab/lab-3.html#task-2",
     "href": "lab/lab-3.html#task-2",
     "title": "Lab 3",
     "section": "Task 2",
-    "text": "Task 2\nVisualize the relationship between x and y using a scatter plot with a regression line. Comment on how the plot supports the criteria specified in the introduction."
+    "text": "Task 2\nVisualize the relationship between x and y using a scatter plot with a regression line. Comment on how the plot supports the criteria specified in the introduction.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "lab/lab-3.html#task-3",
     "href": "lab/lab-3.html#task-3",
     "title": "Lab 3",
     "section": "Task 3",
-    "text": "Task 3\nFit a linear regression model predicting y from x. Display the model coefficients and the R-squared value from the model summary. Comment on how the model coefficients and R-squared value support the criteria specified in the introduction."
+    "text": "Task 3\nFit a linear regression model predicting y from x. Display the model coefficients and the R-squared value from the model summary. Comment on how the model coefficients and R-squared value support the criteria specified in the introduction.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "lab/lab-3.html#submission",
     "href": "lab/lab-3.html#submission",
     "title": "Lab 3",
     "section": "Submission",
-    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
+    "text": "Submission\nYou collaborated with your team, but now everyone submits individually:\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
   },
   {
     "objectID": "ae/ae-04-penguins.html",
@@ -4426,6 +4450,41 @@
       "Homeworks",
       "Homework 1"
     ]
+  },
+  {
+    "objectID": "hw/hw-3.html",
+    "href": "hw/hw-3.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "XXX\nlibrary(tidyverse)\nlibrary(tidymodels)"
+  },
+  {
+    "objectID": "hw/hw-3.html#setup",
+    "href": "hw/hw-3.html#setup",
+    "title": "Homework 2",
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this."
+  },
+  {
+    "objectID": "hw/hw-3.html#part-1",
+    "href": "hw/hw-3.html#part-1",
+    "title": "Homework 2",
+    "section": "Part 1",
+    "text": "Part 1\nXXX\nExercise 1"
+  },
+  {
+    "objectID": "hw/hw-3.html#part-2-ims-exercises",
+    "href": "hw/hw-3.html#part-2-ims-exercises",
+    "title": "Homework 2",
+    "section": "Part 2: IMS exercises",
+    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 2"
+  },
+  {
+    "objectID": "hw/hw-3.html#submission",
+    "href": "hw/hw-3.html#submission",
+    "title": "Homework 2",
+    "section": "Submission",
+    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
   },
   {
     "objectID": "hw/hw-2.html",
@@ -4730,7 +4789,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04  🧊 ae 03  🫵 practice!\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n🔬 lab 02\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n🛝 slides 05  🎶 notes 05  📈 play!\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n🛝 slides 06  🎶 notes 06  🐧 ae 04\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04  🧊 ae 03  🫵 practice!\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n🔬 lab 02\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n🛝 slides 05  🎶 notes 05  📈 play!\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n🛝 slides 06  🎶 notes 06  🐧 ae 04\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n🔬 lab 03\n\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 Multiple linear regression\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Multiple linear regression\n\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nHW 4 @ 10 AM  Lab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\n\n\n\nThu, Oct 8\n📝 Midterm\n\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
