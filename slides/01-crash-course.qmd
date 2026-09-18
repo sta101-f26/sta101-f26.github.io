@@ -435,7 +435,7 @@ Or can we?
 
 ## Back to the minimum wage {.scrollable}
 
-![](images/01/card-krueger.jpg){fig-align="center"}
+![](images/01/card-krueger.jpeg){fig-align="center"}
 
 ## Card and Krueger (1994 AER)
 
