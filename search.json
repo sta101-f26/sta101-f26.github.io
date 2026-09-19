@@ -2930,7 +2930,7 @@
     "href": "slides/01-crash-course-slides.html#anyway-we-have-the-data",
     "title": "All of STA 101 in 75 minutes",
     "section": "Anyway, we have the data!",
-    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
+    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\nRows: 351 Columns: 13\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): chain, state\ndbl (11): id, co_owned, emp_diff, wage_st, wage_st2, hrsopen, hrsopen2, fte,...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
   },
   {
     "objectID": "slides/01-crash-course-slides.html#aside-variable-assignment--",
@@ -3728,7 +3728,7 @@
     "href": "slides/01-crash-course.html#anyway-we-have-the-data",
     "title": "All of STA 101 in 75 minutes",
     "section": "Anyway, we have the data!",
-    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
+    "text": "Anyway, we have the data!\nBehold, your second spreadsheet:\n\ncard_krueger &lt;- read_csv(\"data/card-krueger.csv\")\n\nRows: 351 Columns: 13\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): chain, state\ndbl (11): id, co_owned, emp_diff, wage_st, wage_st2, hrsopen, hrsopen2, fte,...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ncard_krueger\n\n# A tibble: 351 × 13\n      id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte\n   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;\n 1    56 Wendy's        1 PA       -14      5        5.25    12       12    34  \n 2    61 Wendy's        1 PA        11.5    5.5      4.75    12       12    24  \n 3   445 Burger…        0 PA       -41.5    5        4.75    18       18    70.5\n 4   451 Burger…        0 PA        13      5        5       24       24    23.5\n 5   455 KFC            1 PA         0      5.25     5       10       11    11  \n 6   458 KFC            1 PA        -0.5    5        5       10       10.5   9  \n 7   462 Roy's          1 PA         2      5        4.75    12.5     12    15.5\n 8   468 Burger…        0 PA       -29      5        5       18       18    58  \n 9   469 Burger…        0 PA         4      5        4.5     18       18    26.5\n10   470 Burger…        0 PA        -2.5    5.5      4.75    18       18    28.5\n# ℹ 341 more rows\n# ℹ 3 more variables: fte2 &lt;dbl&gt;, meal_price &lt;dbl&gt;, meal_price2 &lt;dbl&gt;"
   },
   {
     "objectID": "slides/01-crash-course.html#aside-variable-assignment--",
@@ -4454,37 +4454,57 @@
   {
     "objectID": "hw/hw-3.html",
     "href": "hw/hw-3.html",
-    "title": "Homework 2",
+    "title": "Homework 3",
     "section": "",
-    "text": "XXX\nlibrary(tidyverse)\nlibrary(tidymodels)"
+    "text": "This homework will give you a workout with all of the linear regression ideas we’ve studied so far.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "hw/hw-3.html#setup",
     "href": "hw/hw-3.html#setup",
-    "title": "Homework 2",
+    "title": "Homework 3",
     "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this."
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
   },
   {
-    "objectID": "hw/hw-3.html#part-1",
-    "href": "hw/hw-3.html#part-1",
-    "title": "Homework 2",
-    "section": "Part 1",
-    "text": "Part 1\nXXX\nExercise 1"
+    "objectID": "hw/hw-3.html#part-1-credit-cards",
+    "href": "hw/hw-3.html#part-1-credit-cards",
+    "title": "Homework 3",
+    "section": "Part 1: credit cards",
+    "text": "Part 1: credit cards\nIn this part you will analyze a small dataset on personal finances:\n\ncredit &lt;- read_csv(\"data/credit.csv\")\n\nEach row is an American adult, and the variables are as follows:\n\n\n\n\n\n\nVariable\nDescription\n\n\n\nbalance\nCredit card balance in $\n\n\nincome\nIncome in $1,000\n\n\nstudent_status\nWhether the individual is a student (Student) or not (Not student)\n\n\nmarriage_status\nWhether the individual is a married (Married) or not (Not married)\n\n\nlimit\nCredit limit\n\n\nmarriage_student\n4-level categorical variable that mixes and matches marriage and student status\n\n\n\nOur goal is to understand how well a person’s income predicts their credit card balance, and we want to know how this relationship varies according to the person’s marriage and student status.\nExercise 1 (visualize and summarize)\n\nCreate a scatter plot visualizing income and balance, and include on your scatter plot the least squares line;\nWrite a single data pipeline that computes:\n\nThe means and standard deviations of the two variables;\nThe correlation between the two variables;\nThe slope and intercept of the least squares line in your plot. You should do this using the formulas from lecture that involve the five summaries above.\n\n\nExercise 2 (simple linear regression)\n\nUse the commands from tidymodels to fit the simple linear regression model that predicts balance from income. Make sure you store this model fit by giving it a useful name. Then display the regression output and verify that your slope and intercept estimates are the same as the ones from the previous exercise;\nInterpret the slope and the intercept estimates, and comment about whether or not the intercept estimate is meaningful in the context of the application.\nExercise 3 (“simple” linear regression)\n\nFit the linear model that predicts balance from marriage_student only. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nIn a single pipeline, compute the average balance within each level of marriage_student. Do these averages agree with the estimates from the model you just fit?\nExercise 4 (multiple linear regression 1)\n\nFit the additive model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nWhat credit card balance does this model predict for a married non-student whose income is $70,000?\nExercise 5 (multiple linear regression 2)\n\nCreate a scatter plot visualizing income and balance. Color the points on the scatter plot according to the levels of marriage_student, and add to the plot a different best fit line for each of those groups;\nFit the interaction model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model.\nExercise 6 (selection)\nYou just fit four separate models, but each one is meant to predict the same response variable: credit card balance. Which of these four models is “best”? Please provide a thorough explanation of why you made your choice.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
   },
   {
-    "objectID": "hw/hw-3.html#part-2-ims-exercises",
-    "href": "hw/hw-3.html#part-2-ims-exercises",
-    "title": "Homework 2",
-    "section": "Part 2: IMS exercises",
-    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 2"
+    "objectID": "hw/hw-3.html#part-2-think-about-it",
+    "href": "hw/hw-3.html#part-2-think-about-it",
+    "title": "Homework 3",
+    "section": "Part 2: think about it",
+    "text": "Part 2: think about it\nThis exercise does not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the question in full sentences.\nExercise 7\nImagine we wish to study the relationship between the salary of high school teachers and the SAT scores of their students. So we collect data on a bunch of schools, and for each school we record average teacher salary and average SAT score, as well as a categorical variable indicating whether taking the SAT is common or not at that school.\nAs we saw, there are many models that we could fit in an attempt to summarize the relationship. Here are two:\n\nHow do these model fits differ? Can you speculate about why they differ? Which of these two models do you think is more appropriate for faithfully describing the relationship?",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "hw/hw-3.html#submission",
     "href": "hw/hw-3.html#submission",
-    "title": "Homework 2",
+    "title": "Homework 3",
     "section": "Submission",
-    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages."
+    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
   },
   {
     "objectID": "hw/hw-2.html",

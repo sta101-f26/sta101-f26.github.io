@@ -518,7 +518,7 @@ John Zito
 
 <img data-src="images/01/angrist.png" class="r-stretch"></section><section id="back-to-the-minimum-wage" class="slide level2 scrollable"><h2>Back to the minimum wage</h2>
 
-<img data-src="images/01/card-krueger.jpg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="card-and-krueger-1994-aer" class="slide level2"><h2>Card and Krueger (1994 AER)</h2>
+<img data-src="images/01/card-krueger.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section><section id="card-and-krueger-1994-aer" class="slide level2"><h2>Card and Krueger (1994 AER)</h2>
 
 <img data-src="images/01/card-krueger-abstract.png" class="r-stretch"></section><section id="card-and-kruegers-main-idea" class="slide level2"><h2>Card and Krueger’s main idea</h2>
 <ul>
@@ -553,9 +553,18 @@ John Zito
 </section><section id="anyway-we-have-the-data" class="slide level2 small"><h2>Anyway, we have the data!</h2>
 <p>Behold, your second spreadsheet:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span>
-<span id="cb2-2"><a></a></span>
-<span id="cb2-3"><a></a>card_krueger</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 351 Columns: 13
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): chain, state
+dbl (11): id, co_owned, emp_diff, wage_st, wage_st2, hrsopen, hrsopen2, fte,...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>card_krueger</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 351 × 13
       id chain   co_owned state emp_diff wage_st wage_st2 hrsopen hrsopen2   fte
@@ -578,7 +587,7 @@ John Zito
 </h2>
 <p>You just saw me do this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>card_krueger <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/card-krueger.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">This is called <em>variable assignment</em>. We’re saving an object so we can use it later;</li>
@@ -596,11 +605,11 @@ John Zito
 </ul></section><section id="the-dimensions" class="slide level2"><h2>The dimensions</h2>
 <p>How many rows and columns?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">nrow</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">nrow</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 351</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ncol</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ncol</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 13</code></pre>
 </div>
@@ -628,7 +637,7 @@ John Zito
 </ul></section><section id="your-first-taste-of-variable-types" class="slide level2 medium"><h2>Your first taste of variable types</h2>
 <p>The <code>chain</code> variable is an example of a <em>categorical</em> variable:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>card_krueger<span class="sc">$</span>chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>card_krueger<span class="sc">$</span>chain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -639,7 +648,7 @@ John Zito
 <div class="fragment">
 <p>The <code>meal_price</code> variable is an example of a <em>numerical</em> variable:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>card_krueger<span class="sc">$</span>meal_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>card_krueger<span class="sc">$</span>meal_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -655,8 +664,8 @@ John Zito
 </section><section id="babys-first-summary" class="slide level2"><h2>Baby’s first summary</h2>
 <p>How many restaurants do we observe in each state?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
-<span id="cb13-2"><a></a>  <span class="fu">count</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a></a>  <span class="fu">count</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 2
   state     n
@@ -667,8 +676,8 @@ John Zito
 </div>
 </section><section id="what-restaurant-chains-are-included" class="slide level2"><h2>What restaurant chains are included?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
-<span id="cb15-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>card_krueger <span class="sc">|&gt;</span> </span>
+<span id="cb17-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
   chain           n
@@ -700,15 +709,15 @@ John Zito
 <div class="columns">
 <div class="column fragment" style="width:55%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 </div><div class="column fragment" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
-<span id="cb19-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
+<span id="cb21-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -731,8 +740,8 @@ John Zito
 <p>These are the overall totals. How do we get the totals <em>within</em> the states?</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb21-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb23-2"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 2
@@ -748,8 +757,8 @@ John Zito
 <p>Make it a <em>grouped</em> data frame:</p>
 <div class="cell columns column-output-location" wrap="false">
 <div class="column">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb23-2"><a></a>  <span class="fu">group_by</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a></a>  <span class="fu">group_by</span>(state)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 </div></div>
@@ -757,9 +766,9 @@ John Zito
 <p>Subsequent calculations will now be done within the groups (eg. states):</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb24-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb24-3"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a></a>  <span class="fu">count</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 3
@@ -780,12 +789,12 @@ John Zito
 <p>To directly compare, let’s look at <em>proportions</em>:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb26-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb26-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
-<span id="cb26-4"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb26-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
-<span id="cb26-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb28-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb28-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb28-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb28-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
@@ -806,13 +815,13 @@ John Zito
 <p>Let’s make it easier to compare by eye:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb28-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb28-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
-<span id="cb28-4"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb28-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
-<span id="cb28-6"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb28-7"><a></a>  <span class="fu">arrange</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb30-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb30-3"><a></a>  <span class="fu">count</span>(chain) <span class="sc">|&gt;</span></span>
+<span id="cb30-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-5"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb30-6"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb30-7"><a></a>  <span class="fu">arrange</span>(chain)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
@@ -835,11 +844,11 @@ John Zito
 <p>Start with a blank canvas:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">ggplot</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">ggplot</span>(card_krueger)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-19-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -848,12 +857,12 @@ John Zito
 <p>What variables are we looking at?</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb31" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb31-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb33-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-20-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -863,13 +872,13 @@ John Zito
 <p>What kind of plot for this <em>numerical</em> variable:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb32-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb32-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb34-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb34-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-21-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -878,13 +887,13 @@ John Zito
 <p>Another option:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb33-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb33-3"><a></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb35-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb35-3"><a></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-22-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -894,18 +903,18 @@ John Zito
 <p>Add labels:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb34-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb34-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb34-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb34-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb34-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb34-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb34-8"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb36-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb36-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb36-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb36-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb36-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb36-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb36-8"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-23-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -915,19 +924,19 @@ John Zito
 <p>Increase font size and give it a minimalist look:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb35-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
-<span id="cb35-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb35-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb35-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb35-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb35-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb35-8"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb35-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb37-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price)) <span class="sc">+</span> </span>
+<span id="cb37-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb37-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb37-5"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb37-6"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb37-7"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb37-8"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb37-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-24-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -936,20 +945,20 @@ John Zito
 <p>Distinguish the two states with color:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb36-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb36-3"><a></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
-<span id="cb36-4"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb36-5"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb36-6"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb36-7"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb36-8"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb36-9"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb36-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb38-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb38-3"><a></a>           <span class="at">color =</span> state)) <span class="sc">+</span> </span>
+<span id="cb38-4"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb38-5"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb38-6"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb38-7"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb38-8"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb38-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb38-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-25-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -958,21 +967,21 @@ John Zito
 <p>Shade (fill) beneath the curves:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb37" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb37-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb37-3"><a></a>           <span class="at">color =</span> state,</span>
-<span id="cb37-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
-<span id="cb37-5"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb37-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb37-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb37-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb37-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb37-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb37-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb39-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb39-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb39-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb39-5"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb39-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb39-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb39-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb39-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb39-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb39-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-26-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-26-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -981,21 +990,21 @@ John Zito
 <p>Make the color translucent:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb38" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
-<span id="cb38-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
-<span id="cb38-3"><a></a>           <span class="at">color =</span> state,</span>
-<span id="cb38-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
-<span id="cb38-5"><a></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb38-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb38-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
-<span id="cb38-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
-<span id="cb38-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
-<span id="cb38-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb38-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">ggplot</span>(card_krueger, </span>
+<span id="cb40-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> meal_price,</span>
+<span id="cb40-3"><a></a>           <span class="at">color =</span> state,</span>
+<span id="cb40-4"><a></a>           <span class="at">fill =</span> state)) <span class="sc">+</span> </span>
+<span id="cb40-5"><a></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb40-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb40-7"><a></a>    <span class="at">x =</span> <span class="st">"Price in USD ($)"</span>,</span>
+<span id="cb40-8"><a></a>    <span class="at">title =</span> <span class="st">"Meal prices prior to wage hike"</span>,</span>
+<span id="cb40-9"><a></a>    <span class="at">subtitle =</span> <span class="st">"Meal = soda, fries, entree"</span></span>
+<span id="cb40-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb40-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-27-1.png" width="960"></p>
+<figure><p><img data-src="01-crash-course_files/figure-html/unnamed-chunk-27-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1024,11 +1033,11 @@ John Zito
 </div></div>
 </section><section id="compare-hours-of-operation-prior-to-nj-hike" class="slide level2"><h2>Compare hours of operation (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section><section id="compare-starting-wage-prior-to-nj-hike" class="slide level2"><h2>Compare starting wage (prior to NJ hike)</h2>
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-28-1.png" width="672" class="r-stretch"></section><section id="compare-starting-wage-prior-to-nj-hike" class="slide level2"><h2>Compare starting wage (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section><section id="compare-number-of-workers-prior-to-nj-hike" class="slide level2"><h2>Compare number of workers (prior to NJ hike)</h2>
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-29-1.png" width="672" class="r-stretch"></section><section id="compare-number-of-workers-prior-to-nj-hike" class="slide level2"><h2>Compare number of workers (prior to NJ hike)</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section><section id="so-far-so-good" class="slide level2"><h2>So far so good</h2>
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-30-1.png" width="672" class="r-stretch"></section><section id="so-far-so-good" class="slide level2"><h2>So far so good</h2>
 <p>These data seem to pass the first sanity check: prior to “treatment,” the restaurants looked roughly comparable across the two states. What about after treatment?</p>
 </section><section id="the-emp_diff-variable" class="slide level2"><h2>The <code>emp_diff</code> variable</h2>
 <p>This is employment after the wage hike minus employment before the wage hike:</p>
@@ -1043,11 +1052,11 @@ John Zito
 <p>If the ECON 101 story is correct, we expect <code>emp_diff</code> to be lower on average for NJ than for PA.</p>
 </section><section id="so-how-about-it" class="slide level2"><h2>So how about it?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
-<span id="cb39-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb39-3"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb39-4"><a></a>    <span class="at">avg_emp_diff =</span> <span class="fu">mean</span>(emp_diff)</span>
-<span id="cb39-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>card_krueger <span class="sc">|&gt;</span></span>
+<span id="cb41-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb41-3"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb41-4"><a></a>    <span class="at">avg_emp_diff =</span> <span class="fu">mean</span>(emp_diff)</span>
+<span id="cb41-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 2
   state avg_emp_diff
@@ -1061,7 +1070,7 @@ John Zito
 </div>
 </section><section id="pics-or-it-didnt-happen" class="slide level2"><h2>Pics or it didn’t happen</h2>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section><section id="pause" class="slide level2"><h2>Pause</h2>
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-32-1.png" width="672" class="r-stretch"></section><section id="pause" class="slide level2"><h2>Pause</h2>
 <p>If the ECON 101 story is true, then the minimum wage hike should put NJ below PA, either adding fewer workers, or literally laying them off. Pictures and simple summaries are not showing that.</p>
 <p>Now what?</p>
 </section></section><section><section id="modeling" class="title-slide slide level1 center"><h1>4. Modeling</h1>
@@ -1074,7 +1083,7 @@ John Zito
 </ul></section><section id="what-do-i-mean-by-a-model" class="slide level2 medium"><h2>What do I mean by a “model”?</h2>
 <p>Think of the “line of best fit:”</p>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-33-1.png" width="672" class="r-stretch"><div class="fragment">
 <p>This is an example of a <em>linear regression model</em>. All of the models in our class will have this flavor.</p>
 </div>
 </section><section id="why-do-we-need-one-here" class="slide level2 medium"><h2>Why do we need one here?</h2>
@@ -1118,9 +1127,9 @@ T_i
 </ul></section><section id="estimating-the-model-in-r" class="slide level2 medium"><h2>Estimating the model in R</h2>
 <p>There’s that pipe again:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb41-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger) <span class="sc">|&gt;</span></span>
-<span id="cb41-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb43-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger) <span class="sc">|&gt;</span></span>
+<span id="cb43-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 5
   term         estimate std.error statistic p.value
@@ -1194,10 +1203,10 @@ T_i
 </div><div class="column fragment" style="width:50%;">
 <p>Rerun the regression and get a new estimate:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb44-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
-<span id="cb44-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
-<span id="cb44-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb46-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb46-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb46-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
   term         estimate std.error
@@ -1236,10 +1245,10 @@ T_i
 </div><div class="column fragment" style="width:50%;">
 <p>Rerun the regression and get a new estimate:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb47-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
-<span id="cb47-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
-<span id="cb47-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb49-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb49-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb49-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
   term         estimate std.error
@@ -1278,10 +1287,10 @@ T_i
 </div><div class="column fragment" style="width:50%;">
 <p>Rerun the regression and get a new estimate:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb50-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
-<span id="cb50-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
-<span id="cb50-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb52-2"><a></a>  <span class="fu">fit</span>(emp_diff <span class="sc">~</span> state <span class="sc">+</span> chain <span class="sc">+</span> co_owned, <span class="at">data =</span> card_krueger_new) <span class="sc">|&gt;</span></span>
+<span id="cb52-3"><a></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb52-4"><a></a>  <span class="fu">select</span>(term, estimate, std.error)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
   term         estimate std.error
@@ -1314,7 +1323,7 @@ T_i
 <img data-src="images/01/sampling-variation-8.png" class="r-stretch"></section><section id="the-sampling-distribution-for-our-example" class="slide level2"><h2>The sampling distribution for our example</h2>
 <p>What do you think? Are our conclusions reliable?</p>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-41-1.png" width="960" class="r-stretch"></section><section id="conclusion" class="slide level2"><h2>Conclusion</h2>
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-41-1.png" width="672" class="r-stretch"></section><section id="conclusion" class="slide level2"><h2>Conclusion</h2>
 <ul>
 <li class="fragment">Genuine uncertainty remains about the specific numerical value;
 <ul>
@@ -1325,7 +1334,7 @@ T_i
 </ul></section><section id="towards-quantifying-uncertainty" class="slide level2 medium"><h2>Towards quantifying uncertainty</h2>
 <p>What if our sampling distribution had looked like one of these?</p>
 
-<img data-src="01-crash-course_files/figure-revealjs/unnamed-chunk-42-1.png" width="1152" class="r-stretch"><div class="fragment">
+<img data-src="01-crash-course_files/figure-html/unnamed-chunk-42-1.png" width="1152" class="r-stretch"><div class="fragment">
 <p>Measuring the <em>spread</em> of the sampling distribution allows us to quantify uncertainty about the conclusions. That’s what the <em>standard error</em> does.</p>
 </div>
 </section><section id="reality-check-1" class="slide level2 medium"><h2>Reality check</h2>
@@ -1617,41 +1626,6 @@ T_i
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
