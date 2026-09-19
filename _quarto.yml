@@ -68,6 +68,8 @@ website:
             text: Homework 1
           - href: hw/hw-2.qmd
             text: Homework 2
+          - href: hw/hw-3.qmd
+            text: Homework 3
       - section: "Project"
       - section: "Exam Study Guides"
             
