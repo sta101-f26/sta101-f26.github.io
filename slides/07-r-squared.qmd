@@ -1,10 +1,10 @@
 ---
-title: "Model selection"
+title: "Goodness-of-fit"
 subtitle: "Lecture 7"
 date: "2026-09-22"
 format: 
   revealjs: 
-    output-file: 07-selection-slides.html
+    output-file: 07-r-squared-slides.html
     footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
     theme: slides.scss
     transition: fade
@@ -59,6 +59,8 @@ This is your *best guess* at the true regression function based on the noisy, me
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) + 
   geom_point() + 
   geom_smooth(method = "lm")
@@ -85,6 +87,8 @@ $$
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 
 new_penguin <- tibble(flipper_length_mm = 205)
 
@@ -125,6 +129,8 @@ predict(bm_fl_fit,
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 ggplot(
   penguins,
   aes(x = island, y = body_mass_g, color = island)
@@ -196,6 +202,8 @@ predict(bm_island_fit,
 #| label: additive-interaction-viz
 #| layout-ncol: 2
 #| echo: false
+#| message: false
+#| warning: false
 #| fig-asp: 1
 
 # Plot A
@@ -305,6 +313,8 @@ predict(bm_fl_island_int_fit,
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 plot3vars <- scatterplot3d(
   penguins[,c("bill_length_mm", "flipper_length_mm", "body_mass_g")],
   pch = 19, 
@@ -401,6 +411,8 @@ Same estimates, but different standard errors.
 ## The default picture
 
 ```{r}
+#| message: false
+#| warning: false
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = island)) + 
   geom_point() + 
   geom_smooth(method = "lm")
@@ -428,6 +440,7 @@ So what is it, actually?
 ## What is "goodness-of-fit"?
 
 ![](images/07/fit-comparison.png){fig-align="center"}
+
 
 - Quality of fit appears to have something to do with how "all over the place" the residuals are;
 - We want to quantify this intuition with a concrete numerical measure that we can use to rank competing models according to goodness-of-fit.
@@ -502,6 +515,8 @@ augment(bm_fl_fit, penguins) |>
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
 augment(bm_fl_fit, penguins) |>
   pivot_longer(
     cols = c(body_mass_g, .resid),
