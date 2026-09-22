@@ -1086,7 +1086,7 @@ Easy, right?
 
 ::::
 
-## Listing out all the possible models {.medium}
+## Listing out all the possible models {.medium .scrollable}
 
 ::: incremental
 - The penguins dataset has $p=6$ variables apart from body mass: species, island, bill length, bill depth, flipper length, and sex;
@@ -1108,8 +1108,8 @@ Easy, right?
 
 ::: column
 
-- If you have $p$ candidate predictors, then the set of all possible subsets you could include in a model grows very quickly;
-- In the modern era of "big data," 100 predictors is amateur hour, so literally enumerating the space of models, assigning a score to each, and picking the best becomes computationally difficult;
+- If you have $p$ candidate predictors, then the set of all possible subsets you could include in a model grows *very* quickly;
+- In the "big data" era, 100 predictors is amateur hour, so it becomes infeasible to fit every possible model; 
 - It pays to "search" through the space of models in a smarter, less brute-force way.
 
 :::
