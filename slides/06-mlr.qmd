@@ -1130,7 +1130,7 @@ arrows(-1, 0.95 * cepts[1] + slope * (-1), -1, 1.1 * cepts[3] + slope * (-1), lw
 
 #text(-4, 0.5*cepts[1] + 0.5*cepts[2], "I")
 text(-2, 0.5*cepts[1] + 0.5*cepts[2], expression(b[2]))
-text(-2, 0.5*cepts[1] + 0.5*cepts[3], expression(b[3]))
+text(-2, 0.5*cepts[1] + 0.5*cepts[3], expression("|"~b[3]~"|"))
 
 text(0.5, 2 + cepts[2] + slope * 0.5, expression(b[0]~" + "~b[2]))
 text(0.5, 2 + cepts[1] + slope * 0.5, expression(b[0]))
@@ -1267,7 +1267,7 @@ df
 :::: columns
 
 ::: column
-Fit the *additive* model:
+Fit the *interaction* model:
 
 ```{r}
 #| eval: false
