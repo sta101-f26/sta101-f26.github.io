@@ -4,7 +4,7 @@ subtitle: "Lecture 7"
 date: "2026-09-22"
 format: 
   revealjs: 
-    output-file: 07-selection.html
+    output-file: 07-selection-slides.html
     footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
     theme: slides.scss
     transition: fade
