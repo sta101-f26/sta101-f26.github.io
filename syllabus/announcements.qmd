@@ -3,6 +3,14 @@ title: "Support your classmates!"
 format: html
 ---
 
+{{< include announcements/sun-run.qmd >}}
+
+{{< include announcements/tech-for-change.qmd >}}
+
+{{< include announcements/fail-duke.qmd >}}
+
+{{< include announcements/duke-players-shorts-1.qmd >}}
+
 {{< include announcements/duke-music-day.qmd >}}
 
 {{< include announcements/chronicle.qmd >}}
