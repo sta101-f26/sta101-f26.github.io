@@ -955,3 +955,431 @@ Today we saw multiple models that are all attempting to do the same thing: predi
 - Which one is "best"?
 - What does "best" even mean?
 
+# The anatomy of the additive model
+
+```{r}
+#| label: anatomy-setup
+#| echo: false
+
+set.seed(1234567)
+my_colors <- c("red", "blue", "forestgreen")
+subsamps <- c(10, 20, 35)
+b0 <- 12 + c(2, 6, -3)
+b1 <- c(1, 5, -0.2)
+
+y <- c()
+x <- c()
+cl <- c()
+
+for(i in 1:length(my_colors)){
+  x_sub <- rnorm(subsamps[i], 4, 1)
+  y <- c(y, b0[i] + b1[i] * x_sub + rnorm(subsamps[i], 0, 1))
+  x <- c(x, x_sub)
+  cl <- c(cl, rep(my_colors[i], subsamps[i]))
+}
+
+df <- tibble(
+  x = x, y = y, color = fct_relevel(cl, my_colors)
+)
+df <- df[sample(1:nrow(df)), ]
+
+add_slope_wedge <- function(intercept, slope, x0,
+                            run = NULL,       # horizontal length of wedge
+                            cex = 1,          # text size
+                            col = "black",
+                            lwd = 2,
+                            label = TRUE) {
+
+  # If run not supplied, choose something that looks reasonable
+  if (is.null(run)) {
+    usr <- par("usr")              # current plot limits
+    run <- 0.08 * (usr[2] - usr[1])
+  }
+  
+  # Point on the line where wedge attaches
+  y0 <- intercept + slope * x0
+  
+  # End of horizontal "run"
+  x1 <- x0 + run
+  y1 <- y0
+  
+  # Vertical "rise"
+  rise <- slope * run
+  x2 <- x1
+  y2 <- y1 + rise
+  
+  # Draw the triangle edges
+  segments(x0, y0, x1, y1, col = col, lwd = lwd)  # run
+  segments(x1, y1, x2, y2, col = col, lwd = lwd)  # rise
+  segments(x0, y0, x2, y2, col = col, lwd = lwd)  # hypotenuse (optional but nice)
+  
+  # Optional labels
+  if (label) {
+    text((x0 + x1)/2, y0, "run", pos = 1, cex = cex, col = col)
+    text(x1, (y1 + y2)/2, "rise", pos = 4, cex = cex, col = col)
+  }
+}
+
+my_fit <- linear_reg() |>
+  fit(y ~ x + color, df) |>
+  tidy()
+
+cepts <- c(my_fit$estimate[1], my_fit$estimate[1] + my_fit$estimate[3], my_fit$estimate[1] + my_fit$estimate[4])
+slope <- my_fit$estimate[2]
+```
+
+## Toy dataset
+
+:::: columns
+
+::: column
+Consider this nonsense dataset with three variables:
+
+- `x`: numerical predictor;
+- `y`: numerical response;
+- `color`: categorical predictor with three levels (red, green, blue)
+:::
+
+:::column
+```{r}
+df
+```
+:::
+
+
+:::: 
+
+## Additive model
+
+
+:::: columns
+
+::: column
+Fit the *additive* model:
+
+```{r}
+#| eval: false
+linear_reg() |>
+  fit(y ~ x + color, df) |>
+  tidy()
+```
+:::
+
+:::column
+You get a table with the coefficient estimates:
+
+| `term` | `estimate` | 
+|---------|:-----|
+| `(Intercept)`      | $b_0$   |   
+| `x`     | $b_1$  |  
+| `colorblue`       | $b_2$   |   
+| `colorforestgreen`       | $b_3$    | 
+:::
+
+
+:::: 
+
+So `red` is apparently the *baseline* level.
+
+## The raw data
+
+```{r}
+#| echo: false
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-2, 1.4 * max(x)), ylim = c(-5, max(y)), cex = 1)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+```
+
+## Model fit: parallel lines, one for each group
+
+```{r}
+#| echo: false
+
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-2, 1.4 * max(x)), ylim = c(-5, max(y)), cex = 1)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+abline(a = cepts[1], b = slope, col = my_colors[1], lwd = 2)
+abline(a = cepts[2], b = slope, col = my_colors[2], lwd = 2)
+abline(a = cepts[3], b = slope, col = my_colors[3], lwd = 2)
+
+```
+
+## The gory details
+
+```{r}
+#| echo: false
+
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-2, 1.4 * max(x)), ylim = c(-5, max(y)), cex = 1)
+add_slope_wedge(cepts[1], slope, 7, label = FALSE)
+add_slope_wedge(cepts[2], slope, 7, label = FALSE)
+add_slope_wedge(cepts[3], slope, 7, label = FALSE)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+abline(a = cepts[1], b = slope, col = my_colors[1], lwd = 2)
+abline(a = cepts[2], b = slope, col = my_colors[2], lwd = 2)
+abline(a = cepts[3], b = slope, col = my_colors[3], lwd = 2)
+points(numeric(length(cepts)), 
+       cepts, 
+       cex = 2, pch = 19)
+arrows(-1, 0.95 * cepts[2] + slope * (-1), -1, 1.1 * cepts[1] + slope * (-1), lwd = 2, code = 3)
+arrows(-1, 0.95 * cepts[1] + slope * (-1), -1, 1.1 * cepts[3] + slope * (-1), lwd = 2, code = 3)
+#arrows(-3, 0.95 * cepts[2] + slope * (-3), -3, 1.1 * cepts[3] + slope * (-3), lwd = 2, code = 3) # the big arrow
+
+
+#text(0.5, 1.5 + cepts[2] + slope * 0.5, "IV")
+
+#text(-4, 0.5*cepts[1] + 0.5*cepts[2], "I")
+text(-2, 0.5*cepts[1] + 0.5*cepts[2], expression(b[2]))
+text(-2, 0.5*cepts[1] + 0.5*cepts[3], expression(b[3]))
+
+text(0.5, 2 + cepts[2] + slope * 0.5, expression(b[0]~" + "~b[2]))
+text(0.5, 2 + cepts[1] + slope * 0.5, expression(b[0]))
+text(0.5, 2 + cepts[3] + slope * 0.5, expression(b[0]~" + "~b[3]))
+
+text(7.5, cepts[2] + slope * 7 - 2, expression(b[1]))
+text(7.5, cepts[1] + slope * 7 - 2, expression(b[1]))
+text(7.5, cepts[3] + slope * 7 - 2, expression(b[1]))
+```
+
+## The gory details
+
+Best fit line for red:
+
+$$
+\hat{y}=b_0+b_1 x.
+$$
+
+Best fit line for blue:
+
+$$
+\hat{y}=(b_0 + b_2)+b_1 x.
+$$
+
+Best fit line for green:
+
+$$
+\hat{y}=(b_0 + b_3)+b_1 x.
+$$
+
+# The anatomy of the interaction model
+
+```{r}
+#| label: anatomy-setup-2
+#| echo: false
+#| fig-asp: 1
+
+set.seed(1234567)
+my_colors <- c("red", "blue", "forestgreen")
+my_shapes <- my_colors#c("square", "circle", "triangle")
+my_codes <- 15:17
+#lookup <- setNames(my_codes, my_shapes)
+#subsamps <- c(35, 20, 15)
+b0 <- 10 + c(0, 40, 15)
+b1 <- c(2, -2, 1)
+
+y <- c()
+x <- c()
+cl <- c()
+
+for(i in 1:length(my_shapes)){
+  x_sub <- rnorm(subsamps[i], 4, 1)
+  y <- c(y, b0[i] + b1[i] * x_sub + rnorm(subsamps[i], 0, 1.5))
+  x <- c(x, x_sub)
+  cl <- c(cl, rep(my_shapes[i], subsamps[i]))
+}
+
+df <- tibble(
+  x = x, y = y, color = fct_relevel(cl, my_shapes)
+)
+df <- df[sample(1:nrow(df)), ]
+
+
+add_slope_wedge <- function(intercept, slope, x0,
+                            run = NULL,       # horizontal length of wedge
+                            cex = 1,          # text size
+                            col = "black",
+                            lwd = 2,
+                            label = TRUE) {
+
+  # If run not supplied, choose something that looks reasonable
+  if (is.null(run)) {
+    usr <- par("usr")              # current plot limits
+    run <- 0.08 * (usr[2] - usr[1])
+  }
+  
+  # Point on the line where wedge attaches
+  y0 <- intercept + slope * x0
+  
+  # End of horizontal "run"
+  x1 <- x0 + run
+  y1 <- y0
+  
+  # Vertical "rise"
+  rise <- slope * run
+  x2 <- x1
+  y2 <- y1 + rise
+  
+  # Draw the triangle edges
+  segments(x0, y0, x1, y1, col = col, lwd = lwd)  # run
+  segments(x1, y1, x2, y2, col = col, lwd = lwd)  # rise
+  segments(x0, y0, x2, y2, col = col, lwd = lwd)  # hypotenuse (optional but nice)
+  
+  # Optional labels
+  if (label) {
+    text((x0 + x1)/2, y0, "run", pos = 1, cex = cex, col = col)
+    text(x1, (y1 + y2)/2, "rise", pos = 4, cex = cex, col = col)
+  }
+}
+
+my_fit <- linear_reg() |>
+  fit(y ~ x * color, df) |>
+  tidy()
+
+cepts <- c(my_fit$estimate[1], my_fit$estimate[1] + my_fit$estimate[3], my_fit$estimate[1] + my_fit$estimate[4])
+slopes <- c(my_fit$estimate[2], my_fit$estimate[2] + my_fit$estimate[5], my_fit$estimate[2] + my_fit$estimate[6])
+slope <- my_fit$estimate[2]
+```
+
+## Another toy dataset
+
+:::: columns
+
+::: column
+Consider this nonsense dataset with three variables:
+
+- `x`: numerical predictor;
+- `y`: numerical response;
+- `color`: categorical predictor with three levels (red, green, blue)
+:::
+
+:::column
+```{r}
+df
+```
+:::
+
+
+:::: 
+
+## Interaction model
+
+
+:::: columns
+
+::: column
+Fit the *additive* model:
+
+```{r}
+#| eval: false
+linear_reg() |>
+  fit(y ~ x * color, df) |>
+  tidy()
+```
+:::
+
+:::column
+You get a table with the coefficient estimates:
+
+| `term` | `estimate` | 
+|---------|:-----|
+| `(Intercept)`      | $b_0$   |   
+| `x`     | $b_1$  |  
+| `colorblue`       | $b_2$   |   
+| `colorforestgreen`       | $b_3$    |  
+| `x:colorblue`       | $b_4$    |   
+| `x:colorforestgreen`       | $b_5$    |  
+:::
+
+
+:::: 
+
+So `red` is apparently the *baseline* level.
+
+## The raw data
+
+
+```{r}
+#| echo: false
+par(mar = c(4, 4, 0.1, 0.1))
+
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-5, 1.1 * max(x)), ylim = c(-6, 1.3 * max(y)), cex = 1.5)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+```
+
+## Model fit: a line for each group, but crossing
+
+
+```{r}
+#| echo: false
+par(mar = c(4, 4, 0.1, 0.1))
+
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-5, 1.1 * max(x)), ylim = c(-6, 1.3 * max(y)), cex = 1.5)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+abline(a = cepts[1], b = slopes[1], lwd = 2, col = my_colors[1])
+abline(a = cepts[2], b = slopes[2], lwd = 2, col = my_colors[2])
+abline(a = cepts[3], b = slopes[3], lwd = 2, col = my_colors[3])
+```
+
+## The gory details
+
+
+```{r}
+#| echo: false
+par(mar = c(4, 4, 0.1, 0.1))
+
+#plot(x, y, pch = unname(lookup[cl]), xaxt = "n", yaxt = "n", bty = "n", xlim = c(-5, 1.1 * max(x)), ylim = c(-5, 1.3 * max(y)), cex = 1)
+plot(x, y, col = cl, pch = 19, xaxt = "n", yaxt = "n", bty = "n", xlim = c(-5, 1.1 * max(x)), ylim = c(-6, 1.3 * max(y)), cex = 1.5)
+add_slope_wedge(cepts[1], slopes[1], -5, label = FALSE)
+add_slope_wedge(cepts[2], slopes[2], -5, label = FALSE)
+add_slope_wedge(cepts[3], slopes[3], -5, label = FALSE)
+abline(v = 0, lwd = 2)
+abline(h = 0, lwd = 2)
+abline(a = cepts[1], b = slopes[1], lwd = 2, col = my_colors[1])
+abline(a = cepts[2], b = slopes[2], lwd = 2, col = my_colors[2])
+abline(a = cepts[3], b = slopes[3], lwd = 2, col = my_colors[3])
+points(numeric(length(cepts)), 
+       cepts, 
+       cex = 2, pch = 19)
+
+segments(rep(-300, length(cepts)), cepts, numeric(length(cepts)), cepts, lty = 2)
+
+arrows(-3, cepts[2], -3, cepts[1], lwd = 2, code = 3) # big arrow
+arrows(-1, cepts[1], -1, 0.95 * cepts[3] + slopes[3] * (-1), lwd = 2, code = 3) # bottom arrow
+#arrows(-1, 0.95 * cepts[2] + slopes[2] * (-1), -1, 1.1 * cepts[3] + slopes[3] * (-1), lwd = 2, code = 3)
+
+text(-5, 3 + cepts[1] + slopes[1] * (-5), expression(b[1]))
+text(-5, -3 + cepts[2] + slopes[2] * (-5), expression(b[1]~" + "~b[4]))
+text(-5, -3 + cepts[3] + slopes[3] * (-5), expression(b[1]~" + "~b[5]))
+
+text(-3.5, (cepts[2] + cepts[3]) / 2, expression(b[2]))
+
+#text(-1.75, (cepts[2] + cepts[3]) / 2, paste0(q_no + 5))
+text(-1.75, (cepts[1] + cepts[3]) / 2, expression(b[3]))
+
+text(0.5, 2 + cepts[2] + slope * 0.5, expression(b[0]~" + "~b[2]))
+text(0.5, 2 + cepts[3] + slope * 0.5, expression(b[0]~" + "~b[3]))
+text(0.5, 2 + cepts[1] + slope * 0.5, expression(b[0]))
+```
+
+
+## The gory details
+
+Best fit line for red:
+
+$$
+\hat{y}=b_0+b_1 x.
+$$
+
+Best fit line for blue:
+
+$$
+\hat{y}=(b_0 + b_2)+(b_1 + b_4)x.
+$$
+
+Best fit line for green:
+
+$$
+\hat{y}=(b_0 + b_3)+(b_1+b_5)x.
+$$
