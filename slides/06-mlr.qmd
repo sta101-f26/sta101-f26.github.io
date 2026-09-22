@@ -1,10 +1,10 @@
 ---
-title: "Multiple Linear Regression 1"
+title: "Multiple Linear Regression"
 subtitle: "Lecture 6"
 date: "2026-09-17"
 format: 
   revealjs: 
-    output-file: 06-mlr-1-slides.html
+    output-file: 06-mlr-slides.html
     footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
     theme: slides.scss
     transition: fade
