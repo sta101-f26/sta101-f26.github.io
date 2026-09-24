@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="John Zito">
+<meta name="dcterms.date" content="2026-09-24">
+<title>Model selection – STA 101 Fall 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+<meta property="og:title" content="Model selection – STA 101 Fall 2026">
+<meta property="og:description" content="Lecture 8">
+<meta property="og:image" content="https://sta101-f26.github.io/slides/images/08/occam.png">
+<meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="266">
+<meta property="og:image:width" content="480">
+</head>
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Model selection</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
+    <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
+    <a href="https://edstem.org/us/courses/101045/discussion" title="Ed Discussion" class="quarto-navigation-tool px-1" aria-label="Ed Discussion"><i class="bi bi-people"></i></a>
+    <a href="https://www.gradescope.com/courses/1345015" title="Gradescope" class="quarto-navigation-tool px-1" aria-label="Gradescope"><i class="bi bi-file-arrow-up"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check it out!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Syllabus</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments and grading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">University resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 3</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Homeworks</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 3</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Project</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Exam Study Guides</span></span>
+  </li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#last-time-r2-for-real" id="toc-last-time-r2-for-real" class="nav-link active" data-scroll-target="#last-time-r2-for-real">Last time: <span class="math inline">\(R^2\)</span> for real</a></li>
+  <li><a href="#last-time-penguins" id="toc-last-time-penguins" class="nav-link" data-scroll-target="#last-time-penguins">Last time: penguins</a></li>
+  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model selection</a></li>
+  <li><a href="#selection-criteria" id="toc-selection-criteria" class="nav-link" data-scroll-target="#selection-criteria">Selection criteria</a></li>
+  <li><a href="#tidymodels-reports-many-of-these-for-free" id="toc-tidymodels-reports-many-of-these-for-free" class="nav-link" data-scroll-target="#tidymodels-reports-many-of-these-for-free"><code>tidymodels</code> reports many of these for free</a></li>
+  <li><a href="#r2s-dirty-little-secret" id="toc-r2s-dirty-little-secret" class="nav-link" data-scroll-target="#r2s-dirty-little-secret"><span class="math inline">\(R^2\)</span>’s dirty little secret</a></li>
+  <li><a href="#adding-a-phony-variable" id="toc-adding-a-phony-variable" class="nav-link" data-scroll-target="#adding-a-phony-variable">Adding a phony variable</a></li>
+  <li><a href="#adjusted-r2" id="toc-adjusted-r2" class="nav-link" data-scroll-target="#adjusted-r2">Adjusted <span class="math inline">\(R^2\)</span></a></li>
+  <li><a href="#for-the-penguins" id="toc-for-the-penguins" class="nav-link" data-scroll-target="#for-the-penguins">For the penguins</a></li>
+  <li><a href="#balancing-fit-and-complexity" id="toc-balancing-fit-and-complexity" class="nav-link" data-scroll-target="#balancing-fit-and-complexity">Balancing fit and complexity</a></li>
+  <li><a href="#overfitting" id="toc-overfitting" class="nav-link" data-scroll-target="#overfitting">Overfitting</a></li>
+  <li><a href="#back-to-variable-selection" id="toc-back-to-variable-selection" class="nav-link" data-scroll-target="#back-to-variable-selection">Back to variable selection</a></li>
+  <li><a href="#listing-out-all-the-possible-models" id="toc-listing-out-all-the-possible-models" class="nav-link" data-scroll-target="#listing-out-all-the-possible-models">Listing out all the possible models</a></li>
+  <li><a href="#combinatorial-explosion" id="toc-combinatorial-explosion" class="nav-link" data-scroll-target="#combinatorial-explosion">Combinatorial explosion</a></li>
+  <li><a href="#backward-elimination" id="toc-backward-elimination" class="nav-link" data-scroll-target="#backward-elimination">Backward elimination</a></li>
+  <li><a href="#example-recall-the-cars" id="toc-example-recall-the-cars" class="nav-link" data-scroll-target="#example-recall-the-cars">Example: recall the cars</a></li>
+  <li><a href="#example-recall-the-cars-1" id="toc-example-recall-the-cars-1" class="nav-link" data-scroll-target="#example-recall-the-cars-1">Example: recall the cars</a></li>
+  <li><a href="#foreward-stepwise-regression" id="toc-foreward-stepwise-regression" class="nav-link" data-scroll-target="#foreward-stepwise-regression">Foreward stepwise regression</a></li>
+  <li>
+<a href="#a-new-application" id="toc-a-new-application" class="nav-link" data-scroll-target="#a-new-application">A new application</a>
+  <ul class="collapse">
+<li><a href="#a-girls-best-friend" id="toc-a-girls-best-friend" class="nav-link" data-scroll-target="#a-girls-best-friend">A girl’s best friend</a></li>
+  <li><a href="#a-game" id="toc-a-game" class="nav-link" data-scroll-target="#a-game">A game</a></li>
+  <li><a href="#the-4-cs" id="toc-the-4-cs" class="nav-link" data-scroll-target="#the-4-cs">The 4 Cs</a></li>
+  <li><a href="#what-do-these-things-mean" id="toc-what-do-these-things-mean" class="nav-link" data-scroll-target="#what-do-these-things-mean">What do these things mean?</a></li>
+  <li><a href="#what-do-these-things-mean-1" id="toc-what-do-these-things-mean-1" class="nav-link" data-scroll-target="#what-do-these-things-mean-1">What do these things mean?</a></li>
+  <li><a href="#we-have-some-data" id="toc-we-have-some-data" class="nav-link" data-scroll-target="#we-have-some-data">We have some data!</a></li>
+  </ul>
+</li>
+  <li><a href="#now-off-to-your-container" id="toc-now-off-to-your-container" class="nav-link" data-scroll-target="#now-off-to-your-container">Now, off to your container!</a></li>
+  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="08-selection-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Model selection</h1>
+<p class="subtitle lead">Lecture 8</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">John Zito </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University <br> STA 101 Fall 2026
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 24, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><section id="last-time-r2-for-real" class="level2"><h2 class="anchored" data-anchor-id="last-time-r2-for-real">Last time: <span class="math inline">\(R^2\)</span> for real</h2>
+<ul>
+<li>
+<span class="math inline">\(R^2\)</span> measures a model’s goodness-of-fit;</li>
+<li>
+<span class="math inline">\(R^2\)</span> is defined as the proportion of variation in the response variable explained by the model. So, one minus the proportion of variation <em>unexplained</em>:</li>
+</ul>
+<p><span class="math display">\[
+R^2=1-\frac{\text{var}(e_i)}{\text{var}(y_i)}.
+\]</span></p>
+<ul>
+<li>
+<span class="math inline">\(R^2=1\)</span> indicates perfect fit, <span class="math inline">\(R^2=0\)</span> indicates horrific fit, and everything in between. Like a “Rotten Tomatoes score” for your model.</li>
+</ul></section><section id="last-time-penguins" class="level2"><h2 class="anchored" data-anchor-id="last-time-penguins">Last time: penguins</h2>
+<p>We saw five different models all trying to predict the same thing:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span>, <span class="va">penguins</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">bm_island_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">island</span>, <span class="va">penguins</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">bm_fl_island_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">+</span> <span class="va">island</span>, <span class="va">penguins</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">bm_fl_island_int_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">*</span> <span class="va">island</span>, <span class="va">penguins</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">bm_fl_bl_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">+</span> <span class="va">bill_length_mm</span>, <span class="va">penguins</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="model-selection" class="level2"><h2 class="anchored" data-anchor-id="model-selection">Model selection</h2>
+<p><strong>Question</strong>: Given many competing models for <em>the same response</em>, which model is “best”? What does that even mean?</p>
+<p>. . .</p>
+<p><strong>Answer</strong>: Assign a “quality score” to each model, and pick the model with the best score:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Model</th>
+<th>Score</th>
+<th>Verdict</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Simple</td>
+<td>0.1</td>
+<td>❌</td>
+</tr>
+<tr class="even">
+<td>Additive</td>
+<td>0.5</td>
+<td>✅</td>
+</tr>
+<tr class="odd">
+<td>Interaction</td>
+<td>0.48</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p>. . .</p>
+<p><strong>Variable selection</strong>: all of our models were linear, and they differed only by which predictor variables are included. By ranking models by quality score and picking the “best” one, we can determine which predictors are the “most important” to include.</p>
+</section><section id="selection-criteria" class="level2"><h2 class="anchored" data-anchor-id="selection-criteria">Selection criteria</h2>
+<p>This is a big area of statistical research. There are loads of “quality scores” you could consider, and they prioritize different things: predictive accuracy, goodness-of-fit, simplicity, fairness, etc.</p>
+<ul>
+<li>
+<span class="math inline">\(R^2\)</span>;</li>
+<li>adjusted <span class="math inline">\(R^2\)</span>;</li>
+<li>Akaike Information criterion (AIC);</li>
+<li>Bayesian information criterion (BIC);</li>
+<li>… so many more</li>
+</ul>
+<p>We won’t go into detail, but you will if you keep studying statistics.</p>
+</section><section id="tidymodels-reports-many-of-these-for-free" class="level2"><h2 class="anchored" data-anchor-id="tidymodels-reports-many-of-these-for-free">
+<code>tidymodels</code> reports many of these for free</h2>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_fit</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">r.squared</span>, <span class="va">adj.r.squared</span>, <span class="va">AIC</span>, <span class="va">BIC</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 4
+  r.squared adj.r.squared   AIC   BIC
+      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     0.759         0.758 5063. 5074.</code></pre>
+</div>
+</div>
+</section><section id="r2s-dirty-little-secret" class="level2"><h2 class="anchored" data-anchor-id="r2s-dirty-little-secret">
+<span class="math inline">\(R^2\)</span>’s dirty little secret</h2>
+<p><span class="math inline">\(R^2\)</span> gives participation trophies. It <em>always</em> goes up when you add any new variable to the model, even if that variable is worthless.</p>
+</section><section id="adding-a-phony-variable" class="level2 medium"><h2 class="medium anchored" data-anchor-id="adding-a-phony-variable">Adding a phony variable</h2>
+<p>The original model fit:</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span>, <span class="va">penguins</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7589925</code></pre>
+</div>
+</div>
+<p>. . .</p>
+<p>Add a predictor that is literally just a bunch of random numbers:</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">noisy_penguins</span> <span class="op">&lt;-</span> <span class="va">penguins</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">mutate</span><span class="op">(</span></span>
+<span>    bullshit <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
+<span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">body_mass_g</span> <span class="op">~</span> <span class="va">flipper_length_mm</span> <span class="op">+</span> <span class="va">bullshit</span>, <span class="va">noisy_penguins</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7600283</code></pre>
+</div>
+</div>
+</section><section id="adjusted-r2" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="adjusted-r2">Adjusted <span class="math inline">\(R^2\)</span>
+</h2>
+<p>Because vanilla <span class="math inline">\(R^2\)</span> blithely rewards the addition of <em>any</em> variable, no matter how meaningless, you shouldn’t use it for model selection. Instead, use <em>adjusted</em> <span class="math inline">\(R^2\)</span>. The formula is in the textbook if you’re dying to know, but here’s the tea:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>adjusted <span class="math inline">\(R^2\)</span> penalizes the inclusion of unnecessary predictors;</li>
+<li>It prioritizes a <em>parsimonious model</em>:
+<ul class="incremental">
+<li>a model that fits/predicts well, <em>and</em>…</li>
+<li>a model that’s not too complicated (so our pea brains can still understand it);</li>
+</ul>
+</li>
+<li>Occam’s razor!</li>
+</ul>
+</div>
+<p>. . .</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/08/occam.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="for-the-penguins" class="level2"><h2 class="anchored" data-anchor-id="for-the-penguins">For the penguins</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_fit</span> <span class="op">|&gt;</span> <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">adj.r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7582837</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_island_fit</span> <span class="op">|&gt;</span> <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">adj.r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3899995</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_fit</span> <span class="op">|&gt;</span> <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">adj.r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7722296</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_island_int_fit</span> <span class="op">|&gt;</span> <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">adj.r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7825604</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bm_fl_bl_fit</span> <span class="op">|&gt;</span> <span class="fu">glance</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">pull</span><span class="op">(</span><span class="va">adj.r.squared</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7585415</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<p>Which model is “best”?</p>
+</section><section id="balancing-fit-and-complexity" class="level2"><h2 class="anchored" data-anchor-id="balancing-fit-and-complexity">Balancing fit and complexity</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>More complex models (i.e., models with more predictors) tend to fit the data at hand better, but may not generalize well to new data.</p></li>
+<li><p>Model selection criteria, like adjusted <span class="math inline">\(R^2\)</span>, help balance model fit and complexity to avoid overfitting by penalizing models with more predictors.</p></li>
+</ul>
+</div>
+</section><section id="overfitting" class="level2"><h2 class="anchored" data-anchor-id="overfitting">Overfitting</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Overfitting occurs when a model captures not only the underlying relationship between predictors and outcome but also the random noise in the data;</li>
+<li>Overfitted models tend to perform well on the observed data but poorly on new, unseen data.
+<ul class="incremental">
+<li>Good news: We have techniques to detect and prevent overfitting;</li>
+<li>Bad news: We won’t get into those until next week.</li>
+</ul>
+</li>
+</ul>
+</div>
+</section><section id="back-to-variable-selection" class="level2"><h2 class="anchored" data-anchor-id="back-to-variable-selection">Back to variable selection</h2>
+<div class="columns">
+<div class="column">
+<p>Given a set of competing models, all trying to predict the same response, we can line ’em up, compute <em>adjusted</em> <span class="math inline">\(R^2\)</span> for each model, and then pick the model with the highest score.</p>
+<p>Easy, right?</p>
+</div>
+<div class="fragment column">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/07/rick-james.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="listing-out-all-the-possible-models" class="level2 medium scrollable"><h2 class="medium scrollable anchored" data-anchor-id="listing-out-all-the-possible-models">Listing out all the possible models</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>The penguins dataset has <span class="math inline">\(p=6\)</span> variables apart from body mass: species, island, bill length, bill depth, flipper length, and sex;</li>
+<li>How many models is that (ignoring the possibility of interaction, which makes things worse):
+<ul class="incremental">
+<li>1 “empty” model: include no predictors;</li>
+<li>6 “simple” models: include only one predictor;</li>
+<li>15 two-predictor models;</li>
+<li>20 three-predictor models;</li>
+<li>15 four-predictor models;</li>
+<li>6 five-predictor models;</li>
+<li>1 “full” model: include all predictors.</li>
+</ul>
+</li>
+<li>That’s <span class="math inline">\(2^6=64\)</span> models in total you have to consider. Not the end of the world if you have a computer, but it gets worse…</li>
+</ul>
+</div>
+</section><section id="combinatorial-explosion" class="level2 medium"><h2 class="medium anchored" data-anchor-id="combinatorial-explosion">Combinatorial explosion</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>If you have <span class="math inline">\(p\)</span> candidate predictors, then the set of all possible subsets you could include in a model grows <em>very</em> quickly;</li>
+<li>In the “big data” era, 100 predictors is amateur hour, so it becomes infeasible to fit every possible model;</li>
+<li>It pays to “search” through the space of models in a smarter, less brute-force way.</li>
+</ul>
+</div><div class="column">
+<table class="caption-top table">
+<thead><tr class="header">
+<th><span class="math inline">\(p\)</span></th>
+<th># of models = <span class="math inline">\(2^p\)</span>
+</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>32</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>1024</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>1048576</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>1073741824</td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td><span class="math inline">\(\approx 1.098\times 10^{12}\)</span></td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td><span class="math inline">\(\approx 1.13\times 10^{15}\)</span></td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td><span class="math inline">\(\approx 1.27\times 10^{30}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section><section id="backward-elimination" class="level2 medium"><h2 class="medium anchored" data-anchor-id="backward-elimination">Backward elimination</h2>
+<p>Start with the <em>full model</em> (the model that includes all potential predictor variables). Variables are eliminated one-at-a-time from the model until we cannot improve the model any further.</p>
+<p><strong>Procedure</strong>:</p>
+<ol type="1">
+<li>Start with a model that has all predictors we consider and compute the adjusted <span class="math inline">\(R^2\)</span>.</li>
+<li>Next fit every possible model with 1 fewer predictor.</li>
+<li>Compare adjusted <span class="math inline">\(R^2\)</span>s to select the best model (highest adjusted <span class="math inline">\(R^2\)</span>) with 1 fewer predictor.</li>
+<li>Repeat steps 2 and 3 until adjusted <span class="math inline">\(R^2\)</span> no longer increases.</li>
+</ol></section><section id="example-recall-the-cars" class="level2 small scrollable"><h2 class="small scrollable anchored" data-anchor-id="example-recall-the-cars">Example: recall the cars</h2>
+<div class="cell">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mtcars</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></pre>
+</div>
+</div>
+</section><section id="example-recall-the-cars-1" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="example-recall-the-cars-1">Example: recall the cars</h2>
+<p>(AIC is an alternative selection criterion. Lower is better.)</p>
+<div class="cell">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">backward_model</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">mpg</span> <span class="op">~</span> <span class="va">.</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">backward_model</span> <span class="op">&lt;-</span> <span class="fu">stats</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/stats/step.html">step</a></span><span class="op">(</span><span class="va">backward_model</span>, direction <span class="op">=</span> <span class="st">"backward"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Start:  AIC=70.9
+mpg ~ cyl + disp + hp + drat + wt + qsec + vs + am + gear + carb
+
+       Df Sum of Sq    RSS    AIC
+- cyl   1    0.0799 147.57 68.915
+- vs    1    0.1601 147.66 68.932
+- carb  1    0.4067 147.90 68.986
+- gear  1    1.3531 148.85 69.190
+- drat  1    1.6270 149.12 69.249
+- disp  1    3.9167 151.41 69.736
+- hp    1    6.8399 154.33 70.348
+- qsec  1    8.8641 156.36 70.765
+&lt;none&gt;              147.49 70.898
+- am    1   10.5467 158.04 71.108
+- wt    1   27.0144 174.51 74.280
+
+Step:  AIC=68.92
+mpg ~ disp + hp + drat + wt + qsec + vs + am + gear + carb
+
+       Df Sum of Sq    RSS    AIC
+- vs    1    0.2685 147.84 66.973
+- carb  1    0.5201 148.09 67.028
+- gear  1    1.8211 149.40 67.308
+- drat  1    1.9826 149.56 67.342
+- disp  1    3.9009 151.47 67.750
+- hp    1    7.3632 154.94 68.473
+&lt;none&gt;              147.57 68.915
+- qsec  1   10.0933 157.67 69.032
+- am    1   11.8359 159.41 69.384
+- wt    1   27.0280 174.60 72.297
+
+Step:  AIC=66.97
+mpg ~ disp + hp + drat + wt + qsec + am + gear + carb
+
+       Df Sum of Sq    RSS    AIC
+- carb  1    0.6855 148.53 65.121
+- gear  1    2.1437 149.99 65.434
+- drat  1    2.2139 150.06 65.449
+- disp  1    3.6467 151.49 65.753
+- hp    1    7.1060 154.95 66.475
+&lt;none&gt;              147.84 66.973
+- am    1   11.5694 159.41 67.384
+- qsec  1   15.6830 163.53 68.200
+- wt    1   27.3799 175.22 70.410
+
+Step:  AIC=65.12
+mpg ~ disp + hp + drat + wt + qsec + am + gear
+
+       Df Sum of Sq    RSS    AIC
+- gear  1     1.565 150.09 63.457
+- drat  1     1.932 150.46 63.535
+&lt;none&gt;              148.53 65.121
+- disp  1    10.110 158.64 65.229
+- am    1    12.323 160.85 65.672
+- hp    1    14.826 163.35 66.166
+- qsec  1    26.408 174.94 68.358
+- wt    1    69.127 217.66 75.350
+
+Step:  AIC=63.46
+mpg ~ disp + hp + drat + wt + qsec + am
+
+       Df Sum of Sq    RSS    AIC
+- drat  1     3.345 153.44 62.162
+- disp  1     8.545 158.64 63.229
+&lt;none&gt;              150.09 63.457
+- hp    1    13.285 163.38 64.171
+- am    1    20.036 170.13 65.466
+- qsec  1    25.574 175.67 66.491
+- wt    1    67.572 217.66 73.351
+
+Step:  AIC=62.16
+mpg ~ disp + hp + wt + qsec + am
+
+       Df Sum of Sq    RSS    AIC
+- disp  1     6.629 160.07 61.515
+&lt;none&gt;              153.44 62.162
+- hp    1    12.572 166.01 62.682
+- qsec  1    26.470 179.91 65.255
+- am    1    32.198 185.63 66.258
+- wt    1    69.043 222.48 72.051
+
+Step:  AIC=61.52
+mpg ~ hp + wt + qsec + am
+
+       Df Sum of Sq    RSS    AIC
+- hp    1     9.219 169.29 61.307
+&lt;none&gt;              160.07 61.515
+- qsec  1    20.225 180.29 63.323
+- am    1    25.993 186.06 64.331
+- wt    1    78.494 238.56 72.284
+
+Step:  AIC=61.31
+mpg ~ wt + qsec + am
+
+       Df Sum of Sq    RSS    AIC
+&lt;none&gt;              169.29 61.307
+- am    1    26.178 195.46 63.908
+- qsec  1   109.034 278.32 75.217
+- wt    1   183.347 352.63 82.790</code></pre>
+</div>
+</div>
+</section><section id="foreward-stepwise-regression" class="level2 medium"><h2 class="medium anchored" data-anchor-id="foreward-stepwise-regression">Foreward stepwise regression</h2>
+<p>Forward stepwise regression is the reverse of the backward elimination technique. Instead, of eliminating variables one-at-a-time, we start from an “empty model” and we add variables one-at-a-time until we cannot find any variables that improve the model any further.</p>
+<p><strong>Procedure</strong>:</p>
+<ol type="1">
+<li>Start with a model that has no predictors.</li>
+<li>Next fit every possible model with 1 additional predictor and calculate adjusted <span class="math inline">\(R^2\)</span> of each model.</li>
+<li>Compare adjusted <span class="math inline">\(R^2\)</span> values to select the best model (highest adjusted <span class="math inline">\(R^2\)</span>) with 1 additional predictor.</li>
+<li>Repeat steps 2 and 3 until adjusted <span class="math inline">\(R^2\)</span> no longer increases.</li>
+</ol></section><section id="a-new-application" class="level1"><h1>A new application</h1>
+<section id="a-girls-best-friend" class="level2"><h2 class="anchored" data-anchor-id="a-girls-best-friend">A girl’s best friend</h2>
+<p><img src="images/08/carol-channing.gif" class="img-fluid" style="width:49.0%"><img src="images/08/marilyn-monroe.gif" class="img-fluid" style="width:49.0%"></p>
+</section><section id="a-game" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="a-game">A game</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="fragment">
+<p><img src="images/08/tswift.jpg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>
+10-carat old mine brilliant-cut diamond
+</li>
+<li>
+58 facets
+</li>
+<li>
+Est. at $550K - $1M
+</li>
+</ul>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="fragment">
+<p><img src="images/08/zendaya.png" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>
+5-carat antique cushion-cut diamond
+</li>
+<li>
+$280,000 price tag
+</li>
+</ul>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="fragment">
+<p><img src="images/08/grod.png" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>
+Est. 30-40-carat high color center diamond
+</li>
+<li>
+1-carat oval side stones
+</li>
+<li>
+Est. value upwards of $3M
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="the-4-cs" class="level2"><h2 class="anchored" data-anchor-id="the-4-cs">The 4 Cs</h2>
+<p>When evaluating a diamond, jewelers typically focus on four key characteristics known as the <strong>4 Cs</strong>:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>
+<strong>Carat</strong> — How big is it?</li>
+<li>
+<strong>Cut</strong> — How much does it sparkle?</li>
+<li>
+<strong>Clarity</strong> — How flawless is it?</li>
+<li>
+<strong>Color</strong> — How colorless is it?</li>
+</ul>
+</div>
+<div class="fragment">
+<p>The 4 Cs are the primary factors that determine a diamond’s value.</p>
+</div>
+</section><section id="what-do-these-things-mean" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="what-do-these-things-mean">What do these things mean?</h2>
+<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/08/diamonds.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+</div>
+</section><section id="what-do-these-things-mean-1" class="level2"><h2 class="anchored" data-anchor-id="what-do-these-things-mean-1">What do these things mean?</h2>
+<p>For example:</p>
+<p><img src="images/08/clarity.jpg" class="img-fluid"></p>
+</section><section id="we-have-some-data" class="level2"><h2 class="anchored" data-anchor-id="we-have-some-data">We have some data!</h2>
+<div class="cell">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">diamonds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5,000 × 7
+   price carat cut       color clarity length_mm width_mm
+   &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;     &lt;fct&gt; &lt;fct&gt;       &lt;dbl&gt;    &lt;dbl&gt;
+ 1  3867  0.9  Ideal     I     VS           6.13     6.18
+ 2 12048  2.01 Ideal     J     SI           8.08     8.03
+ 3   878  0.41 Very Good F     SI           4.73     4.69
+ 4  4325  0.68 Ideal     D     VVS          5.66     5.69
+ 5   401  0.3  Ideal     E     SI           4.33     4.35
+ 6  5504  1.19 Ideal     D     SI           6.91     6.89
+ 7  1767  0.63 Good      H     VS           5.47     5.56
+ 8  4704  1.02 Very Good G     SI           6.36     6.4 
+ 9  1121  0.52 Ideal     F     SI           5.17     5.2 
+10  2137  0.7  Very Good H     VS           5.58     5.62
+# ℹ 4,990 more rows</code></pre>
+</div>
+</div>
+</section></section><section id="now-off-to-your-container" class="level1"><h1>Now, off to your container!</h1>
+
+
+</section></main><!-- /main --><script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sta101-f26\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2026 John Zito</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+</body></html>

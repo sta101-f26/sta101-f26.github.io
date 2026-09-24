@@ -11,7 +11,7 @@
 <meta name="generator" content="quarto-1.7.34">
 <meta name="author" content="John Zito">
 <meta name="dcterms.date" content="2026-09-22">
-<title>STA 101 Fall 2026 – Model selection</title>
+<title>STA 101 Fall 2026 – Goodness-of-fit</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -190,7 +190,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Model selection – STA 101 Fall 2026">
+<meta property="og:title" content="Goodness-of-fit – STA 101 Fall 2026">
 <meta property="og:description" content="Lecture 7">
 <meta property="og:site_name" content="STA 101 Fall 2026">
 </head>
@@ -198,7 +198,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center"><h1 class="title">Model selection</h1>
+<section id="title-slide" class="quarto-title-block center"><h1 class="title">Goodness-of-fit</h1>
   <p class="subtitle">Lecture 7</p>
 
 <div class="quarto-title-authors">
@@ -245,7 +245,7 @@ John Zito
 </div>
 </section><section id="example-one-numerical-predictor" class="slide level2"><h2>Example: one numerical predictor</h2>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section><section id="example-one-numerical-predictor-1" class="slide level2"><h2>Example: one numerical predictor</h2>
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section><section id="example-one-numerical-predictor-1" class="slide level2"><h2>Example: one numerical predictor</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>bm_fl_fit <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
 <span id="cb1-2"><a></a>  <span class="fu">fit</span>(body_mass_g <span class="sc">~</span> flipper_length_mm, <span class="at">data =</span> penguins)</span>
@@ -268,7 +268,7 @@ John Zito
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="07-selection_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<figure><p><img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -291,7 +291,7 @@ John Zito
 </div></div>
 </section><section id="example-one-categorical-predictor" class="slide level2"><h2>Example: “one categorical predictor”</h2>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section><section id="example-one-categorical-predictor-1" class="slide level2"><h2>Example: “one categorical predictor”</h2>
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section><section id="example-one-categorical-predictor-1" class="slide level2"><h2>Example: “one categorical predictor”</h2>
 <p>This actually gets treated as multiple <em>binary</em> (0/1) predictors:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>bm_island_fit <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
@@ -353,10 +353,10 @@ John Zito
 <div class="cell quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="07-selection_files/figure-revealjs/additive-interaction-viz-1.png" width="960"></p>
+<p><img data-src="07-r-squared_files/figure-revealjs/additive-interaction-viz-1.png" width="960"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="07-selection_files/figure-revealjs/additive-interaction-viz-2.png" width="960"></p>
+<p><img data-src="07-r-squared_files/figure-revealjs/additive-interaction-viz-2.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -451,7 +451,7 @@ John Zito
 </section><section id="example-many-numerical-predictors" class="slide level2"><h2>Example: many numerical predictors</h2>
 <p>2 predictors + 1 response = 3 dimensions. Instead of a line of best fit, it’s a <em>plane</em> of best fit:</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="example-many-numerical-predictors-1" class="slide level2"><h2>Example: many numerical predictors</h2>
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="example-many-numerical-predictors-1" class="slide level2"><h2>Example: many numerical predictors</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>bm_fl_bl_fit <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
 <span id="cb19-2"><a></a>  <span class="fu">fit</span>(body_mass_g <span class="sc">~</span> flipper_length_mm <span class="sc">+</span> bill_length_mm, <span class="at">data =</span> penguins)</span>
@@ -545,7 +545,7 @@ John Zito
 <span id="cb27-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"><p>These are <em>separate</em> simple regressions within each group. The slopes and the intercepts are the same as the interaction model, but the uncertainty bands are different.</p>
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"><p>These are <em>separate</em> simple regressions within each group. The slopes and the intercepts are the same as the interaction model, but the uncertainty bands are different.</p>
 </section></section><section><section id="a-second-look-at-r2" class="title-slide slide level1 center"><h1>A second look at <span class="math inline">\(R^2\)</span>
 </h1>
 
@@ -569,7 +569,7 @@ John Zito
 </ul></section><section id="reminder-residuals" class="slide level2"><h2>Reminder: residuals</h2>
 <p>Every data point has one:</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Some are big, some are small. Some are above the line (positive), and some are below the line (negative).</p>
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Some are big, some are small. Some are above the line (positive), and some are below the line (negative).</p>
 </section><section id="reminder-residuals-1" class="slide level2 scrollable"><h2>Reminder: residuals</h2>
 <p>The residuals are what’s “left over” after the model attempts to “explain” the response:</p>
 <p><span class="math display">\[
@@ -603,7 +603,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 <img data-src="images/07/R2.png" class="quarto-figure quarto-figure-center r-stretch"></section><section id="how-it-started" class="slide level2 medium"><h2>How it started</h2>
 <p>The original distribution of the response. This is the mess we’re trying to clean up with a model:</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   type        variance   std
@@ -614,7 +614,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </section><section id="how-its-going" class="slide level2 medium"><h2>How it’s going</h2>
 <p>The distribution of the residuals (the leftover mess) after the model tries to explain (clean up):</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 3
   type        variance   std
@@ -637,7 +637,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </section><section id="r2approx-0" class="slide level2"><h2><span class="math inline">\(R^2\approx 0\)</span></h2>
 <p>Horrifically awful fit. The model didn’t explain (clean up) anything:</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   var_y var_resid r.squared
@@ -647,7 +647,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </div>
 </section><section id="r2approx-0.28" class="slide level2"><h2><span class="math inline">\(R^2\approx 0.28\)</span></h2>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   var_y var_resid r.squared
@@ -657,7 +657,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </div>
 </section><section id="r2approx-0.63" class="slide level2"><h2><span class="math inline">\(R^2\approx 0.63\)</span></h2>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   var_y var_resid r.squared
@@ -667,7 +667,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </div>
 </section><section id="r2approx-0.97" class="slide level2"><h2><span class="math inline">\(R^2\approx 0.97\)</span></h2>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   var_y var_resid r.squared
@@ -678,7 +678,7 @@ e_i = \text{observed} - \text{predicted} = y_i - \hat{y}_i.
 </section><section id="r2approx-1" class="slide level2"><h2><span class="math inline">\(R^2\approx 1\)</span></h2>
 <p>Perfect fit. The model explained (cleaned up) everything:</p>
 
-<img data-src="07-selection_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"><div class="cell">
+<img data-src="07-r-squared_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"><div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
   var_y var_resid r.squared

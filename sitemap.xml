@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-overview.html</loc>
-    <lastmod>2026-08-26T01:10:23.404Z</lastmod>
+    <loc>https://sta101-f26.github.io/exam/midterm-guide.html</loc>
+    <lastmod>2026-09-22T23:37:56.162Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-policies.html</loc>
-    <lastmod>2026-08-25T16:01:01.648Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
+    <lastmod>2026-09-22T17:00:15.169Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/fail-duke.html</loc>
-    <lastmod>2026-09-22T17:23:54.385Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/tech-for-change.html</loc>
+    <lastmod>2026-09-22T17:16:11.470Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-halloween.html</loc>
-    <lastmod>2026-09-10T23:43:03.377Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-vocal-showcase.html</loc>
+    <lastmod>2026-08-23T22:19:55.022Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-shorts-2.html</loc>
-    <lastmod>2026-09-10T23:42:46.886Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-shorts-1.html</loc>
+    <lastmod>2026-09-22T17:25:50.283Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/wind-symphony-october-overtures.html</loc>
-    <lastmod>2026-09-10T23:55:35.616Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/chronicle.html</loc>
+    <lastmod>2026-09-08T12:53:18.150Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/muse-magazine.html</loc>
-    <lastmod>2026-09-01T01:14:05.600Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/wind-symphony-belonging.html</loc>
+    <lastmod>2026-09-10T23:56:33.509Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-dance-showcase.html</loc>
-    <lastmod>2026-08-26T11:13:28.476Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/sun-run.html</loc>
+    <lastmod>2026-09-22T17:24:55.607Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-music-day.html</loc>
-    <lastmod>2026-09-16T00:17:38.351Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/house-course.html</loc>
+    <lastmod>2026-08-19T15:03:53.612Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-team.html</loc>
-    <lastmod>2026-09-05T17:29:37.039Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-resources.html</loc>
+    <lastmod>2026-05-05T03:22:04.105Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-materials.html</loc>
-    <lastmod>2026-08-16T04:50:31.948Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-assignments.html</loc>
+    <lastmod>2026-08-23T22:14:24.426Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/05-slr-slides.html</loc>
@@ -62,11 +62,19 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/06-mlr-slides.html</loc>
-    <lastmod>2026-09-22T16:34:59.392Z</lastmod>
+    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/06-mlr.html</loc>
-    <lastmod>2026-09-22T16:34:59.392Z</lastmod>
+    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/07-r-squared-slides.html</loc>
+    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/07-r-squared.html</loc>
+    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/01-crash-course-slides.html</loc>
@@ -89,16 +97,20 @@
     <lastmod>2026-09-17T17:45:16.966Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
-    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
+    <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
+    <lastmod>2026-09-24T00:19:18.854Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
+    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
     <lastmod>2026-09-19T12:51:47.028Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
-    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
+    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
@@ -115,6 +127,14 @@
   <url>
     <loc>https://sta101-f26.github.io/index.html</loc>
     <lastmod>2026-09-05T17:35:17.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/08-selection.html</loc>
+    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/08-selection-slides.html</loc>
+    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/00-welcome.html</loc>
@@ -141,51 +161,47 @@
     <lastmod>2026-09-11T01:13:39.492Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/07-selection.html</loc>
-    <lastmod>2026-09-22T15:37:51.514Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-materials.html</loc>
+    <lastmod>2026-08-16T04:50:31.948Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/07-selection-slides.html</loc>
-    <lastmod>2026-09-22T15:37:51.514Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-team.html</loc>
+    <lastmod>2026-09-05T17:29:37.039Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-assignments.html</loc>
-    <lastmod>2026-08-23T22:14:24.426Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-music-day.html</loc>
+    <lastmod>2026-09-16T00:17:38.351Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/syllabus-resources.html</loc>
-    <lastmod>2026-05-05T03:22:04.105Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-dance-showcase.html</loc>
+    <lastmod>2026-08-26T11:13:28.476Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/house-course.html</loc>
-    <lastmod>2026-08-19T15:03:53.612Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/muse-magazine.html</loc>
+    <lastmod>2026-09-01T01:14:05.600Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/sun-run.html</loc>
-    <lastmod>2026-09-22T17:24:55.607Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/wind-symphony-october-overtures.html</loc>
+    <lastmod>2026-09-10T23:55:35.616Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/wind-symphony-belonging.html</loc>
-    <lastmod>2026-09-10T23:56:33.509Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-shorts-2.html</loc>
+    <lastmod>2026-09-10T23:42:46.886Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/chronicle.html</loc>
-    <lastmod>2026-09-08T12:53:18.150Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-halloween.html</loc>
+    <lastmod>2026-09-10T23:43:03.377Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/duke-players-shorts-1.html</loc>
-    <lastmod>2026-09-22T17:25:50.283Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/announcements/fail-duke.html</loc>
+    <lastmod>2026-09-22T17:23:54.385Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/fall-vocal-showcase.html</loc>
-    <lastmod>2026-08-23T22:19:55.022Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-policies.html</loc>
+    <lastmod>2026-08-25T16:01:01.648Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements/tech-for-change.html</loc>
-    <lastmod>2026-09-22T17:16:11.470Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
-    <lastmod>2026-09-22T17:00:15.169Z</lastmod>
+    <loc>https://sta101-f26.github.io/syllabus/syllabus-overview.html</loc>
+    <lastmod>2026-08-26T01:10:23.404Z</lastmod>
   </url>
 </urlset>
