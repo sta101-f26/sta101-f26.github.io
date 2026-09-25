@@ -29,7 +29,7 @@ library(tidymodels)
 diamonds <- read_csv("data/diamonds.csv")
 ```
 
-These data have several *categorical* variables: `cut`, `color`, and `clarity`. How are their levels ordered? Does this make sense?
+These data have several *categorical* variables: `cut`, `color`, and `clarity`. By default these variables will have their levels ordered alphabetically:
 
 ```{r}
 #| label: level-ordering
@@ -46,7 +46,7 @@ levels(diamonds$clarity)
 levels(diamonds$color)
 ```
 
-If you don't think that the order of the levels makes sense, use `mutate`, `fct_relevel`, and variable assignment to change it:
+Because these levels do have a natural ordering corresponding to the increasing level of quality, we should force the computer to respect that:
 
 ```{r}
 #| label: re-level
