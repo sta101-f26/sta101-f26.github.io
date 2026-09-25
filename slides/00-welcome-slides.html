@@ -683,20 +683,20 @@ John Zito
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">ggplot</span>(age_guesses)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section><section id="babys-first-dataviz-1" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-3-1.png" width="672" class="r-stretch"></section><section id="babys-first-dataviz-1" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
 <p>What part of it do we want to visualize?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(age_guesses, <span class="fu">aes</span>(<span class="at">x =</span> celeb1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section><section id="babys-first-dataviz-2" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-4-1.png" width="672" class="r-stretch"></section><section id="babys-first-dataviz-2" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
 <p>What kind of plot do we want?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ggplot</span>(age_guesses, <span class="fu">aes</span>(<span class="at">x =</span> celeb1)) <span class="sc">+</span> </span>
 <span id="cb5-2"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section><section id="babys-first-dataviz-3" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-5-1.png" width="672" class="r-stretch"></section><section id="babys-first-dataviz-3" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
 <p>Change the horizontal axis range:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(age_guesses, <span class="fu">aes</span>(<span class="at">x =</span> celeb1)) <span class="sc">+</span> </span>
@@ -704,7 +704,7 @@ John Zito
 <span id="cb6-3"><a></a>  <span class="fu">xlim</span>(<span class="dv">0</span>, <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section><section id="babys-first-dataviz-4" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"></section><section id="babys-first-dataviz-4" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
 <p>Add some human-readable labels:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ggplot</span>(age_guesses, <span class="fu">aes</span>(<span class="at">x =</span> celeb1)) <span class="sc">+</span> </span>
@@ -714,7 +714,7 @@ John Zito
 <span id="cb7-5"><a></a>       <span class="at">x =</span> <span class="st">"Guess"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section><section id="babys-first-dataviz-5" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-7-1.png" width="672" class="r-stretch"></section><section id="babys-first-dataviz-5" class="slide level2 medium"><h2>Baby’s first dataviz</h2>
 <p>Add a vertical line at the answer:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(age_guesses, <span class="fu">aes</span>(<span class="at">x =</span> celeb1)) <span class="sc">+</span> </span>
@@ -725,7 +725,7 @@ John Zito
 <span id="cb8-6"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">36</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section><section id="concise-numerical-summaries" class="slide level2 scrollable"><h2>Concise numerical summaries</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section><section id="concise-numerical-summaries" class="slide level2 scrollable"><h2>Concise numerical summaries</h2>
 <p>Where are your guesses concentrated? How spread out are they?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>age_guesses <span class="sc">|&gt;</span></span>
@@ -784,7 +784,7 @@ John Zito
 </div></div>
 </section><section id="charo" class="slide level2"><h2>Charo</h2>
 
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section><section id="anyone-know-who-this-is-2" class="slide level2"><h2>Anyone know who this is?</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section><section id="anyone-know-who-this-is-2" class="slide level2"><h2>Anyone know who this is?</h2>
 <div class="columns v-center-container">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -824,7 +824,7 @@ John Zito
 </div></div>
 </section><section id="eubie-blake-1" class="slide level2"><h2>Eubie Blake</h2>
 
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section><section id="watch-out-for-data-quality" class="slide level2"><h2>Watch out for data quality!</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-11-1.png" width="672" class="r-stretch"></section><section id="watch-out-for-data-quality" class="slide level2"><h2>Watch out for data quality!</h2>
 <div class="columns v-center-container">
 <div class="column" style="width:50%;">
 <p><img data-src="images/00/celeb-4-noisy.jpg" style="width:75.0%"></p>
@@ -857,7 +857,7 @@ John Zito
 </div></div>
 </section><section id="raghuram-rajan-1" class="slide level2"><h2>Raghuram Rajan</h2>
 
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section><section id="anyone-know-who-this-is-3" class="slide level2"><h2>Anyone know who this is?</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-12-1.png" width="672" class="r-stretch"></section><section id="anyone-know-who-this-is-3" class="slide level2"><h2>Anyone know who this is?</h2>
 <div class="columns v-center-container">
 <div class="column" style="width:39%;">
 <div class="quarto-figure quarto-figure-center">
@@ -897,7 +897,7 @@ John Zito
 </div></div>
 </section><section id="vincent-price-1" class="slide level2"><h2>Vincent Price</h2>
 
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="anyone-know-who-this-is-4" class="slide level2"><h2>Anyone know who this is?</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section><section id="anyone-know-who-this-is-4" class="slide level2"><h2>Anyone know who this is?</h2>
 <div class="columns v-center-container">
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
@@ -936,7 +936,7 @@ John Zito
 </div></div>
 </section><section id="celia-cruz-1" class="slide level2"><h2>Celia Cruz</h2>
 
-<img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section><section id="who-guessed-best" class="slide level2 small scrollable"><h2>Who guessed best?</h2>
+<img data-src="00-welcome_files/figure-html/unnamed-chunk-14-1.png" width="672" class="r-stretch"></section><section id="who-guessed-best" class="slide level2 small scrollable"><h2>Who guessed best?</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top">
@@ -1032,7 +1032,7 @@ John Zito
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="00-welcome_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" width="960"></p>
+<figure><p><img data-src="00-welcome_files/figure-html/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1286,41 +1286,6 @@ John Zito
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

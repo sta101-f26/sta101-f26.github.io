@@ -274,7 +274,7 @@ John Zito
 </div>
 </section><section id="data-visualization" class="slide level2 small"><h2>Data visualization</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section><section id="quick-aside-which-is-which" class="slide level2 smaller"><h2>Quick aside: which is which?</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-2-1.png" width="672" class="r-stretch"></section><section id="quick-aside-which-is-which" class="slide level2 smaller"><h2>Quick aside: which is which?</h2>
 <p>How do we know which variable “should” be the response and which should be the predictor. This will depend on the domain and the research question, but in some cases there is a natural choice. In this example, the critic score for a film is typically available before the audience score. Critics can often screen the film in advance, and their reviews are published on opening day. By contrast, the audience score trickles in over the subsequent weeks. So it’s more likely that we would already have the critics score and use it to anticipate the audience score, instead of the other way around.</p>
 <p>Similar story to our other examples:</p>
 <ul>
@@ -285,7 +285,7 @@ John Zito
 <p>Which variable is <em>available</em> first, or easier to measure? In which direction would we typically be <em>predicting</em>?</p>
 </section><section id="data-visualization-linear-model" class="slide level2 scrollable small"><h2>Data visualization: linear model</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><div class="columns">
+<img data-src="05-slr_files/figure-html/unnamed-chunk-3-1.png" width="672" class="r-stretch"><div class="columns">
 <div class="column" style="width:70%;">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -310,21 +310,24 @@ John Zito
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-6-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>new_movies <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb6-2"><a></a>  <span class="at">critics =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="fl">37.5</span>, <span class="dv">88</span>)</span>
-<span id="cb6-3"><a></a>)</span>
-<span id="cb6-4"><a></a></span>
-<span id="cb6-5"><a></a><span class="fu">predict</span>(audience_critic_fit, </span>
-<span id="cb6-6"><a></a>        <span class="at">new_data =</span> new_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>new_movies <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb7-2"><a></a>  <span class="at">critics =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="fl">37.5</span>, <span class="dv">88</span>)</span>
+<span id="cb7-3"><a></a>)</span>
+<span id="cb7-4"><a></a></span>
+<span id="cb7-5"><a></a><span class="fu">predict</span>(audience_critic_fit, </span>
+<span id="cb7-6"><a></a>        <span class="at">new_data =</span> new_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 1
   .pred
@@ -333,8 +336,8 @@ John Zito
 2  51.8
 3  78.0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">augment</span>(audience_critic_fit,</span>
-<span id="cb8-2"><a></a>        <span class="at">new_data =</span> new_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">augment</span>(audience_critic_fit,</span>
+<span id="cb9-2"><a></a>        <span class="at">new_data =</span> new_movies)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   .pred critics
@@ -368,7 +371,7 @@ John Zito
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-9-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -408,9 +411,9 @@ John Zito
 </ul></section><section id="choosing-values-for-b_1-and-b_0" class="slide level2"><h2>Choosing values for <span class="math inline">\(b_1\)</span> and <span class="math inline">\(b_0\)</span>
 </h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section><section id="residuals" class="slide level2 smaller"><h2>Residuals</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section><section id="residuals" class="slide level2 smaller"><h2>Residuals</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p><span class="math display">\[\text{residual} = \text{observed} - \text{predicted} = y - \widehat{y}\]</span></p>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="672"><p><span class="math display">\[\text{residual} = \text{observed} - \text{predicted} = y - \widehat{y}\]</span></p>
 </section><section id="notation" class="slide level2"><h2>Notation</h2>
 <ul>
 <li class="fragment"><p>We have <span class="math inline">\(n\)</span> observations (generally, the number of rows in a df)</p></li>
@@ -574,20 +577,20 @@ e^2
 \]</span></p>
 </section><section id="put-in-a-picture" class="slide level2 scrollable smaller"><h2>Put in a picture…</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Squared error gives increasingly more weight to data points that are far away from the others; absolute error is more chill.</p>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Squared error gives increasingly more weight to data points that are far away from the others; absolute error is more chill.</p>
 </section><section id="toy-dataset" class="slide level2"><h2>Toy dataset</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way" class="slide level2"><h2>Best fit line is basically the same either way</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way" class="slide level2"><h2>Best fit line is basically the same either way</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way-1" class="slide level2"><h2>Best fit line is basically the same either way</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-14-1.png" width="672" class="r-stretch"></section><section id="best-fit-line-is-basically-the-same-either-way-1" class="slide level2"><h2>Best fit line is basically the same either way</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section><section id="add-an-outlier" class="slide level2"><h2>Add an “outlier”</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-15-1.png" width="672" class="r-stretch"></section><section id="add-an-outlier" class="slide level2"><h2>Add an “outlier”</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section><section id="blue-doesnt-care" class="slide level2 scrollable"><h2>Blue doesn’t care</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-16-1.png" width="672" class="r-stretch"></section><section id="blue-doesnt-care" class="slide level2 scrollable"><h2>Blue doesn’t care</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section><section id="red-freaks-out" class="slide level2 scrollable"><h2>Red freaks out</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-17-1.png" width="672" class="r-stretch"></section><section id="red-freaks-out" class="slide level2 scrollable"><h2>Red freaks out</h2>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section><section id="squared-versus-absolute-error" class="slide level2"><h2>Squared versus absolute error</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-18-1.png" width="672" class="r-stretch"></section><section id="squared-versus-absolute-error" class="slide level2"><h2>Squared versus absolute error</h2>
 <ul>
 <li>Minimizing absolute error instead of squared error is like using the <em>median</em> instead of the <em>mean</em>. It is “more robust” to outliers;</li>
 <li>These options are both “first class citizens;”</li>
@@ -596,10 +599,10 @@ e^2
 
 </section><section id="least-squares-line-1" class="slide level2 scrollable"><h2>Least squares line</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>movies_fit <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a></a>  <span class="fu">fit</span>(audience <span class="sc">~</span> critics, <span class="at">data =</span> movie_scores)</span>
-<span id="cb10-3"><a></a></span>
-<span id="cb10-4"><a></a><span class="fu">tidy</span>(movies_fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>movies_fit <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">fit</span>(audience <span class="sc">~</span> critics, <span class="at">data =</span> movie_scores)</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a><span class="fu">tidy</span>(movies_fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 5
   term        estimate std.error statistic  p.value
@@ -612,8 +615,8 @@ e^2
 <code>fit</code> syntax</h2>
 <p>If you recall <code>ggplot</code>, it takes two arguments: a data frame and an aesthetic mapping that specifies what columns to use and how to use them. <code>fit</code> is similar. It takes two arguments: a data frame and a <em>formula</em> that species what variables to include in the model and how.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The statement <code>y ~ x</code> is called a formula in R. The variable name that appears to the <em>left</em> of the tilde (<code>~</code>) is treated as the response variable, and the variable(s!) to the <em>right</em> of the tilde are treated as explanatory.</p>
 </section><section id="prediction-1" class="slide level2"><h2>Prediction</h2>
@@ -623,19 +626,19 @@ e^2
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-21-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>new_movie <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb13-2"><a></a>  <span class="at">critics =</span> <span class="fu">c</span>(<span class="dv">20</span>)</span>
-<span id="cb13-3"><a></a>)</span>
-<span id="cb13-4"><a></a></span>
-<span id="cb13-5"><a></a><span class="fu">predict</span>(movies_fit, </span>
-<span id="cb13-6"><a></a>        <span class="at">new_data =</span> new_movie)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>new_movie <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb14-2"><a></a>  <span class="at">critics =</span> <span class="fu">c</span>(<span class="dv">20</span>)</span>
+<span id="cb14-3"><a></a>)</span>
+<span id="cb14-4"><a></a></span>
+<span id="cb14-5"><a></a><span class="fu">predict</span>(movies_fit, </span>
+<span id="cb14-6"><a></a>        <span class="at">new_data =</span> new_movie)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   .pred
@@ -727,29 +730,32 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-23-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb15-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb15-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb15-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb17-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb17-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
       r
   &lt;dbl&gt;
 1    -1</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb17-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb17-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb17-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb19-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb19-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -763,29 +769,32 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-25-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb19-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb19-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb19-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb22-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb22-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
        r
    &lt;dbl&gt;
 1 -0.935</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb21-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb21-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb21-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb24-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -799,45 +808,12 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-27-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb23-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb23-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb23-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-       r
-   &lt;dbl&gt;
-1 -0.659</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb25-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb25-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb25-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-  r.squared
-      &lt;dbl&gt;
-1     0.434</code></pre>
-</div>
-</div>
-</div></div>
-</section><section id="correlation-and-r2-3" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
-</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-29-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-27-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -852,12 +828,51 @@ e^2
 <pre><code># A tibble: 1 × 1
        r
    &lt;dbl&gt;
-1 -0.335</code></pre>
+1 -0.659</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
 <span id="cb29-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
 <span id="cb29-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
 <span id="cb29-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  r.squared
+      &lt;dbl&gt;
+1     0.434</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="correlation-and-r2-3" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
+</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-29-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb32-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb32-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+       r
+   &lt;dbl&gt;
+1 -0.335</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb34-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb34-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb34-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -871,29 +886,32 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-31-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-31-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb31-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb31-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb31-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb37-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb37-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb37-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
        r
    &lt;dbl&gt;
 1 -0.118</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb33-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb33-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb33-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb39-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb39-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -907,29 +925,32 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-33-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-33-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb35-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb35-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb35-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb42-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb42-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb42-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
       r
   &lt;dbl&gt;
 1 0.117</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb37-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb37-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb37-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb44-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb44-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb44-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -943,81 +964,12 @@ e^2
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-35-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb39-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb39-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb39-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-      r
-  &lt;dbl&gt;
-1 0.538</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb41-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb41-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb41-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-  r.squared
-      &lt;dbl&gt;
-1     0.289</code></pre>
-</div>
-</div>
-</div></div>
-</section><section id="correlation-and-r2-7" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
-</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-37-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>df <span class="sc">|&gt;</span></span>
-<span id="cb43-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb43-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
-<span id="cb43-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-      r
-  &lt;dbl&gt;
-1 0.923</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb45-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
-<span id="cb45-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
-<span id="cb45-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-  r.squared
-      &lt;dbl&gt;
-1     0.853</code></pre>
-</div>
-</div>
-</div></div>
-</section><section id="correlation-and-r2-8" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
-</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="05-slr_files/figure-revealjs/unnamed-chunk-39-1.png" width="960"></p>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-35-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1032,12 +984,90 @@ e^2
 <pre><code># A tibble: 1 × 1
       r
   &lt;dbl&gt;
-1     1</code></pre>
+1 0.538</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
 <span id="cb49-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
 <span id="cb49-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
 <span id="cb49-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  r.squared
+      &lt;dbl&gt;
+1     0.289</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="correlation-and-r2-7" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
+</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-37-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb52-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb52-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb52-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+      r
+  &lt;dbl&gt;
+1 0.923</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb54-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb54-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb54-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  r.squared
+      &lt;dbl&gt;
+1     0.853</code></pre>
+</div>
+</div>
+</div></div>
+</section><section id="correlation-and-r2-8" class="slide level2"><h2>Correlation and <span class="math inline">\(R^2\)</span>
+</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="05-slr_files/figure-html/unnamed-chunk-39-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb57-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb57-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(x, y)</span>
+<span id="cb57-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+      r
+  &lt;dbl&gt;
+1     1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb59-2"><a></a>  <span class="fu">fit</span>(y <span class="sc">~</span> x, df) <span class="sc">|&gt;</span></span>
+<span id="cb59-3"><a></a>  <span class="fu">glance</span>() <span class="sc">|&gt;</span></span>
+<span id="cb59-4"><a></a>  <span class="fu">select</span>(r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
   r.squared
@@ -1118,36 +1148,36 @@ e^2
 </section><section id="the-anatomy-of-simple-linear-regression" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The data:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-41-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-1" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-41-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-1" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The first row of the data frame:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-42-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-2" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-42-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-2" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The second row of the data frame:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-43-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-3" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-43-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-3" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The <span class="math inline">\(i\)</span>th row:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-44-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-4" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-44-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-4" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The line of best fit:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-45-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-5" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-45-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-5" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The slope <span class="math inline">\(b_1=r\cdot s_Y/s_X\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-46-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-6" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-46-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-6" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The intercept <span class="math inline">\(b_0=\bar{y}-b_1\bar{x}\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-47-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-7" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-47-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-7" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The line always passes through <span class="math inline">\((\bar{x},\,\bar{y})\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-48-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-8" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-48-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-8" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The prediction at <span class="math inline">\(x_i\)</span>:</p>
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-49-1.png" width="960" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-9" class="slide level2"><h2>The anatomy of simple linear regression</h2>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-49-1.png" width="672" class="r-stretch"></section><section id="the-anatomy-of-simple-linear-regression-9" class="slide level2"><h2>The anatomy of simple linear regression</h2>
 <p>The residual:</p>
 
 
 
-<img data-src="05-slr_files/figure-revealjs/unnamed-chunk-50-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="05-slr_files/figure-html/unnamed-chunk-50-1.png" width="672" class="r-stretch"></section></section>
 </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo.png" class="slide-logo"></p>
@@ -1348,41 +1378,6 @@ e^2
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

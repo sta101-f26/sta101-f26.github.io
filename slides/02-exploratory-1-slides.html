@@ -254,7 +254,7 @@ John Zito
 </tbody>
 </table></section><section id="whats-the-last-movie-you-saw-in-a-theater" class="slide level2"><h2>What’s the last movie you saw in a theater?</h2>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section></section><section><section id="today" class="title-slide slide level1 center"><h1>Today</h1>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-2-1.png" width="672" class="r-stretch"></section></section><section><section id="today" class="title-slide slide level1 center"><h1>Today</h1>
 
 </section><section id="what-are-we-studying" class="slide level2"><h2>What are we studying?</h2>
 <ul>
@@ -402,9 +402,18 @@ John Zito
 </div>
 </section><section id="todays-data" class="slide level2 small"><h2>Today’s data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>bechdel <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/bechdel.csv"</span>)</span>
-<span id="cb2-2"><a></a></span>
-<span id="cb2-3"><a></a>bechdel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>bechdel <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/bechdel.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 1615 Columns: 7
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (3): title, binary, clean_test
+dbl (4): year, gross_2013, budget_2013, roi
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>bechdel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,615 × 7
    title                   year gross_2013 budget_2013    roi binary clean_test
@@ -426,7 +435,7 @@ John Zito
 </h2>
 <p>You just saw me do this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>bechdel <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/bechdel.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>bechdel <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/bechdel.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">This is called <em>variable assignment</em>. We’re saving an object so we can use it later;</li>
@@ -497,7 +506,7 @@ John Zito
 </section><section id="the-films-grosses" class="slide level2 medium"><h2>The films’ grosses</h2>
 <p>The box office revenue for the films is a <em>numerical</em> variable:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>bechdel<span class="sc">$</span>gross_2013</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>bechdel<span class="sc">$</span>gross_2013</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -513,11 +522,11 @@ John Zito
 <p>Start with a blank canvas:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ggplot</span>(bechdel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(bechdel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-8-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -526,12 +535,12 @@ John Zito
 <p>What variables are we looking at?</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb8-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb10-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-9-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -541,13 +550,13 @@ John Zito
 <p>What kind of plot for this <em>numerical</em> variable:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb9-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb9-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb11-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb11-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-10-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -556,17 +565,17 @@ John Zito
 <p>Add labels:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb10-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb10-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb10-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb10-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb10-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb10-7"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="|4-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb12-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb12-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
+<span id="cb12-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb12-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb12-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb12-7"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-11-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -576,18 +585,18 @@ John Zito
 <p>Increase font size and give it a minimalist look:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb11-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb11-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb11-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb11-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb11-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb11-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb11-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb13-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb13-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
+<span id="cb13-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb13-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb13-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb13-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb13-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-12-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -672,34 +681,34 @@ John Zito
 </section><section id="back-to-bechdel" class="slide level2"><h2>Back to Bechdel</h2>
 <p>R makes a default choice about the number/width of bins:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb12-2"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb14-2"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section><section id="you-can-override-the-default" class="slide level2"><h2>You can override the default</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section><section id="you-can-override-the-default" class="slide level2"><h2>You can override the default</h2>
 <p>Fewer, wider bins:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb13-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb15-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section><section id="you-can-override-the-default-1" class="slide level2"><h2>You can override the default</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-14-1.png" width="672" class="r-stretch"></section><section id="you-can-override-the-default-1" class="slide level2"><h2>You can override the default</h2>
 <p>Many, thinner bins:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb14-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb16-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section><section id="you-can-go-too-far-either-way" class="slide level2"><h2>You can go too far either way</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-15-1.png" width="672" class="r-stretch"></section><section id="you-can-go-too-far-either-way" class="slide level2"><h2>You can go too far either way</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Oof.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb15-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb17-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-16-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -707,11 +716,11 @@ John Zito
 </div><div class="column" style="width:50%;">
 <p>Yikes.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb16-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">1500</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb18-2"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">1500</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-17-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -723,67 +732,24 @@ John Zito
 </section><section id="another-option-instead-of-a-histogram" class="slide level2 small"><h2>Another option: instead of a histogram</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb17-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb17-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb17-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb17-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb17-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses"</span></span>
-<span id="cb17-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb17-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb19-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb19-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
+<span id="cb19-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb19-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb19-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses"</span></span>
+<span id="cb19-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb19-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-18-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div></div>
 </section><section id="another-option-a-density" class="slide level2 small"><h2>Another option: a <em>density</em>
 </h2>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb18-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb18-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb18-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb18-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb18-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb18-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb18-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div></div>
-</section><section id="compare" class="slide level2 smaller scrollable"><h2>Compare</h2>
-
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"><p>Prettier. Smooths out the lumps and bumps. There are still defaults you could learn to override.</p>
-</section><section id="but-lets-make-it-nice" class="slide level2 small"><h2>But let’s make it nice</h2>
-<p>What we have so far:</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb19-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb19-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
-<span id="cb19-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb19-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb19-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb19-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb19-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output-display">
-<div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div></div>
-</section><section id="but-lets-make-it-nice-1" class="slide level2 small"><h2>But let’s make it nice</h2>
-<p>We don’t need to see <em>everything</em>, do we?</p>
 <div class="cell columns column-output-location">
 <div class="column">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
@@ -793,12 +759,55 @@ John Zito
 <span id="cb20-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
 <span id="cb20-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
 <span id="cb20-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb20-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb20-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-19-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="compare" class="slide level2 smaller scrollable"><h2>Compare</h2>
+
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-20-1.png" width="672" class="r-stretch"><p>Prettier. Smooths out the lumps and bumps. There are still defaults you could learn to override.</p>
+</section><section id="but-lets-make-it-nice" class="slide level2 small"><h2>But let’s make it nice</h2>
+<p>What we have so far:</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb21-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb21-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb21-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb21-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb21-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb21-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb21-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-21-1.png" width="672"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</section><section id="but-lets-make-it-nice-1" class="slide level2 small"><h2>But let’s make it nice</h2>
+<p>We don’t need to see <em>everything</em>, do we?</p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb22-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb22-3"><a></a>  <span class="fu">geom_density</span>() <span class="sc">+</span> </span>
+<span id="cb22-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb22-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb22-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb22-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb22-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb22-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-22-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -807,19 +816,19 @@ John Zito
 <p>A pop of color:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb21-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb21-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>) <span class="sc">+</span> </span>
-<span id="cb21-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb21-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb21-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb21-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb21-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb21-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb23-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb23-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>) <span class="sc">+</span> </span>
+<span id="cb23-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb23-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb23-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb23-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb23-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb23-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-23-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -828,20 +837,20 @@ John Zito
 <p>I can’t <em>hear</em> you:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb22-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb22-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
-<span id="cb22-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>) <span class="sc">+</span> </span>
-<span id="cb22-5"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb22-6"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb22-7"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb22-8"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb22-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb22-10"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb24-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb24-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
+<span id="cb24-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>) <span class="sc">+</span> </span>
+<span id="cb24-5"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb24-6"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb24-7"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb24-8"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb24-9"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb24-10"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-24-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -850,21 +859,21 @@ John Zito
 <p>Give it some body:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb23-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb23-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
-<span id="cb23-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>,</span>
-<span id="cb23-5"><a></a>               <span class="at">fill =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
-<span id="cb23-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb23-7"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb23-8"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb23-9"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb23-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb23-11"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb25-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb25-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
+<span id="cb25-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>,</span>
+<span id="cb25-5"><a></a>               <span class="at">fill =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
+<span id="cb25-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb25-7"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb25-8"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb25-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb25-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb25-11"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-25-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -873,22 +882,22 @@ John Zito
 <p>Too aggressive:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb24-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb24-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
-<span id="cb24-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>,</span>
-<span id="cb24-5"><a></a>               <span class="at">fill =</span> <span class="st">"red"</span>,</span>
-<span id="cb24-6"><a></a>               <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb24-7"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb24-8"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb24-9"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb24-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb24-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
-<span id="cb24-12"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb26-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb26-3"><a></a>  <span class="fu">geom_density</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>,</span>
+<span id="cb26-4"><a></a>               <span class="at">linewidth =</span> <span class="dv">2</span>,</span>
+<span id="cb26-5"><a></a>               <span class="at">fill =</span> <span class="st">"red"</span>,</span>
+<span id="cb26-6"><a></a>               <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
+<span id="cb26-7"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb26-8"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb26-9"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb26-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb26-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span> </span>
+<span id="cb26-12"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1e9</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-26-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-26-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -896,18 +905,18 @@ John Zito
 </section><section id="yet-another-option-instead-of-a-histogram" class="slide level2 small"><h2>Yet another option: instead of a histogram</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb25-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb25-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
-<span id="cb25-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb25-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb25-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb25-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb25-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb27-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb27-3"><a></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span> </span>
+<span id="cb27-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb27-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb27-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb27-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb27-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-27-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-27-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -916,32 +925,62 @@ John Zito
 </h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb26-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb26-3"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
-<span id="cb26-4"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb26-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
-<span id="cb26-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
-<span id="cb26-7"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb26-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb28-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb28-3"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb28-4"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb28-5"><a></a>    <span class="at">x =</span> <span class="st">"2013 USD"</span>,</span>
+<span id="cb28-6"><a></a>    <span class="at">title =</span> <span class="st">"Film grosses (1990 - 2013)"</span></span>
+<span id="cb28-7"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb28-8"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-28-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-28-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div></div>
 </section><section id="how-is-a-box-plot-drawn" class="slide level2 medium scrollable"><h2>How is a box plot drawn?</h2>
 <p>The middle of the box is the <strong>median</strong>. 50% of the data are below, and 50% are above:</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_boxplot()`).</code></pre>
+</div>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section><section id="how-is-a-box-plot-drawn-1" class="slide level2 medium scrollable"><h2>How is a box plot drawn?</h2>
+</div>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-29-1.png" width="672" class="r-stretch"></section><section id="how-is-a-box-plot-drawn-1" class="slide level2 medium scrollable"><h2>How is a box plot drawn?</h2>
 <p>The lower edge of the box is the <strong>25% quantile</strong>. 25% of the data are below, and 75% are above:</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_boxplot()`).</code></pre>
+</div>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section><section id="how-is-a-box-plot-drawn-2" class="slide level2 medium scrollable"><h2>How is a box plot drawn?</h2>
+</div>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-30-1.png" width="672" class="r-stretch"></section><section id="how-is-a-box-plot-drawn-2" class="slide level2 medium scrollable"><h2>How is a box plot drawn?</h2>
 <p>The upper edge of the box is the <strong>75% quantile</strong>. 75% of the data are below, and 25% are above:</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_boxplot()`).</code></pre>
+</div>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section><section id="box-plot-facts" class="slide level2 small"><h2>Box plot facts</h2>
+</div>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-31-1.png" width="672" class="r-stretch"></section><section id="box-plot-facts" class="slide level2 small"><h2>Box plot facts</h2>
 <ul>
 <li>A box plot is easier to read quickly than a histogram because it eliminates clutter and immediately draws your eye to those main features: center, spread, and skew;</li>
 <li>The box spans the middle 50% of the data;</li>
@@ -954,12 +993,12 @@ John Zito
 </section><section id="box-plots-obscure-modality" class="slide level2"><h2>Box plots obscure modality</h2>
 <p>Same box plot:</p>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section><section id="box-plots-obscure-modality-1" class="slide level2"><h2>Box plots obscure modality</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-32-1.png" width="672" class="r-stretch"></section><section id="box-plots-obscure-modality-1" class="slide level2"><h2>Box plots obscure modality</h2>
 <p>Very different distributions:</p>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"></section><section id="sonow-what" class="slide level2"><h2>So…now what?</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-33-1.png" width="672" class="r-stretch"></section><section id="sonow-what" class="slide level2"><h2>So…now what?</h2>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-34-1.png" width="960" class="r-stretch"></section><section id="are-we-just-eyeballing-pictures" class="slide level2"><h2>Are we just eyeballing pictures?</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-34-1.png" width="672" class="r-stretch"></section><section id="are-we-just-eyeballing-pictures" class="slide level2"><h2>Are we just eyeballing pictures?</h2>
 <p>No! There are numerical summaries you can compute to <em>quantify</em> your visual intuition:</p>
 <ul>
 <li>
@@ -987,11 +1026,11 @@ s = \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})^2}.
 </div>
 </section><section id="how-does-the-computer-do-it" class="slide level2 small"><h2>How does the computer do it?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb27-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb27-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb27-4"><a></a>    <span class="at">s =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb27-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb35-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb35-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb35-4"><a></a>    <span class="at">s =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb35-5"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 2
          avg          s
@@ -1012,15 +1051,15 @@ s = \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})^2}.
 <div class="columns">
 <div class="column fragment" style="width:55%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 </div><div class="column fragment" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
-<span id="cb31-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="dv">1</span> <span class="sc">|&gt;</span> </span>
+<span id="cb39-2"><a></a>  <span class="fu">sum</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -1033,15 +1072,15 @@ s = \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})^2}.
 
 <img data-src="images/01/two-dolls.png" class="quarto-figure quarto-figure-center r-stretch"></section><section id="more-summaries" class="slide level2"><h2>More summaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb33-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb33-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb33-4"><a></a>    <span class="at">sdev =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb33-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb33-6"><a></a>    <span class="at">q25 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb33-7"><a></a>    <span class="at">q75 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb33-8"><a></a>    <span class="at">iqr =</span> <span class="fu">IQR</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb33-9"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb41-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb41-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb41-4"><a></a>    <span class="at">sdev =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb41-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb41-6"><a></a>    <span class="at">q25 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb41-7"><a></a>    <span class="at">q75 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb41-8"><a></a>    <span class="at">iqr =</span> <span class="fu">IQR</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb41-9"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 6
          avg       sdev        q50       q25       q75        iqr
@@ -1052,7 +1091,7 @@ s = \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})^2}.
 </section><section id="numbers-and-pictures-working-together" class="slide level2"><h2>Numbers and pictures, working together</h2>
 <p>Where are the grosses concentrated?</p>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-39-1.png" width="960" class="r-stretch"></section><section id="if-there-is-only-one-peak-then" class="slide level2"><h2>If there is only one peak, then…</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-39-1.png" width="672" class="r-stretch"></section><section id="if-there-is-only-one-peak-then" class="slide level2"><h2>If there is only one peak, then…</h2>
 
 <img data-src="images/02/mean_median_mode.png" class="r-stretch"><p>The mean is more sensitive to “outliers” than the median. The mean will get dragged in the direction of the skew more aggresively.</p>
 </section><section id="summary" class="slide level2 small"><h2>Summary</h2>
@@ -1060,25 +1099,37 @@ s = \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})^2}.
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_density()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 15 rows containing non-finite outside the scale range
+(`stat_boxplot()`).</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-40-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-40-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column fragment" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb35-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb35-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb35-4"><a></a>    <span class="at">sdev =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb35-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb35-6"><a></a>    <span class="at">q25 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb35-7"><a></a>    <span class="at">q75 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb35-8"><a></a>    <span class="at">iqr =</span> <span class="fu">IQR</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb35-9"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb35-10"><a></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb46-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb46-3"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb46-4"><a></a>    <span class="at">sdev =</span> <span class="fu">sd</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb46-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb46-6"><a></a>    <span class="at">q25 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb46-7"><a></a>    <span class="at">q75 =</span> <span class="fu">quantile</span>(gross_2013, <span class="fl">0.75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb46-8"><a></a>    <span class="at">iqr =</span> <span class="fu">IQR</span>(gross_2013, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb46-9"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb46-10"><a></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 1
 Columns: 6
@@ -1096,7 +1147,7 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="the-test-results" class="slide level2 medium"><h2>The test results</h2>
 <p>The test result for the films is a <em>categorical</em> variable:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>bechdel<span class="sc">$</span>clean_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a>bechdel<span class="sc">$</span>clean_test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -1107,21 +1158,21 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 <p>Visualization and summarization will be a bit more straightforward here. Things get fun when categorical variables interact with other stuff.</p>
 </section><section id="picture-bar-plot" class="slide level2"><h2>Picture: bar plot</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">y =</span> clean_test)) <span class="sc">+</span> </span>
-<span id="cb39-2"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">y =</span> clean_test)) <span class="sc">+</span> </span>
+<span id="cb50-2"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-44-1.png" width="960" class="r-stretch"></section><section id="picture-bar-plot-1" class="slide level2"><h2>Picture: bar plot</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-44-1.png" width="672" class="r-stretch"></section><section id="picture-bar-plot-1" class="slide level2"><h2>Picture: bar plot</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> clean_test)) <span class="sc">+</span> </span>
-<span id="cb40-2"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> clean_test)) <span class="sc">+</span> </span>
+<span id="cb51-2"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-45-1.png" width="960" class="r-stretch"></section><section id="numerical-summary-tally-it-up" class="slide level2"><h2>Numerical summary: tally it up</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-45-1.png" width="672" class="r-stretch"></section><section id="numerical-summary-tally-it-up" class="slide level2"><h2>Numerical summary: tally it up</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb41-2"><a></a>  <span class="fu">count</span>(clean_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb52-2"><a></a>  <span class="fu">count</span>(clean_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
@@ -1137,12 +1188,12 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="numerical-summary-proportions" class="slide level2"><h2>Numerical summary: proportions</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb43-2"><a></a>  <span class="fu">count</span>(clean_test) <span class="sc">|&gt;</span></span>
-<span id="cb43-3"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb43-4"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
-<span id="cb43-5"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb43-6"><a></a>  <span class="fu">arrange</span>(prop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb54-2"><a></a>  <span class="fu">count</span>(clean_test) <span class="sc">|&gt;</span></span>
+<span id="cb54-3"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb54-4"><a></a>    <span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)</span>
+<span id="cb54-5"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb54-6"><a></a>  <span class="fu">arrange</span>(prop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 3
@@ -1164,8 +1215,8 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="go-from-one-column-of-numbers-to-two" class="slide level2 medium"><h2>Go from one column of numbers to two</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb45-2"><a></a>  <span class="fu">select</span>(budget_2013, gross_2013)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb56-2"><a></a>  <span class="fu">select</span>(budget_2013, gross_2013)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,615 × 2
@@ -1187,20 +1238,20 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="scatter-plot" class="slide level2 small"><h2>Scatter plot</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb47-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
-<span id="cb47-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb47-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb47-5"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb47-6"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
-<span id="cb47-7"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
-<span id="cb47-8"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
-<span id="cb47-9"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb47-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb58-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
+<span id="cb58-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb58-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb58-5"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb58-6"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
+<span id="cb58-7"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
+<span id="cb58-8"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
+<span id="cb58-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb58-10"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-49-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-49-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1208,21 +1259,21 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="add-a-trend-line" class="slide level2 small"><h2>Add a “trend” line</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb48-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
-<span id="cb48-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb48-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb48-5"><a></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span> </span>
-<span id="cb48-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb48-7"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
-<span id="cb48-8"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
-<span id="cb48-9"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
-<span id="cb48-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb48-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb59-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
+<span id="cb59-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb59-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb59-5"><a></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span> </span>
+<span id="cb59-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb59-7"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
+<span id="cb59-8"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
+<span id="cb59-9"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
+<span id="cb59-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb59-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-50-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-50-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1230,31 +1281,31 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 </section><section id="add-a-trend-line-1" class="slide level2 small"><h2>Add a “trend” line</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
-<span id="cb49-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
-<span id="cb49-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
-<span id="cb49-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb49-5"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span> </span>
-<span id="cb49-6"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb49-7"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
-<span id="cb49-8"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
-<span id="cb49-9"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
-<span id="cb49-10"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb49-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a><span class="fu">ggplot</span>(bechdel, </span>
+<span id="cb60-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> budget_2013, </span>
+<span id="cb60-3"><a></a>           <span class="at">y =</span> gross_2013)) <span class="sc">+</span> </span>
+<span id="cb60-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb60-5"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span> </span>
+<span id="cb60-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb60-7"><a></a>    <span class="at">x =</span> <span class="st">"Budget (2013 USD)"</span>,</span>
+<span id="cb60-8"><a></a>    <span class="at">y =</span> <span class="st">"Gross (2013 USD)"</span>,</span>
+<span id="cb60-9"><a></a>    <span class="at">title =</span> <span class="st">"Film finances (1990 - 2013)"</span></span>
+<span id="cb60-10"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb60-11"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
-<figure><p><img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-51-1.png" width="960"></p>
+<figure><p><img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-51-1.png" width="672"></p>
 </figure>
 </div>
 </div>
 </div></div>
 </section><section id="a-numerical-summary-correlation" class="slide level2"><h2>A numerical summary: correlation</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb50-2"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb50-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(gross_2013, budget_2013, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span>
-<span id="cb50-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb61-2"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb61-3"><a></a>    <span class="at">r =</span> <span class="fu">cor</span>(gross_2013, budget_2013, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span>
+<span id="cb61-4"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 1
       r
@@ -1270,7 +1321,7 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 <li>Same sign as the slope.</li>
 </ul>
 
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-53-1.png" width="960" class="r-stretch"></section></section><section><section id="exploring-one-categorical-variable-and-one-numerical-variable-together" class="title-slide slide level1 center"><h1>Exploring one categorical variable and one numerical variable together</h1>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-53-1.png" width="672" class="r-stretch"></section></section><section><section id="exploring-one-categorical-variable-and-one-numerical-variable-together" class="title-slide slide level1 center"><h1>Exploring one categorical variable and one numerical variable together</h1>
 
 </section><section id="back-to-the-research-question" class="slide level2"><h2>Back to the research question</h2>
 <p>What does passing The Bechdel Test mean for a film’s finances?</p>
@@ -1281,43 +1332,43 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
 <p>How does <code>roi</code> change depending on the category? To answer, we can use all the tools for univariate numerical data, but <em>within the groups</em>.</p>
 </section><section id="side-by-side-box-plots-preferred" class="slide level2"><h2>Side-by-side box plots (preferred)</h2>
 <div class="cell" data-layout-align="center">
-<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> roi, <span class="at">y =</span> clean_test, <span class="at">color =</span> binary)) <span class="sc">+</span></span>
-<span id="cb52-2"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb52-3"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb52-4"><a></a>    <span class="at">title =</span> <span class="st">"Return on investment vs. Bechdel test result"</span>,</span>
-<span id="cb52-5"><a></a>    <span class="at">x =</span> <span class="st">"Return-on-investment (gross / budget)"</span>,</span>
-<span id="cb52-6"><a></a>    <span class="at">y =</span> <span class="st">"Detailed Bechdel result"</span>,</span>
-<span id="cb52-7"><a></a>    <span class="at">color =</span> <span class="st">"Bechdel</span><span class="sc">\n</span><span class="st">result"</span></span>
-<span id="cb52-8"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb52-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">16</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a></a><span class="fu">ggplot</span>(bechdel, <span class="fu">aes</span>(<span class="at">x =</span> roi, <span class="at">y =</span> clean_test, <span class="at">color =</span> binary)) <span class="sc">+</span></span>
+<span id="cb63-2"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb63-3"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb63-4"><a></a>    <span class="at">title =</span> <span class="st">"Return on investment vs. Bechdel test result"</span>,</span>
+<span id="cb63-5"><a></a>    <span class="at">x =</span> <span class="st">"Return-on-investment (gross / budget)"</span>,</span>
+<span id="cb63-6"><a></a>    <span class="at">y =</span> <span class="st">"Detailed Bechdel result"</span>,</span>
+<span id="cb63-7"><a></a>    <span class="at">color =</span> <span class="st">"Bechdel</span><span class="sc">\n</span><span class="st">result"</span></span>
+<span id="cb63-8"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb63-9"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">16</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-54-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section><section id="side-by-side-histograms-eh" class="slide level2"><h2>Side-by-side histograms (…eh)</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-54-1.png" class="quarto-figure quarto-figure-center r-stretch" width="672"></section><section id="side-by-side-histograms-eh" class="slide level2"><h2>Side-by-side histograms (…eh)</h2>
 <div class="cell" data-layout-align="center">
-<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb53-2"><a></a>  <span class="fu">mutate</span>(</span>
-<span id="cb53-3"><a></a>    <span class="at">clean_test =</span> <span class="fu">fct_rev</span>(clean_test)</span>
-<span id="cb53-4"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb53-5"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> roi, <span class="at">fill =</span> binary)) <span class="sc">+</span></span>
-<span id="cb53-6"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb53-7"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>clean_test, <span class="at">nrow =</span> <span class="dv">5</span>) <span class="sc">+</span> </span>
-<span id="cb53-8"><a></a>  <span class="fu">labs</span>(</span>
-<span id="cb53-9"><a></a>    <span class="at">title =</span> <span class="st">"Return on investment vs. Bechdel test result"</span>,</span>
-<span id="cb53-10"><a></a>    <span class="at">x =</span> <span class="st">"Return-on-investment (gross / budget)"</span>,</span>
-<span id="cb53-11"><a></a>    <span class="at">y =</span> <span class="st">"Detailed Bechdel result"</span>,</span>
-<span id="cb53-12"><a></a>    <span class="at">fill =</span> <span class="st">"Bechdel</span><span class="sc">\n</span><span class="st">result"</span></span>
-<span id="cb53-13"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb53-14"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">16</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb64-2"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb64-3"><a></a>    <span class="at">clean_test =</span> <span class="fu">fct_rev</span>(clean_test)</span>
+<span id="cb64-4"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb64-5"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> roi, <span class="at">fill =</span> binary)) <span class="sc">+</span></span>
+<span id="cb64-6"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb64-7"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>clean_test, <span class="at">nrow =</span> <span class="dv">5</span>) <span class="sc">+</span> </span>
+<span id="cb64-8"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb64-9"><a></a>    <span class="at">title =</span> <span class="st">"Return on investment vs. Bechdel test result"</span>,</span>
+<span id="cb64-10"><a></a>    <span class="at">x =</span> <span class="st">"Return-on-investment (gross / budget)"</span>,</span>
+<span id="cb64-11"><a></a>    <span class="at">y =</span> <span class="st">"Detailed Bechdel result"</span>,</span>
+<span id="cb64-12"><a></a>    <span class="at">fill =</span> <span class="st">"Bechdel</span><span class="sc">\n</span><span class="st">result"</span></span>
+<span id="cb64-13"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb64-14"><a></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">16</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<img data-src="02-exploratory-1_files/figure-revealjs/unnamed-chunk-55-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section><section id="within-group-summaries" class="slide level2"><h2>Within-group summaries</h2>
+<img data-src="02-exploratory-1_files/figure-html/unnamed-chunk-55-1.png" class="quarto-figure quarto-figure-center r-stretch" width="672"></section><section id="within-group-summaries" class="slide level2"><h2>Within-group summaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
-<span id="cb54-2"><a></a>  <span class="fu">group_by</span>(clean_test) <span class="sc">|&gt;</span></span>
-<span id="cb54-3"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb54-4"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(roi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb54-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(roi, , <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb54-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a></a>bechdel <span class="sc">|&gt;</span></span>
+<span id="cb65-2"><a></a>  <span class="fu">group_by</span>(clean_test) <span class="sc">|&gt;</span></span>
+<span id="cb65-3"><a></a>  <span class="fu">summarize</span>(</span>
+<span id="cb65-4"><a></a>    <span class="at">avg =</span> <span class="fu">mean</span>(roi, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb65-5"><a></a>    <span class="at">q50 =</span> <span class="fu">median</span>(roi, , <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb65-6"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 3
   clean_test   avg   q50
@@ -1550,41 +1601,6 @@ $ iqr  &lt;dbl&gt; 300412109</code></pre>
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
