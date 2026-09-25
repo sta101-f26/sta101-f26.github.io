@@ -1,0 +1,246 @@
+---
+title: "AE 05: Diamonds!"
+format: html
+---
+
+We want to understand how "The 4 Cs" predict a diamond's price. We have a dataset with 5,000 rows, where each row is a diamond, and along the columns we record each diamond's...
+
+- `price`: in USD;
+- `carat`: weight of the diamond;
+- `cut`: quality of the cut (Fair, Good, Very Good, Premium, Ideal);
+- `color`: diamond colour, from J (worst) to D (best);
+- `clarity`: a measurement of how clear the diamond is;
+    - I (worst), SI, VS, VVS, IF (best);
+- `length_mm`;
+- `width_mm`.
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+## Load and prepare the data
+
+```{r}
+#| label: load-data
+#| message: false
+diamonds <- read_csv("data/diamonds.csv")
+```
+
+These data have several *categorical* variables: `cut`, `color`, and `clarity`. How are their levels ordered? Does this make sense?
+
+```{r}
+#| label: level-ordering
+
+diamonds <- diamonds |>
+  mutate(
+    cut = factor(cut),
+    clarity = factor(clarity),
+    color = factor(color)
+  )
+
+levels(diamonds$cut)
+levels(diamonds$clarity)
+levels(diamonds$color)
+```
+
+If you don't think that the order of the levels makes sense, use `mutate`, `fct_relevel`, and variable assignment to change it:
+
+```{r}
+#| label: re-level
+
+diamonds <- diamonds |>
+  mutate(
+    cut = fct_relevel(cut, "Fair", "Good", "Very Good", "Premium", "Ideal"),
+    clarity = fct_relevel(clarity, "I", "SI", "VS", "VVS", "IF")
+  )
+
+levels(diamonds$cut)
+levels(diamonds$clarity)
+```
+
+## Exploratory analysis
+
+Visualize the bivariate relationship between `price` and each of the 4 Cs.
+
+```{r}
+#| label: price-carat
+
+ggplot(diamonds, aes(x = carat, y = price)) + 
+  geom_point()
+```
+
+```{r}
+#| label: price-cut
+
+ggplot(diamonds, aes(x = cut, y = price)) + 
+  geom_boxplot()
+```
+
+```{r}
+#| label: price-clarity
+
+ggplot(diamonds, aes(x = clarity, y = price)) + 
+  geom_boxplot()
+```
+
+```{r}
+#| label: price-color
+
+ggplot(diamonds, aes(x = color, y = price)) + 
+  geom_boxplot()
+```
+
+Put price, carat, and clarity on one plot:
+
+```{r}
+#| label: price-carat-clarity
+
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) + 
+  geom_point()
+```
+
+## Empty model
+
+Fit the model for `price` that has no predictors:
+
+```{r}
+#| label: empty-model
+
+empty_fit <- linear_reg() |>
+  fit(price ~ 1, diamonds)
+
+tidy(empty_fit)
+```
+
+Interpret the coefficient estimate:
+
+- The average price of a diamond is $3955.28.
+
+## Simple linear regression
+
+Fit the model that predicts `price` from `carat`:
+
+```{r}
+#| label: price-carat-model
+
+price_carat_fit <- linear_reg() |>
+  fit(price ~ carat, diamonds)
+
+tidy(price_carat_fit)
+```
+
+Write the equation for the equation of the fitted model:
+
+$$
+\widehat{price}=-2360.58 + 7916.132\times carat.
+$$
+
+Interpret the coefficient estimates:
+
+- A 0-carat diamond is predicted to cost $-2360.58 on average. You can't have a 0-carat diamond, and the price won't be negative, so this is doubly meaningless;
+- A 1-carat increase predicts an average increase in price of $7916.13.
+
+## Additive model
+
+Fit the additive model that predicts `price` from `carat` and `clarity`:
+
+```{r}
+#| label: price-carat-clarity-model-1
+
+price_carat_clarity_fit <- linear_reg() |>
+  fit(price ~ carat + clarity, diamonds)
+
+tidy(price_carat_clarity_fit)
+```
+
+$$
+\widehat{price}=-6989.76 + 8465.86\times carat + 3474.28\times SI + 4570.70\times VS + 5214.40\times VVS + 5515.78\times IF
+$$
+
+Interpret some coefficient estimates:
+
+- A 0-carat *I* diamond is predicted to cost $-6989.76 on average;
+- Holding clarity constant, a 1-carat increase predicts an average increase in price of $8465.86. That holds for every type of diamond, because the lines are parallel;
+- Holding carat constant, an *SI* diamond is expected to cost $3474.28 more than an *I* diamond, on average;
+- Holding carat constant, an *VS* diamond is expected to cost $4570.70 more than an *I* diamond, on average;
+- Holding carat constant, an *VSS* diamond is expected to cost $5214.40 more than an *I* diamond, on average;
+- Holding carat constant, an *IF* diamond is expected to cost $5515.78 more than an *I* diamond, on average.
+
+## Interaction model
+
+Fit the interaction model that predicts `price` from `carat` and `clarity`:
+
+
+```{r}
+#| label: price-carat-clarity-model-2
+
+price_carat_clarity_int_fit <- linear_reg() |>
+  fit(price ~ carat * clarity, diamonds)
+
+tidy(price_carat_clarity_int_fit)
+```
+
+$$
+\begin{aligned}
+\widehat{price}
+=
+-1543.06 + 4148.06\times carat &-1471.07\times SI -1202.31\times VS -1084.20\times VVS -1610.30\times IF
+\\
+&+ 3782.50\times carat*SI \\
+&+ 4748.43\times carat*VS \\
+&+ 5855.87\times carat*VVS \\
+&+ 7626.83\times carat*IF.
+\end{aligned}
+$$
+
+Interpret some coefficient estimates:
+
+- A 0-carat *I* diamond is predicted to cost $-1543.06 on average;
+- For an *I* diamond, a 1-carat increase predicts an average increase in price of $4148.06;
+- A 0-carat *SI* diamond is predicted to cost $1471.07 *less* than a 0-carat *I* diamond, on average;
+- A 0-carat *VS* diamond is predicted to cost $1202.31 *less* than a 0-carat *I* diamond, on average;
+- A 0-carat *VVS* diamond is predicted to cost $1084.2 *less* than a 0-carat *I* diamond, on average;
+- A 0-carat *IF* diamond is predicted to cost $1610.3 *less* than a 0-carat *I* diamond, on average;
+- A 1-carat increase predicts an average price change for *SI* diamonds that is $3782.5 *greater* than for *I* diamonds;
+- A 1-carat increase predicts an average price change for *VS* diamonds that is $4748.43 *greater* than for *I* diamonds;
+- A 1-carat increase predicts an average price change for *VVS* diamonds that is $5855.87 *greater* than for *I* diamonds;
+- A 1-carat increase predicts an average price change for *IF* diamonds that is $7626.83 *greater* than for *I* diamonds.
+
+## "Full" model
+
+Fit the additive model that predicts `price` from all other variables in the dataset:
+
+
+```{r}
+#| label: full-model
+
+full_model <- linear_reg() |>
+  fit(price ~ ., diamonds)
+
+tidy(full_model)
+```
+
+## Selection 
+
+Use adjusted $R^2$ to select the "best" model for `price`.
+
+```{r}
+#| label: selection
+
+empty_fit |> glance() |> pull(adj.r.squared)
+
+price_carat_fit |> glance() |> pull(adj.r.squared)
+
+price_carat_clarity_fit |> glance() |> pull(adj.r.squared)
+
+price_carat_clarity_int_fit |> glance() |> pull(adj.r.squared)
+
+full_model |> glance() |> pull(adj.r.squared)
+```
+
+The interaction model is "best."
+
+
