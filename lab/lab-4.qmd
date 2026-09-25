@@ -49,11 +49,11 @@ Fit a simple linear regression model that predicts `interest_rate` from `credit_
 
 ## Task 3
 
-Fit an additive model that predicts `interest_rate` from `credit_util` and `homeownership`. Display the results, and interpret the first three coefficients estimates listed in the table.
+Fit an additive model that predicts `interest_rate` from `credit_util` and `homeownership`. Display the results, and interpret all of the coefficient estimates.
 
 ## Task 4
 
-Fit an *interaction* model that predicts `interest_rate` from `credit_util` and `homeownership`. Display the results, and interpret the last coefficient estimate listed in the table.
+Fit an *interaction* model that predicts `interest_rate` from `credit_util` and `homeownership`. Display the results, and then typeset the three equations for the fitted line *of each group*.
 
 ## Task 5
 
