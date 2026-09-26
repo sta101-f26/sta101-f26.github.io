@@ -72,8 +72,13 @@ website:
             text: Homework 2
           - href: hw/hw-3.qmd
             text: Homework 3
+          - href: hw/hw-4.qmd
+            text: Homework 4
       - section: "Project"
       - section: "Exam Study Guides"
+        contents:
+          - href: exam/midterm-guide.qmd
+            text: Midterm
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
