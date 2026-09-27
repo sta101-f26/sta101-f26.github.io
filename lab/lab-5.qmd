@@ -1,0 +1,313 @@
+---
+title: "Lab 5"
+subtitle: "Due: end-of-lab Friday October 2"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(tidymodels)
+```
+
+Our data today describe the demand of two different types of hotels. Each observation represents a hotel booking between July 1, 2015 and August 31, 2017. Some bookings were cancelled and others were kept (ie. the guest checked in).
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+hotels <- read_csv("data/hotel-reservations.csv")
+```
+
+```{r}
+#| eval: false
+hotels <- read_csv("data/hotels.csv")
+```
+
+The variables in the dataset and their descriptions are as follows:
+
+-   `hotel`: Hotel type (Resort Hotel or City Hotel).
+-   `is_canceled`: Value indicating if the booking was `"canceled"` (1) or `"not canceled"` (0).
+-   `lead_time`: Number of days that elapsed between the entering date of the booking into the PMS and the arrival date.
+-   `arrival_date_year`: Year of arrival date.
+-   `arrival_date_month`: Month of arrival date.
+-   `arrival_date_week_number`: Week number of year for arrival date.
+-   `arrival_date_day_of_month`: Day of arrival date.
+-   `stays_in_weekend_nights`: Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel.
+-   `stays_in_week_nights`: Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel.
+-   `adults`: Number of adults.
+-   `children`: Number of children.
+-   `babies`: Number of babies
+-   `meal`: Type of meal booked. Categories are presented in standard hospitality meal packages:
+Undefined/SC – no meal package;
+BB – Bed & Breakfast;
+HB – Half board (breakfast and one other meal – usually dinner);
+FB – Full board (breakfast, lunch and dinner).
+-   `country`: Country of origin. Categories are represented in the ISO 3155–3:2013 format.
+-   `market_segment`: Market segment designation. In categories, the term "TA" means "Travel Agents" and "TO" means "Tour Operators".
+-   `distribution_channel`: Booking distribution channel. The term "TA" means "Travel Agents" and "TO" means "Tour Operators".
+-   `is_repeated_guest`: Value indicating if the booking name was from a repeated guest (1) or not (0).
+-   `previous_cancellations`: Number of previous bookings that were cancelled by the customer prior to the current booking.
+-   `previous_bookings_not_canceled`: Number of previous bookings not cancelled by the customer prior to the current booking.
+-   `reserved_room_type`: Code of room type reserved. Code is presented instead of designation for anonymity reasons.
+-   `assigned_room_type`: Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type due to hotel operation reasons (e.g. overbooking) or by customer request. Code is presented instead of designation for anonymity reasons.
+-   `booking_changes`: Number of changes/amendments made to the booking from the moment the booking was entered on the PMS until the moment of check-in or cancellation.
+-   `deposit_type`: ndication on if the customer made a deposit to guarantee the booking. This variable can assume three categories:
+No Deposit – no deposit was made;
+Non Refund – a deposit was made in the value of the total stay cost;
+Refundable – a deposit was made with a value under the total cost of stay.
+-   `agent`: ID of the travel agency that made the booking.
+-   `company`: ID of the company/entity that made the booking or responsible for paying the booking. ID is presented instead of designation for anonymity reasons.
+-   `days_in_waiting_list`: Number of days the booking was in the waiting list before it was confirmed to the customer.
+-   `customer_type`: Type of booking, assuming one of four categories:
+Contract - when the booking has an allotment or other type of contract associated to it;
+Group – when the booking is associated to a group;
+Transient – when the booking is not part of a group or contract, and is not associated to other transient booking;
+Transient-party – when the booking is transient, but is associated to at least other transient booking.
+-   `adr`: Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights.
+-   `required_car_parking_spaces`: Number of car parking spaces required by the customer.
+-   `total_of_special_requests`: Number of special requests made by the customer (e.g. twin bed or high floor).
+-   `reservation_status`: Reservation last status, assuming one of three categories:
+Canceled – booking was canceled by the customer;
+Check-Out – customer has checked in but already departed;
+No-Show – customer did not check-in and did inform the hotel of the reason why.
+-   `reservation_status_date`: Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel.
+
+
+Below is an exploratory summary of the variables in the dataset we will use in our analysis.
+
+::: {layout="[0.55, -0.05, 0.4]"}
+
+:::{#firstcol}
+
+```{r}
+#| echo: false
+#| eval: true
+hotels |>
+  count(is_canceled) |>
+  mutate(
+    is_canceled = if_else(is_canceled == 1, "1 - Canceled", "0 - Not canceled")
+  ) |>
+  knitr::kable(col.names = c("Cancellation status", "Number of bookings"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-asp: 0.55
+ggplot(hotels, aes(x = arrival_date_day_of_month)) +
+  geom_histogram(binwidth = 1) +
+  scale_y_continuous(labels = scales::label_number()) +
+  labs(
+    x = "Arrival date - Day of month",
+    y = NULL,
+    title = "dow: Arrival date - Day of month"
+  ) +
+  theme_minimal() +
+  theme(plot.title.position = "plot")
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| fig-width: 4
+#| fig-asp: 0.55
+ggplot(hotels, aes(x = adr)) +
+  geom_boxplot() +
+  scale_x_continuous(labels = scales::label_dollar()) +
+  labs(
+    x = "Average daily rate",
+    title = "adr: Average daily rate",
+  ) +
+  theme_minimal() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+```
+
+:::
+
+
+:::{#secondcol}
+
+```{r}
+#| echo: false
+#| eval: true
+hotels |>
+  count(adults) |>
+  knitr::kable(col.names = c("Number of adults", "Number of bookings"))
+```
+
+:::
+
+:::
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Part 1 - data prep
+
+### Question 1
+
+a.  One of the outcome variables you'll use is `is_canceled`. Transform this variable to the appropriate data class so that the levels are ordered such that when we fit a logistic regression model to predict this outcome, success is defined as "canceled" (what we're predicting).
+
+```{r}
+#| include: false
+#| eval: true
+hotels <- hotels |>
+  mutate(
+    is_canceled = if_else(is_canceled == 1, "canceled", "not canceled"),
+    is_canceled = fct_relevel(is_canceled, "not canceled", "canceled")
+  )
+```
+
+b.  Based on the exploratory summaries above, you should address a few data quality issues before moving forward with the analysis. To do so, filter the dataset to remove
+    - any bookings with average daily rate greater than $1,000 and
+    - any bookings with number of adults greater than or equal to 5.
+
+```{r}
+#| include: false
+#| eval: true
+hotels <- hotels |>
+  filter(adr <= 1000, adults < 5)
+```
+
+c.  Split the data into a training set (75%) and a testing set (25%), setting the random seed to `1117` for reproducibility.
+
+```{r}
+#| include: false
+#| eval: true
+set.seed(1117)
+hotels_split <- initial_split(hotels)
+hotels_train <- training(hotels_split)
+hotels_test <- testing(hotels_split)
+```
+
+
+## Part 2 - Predicting cancellations
+
+### Question 2
+
+Using these data, one of our goals is to explore the following question:
+
+> *Are reservations earlier in the month or later in the month more likely to be cancelled?*
+
+a.  In a single pipeline, calculate the mean arrival dates (`arrival_date_day_of_month`) for reservations that were cancelled and reservations that were not cancelled.
+
+::: {.callout-tip collapse="true"}
+## Hint
+
+Think carefully about which dataset you should use: `hotels`, the training subset, or the testing subset?
+:::
+
+b.  In your own words, explain why we can not use a linear model to model the relationship between if a hotel reservation was cancelled and the day of month for the booking.
+
+c.  Fit the appropriate model to predict whether a reservation was cancelled from `arrival_date_day_of_month` and display a tidy summary of the model output.
+    Then, interpret the slope coefficient in context of the data and the research question.
+
+::: {.callout-tip collapse="true"}
+## Hint
+
+The slope interpretation will have the following format:
+
+> The model predicts that, for each day the booking is \_\_\_ (later / earlier) in the month, the \_\_\_ (chance / probability / odds) of a hotel cancellation is \_\_\_ (lower / higher) by a factor of \_\_\_, on average.
+:::
+
+d.  Calculate the probability that the hotel reservation is cancelled if it the arrival date is on the 17th of the month.
+    Based on this probability, would you predict this booking would be cancelled or not cancelled.
+    Explain your reasoning for your classification.
+
+### Question 3
+
+a.  Fit another model to predict whether a reservation was cancelled from `arrival_date_day_of_month` and `hotel` type (Resort or City Hotel), allowing the relationship between `arrival_date_day_of_month` and `is_canceled` to vary based on `hotel` type.
+    Display a tidy output of the model.
+
+b.  Interpret the intercept in context of the data.
+
+## Part 3 - Predicting daily rates
+
+### Question 4
+
+The dataset also contains information about the average daily rate (`adr`) for each reservation.
+The following model predicts `adr` from `adults` and `hotel` type.
+
+```{r}
+#| eval: true
+#| echo: false
+adr_fit_1 <- linear_reg() |>
+  fit(adr ~ adults + hotel, data = hotels_train)
+
+adr_aug_1 <- augment(adr_fit_1, hotels_train)
+
+tidy(adr_fit_1)
+```
+
+a.  Which of the following is the best interpretation of the slope coefficient for `adults`?
+
+    > For each additional adult in the booking, the average daily rate is predicted to be higher by $29.00...
+
+    i. on average, holding hotel type constant.
+    i. for Resort Hotels compared to City Hotels, on average.
+    i. for City Hotels compared to Resort Hotels, on average.
+    i. on average, not holding any other variables constant.
+
+b.  Which of the following is the correct interpretation of the slope coefficient for `hotel`?
+
+    i. For each additional Resort Hotel booking, the predicted average daily rate is $10.80 lower, holding number of adults constant.
+    i. For each additional adult in the booking, the average daily rate is predicted to be lower by $10.80 for resort hotels compared to City Hotels, on average.
+    i. Resort Hotels bookings are predicted to have an average daily rate that is $10.80 lower than City Hotels, on average, holding number of adults constant.
+    i. Resort Hotels bookings are predicted to have an average daily rate that is $10.80 higher than City Hotels, on average, holding number of adults constant.
+
+c.  Which of the following is the correct interpretation of the intercept?
+
+    i. The predicted average daily rate for a bookings with 0 adults at a Resort Hotel is $51.70, on average.
+    i. The predicted average daily rate for a bookings with 0 adults at a City Hotel is $51.70, on average.
+    i. For each additional adult and Resort Hotel in the booking, the average daily rate is predicted to be $51.70 higher, on average.
+    i. For each additional adult and City Hotel in the booking, the average daily rate is predicted to be $51.70 higher, on average.
+
+d.  Which of the following (Plot I or Plot II) is the correct visual representation of this model?
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| layout-ncol: 2
+#| fig-width: 5
+#| fig-asp: 0.618
+ggplot(hotels_train, aes(x = adults, y = adr, color = hotel)) +
+  geom_point() +
+  geom_smooth(method = "lm", linewidth = 1, se = FALSE) +
+  ggthemes::scale_color_colorblind() +
+  labs(
+    title = "Plot I",
+    x = "Number of adults",
+    y = "Average daily rate",
+    color = "Hotel"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "inside", legend.position.inside = c(0.15, 0.80))
+
+ggplot(adr_aug_1, aes(x = adults, color = hotel)) +
+  geom_point(aes(y = adr)) +
+  geom_line(aes(y = .pred), linewidth = 1) +
+  ggthemes::scale_color_colorblind() +
+  labs(
+    title = "Plot II",
+    x = "Number of adults",
+    y = "Average daily rate",
+    color = "Hotel"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "inside", legend.position.inside = c(0.15, 0.80))
+```
+
+## Part 4 - study
+
+Congratulations! You have just completed all of the work you have to submit for today's lab. If any time remains in the session, I encourage you to stick around and work on the [midterm study guide](/exam/midterm-guide.html) with your teammates. 
+
+## Submission
+
+{{< include _submission.qmd >}}
+
