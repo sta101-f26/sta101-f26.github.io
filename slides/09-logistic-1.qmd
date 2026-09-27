@@ -773,9 +773,10 @@ curve(exp(b0 + b1 * x) / (1 + exp(b0 + b1 * x)), from = -5, to = 5, n = 1000, co
 abline(v = 0)
 axis(2, at = c(0, 1))
 points(0, exp(b0) / (1 + exp(b0)), pch = 19, col = "red", cex = 2)
+segments(-10, exp(b0) / (1 + exp(b0)), 0, exp(b0) / (1 + exp(b0)), lty = 2, lwd = 2, col = "red")
 ```
 
-The intercept tells you what the model predicts when x = 0.
+The "intercept" determines what the model predicts when x = 0.
 
 ## The "intercept" in logistic regression
 
@@ -788,6 +789,14 @@ $$
 If $x=0$, we predict that on average $y=1$ with probability $\frac{e^{b_0}}{1+e^{b_0}}$.
 
 ## For our example
+
+$$
+\log\left(\frac{\hat{p}}{1-\hat{p}}\right)
+=
+-2.27
++
+0.000272\times exclaim~mess
+$$
 
 If `exclaim_mess = 0`, then
 
