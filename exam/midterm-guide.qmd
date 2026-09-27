@@ -28,11 +28,11 @@ theme_set(theme_minimal(base_size = 12))
 
 Our midterm exam will take place during lecture on Thursday October 8. Here's what you should know about it:
 
-- **What's the format?** The exam is a traditional pencil-and-paper exam. The questions will be a mix of multiple choice and free response;
+- **What's the format?** It's a traditional pencil-and-paper exam. The questions will be a mix of multiple choice and free response;
 - **How long will it take?** You have 75 minutes to complete the exam, but on average the exam is not *intended* to take the full 75 minutes;
 - **What resources are allowed?** You are only allowed both sides of a single 8.5" x 11" sheet of notes created by you and you only. I do not care how you create the note sheet;
 - **Will we be writing code on the exam?** No. However, you may be asked to analyze and interpret the *output* of some code, and so being able to *read* the code that generated the output could be helpful;
-- **What skills will be emphasized?** JZ cares most about your visual intuition and conceptual understanding, so you should sweep through all of the lectures, find every *picture* we ever dissected, and make sure you understand every detail of it;
+- **What skills will be emphasized?** I care most about your visual intuition and conceptual understanding, so you should sweep through all of the lectures, find every *picture* we ever dissected, and make sure you understand every detail of it;
 - **What topics will be covered?** Everything from Lecture 2 on 9/1 through Lecture 11 on 10/6 is fair game. So that's exploratory data analysis (visualization and summarization) and regression modeling (both linear and logistic);
 - **Should I study the textbook, the lecture videos, or the tutorials?** Maybe if you have time, but you should not prioritize them. In approximate order of importance, you should prioritize studying this guide, the lecture notes, the solutions to the in-class demos (so-called AEs), the homeworks, and the labs. If you have more time to study after all of that, then the first thing I would suggest is sampling some of the odd-numbered exercises at the end of Ch. 1 - 10 in [IMS](https://openintrostat.github.io/ims/). The answers to these exercises are in the book, and they do not involve code: just concepts, interpretation, etc;
     - **Note**: if you do dip into the textbook, videos, or tutorials, and you encounter a topic that *never appeared* in any of the lectures, labs, or homeworks, then you are not responsible for it;
@@ -1176,48 +1176,6 @@ q_no <- q_no + 1
 
 ### Question `{r} q_no`
 
-Ultimately, your teammate decides they don't like the negative slope coefficients in the model output you created (not that there's anything wrong with negative slope coefficients!), does something else, and comes up with the following model output.
-
-```{r}
-blizzard_salary <- blizzard_salary |>
-  mutate(
-    performance_rating = fct_relevel(
-      performance_rating,
-      "Poor",
-      "Successful",
-      "High",
-      "Top"
-    )
-  )
-
-raise_2_fit <- linear_reg() |>
-  fit(percent_incr ~ annual_salary + performance_rating, data = blizzard_salary)
-
-tidy(raise_2_fit)
-```
-
-Unfortunately they didn't write their code in a Quarto document, instead just wrote some code in the Console and then lost track of their work. They remember using the `fct_relevel()` function and doing something like the following:
-
-```{r}
-#| eval: false
-#| echo: true
-blizzard_salary <- blizzard_salary |>
-  mutate(performance_rating = fct_relevel(performance_rating, ___))
-```
-
-What should they put in the blanks to get the same model output as above?
-
-a.  "Poor", "Successful", "High", "Top"
-b.  "Successful", "High", "Top"
-c.  "Top", "High", "Successful", "Poor"
-d.  Poor, Successful, High, Top
-
-```{r}
-q_no <- q_no + 1
-```
-
-### Question `{r} q_no`
-
 Suppose we fit a model to predict `percent_incr` from `annual_salary` and `salary_type`. A tidy output of the model is shown below.
 
 ```{r}
@@ -1548,36 +1506,6 @@ ggplot(movies, aes(x = runtime, y = score)) +
 ```
 
 
-```{r}
-q_no <- q_no + 1
-```
-
-#### Question `{r} q_no`
-
-Partial code for producing @fig-score-runtime is given below. Which of the following goes in the blank on Line 2? **Select all that apply.**
-
-
-```{r}
-#| eval: false
-#| echo: true
-#| code-line-numbers: true
-movies |>
-  mutate(runtime = ___) |>
-  ggplot(aes(x = runtime, y = score)) +
-  geom_point(alpha = 0.5) +
-  geom_smooth(method = "lm", se = FALSE)
-# additional code for annotating Blue City on the plot
-```
-
-a.  `grepl(" mins", runtime)`
-
-b.  `grep(" mins", runtime)`
-
-c.  `str_remove(runtime, " mins")`
-
-d.  `as.numeric(str_remove(runtime, " mins"))`
-
-e.  `na.rm(runtime)`
 
 ```{r}
 q_no <- q_no + 1
@@ -1654,7 +1582,7 @@ movies |>
 #| eval: false
 #| echo: true
 movies |>
-  __blank_1__(
+  summarize(
     r_score_runtime = cor(runtime, score),
     r_score_year = cor(year, score)
   )
@@ -1666,24 +1594,6 @@ movies |>
             <dbl>        <dbl>
 1           0.434. __blank_2__       
 ```
-
-```{r}
-q_no <- q_no + 1
-```
-
-#### Question `{r} q_no`
-
-Which of the following goes in `__blank_1__`?
-
-a.  `summarize`
-
-b.  `mutate`
-
-c.  `group_by`
-
-d.  `arrange`
-
-e.  `filter`
 
 ```{r}
 q_no <- q_no + 1
@@ -1803,5 +1713,44 @@ d.  $score = 4.525 + (0.021 - 0.257) \times runtime$
 
 e.  $\widehat{score} = (4.525 + 0.021) - 0.257 \times runtime$
 
+### Selection
+
+Let say we want to predict `score` and we are considering using `runtime`, `budget`, and `year` to do it. So we compute the adjusted $R^2$ for every possible additive model, and we get 
+
+| Model | Adjusted $R^2$ |
+| --- | --- |
+| `score ~ 1` | 0 |
+| `score ~ runtime` | `{r} linear_reg() |> fit(score ~ runtime, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ budget` | `{r} linear_reg() |> fit(score ~ budget, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ year` | `{r} linear_reg() |> fit(score ~ year, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ runtime + budget` | `{r} linear_reg() |> fit(score ~ runtime + budget, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ runtime + year` | `{r} linear_reg() |> fit(score ~ runtime + year, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ budget + year` | `{r} linear_reg() |> fit(score ~ budget + year, data = movies) |> glance() |> pull(adj.r.squared)` |
+| `score ~ runtime + budget + year` | `{r} linear_reg() |> fit(score ~ runtime + budget + year, data = movies) |> glance() |> pull(adj.r.squared)` |
+
+
+```{r}
+q_no <- q_no + 1
+```
+
+#### Question `{r} q_no`
+
+Which model is "best"?
+
+```{r}
+q_no <- q_no + 1
+```
+
+#### Question `{r} q_no`
+
+Which model will you select if you follow forward stepwise selection?
+
+```{r}
+q_no <- q_no + 1
+```
+
+#### Question `{r} q_no`
+
+Which model will you select if you follow backward elimination?
 
 
