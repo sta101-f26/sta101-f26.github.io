@@ -1,0 +1,137 @@
+---
+title: Homework 4
+subtitle: "Due: Tuesday October 6 at 3 PM"
+---
+
+On this homework you'll get some practice with our last two regression topics: variable selection and logistic regression.
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+```{r}
+#| echo: false
+q_no <- 0
+```
+
+### Exercise `{r} q_no`
+
+{{< include _music-rec.qmd >}}
+
+
+## Part 1: model selection
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Let's revisit the weight lifting data from [Homework 2](/hw/hw-2.html#part-1-do-you-even-lift):
+
+```{r}
+#| eval: false
+ipf <- read_csv("data/ipf.csv")
+```
+
+a. Don't worry, I'm not going to make you convert to pounds. However, we do need to remove some rows:
+    - Only keep the rows for which `best3deadlift_kg`, `best3squat_kg`, *and* `bodyweight_kg` are all positive.
+    - Today we will focus specifically on the results for *male* lifters (it's just the only way I could get the numbers to work out);
+    - Make sure you perform those filters and then store the result in a data frame *with a new name*.
+a. We are considering predicting `best3deadlift_kg` using `best3squat_kg`, `bodyweight_kg`, and `age`. So we have $p=3$ candidate predictors, and we want to know which of these variables to include in an *additive model*. How many additive models could we construct from this set of predictors, and which model is best? Explain your reasoning;
+a. In this example, explain step-by-step how a *forward stepwise* procedure would search for the best model. Which model would be selected?
+a. In this example, explain step-by-step how a *backward elimination* procedure would search for the best model. Which model would be selected?
+a. Did you reach the same model in each of the last three parts? If not, why didn't the selection procedures agree? If so, explain within the context of this application why the final model choice makes sense.
+
+
+## Part 2: logistic regression
+
+The General Social Survey (GSS) gathers data on contemporary American society in order to monitor and explain trends and constants in attitudes, behaviours, and attributes. Hundreds of trends have been tracked since 1972. In addition, since the GSS adopted questions from earlier surveys, trends can be followed for up to 70 years. The GSS contains a standard core of demographic, behavioural, and attitudinal questions, plus topics of special interest. Among the topics covered are civil liberties, crime and violence, intergroup tolerance, morality, national spending priorities, psychological well-being, social mobility, and stress and traumatic events. 
+
+In this part you will work with the 2022 General Social Survey:
+
+```{r}
+#| eval: false 
+
+gss22 <- read_csv("data/gss22.csv")
+```
+
+We will focus on these variables:
+
+- `advfront`: does the respondent agree or not with "Even if it brings no immediate benefits, scientific research that advances the frontiers of knowledge is necessary and should be supported by the federal government;"
+- `educ`: years of education;
+- `polviews`: is the respondent "Conservative,” "Moderate," or "Liberal."
+
+
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` (data prep)
+
+a. After reading in the data, make the categorical variables `advfront` and `polviews` factors and make the order of their levels "Agree" - "Not Agree" and "Conservative" - "Moderate" - "Liberal," respectively;
+a. Split the data into a training set (75%) and a testing set (25%), and use the random number seed `8675309` for reproducibility.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` (a simple model)
+
+a. Fit a logistic regression model that predicts `advfront` from `educ.` Report the tidy output of the model;
+a. Write out the estimated model in proper notation;
+a. Interpret all coefficient estimates;
+a. Using your estimated model, predict the probability that someone with 7 years of education *agrees* with the statement.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` (model selection)
+
+a. Fit a second model that adds the additional explanatory variable of `polviews` to your model from the previous question. Report the tidy output of the model;
+a. Write out the estimated model in proper notation;
+a. You have two logistic regression models that are both attempting to predict the same response: `advfront`. Which one is *best*? Explain your reasoning and provide evidence for your conclusion.
+
+
+
+## Part 3: IMS exercises
+
+These exercises from the textbook do not require code, but you should type your responses into the same Quarto file you've been using. Make sure to answer the questions in full sentences.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no`
+
+IMS - [Chapter 8 exercises](https://openintrostat.github.io/ims/model-mlr.html#sec-chp8-exercises), #12: Palmer penguins, predicting body mass.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no`
+
+IMS - [Chapter 8 exercises](https://openintrostat.github.io/ims/model-mlr.html#sec-chp8-exercises), #14: Palmer penguins, backwards elimination.
+
+
+## Submission
+
+{{< include _submission.qmd >}}
