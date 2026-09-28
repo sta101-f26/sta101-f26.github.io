@@ -303,9 +303,12 @@ ggplot(adr_aug_1, aes(x = adults, color = hotel)) +
   theme(legend.position = "inside", legend.position.inside = c(0.15, 0.80))
 ```
 
-## Part 4 - study
+## Part 4 - why stop there?
 
-Congratulations! You have just completed all of the work you have to submit for today's lab. If any time remains in the session, I encourage you to stick around and work on the [midterm study guide](/exam/midterm-guide.html) with your teammates. 
+Congratulations! You have just completed all of the work you have to submit for today's lab. If any time remains in the session, I encourage you to stick around and work with your teammates on either...
+
+- [Homework 4](/hw/hw-4.html);
+- the [midterm study guide](/exam/midterm-guide.html);
 
 ## Submission
 
