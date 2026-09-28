@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta101-f26.github.io/exam/midterm-guide.html</loc>
-    <lastmod>2026-09-22T23:37:56.162Z</lastmod>
+    <lastmod>2026-09-27T01:04:47.945Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
@@ -45,28 +45,36 @@
     <lastmod>2026-08-23T22:14:24.426Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/05-slr-slides.html</loc>
-    <lastmod>2026-09-17T15:16:39.684Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/09-logistic-1-slides.html</loc>
+    <lastmod>2026-09-27T13:10:01.463Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/05-slr.html</loc>
-    <lastmod>2026-09-17T15:16:39.684Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/09-logistic-1.html</loc>
+    <lastmod>2026-09-27T13:10:01.463Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/03-exploratory-2-slides.html</loc>
-    <lastmod>2026-09-08T17:12:06.443Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/04-models-slides.html</loc>
+    <lastmod>2026-09-11T01:13:39.492Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/03-exploratory-2.html</loc>
-    <lastmod>2026-09-08T17:12:06.443Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/04-models.html</loc>
+    <lastmod>2026-09-11T01:13:39.492Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/06-mlr-slides.html</loc>
-    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/02-exploratory-1-slides.html</loc>
+    <lastmod>2026-09-01T18:31:19.079Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/06-mlr.html</loc>
-    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/02-exploratory-1.html</loc>
+    <lastmod>2026-09-01T18:31:19.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/00-welcome-slides.html</loc>
+    <lastmod>2026-08-26T11:10:27.064Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/00-welcome.html</loc>
+    <lastmod>2026-08-26T11:10:27.064Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/07-r-squared-slides.html</loc>
@@ -85,48 +93,56 @@
     <lastmod>2026-09-18T12:16:49.114Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/lab/lab-4.html</loc>
-    <lastmod>2026-09-25T01:06:43.206Z</lastmod>
+    <loc>https://sta101-f26.github.io/lab/lab-5.html</loc>
+    <lastmod>2026-09-27T00:29:43.758Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/lab/lab-1.html</loc>
-    <lastmod>2026-09-04T14:36:22.957Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/lab/lab-2.html</loc>
-    <lastmod>2026-09-11T15:22:33.191Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
-    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
-    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
-    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
-    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
-    <lastmod>2026-09-25T00:27:43.967Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/ae/ae-04-penguins.html</loc>
-    <lastmod>2026-09-17T17:45:16.966Z</lastmod>
+    <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
+    <lastmod>2026-08-28T15:14:34.935Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-3.html</loc>
     <lastmod>2026-09-17T11:09:54.697Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
-    <lastmod>2026-08-28T15:14:34.935Z</lastmod>
+    <loc>https://sta101-f26.github.io/ae/ae-04-penguins.html</loc>
+    <lastmod>2026-09-17T17:45:16.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
+    <lastmod>2026-09-25T00:27:43.967Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
+    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
+    <lastmod>2026-09-28T12:13:57.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
+    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
+    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
+    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/lab/lab-2.html</loc>
+    <lastmod>2026-09-11T15:22:33.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/lab/lab-1.html</loc>
+    <lastmod>2026-09-04T14:36:22.957Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/lab/lab-4.html</loc>
+    <lastmod>2026-09-25T01:06:43.206Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/index.html</loc>
@@ -141,28 +157,36 @@
     <lastmod>2026-09-24T09:07:17.534Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/00-welcome.html</loc>
-    <lastmod>2026-08-26T11:10:27.064Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/10-logistic-2.html</loc>
+    <lastmod>2026-09-25T20:07:34.745Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/00-welcome-slides.html</loc>
-    <lastmod>2026-08-26T11:10:27.064Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/10-logistic-2-slides.html</loc>
+    <lastmod>2026-09-25T20:07:34.745Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/02-exploratory-1.html</loc>
-    <lastmod>2026-09-01T18:31:19.079Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/06-mlr.html</loc>
+    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/02-exploratory-1-slides.html</loc>
-    <lastmod>2026-09-01T18:31:19.079Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/06-mlr-slides.html</loc>
+    <lastmod>2026-09-22T22:22:29.354Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/04-models.html</loc>
-    <lastmod>2026-09-11T01:13:39.492Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/03-exploratory-2.html</loc>
+    <lastmod>2026-09-08T17:12:06.443Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/04-models-slides.html</loc>
-    <lastmod>2026-09-11T01:13:39.492Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/03-exploratory-2-slides.html</loc>
+    <lastmod>2026-09-08T17:12:06.443Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/05-slr.html</loc>
+    <lastmod>2026-09-17T15:16:39.684Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/05-slr-slides.html</loc>
+    <lastmod>2026-09-17T15:16:39.684Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-materials.html</loc>
