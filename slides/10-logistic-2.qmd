@@ -15,7 +15,6 @@ format:
     code-link: true
 ---
 
-## While you wait: Participate 📱💻 {.small}
 
 ```{r}
 #| label: load-packages
@@ -26,8 +25,6 @@ library(tidymodels)
 library(openintro)
 library(forested)
 email <- openintro::email
-todays_ae <- "ae-07-forest-classification"
-
 ```
 
 
@@ -61,12 +58,12 @@ S-curve for the probability of "success":
 $$
 \hat{p}
 =
-\widehat{\text{Prob}(y=1)}
+\widehat{\text{Prob}(y=1\mid x)}
 =
 \frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.
 $$
 
-Linear model for the log-odds:
+Linear model for the log-odds of success:
 
 $$
 \log\left(\frac{\hat{p}}{1-\hat{p}}\right)
@@ -101,12 +98,12 @@ $$
 0.000272\times exclaim~mess
 $$
 
-## Interpretations are strange and delicate {.medium}
+## Interpretations are less straightforward {.medium}
 
 ::: incremental
 - If `exclaim_mess = 0`, then
 $$
-\hat{p}=\widehat{P(y=1)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
+\hat{p}=\widehat{P(y=1\mid x = 0)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
 $$
 So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.
 
@@ -151,7 +148,7 @@ tidy(full_logistic_fit)
 
 There are two kinds of mistakes:
 
-![](images/19/confusion-matrix.png)
+![](images/09/confusion-matrix.png)
 
 We want to avoid both, but there's a trade-off.
 
@@ -196,8 +193,8 @@ We want this to be high!
 The `augment` function takes a data frame and "augments" it by adding three new columns on the left that describe the model predictions for each row:
 
 -   `.pred_class`: model prediction ($\hat{y}$) based on a 50% threshold;
--   `.pred_0`: model estimate of $P(y=0)$;
--   `.pred_1`: model estimate of $P(y=1) = 1 - P(y = 0)$.
+-   `.pred_0`: model estimate of $P(y=0\mid x)$;
+-   `.pred_1`: model estimate of $P(y=1\mid x) = 1 - P(y = 0\mid x)$.
 
 ## The augment function
 
@@ -699,7 +696,7 @@ Corresponds to this model:
 
 $$
 \text{Prob}(
-\texttt{forested = "No"}
+\texttt{forested = "No"}\mid x
 )
 =
 \frac{e^{\beta_0+\beta_1 x}}{1 + e^{\beta_0+\beta_1 x}}.
@@ -745,17 +742,9 @@ Do these two things agree? If not, that isn't an *error*, but you might make mis
 We will only learn about a subset of these in this course, but you can go further into these ideas in STA 210 or STA 221 as well as in various machine learning courses.
 :::
 
-## `{r} todays_ae` {.smaller}
+## Now, off to your container!
 
-::: appex
--   Go to your ae project in RStudio.
 
--   If you haven't yet done so, make sure all of your changes up to this point are committed and pushed, i.e., there's nothing left in your Git pane.
-
--   If you haven't yet done so, click Pull to get today's application exercise file: *`{r} paste0(todays_ae, ".qmd")`*. You might be prompted to install **forested**, say yes.
-
--   Work through the application exercise in class, and render, commit, and push your edits.
-:::
 
 
 
