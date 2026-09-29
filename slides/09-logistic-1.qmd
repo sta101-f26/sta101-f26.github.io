@@ -755,7 +755,7 @@ $$
 At $x + 1$, you predict: 
 
 $$
-\hat{y}^{(\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_0=\hat{y}^{(\text{old})}+b_1.
+\hat{y}^{(\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_1=\hat{y}^{(\text{old})}+b_1.
 $$
 
 . . .
