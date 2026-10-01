@@ -147,17 +147,17 @@
     "href": "syllabus/announcements.html",
     "title": "Support your classmates!",
     "section": "",
-    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "text": "Written, acted, directed, and teched by students:\n\nSaturday October 3 at 7pm;\nSunday October 4 at 7pm;\nBrody Theater (East Campus);\n@duke.players.",
     "crumbs": [
       "Check it out!"
     ]
   },
   {
-    "objectID": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
-    "href": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
+    "objectID": "syllabus/announcements.html#duke-players-playhouse-shorts",
+    "href": "syllabus/announcements.html#duke-players-playhouse-shorts",
     "title": "Support your classmates!",
     "section": "",
-    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "text": "Written, acted, directed, and teched by students:\n\nSaturday October 3 at 7pm;\nSunday October 4 at 7pm;\nBrody Theater (East Campus);\n@duke.players.",
     "crumbs": [
       "Check it out!"
     ]
@@ -168,6 +168,16 @@
     "title": "Support your classmates!",
     "section": "☀️🏃 BH4H’s Sun Run",
     "text": "☀️🏃 BH4H’s Sun Run\nBring Happiness for Hospice (BH4H) is a student organization raising funds and awareness to support hospice patients and their families. They’re hosting their first walk-or-run 5K. 100% of proceeds go toward fulfilling the wishes of hospice patients and supporting families facing end-of-life care.\n\nSunday October 4 at 9:00 AM;\nDuke University East Campus Loop.",
+    "crumbs": [
+      "Check it out!"
+    ]
+  },
+  {
+    "objectID": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
+    "href": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
+    "title": "Support your classmates!",
+    "section": "Articles (and photos!) in The Chronicle",
+    "text": "Articles (and photos!) in The Chronicle\n\n“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
@@ -6451,7 +6461,7 @@
     "href": "hw/hw-4.html#part-2-logistic-regression",
     "title": "Homework 4",
     "section": "Part 2: logistic regression",
-    "text": "Part 2: logistic regression\nThe General Social Survey (GSS) gathers data on contemporary American society in order to monitor and explain trends and constants in attitudes, behaviours, and attributes. Hundreds of trends have been tracked since 1972. In addition, since the GSS adopted questions from earlier surveys, trends can be followed for up to 70 years. The GSS contains a standard core of demographic, behavioural, and attitudinal questions, plus topics of special interest. Among the topics covered are civil liberties, crime and violence, intergroup tolerance, morality, national spending priorities, psychological well-being, social mobility, and stress and traumatic events.\nIn this part you will work with the 2022 General Social Survey:\n\ngss22 &lt;- read_csv(\"data/gss22.csv\")\n\nWe will focus on these variables:\n\n\nadvfront: does the respondent agree or not with “Even if it brings no immediate benefits, scientific research that advances the frontiers of knowledge is necessary and should be supported by the federal government;”\n\neduc: years of education;\n\npolviews: is the respondent “Conservative,” “Moderate,” or “Liberal.”\n\nExercise 2 (data prep)\n\nAfter reading in the data, make the categorical variables advfront and polviews factors and make the order of their levels “Agree” - “Not Agree” and “Conservative” - “Moderate” - “Liberal,” respectively;\nSplit the data into a training set (75%) and a testing set (25%), and use the random number seed 8675309 for reproducibility.\nExercise 3 (a simple model)\n\nFit a logistic regression model that predicts advfront from educ. Report the tidy output of the model;\nWrite out the estimated model in proper notation;\nInterpret all coefficient estimates;\nUsing your estimated model, predict the probability that someone with 7 years of education agrees with the statement.\nExercise 4 (model selection)\n\nFit a second model that adds the additional explanatory variable of polviews to your model from the previous question. Report the tidy output of the model;\nWrite out the estimated model in proper notation;\nYou have two logistic regression models that are both attempting to predict the same response: advfront. Which one is best? Explain your reasoning and provide evidence for your conclusion.",
+    "text": "Part 2: logistic regression\nThe General Social Survey (GSS) gathers data on contemporary American society in order to monitor and explain trends and constants in attitudes, behaviours, and attributes. Hundreds of trends have been tracked since 1972. In addition, since the GSS adopted questions from earlier surveys, trends can be followed for up to 70 years. The GSS contains a standard core of demographic, behavioural, and attitudinal questions, plus topics of special interest. Among the topics covered are civil liberties, crime and violence, intergroup tolerance, morality, national spending priorities, psychological well-being, social mobility, and stress and traumatic events.\nIn this part you will work with the 2022 General Social Survey:\n\ngss22 &lt;- read_csv(\"data/gss22.csv\")\n\nWe will focus on these variables:\n\n\nadvfront: does the respondent agree or not with “Even if it brings no immediate benefits, scientific research that advances the frontiers of knowledge is necessary and should be supported by the federal government;”\n\neduc: years of education;\n\npolviews: is the respondent “Conservative,” “Moderate,” or “Liberal.”\n\nExercise 2 (data prep)\n\nAfter reading in the data, make the categorical variables advfront and polviews factors and make the order of their levels “Agree” - “Not Agree” and “Conservative” - “Moderate” - “Liberal,” respectively;\nSplit the data into a training set (75%) and a testing set (25%), and use the random number seed 8675309 for reproducibility.\n\n\n\n\n\n\n\nUpdate (10/1/2026)\n\n\n\nSkip part b. We haven’t covered it yet.\n\n\nExercise 3 (a simple model)\n\nFit a logistic regression model that predicts advfront from educ. Report the tidy output of the model;\nWrite out the estimated model in proper notation;\nInterpret all coefficient estimates;\nUsing your estimated model, predict the probability that someone with 7 years of education agrees with the statement.\nExercise 4 (model selection)\n\n\n\n\n\n\nUpdate (10/1/2026)\n\n\n\nSkip this question. We haven’t covered it yet.\n\n\n\nFit a second model that adds the additional explanatory variable of polviews to your model from the previous question. Report the tidy output of the model;\nWrite out the estimated model in proper notation;\nYou have two logistic regression models that are both attempting to predict the same response: advfront. Which one is best? Explain your reasoning and provide evidence for your conclusion.",
     "crumbs": [
       "Homeworks",
       "Homework 4"
@@ -10725,6 +10735,20 @@
     "title": "STA 101 Fall 2026",
     "section": "",
     "text": "https://music.duke.edu/events/duke-university-wind-symphony-overtures-october"
+  },
+  {
+    "objectID": "syllabus/announcements/duke-players-shorts-2.html",
+    "href": "syllabus/announcements/duke-players-shorts-2.html",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "Written, acted, directed, and teched by students:\n\nSaturday October 3 at 7pm;\nSunday October 4 at 7pm;\nBrody Theater (East Campus);\n@duke.players."
+  },
+  {
+    "objectID": "syllabus/announcements/duke-players-shorts-2.html#duke-players-playhouse-shorts",
+    "href": "syllabus/announcements/duke-players-shorts-2.html#duke-players-playhouse-shorts",
+    "title": "STA 101 Fall 2026",
+    "section": "",
+    "text": "Written, acted, directed, and teched by students:\n\nSaturday October 3 at 7pm;\nSunday October 4 at 7pm;\nBrody Theater (East Campus);\n@duke.players."
   },
   {
     "objectID": "syllabus/announcements/fail-duke.html",
