@@ -327,11 +327,10 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#while-you-wait-participate" id="toc-while-you-wait-participate" class="nav-link active" data-scroll-target="#while-you-wait-participate">While you wait: Participate 📱💻</a></li>
-  <li><a href="#last-time-regression-with-a-binary-response" id="toc-last-time-regression-with-a-binary-response" class="nav-link" data-scroll-target="#last-time-regression-with-a-binary-response">Last time: regression with a binary response</a></li>
+<li><a href="#last-time-regression-with-a-binary-response" id="toc-last-time-regression-with-a-binary-response" class="nav-link active" data-scroll-target="#last-time-regression-with-a-binary-response">Last time: regression with a binary response</a></li>
   <li><a href="#new-model-logistic-regression" id="toc-new-model-logistic-regression" class="nav-link" data-scroll-target="#new-model-logistic-regression">New model: logistic regression</a></li>
   <li><a href="#r-syntax-is-largely-unchanged" id="toc-r-syntax-is-largely-unchanged" class="nav-link" data-scroll-target="#r-syntax-is-largely-unchanged">R syntax is largely unchanged</a></li>
-  <li><a href="#interpretations-are-strange-and-delicate" id="toc-interpretations-are-strange-and-delicate" class="nav-link" data-scroll-target="#interpretations-are-strange-and-delicate">Interpretations are strange and delicate</a></li>
+  <li><a href="#interpretations-are-less-straightforward" id="toc-interpretations-are-less-straightforward" class="nav-link" data-scroll-target="#interpretations-are-less-straightforward">Interpretations are less straightforward</a></li>
   <li><a href="#use-the-exp-function-to-compute" id="toc-use-the-exp-function-to-compute" class="nav-link" data-scroll-target="#use-the-exp-function-to-compute">Use the <code>exp</code> function to compute</a></li>
   <li><a href="#heres-an-alternative-model" id="toc-heres-an-alternative-model" class="nav-link" data-scroll-target="#heres-an-alternative-model">Here’s an alternative model</a></li>
   <li><a href="#classification-error" id="toc-classification-error" class="nav-link" data-scroll-target="#classification-error">Classification error</a></li>
@@ -406,7 +405,7 @@ window.Quarto = {
 <a href="#todays-ae" id="toc-todays-ae" class="nav-link" data-scroll-target="#todays-ae">Today’s AE</a>
   <ul class="collapse">
 <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
-  <li><a href="#ae-07-forest-classification" id="toc-ae-07-forest-classification" class="nav-link" data-scroll-target="#ae-07-forest-classification">ae-07-forest-classification</a></li>
+  <li><a href="#now-off-to-your-container" id="toc-now-off-to-your-container" class="nav-link" data-scroll-target="#now-off-to-your-container">Now, off to your container!</a></li>
   </ul>
 </li>
   </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="10-logistic-2-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -447,8 +446,7 @@ window.Quarto = {
   
 
 
-</header><section id="while-you-wait-participate" class="level2 small"><h2 class="small anchored" data-anchor-id="while-you-wait-participate">While you wait: Participate 📱💻</h2>
-</section><section id="last-time-regression-with-a-binary-response" class="level2"><h2 class="anchored" data-anchor-id="last-time-regression-with-a-binary-response">Last time: regression with a binary response</h2>
+</header><section id="last-time-regression-with-a-binary-response" class="level2"><h2 class="anchored" data-anchor-id="last-time-regression-with-a-binary-response">Last time: regression with a binary response</h2>
 <p><span class="math display">\[
 y =
 \begin{cases}
@@ -469,11 +467,11 @@ y =
 <p><span class="math display">\[
 \hat{p}
 =
-\widehat{\text{Prob}(y=1)}
+\widehat{\text{Prob}(y=1\mid x)}
 =
 \frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.
 \]</span></p>
-<p>Linear model for the log-odds:</p>
+<p>Linear model for the log-odds of success:</p>
 <p><span class="math display">\[
 \log\left(\frac{\hat{p}}{1-\hat{p}}\right)
 =
@@ -505,11 +503,11 @@ b_0+b_1x.
 +
 0.000272\times exclaim~mess
 \]</span></p>
-</section><section id="interpretations-are-strange-and-delicate" class="level2 medium"><h2 class="medium anchored" data-anchor-id="interpretations-are-strange-and-delicate">Interpretations are strange and delicate</h2>
+</section><section id="interpretations-are-less-straightforward" class="level2 medium"><h2 class="medium anchored" data-anchor-id="interpretations-are-less-straightforward">Interpretations are less straightforward</h2>
 <div class="incremental">
 <ul class="incremental">
 <li><p>If <code>exclaim_mess = 0</code>, then <span class="math display">\[
-\hat{p}=\widehat{P(y=1)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
+\hat{p}=\widehat{P(y=1\mid x = 0)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
 \]</span> So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.</p></li>
 <li><p>If the email has an additional exclamation mark, we predict the <em>odds</em> of the email being spam to be <strong>higher</strong> by a factor of <span class="math inline">\(e^{0.000272}\approx 1.000272\)</span>.</p></li>
 </ul>
@@ -567,7 +565,7 @@ b_0+b_1x.
 </div>
 </section><section id="classification-error" class="level2"><h2 class="anchored" data-anchor-id="classification-error">Classification error</h2>
 <p>There are two kinds of mistakes:</p>
-<p><img src="images/19/confusion-matrix.png" class="img-fluid"></p>
+<p><img src="images/09/confusion-matrix.png" class="img-fluid"></p>
 <p>We want to avoid both, but there’s a trade-off.</p>
 </section><section id="jargon-false-negative-and-positive" class="level2"><h2 class="anchored" data-anchor-id="jargon-false-negative-and-positive">Jargon: False negative and positive</h2>
 <ul>
@@ -632,9 +630,9 @@ Tip
 <li>
 <code>.pred_class</code>: model prediction (<span class="math inline">\(\hat{y}\)</span>) based on a 50% threshold;</li>
 <li>
-<code>.pred_0</code>: model estimate of <span class="math inline">\(P(y=0)\)</span>;</li>
+<code>.pred_0</code>: model estimate of <span class="math inline">\(P(y=0\mid x)\)</span>;</li>
 <li>
-<code>.pred_1</code>: model estimate of <span class="math inline">\(P(y=1) = 1 - P(y = 0)\)</span>.</li>
+<code>.pred_1</code>: model estimate of <span class="math inline">\(P(y=1\mid x) = 1 - P(y = 0\mid x)\)</span>.</li>
 </ul></section><section id="the-augment-function-1" class="level2"><h2 class="anchored" data-anchor-id="the-augment-function-1">The augment function</h2>
 <p>The <code>augment</code> function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:</p>
 <div class="cell">
@@ -1289,7 +1287,7 @@ Warning
 <p>Corresponds to this model:</p>
 <p><span class="math display">\[
 \text{Prob}(
-\texttt{forested = "No"}
+\texttt{forested = "No"}\mid x
 )
 =
 \frac{e^{\beta_0+\beta_1 x}}{1 + e^{\beta_0+\beta_1 x}}.
@@ -1336,15 +1334,7 @@ Note
 <p>We will only learn about a subset of these in this course, but you can go further into these ideas in STA 210 or STA 221 as well as in various machine learning courses.</p>
 </div>
 </div>
-</section><section id="ae-07-forest-classification" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="ae-07-forest-classification">ae-07-forest-classification</h2>
-<div class="appex">
-<ul>
-<li><p>Go to your ae project in RStudio.</p></li>
-<li><p>If you haven’t yet done so, make sure all of your changes up to this point are committed and pushed, i.e., there’s nothing left in your Git pane.</p></li>
-<li><p>If you haven’t yet done so, click Pull to get today’s application exercise file: <em>ae-07-forest-classification.qmd</em>. You might be prompted to install <strong>forested</strong>, say yes.</p></li>
-<li><p>Work through the application exercise in class, and render, commit, and push your edits.</p></li>
-</ul>
-</div>
+</section><section id="now-off-to-your-container" class="level2"><h2 class="anchored" data-anchor-id="now-off-to-your-container">Now, off to your container!</h2>
 
 
 </section></section></main><!-- /main --><script>

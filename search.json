@@ -147,7 +147,17 @@
     "href": "syllabus/announcements.html",
     "title": "Support your classmates!",
     "section": "",
-    "text": "Bring Happiness for Hospice (BH4H) is a student organization raising funds and awareness to support hospice patients and their families. They’re hosting their first walk-or-run 5K. 100% of proceeds go toward fulfilling the wishes of hospice patients and supporting families facing end-of-life care.\n\nSunday October 4 at 9:00 AM;\nDuke University East Campus Loop.",
+    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
+    "crumbs": [
+      "Check it out!"
+    ]
+  },
+  {
+    "objectID": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
+    "href": "syllabus/announcements.html#articles-and-photos-in-the-chronicle",
+    "title": "Support your classmates!",
+    "section": "",
+    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
@@ -156,8 +166,8 @@
     "objectID": "syllabus/announcements.html#bh4hs-sun-run",
     "href": "syllabus/announcements.html#bh4hs-sun-run",
     "title": "Support your classmates!",
-    "section": "",
-    "text": "Bring Happiness for Hospice (BH4H) is a student organization raising funds and awareness to support hospice patients and their families. They’re hosting their first walk-or-run 5K. 100% of proceeds go toward fulfilling the wishes of hospice patients and supporting families facing end-of-life care.\n\nSunday October 4 at 9:00 AM;\nDuke University East Campus Loop.",
+    "section": "☀️🏃 BH4H’s Sun Run",
+    "text": "☀️🏃 BH4H’s Sun Run\nBring Happiness for Hospice (BH4H) is a student organization raising funds and awareness to support hospice patients and their families. They’re hosting their first walk-or-run 5K. 100% of proceeds go toward fulfilling the wishes of hospice patients and supporting families facing end-of-life care.\n\nSunday October 4 at 9:00 AM;\nDuke University East Campus Loop.",
     "crumbs": [
       "Check it out!"
     ]
@@ -198,16 +208,6 @@
     "title": "Support your classmates!",
     "section": "Duke Music Day",
     "text": "Duke Music Day\nA full day of live music on campus. Former students from almost every course JZ has taught will be performing at some point.\n\nFriday September 18: all day, everywhere;\nWebsite: https://www.dukemusiccollective.com/duke-music-day/;\nInsta: @dukemusiccollective.",
-    "crumbs": [
-      "Check it out!"
-    ]
-  },
-  {
-    "objectID": "syllabus/announcements.html#articles-in-the-chronicle",
-    "href": "syllabus/announcements.html#articles-in-the-chronicle",
-    "title": "Support your classmates!",
-    "section": "Articles in The Chronicle",
-    "text": "Articles in The Chronicle\n\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026).",
     "crumbs": [
       "Check it out!"
     ]
@@ -285,14 +285,14 @@
     "href": "syllabus/announcements/chronicle.html",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
-    "objectID": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
-    "href": "syllabus/announcements/chronicle.html#articles-in-the-chronicle",
+    "objectID": "syllabus/announcements/chronicle.html#articles-and-photos-in-the-chronicle",
+    "href": "syllabus/announcements/chronicle.html#articles-and-photos-in-the-chronicle",
     "title": "STA 101 Fall 2026",
     "section": "",
-    "text": "“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
+    "text": "“Russian-American journalist M. Gessen urges resistance to modern autocracy at Duke lecture” (9/28/2026);\n“‘We have got to end this’: Mitt Romney condemns political retribution, urges compromise in Sanford lecture” (9/23/2026);\n“‘Wasn’t just a job’: Former Divinity professor William Turner Jr. remembered for decades at Duke, civil rights activism” (9/7/2026);\n“Fuqua considers recording admissions interviews, using AI to analyze transcripts” (9/3/2026)."
   },
   {
     "objectID": "syllabus/announcements/wind-symphony-belonging.html",
@@ -665,7 +665,7 @@
     "href": "slides/09-logistic-1-slides.html#the-slope-in-linear-regression-1",
     "title": "Logistic regression 1",
     "section": "The slope in linear regression",
-    "text": "The slope in linear regression\nAt \\(x\\), you predict:\n\\[\n\\hat{y}^{(\\text{old})} = b_0+b_1x.\n\\]\n\nAt \\(x + 1\\), you predict:\n\\[\n\\hat{y}^{(\\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_0=\\hat{y}^{(\\text{old})}+b_1.\n\\]\n\n\nSo when the predictor shifts from \\(x\\) to \\(x+1\\), the slope \\(b_1\\) tells you the additive adjustment you must make to go from the old prediction to the new one. It’s the same adjustment regardless the \\(x\\) you start from."
+    "text": "The slope in linear regression\nAt \\(x\\), you predict:\n\\[\n\\hat{y}^{(\\text{old})} = b_0+b_1x.\n\\]\n\nAt \\(x + 1\\), you predict:\n\\[\n\\hat{y}^{(\\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_1=\\hat{y}^{(\\text{old})}+b_1.\n\\]\n\n\nSo when the predictor shifts from \\(x\\) to \\(x+1\\), the slope \\(b_1\\) tells you the additive adjustment you must make to go from the old prediction to the new one. It’s the same adjustment regardless the \\(x\\) you start from."
   },
   {
     "objectID": "slides/09-logistic-1-slides.html#the-intercept-in-logistic-regression",
@@ -1078,7 +1078,7 @@
     "href": "slides/09-logistic-1.html#the-slope-in-linear-regression-1",
     "title": "Logistic regression 1",
     "section": "The slope in linear regression",
-    "text": "The slope in linear regression\nAt \\(x\\), you predict:\n\\[\n\\hat{y}^{(\\text{old})} = b_0+b_1x.\n\\]\n. . .\nAt \\(x + 1\\), you predict:\n\\[\n\\hat{y}^{(\\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_0=\\hat{y}^{(\\text{old})}+b_1.\n\\]\n. . .\nSo when the predictor shifts from \\(x\\) to \\(x+1\\), the slope \\(b_1\\) tells you the additive adjustment you must make to go from the old prediction to the new one. It’s the same adjustment regardless the \\(x\\) you start from."
+    "text": "The slope in linear regression\nAt \\(x\\), you predict:\n\\[\n\\hat{y}^{(\\text{old})} = b_0+b_1x.\n\\]\n. . .\nAt \\(x + 1\\), you predict:\n\\[\n\\hat{y}^{(\\text{new})} = b_0+b_1(x+1) = b_0+b_1x+b_1=\\hat{y}^{(\\text{old})}+b_1.\n\\]\n. . .\nSo when the predictor shifts from \\(x\\) to \\(x+1\\), the slope \\(b_1\\) tells you the additive adjustment you must make to go from the old prediction to the new one. It’s the same adjustment regardless the \\(x\\) you start from."
   },
   {
     "objectID": "slides/09-logistic-1.html#the-intercept-in-logistic-regression",
@@ -6051,11 +6051,11 @@
     "text": "Part 3 - Predicting daily rates\nQuestion 4\nThe dataset also contains information about the average daily rate (adr) for each reservation. The following model predicts adr from adults and hotel type.\n\n\n# A tibble: 3 × 5\n  term              estimate std.error statistic   p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)           51.7     0.853      60.5 0        \n2 adults                29.0     0.439      66.1 0        \n3 hotelResort Hotel    -10.8     0.455     -23.7 6.53e-124\n\n\n\n\nWhich of the following is the best interpretation of the slope coefficient for adults?\n\nFor each additional adult in the booking, the average daily rate is predicted to be higher by $29.00…\n\n\non average, holding hotel type constant.\nfor Resort Hotels compared to City Hotels, on average.\nfor City Hotels compared to Resort Hotels, on average.\non average, not holding any other variables constant.\n\n\n\nWhich of the following is the correct interpretation of the slope coefficient for hotel?\n\nFor each additional Resort Hotel booking, the predicted average daily rate is $10.80 lower, holding number of adults constant.\nFor each additional adult in the booking, the average daily rate is predicted to be lower by $10.80 for resort hotels compared to City Hotels, on average.\nResort Hotels bookings are predicted to have an average daily rate that is $10.80 lower than City Hotels, on average, holding number of adults constant.\nResort Hotels bookings are predicted to have an average daily rate that is $10.80 higher than City Hotels, on average, holding number of adults constant.\n\n\n\nWhich of the following is the correct interpretation of the intercept?\n\nThe predicted average daily rate for a bookings with 0 adults at a Resort Hotel is $51.70, on average.\nThe predicted average daily rate for a bookings with 0 adults at a City Hotel is $51.70, on average.\nFor each additional adult and Resort Hotel in the booking, the average daily rate is predicted to be $51.70 higher, on average.\nFor each additional adult and City Hotel in the booking, the average daily rate is predicted to be $51.70 higher, on average.\n\n\nWhich of the following (Plot I or Plot II) is the correct visual representation of this model?"
   },
   {
-    "objectID": "lab/lab-5.html#part-4---study",
-    "href": "lab/lab-5.html#part-4---study",
+    "objectID": "lab/lab-5.html#part-4---why-stop-there",
+    "href": "lab/lab-5.html#part-4---why-stop-there",
     "title": "Lab 5",
-    "section": "Part 4 - study",
-    "text": "Part 4 - study\nCongratulations! You have just completed all of the work you have to submit for today’s lab. If any time remains in the session, I encourage you to stick around and work on the midterm study guide with your teammates."
+    "section": "Part 4 - why stop there?",
+    "text": "Part 4 - why stop there?\nCongratulations! You have just completed all of the work you have to submit for today’s lab. If any time remains in the session, I encourage you to stick around and work with your teammates on either…\n\n\nHomework 4;\nthe midterm study guide;"
   },
   {
     "objectID": "lab/lab-5.html#submission",
@@ -6248,121 +6248,169 @@
     "text": "In this application exercise we will be studying penguins. The data can be found in the palmerpenguins package and we will use tidyverse and tidymodels for data exploration and modeling, respectively.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(palmerpenguins)\n\nPlease read the following context and take a glimpse at the data set before we get started.\n\nThis data set comprising various measurements of three different penguin species, namely Adelie, Gentoo, and Chinstrap. The rigorous study was conducted in the islands of the Palmer Archipelago, Antarctica. These data were collected from 2007 to 2009 by Dr. Kristen Gorman with the Palmer Station Long Term Ecological Research Program, part of the US Long Term Ecological Research Network. The data set is called penguins.\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\n\nOur goal is to understand better how various body measurements and attributes of penguins relate to their body mass. First, we are going to investigate the relationship between a penguins’ flipper lengths and their body masses.\n\n\nQuestion: Based on our research focus, which variable is the response variable?\n\nBody mass is the response and flipper length is the predictor. You could imagine that flipper length is easier to measure, and so it’s most plausible that we would have that measurement first. Flipper length might be measurable from afar based on a photograph that has a scale reference, whereas mass requires wrangling the beast and keeping it on a scale. Having incurred the cost of collecting a sample of complete measurements, we might then try to use a model to fill in the gaps based on flipper length only.\n\n\nDemo: Visualize the relationship between flipper length and body mass of penguins.\n\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point()\n\n\n\n\n\n\n\nCorrelation\n\n\nYour turn (5 minutes):\n\nWhat is correlation? What values can correlation take?\n\n\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\n\nDemo: What is the correlation between flipper length and body mass of penguins?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\")\n  )\n\n# A tibble: 1 × 1\n      r\n  &lt;dbl&gt;\n1 0.871\n\n\n\n\nDemo: What is the coefficient of determination?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    r.squared = r^2\n  )\n\n# A tibble: 1 × 2\n      r r.squared\n  &lt;dbl&gt;     &lt;dbl&gt;\n1 0.871     0.759\n\n\n\n\nDemo: What is the slope of the regression line?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    sy = sd(body_mass_g, na.rm = TRUE),\n    sx = sd(flipper_length_mm, na.rm = TRUE),\n    b1 = r * sy / sx\n  )\n\n# A tibble: 1 × 4\n      r    sy    sx    b1\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 0.871  802.  14.1  49.7\n\n\n\n\nDemo: What is the intercept of the regression line?\n\n\npenguins |&gt;\n  summarize(\n    r = cor(flipper_length_mm, body_mass_g, use = \"complete.obs\"),\n    sy = sd(body_mass_g, na.rm = TRUE),\n    sx = sd(flipper_length_mm, na.rm = TRUE),\n    b1 = r * sy / sx,\n    ybar = mean(body_mass_g, na.rm = TRUE),\n    xbar = mean(flipper_length_mm, na.rm = TRUE),\n    b0 = ybar - b1 * xbar\n  )\n\n# A tibble: 1 × 7\n      r    sy    sx    b1  ybar  xbar     b0\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;\n1 0.871  802.  14.1  49.7 4202.  201. -5781.\n\n\nDefining, fitting, and summarizing a model\n\n\nDemo: Write the population model below that explains the relationship between body mass and flipper length.\n\n\\[\nbody~mass=\\beta_0+\\beta_1\\times flipper~length+\\varepsilon\n\\]\n\n\nDemo: Fit the linear regression model and display the results. Write the estimated model output below.\n\n\nbm_fl_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ flipper_length_mm, data = penguins)\n\ntidy(bm_fl_fit)\n\n# A tibble: 2 × 5\n  term              estimate std.error statistic   p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        -5781.     306.       -18.9 5.59e- 55\n2 flipper_length_mm     49.7      1.52      32.7 4.37e-107\n\n\n\\[\n\\widehat{body~mass}=-5781+49.6\\times flipper~length\n\\]\n\n\nYour turn: Interpret the slope and the intercept in the context of the data.\n\nIntercept: Penguins with 0 flipper length are expected, on average, to weigh -5,781 grams;\nSlopes: For each additional millimeter of a penguin’s flipper length, the weight of the penguin is expected to be higher, on average, by 49.7 grams.\n\n\n\nNotice! We got exactly the same numbers for the slope and intercept as we did when we computed them above using \\(b_1=r\\cdot s_y/s_x\\) and \\(b_0=\\bar{y}-b_1\\bar{x}\\). Phew!\n\n\nYour turn: Recreate the visualization from above, this time adding a regression line to the visualization geom_smooth(method = \"lm\").\n\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\nDemo: What is the coefficient of determination (\\(R^2\\))?\n\n\nglance(bm_fl_fit)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic   p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     0.759         0.758  394.     1071. 4.37e-107     1 -2528. 5063. 5074.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nNotice! Same number as before when we just squared the correlation coefficient. Phew!\n\n\nDemo: What is the estimated body mass for a penguin with a flipper length of 210?\n\n\npenguin_flipper_210 &lt;- tibble(flipper_length_mm = 210)\n\nbm_fl_fit |&gt;\n  predict(new_data = penguin_flipper_210)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 4653.\n\n\n\n\nYour turn: What is the estimated body mass for a penguin with a flipper length of 100?\n\n\npenguin_flipper_100 &lt;- tibble(flipper_length_mm = 100)\n\nbm_fl_fit |&gt;\n  predict(new_data = penguin_flipper_100)\n\n# A tibble: 1 × 1\n  .pred\n  &lt;dbl&gt;\n1 -812.\n\n\nAnother model\n\n\nDemo: A different researcher wants to look at body weight of penguins based on the island they were recorded on. How are the variables involved in this analysis different?\n\nThe predictor is now categorical instead of numerical.\n\n\nDemo: Make an appropriate visualization to investigate this relationship below. Additionally, calculate the mean body mass by island.\n\n\nggplot(penguins, aes(x = island, y = body_mass_g)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\npenguins |&gt;\n  group_by(island) |&gt;\n  summarize(mean_bm = mean(body_mass_g, na.rm = TRUE))\n\n# A tibble: 3 × 2\n  island    mean_bm\n  &lt;fct&gt;       &lt;dbl&gt;\n1 Biscoe      4716.\n2 Dream       3713.\n3 Torgersen   3706.\n\n\n\n\nDemo: Change the geom of your previous plot to geom_point(). Use this plot to think about how R models these data.\n\n\nggplot(penguins, aes(x = island, y = body_mass_g)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\nYour turn: Fit the linear regression model and display the results.\n\n\nbm_island_fit &lt;- linear_reg() |&gt;\n  fit(body_mass_g ~ island, data = penguins)\n\ntidy(bm_island_fit)\n\n# A tibble: 3 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        4716.      48.5      97.3 8.93e-250\n2 islandDream       -1003.      74.2     -13.5 1.42e- 33\n3 islandTorgersen   -1010.     100.      -10.1 4.66e- 21\n\n\n\n\nDemo: Interpret each coefficient in context of the problem.\n\nIntercept: Penguins from Biscoe island are expected to weigh, on average, 4,716 grams.\n\nSlopes:\n\nPenguins from Dream island are expected to weigh, on average, 1,003 grams less than those from Biscoe island.\nPenguins from Torgersen island are expected to weigh, on average, 1,010 grams less than those from Biscoe island.\n\n\n\n\nDemo: What is the estimated body weight of a penguin on Biscoe island? What are the estimated body weights of penguins on Dream and Torgersen islands?\n\n\nthree_penguins &lt;- tibble(\n  island = c(\"Biscoe\", \"Dream\", \"Torgersen\")\n)\nbm_island_fit |&gt;\n  predict(new_data = three_penguins)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 4716.\n2 3713.\n3 3706."
   },
   {
-    "objectID": "ae/ae-05-diamonds.html",
-    "href": "ae/ae-05-diamonds.html",
-    "title": "AE 05: Diamonds!",
+    "objectID": "ae/ae-03-icecover.html",
+    "href": "ae/ae-03-icecover.html",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
     "section": "",
-    "text": "We want to understand how “The 4 Cs” predict a diamond’s price. We have a dataset with 5,000 rows, where each row is a diamond, and along the columns we record each diamond’s…\nlibrary(tidyverse)\nlibrary(tidymodels)"
+    "text": "The data for this application exercise comes from the lterdatasampler package. The mission of the Long Term Ecological Research program (LTER) Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”\nSpecifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature."
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#load-and-prepare-the-data",
-    "href": "ae/ae-05-diamonds.html#load-and-prepare-the-data",
-    "title": "AE 05: Diamonds!",
-    "section": "Load and prepare the data",
-    "text": "Load and prepare the data\n\ndiamonds &lt;- read_csv(\"data/diamonds.csv\")\n\nThese data have several categorical variables: cut, color, and clarity. By default these variables will have their levels ordered alphabetically:\n\ndiamonds &lt;- diamonds |&gt;\n  mutate(\n    cut = factor(cut),\n    clarity = factor(clarity),\n    color = factor(color)\n  )\n\nlevels(diamonds$cut)\n\n[1] \"Fair\"      \"Good\"      \"Ideal\"     \"Premium\"   \"Very Good\"\n\nlevels(diamonds$clarity)\n\n[1] \"I\"   \"IF\"  \"SI\"  \"VS\"  \"VVS\"\n\nlevels(diamonds$color)\n\n[1] \"D\" \"E\" \"F\" \"G\" \"H\" \"I\" \"J\"\n\n\nBecause these levels do have a natural ordering corresponding to the increasing level of quality, we should force the computer to respect that:\n\ndiamonds &lt;- diamonds |&gt;\n  mutate(\n    cut = fct_relevel(cut, \"Fair\", \"Good\", \"Very Good\", \"Premium\", \"Ideal\"),\n    clarity = fct_relevel(clarity, \"I\", \"SI\", \"VS\", \"VVS\", \"IF\")\n  )\n\nlevels(diamonds$cut)\n\n[1] \"Fair\"      \"Good\"      \"Very Good\" \"Premium\"   \"Ideal\"    \n\nlevels(diamonds$clarity)\n\n[1] \"I\"   \"SI\"  \"VS\"  \"VVS\" \"IF\""
+    "objectID": "ae/ae-03-icecover.html#getting-started",
+    "href": "ae/ae-03-icecover.html#getting-started",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Getting started",
+    "text": "Getting started\nPackages\nWe will use the tidyverse package for data visualization and wrangling and the tidymodels package for modeling.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\n\nData\nThe data can be found in the data folder; it’s called icecover.csv.\n\nicecover &lt;- read_csv(\"data/icecover.csv\")\n\nThe data dictionary is below:\n\n\n\n\n\n\nVariable Name\nDescription\n\n\n\nlakeid\nLake name\n\n\nice_on\nDate of freeze of lake\n\n\nice_off\nDate of ice breakup of lake\n\n\nice_duration\nNumber of days between the freeze and breakup dates of each lake\n\n\nyear\nYear of observation\n\n\nannual_avg_temp\nAnnual average air temperature (°C)"
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#exploratory-analysis",
-    "href": "ae/ae-05-diamonds.html#exploratory-analysis",
-    "title": "AE 05: Diamonds!",
-    "section": "Exploratory analysis",
-    "text": "Exploratory analysis\nVisualize the bivariate relationship between price and each of the 4 Cs.\n\nggplot(diamonds, aes(x = carat, y = price)) + \n  geom_point()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = cut, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = clarity, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = color, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\nPut price, carat, and clarity on one plot:\n\nggplot(diamonds, aes(x = carat, y = price, color = clarity)) + \n  geom_point()"
+    "objectID": "ae/ae-03-icecover.html#visualizing-the-model",
+    "href": "ae/ae-03-icecover.html#visualizing-the-model",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Visualizing the model",
+    "text": "Visualizing the model\nWe’re going to investigate the relationship between ice_duration and annual_avg_temp.\n\nCreate an appropriate plot to investigate this relationship. Add appropriate labels to the plot.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n\n\n\n\n\n\n\nIf you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?\nNow, let R draw the line for you. Refer to the documentation at https://ggplot2.tidyverse.org/reference/geom_smooth.html. Specifically, refer to the method section.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWhat types of questions can this plot help answer?\n\nHow does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?\n\nWe can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?\n\nAt 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data."
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#empty-model",
-    "href": "ae/ae-05-diamonds.html#empty-model",
-    "title": "AE 05: Diamonds!",
-    "section": "Empty model",
-    "text": "Empty model\nFit the model for price that has no predictors:\n\nempty_fit &lt;- linear_reg() |&gt;\n  fit(price ~ 1, diamonds)\n\ntidy(empty_fit)\n\n# A tibble: 1 × 5\n  term        estimate std.error statistic p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    3955.      57.4      68.9       0\n\n\nInterpret the coefficient estimate:\n\nThe average price of a diamond is $3955.28."
+    "objectID": "ae/ae-03-icecover.html#model-fitting",
+    "href": "ae/ae-03-icecover.html#model-fitting",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model fitting",
+    "text": "Model fitting\nFit a model to predict fish weights from their heights.\n\nice_temp_fit &lt;- linear_reg() |&gt;\n  fit(ice_duration ~ annual_avg_temp, data = icecover)\n\nice_temp_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = ice_duration ~ annual_avg_temp, data = data)\n\nCoefficients:\n    (Intercept)  annual_avg_temp  \n        148.110           -6.182"
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#simple-linear-regression",
-    "href": "ae/ae-05-diamonds.html#simple-linear-regression",
-    "title": "AE 05: Diamonds!",
-    "section": "Simple linear regression",
-    "text": "Simple linear regression\nFit the model that predicts price from carat:\n\nprice_carat_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat, diamonds)\n\ntidy(price_carat_fit)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)   -2361.      41.9     -56.3       0\n2 carat          7916.      45.2     175.        0\n\n\nWrite the equation for the equation of the fitted model:\n\\[\n\\widehat{price}=-2360.58 + 7916.132\\times carat.\n\\]\nInterpret the coefficient estimates:\n\nA 0-carat diamond is predicted to cost $-2360.58 on average. You can’t have a 0-carat diamond, and the price won’t be negative, so this is doubly meaningless;\nA 1-carat increase predicts an average increase in price of $7916.13."
+    "objectID": "ae/ae-03-icecover.html#model-summary",
+    "href": "ae/ae-03-icecover.html#model-summary",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Model summary",
+    "text": "Model summary\n\nDisplay the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.\n\n\ntidy(ice_temp_fit)\n\n# A tibble: 2 × 5\n  term            estimate std.error statistic  p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       148.        7.77     19.1  1.38e-53\n2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9\n\n\n\nWrite out your model using mathematical notation.\n\n\\[\n\\widehat{ice~duration}=148.11-6.18\\times temp\n\\]\n\n\nWhat is the interpretation of the estimated coefficients?\n\nIf the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;\nIf the temperature increases by 1 degree celcius, this predicts a 6.18 day decrease in ice duration, on average."
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#additive-model",
-    "href": "ae/ae-05-diamonds.html#additive-model",
-    "title": "AE 05: Diamonds!",
-    "section": "Additive model",
-    "text": "Additive model\nFit the additive model that predicts price from carat and clarity:\n\nprice_carat_clarity_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat + clarity, diamonds)\n\ntidy(price_carat_clarity_fit)\n\n# A tibble: 6 × 5\n  term        estimate std.error statistic   p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -6990.     171.      -40.8 6.56e-314\n2 carat          8466.      40.5     209.  0        \n3 claritySI      3474.     167.       20.9 1.11e- 92\n4 clarityVS      4571.     168.       27.3 7.98e-153\n5 clarityVVS     5214.     172.       30.2 1.33e-184\n6 clarityIF      5516.     192.       28.7 5.50e-168\n\n\n\\[\n\\widehat{price}=-6989.76 + 8465.86\\times carat + 3474.28\\times SI + 4570.70\\times VS + 5214.40\\times VVS + 5515.78\\times IF\n\\]\nInterpret some coefficient estimates:\n\nA 0-carat I diamond is predicted to cost $-6989.76 on average;\nHolding clarity constant, a 1-carat increase predicts an average increase in price of $8465.86. That holds for every type of diamond, because the lines are parallel;\nHolding carat constant, an SI diamond is expected to cost $3474.28 more than an I diamond, on average;\nHolding carat constant, an VS diamond is expected to cost $4570.70 more than an I diamond, on average;\nHolding carat constant, an VSS diamond is expected to cost $5214.40 more than an I diamond, on average;\nHolding carat constant, an IF diamond is expected to cost $5515.78 more than an I diamond, on average."
+    "objectID": "ae/ae-03-icecover.html#prediction",
+    "href": "ae/ae-03-icecover.html#prediction",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Prediction",
+    "text": "Prediction\nBefore, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.\n\nFirst, use R as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:\n\n\n148.109981 - 6.181554 * 7\n\n[1] 104.8391\n\n148.109981 - 6.181554 * 10\n\n[1] 86.29444\n\n148.109981 - 6.181554 * 12\n\n[1] 73.93133\n\n\n\nSecond, use the predict function to perform the same calculation. You should get the same numbers (aside from rounding error).\n\n\nnew_lakes &lt;- tibble(annual_avg_temp = c(7, 10, 12))\n\npredict(ice_temp_fit, new_data = new_lakes)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 105. \n2  86.3\n3  73.9"
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#interaction-model",
-    "href": "ae/ae-05-diamonds.html#interaction-model",
-    "title": "AE 05: Diamonds!",
-    "section": "Interaction model",
-    "text": "Interaction model\nFit the interaction model that predicts price from carat and clarity:\n\nprice_carat_clarity_int_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat * clarity, diamonds)\n\ntidy(price_carat_clarity_int_fit)\n\n# A tibble: 10 × 5\n   term             estimate std.error statistic  p.value\n   &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n 1 (Intercept)        -1543.      399.     -3.87 1.12e- 4\n 2 carat               4148.      292.     14.2  5.74e-45\n 3 claritySI          -1471.      403.     -3.65 2.66e- 4\n 4 clarityVS          -1202.      403.     -2.98 2.87e- 3\n 5 clarityVVS         -1084.      408.     -2.66 7.84e- 3\n 6 clarityIF          -1610.      437.     -3.68 2.32e- 4\n 7 carat:claritySI     3783.      297.     12.7  1.17e-36\n 8 carat:clarityVS     4748.      299.     15.9  1.48e-55\n 9 carat:clarityVVS    5856.      318.     18.4  2.77e-73\n10 carat:clarityIF     7627.      420.     18.1  2.65e-71\n\n\n\\[\n\\begin{aligned}\n\\widehat{price}\n=\n-1543.06 + 4148.06\\times carat &-1471.07\\times SI -1202.31\\times VS -1084.20\\times VVS -1610.30\\times IF\n\\\\\n&+ 3782.50\\times carat*SI \\\\\n&+ 4748.43\\times carat*VS \\\\\n&+ 5855.87\\times carat*VVS \\\\\n&+ 7626.83\\times carat*IF.\n\\end{aligned}\n\\]\nInterpret some coefficient estimates:\n\nA 0-carat I diamond is predicted to cost $-1543.06 on average;\nFor an I diamond, a 1-carat increase predicts an average increase in price of $4148.06;\nA 0-carat SI diamond is predicted to cost $1471.07 less than a 0-carat I diamond, on average;\nA 0-carat VS diamond is predicted to cost $1202.31 less than a 0-carat I diamond, on average;\nA 0-carat VVS diamond is predicted to cost $1084.2 less than a 0-carat I diamond, on average;\nA 0-carat IF diamond is predicted to cost $1610.3 less than a 0-carat I diamond, on average;\nA 1-carat increase predicts an average price change for SI diamonds that is $3782.5 greater than for I diamonds;\nA 1-carat increase predicts an average price change for VS diamonds that is $4748.43 greater than for I diamonds;\nA 1-carat increase predicts an average price change for VVS diamonds that is $5855.87 greater than for I diamonds;\nA 1-carat increase predicts an average price change for IF diamonds that is $7626.83 greater than for I diamonds."
+    "objectID": "ae/ae-03-icecover.html#correlation",
+    "href": "ae/ae-03-icecover.html#correlation",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Correlation",
+    "text": "Correlation\nWe can also assess correlation between two quantitative variables.\n\nWhat is correlation? What are values correlation can take?\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\nWhat is the correlation between temperature and ice duration?\n\n\nicecover |&gt;\n  summarize(\n    r = cor(annual_avg_temp, ice_duration)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 -0.332"
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#full-model",
-    "href": "ae/ae-05-diamonds.html#full-model",
-    "title": "AE 05: Diamonds!",
-    "section": "“Full” model",
-    "text": "“Full” model\nFit the additive model that predicts price from all other variables in the dataset:\n\nfull_model &lt;- linear_reg() |&gt;\n  fit(price ~ ., diamonds)\n\ntidy(full_model)\n\n# A tibble: 18 × 5\n   term         estimate std.error statistic   p.value\n   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n 1 (Intercept)    -2449.     310.      -7.91 3.27e- 15\n 2 carat          11815.     160.      73.6  0        \n 3 cutGood          584.     112.       5.23 1.79e-  7\n 4 cutVery Good     761.     105.       7.22 5.97e- 13\n 5 cutPremium       896.     102.       8.77 2.50e- 18\n 6 cutIdeal         980.     102.       9.58 1.52e- 21\n 7 colorE          -177.      58.9     -3.00 2.71e-  3\n 8 colorF          -274.      59.1     -4.63 3.70e-  6\n 9 colorG          -338.      58.9     -5.74 1.01e-  8\n10 colorH          -911.      62.1    -14.7  1.01e- 47\n11 colorI         -1329.      68.6    -19.4  1.39e- 80\n12 colorJ         -2130.      85.4    -24.9  1.95e-129\n13 claritySI       3351.     149.      22.5  9.01e-107\n14 clarityVS       4428.     150.      29.5  2.50e-176\n15 clarityVVS      4952.     155.      32.0  9.37e-205\n16 clarityIF       5304.     172.      30.8  4.83e-191\n17 length_mm      -2421.     271.      -8.93 5.74e- 19\n18 width_mm        1135.     266.       4.27 1.97e-  5"
+    "objectID": "ae/ae-03-icecover.html#fitting-other-models",
+    "href": "ae/ae-03-icecover.html#fitting-other-models",
+    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "section": "Fitting other models",
+    "text": "Fitting other models\nWe can fit more models than just a straight line. Change the plotting code from earlier to use method = \"loess\". What is different from the plot created before?\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"loess\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
-    "objectID": "ae/ae-05-diamonds.html#selection",
-    "href": "ae/ae-05-diamonds.html#selection",
-    "title": "AE 05: Diamonds!",
-    "section": "Selection",
-    "text": "Selection\nUse adjusted \\(R^2\\) to select the “best” model for price.\n\nempty_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0\n\nprice_carat_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.8600493\n\nprice_carat_clarity_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.8991738\n\nprice_carat_clarity_int_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.9104614\n\nfull_model |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.9224111\n\n\nThe interaction model is “best.”"
-  },
-  {
-    "objectID": "hw/hw-2.html",
-    "href": "hw/hw-2.html",
-    "title": "Homework 2",
+    "objectID": "hw/hw-1.html",
+    "href": "hw/hw-1.html",
+    "title": "Homework 1",
     "section": "",
-    "text": "On this second homework, you’ll start thinking about statistical modeling with linear regression, so we need a new package for that:\nlibrary(tidyverse)\nlibrary(tidymodels)",
+    "text": "On this first homework, you’ll continue to practice data visualization and summarization using the North Carolina counties data from Lab 1. At the end, you’ll dip into the textbook a little bit and think about some conceptual questions. Along the way, we’ll ask you to get a little fancier with the plots, which will require some extra packages:\nlibrary(tidyverse)\nlibrary(scales)    # for better axis labels\nlibrary(ggthemes)  # for additional color palettes",
     "crumbs": [
       "Homeworks",
-      "Homework 2"
+      "Homework 1"
     ]
   },
   {
-    "objectID": "hw/hw-2.html#setup",
-    "href": "hw/hw-2.html#setup",
-    "title": "Homework 2",
+    "objectID": "hw/hw-1.html#setup",
+    "href": "hw/hw-1.html#setup",
+    "title": "Homework 1",
     "section": "Setup",
     "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
     "crumbs": [
       "Homeworks",
-      "Homework 2"
+      "Homework 1"
     ]
   },
   {
-    "objectID": "hw/hw-2.html#part-1-do-you-even-lift",
-    "href": "hw/hw-2.html#part-1-do-you-even-lift",
-    "title": "Homework 2",
-    "section": "Part 1: do you even lift?",
-    "text": "Part 1: do you even lift?\nWe will be working with data from www.openpowerlifting.org. This data was sourced from Tidy Tuesday and contains international powerlifting records at various meets. At each meet, each lifter gets three attempts at lifting max weight on three lifts: the bench press, squat and deadlift.\n\nipf &lt;- read_csv(\"data/ipf.csv\")\n\nThe data dictionary for this dataset from TidyTuesday is reproduced below:\n\n\n\n\n\n\nvariable\ndescription\n\n\n\nname\nIndividual lifter name\n\n\nsex\nBinary gender (M/F)\n\n\nevent\n\nThe type of competition that the lifter entered. Values are as follows:\n\nSBD: Squat-Bench-Deadlift, also commonly called “Full Power”\nBD: Bench-Deadlift, also commonly called “Ironman” or “Push-Pull”\nSD: Squat-Deadlift, very uncommon\nSB: Squat-Bench, very uncommon\nS: Squat-only\nB: Bench-only\nD: Deadlift-only\n\n\n\n\nequipment\n\nThe equipment category under which the lifts were performed. Values are as follows:\n\nRaw: Bare knees or knee sleeves\nWraps: Knee wraps were allowed\nSingle-ply: Equipped, single-ply suits\nMulti-ply: Equipped, multi-ply suits (includes Double-ply)\nStraps: Allowed straps on the deadlift (used mostly for exhibitions, not real meets)\n\n\n\n\nage\nThe age of the lifter on the start date of the meet, if known.\n\n\nage_class\nThe age class in which the filter falls, for example 40-45\n\n\n\ndivision\nFree-form UTF-8 text describing the division of competition, like Open or Juniors 20-23 or Professional.\n\n\nbodyweight_kg\nThe recorded bodyweight of the lifter at the time of competition, to two decimal places.\n\n\nweight_class_kg\n\nThe weight class in which the lifter competed, to two decimal places.\nWeight classes can be specified as a maximum or as a minimum. Maximums are specified by just the number, for example 90 means “up to (and including) 90kg.” minimums are specified by a + to the right of the number, for example 90+ means “above (and excluding) 90kg.”\n\n\n\nbest3squat_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3bench_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3deadlift_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nplace\n\nThe recorded place of the lifter in the given division at the end of the meet. Values are as follows:\n\nPositive number: the place the lifter came in.\nG: Guest lifter. The lifter succeeded, but wasn’t eligible for awards.\nDQ: Disqualified. Note that DQ could be for procedural reasons, not just failed attempts.\nDD: Doping Disqualification. The lifter failed a drug test.\nNS: No-Show. The lifter did not show up on the meet day.\n\n\n\n\ndate\nISO 8601 Date of the event\n\n\nfederation\nThe federation that hosted the meet. (limited to IPF for this data subset)\n\n\nmeet_name\nThe name of the meet. The name is defined to never include the year or the federation. For example, the meet officially called 2019 USAPL Raw National Championships would have the MeetName Raw National Championshps.\n\n\n\nFor all of the following exercises, you should include units on axes labels, e.g. “Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.\nExercise 1\nLet’s begin by taking a look at the squat lifting records.\nTo begin, remove any observations that are negative for squat. Next, create a new column called best3_squat_lbs that converts the record from kg to lbs (you may have to Google the conversion). Save your data frame as ipf_squat. Report the number of rows and columns of this new data frame.\n\n\n\n\n\n\nHint\n\n\n\nFirst, you’re taking a dataset and filtering it for certain records, and then you’re mutate-ing that dataset to gain a new column, and you’re assigning the resulting dataset to a new object called ipf_squat.\n\n\nExercise 2\nUsing ipf_squat from the previous exercise, create a scatter plot to investigate the relationship between squat (in lbs) and age. Age should be on the x-axis. Adjust the alpha level of your points to get a better sense of the density of the data. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.\nExercise 3\nWrite down the linear model to predict lift squat lbs from age in \\(x\\), \\(y\\), \\(\\beta\\) notation. What is \\(x\\)? What is \\(y\\)? Next, fit the linear model, and save it as age_fit. Re-write your previous equation replacing \\(\\beta\\) with the numeric estimates. This is called the “fitted” linear model. Interpret each estimate of \\(\\beta\\). Are the interpretations sensible?\nExercise 4\nBuilding on your ipf_squat data frame, create a new column called age2 that takes the age of each lifter and squares it. Save it to your data frame ipf_squat. Next, plot squat in lbs vs age2 and add a linear best fit line. Does this model look like it fits the data better?\n\n\n\n\n\n\nHint\n\n\n\nTo raise a value to a power, use ^ in R, e.g.: 2 ^ 2 gives you 4, 2 ^ 3 gives you 8, etc.\n\n\nExercise 5\nOne metric to assess the fit of a model is \\(R^2\\). Fit the age\\(^2\\) model and save the object as age2_fit. Compare \\(R^2\\) of the age\\(^2\\) model to the \\(R^2\\) of the model from Exercise 3. Which has a higher \\(R^2\\)?\nExercise 6\nNext, let’s turn our attention to dead lifting records. To do this, you should start back from the original ipf data frame that you first read in. Ignore the new data frame you created for squat.\nRecreate the plot below. Make sure axes and title labels are exactly matching, including spelling, capitalization, etc. Based on the plot below, which impacts deadlift weight more, age category or sex?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\nYou will need to create a couple of new columns. One to classify age appropriately and one to convert best3deadlift_kg to the plotted units (lbs). Notice that there are no negative deadlift values on the x-axis.\n\n\nExercise 7\nFinally, let’s turn our attention to bench press records. To do this, you should start back from the original ipf data frame that you first read in. Ignore the new data frames you created for squat and deadlift.\nTo begin, remove any observations that are negative for bench press, create two new columns: best3bench_lbs and bodyweight_lbs. Save the result in a new data frame called ipf_bench.\nThen, create a scatter plot to investigate the relationship between best bench press (in lbs) and the lifter’s bodyweight (in lbs). Bodyweight should be on the x-axis. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.\nExercise 8\nFit the linear model displayed in the previous exercise and write down the fitted model equation only, replacing \\(\\hat{\\beta}\\)s with their fitted estimates. Interpret the \\(\\hat{\\beta}\\)s (intercept and slope). Report \\(R^2\\). Is body weight an important predictor of bench press ability? Why or why not?",
+    "objectID": "hw/hw-1.html#part-1-exploring-nc-counties",
+    "href": "hw/hw-1.html#part-1-exploring-nc-counties",
+    "title": "Homework 1",
+    "section": "Part 1: Exploring NC Counties",
+    "text": "Part 1: Exploring NC Counties\nAs a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\n\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\n\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:\n\n\ncounty: Name of county;\n\nland_area_m2: Land area of county in meters-squared, based on the 2020 census;\n\nland_area_mi2: Land area of county in miles-squared, based on the 2020 census;\n\npop_2020: Population of county, based on the 2020 Census;\n\npop_dens_2020: Population density calculated as population (pop_2020) divided by land area in miles-squared (people per mile-squared);\n\ncounty_type: Peer county type classification based on population characteristics, socioeconomic status, and geographic features used for grouping counties with similar demographic, social, and economic characteristics, allowing them to be compared and benchmarked against one another;\n\nmedian_hh_income: Median household income;\n\np_foreign_born: Percentage of population that is foreign-born;\n\np_child_poverty: Percentage of children living in poverty;\n\np_single_parent_hh: Percentage of households with children that are single-parent households;\n\np_broadband: Percentage of households with broadband internet access;\n\np_home_ownership: Percentage of households that are owner-occupied;\n\np_family_sustaining_wage: Percentage of adults that earn a family-sustaining wage – typically a wage that covers essential costs like housing, food, childcare, transportation, and healthcare for a family’s basic needs within a specific geographic area;\n\np_edu_lths: Percentage of 25-44-year-olds with less than a high school diploma;\n\np_edu_hsged: Percentage of 25-44-year-olds with a high school diploma or equivalent;\n\np_edu_scnd: Percentage of 25-44-year-olds with some college or an associate degree;\n\np_edu_ndc: Percentage of 25-44-year-olds with non-degree credentials – certifications, licenses, or other credentials that demonstrate specific skills or knowledge but do not confer a formal academic degree;\n\np_edu_assoc: Percentage of 25-44-year-olds with an associate degree;\n\np_edu_ba: Percentage of 25-44-year-olds with a bachelor’s degree;\n\np_edu_mapl: Percentage of 25-44-year-olds with a master’s, professional, or doctoral degree;\n\np_edu_hs_grad_rate: High school graduation rate;\n\np_edu_chronic_absent_rate: Chronic absenteeism rate.\n\nExercise 1\nMake a bar plot of the number of counties by county_type. What type of county is most common in North Carolina? What type of county is least common?\nExercise 2\nMake a boxplot of median household income (median_hh_income) by county_type. In 2-3 sentences, compare the distributions of median household income across the four county types touching on shape, center, spread, and any potential outliers.\nExercise 3\nMake a boxplot of the proportion of 25-44-year-olds with a master’s, professional, or doctoral degree (p_edu_mapl) by county_type. How do the median proportions compare across the four county types?\nExercise 4\nRecreate the following visualization that compares the distribution of home ownership (p_home_ownership) by county_type. Then, highlight one feature of home ownership that this plot reveals in 1-2 sentences.\n\n\n\n\n\n\n\nHints\n\n\n\n\n\n\nx-axis: You can modify the x-axis labels to be percentages in a scale_x_continuous() layer. The scales package offers a handy function for formatting percentages, label_percent(). You can use this in the labels argument of scale_x_continuous().\nColor palette: The scale_color_colorblind() and scale_fill_colorblind() functions from the ggthemes package provide a color palette that is friendly for individuals with color vision deficiencies.\nTransparancy: You should adjust the transparency of the filled density curves. You don’t have to worry about the exact transparency value, but you should try a few to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nLegend: You should move the legend to the top of the plot. You can do this in a theme() layer. See theme documentation to identify the argument you need to change to move the legend.\nAspect ratio: You can adjust the aspect ratio by setting the fig-asp option in the code cell. A smaller (closer to 0) value makes the plot shorter and wider, while a larger (closer to 1) value makes the plot square-ish.\nWidth: You can also adjust the width of the plot by setting the fig-width option in the code cell. A larger value makes the plot wider.\n\n\n\n\nExercise 5\n\nReport the number of rows and columns in nc_county.\n\nCreate a new variable called p_edu_he (short for “percentage of population with higher education”) that is the sum of the percentages of\n\n25-44-year-olds with some college or an associate degree (p_edu_scnd),\nnon-degree credentials (p_edu_ndc),\nan associate degree (p_edu_assoc),\na bachelor’s degree (p_edu_ba), and\na master’s, professional, or doctoral degree (p_edu_mapl).\n\nand store this variable in the nc_county data frame.\nThen, report the number of rows and columns in nc_county after adding this variable.\n\n\nIn a single pipeline, calculate the\n\nminimum,\nfirst quartile (25th percentile),\nmedian (50th percentile),\nmean,\nthird quartile (75th percentile), and\nmaximum\n\nof p_edu_he.\n\nIn a single pipeline, calculate the same statistics as in the previous part, but for each county_type.\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nIf you don’t create the new variable p_edu_he in part (b), you will not be able to answer the remaining parts of this question or any of the remaining questions on the homework.\nTherefore, here is a quick check to make sure you created the variable correctly – after creating the variable, run the following code:\n\nnc_county |&gt; \n  select(p_edu_he) |&gt; \n  slice_head(n = 3)\n\nYou should see the following output:\n# A tibble: 3 × 1\n  p_edu_he\n     &lt;dbl&gt;\n1    0.615\n2    0.525\n3    0.525\nIf you do not see this output, please revisit part (b) of this question and make sure you created the variable correctly. Ask for help on Ed or in office hours if you need assistance.\n\n\n\nExercise 6\nRe-create the following plot that shows the distribution of p_edu_he by county_type.\n\n\n\n\n\n\n\nTip\n\n\n\n\n\n\nx-axis: Same hint as before.\nPoints: The points are drawn with the geom_beeswarm() function from the ggbeeswarm package.\nOutliers: The outliers in the box plots are drawn as open circles. You can specify this with the outlier.shape argument in geom_boxplot(). You can also adjust the size of the outliers with the outlier.size argument. The ggplot2 aesthetic specifications documentation has a list of shape names you can use for help.\nColor palette: The colors for the box plots are manually specified in a scale_color_manual() layer. You do not need to worry about the exact colors, but you should try to get close, e.g., use blue-ish colors for Rural counties, red-ish for Suburban, and brown-ish for Urban. You can use HEX codes for colors or look up named colors in R in the R colors cheatsheet\nTransparency: You should adjust the transparency of the box plots. You don’t have to worry about the exact transparency value, but you should try to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nAspect ratio and width: You can adjust the aspect ratio and width of your plot in your rendered document by setting fig-asp and fig-width options in the code cell.\n\n\n\n\nExercise 7\nCreate a scatter plot with percentage of 25-44 year olds with higher education (p_edu_he) on the x-axis and median household income (median_hh_income) on the y-axis. Describe the relationship between these two variables. In your description, make sure to comment on the direction, form, strength, and any unusual observations.\nRequirements for the plot:\n\nThe x-axis should be formatted as percentages, e.g., 30%, not 0.3;\nThe y-axis should be formatted as dollar amounts, e.g., $40,000, not 4e+04.",
     "crumbs": [
       "Homeworks",
-      "Homework 2"
+      "Homework 1"
     ]
   },
   {
-    "objectID": "hw/hw-2.html#part-2-ims-exercises",
-    "href": "hw/hw-2.html#part-2-ims-exercises",
-    "title": "Homework 2",
+    "objectID": "hw/hw-1.html#part-2-ims-exercises",
+    "href": "hw/hw-1.html#part-2-ims-exercises",
+    "title": "Homework 1",
     "section": "Part 2: IMS exercises",
-    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 9\nIMS - Chapter 7 exercises, #18: Over-under, II.\nExercise 10\nIMS - Chapter 7 exercises, #24: Cats weights.",
+    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 8\nIMS Chapter 1 exercises, #4: Cheaters, study components.\nExercise 9\nIMS Chapter 1 exercises, #14: UN Votes.\nExercise 10\nIMS Chapter 1 exercises, #16: Shows on Netflix.",
     "crumbs": [
       "Homeworks",
-      "Homework 2"
+      "Homework 1"
     ]
   },
   {
-    "objectID": "hw/hw-2.html#submission",
-    "href": "hw/hw-2.html#submission",
-    "title": "Homework 2",
+    "objectID": "hw/hw-1.html#submission",
+    "href": "hw/hw-1.html#submission",
+    "title": "Homework 1",
     "section": "Submission",
     "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
     "crumbs": [
       "Homeworks",
-      "Homework 2"
+      "Homework 1"
+    ]
+  },
+  {
+    "objectID": "hw/hw-3.html",
+    "href": "hw/hw-3.html",
+    "title": "Homework 3",
+    "section": "",
+    "text": "This homework will give you a workout with all of the linear regression ideas we’ve studied so far.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
+  },
+  {
+    "objectID": "hw/hw-3.html#setup",
+    "href": "hw/hw-3.html#setup",
+    "title": "Homework 3",
+    "section": "Setup",
+    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
+  },
+  {
+    "objectID": "hw/hw-3.html#part-1-credit-cards",
+    "href": "hw/hw-3.html#part-1-credit-cards",
+    "title": "Homework 3",
+    "section": "Part 1: credit cards",
+    "text": "Part 1: credit cards\nIn this part you will analyze a small dataset on personal finances:\n\ncredit &lt;- read_csv(\"data/credit.csv\")\n\nEach row is an American adult, and the variables are as follows:\n\n\n\n\n\n\nVariable\nDescription\n\n\n\nbalance\nCredit card balance in $\n\n\nincome\nIncome in $1,000\n\n\nstudent_status\nWhether the individual is a student (Student) or not (Not student)\n\n\nmarriage_status\nWhether the individual is a married (Married) or not (Not married)\n\n\nlimit\nCredit limit\n\n\nmarriage_student\n4-level categorical variable that mixes and matches marriage and student status\n\n\n\nOur goal is to understand how well a person’s income predicts their credit card balance, and we want to know how this relationship varies according to the person’s marriage and student status.\nExercise 1 (visualize and summarize)\n\nCreate a scatter plot visualizing income and balance, and include on your scatter plot the least squares line;\nWrite a single data pipeline that computes:\n\nThe means and standard deviations of the two variables;\nThe correlation between the two variables;\nThe slope and intercept of the least squares line in your plot. You should do this using the formulas from lecture that involve the five summaries above.\n\n\nExercise 2 (simple linear regression)\n\nUse the commands from tidymodels to fit the simple linear regression model that predicts balance from income. Make sure you store this model fit by giving it a useful name. Then display the regression output and verify that your slope and intercept estimates are the same as the ones from the previous exercise;\nInterpret the slope and the intercept estimates, and comment about whether or not the intercept estimate is meaningful in the context of the application.\nExercise 3 (“simple” linear regression)\n\nFit the linear model that predicts balance from marriage_student only. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nIn a single pipeline, compute the average balance within each level of marriage_student. Do these averages agree with the estimates from the model you just fit?\nExercise 4 (multiple linear regression 1)\n\nFit the additive model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nWhat credit card balance does this model predict for a married non-student whose income is $70,000?\nExercise 5 (multiple linear regression 2)\n\nCreate a scatter plot visualizing income and balance. Color the points on the scatter plot according to the levels of marriage_student, and add to the plot a different best fit line for each of those groups;\nFit the interaction model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model.\nExercise 6 (selection)\nYou just fit four separate models, but each one is meant to predict the same response variable: credit card balance. Which of these four models is “best”? Please provide a thorough explanation of why you made your choice.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
+  },
+  {
+    "objectID": "hw/hw-3.html#part-2-think-about-it",
+    "href": "hw/hw-3.html#part-2-think-about-it",
+    "title": "Homework 3",
+    "section": "Part 2: think about it",
+    "text": "Part 2: think about it\nThis exercise does not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the question in full sentences.\nExercise 7\nImagine we wish to study the relationship between the salary of high school teachers and the SAT scores of their students. So we collect data on a bunch of schools, and for each school we record average teacher salary and average SAT score, as well as a categorical variable indicating whether taking the SAT is common or not at that school.\nAs we saw, there are many models that we could fit in an attempt to summarize the relationship. Here are two:\n\nHow do these model fits differ? Can you speculate about why they differ? Which of these two models do you think is more appropriate for faithfully describing the relationship?",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
+    ]
+  },
+  {
+    "objectID": "hw/hw-3.html#submission",
+    "href": "hw/hw-3.html#submission",
+    "title": "Homework 3",
+    "section": "Submission",
+    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
+    "crumbs": [
+      "Homeworks",
+      "Homework 3"
     ]
   },
   {
@@ -6432,170 +6480,185 @@
     ]
   },
   {
-    "objectID": "hw/hw-3.html",
-    "href": "hw/hw-3.html",
-    "title": "Homework 3",
+    "objectID": "hw/hw-2.html",
+    "href": "hw/hw-2.html",
+    "title": "Homework 2",
     "section": "",
-    "text": "This homework will give you a workout with all of the linear regression ideas we’ve studied so far.",
+    "text": "On this second homework, you’ll start thinking about statistical modeling with linear regression, so we need a new package for that:\nlibrary(tidyverse)\nlibrary(tidymodels)",
     "crumbs": [
       "Homeworks",
-      "Homework 3"
+      "Homework 2"
     ]
   },
   {
-    "objectID": "hw/hw-3.html#setup",
-    "href": "hw/hw-3.html#setup",
-    "title": "Homework 3",
+    "objectID": "hw/hw-2.html#setup",
+    "href": "hw/hw-2.html#setup",
+    "title": "Homework 2",
     "section": "Setup",
     "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
     "crumbs": [
       "Homeworks",
-      "Homework 3"
+      "Homework 2"
     ]
   },
   {
-    "objectID": "hw/hw-3.html#part-1-credit-cards",
-    "href": "hw/hw-3.html#part-1-credit-cards",
-    "title": "Homework 3",
-    "section": "Part 1: credit cards",
-    "text": "Part 1: credit cards\nIn this part you will analyze a small dataset on personal finances:\n\ncredit &lt;- read_csv(\"data/credit.csv\")\n\nEach row is an American adult, and the variables are as follows:\n\n\n\n\n\n\nVariable\nDescription\n\n\n\nbalance\nCredit card balance in $\n\n\nincome\nIncome in $1,000\n\n\nstudent_status\nWhether the individual is a student (Student) or not (Not student)\n\n\nmarriage_status\nWhether the individual is a married (Married) or not (Not married)\n\n\nlimit\nCredit limit\n\n\nmarriage_student\n4-level categorical variable that mixes and matches marriage and student status\n\n\n\nOur goal is to understand how well a person’s income predicts their credit card balance, and we want to know how this relationship varies according to the person’s marriage and student status.\nExercise 1 (visualize and summarize)\n\nCreate a scatter plot visualizing income and balance, and include on your scatter plot the least squares line;\nWrite a single data pipeline that computes:\n\nThe means and standard deviations of the two variables;\nThe correlation between the two variables;\nThe slope and intercept of the least squares line in your plot. You should do this using the formulas from lecture that involve the five summaries above.\n\n\nExercise 2 (simple linear regression)\n\nUse the commands from tidymodels to fit the simple linear regression model that predicts balance from income. Make sure you store this model fit by giving it a useful name. Then display the regression output and verify that your slope and intercept estimates are the same as the ones from the previous exercise;\nInterpret the slope and the intercept estimates, and comment about whether or not the intercept estimate is meaningful in the context of the application.\nExercise 3 (“simple” linear regression)\n\nFit the linear model that predicts balance from marriage_student only. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nIn a single pipeline, compute the average balance within each level of marriage_student. Do these averages agree with the estimates from the model you just fit?\nExercise 4 (multiple linear regression 1)\n\nFit the additive model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model;\nWhat credit card balance does this model predict for a married non-student whose income is $70,000?\nExercise 5 (multiple linear regression 2)\n\nCreate a scatter plot visualizing income and balance. Color the points on the scatter plot according to the levels of marriage_student, and add to the plot a different best fit line for each of those groups;\nFit the interaction model that predicts balance from income and marriage_student. Make sure you store this model fit by giving it a useful name. Then display the regression output;\nInterpret the coefficient estimates in this model.\nExercise 6 (selection)\nYou just fit four separate models, but each one is meant to predict the same response variable: credit card balance. Which of these four models is “best”? Please provide a thorough explanation of why you made your choice.",
+    "objectID": "hw/hw-2.html#part-1-do-you-even-lift",
+    "href": "hw/hw-2.html#part-1-do-you-even-lift",
+    "title": "Homework 2",
+    "section": "Part 1: do you even lift?",
+    "text": "Part 1: do you even lift?\nWe will be working with data from www.openpowerlifting.org. This data was sourced from Tidy Tuesday and contains international powerlifting records at various meets. At each meet, each lifter gets three attempts at lifting max weight on three lifts: the bench press, squat and deadlift.\n\nipf &lt;- read_csv(\"data/ipf.csv\")\n\nThe data dictionary for this dataset from TidyTuesday is reproduced below:\n\n\n\n\n\n\nvariable\ndescription\n\n\n\nname\nIndividual lifter name\n\n\nsex\nBinary gender (M/F)\n\n\nevent\n\nThe type of competition that the lifter entered. Values are as follows:\n\nSBD: Squat-Bench-Deadlift, also commonly called “Full Power”\nBD: Bench-Deadlift, also commonly called “Ironman” or “Push-Pull”\nSD: Squat-Deadlift, very uncommon\nSB: Squat-Bench, very uncommon\nS: Squat-only\nB: Bench-only\nD: Deadlift-only\n\n\n\n\nequipment\n\nThe equipment category under which the lifts were performed. Values are as follows:\n\nRaw: Bare knees or knee sleeves\nWraps: Knee wraps were allowed\nSingle-ply: Equipped, single-ply suits\nMulti-ply: Equipped, multi-ply suits (includes Double-ply)\nStraps: Allowed straps on the deadlift (used mostly for exhibitions, not real meets)\n\n\n\n\nage\nThe age of the lifter on the start date of the meet, if known.\n\n\nage_class\nThe age class in which the filter falls, for example 40-45\n\n\n\ndivision\nFree-form UTF-8 text describing the division of competition, like Open or Juniors 20-23 or Professional.\n\n\nbodyweight_kg\nThe recorded bodyweight of the lifter at the time of competition, to two decimal places.\n\n\nweight_class_kg\n\nThe weight class in which the lifter competed, to two decimal places.\nWeight classes can be specified as a maximum or as a minimum. Maximums are specified by just the number, for example 90 means “up to (and including) 90kg.” minimums are specified by a + to the right of the number, for example 90+ means “above (and excluding) 90kg.”\n\n\n\nbest3squat_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3bench_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nbest3deadlift_kg\n\nMaximum of the first three successful attempts for the lift.\nRarely may be negative: that is used by some federations to report the lowest weight the lifter attempted and failed.\n\n\n\nplace\n\nThe recorded place of the lifter in the given division at the end of the meet. Values are as follows:\n\nPositive number: the place the lifter came in.\nG: Guest lifter. The lifter succeeded, but wasn’t eligible for awards.\nDQ: Disqualified. Note that DQ could be for procedural reasons, not just failed attempts.\nDD: Doping Disqualification. The lifter failed a drug test.\nNS: No-Show. The lifter did not show up on the meet day.\n\n\n\n\ndate\nISO 8601 Date of the event\n\n\nfederation\nThe federation that hosted the meet. (limited to IPF for this data subset)\n\n\nmeet_name\nThe name of the meet. The name is defined to never include the year or the federation. For example, the meet officially called 2019 USAPL Raw National Championships would have the MeetName Raw National Championshps.\n\n\n\nFor all of the following exercises, you should include units on axes labels, e.g. “Bench press (lbs)” or “Bench press (kg)”. “Age (years)” etc. This is good practice.\nExercise 1\nLet’s begin by taking a look at the squat lifting records.\nTo begin, remove any observations that are negative for squat. Next, create a new column called best3_squat_lbs that converts the record from kg to lbs (you may have to Google the conversion). Save your data frame as ipf_squat. Report the number of rows and columns of this new data frame.\n\n\n\n\n\n\nHint\n\n\n\nFirst, you’re taking a dataset and filtering it for certain records, and then you’re mutate-ing that dataset to gain a new column, and you’re assigning the resulting dataset to a new object called ipf_squat.\n\n\nExercise 2\nUsing ipf_squat from the previous exercise, create a scatter plot to investigate the relationship between squat (in lbs) and age. Age should be on the x-axis. Adjust the alpha level of your points to get a better sense of the density of the data. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.\nExercise 3\nWrite down the linear model to predict lift squat lbs from age in \\(x\\), \\(y\\), \\(\\beta\\) notation. What is \\(x\\)? What is \\(y\\)? Next, fit the linear model, and save it as age_fit. Re-write your previous equation replacing \\(\\beta\\) with the numeric estimates. This is called the “fitted” linear model. Interpret each estimate of \\(\\beta\\). Are the interpretations sensible?\nExercise 4\nBuilding on your ipf_squat data frame, create a new column called age2 that takes the age of each lifter and squares it. Save it to your data frame ipf_squat. Next, plot squat in lbs vs age2 and add a linear best fit line. Does this model look like it fits the data better?\n\n\n\n\n\n\nHint\n\n\n\nTo raise a value to a power, use ^ in R, e.g.: 2 ^ 2 gives you 4, 2 ^ 3 gives you 8, etc.\n\n\nExercise 5\nOne metric to assess the fit of a model is \\(R^2\\). Fit the age\\(^2\\) model and save the object as age2_fit. Compare \\(R^2\\) of the age\\(^2\\) model to the \\(R^2\\) of the model from Exercise 3. Which has a higher \\(R^2\\)?\nExercise 6\nNext, let’s turn our attention to dead lifting records. To do this, you should start back from the original ipf data frame that you first read in. Ignore the new data frame you created for squat.\nRecreate the plot below. Make sure axes and title labels are exactly matching, including spelling, capitalization, etc. Based on the plot below, which impacts deadlift weight more, age category or sex?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\nYou will need to create a couple of new columns. One to classify age appropriately and one to convert best3deadlift_kg to the plotted units (lbs). Notice that there are no negative deadlift values on the x-axis.\n\n\nExercise 7\nFinally, let’s turn our attention to bench press records. To do this, you should start back from the original ipf data frame that you first read in. Ignore the new data frames you created for squat and deadlift.\nTo begin, remove any observations that are negative for bench press, create two new columns: best3bench_lbs and bodyweight_lbs. Save the result in a new data frame called ipf_bench.\nThen, create a scatter plot to investigate the relationship between best bench press (in lbs) and the lifter’s bodyweight (in lbs). Bodyweight should be on the x-axis. Add a linear trend-line. Be sure to label all axes and give the plot a title. Comment on what you observe.\nExercise 8\nFit the linear model displayed in the previous exercise and write down the fitted model equation only, replacing \\(\\hat{\\beta}\\)s with their fitted estimates. Interpret the \\(\\hat{\\beta}\\)s (intercept and slope). Report \\(R^2\\). Is body weight an important predictor of bench press ability? Why or why not?",
     "crumbs": [
       "Homeworks",
-      "Homework 3"
+      "Homework 2"
     ]
   },
   {
-    "objectID": "hw/hw-3.html#part-2-think-about-it",
-    "href": "hw/hw-3.html#part-2-think-about-it",
-    "title": "Homework 3",
-    "section": "Part 2: think about it",
-    "text": "Part 2: think about it\nThis exercise does not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the question in full sentences.\nExercise 7\nImagine we wish to study the relationship between the salary of high school teachers and the SAT scores of their students. So we collect data on a bunch of schools, and for each school we record average teacher salary and average SAT score, as well as a categorical variable indicating whether taking the SAT is common or not at that school.\nAs we saw, there are many models that we could fit in an attempt to summarize the relationship. Here are two:\n\nHow do these model fits differ? Can you speculate about why they differ? Which of these two models do you think is more appropriate for faithfully describing the relationship?",
-    "crumbs": [
-      "Homeworks",
-      "Homework 3"
-    ]
-  },
-  {
-    "objectID": "hw/hw-3.html#submission",
-    "href": "hw/hw-3.html#submission",
-    "title": "Homework 3",
-    "section": "Submission",
-    "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 3"
-    ]
-  },
-  {
-    "objectID": "hw/hw-1.html",
-    "href": "hw/hw-1.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "On this first homework, you’ll continue to practice data visualization and summarization using the North Carolina counties data from Lab 1. At the end, you’ll dip into the textbook a little bit and think about some conceptual questions. Along the way, we’ll ask you to get a little fancier with the plots, which will require some extra packages:\nlibrary(tidyverse)\nlibrary(scales)    # for better axis labels\nlibrary(ggthemes)  # for additional color palettes",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
-  },
-  {
-    "objectID": "hw/hw-1.html#setup",
-    "href": "hw/hw-1.html#setup",
-    "title": "Homework 1",
-    "section": "Setup",
-    "text": "Setup\n\nLog-in to your container;\nDouble-check that you have the sta101-f26-files project loaded in the upper-right corner of RStudio (this should always be true);\nGo to the “Git” tab in the upper-right panel of RStudio and click the Pull button (arrow pointing down). Now the new assignment template and dataset should appear in the hw folder of your Files;\nAt the top of the new .qmd, in between ---, you have the settings for the document (the so-called YAML, but don’t worry about that). Modify the author so that it lists lil’ ol’ you.\n\nExercise 0\nRecommend some music for us to listen to while we grade this.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
-  },
-  {
-    "objectID": "hw/hw-1.html#part-1-exploring-nc-counties",
-    "href": "hw/hw-1.html#part-1-exploring-nc-counties",
-    "title": "Homework 1",
-    "section": "Part 1: Exploring NC Counties",
-    "text": "Part 1: Exploring NC Counties\nAs a reminder, this dataset contains information on North Carolina counties retrieved from the 2020 Census as well as from myFutureNC Dashboard maintained by Carolina Demography at the University of North Carolina at Chapel Hill.\nThis dataset is stored in the file nc-county.csv, which you can read into R with the following code:\n\nnc_county &lt;- read_csv(\"data/nc-county.csv\")\n\nThis will read the CSV (comma separated values) file from the data folder and store the dataset as a data frame called nc_county in R.\nThe variables in the dataset and their descriptions are as follows:\n\n\ncounty: Name of county;\n\nland_area_m2: Land area of county in meters-squared, based on the 2020 census;\n\nland_area_mi2: Land area of county in miles-squared, based on the 2020 census;\n\npop_2020: Population of county, based on the 2020 Census;\n\npop_dens_2020: Population density calculated as population (pop_2020) divided by land area in miles-squared (people per mile-squared);\n\ncounty_type: Peer county type classification based on population characteristics, socioeconomic status, and geographic features used for grouping counties with similar demographic, social, and economic characteristics, allowing them to be compared and benchmarked against one another;\n\nmedian_hh_income: Median household income;\n\np_foreign_born: Percentage of population that is foreign-born;\n\np_child_poverty: Percentage of children living in poverty;\n\np_single_parent_hh: Percentage of households with children that are single-parent households;\n\np_broadband: Percentage of households with broadband internet access;\n\np_home_ownership: Percentage of households that are owner-occupied;\n\np_family_sustaining_wage: Percentage of adults that earn a family-sustaining wage – typically a wage that covers essential costs like housing, food, childcare, transportation, and healthcare for a family’s basic needs within a specific geographic area;\n\np_edu_lths: Percentage of 25-44-year-olds with less than a high school diploma;\n\np_edu_hsged: Percentage of 25-44-year-olds with a high school diploma or equivalent;\n\np_edu_scnd: Percentage of 25-44-year-olds with some college or an associate degree;\n\np_edu_ndc: Percentage of 25-44-year-olds with non-degree credentials – certifications, licenses, or other credentials that demonstrate specific skills or knowledge but do not confer a formal academic degree;\n\np_edu_assoc: Percentage of 25-44-year-olds with an associate degree;\n\np_edu_ba: Percentage of 25-44-year-olds with a bachelor’s degree;\n\np_edu_mapl: Percentage of 25-44-year-olds with a master’s, professional, or doctoral degree;\n\np_edu_hs_grad_rate: High school graduation rate;\n\np_edu_chronic_absent_rate: Chronic absenteeism rate.\n\nExercise 1\nMake a bar plot of the number of counties by county_type. What type of county is most common in North Carolina? What type of county is least common?\nExercise 2\nMake a boxplot of median household income (median_hh_income) by county_type. In 2-3 sentences, compare the distributions of median household income across the four county types touching on shape, center, spread, and any potential outliers.\nExercise 3\nMake a boxplot of the proportion of 25-44-year-olds with a master’s, professional, or doctoral degree (p_edu_mapl) by county_type. How do the median proportions compare across the four county types?\nExercise 4\nRecreate the following visualization that compares the distribution of home ownership (p_home_ownership) by county_type. Then, highlight one feature of home ownership that this plot reveals in 1-2 sentences.\n\n\n\n\n\n\n\nHints\n\n\n\n\n\n\nx-axis: You can modify the x-axis labels to be percentages in a scale_x_continuous() layer. The scales package offers a handy function for formatting percentages, label_percent(). You can use this in the labels argument of scale_x_continuous().\nColor palette: The scale_color_colorblind() and scale_fill_colorblind() functions from the ggthemes package provide a color palette that is friendly for individuals with color vision deficiencies.\nTransparancy: You should adjust the transparency of the filled density curves. You don’t have to worry about the exact transparency value, but you should try a few to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nLegend: You should move the legend to the top of the plot. You can do this in a theme() layer. See theme documentation to identify the argument you need to change to move the legend.\nAspect ratio: You can adjust the aspect ratio by setting the fig-asp option in the code cell. A smaller (closer to 0) value makes the plot shorter and wider, while a larger (closer to 1) value makes the plot square-ish.\nWidth: You can also adjust the width of the plot by setting the fig-width option in the code cell. A larger value makes the plot wider.\n\n\n\n\nExercise 5\n\nReport the number of rows and columns in nc_county.\n\nCreate a new variable called p_edu_he (short for “percentage of population with higher education”) that is the sum of the percentages of\n\n25-44-year-olds with some college or an associate degree (p_edu_scnd),\nnon-degree credentials (p_edu_ndc),\nan associate degree (p_edu_assoc),\na bachelor’s degree (p_edu_ba), and\na master’s, professional, or doctoral degree (p_edu_mapl).\n\nand store this variable in the nc_county data frame.\nThen, report the number of rows and columns in nc_county after adding this variable.\n\n\nIn a single pipeline, calculate the\n\nminimum,\nfirst quartile (25th percentile),\nmedian (50th percentile),\nmean,\nthird quartile (75th percentile), and\nmaximum\n\nof p_edu_he.\n\nIn a single pipeline, calculate the same statistics as in the previous part, but for each county_type.\n\n\n\n\n\n\n\nWarning\n\n\n\n\n\nIf you don’t create the new variable p_edu_he in part (b), you will not be able to answer the remaining parts of this question or any of the remaining questions on the homework.\nTherefore, here is a quick check to make sure you created the variable correctly – after creating the variable, run the following code:\n\nnc_county |&gt; \n  select(p_edu_he) |&gt; \n  slice_head(n = 3)\n\nYou should see the following output:\n# A tibble: 3 × 1\n  p_edu_he\n     &lt;dbl&gt;\n1    0.615\n2    0.525\n3    0.525\nIf you do not see this output, please revisit part (b) of this question and make sure you created the variable correctly. Ask for help on Ed or in office hours if you need assistance.\n\n\n\nExercise 6\nRe-create the following plot that shows the distribution of p_edu_he by county_type.\n\n\n\n\n\n\n\nTip\n\n\n\n\n\n\nx-axis: Same hint as before.\nPoints: The points are drawn with the geom_beeswarm() function from the ggbeeswarm package.\nOutliers: The outliers in the box plots are drawn as open circles. You can specify this with the outlier.shape argument in geom_boxplot(). You can also adjust the size of the outliers with the outlier.size argument. The ggplot2 aesthetic specifications documentation has a list of shape names you can use for help.\nColor palette: The colors for the box plots are manually specified in a scale_color_manual() layer. You do not need to worry about the exact colors, but you should try to get close, e.g., use blue-ish colors for Rural counties, red-ish for Suburban, and brown-ish for Urban. You can use HEX codes for colors or look up named colors in R in the R colors cheatsheet\nTransparency: You should adjust the transparency of the box plots. You don’t have to worry about the exact transparency value, but you should try to get close.\nTheme: This plot uses a non-default theme. See theme options documentation for options.\nAspect ratio and width: You can adjust the aspect ratio and width of your plot in your rendered document by setting fig-asp and fig-width options in the code cell.\n\n\n\n\nExercise 7\nCreate a scatter plot with percentage of 25-44 year olds with higher education (p_edu_he) on the x-axis and median household income (median_hh_income) on the y-axis. Describe the relationship between these two variables. In your description, make sure to comment on the direction, form, strength, and any unusual observations.\nRequirements for the plot:\n\nThe x-axis should be formatted as percentages, e.g., 30%, not 0.3;\nThe y-axis should be formatted as dollar amounts, e.g., $40,000, not 4e+04.",
-    "crumbs": [
-      "Homeworks",
-      "Homework 1"
-    ]
-  },
-  {
-    "objectID": "hw/hw-1.html#part-2-ims-exercises",
-    "href": "hw/hw-1.html#part-2-ims-exercises",
-    "title": "Homework 1",
+    "objectID": "hw/hw-2.html#part-2-ims-exercises",
+    "href": "hw/hw-2.html#part-2-ims-exercises",
+    "title": "Homework 2",
     "section": "Part 2: IMS exercises",
-    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 8\nIMS Chapter 1 exercises, #4: Cheaters, study components.\nExercise 9\nIMS Chapter 1 exercises, #14: UN Votes.\nExercise 10\nIMS Chapter 1 exercises, #16: Shows on Netflix.",
+    "text": "Part 2: IMS exercises\nThese exercises from the textbook do not require code, but you should type your responses into the same Quarto file you’ve been using. Make sure to answer the questions in full sentences.\nExercise 9\nIMS - Chapter 7 exercises, #18: Over-under, II.\nExercise 10\nIMS - Chapter 7 exercises, #24: Cats weights.",
     "crumbs": [
       "Homeworks",
-      "Homework 1"
+      "Homework 2"
     ]
   },
   {
-    "objectID": "hw/hw-1.html#submission",
-    "href": "hw/hw-1.html#submission",
-    "title": "Homework 1",
+    "objectID": "hw/hw-2.html#submission",
+    "href": "hw/hw-2.html#submission",
+    "title": "Homework 2",
     "section": "Submission",
     "text": "Submission\n\nHit the blue Render button to generate your final PDF;\nGive your work a final look over to double-check a few things:\n\nthat your code is stylish;\nthat none of your code or pictures runs off the page. We cannot grade what we cannot read;\nthat all of your plots are well-labeled and human-readable. In other words “Flipper length (mm)” instead of flipper_length_mm;\nIf your work is lacking on any of these items, fix them and re-render as needed;\n\n\nDownload the PDF from your container;\nUpload it to Gradescope;\nDon’t forget to mark your pages.",
     "crumbs": [
       "Homeworks",
-      "Homework 1"
+      "Homework 2"
     ]
   },
   {
-    "objectID": "ae/ae-03-icecover.html",
-    "href": "ae/ae-03-icecover.html",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
+    "objectID": "ae/ae-05-diamonds.html",
+    "href": "ae/ae-05-diamonds.html",
+    "title": "AE 05: Diamonds!",
     "section": "",
-    "text": "The data for this application exercise comes from the lterdatasampler package. The mission of the Long Term Ecological Research program (LTER) Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”\nSpecifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature."
+    "text": "We want to understand how “The 4 Cs” predict a diamond’s price. We have a dataset with 5,000 rows, where each row is a diamond, and along the columns we record each diamond’s…\nlibrary(tidyverse)\nlibrary(tidymodels)"
   },
   {
-    "objectID": "ae/ae-03-icecover.html#getting-started",
-    "href": "ae/ae-03-icecover.html#getting-started",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Getting started",
-    "text": "Getting started\nPackages\nWe will use the tidyverse package for data visualization and wrangling and the tidymodels package for modeling.\n\nlibrary(tidyverse)\nlibrary(tidymodels)\n\nData\nThe data can be found in the data folder; it’s called icecover.csv.\n\nicecover &lt;- read_csv(\"data/icecover.csv\")\n\nThe data dictionary is below:\n\n\n\n\n\n\nVariable Name\nDescription\n\n\n\nlakeid\nLake name\n\n\nice_on\nDate of freeze of lake\n\n\nice_off\nDate of ice breakup of lake\n\n\nice_duration\nNumber of days between the freeze and breakup dates of each lake\n\n\nyear\nYear of observation\n\n\nannual_avg_temp\nAnnual average air temperature (°C)"
+    "objectID": "ae/ae-05-diamonds.html#load-and-prepare-the-data",
+    "href": "ae/ae-05-diamonds.html#load-and-prepare-the-data",
+    "title": "AE 05: Diamonds!",
+    "section": "Load and prepare the data",
+    "text": "Load and prepare the data\n\ndiamonds &lt;- read_csv(\"data/diamonds.csv\")\n\nThese data have several categorical variables: cut, color, and clarity. By default these variables will have their levels ordered alphabetically:\n\ndiamonds &lt;- diamonds |&gt;\n  mutate(\n    cut = factor(cut),\n    clarity = factor(clarity),\n    color = factor(color)\n  )\n\nlevels(diamonds$cut)\n\n[1] \"Fair\"      \"Good\"      \"Ideal\"     \"Premium\"   \"Very Good\"\n\nlevels(diamonds$clarity)\n\n[1] \"I\"   \"IF\"  \"SI\"  \"VS\"  \"VVS\"\n\nlevels(diamonds$color)\n\n[1] \"D\" \"E\" \"F\" \"G\" \"H\" \"I\" \"J\"\n\n\nBecause these levels do have a natural ordering corresponding to the increasing level of quality, we should force the computer to respect that:\n\ndiamonds &lt;- diamonds |&gt;\n  mutate(\n    cut = fct_relevel(cut, \"Fair\", \"Good\", \"Very Good\", \"Premium\", \"Ideal\"),\n    clarity = fct_relevel(clarity, \"I\", \"SI\", \"VS\", \"VVS\", \"IF\")\n  )\n\nlevels(diamonds$cut)\n\n[1] \"Fair\"      \"Good\"      \"Very Good\" \"Premium\"   \"Ideal\"    \n\nlevels(diamonds$clarity)\n\n[1] \"I\"   \"SI\"  \"VS\"  \"VVS\" \"IF\""
   },
   {
-    "objectID": "ae/ae-03-icecover.html#visualizing-the-model",
-    "href": "ae/ae-03-icecover.html#visualizing-the-model",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Visualizing the model",
-    "text": "Visualizing the model\nWe’re going to investigate the relationship between ice_duration and annual_avg_temp.\n\nCreate an appropriate plot to investigate this relationship. Add appropriate labels to the plot.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n\n\n\n\n\n\n\nIf you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?\nNow, let R draw the line for you. Refer to the documentation at https://ggplot2.tidyverse.org/reference/geom_smooth.html. Specifically, refer to the method section.\n\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWhat types of questions can this plot help answer?\n\nHow does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?\n\nWe can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?\n\nAt 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data."
+    "objectID": "ae/ae-05-diamonds.html#exploratory-analysis",
+    "href": "ae/ae-05-diamonds.html#exploratory-analysis",
+    "title": "AE 05: Diamonds!",
+    "section": "Exploratory analysis",
+    "text": "Exploratory analysis\nVisualize the bivariate relationship between price and each of the 4 Cs.\n\nggplot(diamonds, aes(x = carat, y = price)) + \n  geom_point()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = cut, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = clarity, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\nggplot(diamonds, aes(x = color, y = price)) + \n  geom_boxplot()\n\n\n\n\n\n\n\nPut price, carat, and clarity on one plot:\n\nggplot(diamonds, aes(x = carat, y = price, color = clarity)) + \n  geom_point()"
   },
   {
-    "objectID": "ae/ae-03-icecover.html#model-fitting",
-    "href": "ae/ae-03-icecover.html#model-fitting",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Model fitting",
-    "text": "Model fitting\nFit a model to predict fish weights from their heights.\n\nice_temp_fit &lt;- linear_reg() |&gt;\n  fit(ice_duration ~ annual_avg_temp, data = icecover)\n\nice_temp_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = ice_duration ~ annual_avg_temp, data = data)\n\nCoefficients:\n    (Intercept)  annual_avg_temp  \n        148.110           -6.182"
+    "objectID": "ae/ae-05-diamonds.html#empty-model",
+    "href": "ae/ae-05-diamonds.html#empty-model",
+    "title": "AE 05: Diamonds!",
+    "section": "Empty model",
+    "text": "Empty model\nFit the model for price that has no predictors:\n\nempty_fit &lt;- linear_reg() |&gt;\n  fit(price ~ 1, diamonds)\n\ntidy(empty_fit)\n\n# A tibble: 1 × 5\n  term        estimate std.error statistic p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    3955.      57.4      68.9       0\n\n\nInterpret the coefficient estimate:\n\nThe average price of a diamond is $3955.28."
   },
   {
-    "objectID": "ae/ae-03-icecover.html#model-summary",
-    "href": "ae/ae-03-icecover.html#model-summary",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Model summary",
-    "text": "Model summary\n\nDisplay the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.\n\n\ntidy(ice_temp_fit)\n\n# A tibble: 2 × 5\n  term            estimate std.error statistic  p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)       148.        7.77     19.1  1.38e-53\n2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9\n\n\n\nWrite out your model using mathematical notation.\n\n\\[\n\\widehat{ice~duration}=148.11-6.18\\times temp\n\\]\n\n\nWhat is the interpretation of the estimated coefficients?\n\nIf the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;\nIf the temperature increases by 1 degree celcius, this predicts a 6.18 day decrease in ice duration, on average."
+    "objectID": "ae/ae-05-diamonds.html#simple-linear-regression",
+    "href": "ae/ae-05-diamonds.html#simple-linear-regression",
+    "title": "AE 05: Diamonds!",
+    "section": "Simple linear regression",
+    "text": "Simple linear regression\nFit the model that predicts price from carat:\n\nprice_carat_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat, diamonds)\n\ntidy(price_carat_fit)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)   -2361.      41.9     -56.3       0\n2 carat          7916.      45.2     175.        0\n\n\nWrite the equation for the equation of the fitted model:\n\\[\n\\widehat{price}=-2360.58 + 7916.132\\times carat.\n\\]\nInterpret the coefficient estimates:\n\nA 0-carat diamond is predicted to cost $-2360.58 on average. You can’t have a 0-carat diamond, and the price won’t be negative, so this is doubly meaningless;\nA 1-carat increase predicts an average increase in price of $7916.13."
   },
   {
-    "objectID": "ae/ae-03-icecover.html#prediction",
-    "href": "ae/ae-03-icecover.html#prediction",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Prediction",
-    "text": "Prediction\nBefore, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.\n\nFirst, use R as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:\n\n\n148.109981 - 6.181554 * 7\n\n[1] 104.8391\n\n148.109981 - 6.181554 * 10\n\n[1] 86.29444\n\n148.109981 - 6.181554 * 12\n\n[1] 73.93133\n\n\n\nSecond, use the predict function to perform the same calculation. You should get the same numbers (aside from rounding error).\n\n\nnew_lakes &lt;- tibble(annual_avg_temp = c(7, 10, 12))\n\npredict(ice_temp_fit, new_data = new_lakes)\n\n# A tibble: 3 × 1\n  .pred\n  &lt;dbl&gt;\n1 105. \n2  86.3\n3  73.9"
+    "objectID": "ae/ae-05-diamonds.html#additive-model",
+    "href": "ae/ae-05-diamonds.html#additive-model",
+    "title": "AE 05: Diamonds!",
+    "section": "Additive model",
+    "text": "Additive model\nFit the additive model that predicts price from carat and clarity:\n\nprice_carat_clarity_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat + clarity, diamonds)\n\ntidy(price_carat_clarity_fit)\n\n# A tibble: 6 × 5\n  term        estimate std.error statistic   p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)   -6990.     171.      -40.8 6.56e-314\n2 carat          8466.      40.5     209.  0        \n3 claritySI      3474.     167.       20.9 1.11e- 92\n4 clarityVS      4571.     168.       27.3 7.98e-153\n5 clarityVVS     5214.     172.       30.2 1.33e-184\n6 clarityIF      5516.     192.       28.7 5.50e-168\n\n\n\\[\n\\widehat{price}=-6989.76 + 8465.86\\times carat + 3474.28\\times SI + 4570.70\\times VS + 5214.40\\times VVS + 5515.78\\times IF\n\\]\nInterpret some coefficient estimates:\n\nA 0-carat I diamond is predicted to cost $-6989.76 on average;\nHolding clarity constant, a 1-carat increase predicts an average increase in price of $8465.86. That holds for every type of diamond, because the lines are parallel;\nHolding carat constant, an SI diamond is expected to cost $3474.28 more than an I diamond, on average;\nHolding carat constant, an VS diamond is expected to cost $4570.70 more than an I diamond, on average;\nHolding carat constant, an VSS diamond is expected to cost $5214.40 more than an I diamond, on average;\nHolding carat constant, an IF diamond is expected to cost $5515.78 more than an I diamond, on average."
   },
   {
-    "objectID": "ae/ae-03-icecover.html#correlation",
-    "href": "ae/ae-03-icecover.html#correlation",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Correlation",
-    "text": "Correlation\nWe can also assess correlation between two quantitative variables.\n\nWhat is correlation? What are values correlation can take?\n\nThe correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.\n\nWhat is the correlation between temperature and ice duration?\n\n\nicecover |&gt;\n  summarize(\n    r = cor(annual_avg_temp, ice_duration)\n  )\n\n# A tibble: 1 × 1\n       r\n   &lt;dbl&gt;\n1 -0.332"
+    "objectID": "ae/ae-05-diamonds.html#interaction-model",
+    "href": "ae/ae-05-diamonds.html#interaction-model",
+    "title": "AE 05: Diamonds!",
+    "section": "Interaction model",
+    "text": "Interaction model\nFit the interaction model that predicts price from carat and clarity:\n\nprice_carat_clarity_int_fit &lt;- linear_reg() |&gt;\n  fit(price ~ carat * clarity, diamonds)\n\ntidy(price_carat_clarity_int_fit)\n\n# A tibble: 10 × 5\n   term             estimate std.error statistic  p.value\n   &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n 1 (Intercept)        -1543.      399.     -3.87 1.12e- 4\n 2 carat               4148.      292.     14.2  5.74e-45\n 3 claritySI          -1471.      403.     -3.65 2.66e- 4\n 4 clarityVS          -1202.      403.     -2.98 2.87e- 3\n 5 clarityVVS         -1084.      408.     -2.66 7.84e- 3\n 6 clarityIF          -1610.      437.     -3.68 2.32e- 4\n 7 carat:claritySI     3783.      297.     12.7  1.17e-36\n 8 carat:clarityVS     4748.      299.     15.9  1.48e-55\n 9 carat:clarityVVS    5856.      318.     18.4  2.77e-73\n10 carat:clarityIF     7627.      420.     18.1  2.65e-71\n\n\n\\[\n\\begin{aligned}\n\\widehat{price}\n=\n-1543.06 + 4148.06\\times carat &-1471.07\\times SI -1202.31\\times VS -1084.20\\times VVS -1610.30\\times IF\n\\\\\n&+ 3782.50\\times carat*SI \\\\\n&+ 4748.43\\times carat*VS \\\\\n&+ 5855.87\\times carat*VVS \\\\\n&+ 7626.83\\times carat*IF.\n\\end{aligned}\n\\]\nInterpret some coefficient estimates:\n\nA 0-carat I diamond is predicted to cost $-1543.06 on average;\nFor an I diamond, a 1-carat increase predicts an average increase in price of $4148.06;\nA 0-carat SI diamond is predicted to cost $1471.07 less than a 0-carat I diamond, on average;\nA 0-carat VS diamond is predicted to cost $1202.31 less than a 0-carat I diamond, on average;\nA 0-carat VVS diamond is predicted to cost $1084.2 less than a 0-carat I diamond, on average;\nA 0-carat IF diamond is predicted to cost $1610.3 less than a 0-carat I diamond, on average;\nA 1-carat increase predicts an average price change for SI diamonds that is $3782.5 greater than for I diamonds;\nA 1-carat increase predicts an average price change for VS diamonds that is $4748.43 greater than for I diamonds;\nA 1-carat increase predicts an average price change for VVS diamonds that is $5855.87 greater than for I diamonds;\nA 1-carat increase predicts an average price change for IF diamonds that is $7626.83 greater than for I diamonds."
   },
   {
-    "objectID": "ae/ae-03-icecover.html#fitting-other-models",
-    "href": "ae/ae-03-icecover.html#fitting-other-models",
-    "title": "AE 03: Ice cover in Madison, WI area lakes",
-    "section": "Fitting other models",
-    "text": "Fitting other models\nWe can fit more models than just a straight line. Change the plotting code from earlier to use method = \"loess\". What is different from the plot created before?\n\nggplot(icecover, aes(x = annual_avg_temp, y = ice_duration)) +\n  geom_point() +\n  geom_smooth(method = \"loess\") +\n  labs(\n    x = \"Annual average temperature (°C)\",\n    y = \"Ice duration (days)\",\n    title = \"Ice duration vs. annual average temperature\",\n    subtitle = \"North Temperate Lakes LTER\"\n  )\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "objectID": "ae/ae-05-diamonds.html#full-model",
+    "href": "ae/ae-05-diamonds.html#full-model",
+    "title": "AE 05: Diamonds!",
+    "section": "“Full” model",
+    "text": "“Full” model\nFit the additive model that predicts price from all other variables in the dataset:\n\nfull_model &lt;- linear_reg() |&gt;\n  fit(price ~ ., diamonds)\n\ntidy(full_model)\n\n# A tibble: 18 × 5\n   term         estimate std.error statistic   p.value\n   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n 1 (Intercept)    -2449.     310.      -7.91 3.27e- 15\n 2 carat          11815.     160.      73.6  0        \n 3 cutGood          584.     112.       5.23 1.79e-  7\n 4 cutVery Good     761.     105.       7.22 5.97e- 13\n 5 cutPremium       896.     102.       8.77 2.50e- 18\n 6 cutIdeal         980.     102.       9.58 1.52e- 21\n 7 colorE          -177.      58.9     -3.00 2.71e-  3\n 8 colorF          -274.      59.1     -4.63 3.70e-  6\n 9 colorG          -338.      58.9     -5.74 1.01e-  8\n10 colorH          -911.      62.1    -14.7  1.01e- 47\n11 colorI         -1329.      68.6    -19.4  1.39e- 80\n12 colorJ         -2130.      85.4    -24.9  1.95e-129\n13 claritySI       3351.     149.      22.5  9.01e-107\n14 clarityVS       4428.     150.      29.5  2.50e-176\n15 clarityVVS      4952.     155.      32.0  9.37e-205\n16 clarityIF       5304.     172.      30.8  4.83e-191\n17 length_mm      -2421.     271.      -8.93 5.74e- 19\n18 width_mm        1135.     266.       4.27 1.97e-  5"
+  },
+  {
+    "objectID": "ae/ae-05-diamonds.html#selection",
+    "href": "ae/ae-05-diamonds.html#selection",
+    "title": "AE 05: Diamonds!",
+    "section": "Selection",
+    "text": "Selection\nUse adjusted \\(R^2\\) to select the “best” model for price.\n\nempty_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0\n\nprice_carat_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.8600493\n\nprice_carat_clarity_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.8991738\n\nprice_carat_clarity_int_fit |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.9104614\n\nfull_model |&gt; glance() |&gt; pull(adj.r.squared)\n\n[1] 0.9224111\n\n\nThe interaction model is “best.”"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html",
+    "href": "ae/ae-xx-forest.html",
+    "title": "AE 20: Forest classification",
+    "section": "",
+    "text": "Important\n\n\n\nThese are suggested answers. This document should be used as reference only, it’s not designed to be an exhaustive key.\nIn this application exercise, we will\nWe will use tidyverse and tidymodels for data exploration and modeling, respectively, and the forested package for the data.\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(forested)\nRemember from the lecture that the forested dataset contains information on whether a plot is forested (Yes) or not (No) as well as numerical and categorical features of that plot.\nglimpse(forested)\n\nRows: 7,107\nColumns: 20\n$ forested         &lt;fct&gt; Yes, Yes, No, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes,…\n$ year             &lt;dbl&gt; 2005, 2005, 2005, 2005, 2005, 2005, 2005, 2005, 2005,…\n$ elevation        &lt;dbl&gt; 881, 113, 164, 299, 806, 736, 636, 224, 52, 2240, 104…\n$ eastness         &lt;dbl&gt; 90, -25, -84, 93, 47, -27, -48, -65, -62, -67, 96, -4…\n$ northness        &lt;dbl&gt; 43, 96, 53, 34, -88, -96, 87, -75, 78, -74, -26, 86, …\n$ roughness        &lt;dbl&gt; 63, 30, 13, 6, 35, 53, 3, 9, 42, 99, 51, 190, 95, 212…\n$ tree_no_tree     &lt;fct&gt; Tree, Tree, Tree, No tree, Tree, Tree, No tree, Tree,…\n$ dew_temp         &lt;dbl&gt; 0.04, 6.40, 6.06, 4.43, 1.06, 1.35, 1.42, 6.39, 6.50,…\n$ precip_annual    &lt;dbl&gt; 466, 1710, 1297, 2545, 609, 539, 702, 1195, 1312, 103…\n$ temp_annual_mean &lt;dbl&gt; 6.42, 10.64, 10.07, 9.86, 7.72, 7.89, 7.61, 10.45, 10…\n$ temp_annual_min  &lt;dbl&gt; -8.32, 1.40, 0.19, -1.20, -5.98, -6.00, -5.76, 1.11, …\n$ temp_annual_max  &lt;dbl&gt; 12.91, 15.84, 14.42, 15.78, 13.84, 14.66, 14.23, 15.3…\n$ temp_january_min &lt;dbl&gt; -0.08, 5.44, 5.72, 3.95, 1.60, 1.12, 0.99, 5.54, 6.20…\n$ vapor_min        &lt;dbl&gt; 78, 34, 49, 67, 114, 67, 67, 31, 60, 79, 172, 162, 70…\n$ vapor_max        &lt;dbl&gt; 1194, 938, 754, 1164, 1254, 1331, 1275, 944, 892, 549…\n$ canopy_cover     &lt;dbl&gt; 50, 79, 47, 42, 59, 36, 14, 27, 82, 12, 74, 66, 83, 6…\n$ lon              &lt;dbl&gt; -118.6865, -123.0825, -122.3468, -121.9144, -117.8841…\n$ lat              &lt;dbl&gt; 48.69537, 47.07991, 48.77132, 45.80776, 48.07396, 48.…\n$ land_type        &lt;fct&gt; Tree, Tree, Tree, Tree, Tree, Tree, Non-tree vegetati…\n$ county           &lt;fct&gt; Ferry, Thurston, Whatcom, Skamania, Stevens, Stevens,…"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#fit",
+    "href": "ae/ae-xx-forest.html#fit",
+    "title": "AE 20: Forest classification",
+    "section": "Fit",
+    "text": "Fit\nFit a model for classifying plots as forested or not based on a subset of predictors of your choice. Name the model forested_custom_fit and display a tidy output of the model.\n\nforested_custom_fit &lt;- logistic_reg() |&gt;\n  fit(forested ~ elevation + tree_no_tree + lat + lon + temp_annual_mean, data = forested_train)\n\ntidy(forested_custom_fit)\n\n# A tibble: 6 × 5\n  term                 estimate std.error statistic   p.value\n  &lt;chr&gt;                   &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)         48.2       6.06         7.96  1.71e- 15\n2 elevation           -0.000311  0.000384    -0.811 4.17e-  1\n3 tree_no_treeNo tree  3.35      0.0925      36.3   4.02e-288\n4 lat                 -0.313     0.0642      -4.87  1.09e-  6\n5 lon                  0.311     0.0288      10.8   3.81e- 27\n6 temp_annual_mean     0.270     0.0819       3.30  9.78e-  4"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#predict",
+    "href": "ae/ae-xx-forest.html#predict",
+    "title": "AE 20: Forest classification",
+    "section": "Predict",
+    "text": "Predict\nPredict for the testing data using this model.\n\nforested_custom_aug &lt;- augment(forested_custom_fit, new_data = forested_test)\n\nforested_custom_aug\n\n# A tibble: 1,777 × 23\n   .pred_class .pred_Yes .pred_No forested  year elevation eastness northness\n   &lt;fct&gt;           &lt;dbl&gt;    &lt;dbl&gt; &lt;fct&gt;    &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n 1 Yes            0.877    0.123  Yes       2005       113      -25        96\n 2 Yes            0.829    0.171  Yes       2005       736      -27       -96\n 3 Yes            0.855    0.145  Yes       2005       224      -65       -75\n 4 Yes            0.957    0.0431 Yes       2003      1031      -49        86\n 5 Yes            0.728    0.272  No        2005      1713      -66        75\n 6 Yes            0.982    0.0175 Yes       2014      1612       30       -95\n 7 No             0.0765   0.924  No        2014       507       44       -89\n 8 Yes            0.889    0.111  Yes       2014       940      -93        35\n 9 Yes            0.659    0.341  No        2014       246       22       -97\n10 No             0.0877   0.912  No        2014       419       86       -49\n# ℹ 1,767 more rows\n# ℹ 15 more variables: roughness &lt;dbl&gt;, tree_no_tree &lt;fct&gt;, dew_temp &lt;dbl&gt;,\n#   precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;, temp_annual_min &lt;dbl&gt;,\n#   temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;, vapor_min &lt;dbl&gt;,\n#   vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;, land_type &lt;fct&gt;,\n#   county &lt;fct&gt;"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#evaluate",
+    "href": "ae/ae-xx-forest.html#evaluate",
+    "title": "AE 20: Forest classification",
+    "section": "Evaluate",
+    "text": "Evaluate\nCalculate the false positive and false negative rates for the testing data using this model.\n\nforested_custom_aug |&gt;\n  count(.pred_class, forested) |&gt;\n  arrange(forested) |&gt;\n  group_by(forested) |&gt;\n  mutate(\n    p = round(n / sum(n), 2),\n    decision = case_when(\n      .pred_class == \"Yes\" & forested == \"Yes\" ~ \"True positive\",\n      .pred_class == \"Yes\" & forested == \"No\" ~ \"False positive\",\n      .pred_class == \"No\" & forested == \"Yes\" ~ \"False negative\",\n      .pred_class == \"No\" & forested == \"No\" ~ \"True negative\"\n    )\n  )\n\n# A tibble: 4 × 5\n# Groups:   forested [2]\n  .pred_class forested     n     p decision      \n  &lt;fct&gt;       &lt;fct&gt;    &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;         \n1 Yes         Yes        864  0.9  True positive \n2 No          Yes         98  0.1  False negative\n3 Yes         No         124  0.15 False positive\n4 No          No         691  0.85 True negative \n\n\nAnother commonly used display of this information is a confusion matrix. Create this using the conf_mat() function. You will need to review the documentation for the function to determine how to use it.\n\nconf_mat(\n  forested_custom_aug, \n  truth = forested, \n  estimate = .pred_class\n)\n\n          Truth\nPrediction Yes  No\n       Yes 864 124\n       No   98 691"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#sensitivity-specificity-roc-curve",
+    "href": "ae/ae-xx-forest.html#sensitivity-specificity-roc-curve",
+    "title": "AE 20: Forest classification",
+    "section": "Sensitivity, specificity, ROC curve",
+    "text": "Sensitivity, specificity, ROC curve\nCalculate sensitivity and specificity and draw the ROC curve.\n\nforested_custom_roc &lt;- roc_curve(forested_custom_aug, \n                                 truth = forested, \n                                 .pred_Yes, \n                                 event_level = \"first\")\n\nforested_custom_roc\n\n# A tibble: 1,779 × 3\n   .threshold specificity sensitivity\n        &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n 1  -Inf          0                 1\n 2     0.0186     0                 1\n 3     0.0202     0.00123           1\n 4     0.0204     0.00245           1\n 5     0.0207     0.00368           1\n 6     0.0227     0.00491           1\n 7     0.0286     0.00613           1\n 8     0.0298     0.00736           1\n 9     0.0299     0.00859           1\n10     0.0300     0.00982           1\n# ℹ 1,769 more rows\n\n\n\nggplot(forested_custom_roc, aes(x = 1 - specificity, y = sensitivity)) +\n  geom_path() +\n  geom_abline(lty = 3) +\n  coord_equal()"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#fit-1",
+    "href": "ae/ae-xx-forest.html#fit-1",
+    "title": "AE 20: Forest classification",
+    "section": "Fit",
+    "text": "Fit\nFit a model for classifying plots as forested or not based on all predictors available. Name the model forested_full_fit and display a tidy output of the model.\n\nforested_full_fit &lt;- logistic_reg() |&gt;\n  fit(forested ~ ., data = forested_train)\n\ntidy(forested_full_fit)\n\n# A tibble: 58 × 5\n   term                  estimate  std.error statistic  p.value\n   &lt;chr&gt;                    &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n 1 (Intercept)         -33.8      503.         -0.0672 9.46e- 1\n 2 year                  0.0161     0.0161      1.00   3.16e- 1\n 3 elevation            -0.00240    0.000697   -3.45   5.65e- 4\n 4 eastness             -0.000666   0.000776   -0.858  3.91e- 1\n 5 northness             0.00125    0.000799    1.56   1.18e- 1\n 6 roughness            -0.00179    0.00158    -1.13   2.57e- 1\n 7 tree_no_treeNo tree   1.20       0.147       8.21   2.16e-16\n 8 dew_temp              0.574      0.228       2.52   1.17e- 2\n 9 precip_annual        -0.000298   0.000132   -2.26   2.40e- 2\n10 temp_annual_mean    -14.9       13.3        -1.12   2.63e- 1\n# ℹ 48 more rows"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#predict-1",
+    "href": "ae/ae-xx-forest.html#predict-1",
+    "title": "AE 20: Forest classification",
+    "section": "Predict",
+    "text": "Predict\nPredict for the testing data using this model.\n\nforested_full_aug &lt;- augment(forested_full_fit, new_data = forested_test)\n\nforested_full_aug\n\n# A tibble: 1,777 × 23\n   .pred_class    .pred_Yes .pred_No forested  year elevation eastness northness\n   &lt;fct&gt;              &lt;dbl&gt;    &lt;dbl&gt; &lt;fct&gt;    &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n 1 Yes              9.11e-1   0.0889 Yes       2005       113      -25        96\n 2 Yes              9.53e-1   0.0472 Yes       2005       736      -27       -96\n 3 No               4.84e-1   0.516  Yes       2005       224      -65       -75\n 4 Yes              9.34e-1   0.0663 Yes       2003      1031      -49        86\n 5 No               4.09e-1   0.591  No        2005      1713      -66        75\n 6 Yes              9.24e-1   0.0755 Yes       2014      1612       30       -95\n 7 No               1.06e-8   1.000  No        2014       507       44       -89\n 8 Yes              8.72e-1   0.128  Yes       2014       940      -93        35\n 9 No               1.82e-9   1.000  No        2014       246       22       -97\n10 No               8.07e-9   1.000  No        2014       419       86       -49\n# ℹ 1,767 more rows\n# ℹ 15 more variables: roughness &lt;dbl&gt;, tree_no_tree &lt;fct&gt;, dew_temp &lt;dbl&gt;,\n#   precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;, temp_annual_min &lt;dbl&gt;,\n#   temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;, vapor_min &lt;dbl&gt;,\n#   vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;, land_type &lt;fct&gt;,\n#   county &lt;fct&gt;"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#evaluate-1",
+    "href": "ae/ae-xx-forest.html#evaluate-1",
+    "title": "AE 20: Forest classification",
+    "section": "Evaluate",
+    "text": "Evaluate\nCalculate the false positive and false negative rates for the testing data using this model.\n\nforested_full_aug |&gt;\n  count(.pred_class, forested) |&gt;\n  arrange(forested) |&gt;\n  group_by(forested) |&gt;\n  mutate(\n    p = round(n / sum(n), 2),\n    decision = case_when(\n      .pred_class == \"Yes\" & forested == \"Yes\" ~ \"True positive\",\n      .pred_class == \"Yes\" & forested == \"No\" ~ \"False positive\",\n      .pred_class == \"No\" & forested == \"Yes\" ~ \"False negative\",\n      .pred_class == \"No\" & forested == \"No\" ~ \"True negative\"\n    )\n  )\n\n# A tibble: 4 × 5\n# Groups:   forested [2]\n  .pred_class forested     n     p decision      \n  &lt;fct&gt;       &lt;fct&gt;    &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;         \n1 Yes         Yes        890  0.93 True positive \n2 No          Yes         72  0.07 False negative\n3 Yes         No          74  0.09 False positive\n4 No          No         741  0.91 True negative"
+  },
+  {
+    "objectID": "ae/ae-xx-forest.html#sensitivity-specificity-roc-curve-1",
+    "href": "ae/ae-xx-forest.html#sensitivity-specificity-roc-curve-1",
+    "title": "AE 20: Forest classification",
+    "section": "Sensitivity, specificity, ROC curve",
+    "text": "Sensitivity, specificity, ROC curve\nCalculate sensitivity and specificity and draw the ROC curve.\n\nforested_full_roc &lt;- roc_curve(forested_full_aug, \n                               truth = forested, \n                               .pred_Yes, \n                               event_level = \"first\")\n\nforested_full_roc\n\n# A tibble: 1,779 × 3\n    .threshold specificity sensitivity\n         &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n 1 -Inf            0                 1\n 2    2.64e-10     0                 1\n 3    2.93e-10     0.00123           1\n 4    7.29e-10     0.00245           1\n 5    7.50e-10     0.00368           1\n 6    8.69e-10     0.00491           1\n 7    8.83e-10     0.00613           1\n 8    1.35e- 9     0.00736           1\n 9    1.45e- 9     0.00859           1\n10    1.46e- 9     0.00982           1\n# ℹ 1,769 more rows\n\n\n\nggplot(forested_full_roc, aes(x = 1 - specificity, y = sensitivity)) +\n  geom_path() +\n  geom_abline(lty = 3) +\n  coord_equal()"
   },
   {
     "objectID": "lab/lab-2.html",
@@ -6899,7 +6962,7 @@
     "href": "index.html",
     "title": "STA 101 Data Analysis and Statistical Inference",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04  🧊 ae 03  🫵 practice!\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n🔬 lab 02\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n🛝 slides 05  🎶 notes 05  📈 play!\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n🛝 slides 06  🎶 notes 06  🐧 ae 04\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n🔬 lab 03\n\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 \\(R^2\\)\n\n🛝 slides 07  🎶 notes 07\n\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Model selection\n🛝 slides 08  🎶 notes 08  💎 ae 05\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n🔬 lab 04\n\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n🛝 slides 09  🎶 notes 09  ✉️ ae 06\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nLab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\nHW 4 @ 3 PM\n\n\n\nThu, Oct 8\n📝 Midterm\n\n💫 guide\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nMATERIALS\nREADING\nMORE\nDUE\n\n\n\n1\nTue, Aug 25\n🧑‍🏫 Welcome!\n🛝 slides 00\n\n\n\n\n\n\n\nThu, Aug 27\n🧑‍🏫 The bottom line, at the top\n🛝 slides 01  🎶 notes 01\n\n📗 r4ds - intro  📘 ims - ch 1  📘 ims - ch 2  📘 ims - ch 3\n\n🎥 Meet the toolkit :: R and RStudio  🎥 Meet the toolkit :: Quarto  🏋️ Tutorial: language of data  🏋️ Tutorial: types of studies  🏋️ Tutorial: experimental design\n\n\n\n\n\nFri, Aug 28\n💻 Lab 0\n🔬 lab 00\n\n\n\n\nIntro survey @ 5PM\n\n\n2\nTue, Sep 1\n🧑‍🏫 Exploratory data analysis\n🛝 slides 02  🎶 notes 02  ⛴️ ARC info\n\n📗 r4ds - ch 1  📗 r4ds - ch 3  📘 ims - ch 5\n\n🎥 Visualizing data  🎥 Building a plot with ggplot2  🎥 Grammar of graphics  🎥 Grammar of data transformation  🎥 Exploring numerical data  🏋️ Tutorial: viz for numerical data  🏋️ Tutorial: summarizing data\n\n\n\n\n\nThu, Sep 3\n🧑‍🏫 Exploratory data analysis\n\n📘 ims - ch 4\n\n🎥 Exploring categorical data  🎥 Exploring relationships  🏋️ Tutorial: viz for categorical data\n\n\n\n\n\nFri, Sep 4\n💻 Lab 1\n🔬 lab 01\n\n\n\nLab 1 @ end-of-lab\n\n\n3\nTue, Sep 8\n🧑‍🏫 Exploratory data analysis\n🛝 slides 03  🎶 notes 03\n\n📘 ims - ch 6\n\n🏋️ Tutorial: case study  🏋️ Tutorial: visualizing two variables\n\n\n\n\n\nThu, Sep 10\n🧑‍🏫 Modeling data\n🛝 slides 04  🎶 notes 04  🧊 ae 03  🫵 practice!\n\n📘 ims - ch 7.1\n\n🎥 The language of models  🏋️ Tutorial: correlation\n\n\n\n\n\nFri, Sep 11\n💻 Lab 2\n🔬 lab 02\n\n\n\n\nHW 1 @ 10 AM  Lab 2 @ end-of-lab\n\n\n4\nTue, Sep 15\n🧑‍🏫 Simple linear regression\n🛝 slides 05  🎶 notes 05  📈 play!\n\n📘 ims - ch 7.2\n\n🎥 Simple linear regression  🏋️ Tutorial: SLR  🏋️ Tutorial: interpretation  🏋️ Tutorial: model fit\n\n\n\n\n\nThu, Sep 17\n🧑‍🏫 Multiple linear regression\n🛝 slides 06  🎶 notes 06  🐧 ae 04\n\n📘 ims - ch 8.1 - 8.2\n\n🎥 Linear regression with a categorical predictor  🎥 Linear regression with multiple predictors  🎥 Main and interaction effects  🏋️ Tutorial: additive models  🏋️ Tutorial: extensions  🏋️ Tutorial: multiple linear regression\n\n\n\n\n\nFri, Sep 18\n💻 Lab 3\n🔬 lab 03\n\n\n\n\nHW 2 @ 10 AM  Lab 3 @ end-of-lab\n\n\n5\nTue, Sep 22\n🧑‍🏫 \\(R^2\\)\n\n🛝 slides 07  🎶 notes 07\n\n\n\n\n\n\n\nThu, Sep 24\n🧑‍🏫 Model selection\n🛝 slides 08  🎶 notes 08  💎 ae 05\n\n📘 ims - ch 8.3 - 8.4\n\n\n\n\n\n\nFri, Sep 25\n💻 Lab 4\n🔬 lab 04\n\n\n\n\nHW 3 @ 10 AM  Lab 4 @ end-of-lab\n\n\n6\nTue, Sep 29\n🧑‍🏫 Logistic regression\n🛝 slides 09  🎶 notes 09 \n\n📘 ims - ch 9\n\n🎥 Logistic regression  🏋️ Tutorial: logistic regression\n\n\n\n\n\nThu, Oct 1\n🧑‍🏫 Logistic regression\n🛝 slides 10  🎶 notes 10  ✉️ ae 06\n\n🎥 Classification and decision errors  🎥 Overfitting and spending your data\n\n\n\n\n\nFri, Oct 2\n💻 Lab 5\n\n\n\nLab 5 @ end-of-lab\n\n\n7\nTue, Oct 6\n🧑‍🏫 Modeling wrap-up\n\n📘 ims - ch 10\n\n🏋️ Tutorial: case study\n\n\nHW 4 @ 3 PM\n\n\n\nThu, Oct 8\n📝 Midterm\n\n💫 guide\n\n\n\n\n\n\n\nFri, Oct 9\n❌ No Lab\n\n\n\n\n\n\n\n8\nTue, Oct 13\n❌ Fall Break - No Lecture\n\n\n\n\n\n\n\n\nThu, Oct 15\n🧑‍🏫 Causality in experiments\n\n\n\n\n\n\n\nFri, Oct 16\n💻 Project kick-off\n\n\n\n\n\n\n9\nTue, Oct 20\n🧑‍🏫 Causality in observational studies\n\n\n\n\n\n\n\nThu, Oct 22\n🧑‍🏫 Causality wrap-up\n\n\n\n\n\n\n\nFri, Oct 23\n💻 Lab 6\n\n\n\nProject proposal @ 10 AM  Lab 6 @ end-of-lab\n\n\n10\nTue, Oct 27\n🧑‍🏫 Interval estimation\n\n📘 ims - ch 12  📘 ims - ch 24\n\n🎥 Quantifying uncertainty  🎥 Bootstrapping  🏋️ Tutorial: sampling uncertainty  🏋️ Tutorial: interval estimation\n\n\n\n\n\nThu, Oct 29\n🧑‍🏫 Interval estimation\n\n\n🏋️ Tutorial: regression inference  🏋️ Tutorial: intervals for regression\n\n\n\n\n\nFri, Oct 30\n💻 Lab 7\n\n\n\nHW 5 @ 10 AM  Lab 7 @ end-of-lab\n\n\n11\nTue, Nov 3\n🧑‍🏫 Hypothesis testing\n\n📘 ims - ch 11  📘 ims - ch 14  📘 ims - ch 24\n\n🎥 Hypothesis testing  🏋️ Tutorial: permutation testing  🏋️ Tutorial: decision errors\n\n\n\n\n\nThu, Nov 5\n🧑‍🏫 Hypothesis testing\n\n\n🏋️ Tutorial: t-test for the slope\n\n\n\n\n\nFri, Nov 6\n💻 Lab 8\n\n\n\nHW 6 @ 10 AM  Lab 8 @ end-of-lab\n\n\n12\nTue, Nov 10\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 16\n\n🏋️ Tutorial: proportion inference\n\n\n\n\n\nThu, Nov 12\n🧑‍🏫 Inference for proportions\n\n📘 ims - ch 17  📘 ims - ch 18\n\n🏋️ Tutorial: two proportions  🏋️ Tutorial: independence  🏋️ Tutorial: goodness-of-fit\n\n\n\n\n\nFri, Nov 13\n💻 Lab 9\n\n\n\nHW 7 @ 10 AM  Lab 9 @ end-of-lab\n\n\n13\nTue, Nov 17\n🧑‍🏫 Inference for means\n\n📘 ims - ch 19  📘 ims - ch 20\n\n🏋️ Tutorial: bootstrap anything  🏋️ Tutorial: t distribution\n\n\n\n\n\nThu, Nov 19\n🧑‍🏫 Inference for means\n\n📘 ims - ch 21\n\n🏋️ Tutorial: two means\n\n\n\n\n\nFri, Nov 20\n💻 Lab 10\n\n\n\nHW 8 @ 10 AM  Lab 10 @ end-of-lab\n\n\n14\nTue, Nov 24\n🧑‍🏫 ANOVA\n\n📘 ims - ch 22\n\n🏋️ Tutorial: ANOVA\n\n\n\n\n\nThu, Nov 26\n❌ Thanksgiving - No Lecture\n\n\n\n\n\n\n\n\nFri, Nov 27\n❌ Thanksgiving - No Lab\n\n\n\n\n\n\n\n15\nTue, Dec 1\n🧑‍🏫 Data science ethics\n\n\n🎥 Misrepresentation  🎥 Data privacy  🎥 Algorithmic bias\n\n\n\n\n\nThu, Dec 3\n🧑‍🏫 The bottom line\n\n\n\n\n\n\n\nFri, Dec 4\n💻 Project presentations\n\n\n\n\n\n\n\n16\nMon, Dec 7\n\n\n\n\nProject report @ 5 PM\n\n\n\nThu, Dec 10\n📝 Final (2PM - 5PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
@@ -7249,18 +7312,25 @@
     "text": "We have some data!\n\ndiamonds\n\n# A tibble: 5,000 × 7\n   price carat cut       color clarity length_mm width_mm\n   &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;     &lt;fct&gt; &lt;fct&gt;       &lt;dbl&gt;    &lt;dbl&gt;\n 1  3867  0.9  Ideal     I     VS           6.13     6.18\n 2 12048  2.01 Ideal     J     SI           8.08     8.03\n 3   878  0.41 Very Good F     SI           4.73     4.69\n 4  4325  0.68 Ideal     D     VVS          5.66     5.69\n 5   401  0.3  Ideal     E     SI           4.33     4.35\n 6  5504  1.19 Ideal     D     SI           6.91     6.89\n 7  1767  0.63 Good      H     VS           5.47     5.56\n 8  4704  1.02 Very Good G     SI           6.36     6.4 \n 9  1121  0.52 Ideal     F     SI           5.17     5.2 \n10  2137  0.7  Very Good H     VS           5.58     5.62\n# ℹ 4,990 more rows"
   },
   {
+    "objectID": "slides/10-logistic-2.html",
+    "href": "slides/10-logistic-2.html",
+    "title": "Logistic regression 2",
+    "section": "",
+    "text": "\\[\ny =\n\\begin{cases}\n1 & &&\\text{eg. Yes, Win, True, Heads, Success, Spam}\\\\\n0 & &&\\text{eg. No, Lose, False, Tails, Failure, Legit}.\n\\end{cases}\n\\]"
+  },
+  {
     "objectID": "slides/10-logistic-2.html#last-time-regression-with-a-binary-response",
     "href": "slides/10-logistic-2.html#last-time-regression-with-a-binary-response",
     "title": "Logistic regression 2",
-    "section": "Last time: regression with a binary response",
-    "text": "Last time: regression with a binary response\n\\[\ny =\n\\begin{cases}\n1 & &&\\text{eg. Yes, Win, True, Heads, Success, Spam}\\\\\n0 & &&\\text{eg. No, Lose, False, Tails, Failure, Legit}.\n\\end{cases}\n\\]"
+    "section": "",
+    "text": "\\[\ny =\n\\begin{cases}\n1 & &&\\text{eg. Yes, Win, True, Heads, Success, Spam}\\\\\n0 & &&\\text{eg. No, Lose, False, Tails, Failure, Legit}.\n\\end{cases}\n\\]"
   },
   {
     "objectID": "slides/10-logistic-2.html#new-model-logistic-regression",
     "href": "slides/10-logistic-2.html#new-model-logistic-regression",
     "title": "Logistic regression 2",
     "section": "New model: logistic regression",
-    "text": "New model: logistic regression\nS-curve for the probability of “success”:\n\\[\n\\hat{p}\n=\n\\widehat{\\text{Prob}(y=1)}\n=\n\\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.\n\\]\nLinear model for the log-odds:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\nb_0+b_1x.\n\\]\nThese are equivalent."
+    "text": "New model: logistic regression\nS-curve for the probability of “success”:\n\\[\n\\hat{p}\n=\n\\widehat{\\text{Prob}(y=1\\mid x)}\n=\n\\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.\n\\]\nLinear model for the log-odds of success:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\nb_0+b_1x.\n\\]\nThese are equivalent."
   },
   {
     "objectID": "slides/10-logistic-2.html#r-syntax-is-largely-unchanged",
@@ -7270,11 +7340,11 @@
     "text": "R syntax is largely unchanged\nJust use logistic_reg instead of linear_reg:\n. . .\n\nsimple_logistic_fit &lt;- logistic_reg() |&gt;\n  fit(spam ~ exclaim_mess, data = email)\n\ntidy(simple_logistic_fit)\n\n# A tibble: 2 × 5\n  term          estimate std.error statistic p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)  -2.27      0.0553     -41.1     0    \n2 exclaim_mess  0.000272  0.000949     0.287   0.774\n\n\n. . .\nFitted equation for the log-odds:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\n-2.27\n+\n0.000272\\times exclaim~mess\n\\]"
   },
   {
-    "objectID": "slides/10-logistic-2.html#interpretations-are-strange-and-delicate",
-    "href": "slides/10-logistic-2.html#interpretations-are-strange-and-delicate",
+    "objectID": "slides/10-logistic-2.html#interpretations-are-less-straightforward",
+    "href": "slides/10-logistic-2.html#interpretations-are-less-straightforward",
     "title": "Logistic regression 2",
-    "section": "Interpretations are strange and delicate",
-    "text": "Interpretations are strange and delicate\n\n\nIf exclaim_mess = 0, then \\[\n\\hat{p}=\\widehat{P(y=1)}=\\frac{e^{-2.27}}{1+e^{-2.27}}\\approx 0.09.\n\\] So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.\nIf the email has an additional exclamation mark, we predict the odds of the email being spam to be higher by a factor of \\(e^{0.000272}\\approx 1.000272\\).\n\n\n. . .\n(the odds are higher because the scale factor is greater than one. If it had been 0.98, then the odds shrink)"
+    "section": "Interpretations are less straightforward",
+    "text": "Interpretations are less straightforward\n\n\nIf exclaim_mess = 0, then \\[\n\\hat{p}=\\widehat{P(y=1\\mid x = 0)}=\\frac{e^{-2.27}}{1+e^{-2.27}}\\approx 0.09.\n\\] So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.\nIf the email has an additional exclamation mark, we predict the odds of the email being spam to be higher by a factor of \\(e^{0.000272}\\approx 1.000272\\).\n\n\n. . .\n(the odds are higher because the scale factor is greater than one. If it had been 0.98, then the odds shrink)"
   },
   {
     "objectID": "slides/10-logistic-2.html#use-the-exp-function-to-compute",
@@ -7323,7 +7393,7 @@
     "href": "slides/10-logistic-2.html#the-augment-function",
     "title": "Logistic regression 2",
     "section": "The augment function",
-    "text": "The augment function\nThe augment function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:\n\n\n.pred_class: model prediction (\\(\\hat{y}\\)) based on a 50% threshold;\n\n.pred_0: model estimate of \\(P(y=0)\\);\n\n.pred_1: model estimate of \\(P(y=1) = 1 - P(y = 0)\\)."
+    "text": "The augment function\nThe augment function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:\n\n\n.pred_class: model prediction (\\(\\hat{y}\\)) based on a 50% threshold;\n\n.pred_0: model estimate of \\(P(y=0\\mid x)\\);\n\n.pred_1: model estimate of \\(P(y=1\\mid x) = 1 - P(y = 0\\mid x)\\)."
   },
   {
     "objectID": "slides/10-logistic-2.html#the-augment-function-1",
@@ -7617,7 +7687,7 @@
     "href": "slides/10-logistic-2.html#fyi-the-base-level-is-treated-as-failure-0",
     "title": "Logistic regression 2",
     "section": "FYI: the base level is treated as “failure” (0)",
-    "text": "FYI: the base level is treated as “failure” (0)\nThe base level here is “Yes”, so “No” is treated as “success” (1):\n\nlevels(forested$forested)\n\n[1] \"Yes\" \"No\" \n\n\n. . .\nAs a result, this code:\n\nlogistic_reg() |&gt;\n  fit(forested ~ precip_annual, data = forested_train)\n\n. . .\nCorresponds to this model:\n\\[\n\\text{Prob}(\n\\texttt{forested = \"No\"}\n)\n=\n\\frac{e^{\\beta_0+\\beta_1 x}}{1 + e^{\\beta_0+\\beta_1 x}}.\n\\]\n. . .\nThis is not a problem, but it means that in order to interpret the output correctly, you need to understand how your factors are leveled."
+    "text": "FYI: the base level is treated as “failure” (0)\nThe base level here is “Yes”, so “No” is treated as “success” (1):\n\nlevels(forested$forested)\n\n[1] \"Yes\" \"No\" \n\n\n. . .\nAs a result, this code:\n\nlogistic_reg() |&gt;\n  fit(forested ~ precip_annual, data = forested_train)\n\n. . .\nCorresponds to this model:\n\\[\n\\text{Prob}(\n\\texttt{forested = \"No\"}\\mid x\n)\n=\n\\frac{e^{\\beta_0+\\beta_1 x}}{1 + e^{\\beta_0+\\beta_1 x}}.\n\\]\n. . .\nThis is not a problem, but it means that in order to interpret the output correctly, you need to understand how your factors are leveled."
   },
   {
     "objectID": "slides/10-logistic-2.html#dont-get-burned-on-this",
@@ -7634,18 +7704,11 @@
     "text": "Next steps\n\n\nFit models on training data\nMake predictions on testing data\n\nEvaluate predictions on testing data:\n\nLinear models: R-squared, adjusted R-squared, RMSE (root mean squared error), etc.\nLogistic models: False negative and positive rates, AUC (area under the curve), etc.\n\n\nMake decisions based on model predictive performance, validity across various testing/training splits (aka “cross validation”), explainability\n\n\n. . .\n\n\n\n\n\n\nNote\n\n\n\nWe will only learn about a subset of these in this course, but you can go further into these ideas in STA 210 or STA 221 as well as in various machine learning courses."
   },
   {
-    "objectID": "slides/10-logistic-2.html#ae-07-forest-classification",
-    "href": "slides/10-logistic-2.html#ae-07-forest-classification",
+    "objectID": "slides/10-logistic-2.html#now-off-to-your-container",
+    "href": "slides/10-logistic-2.html#now-off-to-your-container",
     "title": "Logistic regression 2",
-    "section": "ae-07-forest-classification",
-    "text": "ae-07-forest-classification\n\n\nGo to your ae project in RStudio.\nIf you haven’t yet done so, make sure all of your changes up to this point are committed and pushed, i.e., there’s nothing left in your Git pane.\nIf you haven’t yet done so, click Pull to get today’s application exercise file: ae-07-forest-classification.qmd. You might be prompted to install forested, say yes.\nWork through the application exercise in class, and render, commit, and push your edits."
-  },
-  {
-    "objectID": "slides/10-logistic-2-slides.html#while-you-wait-participate",
-    "href": "slides/10-logistic-2-slides.html#while-you-wait-participate",
-    "title": "Logistic regression 2",
-    "section": "While you wait: Participate 📱💻",
-    "text": "While you wait: Participate 📱💻"
+    "section": "Now, off to your container!",
+    "text": "Now, off to your container!"
   },
   {
     "objectID": "slides/10-logistic-2-slides.html#last-time-regression-with-a-binary-response",
@@ -7659,7 +7722,7 @@
     "href": "slides/10-logistic-2-slides.html#new-model-logistic-regression",
     "title": "Logistic regression 2",
     "section": "New model: logistic regression",
-    "text": "New model: logistic regression\nS-curve for the probability of “success”:\n\\[\n\\hat{p}\n=\n\\widehat{\\text{Prob}(y=1)}\n=\n\\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.\n\\]\nLinear model for the log-odds:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\nb_0+b_1x.\n\\]\nThese are equivalent."
+    "text": "New model: logistic regression\nS-curve for the probability of “success”:\n\\[\n\\hat{p}\n=\n\\widehat{\\text{Prob}(y=1\\mid x)}\n=\n\\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.\n\\]\nLinear model for the log-odds of success:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\nb_0+b_1x.\n\\]\nThese are equivalent."
   },
   {
     "objectID": "slides/10-logistic-2-slides.html#r-syntax-is-largely-unchanged",
@@ -7669,11 +7732,11 @@
     "text": "R syntax is largely unchanged\nJust use logistic_reg instead of linear_reg:\n\n\nsimple_logistic_fit &lt;- logistic_reg() |&gt;\n  fit(spam ~ exclaim_mess, data = email)\n\ntidy(simple_logistic_fit)\n\n# A tibble: 2 × 5\n  term          estimate std.error statistic p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)  -2.27      0.0553     -41.1     0    \n2 exclaim_mess  0.000272  0.000949     0.287   0.774\n\n\n\n\nFitted equation for the log-odds:\n\\[\n\\log\\left(\\frac{\\hat{p}}{1-\\hat{p}}\\right)\n=\n-2.27\n+\n0.000272\\times exclaim~mess\n\\]"
   },
   {
-    "objectID": "slides/10-logistic-2-slides.html#interpretations-are-strange-and-delicate",
-    "href": "slides/10-logistic-2-slides.html#interpretations-are-strange-and-delicate",
+    "objectID": "slides/10-logistic-2-slides.html#interpretations-are-less-straightforward",
+    "href": "slides/10-logistic-2-slides.html#interpretations-are-less-straightforward",
     "title": "Logistic regression 2",
-    "section": "Interpretations are strange and delicate",
-    "text": "Interpretations are strange and delicate\n\nIf exclaim_mess = 0, then \\[\n\\hat{p}=\\widehat{P(y=1)}=\\frac{e^{-2.27}}{1+e^{-2.27}}\\approx 0.09.\n\\] So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.\nIf the email has an additional exclamation mark, we predict the odds of the email being spam to be higher by a factor of \\(e^{0.000272}\\approx 1.000272\\).\n\n\n(the odds are higher because the scale factor is greater than one. If it had been 0.98, then the odds shrink)"
+    "section": "Interpretations are less straightforward",
+    "text": "Interpretations are less straightforward\n\nIf exclaim_mess = 0, then \\[\n\\hat{p}=\\widehat{P(y=1\\mid x = 0)}=\\frac{e^{-2.27}}{1+e^{-2.27}}\\approx 0.09.\n\\] So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.\nIf the email has an additional exclamation mark, we predict the odds of the email being spam to be higher by a factor of \\(e^{0.000272}\\approx 1.000272\\).\n\n\n(the odds are higher because the scale factor is greater than one. If it had been 0.98, then the odds shrink)"
   },
   {
     "objectID": "slides/10-logistic-2-slides.html#use-the-exp-function-to-compute",
@@ -7722,7 +7785,7 @@
     "href": "slides/10-logistic-2-slides.html#the-augment-function",
     "title": "Logistic regression 2",
     "section": "The augment function",
-    "text": "The augment function\nThe augment function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:\n\n\n.pred_class: model prediction (\\(\\hat{y}\\)) based on a 50% threshold;\n\n.pred_0: model estimate of \\(P(y=0)\\);\n\n.pred_1: model estimate of \\(P(y=1) = 1 - P(y = 0)\\)."
+    "text": "The augment function\nThe augment function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:\n\n\n.pred_class: model prediction (\\(\\hat{y}\\)) based on a 50% threshold;\n\n.pred_0: model estimate of \\(P(y=0\\mid x)\\);\n\n.pred_1: model estimate of \\(P(y=1\\mid x) = 1 - P(y = 0\\mid x)\\)."
   },
   {
     "objectID": "slides/10-logistic-2-slides.html#the-augment-function-1",
@@ -8016,7 +8079,7 @@
     "href": "slides/10-logistic-2-slides.html#fyi-the-base-level-is-treated-as-failure-0",
     "title": "Logistic regression 2",
     "section": "FYI: the base level is treated as “failure” (0)",
-    "text": "FYI: the base level is treated as “failure” (0)\nThe base level here is “Yes”, so “No” is treated as “success” (1):\n\nlevels(forested$forested)\n\n[1] \"Yes\" \"No\" \n\n\n\nAs a result, this code:\n\nlogistic_reg() |&gt;\n  fit(forested ~ precip_annual, data = forested_train)\n\n\n\nCorresponds to this model:\n\\[\n\\text{Prob}(\n\\texttt{forested = \"No\"}\n)\n=\n\\frac{e^{\\beta_0+\\beta_1 x}}{1 + e^{\\beta_0+\\beta_1 x}}.\n\\]\n\n\nThis is not a problem, but it means that in order to interpret the output correctly, you need to understand how your factors are leveled."
+    "text": "FYI: the base level is treated as “failure” (0)\nThe base level here is “Yes”, so “No” is treated as “success” (1):\n\nlevels(forested$forested)\n\n[1] \"Yes\" \"No\" \n\n\n\nAs a result, this code:\n\nlogistic_reg() |&gt;\n  fit(forested ~ precip_annual, data = forested_train)\n\n\n\nCorresponds to this model:\n\\[\n\\text{Prob}(\n\\texttt{forested = \"No\"}\\mid x\n)\n=\n\\frac{e^{\\beta_0+\\beta_1 x}}{1 + e^{\\beta_0+\\beta_1 x}}.\n\\]\n\n\nThis is not a problem, but it means that in order to interpret the output correctly, you need to understand how your factors are leveled."
   },
   {
     "objectID": "slides/10-logistic-2-slides.html#dont-get-burned-on-this",
@@ -8033,11 +8096,11 @@
     "text": "Next steps\n\nFit models on training data\nMake predictions on testing data\n\nEvaluate predictions on testing data:\n\nLinear models: R-squared, adjusted R-squared, RMSE (root mean squared error), etc.\nLogistic models: False negative and positive rates, AUC (area under the curve), etc.\n\n\nMake decisions based on model predictive performance, validity across various testing/training splits (aka “cross validation”), explainability\n\n\n\n\n\n\n\n\nNote\n\n\nWe will only learn about a subset of these in this course, but you can go further into these ideas in STA 210 or STA 221 as well as in various machine learning courses."
   },
   {
-    "objectID": "slides/10-logistic-2-slides.html#ae-07-forest-classification",
-    "href": "slides/10-logistic-2-slides.html#ae-07-forest-classification",
+    "objectID": "slides/10-logistic-2-slides.html#now-off-to-your-container",
+    "href": "slides/10-logistic-2-slides.html#now-off-to-your-container",
     "title": "Logistic regression 2",
-    "section": "ae-07-forest-classification",
-    "text": "ae-07-forest-classification\n\n\nGo to your ae project in RStudio.\nIf you haven’t yet done so, make sure all of your changes up to this point are committed and pushed, i.e., there’s nothing left in your Git pane.\nIf you haven’t yet done so, click Pull to get today’s application exercise file: ae-07-forest-classification.qmd. You might be prompted to install forested, say yes.\nWork through the application exercise in class, and render, commit, and push your edits."
+    "section": "Now, off to your container!",
+    "text": "Now, off to your container!"
   },
   {
     "objectID": "slides/06-mlr.html",

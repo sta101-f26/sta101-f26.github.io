@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta101-f26.github.io/exam/midterm-guide.html</loc>
-    <lastmod>2026-09-27T01:04:47.945Z</lastmod>
+    <lastmod>2026-09-28T13:06:15.086Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
-    <lastmod>2026-09-22T17:00:15.169Z</lastmod>
+    <lastmod>2026-09-30T00:01:25.365Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements/tech-for-change.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements/chronicle.html</loc>
-    <lastmod>2026-09-08T12:53:18.150Z</lastmod>
+    <lastmod>2026-09-30T00:01:23.218Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements/wind-symphony-belonging.html</loc>
@@ -46,11 +46,11 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/09-logistic-1-slides.html</loc>
-    <lastmod>2026-09-27T13:10:01.463Z</lastmod>
+    <lastmod>2026-09-29T19:44:23.644Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/09-logistic-1.html</loc>
-    <lastmod>2026-09-27T13:10:01.463Z</lastmod>
+    <lastmod>2026-09-29T19:44:23.644Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/04-models-slides.html</loc>
@@ -94,7 +94,7 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-5.html</loc>
-    <lastmod>2026-09-27T00:29:43.758Z</lastmod>
+    <lastmod>2026-09-28T13:07:17.806Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
@@ -109,28 +109,32 @@
     <lastmod>2026-09-17T17:45:16.966Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
-    <lastmod>2026-09-25T00:27:43.967Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
-    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
-    <lastmod>2026-09-28T12:13:57.541Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
-    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
+    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
+    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
     <lastmod>2026-09-04T22:31:32.274Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
-    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
+    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
+    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
+    <lastmod>2026-09-28T12:13:57.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
+    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
+    <lastmod>2026-09-25T00:27:43.967Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-xx-forest.html</loc>
+    <lastmod>2026-10-01T18:57:11.232Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-2.html</loc>
@@ -158,11 +162,11 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/10-logistic-2.html</loc>
-    <lastmod>2026-09-25T20:07:34.745Z</lastmod>
+    <lastmod>2026-09-29T15:23:59.953Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/10-logistic-2-slides.html</loc>
-    <lastmod>2026-09-25T20:07:34.745Z</lastmod>
+    <lastmod>2026-09-29T15:23:59.953Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/06-mlr.html</loc>

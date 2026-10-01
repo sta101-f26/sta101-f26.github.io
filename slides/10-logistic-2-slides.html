@@ -213,7 +213,6 @@ John Zito
 </div>
 
   <p class="date">2026-10-01</p>
-</section><section id="while-you-wait-participate" class="slide level2 small"><h2>While you wait: Participate 📱💻</h2>
 </section><section id="last-time-regression-with-a-binary-response" class="slide level2"><h2>Last time: regression with a binary response</h2>
 <p><span class="math display">\[
 y =
@@ -228,11 +227,11 @@ y =
 <p><span class="math display">\[
 \hat{p}
 =
-\widehat{\text{Prob}(y=1)}
+\widehat{\text{Prob}(y=1\mid x)}
 =
 \frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}.
 \]</span></p>
-<p>Linear model for the log-odds:</p>
+<p>Linear model for the log-odds of success:</p>
 <p><span class="math display">\[
 \log\left(\frac{\hat{p}}{1-\hat{p}}\right)
 =
@@ -266,10 +265,10 @@ b_0+b_1x.
 0.000272\times exclaim~mess
 \]</span></p>
 </div>
-</section><section id="interpretations-are-strange-and-delicate" class="slide level2 medium"><h2>Interpretations are strange and delicate</h2>
+</section><section id="interpretations-are-less-straightforward" class="slide level2 medium"><h2>Interpretations are less straightforward</h2>
 <ul>
 <li class="fragment"><p>If <code>exclaim_mess = 0</code>, then <span class="math display">\[
-\hat{p}=\widehat{P(y=1)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
+\hat{p}=\widehat{P(y=1\mid x = 0)}=\frac{e^{-2.27}}{1+e^{-2.27}}\approx 0.09.
 \]</span> So, our model predicts that an email with no exclamation marks has a 9% probability of being spam.</p></li>
 <li class="fragment"><p>If the email has an additional exclamation mark, we predict the <em>odds</em> of the email being spam to be <strong>higher</strong> by a factor of <span class="math inline">\(e^{0.000272}\approx 1.000272\)</span>.</p></li>
 </ul>
@@ -328,7 +327,7 @@ b_0+b_1x.
 </section><section id="classification-error" class="slide level2"><h2>Classification error</h2>
 <p>There are two kinds of mistakes:</p>
 
-<img data-src="images/19/confusion-matrix.png" class="r-stretch"><p>We want to avoid both, but there’s a trade-off.</p>
+<img data-src="images/09/confusion-matrix.png" class="r-stretch"><p>We want to avoid both, but there’s a trade-off.</p>
 </section><section id="jargon-false-negative-and-positive" class="slide level2"><h2>Jargon: False negative and positive</h2>
 <ul>
 <li><p><strong>False negative rate</strong> is the <em>proportion</em> of actual positives that were classified as negatives.</p></li>
@@ -392,9 +391,9 @@ b_0+b_1x.
 <li>
 <code>.pred_class</code>: model prediction (<span class="math inline">\(\hat{y}\)</span>) based on a 50% threshold;</li>
 <li>
-<code>.pred_0</code>: model estimate of <span class="math inline">\(P(y=0)\)</span>;</li>
+<code>.pred_0</code>: model estimate of <span class="math inline">\(P(y=0\mid x)\)</span>;</li>
 <li>
-<code>.pred_1</code>: model estimate of <span class="math inline">\(P(y=1) = 1 - P(y = 0)\)</span>.</li>
+<code>.pred_1</code>: model estimate of <span class="math inline">\(P(y=1\mid x) = 1 - P(y = 0\mid x)\)</span>.</li>
 </ul></section><section id="the-augment-function-1" class="slide level2"><h2>The augment function</h2>
 <p>The <code>augment</code> function takes a data frame and “augments” it by adding three new columns on the left that describe the model predictions for each row:</p>
 <div class="cell">
@@ -980,7 +979,7 @@ $ county           &lt;fct&gt; Ferry, Thurston, Whatcom, Skamania, Stevens, Stev
 <p>Corresponds to this model:</p>
 <p><span class="math display">\[
 \text{Prob}(
-\texttt{forested = "No"}
+\texttt{forested = "No"}\mid x
 )
 =
 \frac{e^{\beta_0+\beta_1 x}}{1 + e^{\beta_0+\beta_1 x}}.
@@ -1028,15 +1027,7 @@ $ county           &lt;fct&gt; Ferry, Thurston, Whatcom, Skamania, Stevens, Stev
 </div>
 </div>
 </div>
-</section><section id="ae-07-forest-classification" class="slide level2 smaller"><h2>ae-07-forest-classification</h2>
-<div class="appex">
-<ul>
-<li><p>Go to your ae project in RStudio.</p></li>
-<li><p>If you haven’t yet done so, make sure all of your changes up to this point are committed and pushed, i.e., there’s nothing left in your Git pane.</p></li>
-<li><p>If you haven’t yet done so, click Pull to get today’s application exercise file: <em>ae-07-forest-classification.qmd</em>. You might be prompted to install <strong>forested</strong>, say yes.</p></li>
-<li><p>Work through the application exercise in class, and render, commit, and push your edits.</p></li>
-</ul>
-</div>
+</section><section id="now-off-to-your-container" class="slide level2"><h2>Now, off to your container!</h2>
 
 
 </section></section>
