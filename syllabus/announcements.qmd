@@ -3,6 +3,8 @@ title: "Support your classmates!"
 format: html
 ---
 
+{{< include announcements/chronicle.qmd >}}
+
 {{< include announcements/sun-run.qmd >}}
 
 {{< include announcements/tech-for-change.qmd >}}
@@ -12,8 +14,6 @@ format: html
 {{< include announcements/duke-players-shorts-1.qmd >}}
 
 {{< include announcements/duke-music-day.qmd >}}
-
-{{< include announcements/chronicle.qmd >}}
 
 {{< include announcements/muse-magazine.qmd >}}
 
