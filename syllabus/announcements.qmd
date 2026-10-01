@@ -7,9 +7,9 @@ format: html
 
 {{< include announcements/sun-run.qmd >}}
 
-{{< include announcements/chronicle.qmd >}}
-
 {{< include announcements/tech-for-change.qmd >}}
+
+{{< include announcements/chronicle.qmd >}}
 
 {{< include announcements/fail-duke.qmd >}}
 
