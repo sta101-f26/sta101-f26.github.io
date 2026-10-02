@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta101-f26.github.io/exam/midterm-guide.html</loc>
-    <lastmod>2026-09-28T13:06:15.086Z</lastmod>
+    <lastmod>2026-10-02T07:59:14.189Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements.html</loc>
-    <lastmod>2026-10-01T21:19:54.528Z</lastmod>
+    <lastmod>2026-10-01T23:30:46.332Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/announcements/tech-for-change.html</loc>
@@ -94,7 +94,7 @@
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-5.html</loc>
-    <lastmod>2026-09-28T13:07:17.806Z</lastmod>
+    <lastmod>2026-10-02T09:34:24.728Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-0.html</loc>
@@ -105,36 +105,40 @@
     <lastmod>2026-09-17T11:09:54.697Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/ae/ae-04-penguins.html</loc>
-    <lastmod>2026-09-17T17:45:16.966Z</lastmod>
+    <loc>https://sta101-f26.github.io/ae/ae-06-email.html</loc>
+    <lastmod>2026-10-02T09:52:12.242Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
-    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
-    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
-    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
-    <lastmod>2026-10-01T21:12:36.372Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
-    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+    <loc>https://sta101-f26.github.io/ae/ae-xx-forest.html</loc>
+    <lastmod>2026-10-01T18:57:11.232Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/ae/ae-05-diamonds.html</loc>
     <lastmod>2026-09-25T00:27:43.967Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/ae/ae-xx-forest.html</loc>
-    <lastmod>2026-10-01T18:57:11.232Z</lastmod>
+    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
+    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
+    <lastmod>2026-10-01T21:12:36.372Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
+    <lastmod>2026-09-19T12:51:47.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
+    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
+    <lastmod>2026-09-11T01:16:49.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-04-penguins.html</loc>
+    <lastmod>2026-09-17T17:45:16.966Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-2.html</loc>

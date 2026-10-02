@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>AE 03: Ice cover in Madison, WI area lakes – STA 101 Fall 2026</title>
+<title>AE 6: building a spam filter – STA 101 Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,9 +121,9 @@ window.Quarto = {
   typesetMath
 };
 </script>
-<meta property="og:title" content="AE 03: Ice cover in Madison, WI area lakes – STA 101 Fall 2026">
+<meta property="og:title" content="AE 6: building a spam filter – STA 101 Fall 2026">
 <meta property="og:description" content="Homepage for STA 101 Data Analysis and Statistical Inference at Duke University (Fall 2026)">
-<meta property="og:image" content="https://sta101-f26.github.io/ae/ae-03-icecover_files/figure-html/visualize-1.png">
+<meta property="og:image" content="https://sta101-f26.github.io/ae/ae-06-email_files/figure-html/unnamed-chunk-2-1.png">
 <meta property="og:site_name" content="STA 101 Fall 2026">
 <meta property="og:image:height" content="960">
 <meta property="og:image:width" content="1344">
@@ -135,7 +135,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">AE 03: Ice cover in Madison, WI area lakes</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">AE 6: building a spam filter</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -332,24 +332,25 @@ window.Quarto = {
    
   <ul>
 <li>
-<a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting started</a>
+<a href="#exercises" id="toc-exercises" class="nav-link active" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-<li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+<li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
   </ul>
 </li>
-  <li><a href="#visualizing-the-model" id="toc-visualizing-the-model" class="nav-link" data-scroll-target="#visualizing-the-model">Visualizing the model</a></li>
-  <li><a href="#model-fitting" id="toc-model-fitting" class="nav-link" data-scroll-target="#model-fitting">Model fitting</a></li>
-  <li><a href="#model-summary" id="toc-model-summary" class="nav-link" data-scroll-target="#model-summary">Model summary</a></li>
-  <li><a href="#prediction" id="toc-prediction" class="nav-link" data-scroll-target="#prediction">Prediction</a></li>
-  <li><a href="#correlation" id="toc-correlation" class="nav-link" data-scroll-target="#correlation">Correlation</a></li>
-  <li><a href="#fitting-other-models" id="toc-fitting-other-models" class="nav-link" data-scroll-target="#fitting-other-models">Fitting other models</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">AE 03: Ice cover in Madison, WI area lakes</h1>
-</div>
+<h1 class="title">AE 6: building a spam filter</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Application exercise</div>
+  </div>
+  </div>
 
 
 
@@ -362,237 +363,266 @@ window.Quarto = {
   
 
 
-</header><p>The data for this application exercise comes from the <a href="https://lter.github.io/lterdatasampler/">lterdatasampler</a> package. The mission of the <a href="https://lternet.edu">Long Term Ecological Research program (LTER)</a> Network is to “provide the scientific community, policy makers, and society with the knowledge and predictive understanding necessary to conserve, protect, and manage the nation’s ecosystems, their biodiversity, and the services they provide.”</p>
-<p>Specifically we’ll be using data from the North Temperate Lakes LTER (NTL-LTER) site, which is located in the Madison, WI area, modeling the relationship between number of days that a lake is frozen, excluding periods where the lake thaws before refreezing again, and annual average temperature.</p>
-<section id="getting-started" class="level2"><h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
-<section id="packages" class="level3"><h3 class="anchored" data-anchor-id="packages">Packages</h3>
-<p>We will use the <strong>tidyverse</strong> package for data visualization and wrangling and the <strong>tidymodels</strong> package for modeling.</p>
+</header><p>In this application exercise, we will</p>
+<ul>
+<li>Use logistic regression to fit a model for a binary response variable</li>
+<li>Fit a logistic regression model in R</li>
+<li>Use a logistic regression model for classification</li>
+</ul>
+<p>To illustrate logistic regression, we will build a spam filter from email data.</p>
+<p>The data come from incoming emails in David Diez’s Gmail account for the first three months of 2012. All personally identifiable information has been removed.</p>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidymodels.tidymodels.org">tidymodels</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://openintrostat.github.io/openintro/">openintro</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="data" class="level3"><h3 class="anchored" data-anchor-id="data">Data</h3>
-<p>The data can be found in the <code>data</code> folder; it’s called <code>icecover.csv</code>.</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">icecover</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"data/icecover.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The data dictionary is below:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 76%">
-</colgroup>
-<thead><tr class="header">
-<th style="text-align: left;">Variable Name</th>
-<th style="text-align: left;">Description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><code>lakeid</code></td>
-<td style="text-align: left;">Lake name</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>ice_on</code></td>
-<td style="text-align: left;">Date of freeze of lake</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>ice_off</code></td>
-<td style="text-align: left;">Date of ice breakup of lake</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>ice_duration</code></td>
-<td style="text-align: left;">Number of days between the freeze and breakup dates of each lake</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>year</code></td>
-<td style="text-align: left;">Year of observation</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>annual_avg_temp</code></td>
-<td style="text-align: left;">Annual average air temperature (°C)</td>
-</tr>
-</tbody>
-</table></section></section><section id="visualizing-the-model" class="level2"><h2 class="anchored" data-anchor-id="visualizing-the-model">Visualizing the model</h2>
-<p>We’re going to investigate the relationship between <code>ice_duration</code> and <code>annual_avg_temp</code>.</p>
-<ul>
-<li>Create an appropriate plot to investigate this relationship. Add appropriate labels to the plot.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">icecover</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">annual_avg_temp</span>, y <span class="op">=</span> <span class="va">ice_duration</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Annual average temperature (°C)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Ice duration (days)"</span>,</span>
-<span>    title <span class="op">=</span> <span class="st">"Ice duration vs. annual average temperature"</span>,</span>
-<span>    subtitle <span class="op">=</span> <span class="st">"North Temperate Lakes LTER"</span></span>
-<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="ae-03-icecover_files/figure-html/visualize-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li><p>If you were to draw a straight line to best represent the relationship between ice duration and annual average temperature, where would it go? Why?</p></li>
-<li><p>Now, let R draw the line for you. Refer to the documentation at <a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html" class="uri">https://ggplot2.tidyverse.org/reference/geom_smooth.html</a>. Specifically, refer to the method section.</p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">icecover</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">annual_avg_temp</span>, y <span class="op">=</span> <span class="va">ice_duration</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Annual average temperature (°C)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Ice duration (days)"</span>,</span>
-<span>    title <span class="op">=</span> <span class="st">"Ice duration vs. annual average temperature"</span>,</span>
-<span>    subtitle <span class="op">=</span> <span class="st">"North Temperate Lakes LTER"</span></span>
-<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><img src="ae-03-icecover_files/figure-html/visualize-with-line-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>What types of questions can this plot help answer?</li>
-</ul>
-<p><em>How does ice duration change with annual average temperature? What is the predicted ice duration for a given annual average temperature?</em></p>
-<ul>
-<li>We can use this line to make predictions. Predict what you think the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Which prediction is considered extrapolation?</li>
-</ul>
-<p><em>At 7 °C, we estimate ice duration to be 100 days. At 10 °C, we estimate ice duration to be 80 days. 12 °C would be considered extrapolation because that is beyond the range of temperatures we actually observed in our data.</em></p>
-</section><section id="model-fitting" class="level2"><h2 class="anchored" data-anchor-id="model-fitting">Model fitting</h2>
-<p>Fit a model to predict fish weights from their heights.</p>
-<div class="cell">
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ice_temp_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">ice_duration</span> <span class="op">~</span> <span class="va">annual_avg_temp</span>, data <span class="op">=</span> <span class="va">icecover</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">ice_temp_fit</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">email</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>parsnip model object
-
-
-Call:
-stats::lm(formula = ice_duration ~ annual_avg_temp, data = data)
-
-Coefficients:
-    (Intercept)  annual_avg_temp  
-        148.110           -6.182  </code></pre>
+<pre><code>Rows: 3,921
+Columns: 21
+$ spam         &lt;fct&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ to_multiple  &lt;fct&gt; 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ from         &lt;fct&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+$ cc           &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2, 1, 0, 2, 0, …
+$ sent_email   &lt;fct&gt; 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, …
+$ time         &lt;dttm&gt; 2012-01-01 01:16:41, 2012-01-01 02:03:59, 2012-01-01 11:…
+$ image        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ attach       &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ dollar       &lt;dbl&gt; 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 5, 0, 0, …
+$ winner       &lt;fct&gt; no, no, no, no, no, no, no, no, no, no, no, no, no, no, n…
+$ inherit      &lt;dbl&gt; 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ viagra       &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ password     &lt;dbl&gt; 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, …
+$ num_char     &lt;dbl&gt; 11.370, 10.504, 7.773, 13.256, 1.231, 1.091, 4.837, 7.421…
+$ line_breaks  &lt;int&gt; 202, 202, 192, 255, 29, 25, 193, 237, 69, 68, 25, 79, 191…
+$ format       &lt;fct&gt; 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, …
+$ re_subj      &lt;fct&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, …
+$ exclaim_subj &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, …
+$ urgent_subj  &lt;fct&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ exclaim_mess &lt;dbl&gt; 0, 1, 6, 48, 1, 1, 1, 18, 1, 0, 2, 1, 0, 10, 4, 10, 20, 0…
+$ number       &lt;fct&gt; big, small, small, small, none, none, big, small, small, …</code></pre>
 </div>
 </div>
-</section><section id="model-summary" class="level2"><h2 class="anchored" data-anchor-id="model-summary">Model summary</h2>
-<ul>
-<li>Display the model summary including estimates for the slope and intercept along with measurements of uncertainty around them. Show how you can extract these values from the model output.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tidy</span><span class="op">(</span><span class="va">ice_temp_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term            estimate std.error statistic  p.value
-  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)       148.        7.77     19.1  1.38e-53
-2 annual_avg_temp    -6.18      1.01     -6.10 3.31e- 9</code></pre>
-</div>
-</div>
-<ul>
-<li>Write out your model using mathematical notation.</li>
-</ul>
-<p><span class="math display">\[
-\widehat{ice~duration}=148.11-6.18\times temp
-\]</span></p>
+<p>The variables we’ll use in this analysis are</p>
 <ul>
 <li>
-<p>What is the interpretation of the estimated coefficients?</p>
-<ul>
-<li>If the average annual temperature is zero degrees celcius, the model predicts that ice endures for 148.11 days on average;</li>
-<li>If the temperature increases by 1 degree celcius, this predicts a 6.18 day <em>decrease</em> in ice duration, on average.</li>
+<code>spam</code>: 1 if the email is spam, 0 otherwise</li>
+<li>
+<code>exclaim_mess</code>: The number of exclamation points in the email message</li>
 </ul>
-</li>
-</ul></section><section id="prediction" class="level2"><h2 class="anchored" data-anchor-id="prediction">Prediction</h2>
-<p>Before, you used your eyeballs to predict what the ice duration would be in a year with annual average temperature of 7, 10, and 12 °C. Now let’s have the computer do it.</p>
-<ul>
-<li>First, use <code>R</code> as an overgrown calculator to compute the model prediction for each of the three temperatures by plugging into your model formulas and doing the arithmetic:</li>
-</ul>
+<p><strong>Goal:</strong> Use the number of exclamation points in an email to predict whether or not it is spam.</p>
+<section id="exercises" class="level1"><h1>Exercises</h1>
+<section id="exercise-1" class="level2"><h2 class="anchored" data-anchor-id="exercise-1">Exercise 1</h2>
+<p>Let’s start with some exploratory analysis:</p>
+<ol type="a">
+<li>Create a density plot to investigate the relationship between <code>spam</code> and <code>exclaim_mess</code>.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">148.109981</span> <span class="op">-</span> <span class="fl">6.181554</span> <span class="op">*</span> <span class="fl">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 104.8391</code></pre>
-</div>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">148.109981</span> <span class="op">-</span> <span class="fl">6.181554</span> <span class="op">*</span> <span class="fl">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 86.29444</code></pre>
-</div>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">148.109981</span> <span class="op">-</span> <span class="fl">6.181554</span> <span class="op">*</span> <span class="fl">12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 73.93133</code></pre>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">email</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">exclaim_mess</span>, fill <span class="op">=</span> <span class="va">spam</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="ae-06-email_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>Second, use the <code>predict</code> function to perform the same calculation. You should get the same numbers (aside from rounding error).</li>
-</ul>
+</div>
+<ol start="2" type="a">
+<li>Additionally, calculate the mean number of exclamation points for both spam and non-spam emails.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_lakes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>annual_avg_temp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">12</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">ice_temp_fit</span>, new_data <span class="op">=</span> <span class="va">new_lakes</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">email</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">spam</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span>mean_ep <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">exclaim_mess</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 1
-  .pred
-  &lt;dbl&gt;
-1 105. 
-2  86.3
-3  73.9</code></pre>
+<pre><code># A tibble: 2 × 2
+  spam  mean_ep
+  &lt;fct&gt;   &lt;dbl&gt;
+1 0        6.51
+2 1        7.32</code></pre>
 </div>
 </div>
-</section><section id="correlation" class="level2"><h2 class="anchored" data-anchor-id="correlation">Correlation</h2>
-<p>We can also assess correlation between two quantitative variables.</p>
-<ul>
-<li>What is correlation? What are values correlation can take?</li>
-</ul>
-<p><em>The correlation coefficient is a number between -1 and 1 that measures the strength and direction of the linear association between two numerical variables.</em></p>
-<ul>
-<li>What is the correlation between temperature and ice duration?</li>
-</ul>
+</section><section id="exercise-2" class="level2"><h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
+<p>Visualize a linear model fit for these data:</p>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">icecover</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span></span>
-<span>    r <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cor</a></span><span class="op">(</span><span class="va">annual_avg_temp</span>, <span class="va">ice_duration</span><span class="op">)</span></span>
-<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-       r
-   &lt;dbl&gt;
-1 -0.332</code></pre>
-</div>
-</div>
-</section><section id="fitting-other-models" class="level2"><h2 class="anchored" data-anchor-id="fitting-other-models">Fitting other models</h2>
-<p>We can fit more models than just a straight line. Change the plotting code from earlier to use <code>method = "loess"</code>. What is different from the plot created before?</p>
-<div class="cell">
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">icecover</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">annual_avg_temp</span>, y <span class="op">=</span> <span class="va">ice_duration</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"loess"</span><span class="op">)</span> <span class="op">+</span></span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">email</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">exclaim_mess</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">spam</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Annual average temperature (°C)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Ice duration (days)"</span>,</span>
-<span>    title <span class="op">=</span> <span class="st">"Ice duration vs. annual average temperature"</span>,</span>
-<span>    subtitle <span class="op">=</span> <span class="st">"North Temperate Lakes LTER"</span></span>
-<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span>    x <span class="op">=</span> <span class="st">"# of exclamation marks in email"</span>,</span>
+<span>    y <span class="op">=</span> <span class="st">"e-mail type"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span>,</span>
+<span>                   labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"legit (0)"</span>, <span class="st">"spam (1)"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="ae-03-icecover_files/figure-html/visualize-with-curve-1.png" class="img-fluid figure-img" width="672"></p>
+<figure class="figure"><p><img src="ae-06-email_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>Is the linear model a good fit for the data? Why or why not?</p>
+<p><strong>Ans</strong>: Heavens no, are you kidding me?</p>
+</section><section id="exercise-3" class="level2"><h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<ol type="a">
+<li>Fit the logistic regression model using the number of exclamation points to predict the probability an email is spam:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">log_fit</span> <span class="op">&lt;-</span> <span class="fu">logistic_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">spam</span> <span class="op">~</span> <span class="va">exclaim_mess</span>, data <span class="op">=</span> <span class="va">email</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tidy</span><span class="op">(</span><span class="va">log_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term          estimate std.error statistic p.value
+  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1 (Intercept)  -2.27      0.0553     -41.1     0    
+2 exclaim_mess  0.000272  0.000949     0.287   0.774</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li>Add your estimates to the fitted equation below</li>
+</ol>
+<p><span class="math display">\[\log\Big(\frac{\hat{p}}{1-\hat{p}}\Big) = -2.27 + 0.00027 \times exclaim\_mess\]</span></p>
+<ol start="3" type="a">
+<li>Interpret stuff:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="fl">0.00027</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.00027</code></pre>
+</div>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2.27</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="fl">1</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2.27</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.09363821</code></pre>
+</div>
+</div>
+<ul>
+<li>For each additional exclamation mark, the model predicts that the odds of spam scale up by a factor of 1.00027 on average;</li>
+<li>The model predicts that an email with no exclamation marks has a 9.3% chance of being spam.</li>
+</ul>
+<ol start="4" type="a">
+<li>How does the code above differ from previous code we’ve used to fit regression models?</li>
+</ol>
+<p><strong>Ans</strong>: <code>linear_reg</code> is changed to <code>logistic_reg</code>. Things are otherwise unchanged.</p>
+</section><section id="exercise-4" class="level2"><h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<ol type="a">
+<li>What is the probability the email is spam if it contains 10 exclamation points? Answer the question using the <code><a href="https://rdrr.io/r/stats/predict.html">predict()</a></code> function.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">new_email</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span></span>
+<span>  exclaim_mess <span class="op">=</span> <span class="fl">10</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">log_fit</span>, new_data <span class="op">=</span> <span class="va">new_email</span>, type <span class="op">=</span> <span class="st">"prob"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  .pred_0 .pred_1
+    &lt;dbl&gt;   &lt;dbl&gt;
+1   0.906  0.0937</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li>A probability is nice, but we want an actual decision. Classify the darn email.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">log_fit</span>, new_data <span class="op">=</span> <span class="va">new_email</span>, type <span class="op">=</span> <span class="st">"class"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  .pred_class
+  &lt;fct&gt;      
+1 0          </code></pre>
+</div>
+</div>
+<p>The default behavior is to threshold the probabilities by 0.5.</p>
+</section><section id="exercise-5" class="level2"><h2 class="anchored" data-anchor-id="exercise-5">Exercise 5</h2>
+<ol type="a">
+<li>Fit a model with <strong>all</strong> variables in the dataset as predictors.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">log_fit2</span> <span class="op">&lt;-</span> <span class="fu">logistic_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">spam</span> <span class="op">~</span> <span class="va">.</span>, data <span class="op">=</span> <span class="va">email</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li>If you used this model to classify the emails in the dataset, how would it do? Use the fitted model to classify each email in the dataset, and then calculate the classification error rates (TP, TN, FP, FN).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">log_aug</span> <span class="op">&lt;-</span> <span class="fu">augment</span><span class="op">(</span><span class="va">log_fit2</span>, <span class="va">email</span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span><span class="va">log_aug</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">spam</span>, <span class="va">.pred_class</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">spam</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+# Groups:   spam [2]
+  spam  .pred_class     n       p
+  &lt;fct&gt; &lt;fct&gt;       &lt;int&gt;   &lt;dbl&gt;
+1 0     0            3521 0.991  
+2 0     1              33 0.00929
+3 1     0             299 0.815  
+4 1     1              68 0.185  </code></pre>
+</div>
+</div>
+<p>So:</p>
+<ul>
+<li>(True negative) 99.07%</li>
+<li>(False negative) 0.93%</li>
+<li>(False positive) 81.47%</li>
+<li>(True Positive) 18.53%</li>
+</ul></section><section id="exercise-6" class="level2"><h2 class="anchored" data-anchor-id="exercise-6">Exercise 6</h2>
+<p>If you change the classification threshold from the default (0.5) to something else, what happens to the classification accuracy of the model?</p>
+<p>If we increase the threshold, we make it <em>harder</em> to classify an e-mail as spam, and so we have even fewer true positives, while the true negative rate stays put (it was already about as high as it could go):</p>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">log_aug</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    .pred_class <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/if_else.html">if_else</a></span><span class="op">(</span><span class="va">.pred_1</span> <span class="op">&gt;=</span> <span class="fl">0.75</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">spam</span>, <span class="va">.pred_class</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">spam</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+# Groups:   spam [2]
+  spam  .pred_class     n       p
+  &lt;fct&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt;
+1 0               0  3544 0.997  
+2 0               1    10 0.00281
+3 1               0   339 0.924  
+4 1               1    28 0.0763 </code></pre>
+</div>
+</div>
+<p>If we decrease the threshold, we make it <em>easier</em> to classify an e-mail as spam, and so the true positive rate goes up by quite a bit, while the true negative rate only slips by a little bit. So perhaps the trade-off is worth it:</p>
+<div class="cell">
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">log_aug</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    .pred_class <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/if_else.html">if_else</a></span><span class="op">(</span><span class="va">.pred_1</span> <span class="op">&gt;=</span> <span class="fl">0.25</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">spam</span>, <span class="va">.pred_class</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">spam</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+# Groups:   spam [2]
+  spam  .pred_class     n      p
+  &lt;fct&gt;       &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt;
+1 0               0  3263 0.918 
+2 0               1   291 0.0819
+3 1               0   172 0.469 
+4 1               1   195 0.531 </code></pre>
+</div>
+</div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
