@@ -1,0 +1,187 @@
+---
+title: "AE 6: building a spam filter"
+categories: 
+  - Application exercise
+---
+
+In this application exercise, we will
+
+-   Use logistic regression to fit a model for a binary response variable
+-   Fit a logistic regression model in R
+-   Use a logistic regression model for classification
+
+To illustrate logistic regression, we will build a spam filter from email data.
+
+The data come from incoming emails in David Diez's Gmail account for the first three months of 2012.
+All personally identifiable information has been removed.
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(tidymodels)
+library(openintro)
+```
+
+```{r}
+glimpse(email)
+```
+
+The variables we'll use in this analysis are
+
+-   `spam`: 1 if the email is spam, 0 otherwise
+-   `exclaim_mess`: The number of exclamation points in the email message
+
+**Goal:** Use the number of exclamation points in an email to predict whether or not it is spam.
+
+# Exercises
+
+## Exercise 1
+
+Let's start with some exploratory analysis: 
+
+a. Create a density plot to investigate the relationship between `spam` and `exclaim_mess`.
+
+```{r}
+ggplot(email, aes(x = exclaim_mess, fill = spam)) + 
+  geom_density()
+```
+
+b. Additionally, calculate the mean number of exclamation points for both spam and non-spam emails.
+
+```{r}
+email |>
+  group_by(spam) |>
+  summarize(mean_ep = mean(exclaim_mess))
+```
+
+## Exercise 2
+
+Visualize a linear model fit for these data:
+
+```{r}
+ggplot(email, aes(x = exclaim_mess, y = as.numeric(spam) - 1)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") +
+  labs(
+    x = "# of exclamation marks in email",
+    y = "e-mail type"
+  ) +
+  scale_y_continuous(breaks = c(0, 1),
+                   labels = c("legit (0)", "spam (1)"))
+```
+
+Is the linear model a good fit for the data? Why or why not?
+
+**Ans**: Heavens no.
+
+## Exercise 3
+
+a. Fit the logistic regression model using the number of exclamation points to predict the probability an email is spam:
+
+```{r}
+log_fit <- logistic_reg() |>
+  fit(spam ~ exclaim_mess, data = email)
+
+tidy(log_fit)
+```
+
+b. Add your estimates to the fitted equation below
+
+$$\log\Big(\frac{\hat{p}}{1-\hat{p}}\Big) = -2.27 + 0.00027 \times exclaim\_mess$$
+
+c. Interpret stuff:
+
+```{r}
+exp(0.00027)
+exp(-2.27) / (1 + exp(-2.27))
+```
+
+- For each additional exclamation mark, the model predicts that the odds of spam scale up by a factor of 1.00027 on average;
+- The model predicts that an email with no exclamation marks has a 9.3% chance of being spam.
+
+
+d. How does the code above differ from previous code we've used to fit regression models? 
+
+**Ans**: `linear_reg` is changed to `logistic_reg`. Things are otherwise unchanged.
+
+## Exercise 4
+
+a. What is the probability the email is spam if it contains 10 exclamation points?
+Answer the question using the `predict()` function.
+
+```{r}
+new_email <- tibble(
+  exclaim_mess = 10
+  )
+
+predict(log_fit, new_data = new_email, type = "prob")
+```
+
+b. A probability is nice, but we want an actual decision. Classify the darn email.
+
+```{r}
+predict(log_fit, new_data = new_email, type = "class")
+```
+
+The default behavior is to threshold the probabilities by 0.5.
+
+## Exercise 5
+
+a. Fit a model with **all** variables in the dataset as predictors.
+
+```{r}
+log_fit2 <- logistic_reg() |>
+  fit(spam ~ ., data = email)
+```
+
+b. If you used this model to classify the emails in the dataset, how would it do? Use the fitted model to classify each email in the dataset, and then calculate the classification error rates (TP, TN, FP, FN).
+
+```{r}
+log_aug <- augment(log_fit2, email)
+
+
+log_aug |>
+  count(spam, .pred_class) |>
+  group_by(spam) |>
+  mutate(p = n / sum(n))
+```
+
+So:
+
+- (True negative) 99.07%
+- (False negative) 0.93%
+- (False positive) 81.47%
+- (True Positive) 18.53%
+
+## Exercise 6
+
+If you change the classification threshold from the default (0.5) to something else, what happens to the classification accuracy of the model?
+
+If we increase the threshold, we make it *harder* to classify an e-mail as spam, and so we have even fewer true positives, while the true negative rate stays put (it was already about as high as it could go):
+
+```{r}
+log_aug |>
+  mutate(
+    .pred_class = if_else(.pred_1 >= 0.75, 1, 0)
+  ) |>
+  count(spam, .pred_class) |>
+  group_by(spam) |>
+  mutate(p = n / sum(n))
+```
+
+If we decrease the threshold, we make it *easier* to classify an e-mail as spam, and so the true positive rate goes up by quite a bit, while the true negative rate only slips by a little bit. So perhaps the trade-off is worth it:
+
+```{r}
+log_aug |>
+  mutate(
+    .pred_class = if_else(.pred_1 >= 0.25, 1, 0)
+  ) |>
+  count(spam, .pred_class) |>
+  group_by(spam) |>
+  mutate(p = n / sum(n))
+```
+
+
+
