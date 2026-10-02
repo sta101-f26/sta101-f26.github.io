@@ -74,7 +74,7 @@ ggplot(email, aes(x = exclaim_mess, y = as.numeric(spam) - 1)) +
 
 Is the linear model a good fit for the data? Why or why not?
 
-**Ans**: Heavens no.
+**Ans**: Heavens no, are you kidding me?
 
 ## Exercise 3
 
