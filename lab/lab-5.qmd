@@ -187,12 +187,6 @@ Using these data, one of our goals is to explore the following question:
 
 a.  In a single pipeline, calculate the mean arrival dates (`arrival_date_day_of_month`) for reservations that were cancelled and reservations that were not cancelled.
 
-::: {.callout-tip collapse="true"}
-## Hint
-
-Think carefully about which dataset you should use: `hotels`, the training subset, or the testing subset?
-:::
-
 b.  In your own words, explain why we can not use a linear model to model the relationship between if a hotel reservation was cancelled and the day of month for the booking.
 
 c.  Fit the appropriate model to predict whether a reservation was cancelled from `arrival_date_day_of_month` and display a tidy summary of the model output.
