@@ -1,5 +1,5 @@
 ---
-title: "midterm-guide-solns"
+title: "Midterm Study Guide Solutions"
 format: html
 ---
 
