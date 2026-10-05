@@ -1,0 +1,160 @@
+---
+title: "midterm-guide-solns"
+format: html
+---
+
+## Concepts and main ideas
+
+### Question 1
+
+i. it's the cutoff point on the number line that has 38% of your data values below and 62% of the values above;
+    - yes I could;
+    - smaller than.
+i. It measures the strength and direction of the linear association between two numerical variables;  
+i. $Y=\beta_0+\beta_1 X + \varepsilon$ is the "true," population relationship between $X$ and $Y$. $\hat{Y}=b_0+b_1 X$ is the estimated relationship based on a sample of imperfect data;
+i. The line is chosen to make the sum of *squared* residuals as small as possible;
+i. A formula goes in the blank. This is `R` syntax like `y ~ x + z` where you tell the computer which columns in your data frame you want to use, and how to use them. Predictors go on the righthand side of the tilde, and the response variable goes on the left;
+i. If it makes sense for the predictor to take on a value of zero, and if the model prediction at zero is a value that the response could plausibly take, then the intercept is meaningful;
+i. The computer creates two dummy variables indicating whether or not an observation belongs to the two levels of the categorical predictor that are not the base level. Then it runs a multiple linear regression with those two dummies as predictors;
+i. $\hat{y}^{(\text{new})} = \hat{y}^{(\text{old})} + b_1$;
+i. It measures the proportion of the variation in the response variable explained by the model;
+i. Unadjusted $R^2$ always goes up when you add any new variable to a linear regression model, even if that variable is worthless. Unadjusted $R^2$ penalizes the addition of irrelevant predictors.
+i. $\hat{o}^{(\text{new})}=\hat{o}^{(\text{old})}\times e^{b_1}$;
+i. Always Be Visualizing! Wildly different datasets could have very similar numerical summaries. Actually plot the data so that you aren't fooled;
+
+
+
+## Visual understanding
+
+### Question 3 (barplot matching)
+
+i. c
+i. f
+i. b
+i. d
+i. e
+i. a
+
+### Question 4 (scatterplot matching)
+
+Pay attention to center, spread, and symmetry:
+
+i. e
+i. d
+i. b
+i. a
+i. c
+i. f
+
+
+### Question 5 (logistic matching)
+
+
+i. c. This is the plain vanilla one;
+i. e. Like an additive linear regression, the inclusion of the categorical predictor (with two levels) means that each level gets its own curve;
+i. f. Negative "slope" means the probability goes down as $x$ increases;
+i. d. The negative "intercept" makes the probability at $x=0$ tiny, so the curve shifts right;
+i. a. The bigger "slope" means the probability increases faster as $x$ increases, so steep curve;
+i. b. The itty bitty "slope" means the probability increases slower as $x$ increases, so flatter curve.
+
+## STAWANOWA doctor
+
+6. Causal-sounding language that makes the prediction sound like a guarantee;
+6. A one unit (which is measured in thousands of characters here) increase in the predictor is associated with a decrease by -0.0621 in the estimated *log-odds*, not the probability; 
+6. Holding bill length constant, a one unit increase in flipper length is associated with a 48.14 gram *increase* in body mass, on average;
+6. 1.74 is not the slope between flipper length and body mass for Chinstrap penguins. It's the *adjustment* that must be made to the baseline slope of 32.8 in order to get the Chinstrap slope. Those interaction terms are slope adjusters, not slopes themselves;
+6. $R^2$ is percent of variation in the *response* that is explained by the model. `mpg` is the predictor here (since it's to the right of the tilde);
+6. $e^{-2.218}\approx 0.10886$ is the *odds* of the email being spam. The probability would be $\frac{e^{-2.218}}{1+e^{-2.218}}\approx 0.098$;
+6. The base level is female, not male, so the intercept applies to the female penguins;
+6. Correlation applies to *pairs* of numerical variables. We don't talk about correlation between three variables. Since this is multiple linear regression instead of simple, we cannot interpret the $R^2$ as literally the square of a correlation coefficient;
+
+## Data analysis
+
+### Law and order
+
+14.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-asp: 0.35
+#| fig-width: 7
+
+library(tidyverse)
+
+tv <- read_csv("data/tv.csv")
+law_and_order <- tv |>
+  filter(str_detect(title, "Law & Order"))
+
+ggplot(law_and_order, aes(x = season, y = av_rating, shape = title)) +
+  geom_line(linewidth = 0.3) +
+  geom_point(size = 3) +
+  scale_shape_manual(
+    values = c(
+      "Law & Order: SVU" = "triangle",
+      "Law & Order: Criminal Intent" = "diamond",
+      "Law & Order: True Crime" = "square",
+      "Law & Order" = "asterisk",
+      "Law & Order: LA" = "circle"
+    )
+  ) +
+  labs(
+    x = "Season",
+    y = "Average rating",
+    shape = "Series title"
+  ) +
+  theme(legend.key.height = unit(1.5, "cm"))
+```
+
+15. a, d
+
+### Blizzard salaries
+
+16. Option 1 - A shared x-axis makes it easier to compare summary statistics for the variable on the x-axis;
+16. c - It's a value higher than the median for hourly but lower than the mean for salaried.
+16. b - There is more variability around the mean compared to the hourly distribution.
+16. a, b, e - Pie charts and waffle charts are for visualizing distributions of categorical data only.
+    Scatterplots are for visualizing the relationship between two numerical variables.
+16. b - Option 2. The plot in Option 1 shows the number of employees with a given performance rating for each salary type while the plot in Option 2 gives the proportion of employees with a given performance rating for each salary type. In order to assess the relationship between these variables (e.g., how much more likely is a Top rating among Salaried vs. Hourly workers), we need the proportions, not the counts.
+16. There may be some `NA`s in these two variables that are not visible in the plot.
+16. The proportions under Hourly would go in the Hourly bar, and those under Salaried would go in the Salaried bar.
+16. c, d, e, f.
+16. \(c\) For every additional \$1,000 of annual salary, the model predicts the raise to be higher, on average, by 0.0155%.
+16. \(d\) $R^2$ of `raise_2_fit` is higher than $R^2$ of `raise_1_fit` since `raise_2_fit` has one more predictor
+16. The reference level of `performance_rating` is High, since it’s the first level alphabetically. Therefore, the coefficient -2.40% is the predicted difference in raise comparing High to Successful. In this context a negative coefficient makes sense since we would expect those with High performance rating to get higher raises than those with Successful performance.
+16. \(c\) Option 3. It's a linear model with no interaction effect, so parallel lines. And since the slope for `salary_typeSalaried` is positive, its intercept is higher. The equations of the lines are as follows:
+      - Hourly:
+$$
+\begin{align*}
+\widehat{percent\_incr} &= 1.24 + 0.0000137 \times annual\_salary + 0.913 \times salary\_typeSalaried \\
+&= 1.24 + 0.0000137 \times annual\_salary + 0.913 \times 0 \\
+&= 1.24 + 0.0000137 \times annual\_salary
+\end{align*}
+$$
+
+      - Salaried:
+$$
+\begin{align*}
+\widehat{percent\_incr} &= 1.24 + 0.0000137 \times annual\_salary + 0.913 \times salary\_typeSalaried \\
+&= 1.24 + 0.0000137 \times annual\_salary + 0.913 \times 1 \\
+&= 2.153 + 0.0000137 \times annual\_salary
+\end{align*}
+$$
+
+28.  \(c\) The model predicts that the percentage increase employees with Successful performance get, on average, is higher by a factor of 1025 compared to the employees with Poor performance rating.
+
+### Movies 
+
+29. \(e\) Blue City $>$ Rang De Basanti $>$ Winter Sleep
+29. \(b\) 31% of the variability in movie scores is explained by their runtime.
+29. \(b\) A value between 0 and 0.434.
+29. \(e\) G-rated movies that are 0 minutes in length are predicted to score, on average, 4.525 points.
+29. \(c\) All else held constant, for each additional minute of runtime, movie scores will be higher by 0.021 points on average.
+29. \(c\) is greater than
+29. \(a\) $\widehat{score} = (4.525 - 0.257) + 0.021 \times runtime$
+29. `score ~ runtime + year` is best because it has the highest adjusted $R^2$;
+29. Same model: `score ~ runtime + year`. Forward stepwise isn't guaranteed to find the best model, but here it does.
+29. Same model: `score ~ runtime + year`. Backward elimination isn't guaranteed to find the best model, but here it does.
+
+

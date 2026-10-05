@@ -5,6 +5,10 @@ execute:
   echo: false
 ---
 
+::: callout-note
+Answers are [here](/exams/midterm-guide-solns.html).
+:::
+
 ```{r}
 #| label: load-packages
 #| message: false
