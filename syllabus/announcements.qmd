@@ -3,6 +3,8 @@ title: "Support your classmates!"
 format: html
 ---
 
+{{< include announcements/wind-symphony-october-overtures.qmd >}}
+
 {{< include announcements/duke-players-shorts-2.qmd >}}
 
 {{< include announcements/sun-run.qmd >}}
