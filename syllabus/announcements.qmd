@@ -5,6 +5,8 @@ format: html
 
 {{< include announcements/wind-symphony-october-overtures.qmd >}}
 
+{{< include announcements/muse-magazine-2.qmd >}}
+
 {{< include announcements/duke-players-shorts-2.qmd >}}
 
 {{< include announcements/sun-run.qmd >}}
