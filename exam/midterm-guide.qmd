@@ -1205,11 +1205,22 @@ ggplot(
 q_no <- q_no + 1
 ```
 
-### Question `{r} q_no`
+### Question `{r} q_no` (updated)
 
-Suppose you now fit a model to predict the natural log of percent increase, `log(percent_incr)`, from performance rating. The model is called `raise_4_fit`.
+Suppose you now **relevel the performance rating variable** and fit a model to predict the natural log of percent increase, `log(percent_incr)`, from performance rating. The model is called `raise_4_fit`.
 
 ```{r}
+blizzard_salary <- blizzard_salary |>
+  mutate(
+    performance_rating = fct_relevel(
+      performance_rating,
+      "Poor",
+      "Successful",
+      "High",
+      "Top"
+    )
+  )
+
 raise_4_fit <- linear_reg() |>
   fit(log(percent_incr + 0.0001) ~ performance_rating, data = blizzard_salary)
 ```
