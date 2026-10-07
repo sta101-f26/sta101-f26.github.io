@@ -383,7 +383,7 @@ window.Quarto = {
   <li><a href="#question-25" id="toc-question-25" class="nav-link" data-scroll-target="#question-25">Question 25</a></li>
   <li><a href="#question-26" id="toc-question-26" class="nav-link" data-scroll-target="#question-26">Question 26</a></li>
   <li><a href="#question-27" id="toc-question-27" class="nav-link" data-scroll-target="#question-27">Question 27</a></li>
-  <li><a href="#question-28" id="toc-question-28" class="nav-link" data-scroll-target="#question-28">Question 28</a></li>
+  <li><a href="#question-28-updated" id="toc-question-28-updated" class="nav-link" data-scroll-target="#question-28-updated">Question 28 (updated)</a></li>
   </ul>
 </li>
   <li>
@@ -1025,8 +1025,8 @@ Figure&nbsp;2: Distribution of salary type by performance rating
 Figure&nbsp;3: Visualizations of the relationship between percent increase, annual salary, and salary type
 </figcaption></figure>
 </div>
-</section><section id="question-28" class="level3"><h3 class="anchored" data-anchor-id="question-28">Question 28</h3>
-<p>Suppose you now fit a model to predict the natural log of percent increase, <code>log(percent_incr)</code>, from performance rating. The model is called <code>raise_4_fit</code>.</p>
+</section><section id="question-28-updated" class="level3"><h3 class="anchored" data-anchor-id="question-28-updated">Question 28 (updated)</h3>
+<p>Suppose you now <strong>relevel the performance rating variable</strong> and fit a model to predict the natural log of percent increase, <code>log(percent_incr)</code>, from performance rating. The model is called <code>raise_4_fit</code>.</p>
 <p>You’re provided the following:</p>
 <div class="cell">
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tidy</span><span class="op">(</span><span class="va">raise_4_fit</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -1036,10 +1036,10 @@ Figure&nbsp;3: Visualizations of the relationship between percent increase, annu
 <pre><code># A tibble: 4 × 3
   term                         estimate exp_estimate
   &lt;chr&gt;                           &lt;dbl&gt;        &lt;dbl&gt;
-1 (Intercept)                     1.02      2.78    
-2 performance_ratingPoor         -8.17      0.000283
-3 performance_ratingSuccessful   -1.24      0.290   
-4 performance_ratingTop           0.744     2.10    </code></pre>
+1 (Intercept)                     -7.15     0.000786
+2 performance_ratingSuccessful     6.93  1025.      
+3 performance_ratingHigh           8.17  3534.      
+4 performance_ratingTop            8.91  7438.      </code></pre>
 </div>
 </div>
 <p>Based on this, which of the following is true?</p>
