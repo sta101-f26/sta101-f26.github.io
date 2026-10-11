@@ -1017,11 +1017,11 @@ The adjustment depends on the $x$ you are starting from, just like we saw in the
 
 
 
-| Version | equation | Friendly LHS? | Friendly RHS? |
+| Version | equation | interpreting LHS | Working with RHS |
 |------|---------|-----|------|
-| Probability: (0, 1) | $$\hat{p}=\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}$$      |  ✅  |      ❌  |
-| Odds: $(0,\,\infty)$ | $$\hat{o}=\frac{\hat{p}}{1-\hat{p}}=e^{b_0+b_1x}$$     |  🥴    |    🥴   |
-| Log-odds: $(-\infty,\,\infty)$ | $$\log(\hat{o})=b_0+b_1x$$       |  ❌  |  ✅  | |
+| Probability: (0, 1) | $$\hat{p}=\frac{e^{b_0+b_1x}}{1+e^{b_0+b_1x}}$$      |  🙂  |      🙁  |
+| Odds: $(0,\,\infty)$ | $$\hat{o}=\frac{\hat{p}}{1-\hat{p}}=e^{b_0+b_1x}$$     |  😐    |    😐   |
+| Log-odds: $(-\infty,\,\infty)$ | $$\log(\hat{o})=b_0+b_1x$$       |  🙁  | 🙂  | |
 
 Take your pick depending on what you're trying to do.
 
