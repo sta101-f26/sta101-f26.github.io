@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Josh Lim and John Zito">
+<meta name="dcterms.date" content="2026-10-15">
+<title>Randomized experiments – STA 101 Fall 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7ad8df1012cc34949a7a0ac4d54234c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4a9fba628bbb68e5b3306d10f536c6e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+<meta property="og:title" content="Randomized experiments – STA 101 Fall 2026">
+<meta property="og:description" content="Lecture 12">
+<meta property="og:image" content="https://sta101-f26.github.io/slides/images/01/ice-cream-drowning.png">
+<meta property="og:site_name" content="STA 101 Fall 2026">
+<meta property="og:image:height" content="683">
+<meta property="og:image:width" content="1024">
+</head>
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Randomized experiments</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
+    <a href="https://go.canvas.duke.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-megaphone"></i></a>
+    <a href="https://edstem.org/us/courses/101045/discussion" title="Ed Discussion" class="quarto-navigation-tool px-1" aria-label="Ed Discussion"><i class="bi bi-people"></i></a>
+    <a href="https://www.gradescope.com/courses/1345015" title="Gradescope" class="quarto-navigation-tool px-1" aria-label="Gradescope"><i class="bi bi-file-arrow-up"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/announcements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check it out!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Syllabus</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments and grading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus/syllabus-resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">University resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 5</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Homeworks</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework 4</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Project</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Exam Study Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exam/midterm-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Midterm</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#the-problem-of-causality" id="toc-the-problem-of-causality" class="nav-link active" data-scroll-target="#the-problem-of-causality">The problem of causality</a>
+  <ul class="collapse">
+<li><a href="#what-we-truly-care-about" id="toc-what-we-truly-care-about" class="nav-link" data-scroll-target="#what-we-truly-care-about">What we truly care about</a></li>
+  <li><a href="#correlation-causation" id="toc-correlation-causation" class="nav-link" data-scroll-target="#correlation-causation">Correlation ≠ causation</a></li>
+  <li><a href="#whats-going-on-here" id="toc-whats-going-on-here" class="nav-link" data-scroll-target="#whats-going-on-here">What’s going on here</a></li>
+  <li><a href="#well-yes" id="toc-well-yes" class="nav-link" data-scroll-target="#well-yes">Well yes</a></li>
+  <li><a href="#confounding-variables" id="toc-confounding-variables" class="nav-link" data-scroll-target="#confounding-variables">Confounding variables</a></li>
+  <li><a href="#so-how-do-we-deal-with-confounding-variables" id="toc-so-how-do-we-deal-with-confounding-variables" class="nav-link" data-scroll-target="#so-how-do-we-deal-with-confounding-variables">So how do we deal with confounding variables?</a></li>
+  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway">Key takeaway</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#randomized-experiments" id="toc-randomized-experiments" class="nav-link" data-scroll-target="#randomized-experiments">Randomized Experiments</a>
+  <ul class="collapse">
+<li><a href="#what-is-a-randomized-experiment" id="toc-what-is-a-randomized-experiment" class="nav-link" data-scroll-target="#what-is-a-randomized-experiment">What is a randomized experiment?</a></li>
+  <li><a href="#some-definitions" id="toc-some-definitions" class="nav-link" data-scroll-target="#some-definitions">Some definitions</a></li>
+  <li><a href="#some-jargon-youll-hear" id="toc-some-jargon-youll-hear" class="nav-link" data-scroll-target="#some-jargon-youll-hear">Some jargon you’ll hear</a></li>
+  <li><a href="#todays-example" id="toc-todays-example" class="nav-link" data-scroll-target="#todays-example">Today’s example</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn</a></li>
+  <li><a href="#example-the-wheat-oit-study" id="toc-example-the-wheat-oit-study" class="nav-link" data-scroll-target="#example-the-wheat-oit-study">Example: The Wheat OIT Study</a></li>
+  <li><a href="#the-gold-standard" id="toc-the-gold-standard" class="nav-link" data-scroll-target="#the-gold-standard">The gold standard</a></li>
+  <li><a href="#checking-randomization-covariate-balance" id="toc-checking-randomization-covariate-balance" class="nav-link" data-scroll-target="#checking-randomization-covariate-balance">Checking randomization: Covariate Balance</a></li>
+  <li><a href="#table-1-wheat-oit-study" id="toc-table-1-wheat-oit-study" class="nav-link" data-scroll-target="#table-1-wheat-oit-study">Table 1: Wheat OIT Study</a></li>
+  <li><a href="#when-covariate-balance-is-violated" id="toc-when-covariate-balance-is-violated" class="nav-link" data-scroll-target="#when-covariate-balance-is-violated">When covariate balance is violated…</a></li>
+  <li><a href="#ok-so-we-have-balance-now-what" id="toc-ok-so-we-have-balance-now-what" class="nav-link" data-scroll-target="#ok-so-we-have-balance-now-what">Ok, so we have balance, now what?</a></li>
+  <li><a href="#linear-regression-with-a-binary-treatment" id="toc-linear-regression-with-a-binary-treatment" class="nav-link" data-scroll-target="#linear-regression-with-a-binary-treatment">Linear regression with a binary treatment</a></li>
+  <li><a href="#data-wheat-oit-trial" id="toc-data-wheat-oit-trial" class="nav-link" data-scroll-target="#data-wheat-oit-trial">Data: Wheat OIT Trial</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research question</a></li>
+  <li><a href="#visualize" id="toc-visualize" class="nav-link" data-scroll-target="#visualize">Visualize</a></li>
+  <li><a href="#model-fit" id="toc-model-fit" class="nav-link" data-scroll-target="#model-fit">Model fit</a></li>
+  <li><a href="#model-interpret" id="toc-model-interpret" class="nav-link" data-scroll-target="#model-interpret">Model interpret</a></li>
+  <li><a href="#notice-our-interpretation-changed" id="toc-notice-our-interpretation-changed" class="nav-link" data-scroll-target="#notice-our-interpretation-changed">Notice: our interpretation changed!</a></li>
+  <li><a href="#further-covariate-adjustment" id="toc-further-covariate-adjustment" class="nav-link" data-scroll-target="#further-covariate-adjustment">Further covariate adjustment</a></li>
+  <li><a href="#notice-the-standard-error" id="toc-notice-the-standard-error" class="nav-link" data-scroll-target="#notice-the-standard-error">Notice the <em>standard error</em></a></li>
+  <li><a href="#limitations-of-rcts" id="toc-limitations-of-rcts" class="nav-link" data-scroll-target="#limitations-of-rcts">Limitations of RCTs</a></li>
+  </ul>
+</li>
+  </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="12-causal-1-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Randomized experiments</h1>
+<p class="subtitle lead">Lecture 12</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Josh Lim and John Zito </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University <br> STA 101 Fall 2026
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 15, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><section id="the-problem-of-causality" class="level1"><h1>The problem of causality</h1>
+<section id="what-we-truly-care-about" class="level2"><h2 class="anchored" data-anchor-id="what-we-truly-care-about">What we truly care about</h2>
+<p>So often our examples were motivated by a <em>lurking causal question</em> that we couldn’t really answer because our data were purely observation:</p>
+<ul>
+<li>(Bechdel) does increased female representation in a film <em>cause</em> its box office prospects to improve or decline?</li>
+<li>(Gerrymandering) does increased gerrymandering <em>cause</em> a party’s electoral chances to improve or decline?</li>
+<li>(A girl’s best friend) do the 4Cs <em>cause</em> a diamonds price to go up or down?</li>
+</ul></section><section id="correlation-causation" class="level2"><h2 class="anchored" data-anchor-id="correlation-causation">Correlation ≠ causation</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>So far, we have said to “avoid” causal language when describing the relationship between two variables;</li>
+<li>Why? Because only in certain circumstances can we conclude causality;</li>
+<li>These next three lectures explore some of the circumstances in which we can support the claim: “A <em>causes</em> B.”</li>
+</ul>
+</div>
+</section><section id="whats-going-on-here" class="level2"><h2 class="anchored" data-anchor-id="whats-going-on-here">What’s going on here</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/ice-cream-drowning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</section><section id="well-yes" class="level2"><h2 class="anchored" data-anchor-id="well-yes">Well yes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/01/baby-dag.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</section><section id="confounding-variables" class="level2 medium"><h2 class="medium anchored" data-anchor-id="confounding-variables">Confounding variables</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>A <strong>confounding variable</strong> is an outside variable that affects both variables of interest, creating a “false” association between them;</li>
+<li>Students who live in Hollows have more free time in the second semester → the confounder is <strong>senior status</strong>;</li>
+<li>Athletes with larger caloric intake are more likely to have knee problems → the confounder is <strong>height/body size</strong>;</li>
+<li>Come up with your own!</li>
+</ul>
+</div>
+</section><section id="so-how-do-we-deal-with-confounding-variables" class="level2 medium"><h2 class="medium anchored" data-anchor-id="so-how-do-we-deal-with-confounding-variables">So how do we deal with confounding variables?</h2>
+<p>We can deal with confounders <strong>before</strong> or <strong>after</strong> we collect the data.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Design</strong></p>
+<ul>
+<li>Meticulously plan your data collection and treatment assignment;</li>
+<li>Eliminate possible confounder effects from the start;</li>
+<li>Example: <strong>randomize</strong> who gets treatment so groups start out comparable.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Modeling / Analysis</strong></p>
+<ul>
+<li>Collect your data, then adjust for confounders statistically;</li>
+<li>Include confounders as covariates in a regression model;</li>
+<li>Example: <strong>control for</strong> age and sex when estimating a treatment effect</li>
+</ul>
+</div>
+</div>
+</section><section id="key-takeaway" class="level2"><h2 class="anchored" data-anchor-id="key-takeaway">Key takeaway</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>Confounding variables make it hard to conclude that <span class="math inline">\(A\)</span> <em>causes</em> <span class="math inline">\(B\)</span>;</p></li>
+<li><p>But if we can <strong>remove or account for</strong> the effects of confounding — either by design or by modeling — we <em>can</em> conclude causality.</p></li>
+</ul>
+</div>
+</section></section><section id="randomized-experiments" class="level1"><h1>Randomized Experiments</h1>
+<section id="what-is-a-randomized-experiment" class="level2"><h2 class="anchored" data-anchor-id="what-is-a-randomized-experiment">What is a randomized experiment?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>A study in which the researcher <strong>assigns</strong> units (people, schools, hospitals, …) to treatment or control;</p></li>
+<li><p>Assignment uses a <strong>random mechanism</strong> — like a coin flip — not the unit’s own choice or the researcher’s judgment;</p></li>
+<li><p>This is in contrast to an <strong>observational study</strong>, where we observe but do not intervene;</p></li>
+<li><p>Examples: clinical drug trials, A/B tests, policy evaluations.</p></li>
+</ul>
+</div>
+</section><section id="some-definitions" class="level2"><h2 class="anchored" data-anchor-id="some-definitions">Some definitions</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p><span class="math inline">\(Z \in \{0, 1\}\)</span>: <strong>treatment indicator</strong> — 1 if a unit receives treatment, 0 if control;</p></li>
+<li><p><span class="math inline">\(X\)</span>: <strong>covariates</strong> — pre-treatment background variables (age, sex, baseline health, …);</p></li>
+<li><p><span class="math inline">\(Y\)</span>: <strong>outcome</strong> — the quantity we want to understand causally (recovery, test score, revenue, …);</p></li>
+<li><p><strong>Treatment group</strong>: units assigned <span class="math inline">\(Z = 1\)</span>;</p></li>
+<li><p><strong>Control group</strong>: units assigned <span class="math inline">\(Z = 0\)</span>.</p></li>
+</ul>
+</div>
+</section><section id="some-jargon-youll-hear" class="level2"><h2 class="anchored" data-anchor-id="some-jargon-youll-hear">Some jargon you’ll hear</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p><strong>Placebo</strong>: a “fake” treatment (eg. a sugar pill) given to the control group; indistinguishable from the real treatment;</p></li>
+<li><p><strong>Single-blind</strong>: participants do not know their treatment assignment;</p></li>
+<li><p><strong>Double-blind</strong>: neither participants nor the researchers administering treatment know the assignment — guards against bias on both sides.</p></li>
+</ul>
+</div>
+</section><section id="todays-example" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="todays-example">Today’s example</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/30389226/" class="uri">https://pubmed.ncbi.nlm.nih.gov/30389226/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/12/wheat-oit-paper.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="your-turn" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="your-turn">Your turn</h2>
+<div class="task">
+<p>Using the paper (<a href="https://pubmed.ncbi.nlm.nih.gov/30389226/" class="uri">https://pubmed.ncbi.nlm.nih.gov/30389226/</a>), identify the following:</p>
+<ul>
+<li>
+<strong>Cohort</strong>: Who are the study participants?</li>
+<li>
+<strong>Design</strong>: How was the data collected?</li>
+<li>
+<strong>Treatment and control</strong> (<span class="math inline">\(Z\)</span>): What did each group receive?</li>
+<li>
+<strong>Outcome</strong> (<span class="math inline">\(Y\)</span>): What is being measured?</li>
+<li>
+<strong>Covariates</strong> (<span class="math inline">\(X\)</span>): What pre-treatment variables were recorded?</li>
+</ul>
+</div>
+</section><section id="example-the-wheat-oit-study" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="example-the-wheat-oit-study">Example: The Wheat OIT Study</h2>
+<p>Nowak-Węgrzyn et al., <em>Journal of Allergy and Clinical Immunology</em> (2019) — <a href="https://pubmed.ncbi.nlm.nih.gov/30389226/" class="uri">https://pubmed.ncbi.nlm.nih.gov/30389226/</a></p>
+<div class="incremental">
+<ul class="incremental">
+<li><p><strong>Cohort</strong>: 46 children and young adults (ages 4–22) with confirmed wheat allergy;</p></li>
+<li><p><strong>Design</strong>: Multicenter, randomized, <strong>double-blind</strong>, placebo-controlled Phase 2 trial;</p></li>
+<li><p><strong>Treatment</strong> (<span class="math inline">\(Z=1\)</span>): Vital wheat gluten (VWG) oral immunotherapy — biweekly escalation to 1,480 mg wheat protein/day over 1 year;</p></li>
+<li><p><strong>Control</strong> (<span class="math inline">\(Z=0\)</span>): Matched <strong>placebo</strong> — participants and researchers blinded to assignment;</p></li>
+<li><p><strong>Outcome</strong> (<span class="math inline">\(Y\)</span>): Passing a 1,480 mg double-blind placebo-controlled food challenge (DBPCFC) at year 1;</p></li>
+<li><p><strong>Covariates</strong> (<span class="math inline">\(X\)</span>): Age, sex, baseline wheat IgE, threshold dose at baseline.</p></li>
+</ul>
+</div>
+</section><section id="the-gold-standard" class="level2 medium"><h2 class="medium anchored" data-anchor-id="the-gold-standard">The gold standard</h2>
+<p>Randomization is incredibly powerful:</p>
+<div class="incremental">
+<ul class="incremental">
+<li><p>Treatment <span class="math inline">\(Z\)</span> is assigned <strong>independently of everything</strong> (<span class="math inline">\(Z \perp X\)</span>);</p></li>
+<li><p>This includes <strong>measured</strong> confounders <em>and</em> <strong>unmeasured</strong> confounders;</p></li>
+<li><p>Even if confounders exist, they are (on average) distributed evenly across both groups — so they don’t bias our estimate;</p></li>
+<li><p>Any average difference in <span class="math inline">\(Y\)</span> between groups must be due to <span class="math inline">\(Z\)</span>, not a confounder;</p></li>
+<li><p>This is why RCTs are considered the <strong>gold standard</strong> for causal inference.</p></li>
+</ul>
+</div>
+</section><section id="checking-randomization-covariate-balance" class="level2"><h2 class="anchored" data-anchor-id="checking-randomization-covariate-balance">Checking randomization: Covariate Balance</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>Randomization creates <strong>two comparable groups</strong> — the only systematic difference should be the treatment itself;</p></li>
+<li><p>We verify this empirically with a <strong>balance table</strong> (called “Table 1” in medical research);</p></li>
+<li><p>Compare means and proportions of key pre-treatment covariates across the two groups;</p></li>
+<li><p>Good balance → confident that differences in <span class="math inline">\(Y\)</span> are attributable to <span class="math inline">\(Z\)</span>.</p></li>
+</ul>
+</div>
+</section><section id="table-1-wheat-oit-study" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="table-1-wheat-oit-study">Table 1: Wheat OIT Study</h2>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Characteristic</th>
+<th style="text-align: center;">Placebo (n = 23)</th>
+<th style="text-align: center;">VWG OIT (n = 23)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Age (years), mean (SD)</td>
+<td style="text-align: center;">8.1 (3.9)</td>
+<td style="text-align: center;">7.8 (4.1)</td>
+</tr>
+<tr class="even">
+<td>Female, <span class="math inline">\(n\)</span> (%)</td>
+<td style="text-align: center;">9 (39%)</td>
+<td style="text-align: center;">10 (43%)</td>
+</tr>
+<tr class="odd">
+<td>Wheat IgE (kU/L), median</td>
+<td style="text-align: center;">31.4</td>
+<td style="text-align: center;">29.8</td>
+</tr>
+<tr class="even">
+<td>Threshold dose at baseline (mg), median</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">200</td>
+</tr>
+</tbody>
+</table>
+<div class="incremental">
+<ul class="incremental">
+<li>Groups look similar on all pre-treatment characteristics</li>
+<li>This is exactly what we expect under randomization</li>
+</ul>
+</div>
+</section><section id="when-covariate-balance-is-violated" class="level2 medium"><h2 class="medium anchored" data-anchor-id="when-covariate-balance-is-violated">When covariate balance is violated…</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>If groups differ on <span class="math inline">\(X\)</span> <em>before</em> treatment, we can’t be sure whether differences in <span class="math inline">\(Y\)</span> are due to <span class="math inline">\(Z\)</span> or <span class="math inline">\(X\)</span>;</p></li>
+<li><p>Example: if the treatment group happens to be younger on average, better outcomes might reflect age — not the treatment;</p></li>
+<li><p><strong>Solution 1</strong>: include the imbalanced covariate(s) in your regression model;</p></li>
+<li><p><strong>Solution 2</strong>: <strong>rerandomize</strong> — if the initial draw produces an imbalanced allocation, redraw until balance is achieved (can be built into the design ahead of time).</p></li>
+</ul>
+</div>
+</section><section id="ok-so-we-have-balance-now-what" class="level2"><h2 class="anchored" data-anchor-id="ok-so-we-have-balance-now-what">Ok, so we have balance, now what?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>Now our question is: does the change in our treatment affect our outcome <span class="math inline">\(Y\)</span>?</p></li>
+<li><p>I.e., does switching from the control group to our treatment group produce a meaningful change in <span class="math inline">\(Y\)</span> on average?</p></li>
+<li>
+<p>We can estimate this directly as the <strong>difference in group means</strong>:</p>
+<p><span class="math display">\[\tau = \bar{Y}_{\text{treated}} - \bar{Y}_{\text{control}}\]</span></p>
+</li>
+</ul>
+</div>
+</section><section id="linear-regression-with-a-binary-treatment" class="level2"><h2 class="anchored" data-anchor-id="linear-regression-with-a-binary-treatment">Linear regression with a binary treatment</h2>
+<p><span class="math display">\[
+\hat{Y}_i = b_0 + b_1 Z_i
+\]</span></p>
+<div class="incremental">
+<ul class="incremental">
+<li><p><span class="math inline">\(b_0\)</span>: predicted outcome in the <strong>control group</strong> (<span class="math inline">\(Z = 0\)</span>);</p></li>
+<li><p><span class="math inline">\(b_1\)</span>: estimated <strong>average treatment effect</strong> — the average change in <span class="math inline">\(Y\)</span> when going from control to treatment;</p></li>
+<li><p>In fact, <span class="math inline">\(b_1 = \bar{Y}_{\text{treated}} - \bar{Y}_{\text{control}}\)</span> exactly.</p></li>
+</ul>
+</div>
+</section><section id="data-wheat-oit-trial" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="data-wheat-oit-trial">Data: Wheat OIT Trial</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">glimpse</span><span class="op">(</span><span class="va">wheat_trial</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 46
+Columns: 5
+$ id                 &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, …
+$ age                &lt;dbl&gt; 20.5, 20.9, 9.2, 18.9, 15.6, 13.3, 17.3, 6.4, 15.8,…
+$ baseline_wheat_ige &lt;dbl&gt; 13.3, 7.1, 30.8, 32.4, 38.6, 17.1, 90.6, 14.9, 10.6…
+$ vwg_oit            &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+$ max_dose_mg        &lt;dbl&gt; 1331, 1391, 1126, 960, 1197, 1175, 1052, 1184, 1384…</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This dataset is <strong>artificially generated</strong> to represent the structure of the real study. In practice, clinical trial data like this is <strong>Protected Health Information (PHI)</strong> — individually identifiable health data (e.g.&nbsp;diagnoses, lab values, treatment records) protected under HIPAA — and cannot be shared publicly.</p>
+</div>
+</div>
+</section><section id="research-question" class="level2"><h2 class="anchored" data-anchor-id="research-question">Research question</h2>
+<p>Is VWG oral immunotherapy effective at increasing wheat tolerance?</p>
+<p>. . .</p>
+<p>More precisely: is there a significant relationship between VWG OIT treatment and maximum tolerated wheat protein dose?</p>
+<p>. . .</p>
+<p><span class="math display">\[H_0: \beta_1 = 0 \qquad H_A: \beta_1 \neq 0\]</span></p>
+</section><section id="visualize" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="visualize">Visualize</h2>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span></span>
+<span>  <span class="va">wheat_trial</span>,</span>
+<span>  <span class="fu">aes</span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">vwg_oit</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Placebo"</span>, <span class="st">"VWG OIT"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    y <span class="op">=</span> <span class="va">max_dose_mg</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_boxplot</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">labs</span><span class="op">(</span></span>
+<span>    x <span class="op">=</span> <span class="st">"Treatment group"</span>,</span>
+<span>    y <span class="op">=</span> <span class="st">"Max tolerated dose (mg)"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"Max wheat dose by treatment"</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="12-causal-1_files/figure-revealjs/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-output-location="column">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">wheat_trial</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">vwg_oit</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">summarise</span><span class="op">(</span></span>
+<span>    n        <span class="op">=</span> <span class="fu">n</span><span class="op">(</span><span class="op">)</span>,</span>
+<span>    mean_dose <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">max_dose_mg</span><span class="op">)</span>,</span>
+<span>    sd_dose  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">max_dose_mg</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 4
+  vwg_oit     n mean_dose sd_dose
+    &lt;dbl&gt; &lt;int&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+1       0    23      234.    156.
+2       1    23     1201.    144.</code></pre>
+</div>
+</div>
+</section><section id="model-fit" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="model-fit">Model fit</h2>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">wheat_fit</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">max_dose_mg</span> <span class="op">~</span> <span class="va">vwg_oit</span>, data <span class="op">=</span> <span class="va">wheat_trial</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tidy</span><span class="op">(</span><span class="va">wheat_fit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)     234.      31.3      7.48 2.29e- 9
+2 vwg_oit         967.      44.2     21.9  2.79e-25</code></pre>
+</div>
+</div>
+</section><section id="model-interpret" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="model-interpret">Model interpret</h2>
+<p><span class="math display">\[\widehat{\text{max dose}} = b_0 + b_1 \times \text{VWG OIT}\]</span></p>
+<ul>
+<li><p><strong>Intercept</strong>: The estimated max tolerated dose for participants in the <strong>placebo group</strong> is <span class="math inline">\(b_0\)</span> mg, on average.</p></li>
+<li><p><strong><code>vwg_oit</code></strong>: Receiving VWG OIT <strong>causes</strong> an estimated increase of <span class="math inline">\(b_1\)</span> mg in max tolerated dose compared to placebo, on average.</p></li>
+</ul></section><section id="notice-our-interpretation-changed" class="level2 medium"><h2 class="medium anchored" data-anchor-id="notice-our-interpretation-changed">Notice: our interpretation changed!</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p>In every previous lecture, we bent over backwards to say: “A one-unit increase in <span class="math inline">\(Z\)</span> predicts an average change in <span class="math inline">\(Y\)</span> of <span class="math inline">\(b_1\)</span>;”</p></li>
+<li><p>Now, we say <em>“A one-unit increase in Z causes Y to change by <span class="math inline">\(b_1\)</span>, on average.”</em></p></li>
+<li><p>We’ve eliminated the effect of confounding via randomization, so any changes in <span class="math inline">\(Y\)</span> can be plausibly attributed to the change in <span class="math inline">\(Z\)</span> alone.</p></li>
+</ul>
+</div>
+</section><section id="further-covariate-adjustment" class="level2"><h2 class="anchored" data-anchor-id="further-covariate-adjustment">Further covariate adjustment</h2>
+<p>If covariate balance is not satisfied, we can include those covariates in the model to <strong>adjust for them</strong>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">wheat_fit_adj</span> <span class="op">&lt;-</span> <span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">max_dose_mg</span> <span class="op">~</span> <span class="va">vwg_oit</span> <span class="op">+</span> <span class="va">baseline_wheat_ige</span>, data <span class="op">=</span> <span class="va">wheat_trial</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tidy</span><span class="op">(</span><span class="va">wheat_fit_adj</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  term               estimate std.error statistic  p.value
+  &lt;chr&gt;                 &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)          312.      27.8       11.2  2.22e-14
+2 vwg_oit              947.      34.2       27.7  4.57e-29
+3 baseline_wheat_ige    -1.84     0.328     -5.62 1.31e- 6</code></pre>
+</div>
+</div>
+</section><section id="notice-the-standard-error" class="level2 small"><h2 class="small anchored" data-anchor-id="notice-the-standard-error">Notice the <em>standard error</em>
+</h2>
+<div class="columns">
+<div class="column">
+<p>Without covariate adjustment:</p>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">max_dose_mg</span> <span class="op">~</span> <span class="va">vwg_oit</span>, <span class="va">wheat_trial</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">tidy</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">term</span>, <span class="va">estimate</span>, <span class="va">std.error</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  term        estimate std.error
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)     234.      31.3
+2 vwg_oit         967.      44.2</code></pre>
+</div>
+</div>
+</div><div class="column">
+<p>With covariate adjustment:</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">fit</span><span class="op">(</span><span class="va">max_dose_mg</span> <span class="op">~</span> <span class="va">vwg_oit</span> <span class="op">+</span> <span class="va">baseline_wheat_ige</span>, <span class="va">wheat_trial</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">tidy</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">term</span>, <span class="va">estimate</span>, <span class="va">std.error</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  term               estimate std.error
+  &lt;chr&gt;                 &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept)          312.      27.8  
+2 vwg_oit              947.      34.2  
+3 baseline_wheat_ige    -1.84     0.328</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<p>The point estimate of the treatment effect is similar, but estimation uncertainty is reduced. More on this in a few weeks.</p>
+</section><section id="limitations-of-rcts" class="level2 smaller"><h2 class="smaller anchored" data-anchor-id="limitations-of-rcts">Limitations of RCTs</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p><strong>Generalizability</strong>: The wheat OIT trial enrolled 46 children and young adults at a small number of academic medical centers. Results may not generalize to all ages, allergy severities, or healthcare settings;</p></li>
+<li><p><strong>Feasibility and cost</strong>: RCTs require careful coordination, long follow-up periods, and significant funding. Not every research question can be studied this way;</p></li>
+<li>
+<p><strong>Ethical constraints</strong>: We can only randomize participants to treatments we believe are plausibly safe. We cannot randomly assign people to harmful exposures:</p>
+<ul class="incremental">
+<li>Example: we cannot randomize children <em>without</em> wheat allergies to <em>develop</em> an allergy just to study the effect;</li>
+<li>Borderline cases (eg. deliberately inducing allergic reactions in a food challenge) require careful IRB oversight and informed consent.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+</section></section></main><!-- /main --><script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sta101-f26\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2026 John Zito</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+</body></html>
