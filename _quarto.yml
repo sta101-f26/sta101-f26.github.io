@@ -76,7 +76,8 @@ website:
             text: Homework 3
           - href: hw/hw-4.qmd
             text: Homework 4
-      - section: "Project"
+      - href: project/overview.qmd
+        text: Project
       - section: "Exam Study Guides"
         contents:
           - href: exam/midterm-guide.qmd

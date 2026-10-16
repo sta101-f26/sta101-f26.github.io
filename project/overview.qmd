@@ -1,0 +1,119 @@
+---
+title: "Final project"
+format: html
+---
+
+You and your teammates will select a dataset that interests you and then hold its hand through [the entire data analysis process](/slides/01-crash-course.html): acquiring domain knowledge, developing a research question, exploring the data, modeling the data (if applicable), performing statistical inference (if applicable), and communicating your findings in an honest, convincing, and reproducible way. This culminates in a final presentation and written report.
+
+The project is worth 20% of your overall course grade, and here is everything you are responsible for along the way:
+
+| Component | Deadline | % of project grade | 
+| --- | --- | --- | 
+| Project proposal | Friday October 23 @ 10am | 10 |
+| Exploratory analysis draft | Monday November 9 @ 5pm | 5 |
+| Peer review | Monday November 17 @ 5pm | 5 |
+| Final presentation | Friday December 4 in lab | 40 |
+| Final report | Monday December 7 @ 5pm | 30 |
+| Peer evaluation | Monday December 7 @ 5pm | 10 |
+
+
+## Proposal
+
+On Friday October 23 at 10am your team will submit a project proposal. You all now have a `sta101-f26-files/project/proposal.qmd` template file. Each team should nominate one of its members to be "the scribe" who fills this in and submits the final PDF on behalf of the group.
+
+A proposal consists of the following:
+
+- **Team contract**: make a plan about how your team will handle communication, meeting outside of class, and the division of labor to get this project completed;
+- **Two project ideas**: pick *two separate data sets* that your team would be interested in analyzing, and do the following:
+    - (**describe the data**) where they come from, how they were collected, what variables are included, etc;
+    - (**ask a research question**) what question are you trying to answer with these data? Why is that question important? Why does it interest you?
+    - (**sketch a research plan**) describe what you think you will do with these data in order to answer your question. What sorts of visualizations will you create? What models might you fit? What summary statistics might you look at? This sketch does not need to be extensive or comprehensive, but it needs to demonstrate that you have given some thought to how you will use the tools from our course to actually complete the project.
+
+We will review your project proposals and give you feedback by Monday November 2. We will comment about feasibility of each proposal, and gently nudge you in a particular direction. We will also advise you about technical hurdles we anticipate that you will encounter, and give you tools for tackling them. This may involve coaching you on how to implement computational or statistical methods that go beyond the things we teach in this course, cleaning your data, loading an excel sheet into R, etc.
+
+Based on this feedback, you will make the final decision about which data set to use, and you will proceed to complete the remainder of your project.
+
+
+### Criteria for datasets
+
+The datasets should meet the following criteria:
+
+-   At least 200 observations;
+
+-   At least 8 columns;
+
+-   At least 6 of the columns must be useful and unique explanatory variables;
+
+    -   Identifier variables such as "name", "social security number", etc. are not useful explanatory variables;
+    -   If you have multiple columns with the same information (e.g., "state abbreviation" and "state name"), then they are not unique explanatory variables;
+
+- Having said all of that, your chosen dataset cannot be *too large*. Our containers have storage constraints, so huge datasets will need to be shrunk somehow, and we can consult on how to do that;
+
+-   You may not use data that have previously been used in any course materials, or any derivation of data that has been used in course materials.
+
+**Please ask a member of the teaching team if you're unsure whether your dataset meets the criteria.**
+
+If you have your hearts set on a dataset that has fewer observations or variables than what's suggested here, that might still be okay; **but you must check with a member of the teaching team first**.
+
+
+::: {.callout-tip collapse="true"}
+## Resources for datasets
+
+You can find data wherever you like (or generate it yourself!), but here are some recommendations to get you started:
+
+-   [UNICEF Data](https://data.unicef.org/)
+-   [Youth Risk Behavior Surveillance System (YRBSS)](https://chronicdata.cdc.gov/Youth-Risk-Behaviors/DASH-Youth-Risk-Behavior-Surveillance-System-YRBSS/q6p7-56au)
+-   [Google Dataset Search](https://datasetsearch.research.google.com/)
+-   [Data is Plural](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0)
+-   [Election Studies](https://electionstudies.org/)
+-   [US Census Data](https://www.census.gov/data.html)
+-   [World Bank Data](https://datacatalog.worldbank.org/home)
+-   [CDC](https://www.cdc.gov/datastatistics/)
+-   [European Statistics](https://ec.europa.eu/eurostat/)
+-   [CORGIS: The Collection of Really Great, Interesting, Situated Datasets](https://corgis-edu.github.io/corgis/csv/)
+-   [General Social Survey](https://gss.norc.org/)
+-   [Harvard Dataverse](https://dataverse.harvard.edu/)
+-   [International Monetary Fund](https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&sId=1479329328660)
+-   [IPUMS survey data from around the world](https://ipums.org/)
+-   [Los Angeles Open Data](https://data.lacity.org/browse)
+-   [NHS Scotland Open Data](https://www.opendata.nhs.scot/)
+-   [NYC OpenData](https://opendata.cityofnewyork.us/)
+-   [Open data about Scotland](https://data.gov.scot/)
+-   [Pew Research](https://www.pewresearch.org/download-datasets/)
+-   [PRISM Climate Data](https://nanda.isr.umich.edu/project/prism-climate/)
+-   [Responsible Datasets in Context](https://www.responsible-datasets-in-context.com/datasets.html)
+-   [Statistics Canada](https://www.statcan.gc.ca/en/start)
+-   [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+-   [The National Bureau of Economic Research](https://www.nber.org/research/data?page=1&perPage=50)
+-   [UCI Machine Learning Repository](https://archive.ics.uci.edu)
+-   [UK Government Data](https://data.gov.uk/)
+-   [United Nations Data](http://data.un.org/)
+-   [United Nations Statistics Division](https://unstats.un.org/UNSDWebsite/)
+-   [US Government Data](https://sctyner.github.io/static/presentations/Misc/GraphicsGroupISU/2018-11-16-us-govt-data.html)
+-   [FRED Economic Data](https://fred.stlouisfed.org/)
+-   [Data.gov](https://www.data.gov/)
+-   [Awesome public datasets](https://github.com/awesomedata/awesome-public-datasets)
+-   [Durham Open Data Portal](https://live-durhamnc.opendata.arcgis.com/)
+-   [FiveThirtyEight](https://data.fivethirtyeight.com/)
+:::
+
+
+## Peer review
+
+We will review your project proposals and reply with feedback by Monday November 2. You then have a week to make *some progress*: decide on your final topic, flesh out your research question, and generate some preliminary exploratory results by visualizing and summarizing your data. You will submit a rough draft of this on Monday November 9.
+
+Once everyone has submitted a rough write-up of their preliminary work, each team will be given the work of *another team* to review. You will provide the other team with constructive criticism: how well can you understand their explanation of their data and research question? how informative, convincing, and aesthetically pleasing do you find their visualizations? How might the team improve their work? You will submit your peer review on Monday November 17. *Details to come about grading and format.*
+
+## Presentation
+
+During your lab section on Friday December 4 (LDOC), each team will give a five minute presentation about their project. *Details to come about grading and format.*
+
+## Report 
+
+Using R + Quarto, each team will write a reproducible report summarizing their data analysis and submit it on Monday December 7. *Details to come about grading and format.*
+
+## Peer evaluation
+
+At the end of all this, everyone will submit a confidential evaluation of the members of your group. *Details to come about grading and format.*
+
+
