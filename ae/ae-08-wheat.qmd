@@ -1,0 +1,126 @@
+---
+title: "AE 8: Wheat Oral Immunotherapy"
+format:
+  html:
+    self-contained: true
+---
+
+Nowak-Węgrzyn et al. (2019) conducted a multicenter, randomized, double-blind, placebo-controlled clinical trial to evaluate whether vital wheat gluten (VWG) oral immunotherapy (OIT) is effective at increasing wheat tolerance in children and young adults with wheat allergy.
+In today's AE, you will analyze a dataset simulated to represent this study using the tools from lecture.
+
+(<https://pubmed.ncbi.nlm.nih.gov/30389226/>)
+
+# Packages
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+# Data
+
+```{r}
+#| message: false
+wheat_trial <- read_csv("data/wheat.csv")
+```
+
+Variables:
+
+| Variable             | Description                                                            |
+|----------------------|------------------------------------------------------------------------|
+| `id`                 | Unique participant identifier                                          |
+| `age`                | Participant age (years)                                                |
+| `baseline_wheat_ige` | Baseline wheat IgE level (kU/L) --- a measure of allergy severity      |
+| `vwg_oit`            | Treatment indicator: 1 = VWG OIT, 0 = Placebo                          |
+| `max_dose_mg`        | Maximum tolerated wheat protein dose (mg) at the year-1 food challenge |
+
+# Exercise 1: Study design
+
+With your teammate, fill in the following based on the paper and today's lecture:
+
+-   **Treatment indicator** ($Z$): `vwg_oit` --- 1 if the participant received VWG OIT, 0 if placebo
+
+-   **Treatment group** ($Z = 1$): Participants receiving vital wheat gluten (VWG) oral immunotherapy
+
+-   **Control group** ($Z = 0$): Participants receiving a matched placebo
+
+-   **Outcome** ($Y$): `max_dose_mg` --- maximum tolerated wheat protein dose (mg) at the year-1 food challenge
+
+-   **Covariates** ($X$): `age`, `baseline_wheat_ige` (and in the real study: sex, threshold dose at baseline)
+
+# Exercise 2: Exploratory data analysis
+
+**a.** Create a visualization comparing the distribution of `max_dose_mg` across the two treatment groups.
+What do you notice?
+
+```{r}
+ggplot(
+  wheat_trial,
+  aes(
+    x = factor(vwg_oit, labels = c("Placebo", "VWG OIT")),
+    y = max_dose_mg
+  )
+) +
+  geom_boxplot() +
+  labs(
+    x     = "Treatment group",
+    y     = "Max tolerated dose (mg)",
+    title = "Max wheat dose by treatment group"
+  )
+```
+
+*The VWG OIT group has a substantially higher median max tolerated dose than the placebo group, and the distributions show little overlap. This suggests a strong treatment effect.*
+
+**b.** Compute the mean and standard deviation of `max_dose_mg` for each treatment group.
+
+```{r}
+wheat_trial |>
+  group_by(vwg_oit) |>
+  summarise(
+    n         = n(),
+    mean_dose = mean(max_dose_mg),
+    sd_dose   = sd(max_dose_mg)
+  )
+```
+
+# Exercise 3: Modeling
+
+**a.** Fit a linear regression model predicting `max_dose_mg` from `vwg_oit`.
+
+```{r}
+wheat_fit <- linear_reg() |>
+  fit(max_dose_mg ~ vwg_oit, data = wheat_trial)
+
+tidy(wheat_fit)
+```
+
+**b.** Interpret the slope coefficient for `vwg_oit` in context.
+Since this is a randomized experiment, use **causal** language in your interpretation (e.g., "causes," "leads to").
+
+*Receiving VWG OIT **causes** an estimated increase of approximately 950 mg in max tolerated wheat protein dose compared to placebo, on average. Because treatment was randomly assigned, we can attribute this difference to the treatment itself rather than to any confounding variable.*
+
+
+
+# Exercise 4: Further covariate adjustment
+
+**a.** Fit a model that adds `baseline_wheat_ige` as an additional predictor.
+How does the `vwg_oit` estimate compare to the model in Exercise 3?
+
+```{r}
+wheat_fit_adj <- linear_reg() |>
+  fit(max_dose_mg ~ vwg_oit + baseline_wheat_ige, data = wheat_trial)
+
+tidy(wheat_fit_adj)
+```
+
+*The `vwg_oit` estimate is very similar to the unadjusted model. This is expected: because treatment was randomly assigned, the two groups should already be balanced on `baseline_wheat_ige`, so including it should not substantially change the treatment effect estimate.*
+
+**b.** Why might we include `baseline_wheat_ige` in our model even if the two groups are already balanced on this variable?
+
+*Even when groups are balanced on a covariate, including it in the model can reduce residual variance and produce more precise (narrower confidence interval) estimates of the treatment effect. In a small trial like this (n = 46), such precision gains can be meaningful.*
+
+
+
+
