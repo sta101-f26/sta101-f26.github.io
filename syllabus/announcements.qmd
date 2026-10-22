@@ -3,6 +3,8 @@ title: "Support your classmates!"
 format: html
 ---
 
+{{< include announcements/camp-kesem.qmd >}}
+
 {{< include announcements/wind-symphony-october-overtures.qmd >}}
 
 {{< include announcements/muse-magazine-2.qmd >}}
