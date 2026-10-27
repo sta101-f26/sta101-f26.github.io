@@ -1,0 +1,173 @@
+---
+title: Homework 5
+subtitle: "Due: Tuesday November 3 at 3 PM"
+---
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+```{r}
+#| echo: false
+q_no <- 0
+```
+
+### Exercise `{r} q_no`
+
+{{< include _music-rec.qmd >}}
+
+
+## Part 1: babies
+
+Every year, the US releases to the public a large dataset containing information on births recorded in the country.
+This dataset has been of interest to medical researchers who are studying the relation between habits and practices of expectant mothers and the birth of their children.[^1]
+This is a random sample of 1,000 cases from the dataset released in 2014.
+
+[^1]: United States Department of Health and Human Services.
+    Centers for Disease Control and Prevention.
+    National Center for Health Statistics.
+    Natality Detail File, 2014 United States.
+    Inter-university Consortium for Political and Social Research, 2016-10-07.
+    doi:10.3886/ICPSR36461.v1.
+
+The data are available your `data` folder in `births14.csv`.
+
+The variables in the data are as follows:
+
+-   `fage`: Father's age in years.
+-   `mage`: Mother's age in years.
+-   `mature`: Maturity status of mother.
+-   `weeks`: Length of pregnancy in weeks.
+-   `premie`: Whether the birth was classified as premature (premie) or full-term.
+-   `visits`: Number of hospital visits during pregnancy.
+-   `gained`: Weight gained by mother during pregnancy in pounds.
+-   `weight`: Weight of the baby at birth in pounds.
+-   `lowbirthweight`: Whether baby was classified as low birthweight (low) or not (⁠not low⁠).
+-   `sex`: Sex of the baby, female or male.
+-   `habit`: Status of the mother as a nonsmoker or a smoker.
+-   `marital`: Whether mother is married or ⁠not married⁠ at birth.
+-   `whitemom`: Whether mom is white or ⁠not white⁠.
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+
+a.  First, read the data in and store it as `births14_raw`.
+
+Then, in a single pipeline, filter for any rows of the `births14_raw` data frame where one or more of the following variables has an `NA` value: `mage`, `weight`, `habit`, `mature`, `lowbirthweight`, then select only these five variables to display.
+
+b.  In a single pipeline, remove any rows of the `births14_raw` data frame with `NA` values among those you identified as having `NA` values in the previous question, and save the results as `births14`.
+
+Then, find and state the numbers of rows and columns of `births14`.
+
+::: callout-tip
+You should end up with 981 rows.
+If you do not, revisit your earlier work to make sure you have removed all rows with `NA` values in any of the specified columns.
+:::
+
+c.  One of the variables in the data is `mature`, indicating whether the mom is considered "mature" or "younger".
+This categorization is based on a medical threshold used for pregnancies.
+Using the data alone (not medical knowledge or external resources), determine the threshold age used to categorize moms as "mature" vs. "younger".
+Describe your process, include any evidence (summary statistics and/or visualization), and clearly state the threshold you determined.
+
+d.  Another variable in the data is `lowbirthweight`, indicating whether the baby's weight is considered "low" or "not low" at birth.
+This categorization is based on a medical threshold used for births.
+Using the data alone (not medical knowledge or external resources), determine the threshold weight used to categorize baby weights as "low" vs. "now low".
+Describe your process, include any evidence (summary statistics and/or visualization), and clearly state the threshold you determined.
+
+e.  In a single pipeline, recode the variables `mature`, `habit`, and `lowbirthweight` in the `births14` data frame as follows:
+
+-   `mature` : "mature mom" → "35 and over", "younger mom" → "34 and under"
+-   `habit` : "smoker" → "Smoker", "nonsmoker" → "Non-smoker"
+-   `lowbirthweight` : "low" → "Low", "not low" → "Not low"
+
+In that same pipeline, relocate these three variables to be the first three columns of the data frame.
+
+Save the result back to `births14` and display the first 10 rows (and however many columns fit across the page) of `births14`.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+In this question you will conduct inference for a slope in a model with a single predictor.
+
+a.  Fit a model for predicting baby weight (`weight`) from mother's age category (`mature`).
+    Display the tidy model output.
+
+b.  Construct a 95% confidence interval for the slope the model from part (a), using bootstrapping with 1,000 resamples and the percentile method.
+    Display the bounds of the interval and interpret it in the context of the data and the research question.
+
+c.  Visualize the bootstrap distribution you used to construct the confidence interval.
+    Comment on its shape and center.
+
+d.  Based on your interval from Part (b), do these data provide convincing evidence of a discernible difference between the average weights of babies born to mothers who are 35 years and older vs. those born to mothers who are 34 years and younger?
+    Explain your reasoning.
+    
+:::callout-note
+You do not need to perform an hypothesis test to answer this question, justify your answer with your confidence interval only.
+:::
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+In this question you will conduct inference for slopes in a model with a two predictors.
+
+a.  Fit a model for predicting baby weight (`weight`) from mother's age (`mage`) and smoking status (`habit`).
+    Display the tidy model output.
+
+b.  Construct 95% confidence intervals for the slopes the model from part (a), using bootstrapping with 1,000 resamples and the percentile method.
+    Dislay the bounds of the intervals and interpret them in the context of the data and the research question.
+
+c.  Visualize the bootstrap distributions you used to construct the confidence intervals.
+    Comment on their shapes and centers.
+
+
+## Part 2: IMS exercises
+
+These exercises from the textbook do not require code, but you should type your responses into the same Quarto file you've been using. Make sure to answer the questions in full sentences.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no`
+
+IMS - [Chapter 24 exercises](https://openintrostat.github.io/ims/inf-model-slr.html#sec-chp24-exercises), #2: Baby’s weight and father’s age, randomization test.
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no`
+
+IMS - [Chapter 24 exercises](https://openintrostat.github.io/ims/inf-model-slr.html#sec-chp24-exercises), #6: Baby’s weight and father’s age, bootstrap percentile interval.
+
+
+
+
+## Submission
+
+{{< include _submission.qmd >}}
