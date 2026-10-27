@@ -1,10 +1,10 @@
 ---
-title: "Hello statistics"
+title: "Sampling uncertainty and interval estimation"
 subtitle: "Lecture 14"
 date: "2026-10-22"
 format: 
   revealjs: 
-    output-file: 14-interval-estimation-slides.html
+    output-file: 14-ci-intro-slides.html
     footer: "[🔗 sta101-f26.github.io](https://sta101-f26.github.io/)"
     theme: slides.scss
     transition: fade
