@@ -61,6 +61,14 @@
     <lastmod>2026-08-16T04:50:31.948Z</lastmod>
   </url>
   <url>
+    <loc>https://sta101-f26.github.io/slides/14-ci-intro-slides.html</loc>
+    <lastmod>2026-10-27T17:32:55.012Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/14-ci-intro.html</loc>
+    <lastmod>2026-10-27T17:32:55.012Z</lastmod>
+  </url>
+  <url>
     <loc>https://sta101-f26.github.io/slides/05-slr-slides.html</loc>
     <lastmod>2026-09-17T15:16:39.684Z</lastmod>
   </url>
@@ -101,24 +109,24 @@
     <lastmod>2026-10-20T18:23:49.260Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/12-causal-1-slides.html</loc>
-    <lastmod>2026-10-15T18:52:48.025Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/07-r-squared-slides.html</loc>
+    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/12-causal-1.html</loc>
-    <lastmod>2026-10-15T18:52:48.025Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/07-r-squared.html</loc>
+    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/08-selection-slides.html</loc>
-    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/01-crash-course-slides.html</loc>
+    <lastmod>2026-09-18T12:16:49.114Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/08-selection.html</loc>
-    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/01-crash-course.html</loc>
+    <lastmod>2026-09-18T12:16:49.114Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/index.html</loc>
-    <lastmod>2026-09-05T17:35:17.281Z</lastmod>
+    <loc>https://sta101-f26.github.io/lab/lab-6.html</loc>
+    <lastmod>2026-10-27T08:55:17.060Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/lab/lab-4.html</loc>
@@ -145,20 +153,28 @@
     <lastmod>2026-09-25T00:27:43.967Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
-    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
-    <lastmod>2026-10-01T21:12:36.372Z</lastmod>
+    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
+    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/hw/hw-3.html</loc>
     <lastmod>2026-09-19T12:51:47.028Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/hw/hw-1.html</loc>
-    <lastmod>2026-09-04T22:31:32.274Z</lastmod>
+    <loc>https://sta101-f26.github.io/hw/hw-5.html</loc>
+    <lastmod>2026-10-27T15:53:09.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-4.html</loc>
+    <lastmod>2026-10-01T21:12:36.372Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/hw/hw-2.html</loc>
+    <lastmod>2026-09-11T19:39:15.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/ae/ae-10-duke-forest.html</loc>
+    <lastmod>2026-10-27T17:24:42.039Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/ae/ae-03-icecover.html</loc>
@@ -185,28 +201,24 @@
     <lastmod>2026-10-02T14:09:53.418Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/01-crash-course.html</loc>
-    <lastmod>2026-09-18T12:16:49.114Z</lastmod>
+    <loc>https://sta101-f26.github.io/index.html</loc>
+    <lastmod>2026-09-05T17:35:17.281Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/01-crash-course-slides.html</loc>
-    <lastmod>2026-09-18T12:16:49.114Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/08-selection.html</loc>
+    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/07-r-squared.html</loc>
-    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/08-selection-slides.html</loc>
+    <lastmod>2026-09-24T09:07:17.534Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/07-r-squared-slides.html</loc>
-    <lastmod>2026-09-22T23:30:49.441Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/12-causal-1.html</loc>
+    <lastmod>2026-10-15T18:52:48.025Z</lastmod>
   </url>
   <url>
-    <loc>https://sta101-f26.github.io/slides/14-interval-estimation.html</loc>
-    <lastmod>2026-10-22T18:47:18.554Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta101-f26.github.io/slides/14-interval-estimation-slides.html</loc>
-    <lastmod>2026-10-22T18:47:18.554Z</lastmod>
+    <loc>https://sta101-f26.github.io/slides/12-causal-1-slides.html</loc>
+    <lastmod>2026-10-15T18:52:48.025Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/slides/10-logistic-2.html</loc>
@@ -247,6 +259,14 @@
   <url>
     <loc>https://sta101-f26.github.io/slides/09-logistic-1-slides.html</loc>
     <lastmod>2026-10-11T02:14:01.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/15-ht-intro.html</loc>
+    <lastmod>2026-10-27T17:58:43.836Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta101-f26.github.io/slides/15-ht-intro-slides.html</loc>
+    <lastmod>2026-10-27T17:58:43.836Z</lastmod>
   </url>
   <url>
     <loc>https://sta101-f26.github.io/syllabus/syllabus-assignments.html</loc>
