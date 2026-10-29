@@ -424,3 +424,15 @@ visualize(null_dist) +
 :::
 
 
+
+## Coming up
+
+We will spend the month of November practicing the following:
+
+- taking great care to interpret confidence intervals correctly;
+- taking great care to interpret p-values correctly;
+- using mathematical methods (ie. *not* simulation) to approximate the sampling and null distributions;
+- thinking about statistical problems beyond simple linear regression.
+
+
+
