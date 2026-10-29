@@ -141,7 +141,7 @@ observed_fit
 
 ## Simulate null distribution
 
-```{r, cache=TRUE}
+```{r}
 #| code-line-numbers: "|1|2|3|4|5|6"
 set.seed(24601)
 null_dist <- volleyball |>
