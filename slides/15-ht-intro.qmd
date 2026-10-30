@@ -440,6 +440,20 @@ Pick a threshold $\alpha\in[0,\,1]$ called the **discernibility level** and thre
 
 ![](images/15/general.png)
 
+## Mnemonics {.small}
+
+Like effect/affect, sympathy/empathy, insure/ensure/assure, or libel/slander, JZ finds it literally impossible to keep Type 1 versus Type 2 straight. Statistics is famous for unhelpful jargon, and this is some of the worst ever. See if these help you:
+
+> Type 1, jump the gun. Type 2, avoid the new.
+
+Alternatively, think of "The Boy Who Cried Wolf." That story has two parts:
+
+- Part 1: the townspeople believe there is a wolf when there isn't;
+- Part 2: the townspeople ignore a real wolf while it eats their flock.
+
+In Part 1 they commit a Type 1 error. In Part 2 they commit a Type 2 error.
+
+
 ## Think about the judge
 
 $H_0$ person innocent vs $H_A$ person guilty
