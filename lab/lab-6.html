@@ -60,6 +60,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../hw/hw-1.html" rel="next">
+<link href="../lab/lab-5.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -132,7 +134,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 6</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-6.html">Lab 6</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -219,13 +221,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-0.html" class="sidebar-item-text sidebar-link">
@@ -260,6 +262,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../lab/lab-5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-6.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 6</span></a>
   </div>
 </li>
       </ul>
@@ -337,14 +345,15 @@ window.Quarto = {
    
   <ul>
 <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
-  <li><a href="#question-1---visualize" id="toc-question-1---visualize" class="nav-link" data-scroll-target="#question-1---visualize">Question 1 - Visualize</a></li>
-  <li><a href="#question-2---bootstrap" id="toc-question-2---bootstrap" class="nav-link" data-scroll-target="#question-2---bootstrap">Question 2 - Bootstrap</a></li>
-  <li><a href="#question-3---hypothesize" id="toc-question-3---hypothesize" class="nav-link" data-scroll-target="#question-3---hypothesize">Question 3 - Hypothesize</a></li>
+  <li><a href="#question-1---visualization" id="toc-question-1---visualization" class="nav-link" data-scroll-target="#question-1---visualization">Question 1 - visualization</a></li>
+  <li><a href="#question-2---point-estimation" id="toc-question-2---point-estimation" class="nav-link" data-scroll-target="#question-2---point-estimation">Question 2 - point estimation</a></li>
+  <li><a href="#question-3---interval-estimation" id="toc-question-3---interval-estimation" class="nav-link" data-scroll-target="#question-3---interval-estimation">Question 3 - interval estimation</a></li>
+  <li><a href="#question-4---hypothesis-testing" id="toc-question-4---hypothesis-testing" class="nav-link" data-scroll-target="#question-4---hypothesis-testing">Question 4 - hypothesis testing</a></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab/lab-0.html">Labs</a></li><li class="breadcrumb-item"><a href="../lab/lab-6.html">Lab 6</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">Lab 6</h1>
 <p class="subtitle lead">Due: end-of-lab Friday October 30</p>
 </div>
@@ -360,9 +369,9 @@ window.Quarto = {
   
 
 
-</header><p>In this lab you’ll explore the relationship between distance and air time of flights out of RDU in 2024.</p>
+</header><p>In this lab you’ll explore the relationship between distance (in miles) and air time (in minutes) of flights out of RDU in 2024.</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#dehdgehdge</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">rdu_flights</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span><span class="st">"data/rdu-flights.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="setup" class="level2"><h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <ol type="1">
@@ -370,10 +379,12 @@ window.Quarto = {
 <li>Double-check that you have the <code>sta101-f26-files</code> project loaded in the upper-right corner of RStudio (this should always be true);</li>
 <li>Go to the “Git” tab in the upper-right panel of RStudio and click the <strong>Pull</strong> button (arrow pointing down). Now the new assignment template and dataset should appear in the <code>lab</code> folder of your <strong>Files</strong>;</li>
 <li>At the top of the new <code>.qmd</code>, in between <code>---</code>, you have the <em>settings</em> for the document (the so-called YAML, but don’t worry about that). Modify the <code>authors</code> so it lists yourself and your teammates.</li>
-</ol></section><section id="question-1---visualize" class="level2"><h2 class="anchored" data-anchor-id="question-1---visualize">Question 1 - Visualize</h2>
-<p>Visualize the relationship between <code>distance</code> (x) and <code>air_time</code> (y) using a scatter plot. Add a regression line to the scatter plot, but do not display the standard error ribbon around the regression line. Comment on the observed relationship.</p>
-</section><section id="question-2---bootstrap" class="level2"><h2 class="anchored" data-anchor-id="question-2---bootstrap">Question 2 - Bootstrap</h2>
-<p>Compute a 95% bootstrap interval for the slope of the regression line for predicting <code>air_time</code> from <code>distance</code>. In your narrative, provide an interpretation of the 95% confidence interval for the slope. Also, don’t forget to set a random number seed so that your results are reproducible.</p>
+</ol></section><section id="question-1---visualization" class="level2"><h2 class="anchored" data-anchor-id="question-1---visualization">Question 1 - visualization</h2>
+<p>Visualize the relationship between <code>distance</code> (x) and <code>air_time</code> (y) using a scatter plot. Add a regression line to the scatter plot, but <em>do not</em> display the standard error ribbon around the regression line. Comment on the observed relationship.</p>
+</section><section id="question-2---point-estimation" class="level2"><h2 class="anchored" data-anchor-id="question-2---point-estimation">Question 2 - point estimation</h2>
+<p>Estimate the simple linear regression predicting air time from distance. Display the output and interpret the coefficients.</p>
+</section><section id="question-3---interval-estimation" class="level2"><h2 class="anchored" data-anchor-id="question-3---interval-estimation">Question 3 - interval estimation</h2>
+<p>Compute a 95% bootstrap interval for the slope of the regression line for predicting <code>air_time</code> from <code>distance</code>. In your narrative, provide an interpretation of the 95% confidence interval for the slope. Also, don’t forget to set a random number seed so that your results are reproducible. Everyone on your team should get exactly the same numbers.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -386,12 +397,12 @@ Reminder
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Below is a step-by-step recipe for constructing and visualizing a confidence interval. The code snippets shown are not “complete.” They include some blanks you need to fill in, and they are just intended to guide you in the right direction.</p>
+<p>Below is a step-by-step recipe for constructing a confidence interval. The code snippets shown are not “complete.” They include some blanks you need to fill in, and they are just intended to guide you in the right direction.</p>
 <ul>
-<li>Step 1: Calculate the point estimate for the slope and the intercept of the regression line.</li>
+<li>Step 1: Calculate the point estimate for the slope and the intercept of the regression line. You technically already did this, but you need to use the new syntax that plays nice with the code that runs the simulations.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>obs_fit <span class="ot">&lt;-</span> rdu_flights_sample <span class="sc">|&gt;</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>obs_fit <span class="ot">&lt;-</span> rdu_flights <span class="sc">|&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(______ <span class="sc">~</span> ______) <span class="sc">|&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -399,7 +410,7 @@ Reminder
 <li>Step 2: Simulate a bootstrap distribution of regression estimates.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>boot_dist <span class="ot">&lt;-</span> rdu_flights_sample <span class="sc">|&gt;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>boot_dist <span class="ot">&lt;-</span> rdu_flights <span class="sc">|&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(_____ <span class="sc">~</span> ______) <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">generate</span>(<span class="at">reps =</span> ____, <span class="at">type =</span> _______) <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -408,58 +419,53 @@ Reminder
 <li>Step 3: Calculate the bounds of the confidence interval.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>conf_ints <span class="ot">&lt;-</span> </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_confidence_interval</span>(</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    ____, </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">level =</span> ___, </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">point_estimate =</span> ____</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>conf_ints <span class="ot">&lt;-</span> <span class="fu">get_confidence_interval</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    ____, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">level =</span> ___, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">point_estimate =</span> ____</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-</section><section id="question-3---hypothesize" class="level2"><h2 class="anchored" data-anchor-id="question-3---hypothesize">Question 3 - Hypothesize</h2>
-<ol type="a">
-<li>
-<p>Set the null hypothesis:</p>
-<p>What if there was no relationship between <code>distance</code> and <code>air_time</code>? What would the true slope of the relationship be in that case? This is your null hypothesis. You can articulate it as:</p>
-<p><span class="math inline">\(H_0:\)</span> There is no relationship between distance and air time, the value of the true slope is ____, i.e., <span class="math inline">\(\beta_1\)</span> = ____.</p>
-<p>Fill in the blanks.</p>
+</section><section id="question-4---hypothesis-testing" class="level2"><h2 class="anchored" data-anchor-id="question-4---hypothesis-testing">Question 4 - hypothesis testing</h2>
+<p>Calculate, visualize, and interpret the <span class="math inline">\(p\)</span>-value from a permutation test for the following hypotheses:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{H}_0&amp;: \beta_1=0\\
+\text{H}_A&amp;: \beta_1\neq 0.
+\end{aligned}
+\]</span></p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Reminder
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The null hypothesis <strong>always</strong> sets the true population parameter <strong>equal</strong> to a specific value.</p>
+<p>The code for this is almost identical to the code for bootstrapping, with some small but crucial alterations:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>null_dist <span class="ot">&lt;-</span> rdu_flights <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(_____ <span class="sc">~</span> ______) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hypothesize</span>(<span class="at">null =</span> ________) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">generate</span>(<span class="at">reps =</span> ____, <span class="at">type =</span> _______) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>pval <span class="ot">&lt;-</span> <span class="fu">get_p_value</span>(</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    ____, </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">obs_stat =</span> ___, </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">direction =</span> ____</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</li>
-<li>
-<p>Set the alternative hypothesis:</p>
-<p>What if there is a relationship between <code>distance</code> and <code>air_time</code>? This is your alternative hypothesis!</p>
-<p><span class="math inline">\(H_A:\)</span> There is a relationship between distance and air time, the value of the true slope is ____, i.e., <span class="math inline">\(\beta_1\)</span> ______.</p>
-<p>Fill in the blanks.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The alternative hypothesis <strong>always</strong> compares the true population parameter to the same specific value set in the null hypothesis. This comparison can be “not equal to”, “greater than”, or “less than” and the choice depends on the research question. In this case, our research question is whether there is <em>some</em> relationship between distance and air time.</p>
-</div>
-</div>
-</li>
-<li><p>Based on the 95% confidence interval you came up with in Question 3, would you expect to fail to reject or to reject the above null hypothesis at the 5% significance level? Explain your reasoning.</p></li>
-</ol></section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
+</section><section id="submission" class="level2"><h2 class="anchored" data-anchor-id="submission">Submission</h2>
 <p>You collaborated with your team, but now everyone submits individually:</p>
 <ol type="1">
 <li>Hit the blue <strong>Render</strong> button to generate your final PDF;</li>
@@ -875,7 +881,17 @@ Tip
       }
     }
   });
-  </script>
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../lab/lab-5.html" class="pagination-link" aria-label="Lab 5">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 5</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../hw/hw-1.html" class="pagination-link" aria-label="Homework 1">
+        <span class="nav-page-text">Homework 1</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">

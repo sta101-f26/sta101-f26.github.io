@@ -246,13 +246,16 @@ y = \beta_0+\beta_1x +\varepsilon;
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg)) <span class="sc">+</span> </span>
 <span id="cb1-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb1-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 
 </div>
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section><section id="point-estimation-1" class="slide level2 scrollable"><h2>Point estimation</h2>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-1-1.png" width="672" class="r-stretch"></section><section id="point-estimation-1" class="slide level2 scrollable"><h2>Point estimation</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a></a>  <span class="fu">fit</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars) <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">linear_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a></a>  <span class="fu">fit</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 5
   term        estimate std.error statistic  p.value
@@ -278,10 +281,10 @@ y = \beta_0+\beta_1x +\varepsilon;
 <li>Small spread &gt;&gt; lower uncertainty.</li>
 </ul>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section><section id="confidence-interval" class="slide level2 scrollable"><h2>Confidence interval</h2>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-3-1.png" width="672" class="r-stretch"></section><section id="confidence-interval" class="slide level2 scrollable"><h2>Confidence interval</h2>
 <p>Pick a range that swallows up a large % of the histogram:</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>We use quantiles (think IQR) but there are other ways.</p>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-4-1.png" width="672" class="r-stretch"><p>We use quantiles (think IQR) but there are other ways.</p>
 </section><section id="hypothesis-testing" class="slide level2 scrollable"><h2>Hypothesis testing</h2>
 <ul>
 <li class="fragment"><p>Two competing claims about <span class="math inline">\(\beta_1\)</span>: <span class="math display">\[
@@ -307,19 +310,19 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 </ul></section><section id="null-distribution" class="slide level2 medium scrollable"><h2>Null distribution</h2>
 <p>If the null happened to be true, how would we expect our results to vary across datasets? We can use simulation to answer this:</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>This is how the world should look <em>if the null is true</em>.</p>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-5-1.png" width="672" class="r-stretch"><p>This is how the world should look <em>if the null is true</em>.</p>
 </section><section id="null-distribution-versus-reality" class="slide level2 medium scrollable"><h2>Null distribution versus reality</h2>
 <p>Locate the <em>actual</em> results of your <em>actual</em> data analysis under the null distribution. Are they in the middle? Are they in the tails?</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
 </section><section id="null-distribution-versus-reality-1" class="slide level2 medium scrollable"><h2>Null distribution versus reality</h2>
 <p>Locate the <em>actual</em> results of your <em>actual</em> data analysis under the null distribution. Are they in the middle? Are they in the tails?</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-7-1.png" width="672" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
 </section><section id="null-distribution-versus-reality-2" class="slide level2 medium scrollable"><h2>Null distribution versus reality</h2>
 <p>Locate the <em>actual</em> results of your <em>actual</em> data analysis under the null distribution. Are they in the middle? Are they in the tails?</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"><p>Are these results in harmony or conflict with the null?</p>
 </section><section id="the-main-idea" class="slide level2"><h2>The main idea</h2>
 <ul>
 <li>The point estimate is <em>reality</em>. That’s what the data say;</li>
@@ -341,21 +344,21 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <em>p</em>-value</h2>
 <p><em>p</em>-value is the fraction of the histogram area shaded red:</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-9-1.png" width="672" class="r-stretch"><div class="fragment">
 <p>Big ol’ <em>p</em>-value. Null remains plausible</p>
 </div>
 </section><section id="p-value-2" class="slide level2 scrollable"><h2>
 <em>p</em>-value</h2>
 <p><em>p</em>-value is the fraction of the histogram area shaded red:</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"><div class="fragment">
 <p><em>p</em>-value is basically zero. Null looks bogus.</p>
 </div>
 </section><section id="p-value-3" class="slide level2 scrollable"><h2>
 <em>p</em>-value</h2>
 <p><em>p</em>-value is the fraction of the histogram area shaded red:</p>
 
-<img data-src="16-inference-overview_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"><div class="fragment">
+<img data-src="16-inference-overview_files/figure-html/unnamed-chunk-11-1.png" width="672" class="r-stretch"><div class="fragment">
 <p><em>p</em>-value is…kinda small? Null looks…?</p>
 </div>
 </section><section id="discernibility-level" class="slide level2 scrollable"><h2>Discernibility level</h2>
@@ -369,6 +372,13 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 </ul>
 </li>
 <li class="fragment"><p>Standard choices: <span class="math inline">\(\alpha=0.01, 0.05, 0.1, 0.15\)</span>.</p></li>
+</ul></section><section id="coming-up" class="slide level2"><h2>Coming up</h2>
+<p>We will spend the month of November practicing the following:</p>
+<ul>
+<li>taking great care to interpret confidence intervals correctly;</li>
+<li>taking great care to interpret p-values correctly;</li>
+<li>using mathematical methods (ie. <em>not</em> simulation) to approximate the sampling and null distributions;</li>
+<li>thinking about statistical problems beyond simple linear regression.</li>
 </ul>
 
 
@@ -573,41 +583,6 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

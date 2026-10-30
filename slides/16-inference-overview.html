@@ -267,6 +267,12 @@ window.Quarto = {
  <span class="menu-text">Lab 5</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab/lab-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 6</span></a>
+  </div>
+</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -365,6 +371,7 @@ window.Quarto = {
   <li><a href="#p-value-2" id="toc-p-value-2" class="nav-link" data-scroll-target="#p-value-2"><em>p</em>-value</a></li>
   <li><a href="#p-value-3" id="toc-p-value-3" class="nav-link" data-scroll-target="#p-value-3"><em>p</em>-value</a></li>
   <li><a href="#discernibility-level" id="toc-discernibility-level" class="nav-link" data-scroll-target="#discernibility-level">Discernibility level</a></li>
+  <li><a href="#coming-up" id="toc-coming-up" class="nav-link" data-scroll-target="#coming-up">Coming up</a></li>
   </ul>
 </li>
   </ul><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="16-inference-overview-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -446,16 +453,19 @@ y = \beta_0+\beta_1x +\varepsilon;
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">wt</span>, y <span class="op">=</span> <span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_smooth</span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="point-estimation-1" class="level2 scrollable"><h2 class="scrollable anchored" data-anchor-id="point-estimation-1">Point estimation</h2>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">linear_reg</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">fit</span><span class="op">(</span><span class="va">mpg</span> <span class="op">~</span> <span class="va">wt</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">tidy</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -488,7 +498,7 @@ y = \beta_0+\beta_1x +\varepsilon;
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -498,7 +508,7 @@ y = \beta_0+\beta_1x +\varepsilon;
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -537,7 +547,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -548,7 +558,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -559,7 +569,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -570,7 +580,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -602,7 +612,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -615,7 +625,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -628,7 +638,7 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="16-inference-overview_files/figure-revealjs/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="16-inference-overview_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -649,44 +659,17 @@ H_A&amp;: \beta_1\neq0\quad(\text{something going on})
 <li><p>Standard choices: <span class="math inline">\(\alpha=0.01, 0.05, 0.1, 0.15\)</span>.</p></li>
 </ul>
 </div>
+</section><section id="coming-up" class="level2"><h2 class="anchored" data-anchor-id="coming-up">Coming up</h2>
+<p>We will spend the month of November practicing the following:</p>
+<ul>
+<li>taking great care to interpret confidence intervals correctly;</li>
+<li>taking great care to interpret p-values correctly;</li>
+<li>using mathematical methods (ie. <em>not</em> simulation) to approximate the sampling and null distributions;</li>
+<li>thinking about statistical problems beyond simple linear regression.</li>
+</ul>
 
 
-</section></section></main><!-- /main --><script>
-  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-  // slide changes (different for each slide format).
-  (function () {
-    // dispatch for htmlwidgets
-    function fireSlideEnter() {
-      const event = window.document.createEvent("Event");
-      event.initEvent("slideenter", true, true);
-      window.document.dispatchEvent(event);
-    }
-
-    function fireSlideChanged(previousSlide, currentSlide) {
-      fireSlideEnter();
-
-      // dispatch for shiny
-      if (window.jQuery) {
-        if (previousSlide) {
-          window.jQuery(previousSlide).trigger("hidden");
-        }
-        if (currentSlide) {
-          window.jQuery(currentSlide).trigger("shown");
-        }
-      }
-    }
-
-    // hookup for slidy
-    if (window.w3c_slidy) {
-      window.w3c_slidy.add_observer(function (slide_num) {
-        // slide_num starts at position 1
-        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-      });
-    }
-
-  })();
-</script><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
