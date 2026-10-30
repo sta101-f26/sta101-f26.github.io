@@ -1,0 +1,120 @@
+---
+title: "Lab 6"
+subtitle: "Due: end-of-lab Friday October 30"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(tidymodels)
+
+
+#set.seed(46543)
+#df_sample <- rdu_flights |>
+#  slice(sample(1:nrow(rdu_flights), 100))
+```
+
+In this lab you'll explore the relationship between distance (in miles) and air time (in minutes) of flights out of RDU in 2024.
+
+```{r}
+#| eval: false
+rdu_flights <- read_csv("data/rdu-flights.csv")
+```
+
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Question 1 - visualization
+
+Visualize the relationship between `distance` (x) and `air_time` (y) using a scatter plot.
+Add a regression line to the scatter plot, but *do not* display the standard error ribbon around the regression line. Comment on the observed relationship.
+
+## Question 2 - point estimation
+
+Estimate the simple linear regression predicting air time from distance. Display the output and interpret the coefficients. 
+
+## Question 3 - interval estimation
+
+Compute a 95% bootstrap interval for the slope of the regression line for predicting `air_time` from `distance`. In your narrative, provide an interpretation of the 95% confidence interval for the slope. Also, don't forget to set a random number seed so that your results are reproducible. Everyone on your team should get exactly the same numbers.
+
+::: {.callout-tip collapse="true"}
+## Reminder
+Below is a step-by-step recipe for constructing a confidence interval.
+The code snippets shown are not "complete." They include some blanks you need to fill in, and they are just intended to guide you in the right direction.
+
+-   Step 1: Calculate the point estimate for the slope and the intercept of the regression line. You technically already did this, but you need to use the new syntax that plays nice with the code that runs the simulations.
+
+```{r}
+#| eval: false
+obs_fit <- rdu_flights |>
+  specify(______ ~ ______) |>
+  fit()
+```
+
+-   Step 2: Simulate a bootstrap distribution of regression estimates.
+
+```{r}
+#| eval: false
+boot_dist <- rdu_flights |>
+  specify(_____ ~ ______) |>
+  generate(reps = ____, type = _______) |>
+  fit()
+```
+
+-   Step 3: Calculate the bounds of the confidence interval.
+
+```{r}
+#| eval: false
+conf_ints <- get_confidence_interval(
+    ____, 
+    level = ___, 
+    point_estimate = ____
+  )
+```
+:::
+
+## Question 4 - hypothesis testing
+
+Calculate, visualize, and interpret the $p$-value from a permutation test for the following hypotheses:
+
+$$
+\begin{aligned}
+\text{H}_0&: \beta_1=0\\
+\text{H}_A&: \beta_1\neq 0.
+\end{aligned}
+$$
+
+
+::: {.callout-tip collapse="true"}
+## Reminder
+The code for this is almost identical to the code for bootstrapping, with some small but crucial alterations:
+
+```{r}
+#| eval: false
+null_dist <- rdu_flights |>
+  specify(_____ ~ ______) |>
+  hypothesize(null = ________) |>
+  generate(reps = ____, type = _______) |>
+  fit()
+
+pval <- get_p_value(
+    ____, 
+    obs_stat = ___, 
+    direction = ____
+  )
+```
+:::
+
+
+## Submission
+
+{{< include _submission.qmd >}}
+
+
+
+
