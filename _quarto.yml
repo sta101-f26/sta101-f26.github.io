@@ -66,6 +66,8 @@ website:
             text: Lab 4
           - href: lab/lab-5.qmd
             text: Lab 5
+          - href: lab/lab-6.qmd
+            text: Lab 6
       - section: "Homeworks"
         contents:
           - href: hw/hw-1.qmd
