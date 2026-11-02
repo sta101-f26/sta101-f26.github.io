@@ -425,6 +425,8 @@ visualize(null_dist) +
 
 ## Grand summary {.scrollable}
 
+Pay close attention to the similarities and differences:
+
 :::: columns 
 
 ::: column 
