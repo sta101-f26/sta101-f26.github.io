@@ -1,0 +1,82 @@
+---
+title: "Lab 7"
+subtitle: "Due: end-of-lab Friday November 6"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(tidymodels)
+```
+
+Recall the baby data from [Homework 5](/hw/hw-5.html#part-1-babies):
+
+```{r}
+#| message: false
+births14 <- read_csv("data/births14.csv") |>
+  filter(!is.na(habit))
+```
+
+We want to understand how reliably we can estimate the relationship between the mother's age in years (`mage`) and the birth weight in pounds of the baby (`weight`). You already did simulation-based inference. Now let's do inference using the bell curve.
+
+::: callout-tip
+## Reminder
+
+The [in-class activity](/ae/ae-12-normal.html) from Tuesday introduced basic commands for working with the bell curve. You may find some of them useful today.
+:::
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Task 1
+
+Fit (and store!) the simple linear regression `weight ~ mage` using *both* techniques we have seen: the one involving `linear_reg` *and* the one involving `specify`. Display both sets of results and verify that they match.
+
+## Task 2
+
+Use the `filter` and `pull` commands to extract the point estimate and the **standard error** for the slope from the regression outputs in the previous part. Store these values in new variables `b1` and `SE`.
+
+## Task 3
+
+The central limit theorem (and other results) says that if our sample size is large enough, the **sampling distribution** of the regression slope can be approximated by $\text{N}(b_1,\,\text{SE})$. Based on this approximation and your numbers from the previous part, use the `qnorm` command to compute the lower bound and upper bound of a 90% confidence interval for the slope. 
+
+## Task 4
+
+Use `ggplot` together with the new layers `stat_function` and `geom_vline` to plot the normal distribution and the bounds of your confidence interval.
+
+## Task 5 
+
+Calculate, visualize, and interpret the $p$-value from a permutation test for the following hypotheses:
+
+$$
+\begin{aligned}
+\text{H}_0&: \beta_1=0\\
+\text{H}_A&: \beta_1\neq 0.
+\end{aligned}
+$$
+
+So that we all get the same results, you should use the random number seed `123` and you should do `500` repititions of the simulation.
+
+::: callout-tip
+## Reminder
+If you need a refresher, see last week's [lab](/lab/lab-6.html) or [in-class activity](/ae/ae-11-pokemon.html).
+:::
+
+## Task 6
+
+The central limit theorem (and other results) says that if our sample size is large enough, the **null distribution** of the regression slope can be approximated by $\text{N}(0,\,\text{SE})$. Let's use this approximation to re-do the test from the previous part.
+
+a. Use the `normTail` command to visualize the $p$-value of the test;
+a. Use the `pnorm` command to calculate the $p$-value of the test.
+
+## Submission
+
+{{< include _submission.qmd >}}
+
+
+
+
