@@ -19,7 +19,7 @@ editor:
 | ![](images/jk.jpeg){.circ}   | Kang, Joon         | TA            | **Wed 3:00 PM - 5:00 PM**\     |
 |                              |                    |               | Zoom (link on Canvas)          |
 +------------------------------+--------------------+---------------+--------------------------------+
-| ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Wed 5:00 PM - 7:00 PM**\     |
+| ![](images/sl.png){.circ}    | Lasser, Sonya      | TA            | **Mon 6:30 PM - 8:30 PM**\     |
 |                              |                    |               | Old Chem 203B                  |
 +------------------------------+--------------------+---------------+--------------------------------+
 | ![](images/cz.png){.circ}    | Zhang, Christina   | TA            | **Thu 4:30 PM - 6:30 PM**\     |
