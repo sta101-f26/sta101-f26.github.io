@@ -1,0 +1,135 @@
+---
+title: Homework 6
+subtitle: "Due: Tuesday November 17 at 3 PM"
+bibliography: references.bib
+---
+
+
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(tidymodels)
+```
+
+Today, we will be working with data from The Stanford University Heart Transplant Study [@turnbull1974]:
+
+```{r}
+#| label: load-glimpse-data
+#| message: false
+
+heart_transplant <- read_csv("data/heart-transplant.csv")
+glimpse(heart_transplant)
+```
+
+The data dictionary is as follows:
+
+| Variable   | Description                                                                                                                                             |
+|-------------------|-----------------------------------------------------|
+| id         | ID number of the patient                                                                                                                                |
+| outcome    | Survival status with levels `alive` and `deceased`                                                                                                      |
+| transplant | Transplant group with levels `control` (did not receive a transplant) and `treatment` (received a transplant)                                           |
+| age        | Age of the patient at the beginning of the study                                                                                                        |
+| survtime   | Number of days patients were alive after the date they were determined to be a candidate for a heart transplant until the termination date of the study |
+| acceptyear | Year of acceptance as a heart transplant candidate                                                                                                      |
+| prior      | Whether or not the patient had prior surgery with levels `yes` and `no`                                                                                 |
+| wait       | Waiting time for transplant      
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+```{r}
+#| echo: false
+q_no <- 0
+```
+
+### Exercise `{r} q_no`
+
+{{< include _music-rec.qmd >}}
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+IMS - [Chapter 11 exercises](https://openintrostat.github.io/ims/foundations-randomization.html#sec-chp11-exercises), #8: Heart transplants.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Recreate the stacked bar plot in Exercise `{r} q_no - 1` .
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Calculate the point estimate for the difference in proportions of patients who died between the treatment and control groups: $\hat{p}_{treatment} - \hat{p}_{control}$, where $\hat{p}$ is the observed probability of dying in each group. Do this in two ways:
+
+1.  Construct a frequency table of `outcome` by `transplant` and calculate the difference in proportions "by hand".
+2.  Use `specify()` and `calculate()` to calculate the difference in proportions as shown below.
+
+```{r}
+obs_diff_outcome <- heart_transplant |>
+  specify(response = outcome, explanatory = transplant, success = "deceased") |>
+  calculate(stat = "diff in props", order = c("treatment", "control"))
+```
+
+Then, confirm that you obtained the same results with the two methods.
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Using the code below, generate a null distribution for the hypothesis test for the hypothesis you formulated in Exercise 1. Use 100 resamples (`reps`). However, change the seed to use a different seed.
+
+```{r}
+set.seed(1234)
+
+null_dist_outcome <- heart_transplant |>
+  specify(response = outcome, explanatory = transplant, success = "deceased") |>
+  hypothesize(null = "independence") |>
+  generate(reps = 100, type = "permute") |>
+  calculate(stat = "diff in props", order = c("treatment", "control"))
+```
+
+Then, inspect the object `null_dist_outcome` using either `glimpse()` or just printing it to screen. How many rows and how many columns does it have? What does each row represent? What does each variable represent?
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Visualize the distribution of simulated differences in proportions of deceased between treatment and control groups. What is the shape of this distribution? What is the center of this distribution? Are these results expected? Explain your reasoning.
+
+
+```{r}
+#| echo: false
+q_no <- q_no + 1
+```
+
+### Exercise `{r} q_no` 
+
+Calculate the p-value using the `get_p_value` function. Interpret the p-value in context of the data and the research question and comment on the statistical discernibility of this result using a discernibility level of 5%.
+
+
+## Submission
+
+{{< include _submission.qmd >}}
