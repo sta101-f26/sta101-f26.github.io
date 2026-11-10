@@ -10,8 +10,8 @@ The project is worth 20% of your overall course grade, and here is everything yo
 | Component | Deadline | % of project grade | 
 | --- | --- | --- | 
 | Project proposal | Friday October 23 @ 10am | 10 |
-| Exploratory analysis draft | Monday November 9 @ 5pm | 5 |
-| Peer review | Monday November 17 @ 5pm | 5 |
+| Exploratory analysis draft | Thursday November 19 @ 3pm | 5 |
+| Peer review | Friday November 20 @ 5pm | 5 |
 | Final presentation | Friday December 4 in lab | 40 |
 | Final report | Monday December 7 @ 5pm | 30 |
 | Peer evaluation | Monday December 7 @ 5pm | 10 |
@@ -98,19 +98,42 @@ You can find data wherever you like (or generate it yourself!), but here are som
 :::
 
 
+## Exploratory analysis
+
+After you receive your proposal feedback, study it, choose *one* of your proposals to work on, and get started. On Thursday November 19 at 3pm, you will submit a rough draft of your introduction and exploratory analysis, which will be graded for completion. 
+
+Before that deadline, you should meet with your group and do the following:
+
+- clean, wrangle, and otherwise prepare the data if it is not already suitable for analysis;
+- explore the data by generating basic pictures and numerical summaries;
+- begin writing the introductory parts of your report that introduce an unfamiliar reader to the data and the research question.
+
 ## Peer review
 
-We will review your project proposals and reply with feedback by Monday November 2. You then have a week to make *some progress*: decide on your final topic, flesh out your research question, and generate some preliminary exploratory results by visualizing and summarizing your data. You will submit a rough draft of this on Monday November 9.
+After you submit your rough draft, your group will convene in lab on Friday November 20 and write a peer review of *another team's* draft. 
 
-Once everyone has submitted a rough write-up of their preliminary work, each team will be given the work of *another team* to review. You will provide the other team with constructive criticism: how well can you understand their explanation of their data and research question? how informative, convincing, and aesthetically pleasing do you find their visualizations? How might the team improve their work? You will submit your peer review on Monday November 17. *Details to come about grading and format.*
+You will provide the other team with constructive criticism: how well can you understand their explanation of their data and research question? how informative, convincing, and aesthetically pleasing do you find their visualizations? How might the team improve their work? You will submit your peer review at the end of lab.
 
 ## Presentation
 
-During your lab section on Friday December 4 (LDOC), each team will give a five minute presentation about their project. *Details to come about grading and format.*
+During your lab section on Friday December 4 (LDOC), each team will give a five minute presentation about their project and then take two minutes of questions from the audience. 
+
+The presentation should introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality. You can create your slides with any software you like (Keynote, PowerPoint, Google Slides, etc.). We recommend choosing an option that's easy to collaborate with, e.g., Google Slides.
+
+The slide deck should be roughly 6 content slides + 1 title slide.
+Here is a *suggested* outline as you think through the slides; you [**do not**]{.underline} have to use this exact format for the 6 slides.
+
+-   Title Slide
+-   Slide 1: Introduce the topic and motivation
+-   Slide 2: Introduce the data
+-   Slide 3-5: Highlights from EDA and analysis
+-   Slide 6: Conclusions + discussion + critique
 
 ## Report 
 
-Using R + Quarto, each team will write a reproducible report summarizing their data analysis and submit it on Monday December 7. *Details to come about grading and format.*
+Using R + Quarto, each team will write a reproducible report summarizing their data analysis and submit it on Monday December 7. 
+
+*Details to come about grading and format.*
 
 ## Peer evaluation
 
