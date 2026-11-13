@@ -1,0 +1,134 @@
+---
+title: "Lab 8"
+subtitle: "Due: end-of-lab Friday November 13"
+format: html
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(tidymodels)
+```
+
+The General Social Survey (GSS) gathers data on contemporary American society in order to monitor and explain trends and constants in attitudes, behaviours, and attributes. Hundreds of trends have been tracked since 1972. In addition, since the GSS adopted questions from earlier surveys, trends can be followed for up to 70 years. The GSS contains a standard core of demographic, behavioural, and attitudinal questions, plus topics of special interest. Among the topics covered are civil liberties, crime and violence, intergroup tolerance, morality, national spending priorities, psychological well-being, social mobility, and stress and traumatic events. 
+
+You will work with the 2022 General Social Survey:
+
+```{r}
+#| message: false 
+
+gss22 <- read_csv("data/gss22.csv")
+```
+
+We will focus on the variable `advfront`, which records whether the respondent agrees or disagrees with the statement: "Even if it brings no immediate benefits, scientific research that advances the frontiers of knowledge is necessary and should be supported by the federal government."
+
+Our dataset contains a sample of only `{r} nrow(gss22)` respondents, which is far less than the US population. Based on these data, our estimate of public opinion on this issue is 
+
+```{r}
+gss22 |>
+  count(advfront) |>
+  mutate(prop = n / sum(n))
+```
+
+How reliable is that estimate?
+
+
+## Setup
+
+{{< include _setup.qmd >}}
+
+## Part 1 - point estimation
+
+As with linear regression, we are required to compute the point estimate in a particular way so that it plays nice with the tools we use for inference. Here is the point estimate, which matches what we got earlier:
+
+```{r}
+
+p_hat <- gss22 |>
+  specify(response = advfront, success = "Agree") |>
+  calculate(stat = "prop")
+
+p_hat
+```
+
+## Part 2 - interval estimation (two ways!)
+
+### Task 1
+
+Use the bootstrap to simulate the sampling distribution of the proportion and use the simulations to visualize, calculate, and *interpret* a 99% confidence interval. 
+
+::: callout-tip
+## Hint
+
+In order to simulate the bootstrap, you should take the data pipeline above that computed the point estimate and add the `generate` command. At what step should `generate` be inserted? What inputs should it take? I leave it to you.
+:::
+
+### Task 2
+
+If instead of simulation we wanted to approximate the sampling distribution with the central limit theorem, then we don't need to *generate* anymore, we need to *assume*:
+
+```{r}
+#| eval: false
+
+gss22 |>
+   specify(response = advfront, success = "Agree") |>
+   assume(distribution = "z")
+```
+
+That code produces a smooth bell curve that approximates the sampling distribution. After that, you can use exactly the same commands (`get_ci`, `visualize`, and `shade_confidence_interval`) to do inference for the unknown proportion. Give it a try! Your interval and picture from this task should be fairly close to your interval from the previous task. 
+
+
+## Part 3 - hypothesis testing (two ways!)
+
+Let $p$ be the *true proportion* of American adults that agree with the statement. We don't know what $p$ is. We can only guess at its value by collecting data and calculating an estimate, which may or may not be accurate. 
+
+Given our data, let's say we wish to test the following point null hypothesis against a two-sided alternative:
+
+$$
+\begin{aligned}
+H_0&:p=0.5\\
+H_A&:p\neq 0.5.
+\end{aligned}
+$$
+
+So, we want to know if the evidence is strong enough to distinguish between these two competing claims.
+
+### Task 3
+
+Use random sampling to simulate the null distribution of the proportion and use the simulations to visualize, calculate, and *interpret* a $p$-value for our test.
+
+::: callout-tip
+## Hint
+
+In order to simulate the bootstrap, you should take the data pipeline above that computed the point estimate and add the `hypothesize` and `generate` commands. At what step should you insert these commands? What inputs should they take? I leave it to you.
+:::
+
+
+### Task 4
+
+If instead of simulation you want to run the test using a normal approximation, then the `infer` package we've been using actually has a single shortcut command. Read the documentation for this command by tying this in the console:
+
+```{r}
+?prop_test
+```
+
+Then use the command to conduct the same test that you performed in the previous part. Your $p$-value should be similar.
+
+
+
+## Part 4 - why stop there?
+
+Congratulations! You have just completed all of the work you have to submit for today's lab. If any time remains in the session, I encourage you to stick around and work with your teammates on either...
+
+- [Homework 6](/hw/hw-6.html);
+- [Your Project](/project/overview.html).
+
+
+## Submission
+
+{{< include _submission.qmd >}}
+
+
+
+
